@@ -170,14 +170,6 @@ begin
 	j7_out <= std_logic_vector(light_CH1_reg(4 downto 0));
 
 	PRDATA <= (31 downto 8 => '0') & prdata_sig;
-	--PRDATA(7) <= prdata_sig(7);
-	--PRDATA(6) <= prdata_sig(6);
-	--PRDATA(5) <= prdata_sig(5);
-	--PRDATA(4) <= prdata_sig(4);
-	--PRDATA(3) <= prdata_sig(3);
-	--PRDATA(2) <= prdata_sig(2);
-	--PRDATA(1) <= prdata_sig(1);
-	--PRDATA(0) <= prdata_sig(0);
 	PREADY <= pready_sig;
 	PSLVERR <= '0';
 

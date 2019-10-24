@@ -1,6 +1,6 @@
 # WIP
 # Blinking_MSS
-This project builds off of the APB3_Practice project to utilize peripherals located within the Smartfusion2 Microcontroller Subsystem instead of Fabric cores.
+This project builds off of the APB3_Practice project to utilize peripherals located within the Smartfusion2 Microcontroller Subsystem instead of Fabric cores. It also includes LED control from earlier work and will wrap everything together.
 
 This project is a work in progress and will change over time.
 

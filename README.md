@@ -5,6 +5,6 @@ https://www.digikey.com/product-detail/en/microsemi-corporation/M2S010-MKR-KIT/1
 
 Project Chronology:
 
-- Basic_VHDL_Thing
-- APB3_Practice
-- Blinking_MSS
+1. Basic_VHDL_Thing
+2. APB3_Practice
+3. Blinking_MSS

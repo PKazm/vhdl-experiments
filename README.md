@@ -4,6 +4,7 @@ https://www.digikey.com/product-detail/en/microsemi-corporation/M2S010-MKR-KIT/1
 
 
 Project Order:
-Basic_VHDL_Thing
-APB3_Practice
-Blinking_MSS
+
+- Basic_VHDL_Thing
+- APB3_Practice
+- Blinking_MSS

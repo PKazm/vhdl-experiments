@@ -21,6 +21,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+library work;
+use work.all;
+use work.register_pkg.all;
+
 entity LED_Controller is
 port (
 	--<port_name> : <direction> <type>;
@@ -76,27 +80,43 @@ architecture architecture_LED_Controller of LED_Controller is
 
 	signal timer_signal : std_logic := '0';
 
+
+	constant register_count : natural := 6;
+	constant register_size : natural := 8;
+	constant reg_address_offset : natural := 1;
+
 	constant CTRL_ADDR : std_logic_vector (7 downto 0) := X"00";
-	constant CH0_ADDR : std_logic_vector (7 downto 0) := X"01";
-	constant CH1_ADDR : std_logic_vector (7 downto 0) := X"02";
-	constant INT_ADDR : std_logic_vector (7 downto 0) := X"03";
+	constant CH0_0_ADDR : std_logic_vector (7 downto 0) := X"01";
+	constant CH0_1_ADDR : std_logic_vector (7 downto 0) := X"02";
+	constant CH1_0_ADDR : std_logic_vector (7 downto 0) := X"03";
+	constant CH1_1_ADDR : std_logic_vector (7 downto 0) := X"04";
+	constant INT_ADDR : std_logic_vector (7 downto 0) := X"05";
 	
 	signal CTRL_reg : std_logic_vector (7 downto 0) := (others => '0');
-	signal CH0_reg : std_logic_vector (15 downto 0) := (others => '0');
-	signal CH1_reg : std_logic_vector (15 downto 0) := (others => '0');
+	signal CH0_0_reg : std_logic_vector (7 downto 0) := (others => '0');
+	signal CH0_1_reg : std_logic_vector (7 downto 0) := (others => '0');
+	signal CH1_0_reg : std_logic_vector (7 downto 0) := (others => '0');
+	signal CH1_1_reg : std_logic_vector (7 downto 0) := (others => '0');
 	signal INT_reg : std_logic_vector (7 downto 0) := (others => '0');
 
-	-- BEGIN APB_Interface signals
-	signal APB_addr_sig : std_logic_vector (7 downto 0) := (others => '0');
-	signal APB_Reg_Val_in : std_logic_vector (7 downto 0) := (others => '0');
-	signal APB_Reg_Val_out : std_logic_vector (7 downto 0) := (others => '0');
-	signal APB_Write_High : std_logic := '0';
-	signal APB_Enabled : std_logic := '0';
+	-- BEGIN Register signals
+	--signal Reg_Val_in : std_logic_vector (7 downto 0) := (others => '0');
+	--signal Reg_Val_out : std_logic_vector (7 downto 0) := (others => '0');
+	--signal Reg_Write_High : std_logic := '0';
+	--signal Reg_Enabled : std_logic := '0';
+	signal Reg_Access_read : register_array(register_count - 1 downto 0)(register_size - 1 downto 0);
+	signal Reg_Accross_write : register_array(register_count - 1 downto 0)(register_size - 1 downto 0);
 
-	signal APB_Handled : std_logic := '0';
-	-- END APB_Interface signals
+	signal Reg_Busy_sig : std_logic := '0';
+	signal Reg_Update_sig : std_logic := '0';
+	-- END Register signals
 
-	component APB_Interface
+	component Register_Core
+		generic (
+			register_count : natural := 6;
+			register_size : natural := 8;
+			address_offsets : natural := 1
+		);
 		port(
 			PCLK : in std_logic;
 
@@ -110,14 +130,14 @@ architecture architecture_LED_Controller of LED_Controller is
 			PRDATA : out std_logic_vector(31 downto 0);
 			PSLVERR : out std_logic;
 
-			Reg_Addr : out std_logic_vector(7 downto 0);
-			Reg_Value_out : out std_logic_vector(7 downto 0);
-			Reg_Value_in : in std_logic_vector(7 downto 0);
-			Write_High : out std_logic;
-			Enable : out std_logic;
-			Handled : in std_logic
+			Reg_Access_In : in register_array(register_count - 1 downto 0)(register_size - 1 downto 0);
+			Reg_Access_Out : out register_array(register_count - 1 downto 0)(register_size - 1 downto 0);
+			Reg_Busy : out std_logic;		-- indicates APB (or other) is updating registers
+			Reg_Update : in std_logic		-- indicates parent has updated registers
 		);
 	end component;
+
+
 
 	component timer
 		generic(
@@ -131,7 +151,15 @@ architecture architecture_LED_Controller of LED_Controller is
 
 begin
 
-	APB_Comp : APB_Interface
+	--=========================================================================
+	-- BEGIN REGISTER MODULE THING
+
+	Register_Comp : Register_Core
+		generic map(
+			register_count => register_count,
+			register_size => register_size,
+			address_offsets => reg_address_offset
+		)
 		port map(
 			PCLK => PCLK,
 
@@ -145,61 +173,49 @@ begin
 			PRDATA => PRDATA,
 			PSLVERR => PSLVERR,
 
-			Reg_Addr => APB_addr_sig,
-			Reg_Value_in => APB_Reg_Val_in,
-			Reg_Value_out => APB_Reg_Val_out,
-			Write_High => APB_Write_High,
-			Enable => APB_Enabled,
-			Handled => APB_Handled
+			Reg_Access_In => Reg_Accross_write,
+			Reg_Access_Out => Reg_Access_read,
+			Reg_Busy => Reg_Busy_sig,
+			Reg_Update => Reg_Update_sig
 		);
 
-	APB_Interaction: process(PCLK)
+	-- this block should maybe occur in the Register_Control process
+	--Reg_Accross_write(0) <= CTRL_reg;
+	--Reg_Accross_write(1) <= CH0_0_reg;
+	--Reg_Accross_write(2) <= CH0_1_reg;
+	--Reg_Accross_write(3) <= CH1_0_reg;
+	--Reg_Accross_write(4) <= CH1_1_reg;
+	--Reg_Accross_write(5) <= INT_reg;
+
+	CTRL_reg <= Reg_Access_read(0);
+	CH0_0_reg <= Reg_Access_read(1);
+	CH0_1_reg <= Reg_Access_read(2);
+	CH1_0_reg <= Reg_Access_read(3);
+	CH1_1_reg <= Reg_Access_read(4);
+	INT_reg <= Reg_Access_read(5);
+
+	Register_Control: process(PCLK, PRESETN)
 	begin
 		if(rising_edge(PCLK)) then
-			if(APB_Enabled = '1' and APB_Handled = '0') then
-				APB_Handled <= '1';
-				case APB_addr_sig is
-					when CTRL_ADDR =>
-						if(PWRITE = '1') then
-							CTRL_reg <= APB_Reg_Val_out;
-						else
-							APB_Reg_Val_in <= CTRL_reg;
-						end if;
-					when CH0_ADDR =>
-						if(PWRITE = '1') then
-							CH0_reg <= APB_Reg_Val_out & CH0_reg(15 downto 8);
-						else
-							APB_Reg_Val_in <= X"00";
-						end if;
-					when CH1_ADDR =>
-						if(PWRITE = '1') then
-							CH1_reg <= APB_Reg_Val_out & CH1_reg(15 downto 8);
-						else
-							APB_Reg_Val_in <= X"00";
-						end if;
-					when INT_ADDR =>
-						if(PWRITE = '1') then
-							CH1_reg <= APB_Reg_Val_out & CH1_reg(15 downto 8);
-						else
-							APB_Reg_Val_in <= X"00";
-						end if;
-					when others =>
-						null;
-				end case;
-			elsif(APB_Enabled = '0') then
-				APB_Handled <= '0';
-			end if;
+			-- I don't think anything happens here anymore
 		end if;
-	end process APB_Interaction;
+	end process Register_Control;
+
+	-- END REGISTER MODULE THING
+	--=========================================================================
+	-- BEGIN TIMER MODULE THING
 
 	timer_Comp : timer
-		--generic map(
-		--	g_timer_count => 500
-		--);
+		generic map(
+			g_timer_count => 500
+		)
 		port map(
 			CLK => PCLK,
 			timer_out => timer_signal
 		);
+
+	-- END TIMER MODULE THING
+	--=========================================================================
 
 	Button_Handler: process(Board_Buttons)
 	begin

@@ -7,4 +7,4 @@ Project Chronology:
 
 1. Basic_VHDL_Thing
 2. APB3_Practice
-3. Blinking_MSS
+3. Ultimate LED Controller (builds off APB3_Practice)

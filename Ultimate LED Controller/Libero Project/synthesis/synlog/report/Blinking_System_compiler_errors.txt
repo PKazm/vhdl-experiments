@@ -1,0 +1,2 @@
+@E: CD395 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One\hdl\LED_Controller.vhd":362:11:362:17|Constant width 5 does not match context width 6
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One\synthesis\synlog\Blinking_System_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>128.4 MHz</data>
+<data>2.213</data>
+</row>
+<row>
+<data>FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>245.3 MHz</data>
+<data>5.923</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>895.2 MHz</data>
+<data>8.883</data>
+</row>
+</report_table>

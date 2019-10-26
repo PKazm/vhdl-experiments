@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Sat Oct 26 15:26:12 2019
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One
+Component :  FCCC_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Blink_The_Good_One/component/work/FCCC_C0/FCCC_C0.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Blink_The_Good_One/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+

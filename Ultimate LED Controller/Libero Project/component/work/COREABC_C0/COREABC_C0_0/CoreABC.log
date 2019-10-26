@@ -1,0 +1,77 @@
+Analysis
+
+---------------------------------------------
+
+Programming Errors
+
+None
+
+---------------------------------------------
+
+Instructions Used
+
+AND, APBREAD, APBWRT, APBWRT ACC, APBWRT DAT, BITTST, CMP, DEF, HALT, INC, JUMP, NOP, OR, RAMREAD, RAMWRT, RAMWRT ACC, RAMWRT DAT, RETISR
+
+---------------------------------------------
+
+Constraints
+
+   Accumulator operated on with 254 so 'Data Bus Width' >= 8.
+   Maximum APB slot used is 2 so 'Number of APB Slots' >= 3.
+   Maximum APB address used 8 so 'APB Slot Size' >= 16 locations
+   Maximum program counter is 118 so 'Maximum Number of Instructions' >= 128.
+   Z register not used so 'Z Register size' may be set to disabled.
+   'INPUTn' not used so 'Number of I/O Flags' >= 0.
+   'IOWRT' not used so 'Number of I/O Outputs' >= 0.
+   Uses stack ('CALL', 'RETURN', 'RETISR', 'PUSH' or 'POP'), 'RAMREAD' or 'RAMWRT' so requires 'Internal Data/Stack Memory'.
+   Uses stack - please ensure 'Stack Size' is sufficient.
+   Uses 'RETISR' - please ensure that 'ISR Address' is set.
+
+---------------------------------------------
+
+Instruction Store Details
+
+   Width of instructions is Data+Addr+Slots+6 = 8+8+2+6 = 24 bits
+
+---------------------------------------------
+
+Labels
+
+Address 9:$Light_Control_Interrupt
+Address 13:$I2C_Process
+Address 34:$I2C_0x08_Start_Sent
+Address 36:$I2C_0x10_Restart_Sent
+Address 38:$I2C_0x18_SLA_W_Sent
+Address 41:$I2C_0x28_Data_Sent
+Address 51:$I2C_0x40_SLA_R_Sent
+Address 52:$I2C_0x50_Data_Received
+Address 63:$I2C_CH1_0
+Address 67:$I2C_CH1_1
+Address 71:$I2C_CH0_0
+Address 76:$I2C_Continue
+Address 80:$I2C_Continue_Read
+Address 84:$I2C_RepeatStart
+Address 90:$I2C_StopStart
+Address 99:$I2C_Stop
+Address 106:$I2C_0xE0_Stop_transmitted
+Address 110:$AbandonShip
+Address 111:$MAIN
+Address 117:$LOOP
+
+---------------------------------------------
+
+Symbols
+
+Line 228:I2C_Step=0x0
+Line 229:I2C_State=0x1
+Line 230:I2C_Reg_Addr=0x2
+Line 231:I2C_Reg_Val=0x3
+Line 232:Data_Store_Addr=0x4
+Line 235:Light_Store_CTRL=0x0
+Line 236:Light_Store_CH0_0=0x1
+Line 237:Light_Store_CH0_1=0x2
+Line 238:Light_Store_CH1_0=0x3
+Line 239:Light_Store_CH1_1=0x4
+Line 240:Light_Store_Int=0x5
+
+---------------------------------------------

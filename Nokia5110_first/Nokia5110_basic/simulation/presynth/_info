@@ -1,0 +1,372 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/simulation
+Efccc_c0
+Z1 w1572294309
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z4 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0.vhd
+Z5 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0.vhd
+l0
+L17
+VbOb=_W`5ioUfeN=gTcN@[2
+!s100 o_L9aRQQQAW@5VM@15AMb1
+Z6 OW;C;10.7c;67
+33
+Z7 !s110 1572320239
+!i10b 1
+Z8 !s108 1572320239.000000
+Z9 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0.vhd|
+Z10 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0.vhd|
+!i113 1
+Z11 o-2008 -explicit -work presynth -O0
+Z12 tCvgOpt 0
+Artl
+R2
+R3
+DEx4 work 7 fccc_c0 0 22 bOb=_W`5ioUfeN=gTcN@[2
+l63
+L31
+V<nQ4FO[]dbk?iDNX3eoiG1
+!s100 kB`MbAGz[7dbA>9L]hddd1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efccc_c0_fccc_c0_0_fccc
+R1
+R2
+R3
+R0
+Z13 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z14 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+l0
+L8
+V<<en;mm[Fb_NZ50F0fbY01
+!s100 <fX8]63S5^Pbcf`ho0i>_0
+R6
+33
+R7
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+Z16 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+!i113 1
+R11
+R12
+Adef_arch
+DEx12 smartfusion2 6 XTLOSC 0 22 Dg1SIo80bB@j0V0VzS_@n1
+Z17 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+DEx12 smartfusion2 10 RCOSC_1MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R2
+R3
+DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 <<en;mm[Fb_NZ50F0fbY01
+l95
+L18
+VTINKM=@]BTG8;>kH90P8V1
+!s100 CX_<Y[0DGhF3RVK[C3:[N0
+R6
+33
+R7
+!i10b 1
+R8
+R15
+R16
+!i113 1
+R11
+R12
+Elcd_controller_system
+Z18 w1572309095
+R2
+R3
+R0
+Z19 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/LCD_Controller_System/LCD_Controller_System.vhd
+Z20 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/LCD_Controller_System/LCD_Controller_System.vhd
+l0
+L17
+V[NC?DZCBU[SUZ^9GZ6Tcj1
+!s100 ZT7bckXjCb6^fF?XOo9cV0
+R6
+33
+Z21 !s110 1572320240
+!i10b 1
+Z22 !s108 1572320240.000000
+Z23 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/LCD_Controller_System/LCD_Controller_System.vhd|
+Z24 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/LCD_Controller_System/LCD_Controller_System.vhd|
+!i113 1
+R11
+R12
+Artl
+R17
+Z25 DEx12 smartfusion2 14 RCOSC_25_50MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R2
+R3
+Z26 DEx4 work 21 lcd_controller_system 0 22 [NC?DZCBU[SUZ^9GZ6Tcj1
+l124
+L36
+Z27 VVGB_:4zPMG[KNUA1IP7aE3
+Z28 !s100 ?LiDMOU9l`JNnolbYRWFL0
+R6
+33
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Enokia5110_driver
+Z29 w1572320177
+Z30 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+R0
+Z31 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Driver.vhd
+Z32 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Driver.vhd
+l0
+L24
+VRNecjC_keC;`BGbi^C5cT1
+!s100 QgAK?MEedHTf>7SSEIY3X0
+R6
+33
+R7
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Driver.vhd|
+Z34 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Driver.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_nokia5110_driver
+R30
+R2
+R3
+DEx4 work 16 nokia5110_driver 0 22 RNecjC_keC;`BGbi^C5cT1
+l91
+L41
+Vb03m2HHB<oSDYhfz<LaWM0
+!s100 @57VJi9m950aSObDcFnQh2
+R6
+33
+R7
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Enokia5110_memory
+Z35 w1572309667
+R30
+R2
+R3
+R0
+Z36 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Memory.vhd
+Z37 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Memory.vhd
+l0
+L24
+VFQnd>gaCRYa0Y>dk:;DW83
+!s100 RO7b<?i>JAMj_lz_@dS7:2
+R6
+33
+R7
+!i10b 1
+R8
+Z38 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Memory.vhd|
+Z39 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia5110_Memory.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_nokia5110_memory
+R30
+R2
+R3
+DEx4 work 16 nokia5110_memory 0 22 FQnd>gaCRYa0Y>dk:;DW83
+l130
+L34
+V0@_a5z7c?[lnV^_lXjA660
+!s100 V3hO<FzH_zXd`zeN0>32U3
+R6
+33
+R7
+!i10b 1
+R8
+R38
+R39
+!i113 1
+R11
+R12
+Enokia_driver_container
+Z40 w1572317812
+R2
+R3
+R0
+Z41 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia_Driver_Container.vhd
+Z42 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia_Driver_Container.vhd
+l0
+L23
+VL:TR_^7h0V_5C@ZiM7<;j3
+!s100 U;iie4mN4RN?fbb=<ENb61
+R6
+33
+R21
+!i10b 1
+R8
+Z43 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia_Driver_Container.vhd|
+Z44 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/Nokia_Driver_Container.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_nokia_driver_container
+R2
+R3
+DEx4 work 22 nokia_driver_container 0 22 L:TR_^7h0V_5C@ZiM7<;j3
+l89
+L39
+VObA2XUUL=4;e3@OL80VF@1
+!s100 zWUfX<[9B_DKU_Zz1A_:F0
+R6
+33
+R21
+!i10b 1
+R8
+R43
+R44
+!i113 1
+R11
+R12
+Eosc_c0
+Z45 w1572247020
+R2
+R3
+R0
+Z46 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0.vhd
+Z47 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0.vhd
+l0
+L17
+V;9f:oAhA_Yn;NSNQG<[f:1
+!s100 Yf_ZSillhlhcFGRD9njA;0
+R6
+33
+R21
+!i10b 1
+R22
+Z48 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0.vhd|
+Z49 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 6 osc_c0 0 22 ;9f:oAhA_Yn;NSNQG<[f:1
+l56
+L27
+VOFnD7z[I]8W[K[i4ZoEST1
+!s100 Yebk`f[LaoaULcj[lFUSL0
+R6
+33
+R21
+!i10b 1
+R22
+R48
+R49
+!i113 1
+R11
+R12
+Eosc_c0_osc_c0_0_osc
+R45
+R2
+R3
+R0
+Z50 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z51 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+l0
+L8
+V=RTjS>oH[4=XjoXn^`jZ13
+!s100 ImDYGYTfEB_O;]h:c4C>f1
+R6
+33
+R21
+!i10b 1
+R22
+Z52 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+Z53 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+!i113 1
+R11
+R12
+Adef_arch
+R2
+R3
+DEx4 work 19 osc_c0_osc_c0_0_osc 0 22 =RTjS>oH[4=XjoXn^`jZ13
+l31
+L21
+V1oa1O8Mi7^mOUoQz_9K461
+!s100 li@AIJ9Yl0<2d:3ki;e^Y2
+R6
+33
+R21
+!i10b 1
+R22
+R52
+R53
+!i113 1
+R11
+R12
+Etimer
+Z54 w1572312293
+R30
+R2
+R3
+R0
+Z55 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/timer.vhd
+Z56 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/timer.vhd
+l0
+L6
+Vm?NYENXVbkdUNU7Dl7`CP0
+!s100 2Ek18zEbXC6dXFQ[6YbRm3
+R6
+33
+R7
+!i10b 1
+R8
+Z57 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/timer.vhd|
+Z58 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_basic/hdl/timer.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_timer
+R30
+R2
+R3
+DEx4 work 5 timer 0 22 m?NYENXVbkdUNU7Dl7`CP0
+l22
+L19
+VhHjhD_1B?S^ASYkB>NBgj2
+!s100 aYN[i1[h?Igh>QP66zin<0
+R6
+33
+R7
+!i10b 1
+R8
+R57
+R58
+!i113 1
+R11
+R12

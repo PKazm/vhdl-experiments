@@ -1,0 +1,81 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd (2019-10-28 20:41:07, 2019-10-29 01:03:55)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 1
+MID:  lib.cell.view
+28       work.nokia5110_memory.architecture_nokia5110_memory may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd (2019-10-28 20:41:07, 2019-10-29 01:03:55) <-- (architecture and entity definition)
+
+*******************************************************************
+Unmodified files: 20
+FID:  path (timestamp)
+0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
+1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
+2        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\location.map (2018-12-21 01:52:16)
+3        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\numeric.vhd (2018-12-21 01:52:16)
+4        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std.vhd (2018-12-21 01:52:16)
+5        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd (2018-12-21 01:52:16)
+6        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 01:52:16)
+7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 01:52:16)
+8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
+9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
+10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
+11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-07-19 23:55:25)
+12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0.vhd (2019-10-28 16:25:09)
+13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2019-10-28 16:25:09)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd (2019-10-28 20:31:35)
+15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0.vhd (2019-10-28 03:17:00)
+16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2019-10-28 03:17:00)
+19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd (2019-10-29 00:16:14)
+17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd (2019-10-29 00:00:07)
+18       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd (2019-10-28 21:24:53)
+
+*******************************************************************
+Unchanged modules: 28
+MID:  lib.cell.view
+0        work.fccc_c0.rtl
+1        work.fccc_c0.vhdl
+2        work.fccc_c0_fccc_c0_0_fccc.def_arch
+3        work.fccc_c0_fccc_c0_0_fccc.vhdl
+4        work.lcd_controller_system.rtl
+5        work.lcd_controller_system.vhdl
+26       work.nokia5110_driver.architecture_nokia5110_driver
+27       work.nokia5110_driver.vhdl
+6        work.nokia_driver_container.architecture_nokia_driver_container
+7        work.nokia_driver_container.vhdl
+8        work.osc_c0.rtl
+9        work.osc_c0.vhdl
+10       work.osc_c0_osc_c0_0_osc.def_arch
+11       work.osc_c0_osc_c0_0_osc.vhdl
+12       work.rcosc_1mhz.def_arch
+13       work.rcosc_1mhz.vhdl
+14       work.rcosc_1mhz_fab.def_arch
+15       work.rcosc_1mhz_fab.vhdl
+16       work.rcosc_25_50mhz.def_arch
+17       work.rcosc_25_50mhz.vhdl
+18       work.rcosc_25_50mhz_fab.def_arch
+19       work.rcosc_25_50mhz_fab.vhdl
+20       work.timer.architecture_timer
+21       work.timer.vhdl
+22       work.xtlosc.def_arch
+23       work.xtlosc.vhdl
+24       work.xtlosc_fab.def_arch
+25       work.xtlosc_fab.vhdl

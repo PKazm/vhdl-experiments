@@ -1,0 +1,8 @@
+DESIGN=LCD_Controller_System
+DESDIR=C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System
+TARGET_DIR=C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System
+FAM=SmartFusion2
+DIE=PA4M1000_N
+PACKAGE=tq144
+SPEED=STD
+PDC_FILE=C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,,

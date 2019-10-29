@@ -1,0 +1,309 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.1 12.600.0.14
+
+# Design Name: LCD_Controller_System 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ , Speed grade: STD 
+
+# Date generated: Tue Oct 29 01:04:39 2019 
+
+
+#
+# I/O constraints
+#
+
+set_io Board_Buttons\[0\] -DIRECTION INPUT -pinname 143 -fixed no
+set_io Board_Buttons\[1\] -DIRECTION INPUT -pinname 144 -fixed no
+set_io Board_J10 -DIRECTION OUTPUT -pinname 7 -fixed no
+set_io Board_J11 -DIRECTION OUTPUT -pinname 19 -fixed no
+set_io Board_J7\[0\] -DIRECTION OUTPUT -pinname 92 -fixed no
+set_io Board_J7\[1\] -DIRECTION OUTPUT -pinname 16 -fixed no
+set_io Board_J7\[2\] -DIRECTION OUTPUT -pinname 94 -fixed no
+set_io Board_J7\[3\] -DIRECTION OUTPUT -pinname 21 -fixed no
+set_io Board_J7\[4\] -DIRECTION OUTPUT -pinname 22 -fixed no
+set_io Board_J8 -DIRECTION OUTPUT -pinname 3 -fixed no
+set_io Board_J9 -DIRECTION OUTPUT -pinname 4 -fixed no
+set_io Board_LEDs\[0\] -DIRECTION OUTPUT -pinname 117 -fixed no
+set_io Board_LEDs\[1\] -DIRECTION OUTPUT -pinname 118 -fixed no
+set_io Board_LEDs\[2\] -DIRECTION OUTPUT -pinname 122 -fixed no
+set_io Board_LEDs\[3\] -DIRECTION OUTPUT -pinname 123 -fixed no
+set_io Board_LEDs\[4\] -DIRECTION OUTPUT -pinname 124 -fixed no
+set_io Board_LEDs\[5\] -DIRECTION OUTPUT -pinname 125 -fixed no
+set_io Board_LEDs\[6\] -DIRECTION OUTPUT -pinname 128 -fixed no
+set_io Board_LEDs\[7\] -DIRECTION OUTPUT -pinname 129 -fixed no
+set_io Board_MOD1\[0\] -DIRECTION OUTPUT -pinname 83 -fixed no
+set_io Board_MOD1\[1\] -DIRECTION OUTPUT -pinname 81 -fixed no
+set_io Board_MOD1\[2\] -DIRECTION OUTPUT -pinname 90 -fixed no
+set_io Board_MOD1\[3\] -DIRECTION OUTPUT -pinname 93 -fixed no
+set_io Board_MOD1\[4\] -DIRECTION OUTPUT -pinname 88 -fixed no
+set_io Board_MOD1\[5\] -DIRECTION OUTPUT -pinname 82 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m21_1_1 -fixed no 130 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_7_f0\[0\] -fixed no 107 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[5\] -fixed no 102 85
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m8 -fixed no 129 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_1\[3\] -fixed no 95 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[2\] -fixed no 91 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m85 -fixed no 130 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[5\] -fixed no 87 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m43 -fixed no 119 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un35_enable -fixed no 88 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/LCD_State_5_iv_i\[0\] -fixed no 106 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/data_command_queue_sig -fixed no 95 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count\[1\] -fixed no 99 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_cnst_i\[0\] -fixed no 89 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m58 -fixed no 115 93
+set_location AND2_0_RNIKOS1/U0_RGB1 -fixed no 218 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_83_i_1_0 -fixed no 131 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y\[2\] -fixed no 99 88
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m94 -fixed no 118 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_0_sqmuxa_1 -fixed no 92 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y\[0\] -fixed no 106 88
+set_location Nokia_Driver_Container_0/start_up_timer/un2_counter_5 -fixed no 138 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_RNO\[1\] -fixed no 85 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step\[0\] -fixed no 89 94
+set_location Nokia_Driver_Container_0/start_up_timer/timer_sig -fixed no 132 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[5\] -fixed no 90 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m77_1 -fixed no 117 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m43_1_0 -fixed no 119 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_1_sqmuxa_6 -fixed no 103 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/chip_enable_sig -fixed no 98 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_7_f0_RNO\[1\] -fixed no 96 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m60 -fixed no 109 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPICLK_last_sig -fixed no 102 88
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m93_1_1 -fixed no 131 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m2_0 -fixed no 129 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m117_d -fixed no 130 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m57_1 -fixed no 113 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m118 -fixed no 139 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_0_sqmuxa -fixed no 104 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y_6\[1\] -fixed no 97 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m72_1_1 -fixed no 117 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m117_d_1_1 -fixed no 129 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m26_0 -fixed no 110 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[1\] -fixed no 98 85
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[1\] -fixed no 101 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m104 -fixed no 103 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m93_2 -fixed no 128 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m107 -fixed no 127 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m127_0 -fixed no 138 87
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[0\] -fixed no 133 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m103_1 -fixed no 116 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m101 -fixed no 115 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[1\] -fixed no 87 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m33 -fixed no 113 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m138 -fixed no 121 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m69 -fixed no 119 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_1_sqmuxa_5 -fixed no 104 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing -fixed no 101 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m148_d_1_0 -fixed no 130 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m34_1_1 -fixed no 115 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y_6\[2\] -fixed no 99 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[2\] -fixed no 102 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m37 -fixed no 104 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m148_d_2_1_1_0_1_1 -fixed no 128 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m109 -fixed no 137 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[6\] -fixed no 104 88
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m129_1 -fixed no 136 87
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[8\] -fixed no 135 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m112 -fixed no 131 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m21_1_1_1 -fixed no 128 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m109_2 -fixed no 126 84
+set_location Nokia_Driver_Container_0/LCD_Backlight_sig_RNO -fixed no 98 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m94_1_0 -fixed no 114 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m103_2 -fixed no 96 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/chip_enable_sig_RNI174D -fixed no 90 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m84 -fixed no 127 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[4\] -fixed no 107 85
+set_location Nokia_Driver_Container_0/un24_board_leds_i -fixed no 128 96
+set_location Board_LEDs_obuf_RNO\[0\] -fixed no 123 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[0\] -fixed no 88 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/data_command_sig -fixed no 91 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step\[2\] -fixed no 90 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m96_1 -fixed no 106 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_83_i -fixed no 126 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m38 -fixed no 118 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_cnst_i_x2\[7\] -fixed no 91 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m117_d_1_0 -fixed no 125 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m118_3 -fixed no 129 90
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[5\] -fixed no 133 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[5\] -fixed no 90 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m118_0 -fixed no 127 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m109_0 -fixed no 135 87
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[4\] -fixed no 137 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m34 -fixed no 109 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m55_1_0 -fixed no 111 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m114 -fixed no 128 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIDO_sig -fixed no 88 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m101_2 -fixed no 112 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_cnst_i_x2\[4\] -fixed no 94 90
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 -fixed no 219 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m118_2 -fixed no 127 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_RNO\[2\] -fixed no 90 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_cnst_0_o2\[1\] -fixed no 86 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[4\] -fixed no 89 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_1_sqmuxa -fixed no 97 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m67_1_0 -fixed no 116 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m63 -fixed no 115 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m117 -fixed no 126 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m30_0 -fixed no 118 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un2_enable -fixed no 102 87
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[7\] -fixed no 134 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m132 -fixed no 117 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m109_1 -fixed no 124 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m29 -fixed no 112 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m103_0 -fixed no 107 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m16 -fixed no 126 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[2\] -fixed no 91 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPICLK_last_sig_0_sqmuxa -fixed no 105 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y\[1\] -fixed no 97 88
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m67 -fixed no 111 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[7\] -fixed no 84 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[3\] -fixed no 84 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m21 -fixed no 125 87
+set_location Nokia_Driver_Container_0/LCD_Backlight_sig -fixed no 98 88
+set_location Board_LEDs_obuf_RNO\[2\] -fixed no 127 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m36_2 -fixed no 100 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m119 -fixed no 114 96
+set_location ip_interface_inst -fixed no 191 0
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m58_1_1 -fixed no 113 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[6\] -fixed no 87 93
+set_location OSC_C0_0/OSC_C0_0/I_RCOSC_25_50MHZ -fixed no 396 92
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_7\[2\] -fixed no 105 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[4\] -fixed no 103 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m134 -fixed no 104 87
+set_location Nokia_Driver_Container_0/start_up_timer/un2_counter_4 -fixed no 142 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m131_1_1 -fixed no 110 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m114_1_1 -fixed no 125 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_83_i_1 -fixed no 126 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_49_i -fixed no 123 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m101_0 -fixed no 116 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m43_3 -fixed no 110 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/LCD_State_RNIARBR\[0\] -fixed no 101 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m7 -fixed no 124 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m135 -fixed no 125 90
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[6\] -fixed no 139 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[6\] -fixed no 94 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m43_1 -fixed no 108 93
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[4\] -fixed no 137 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m131 -fixed no 116 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m13 -fixed no 124 90
+set_location AND2_0_RNIKOS1 -fixed no 220 54
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_143_i -fixed no 121 96
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[6\] -fixed no 139 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_cnst_i_a3\[5\] -fixed no 84 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m93_1 -fixed no 122 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_7_sqmuxa -fixed no 95 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_1_sqmuxa_4 -fixed no 100 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[5\] -fixed no 107 88
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m2_d -fixed no 122 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_7_sqmuxa_RNIINKV -fixed no 86 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m53_1_1 -fixed no 113 96
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[2\] -fixed no 143 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[4\] -fixed no 85 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m79 -fixed no 125 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[6\] -fixed no 106 85
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[0\] -fixed no 97 85
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m138_3 -fixed no 123 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m5 -fixed no 124 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m9 -fixed no 123 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m125 -fixed no 107 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m127 -fixed no 134 87
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[2\] -fixed no 143 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m27 -fixed no 121 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[1\] -fixed no 87 91
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[5\] -fixed no 133 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m40 -fixed no 114 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m37_1 -fixed no 122 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m148_d_2_1_1_0 -fixed no 122 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m121 -fixed no 112 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[2\] -fixed no 93 90
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST -fixed no 219 54
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m67_2 -fixed no 109 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing_0_sqmuxa_i -fixed no 101 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count\[0\] -fixed no 107 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m149_1 -fixed no 131 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[4\] -fixed no 89 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_7\[4\] -fixed no 107 84
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[7\] -fixed no 93 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m22_1_1 -fixed no 121 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[7\] -fixed no 99 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m22 -fixed no 120 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[6\] -fixed no 87 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_7_f0\[2\] -fixed no 105 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m141 -fixed no 129 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m129 -fixed no 133 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_7_sqmuxa_1 -fixed no 102 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m99 -fixed no 111 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m4 -fixed no 124 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.N_29_i -fixed no 131 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X_7\[6\] -fixed no 106 84
+set_location Nokia_Driver_Container_0/start_up_timer/un2_counter -fixed no 134 90
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[8\] -fixed no 135 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[7\] -fixed no 84 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m51 -fixed no 111 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m149 -fixed no 99 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m91 -fixed no 120 84
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[3\] -fixed no 136 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[3\] -fixed no 100 85
+set_location AND2_0 -fixed no 399 78
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1 -fixed no 218 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step\[1\] -fixed no 85 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m123 -fixed no 108 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16_1_0\[1\] -fixed no 92 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte\[3\] -fixed no 84 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m2_c -fixed no 120 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/LCD_State\[0\] -fixed no 106 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m77 -fixed no 102 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_7_f0\[1\] -fixed no 99 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y_RNO\[0\] -fixed no 106 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m148_d_2_1_1_0_1 -fixed no 123 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count\[2\] -fixed no 105 94
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_count_7_f0_RNO\[2\] -fixed no 103 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m46 -fixed no 110 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_RNO\[0\] -fixed no 89 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X\[2\] -fixed no 105 85
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[0\] -fixed no 104 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/chip_enable_sig_0_sqmuxa -fixed no 98 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/SPIout_byte_16\[0\] -fixed no 88 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m53 -fixed no 109 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m72 -fixed no 112 93
+set_location Nokia_Driver_Container_0/start_up_timer/counter\[1\] -fixed no 134 94
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST -fixed no 221 54
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m78 -fixed no 122 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un6_enable -fixed no 100 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un39_enable -fixed no 96 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m57 -fixed no 101 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m97 -fixed no 105 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m101_3 -fixed no 108 90
+set_location Nokia_Driver_Container_0/start_up_timer/counter_3\[7\] -fixed no 132 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m74 -fixed no 118 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m138_1_1 -fixed no 120 90
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m30 -fixed no 108 96
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte\[3\] -fixed no 105 91
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m118_1 -fixed no 132 87
+set_location FCCC_C0_0/FCCC_C0_0/CCC_INST -fixed no 390 92
+set_location SYSRESET_0 -fixed no 396 8
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m87_1_0_wmux -fixed no 120 93
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un39_enable_RNIS1271 -fixed no 96 84
+set_location Nokia_Driver_Container_0/start_up_timer/un1_counter_cry_0_cy -fixed no 132 93
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB0 -fixed no 218 90
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB1 -fixed no 218 87
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB2 -fixed no 218 84
+set_location AND2_0_RNIKOS1/U0_RGB1_RGB3 -fixed no 218 69
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0 -fixed no 219 90
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB1 -fixed no 219 87
+set_location FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB2 -fixed no 219 84
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1_RGB0 -fixed no 220 93
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1_RGB1 -fixed no 220 90
+set_location FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1_RGB2 -fixed no 220 87
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/display_mem_comp/display_byte_2_7_0_.m87_1_0_wmux_CC_0 -fixed no 120 95
+set_location Nokia_Driver_Container_0/Nokia_Driver_Comp/un39_enable_RNIS1271_CC_0 -fixed no 96 86
+set_location Nokia_Driver_Container_0/start_up_timer/un1_counter_cry_0_cy_CC_0 -fixed no 132 95

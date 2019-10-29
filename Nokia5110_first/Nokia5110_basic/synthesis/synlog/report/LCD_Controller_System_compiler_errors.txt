@@ -1,0 +1,6 @@
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":35:4:35:15|Multiple non-tristate drivers for net data_command in Nokia5110_Driver
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":35:4:35:15|Unresolved tristate drivers for net data_command in Nokia5110_Driver
+@E: MF420 |Netlist read from file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\layer0.srs failed
+@E: Could not find specified top level LCD_Controller_System (library: work, cell: LCD_Controller_System)Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+@E::Error while linking, aborting.
+

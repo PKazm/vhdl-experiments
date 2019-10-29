@@ -1,0 +1,195 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: v12.1 12.600.0.14
+
+# Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
+
+# Date generated: Thu Oct 10 20:53:58 2019 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io {Board_Buttons[0]}  \
+    -pinname 143           \
+    -fixed yes             \
+    -DIRECTION INPUT
+
+
+set_io {Board_Buttons[1]}  \
+    -pinname 144           \
+    -fixed yes             \
+    -DIRECTION INPUT
+
+
+set_io {Board_J7[0]}   \
+    -pinname 92        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_J7[1]}   \
+    -pinname 16        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_J7[2]}   \
+    -pinname 94        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_J7[3]}   \
+    -pinname 21        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_J7[4]}   \
+    -pinname 22        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[0]}  \
+    -pinname 117        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[1]}  \
+    -pinname 118        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[2]}  \
+    -pinname 122        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[3]}  \
+    -pinname 123        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[4]}  \
+    -pinname 124        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[5]}  \
+    -pinname 125        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[6]}  \
+    -pinname 128        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_LEDs[7]}  \
+    -pinname 129        \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[0]}  \
+    -pinname 83         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[1]}  \
+    -pinname 81         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[2]}  \
+    -pinname 90         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[3]}  \
+    -pinname 93         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[4]}  \
+    -pinname 88         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io {Board_MOD1[5]}  \
+    -pinname 82         \
+    -fixed yes          \
+    -DIRECTION OUTPUT
+
+
+set_io Board_J10       \
+    -pinname 7         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io Board_J11       \
+    -pinname 19        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io Board_J8        \
+    -pinname 3         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io Board_J9        \
+    -pinname 4         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>LCD_Controller_System</design>
+	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System.vm</target_verilog>
+</SynplifyOutput>

@@ -578,16 +578,6 @@ STATE="utd"
 TIME="1572124619"
 SIZE="464"
 ENDFILE
-VALUE "<project>\hdl\Fake_Light_Sensor.vhd,hdl"
-STATE="utd"
-TIME="1572119826"
-SIZE="13821"
-ENDFILE
-VALUE "<project>\hdl\I2C_Pull_Up.vhd,hdl"
-STATE="utd"
-TIME="1572119826"
-SIZE="1179"
-ENDFILE
 VALUE "<project>\hdl\LED_Controller.vhd,hdl"
 STATE="utd"
 TIME="1572126226"
@@ -638,8 +628,8 @@ SIZE="338326"
 ENDFILE
 VALUE "<project>\synthesis\Blinking_System_syn.prj,prj"
 STATE="utd"
-TIME="1572126708"
-SIZE="6940"
+TIME="1572128164"
+SIZE="7280"
 ENDFILE
 VALUE "<project>\synthesis\Blinking_System_vm.sdc,syn_sdc"
 STATE="utd"
@@ -809,8 +799,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -818,7 +808,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -868,8 +858,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run PROGRAM Action:Blinking_System_PROGRAM.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Blinking_System;0
+ACTIVEVIEW;Blinking_System
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Blinking_System::work","component\work\Blinking_System\Blinking_System.vhd","TRUE","FALSE"
@@ -893,14 +886,10 @@ LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","
 ENDLIST
 LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
-LIST "Fake_Light_Sensor::work","hdl\Fake_Light_Sensor.vhd","FALSE","FALSE"
-ENDLIST
 LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
-ENDLIST
-LIST "I2C_Pull_Up::work","hdl\I2C_Pull_Up.vhd","FALSE","FALSE"
 ENDLIST
 LIST "LED_Controller::work","hdl\LED_Controller.vhd","FALSE","FALSE"
 SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"

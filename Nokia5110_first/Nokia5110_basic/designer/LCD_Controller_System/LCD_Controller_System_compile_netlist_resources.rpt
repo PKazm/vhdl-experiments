@@ -1,0 +1,176 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+Date: Tue Oct 29 01:04:18 2019
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-----------------------------------------------------------------------------------------------+
+| Topcell | LCD_Controller_System                                                                         |
+| Format  | Verilog                                                                                       |
+| Source  | C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System.vm |
++---------+-----------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 206  | 12084 | 1.70       |
+| DFF                       | 50   | 12084 | 0.41       |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 25   | 84    | 29.76      |
+| -- Single-ended I/O       | 25   | 84    | 29.76      |
+| -- Differential I/O Pairs | 0    | 37    | 0.00       |
+| RAM64x18                  | 0    | 22    | 0.00       |
+| RAM1K18                   | 0    | 21    | 0.00       |
+| MACC                      | 0    | 22    | 0.00       |
+| Chip Globals              | 3    | 8     | 37.50      |
+| CCC                       | 1    | 2     | 50.00      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 0    | 1     | 0.00       |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 206  | 50  |
+| RAM64x18 Interface Logic | 0    | 0   |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 206  | 50  |
++--------------------------+------+-----+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 1    |
+| 8      | 1    |
+| 10     | 1    |
+| Total  | 3    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 2            | 0           | 0               |
+| Output I/O                    | 23           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS25     |  2.50v |  N/A |  2    |  23    |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  0    | 0.00%      |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  25   | 100.00%    |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+----------------------------------------------+
+| Fanout | Type    | Name                                         |
++--------+---------+----------------------------------------------+
+| 50     | INT_NET | Net   : AND2_0_Y                             |
+|        |         | Driver: AND2_0_RNIKOS1/U0_RGB1               |
+|        |         | Source: NETLIST                              |
+| 39     | INT_NET | Net   : FCCC_C0_0_GL0                        |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1 |
+|        |         | Source: NETLIST                              |
+| 13     | INT_NET | Net   : Board_J9_c                           |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1 |
+|        |         | Source: NETLIST                              |
++--------+---------+----------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+--------------------------------------------------------------------+
+| Fanout | Type    | Name                                                               |
++--------+---------+--------------------------------------------------------------------+
+| 42     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]  |
+| 33     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]  |
+| 27     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]  |
+| 23     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]  |
+| 22     | INT_NET | Net   : Nokia_Driver_Container_0/timer_out_sig                     |
+|        |         | Driver: Nokia_Driver_Container_0/start_up_timer/timer_sig          |
+| 21     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing_Z |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing   |
+| 19     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]  |
++--------+---------+--------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+--------------------------------------------------------------------+
+| Fanout | Type    | Name                                                               |
++--------+---------+--------------------------------------------------------------------+
+| 42     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]  |
+| 39     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]  |
+| 33     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]  |
+| 27     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]  |
+| 23     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]  |
+| 22     | INT_NET | Net   : Nokia_Driver_Container_0/timer_out_sig                     |
+|        |         | Driver: Nokia_Driver_Container_0/start_up_timer/timer_sig          |
+| 21     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing_Z |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing   |
+| 19     | INT_NET | Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]  |
+|        |         | Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]  |
++--------+---------+--------------------------------------------------------------------+
+

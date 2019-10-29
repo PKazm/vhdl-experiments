@@ -1,0 +1,1292 @@
+#Build: Synplify Pro (R) N-2018.03M-SP1-1, Build 209R, Oct 23 2018
+#install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: PHOENIX136DESKY
+
+# Tue Oct 29 01:04:05 2019
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd":17:7:17:27|Top entity is set to LCD_Controller_System.
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd":17:7:17:27|Synthesizing work.lcd_controller_system.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
+Post processing for smartfusion2.sysreset.syn_black_box
+Running optimization stage 1 on SYSRESET .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0.vhd":17:7:17:12|Synthesizing work.osc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":8:7:8:25|Synthesizing work.osc_c0_osc_c0_0_osc.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+Post processing for work.rcosc_25_50mhz.def_arch
+Running optimization stage 1 on RCOSC_25_50MHZ .......
+Post processing for work.osc_c0_osc_c0_0_osc.def_arch
+Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":16:10:16:19|Signal XTLOSC_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":15:10:15:19|Signal XTLOSC_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":14:10:14:23|Signal RCOSC_1MHZ_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":13:10:13:23|Signal RCOSC_1MHZ_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":12:10:12:27|Signal RCOSC_25_50MHZ_O2F is floating; a simulation mismatch is possible.
+Post processing for work.osc_c0.rtl
+Running optimization stage 1 on OSC_C0 .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":23:7:23:28|Synthesizing work.nokia_driver_container.architecture_nokia_driver_container.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":118:12:118:14|Signal clk in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":118:4:118:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":120:24:120:36|Referenced variable board_buttons is not in sensitivity list.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":24:7:24:22|Synthesizing work.nokia5110_driver.architecture_nokia5110_driver.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":42:27:42:28|Using sequential encoding for type lcd_state_machine.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":46:11:46:20|Signal getnewbyte is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":24:7:24:22|Synthesizing work.nokia5110_memory.architecture_nokia5110_memory.
+Post processing for work.nokia5110_memory.architecture_nokia5110_memory
+Running optimization stage 1 on Nokia5110_Memory .......
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|Latch generated from process for signal LCD_mem_sig_83_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:37:127:41|Latch generated from process for signal LCD_mem_sig_83_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:37:127:41|Sharing sequential element LCD_mem_sig_83_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:23:127:27|Latch generated from process for signal LCD_mem_sig_83_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:23:127:27|Sharing sequential element LCD_mem_sig_83_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:44:126:48|Latch generated from process for signal LCD_mem_sig_82_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:44:126:48|Sharing sequential element LCD_mem_sig_82_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:30:126:34|Latch generated from process for signal LCD_mem_sig_82_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:30:126:34|Sharing sequential element LCD_mem_sig_82_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|Latch generated from process for signal LCD_mem_sig_82_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|Sharing sequential element LCD_mem_sig_82_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|Latch generated from process for signal LCD_mem_sig_81_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|Sharing sequential element LCD_mem_sig_81_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:37:125:41|Latch generated from process for signal LCD_mem_sig_81_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:37:125:41|Sharing sequential element LCD_mem_sig_81_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:23:125:27|Latch generated from process for signal LCD_mem_sig_81_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:23:125:27|Sharing sequential element LCD_mem_sig_81_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:44:124:48|Latch generated from process for signal LCD_mem_sig_80_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:44:124:48|Sharing sequential element LCD_mem_sig_80_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:30:124:34|Latch generated from process for signal LCD_mem_sig_80_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:30:124:34|Sharing sequential element LCD_mem_sig_80_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:16:124:20|Latch generated from process for signal LCD_mem_sig_80_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:16:124:20|Sharing sequential element LCD_mem_sig_80_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:9:124:13|Latch generated from process for signal LCD_mem_sig_79_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:9:124:13|Sharing sequential element LCD_mem_sig_79_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:44:123:48|All reachable assignments to LCD_mem_sig_79_4(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:44:123:48|All reachable assignments to LCD_mem_sig_79_4(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:44:123:48|All reachable assignments to LCD_mem_sig_79_4(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:44:123:48|All reachable assignments to LCD_mem_sig_79_4(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+
+Only the first 100 messages of id 'CL111' are reported. To see all messages use 'report_messages -log C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synlog\LCD_Controller_System_compiler.srr -id CL111' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL111} -count unlimited' in the Tcl shell.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:37:123:41|Latch generated from process for signal LCD_mem_sig_79_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:37:123:41|Sharing sequential element LCD_mem_sig_79_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:23:123:27|Latch generated from process for signal LCD_mem_sig_79_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":123:23:123:27|Sharing sequential element LCD_mem_sig_79_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:44:122:48|Latch generated from process for signal LCD_mem_sig_78_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:44:122:48|Sharing sequential element LCD_mem_sig_78_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:30:122:34|Latch generated from process for signal LCD_mem_sig_78_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:30:122:34|Sharing sequential element LCD_mem_sig_78_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:16:122:20|Latch generated from process for signal LCD_mem_sig_78_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:16:122:20|Sharing sequential element LCD_mem_sig_78_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:9:122:13|Latch generated from process for signal LCD_mem_sig_77_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":122:9:122:13|Sharing sequential element LCD_mem_sig_77_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":121:37:121:41|Latch generated from process for signal LCD_mem_sig_77_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":121:37:121:41|Sharing sequential element LCD_mem_sig_77_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":121:23:121:27|Latch generated from process for signal LCD_mem_sig_77_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":121:23:121:27|Sharing sequential element LCD_mem_sig_77_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:44:120:48|Latch generated from process for signal LCD_mem_sig_76_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:44:120:48|Sharing sequential element LCD_mem_sig_76_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:30:120:34|Latch generated from process for signal LCD_mem_sig_76_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:30:120:34|Sharing sequential element LCD_mem_sig_76_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:16:120:20|Latch generated from process for signal LCD_mem_sig_76_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:16:120:20|Sharing sequential element LCD_mem_sig_76_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:9:120:13|Latch generated from process for signal LCD_mem_sig_75_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":120:9:120:13|Sharing sequential element LCD_mem_sig_75_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":119:37:119:41|Latch generated from process for signal LCD_mem_sig_75_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":119:37:119:41|Sharing sequential element LCD_mem_sig_75_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":119:23:119:27|Latch generated from process for signal LCD_mem_sig_75_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":119:23:119:27|Sharing sequential element LCD_mem_sig_75_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:44:118:48|Latch generated from process for signal LCD_mem_sig_74_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:44:118:48|Sharing sequential element LCD_mem_sig_74_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:30:118:34|Latch generated from process for signal LCD_mem_sig_74_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:30:118:34|Sharing sequential element LCD_mem_sig_74_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:16:118:20|Latch generated from process for signal LCD_mem_sig_74_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:16:118:20|Sharing sequential element LCD_mem_sig_74_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:9:118:13|Latch generated from process for signal LCD_mem_sig_73_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":118:9:118:13|Sharing sequential element LCD_mem_sig_73_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":117:37:117:41|Latch generated from process for signal LCD_mem_sig_73_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":117:37:117:41|Sharing sequential element LCD_mem_sig_73_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":117:23:117:27|Latch generated from process for signal LCD_mem_sig_73_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":117:23:117:27|Sharing sequential element LCD_mem_sig_73_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:44:116:48|Latch generated from process for signal LCD_mem_sig_72_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:44:116:48|Sharing sequential element LCD_mem_sig_72_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:30:116:34|Latch generated from process for signal LCD_mem_sig_72_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:30:116:34|Sharing sequential element LCD_mem_sig_72_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:16:116:20|Latch generated from process for signal LCD_mem_sig_72_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:16:116:20|Sharing sequential element LCD_mem_sig_72_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:9:116:13|Latch generated from process for signal LCD_mem_sig_71_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":116:9:116:13|Sharing sequential element LCD_mem_sig_71_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":115:37:115:41|Latch generated from process for signal LCD_mem_sig_71_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":115:37:115:41|Sharing sequential element LCD_mem_sig_71_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":115:23:115:27|Latch generated from process for signal LCD_mem_sig_71_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":115:23:115:27|Sharing sequential element LCD_mem_sig_71_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:44:114:48|Latch generated from process for signal LCD_mem_sig_70_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:44:114:48|Sharing sequential element LCD_mem_sig_70_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:30:114:34|Latch generated from process for signal LCD_mem_sig_70_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:30:114:34|Sharing sequential element LCD_mem_sig_70_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:16:114:20|Latch generated from process for signal LCD_mem_sig_70_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:16:114:20|Sharing sequential element LCD_mem_sig_70_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:9:114:13|Latch generated from process for signal LCD_mem_sig_69_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":114:9:114:13|Sharing sequential element LCD_mem_sig_69_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":113:37:113:41|Latch generated from process for signal LCD_mem_sig_69_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":113:37:113:41|Sharing sequential element LCD_mem_sig_69_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":113:23:113:27|Latch generated from process for signal LCD_mem_sig_69_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":113:23:113:27|Sharing sequential element LCD_mem_sig_69_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:44:112:48|Latch generated from process for signal LCD_mem_sig_68_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:44:112:48|Sharing sequential element LCD_mem_sig_68_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:30:112:34|Latch generated from process for signal LCD_mem_sig_68_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:30:112:34|Sharing sequential element LCD_mem_sig_68_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:16:112:20|Latch generated from process for signal LCD_mem_sig_68_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:16:112:20|Sharing sequential element LCD_mem_sig_68_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:9:112:13|Latch generated from process for signal LCD_mem_sig_67_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":112:9:112:13|Sharing sequential element LCD_mem_sig_67_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":111:37:111:41|Latch generated from process for signal LCD_mem_sig_67_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":111:37:111:41|Sharing sequential element LCD_mem_sig_67_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":111:23:111:27|Latch generated from process for signal LCD_mem_sig_67_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":111:23:111:27|Sharing sequential element LCD_mem_sig_67_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:44:110:48|Latch generated from process for signal LCD_mem_sig_66_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:44:110:48|Sharing sequential element LCD_mem_sig_66_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:30:110:34|Latch generated from process for signal LCD_mem_sig_66_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:30:110:34|Sharing sequential element LCD_mem_sig_66_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:16:110:20|Latch generated from process for signal LCD_mem_sig_66_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:16:110:20|Sharing sequential element LCD_mem_sig_66_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:9:110:13|Latch generated from process for signal LCD_mem_sig_65_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":110:9:110:13|Sharing sequential element LCD_mem_sig_65_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":109:37:109:41|Latch generated from process for signal LCD_mem_sig_65_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":109:37:109:41|Sharing sequential element LCD_mem_sig_65_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":109:23:109:27|Latch generated from process for signal LCD_mem_sig_65_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":109:23:109:27|Sharing sequential element LCD_mem_sig_65_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:44:108:48|Latch generated from process for signal LCD_mem_sig_64_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:44:108:48|Sharing sequential element LCD_mem_sig_64_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:30:108:34|Latch generated from process for signal LCD_mem_sig_64_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:30:108:34|Sharing sequential element LCD_mem_sig_64_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:16:108:20|Latch generated from process for signal LCD_mem_sig_64_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:16:108:20|Sharing sequential element LCD_mem_sig_64_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:9:108:13|Latch generated from process for signal LCD_mem_sig_63_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":108:9:108:13|Sharing sequential element LCD_mem_sig_63_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":107:37:107:41|Latch generated from process for signal LCD_mem_sig_63_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":107:37:107:41|Sharing sequential element LCD_mem_sig_63_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":107:23:107:27|Latch generated from process for signal LCD_mem_sig_63_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":107:23:107:27|Sharing sequential element LCD_mem_sig_63_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:44:106:48|Latch generated from process for signal LCD_mem_sig_62_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:44:106:48|Sharing sequential element LCD_mem_sig_62_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:30:106:34|Latch generated from process for signal LCD_mem_sig_62_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:30:106:34|Sharing sequential element LCD_mem_sig_62_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:16:106:20|Latch generated from process for signal LCD_mem_sig_62_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:16:106:20|Sharing sequential element LCD_mem_sig_62_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:9:106:13|Latch generated from process for signal LCD_mem_sig_61_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":106:9:106:13|Sharing sequential element LCD_mem_sig_61_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":105:37:105:41|Latch generated from process for signal LCD_mem_sig_61_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":105:37:105:41|Sharing sequential element LCD_mem_sig_61_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":105:23:105:27|Latch generated from process for signal LCD_mem_sig_61_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":105:23:105:27|Sharing sequential element LCD_mem_sig_61_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:44:104:48|Latch generated from process for signal LCD_mem_sig_60_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:44:104:48|Sharing sequential element LCD_mem_sig_60_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:30:104:34|Latch generated from process for signal LCD_mem_sig_60_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:30:104:34|Sharing sequential element LCD_mem_sig_60_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:16:104:20|Latch generated from process for signal LCD_mem_sig_60_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:16:104:20|Sharing sequential element LCD_mem_sig_60_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:9:104:13|Latch generated from process for signal LCD_mem_sig_59_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":104:9:104:13|Sharing sequential element LCD_mem_sig_59_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":103:37:103:41|Latch generated from process for signal LCD_mem_sig_59_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":103:37:103:41|Sharing sequential element LCD_mem_sig_59_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":103:23:103:27|Latch generated from process for signal LCD_mem_sig_59_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":103:23:103:27|Sharing sequential element LCD_mem_sig_59_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:44:102:48|Latch generated from process for signal LCD_mem_sig_58_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:44:102:48|Sharing sequential element LCD_mem_sig_58_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:30:102:34|Latch generated from process for signal LCD_mem_sig_58_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:30:102:34|Sharing sequential element LCD_mem_sig_58_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:16:102:20|Latch generated from process for signal LCD_mem_sig_58_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:16:102:20|Sharing sequential element LCD_mem_sig_58_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:9:102:13|Latch generated from process for signal LCD_mem_sig_57_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":102:9:102:13|Sharing sequential element LCD_mem_sig_57_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":101:37:101:41|Latch generated from process for signal LCD_mem_sig_57_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":101:37:101:41|Sharing sequential element LCD_mem_sig_57_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":101:23:101:27|Latch generated from process for signal LCD_mem_sig_57_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":101:23:101:27|Sharing sequential element LCD_mem_sig_57_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:44:100:48|Latch generated from process for signal LCD_mem_sig_56_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:44:100:48|Sharing sequential element LCD_mem_sig_56_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:30:100:34|Latch generated from process for signal LCD_mem_sig_56_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:30:100:34|Sharing sequential element LCD_mem_sig_56_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:16:100:20|Latch generated from process for signal LCD_mem_sig_56_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:16:100:20|Sharing sequential element LCD_mem_sig_56_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:9:100:13|Latch generated from process for signal LCD_mem_sig_55_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":100:9:100:13|Sharing sequential element LCD_mem_sig_55_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:44:99:48|Latch generated from process for signal LCD_mem_sig_55_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:37:99:41|Latch generated from process for signal LCD_mem_sig_55_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:23:99:27|Latch generated from process for signal LCD_mem_sig_55_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:23:99:27|Sharing sequential element LCD_mem_sig_55_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:44:98:48|Latch generated from process for signal LCD_mem_sig_54_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:37:98:41|Latch generated from process for signal LCD_mem_sig_54_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:30:98:34|Latch generated from process for signal LCD_mem_sig_54_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:30:98:34|Sharing sequential element LCD_mem_sig_54_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:16:98:20|Latch generated from process for signal LCD_mem_sig_54_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:16:98:20|Sharing sequential element LCD_mem_sig_54_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:9:98:13|Latch generated from process for signal LCD_mem_sig_53_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:9:98:13|Sharing sequential element LCD_mem_sig_53_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:37:97:41|Latch generated from process for signal LCD_mem_sig_53_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:23:97:27|Latch generated from process for signal LCD_mem_sig_53_1(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:23:97:27|Sharing sequential element LCD_mem_sig_53_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:44:96:48|Latch generated from process for signal LCD_mem_sig_52_4(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:44:96:48|Sharing sequential element LCD_mem_sig_52_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:37:96:41|Latch generated from process for signal LCD_mem_sig_52_3(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:30:96:34|Latch generated from process for signal LCD_mem_sig_52_2(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:30:96:34|Sharing sequential element LCD_mem_sig_52_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:16:96:20|Latch generated from process for signal LCD_mem_sig_52_0(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:16:96:20|Sharing sequential element LCD_mem_sig_52_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:9:96:13|Latch generated from process for signal LCD_mem_sig_51_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:9:96:13|Sharing sequential element LCD_mem_sig_51_5. Add a syn_preserve attribute to the element to prevent sharing.
+
+Only the first 100 messages of id 'CL117' are reported. To see all messages use 'report_messages -log C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synlog\LCD_Controller_System_compiler.srr -id CL117' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL117} -count unlimited' in the Tcl shell.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:37:95:41|Sharing sequential element LCD_mem_sig_51_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:37:95:41|Sharing sequential element LCD_mem_sig_51_3. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:23:95:27|Sharing sequential element LCD_mem_sig_51_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:44:94:48|Sharing sequential element LCD_mem_sig_50_4. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:30:94:34|Sharing sequential element LCD_mem_sig_50_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:16:94:20|Sharing sequential element LCD_mem_sig_50_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:9:94:13|Sharing sequential element LCD_mem_sig_49_5. Add a syn_preserve attribute to the element to prevent sharing.
+
+Only the first 100 messages of id 'CL177' are reported. To see all messages use 'report_messages -log C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synlog\LCD_Controller_System_compiler.srr -id CL177' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL177} -count unlimited' in the Tcl shell.
+Post processing for work.nokia5110_driver.architecture_nokia5110_driver
+Running optimization stage 1 on Nokia5110_Driver .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Pruning unused register screen_sent_6. Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Feedback mux created for signal SPICLK_last_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":23:4:23:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":25:11:25:17|Referenced variable presetn is not in sensitivity list.
+Post processing for work.timer.architecture_timer
+Running optimization stage 1 on timer .......
+Post processing for work.nokia_driver_container.architecture_nokia_driver_container
+Running optimization stage 1 on Nokia_Driver_Container .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0.vhd":17:7:17:13|Synthesizing work.fccc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c0_fccc_c0_0_fccc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
+Post processing for smartfusion2.ccc.syn_black_box
+Running optimization stage 1 on CCC .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+Post processing for smartfusion2.clkint.syn_black_box
+Running optimization stage 1 on CLKINT .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+Post processing for smartfusion2.gnd.syn_black_box
+Running optimization stage 1 on GND .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+Post processing for smartfusion2.vcc.syn_black_box
+Running optimization stage 1 on VCC .......
+Post processing for work.fccc_c0_fccc_c0_0_fccc.def_arch
+Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
+Post processing for work.fccc_c0.rtl
+Running optimization stage 1 on FCCC_C0 .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":191:10:191:13|Synthesizing smartfusion2.and2.syn_black_box.
+Post processing for smartfusion2.and2.syn_black_box
+Running optimization stage 1 on AND2 .......
+Post processing for work.lcd_controller_system.rtl
+Running optimization stage 1 on LCD_Controller_System .......
+Running optimization stage 2 on AND2 .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on CLKINT .......
+Running optimization stage 2 on CCC .......
+Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
+Running optimization stage 2 on FCCC_C0 .......
+Running optimization stage 2 on timer .......
+Running optimization stage 2 on Nokia5110_Memory .......
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|Pruning register bits 7 to 1 of LCD_mem_sig_83_5(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:44:99:48|Pruning register bits 6 to 1 of LCD_mem_sig_55_4(6 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:37:99:41|Pruning register bits 4 to 1 of LCD_mem_sig_55_3(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:37:98:41|Pruning register bits 7 to 6 of LCD_mem_sig_54_3(7 downto 5). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:37:97:41|Pruning register bits 7 to 6 of LCD_mem_sig_53_3(7 downto 5). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:37:97:41|Pruning register bit 1 of LCD_mem_sig_53_3(1 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:37:96:41|Pruning register bits 4 to 3 of LCD_mem_sig_52_3(4 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:37:94:41|Pruning register bits 2 to 1 of LCD_mem_sig_50_3(2 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":93:37:93:41|Pruning register bits 7 to 4 of LCD_mem_sig_49_3(7 downto 3). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":92:9:92:13|Pruning register bits 7 to 3 of LCD_mem_sig_47_5(7 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":91:44:91:48|Pruning register bits 7 to 1 of LCD_mem_sig_47_4(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":91:9:91:13|Pruning register bit 1 of LCD_mem_sig_46_5(1 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":90:30:90:34|Pruning register bits 6 to 1 of LCD_mem_sig_46_2(6 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":87:16:87:20|Pruning register bits 7 to 2 of LCD_mem_sig_43_0(7 downto 1). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":87:9:87:13|Pruning register bit 6 of LCD_mem_sig_42_5(6 downto 5). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":86:9:86:13|Pruning register bits 4 to 3 of LCD_mem_sig_41_5(4 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":86:30:86:34|Pruning register bits 3 to 2 of LCD_mem_sig_42_2(3 downto 1). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":85:30:85:34|Pruning register bits 7 to 5 of LCD_mem_sig_41_2(7 downto 4). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":83:30:83:34|Pruning register bits 7 to 3 of LCD_mem_sig_39_2(7 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":82:23:82:27|Pruning register bits 4 to 1 of LCD_mem_sig_38_1(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":80:16:80:20|Pruning register bits 2 to 1 of LCD_mem_sig_36_0(2 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":79:16:79:20|Pruning register bits 7 to 4 of LCD_mem_sig_35_0(7 downto 3). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":79:37:79:41|Pruning register bits 6 to 4 of LCD_mem_sig_35_3(6 downto 3). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":79:23:79:27|Pruning register bit 4 of LCD_mem_sig_35_1(4 downto 3). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":65:23:65:27|Pruning register bit 6 of LCD_mem_sig_21_1(6 downto 5). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":56:23:56:27|Pruning register bits 5 to 1 of LCD_mem_sig_12_1(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":55:23:55:27|Pruning register bit 7 of LCD_mem_sig_11_1(7 downto 6). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Running optimization stage 2 on Nokia5110_Driver .......
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Optimizing register bit init_step(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Pruning register bit 3 of init_step(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Running optimization stage 2 on Nokia_Driver_Container .......
+Running optimization stage 2 on RCOSC_25_50MHZ .......
+Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+Running optimization stage 2 on OSC_C0 .......
+Running optimization stage 2 on SYSRESET .......
+Running optimization stage 2 on LCD_Controller_System .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 110MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Oct 29 01:04:07 2019
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Oct 29 01:04:07 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Tue Oct 29 01:04:08 2019
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\LCD_Controller_System_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Oct 29 01:04:09 2019
+
+###########################################################]
+Premap Report
+
+# Tue Oct 29 01:04:09 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":86:30:86:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_2[1] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_5[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":86:9:86:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_5[2] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_36_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":80:16:80:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_36_0[0] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:23:79:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":65:23:65:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:16:87:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_43_0[1] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:9:87:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":83:30:83:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:16:79:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":98:44:98:48|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_54_4[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":91:30:91:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_47_2[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Removing sequential instance interrupt_pulse (in view: work.timer(architecture_timer)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=21  set on top level netlist LCD_Controller_System
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     39   
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     23   
+                                                                                                                                  
+0 -       LCD_Controller_System|Board_Buttons[0]            100.0 MHz     10.000        inferred     Inferred_clkgroup_0     1    
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                    Clock Pin                                                        Non-clock Pin                                                       Non-clock Pin                                                   
+Clock                                             Load      Pin                                       Seq Example                                                      Seq Example                                                         Comb Example                                                    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                         -                                                                -                                                                   -                                                               
+                                                                                                                                                                                                                                                                                                           
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     39        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.C     -                                                                   FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                            
+                                                                                                                                                                                                                                                                                                           
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     23        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     Nokia_Driver_Container_0.start_up_timer.timer_sig.C              Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.D[0]     Nokia_Driver_Container_0.Nokia_Driver_Comp.un1_clk_spi.I[0](inv)
+                                                                                                                                                                                                                                                                                                           
+LCD_Controller_System|Board_Buttons[0]            1         Board_Buttons[0](port)                    Nokia_Driver_Container_0.LCD_Backlight_sig.C                     -                                                                   Nokia_Driver_Container_0.Board_LEDs_1[0].I[0](inv)              
+===========================================================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":121:8:121:9|Found inferred clock LCD_Controller_System|Board_Buttons[0] which controls 1 sequential elements including Nokia_Driver_Container_0.LCD_Backlight_sig. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":44:9:44:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 39 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 23 sequential elements including Nokia_Driver_Container_0.start_up_timer.counter[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 01:04:10 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Oct 29 01:04:10 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|User-specified initial value defined for instance Nokia_Driver_Container_0.start_up_timer.counter[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|User-specified initial value defined for instance Nokia_Driver_Container_0.start_up_timer.timer_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":88:16:88:20|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":56:23:56:27|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[6:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIDO_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_count[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_queue_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_Y[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.chip_enable_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_writing is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":121:8:121:9|User-specified initial value defined for instance Nokia_Driver_Container_0.LCD_Backlight_sig is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":56:23:56:27|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":88:16:88:20|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0] is reduced to a combinational gate by constant propagation.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     2.82ns		 268 /        50
+@N: FP130 |Promoting Net AND2_0_Y on CLKINT  I_71 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 49 clock pin(s) of sequential element(s)
+0 instances converted, 49 sequential instances remain driven by gated/generated clocks
+
+========================================== Non-Gated/Non-Generated Clocks ===========================================
+Clock Tree ID     Driving Element        Drive Element Type     Fanout     Sample Instance                           
+---------------------------------------------------------------------------------------------------------------------
+@K:CKID0003       Board_Buttons[1:0]     port                   1          Nokia_Driver_Container_0.LCD_Backlight_sig
+=====================================================================================================================
+===================================================================================================================== Gated/Generated Clocks =====================================================================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                                                Explanation                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    39         Nokia_Driver_Container_0.Nokia_Driver_Comp.chip_enable_sig     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    10         Nokia_Driver_Container_0.start_up_timer.counter[0]             Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 142MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\LCD_Controller_System_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 142MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+@W: MT246 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock LCD_Controller_System|Board_Buttons[0] with period 10.00ns. Please declare a user-defined clock on port Board_Buttons[0].
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL1_net.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Oct 29 01:04:12 2019
+#
+
+
+Top view:               LCD_Controller_System
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 3.809
+
+                                                  Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     161.5 MHz     10.000        6.191         3.809     inferred     Inferred_clkgroup_1
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     350.8 MHz     10.000        2.850         7.150     inferred     Inferred_clkgroup_2
+LCD_Controller_System|Board_Buttons[0]            100.0 MHz     546.7 MHz     10.000        1.829         8.171     inferred     Inferred_clkgroup_0
+System                                            100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
+====================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                         System                                         |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      5.507  |  No paths    -      |  No paths    -      |  No paths    -    
+LCD_Controller_System|Board_Buttons[0]         LCD_Controller_System|Board_Buttons[0]         |  10.000      8.171  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      3.810  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  |  10.000      7.150  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                              Starting                                                                              Arrival          
+Instance                                                      Reference                                         Type     Pin     Net                Time        Slack
+                                                              Clock                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[3]     0.108       3.809
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[0]     0.087       3.811
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[1]     0.087       3.817
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[2]     0.108       3.888
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[4]     0.108       4.160
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[5]     0.108       4.982
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_Y[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_Y[0]     0.108       5.548
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[0]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[0]       0.108       6.242
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[1]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[1]       0.108       6.328
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[2]       0.108       6.405
+=====================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                Starting                                                                                 Required          
+Instance                                                                        Reference                                         Type     Pin     Net                   Time         Slack
+                                                                                Clock                                                                                                      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[5]     9.745        3.809
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[3]     9.745        3.811
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[4]     9.745        3.811
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[2]     9.745        3.880
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[6]     9.745        3.916
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[1]     9.745        4.118
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[0]     9.745        4.587
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[7]     9.745        4.595
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[1]                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       init_step_6[1]        9.745        6.242
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2]                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       init_step_6[2]        9.745        6.242
+===========================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      5.935
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     3.809
+
+    Number of logic level(s):                7
+    Starting point:                          Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3] / Q
+    Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5] / D
+    The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                                           Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]                                      SLE      Q        Out     0.108     0.108       -         
+disp_byte_X[3]                                                                                 Net      -        -       1.359     -           39        
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m7             CFG4     D        In      -         1.467       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m7             CFG4     Y        Out     0.288     1.755       -         
+N_8                                                                                            Net      -        -       0.815     -           4         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d_1_0     CFG3     C        In      -         2.570       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d_1_0     CFG3     Y        Out     0.226     2.795       -         
+m117_d_1_0                                                                                     Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d         CFG3     C        In      -         3.044       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d         CFG3     Y        Out     0.203     3.247       -         
+m117_d                                                                                         Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117           CFG4     D        In      -         3.495       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117           CFG4     Y        Out     0.271     3.767       -         
+N_118                                                                                          Net      -        -       0.497     -           2         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118_2         CFG3     C        In      -         4.264       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118_2         CFG3     Y        Out     0.203     4.467       -         
+m118_1                                                                                         Net      -        -       0.497     -           2         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118           CFG4     D        In      -         4.964       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118           CFG4     Y        Out     0.271     5.235       -         
+N_119                                                                                          Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m125           CFG4     C        In      -         5.484       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m125           CFG4     Y        Out     0.203     5.687       -         
+display_byte_2[5]                                                                              Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5]                    SLE      D        In      -         5.935       -         
+=========================================================================================================================================================
+Total path delay (propagation time + setup) of 6.191 is 2.029(32.8%) logic and 4.161(67.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                       Starting                                                                             Arrival          
+Instance                                               Reference                                         Type     Pin     Net               Time        Slack
+                                                       Clock                                                                                                 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.start_up_timer.counter[0]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[0]        0.108       7.150
+Nokia_Driver_Container_0.start_up_timer.counter[1]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[1]        0.108       7.150
+Nokia_Driver_Container_0.start_up_timer.counter[4]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[4]        0.108       7.228
+Nokia_Driver_Container_0.start_up_timer.counter[2]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[2]        0.087       7.237
+Nokia_Driver_Container_0.start_up_timer.counter[5]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[5]        0.108       7.273
+Nokia_Driver_Container_0.start_up_timer.counter[3]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[3]        0.087       7.280
+Nokia_Driver_Container_0.start_up_timer.counter[6]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[6]        0.108       7.350
+Nokia_Driver_Container_0.start_up_timer.timer_sig      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       timer_out_sig     0.108       7.353
+Nokia_Driver_Container_0.start_up_timer.counter[8]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[8]        0.108       7.731
+Nokia_Driver_Container_0.start_up_timer.counter[7]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[7]        0.108       7.808
+=============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                       Starting                                                                                   Required          
+Instance                                               Reference                                         Type     Pin     Net                     Time         Slack
+                                                       Clock                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.start_up_timer.counter[2]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[2]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.counter[4]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[4]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.counter[5]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[5]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.counter[6]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[6]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.counter[7]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[7]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.counter[8]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[8]            9.745        7.150
+Nokia_Driver_Container_0.start_up_timer.timer_sig      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      EN      un2_counter             9.662        7.416
+Nokia_Driver_Container_0.start_up_timer.counter[3]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_3_S     9.745        7.886
+Nokia_Driver_Container_0.start_up_timer.counter[1]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_1_S     9.745        7.919
+Nokia_Driver_Container_0.start_up_timer.counter[0]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_0_S     9.745        7.935
+====================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      2.595
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 7.150
+
+    Number of logic level(s):                3
+    Starting point:                          Nokia_Driver_Container_0.start_up_timer.counter[0] / Q
+    Ending point:                            Nokia_Driver_Container_0.start_up_timer.counter[2] / D
+    The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                      Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.start_up_timer.counter[0]        SLE      Q        Out     0.108     0.108       -         
+counter[0]                                                Net      -        -       0.497     -           2         
+Nokia_Driver_Container_0.start_up_timer.un2_counter_4     CFG3     C        In      -         0.605       -         
+Nokia_Driver_Container_0.start_up_timer.un2_counter_4     CFG3     Y        Out     0.210     0.815       -         
+un2_counter_4                                             Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.start_up_timer.un2_counter       CFG4     D        In      -         1.063       -         
+Nokia_Driver_Container_0.start_up_timer.un2_counter       CFG4     Y        Out     0.288     1.351       -         
+un2_counter                                               Net      -        -       0.896     -           7         
+Nokia_Driver_Container_0.start_up_timer.counter_3[2]      CFG3     A        In      -         2.247       -         
+Nokia_Driver_Container_0.start_up_timer.counter_3[2]      CFG3     Y        Out     0.100     2.347       -         
+counter_3[2]                                              Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.start_up_timer.counter[2]        SLE      D        In      -         2.595       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 2.850 is 0.961(33.7%) logic and 1.889(66.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: LCD_Controller_System|Board_Buttons[0]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                                                      Arrival          
+Instance                                       Reference                                  Type     Pin     Net               Time        Slack
+                                               Clock                                                                                          
+----------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.LCD_Backlight_sig     LCD_Controller_System|Board_Buttons[0]     SLE      Q       Board_J7_c[3]     0.108       8.171
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                                                        Required          
+Instance                                       Reference                                  Type     Pin     Net                 Time         Slack
+                                               Clock                                                                                             
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.LCD_Backlight_sig     LCD_Controller_System|Board_Buttons[0]     SLE      D       Board_J7_c_i[3]     9.745        8.171
+=================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      1.574
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 8.171
+
+    Number of logic level(s):                1
+    Starting point:                          Nokia_Driver_Container_0.LCD_Backlight_sig / Q
+    Ending point:                            Nokia_Driver_Container_0.LCD_Backlight_sig / D
+    The start point is clocked by            LCD_Controller_System|Board_Buttons[0] [rising] on pin CLK
+    The end   point is clocked by            LCD_Controller_System|Board_Buttons[0] [rising] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                               Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.LCD_Backlight_sig         SLE      Q        Out     0.108     0.108       -         
+Board_J7_c[3]                                      Net      -        -       1.117     -           2         
+Nokia_Driver_Container_0.LCD_Backlight_sig_RNO     CFG1     A        In      -         1.225       -         
+Nokia_Driver_Container_0.LCD_Backlight_sig_RNO     CFG1     Y        Out     0.100     1.325       -         
+Board_J7_c_i[3]                                    Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.LCD_Backlight_sig         SLE      D        In      -         1.574       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 1.829 is 0.464(25.3%) logic and 1.366(74.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                                                           Arrival          
+Instance                               Reference     Type               Pin        Net                                                    Time        Slack
+                                       Clock                                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       FCCC_C0_0_LOCK                                         0.000       5.507
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                GL1        GL1_net_i                                              0.000       7.688
+OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
+===========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                               Starting                                                                                         Required          
+Instance                                                       Reference     Type     Pin                Net                                                    Time         Slack
+                                                               Clock                                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig     System        SLE      EN                 SPICLK_last_sig_0_sqmuxa                               9.662        5.507
+FCCC_C0_0.FCCC_C0_0.CCC_INST                                   System        CCC      RCOSC_25_50MHZ     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
+==================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.338
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.662
+
+    - Propagation time:                      4.155
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 5.507
+
+    Number of logic level(s):                3
+    Starting point:                          FCCC_C0_0.FCCC_C0_0.CCC_INST / LOCK
+    Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig / EN
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                     Pin      Pin               Arrival     No. of    
+Name                                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST                                            CCC        LOCK     Out     0.000     0.000       -         
+FCCC_C0_0_LOCK                                                          Net        -        -       1.117     -           1         
+AND2_0                                                                  AND2       A        In      -         1.117       -         
+AND2_0                                                                  AND2       Y        Out     0.087     1.204       -         
+AND2_0                                                                  Net        -        -       1.117     -           1         
+AND2_0_RNIKOS1                                                          CLKINT     A        In      -         2.321       -         
+AND2_0_RNIKOS1                                                          CLKINT     Y        Out     0.375     2.696       -         
+AND2_0_Y                                                                Net        -        -       1.117     -           51        
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig_0_sqmuxa     CFG2       A        In      -         3.814       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig_0_sqmuxa     CFG2       Y        Out     0.087     3.901       -         
+SPICLK_last_sig_0_sqmuxa                                                Net        -        -       0.254     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig              SLE        EN       In      -         4.155       -         
+====================================================================================================================================
+Total path delay (propagation time + setup) of 4.493 is 0.887(19.7%) logic and 3.606(80.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+---------------------------------------
+Resource Usage Report for LCD_Controller_System 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          3 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           4 uses
+CFG2           21 uses
+CFG3           61 uses
+CFG4           99 uses
+
+Carry cells:
+ARI1            18 uses - used for arithmetic functions
+ARI1            2 uses - used for Wide-Mux implementation
+Total ARI1      20 uses
+
+
+Sequential Cells: 
+SLE            50 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 26
+I/O primitives: 25
+INBUF          2 uses
+OUTBUF         23 uses
+
+
+Global Clock Buffers: 3
+
+Total LUTs:    205
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  50 + 0 + 0 + 0 = 50;
+Total number of LUTs after P&R:  205 + 0 + 0 + 0 = 205;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 142MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Oct 29 01:04:12 2019
+
+###########################################################]

@@ -1,0 +1,10 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Removing sequential instance interrupt_pulse (in view: work.timer(architecture_timer)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\LCD_Controller_System.sap.

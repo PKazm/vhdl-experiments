@@ -1,0 +1,410 @@
+KEY LIBERO "12.600"
+KEY CAPTURE "12.600.0.14"
+KEY DEFAULT_IMPORT_LOC "D:\Appsnotes\2010\User_Logic_to_MSS\design_files\User_Logic_MSS_DF_old\APB_master_fabric\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_N"
+KEY VendorTechnology_Package "tq144"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "LCD_Controller_System::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572294309"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572247020"
+SIZE="682"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd,hdl"
+STATE="utd"
+TIME="1563594925"
+SIZE="2164"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.vhd,hdl"
+STATE="utd"
+TIME="1563594925"
+SIZE="2108"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572294309"
+SIZE="10591"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
+STATE="utd"
+TIME="1572294309"
+SIZE="3443"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572294309"
+SIZE="705"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
+STATE="utd"
+TIME="1572294309"
+SIZE="5700"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\LCD_Controller_System\LCD_Controller_System.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572309096"
+SIZE="3131"
+ENDFILE
+VALUE "<project>\component\work\LCD_Controller_System\LCD_Controller_System.vhd,hdl"
+STATE="utd"
+TIME="1572309095"
+SIZE="7370"
+PARENT="<project>\component\work\LCD_Controller_System\LCD_Controller_System.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572247020"
+SIZE="2909"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.vhd,hdl"
+STATE="utd"
+TIME="1572247020"
+SIZE="3429"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572247020"
+SIZE="460"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd,hdl"
+STATE="utd"
+TIME="1572247020"
+SIZE="896"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
+STATE="utd"
+TIME="1572248467"
+SIZE="3404"
+ENDFILE
+VALUE "<project>\designer\impl1\LCD_Controller_System.ide_des,ide_des"
+STATE="utd"
+TIME="1572247880"
+SIZE="467"
+ENDFILE
+VALUE "<project>\hdl\Nokia5110_Driver.vhd,hdl"
+STATE="utd"
+TIME="1572322574"
+SIZE="7744"
+ENDFILE
+VALUE "<project>\hdl\Nokia5110_Memory.vhd,hdl"
+STATE="utd"
+TIME="1572325435"
+SIZE="13901"
+ENDFILE
+VALUE "<project>\hdl\Nokia_Driver_Container.vhd,hdl"
+STATE="utd"
+TIME="1572321607"
+SIZE="4721"
+ENDFILE
+VALUE "<project>\hdl\timer.vhd,hdl"
+STATE="utd"
+TIME="1572312293"
+SIZE="1153"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1572305163"
+SIZE="1390"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1572305352"
+SIZE="233"
+ENDFILE
+VALUE "<project>\synthesis\LCD_Controller_System.so,so"
+STATE="utd"
+TIME="1572248430"
+SIZE="275"
+ENDFILE
+VALUE "<project>\synthesis\LCD_Controller_System.vm,syn_vm"
+STATE="utd"
+TIME="1572316278"
+SIZE="19808"
+ENDFILE
+VALUE "<project>\synthesis\LCD_Controller_System_syn.prj,prj"
+STATE="utd"
+TIME="1572248431"
+SIZE="2949"
+ENDFILE
+VALUE "<project>\synthesis\LCD_Controller_System_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1572248430"
+SIZE="798"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "LCD_Controller_System::work"
+FILE "<project>\component\work\LCD_Controller_System\LCD_Controller_System.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\LCD_Controller_System.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=FALSE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l testbench_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Designer\binfp\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "LCD_Controller_System::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\LCD_Controller_System.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run PROGRAM Action:LCD_Controller_System_PROGRAM.log
+StartPage;StartPage;0
+SmartDesign;LCD_Controller_System;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "LCD_Controller_System::work","component\work\LCD_Controller_System\LCD_Controller_System.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "Nokia_Driver_Container::work","hdl\Nokia_Driver_Container.vhd","FALSE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "Nokia5110_Memory::work","hdl\Nokia5110_Memory.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia5110_Memory::work","hdl\Nokia5110_Memory.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia_Driver_Container::work","hdl\Nokia_Driver_Container.vhd","FALSE","FALSE"
+SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

@@ -7,3 +7,5 @@ Nokia_Driver_Container.vhd is a simple container to direct pins and signals usin
 Nokia5110_Memory.vhd is created as a standalone file to reduce the size of the Driver file. It has been prepopulated with Ignignokt.
 
 Nokia5110_Driver.vhd is the meat. It mimics an SPI master but is solely intended to drive the Nokia5110 LCD. Only features and connections present in the Nokia5110 LCD have been included.
+
+![proof](picsbecauseithappened.jpg)

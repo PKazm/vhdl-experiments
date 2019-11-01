@@ -24,19 +24,19 @@ Part:			M2S010TQ144STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      50                 100 %                
+SLE      56                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block LCD_Controller_System:	50 (16.29 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block LCD_Controller_System:	56 (15.22 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           185                100 %                
-ARI1          20                 100 %                
+CFG           225                100 %                
+ARI1          35                 100 %                
 BLACK BOX     4                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block LCD_Controller_System:	209 (68.08 % Utilization)
+Total COMBINATIONAL LOGIC in the block LCD_Controller_System:	264 (71.74 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -44,7 +44,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     3                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block LCD_Controller_System:	3 (0.98 % Utilization)
+Total GLOBAL BUFFERS in the block LCD_Controller_System:	3 (0.82 % Utilization)
 
 
 IO PADS
@@ -52,7 +52,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       25                 100 %                
 =================================================
-Total IO PADS in the block LCD_Controller_System:	25 (8.14 % Utilization)
+Total IO PADS in the block LCD_Controller_System:	25 (6.79 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
@@ -64,7 +64,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  25 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block LCD_Controller_System.FCCC_C0:	1 (0.33 % Utilization)
+Total COMBINATIONAL LOGIC in the block LCD_Controller_System.FCCC_C0:	1 (0.27 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -72,7 +72,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  66.7 %               
 ===================================================
-Total GLOBAL BUFFERS in the block LCD_Controller_System.FCCC_C0:	2 (0.65 % Utilization)
+Total GLOBAL BUFFERS in the block LCD_Controller_System.FCCC_C0:	2 (0.54 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
@@ -84,7 +84,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  25 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.33 % Utilization)
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.27 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -92,7 +92,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  66.7 %               
 ===================================================
-Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (0.65 % Utilization)
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (0.54 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   Nokia_Driver_Container   ########
@@ -102,18 +102,18 @@ Instance path:   LCD_Controller_System.Nokia_Driver_Container
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      50                 100 %                
+SLE      56                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block LCD_Controller_System.Nokia_Driver_Container:	50 (16.29 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block LCD_Controller_System.Nokia_Driver_Container:	56 (15.22 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      183                98.9 %               
-ARI1     20                 100 %                
+CFG      223                99.1 %               
+ARI1     35                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block LCD_Controller_System.Nokia_Driver_Container:	203 (66.12 % Utilization)
+Total COMBINATIONAL LOGIC in the block LCD_Controller_System.Nokia_Driver_Container:	258 (70.11 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   Nokia5110_Driver   ########
@@ -123,60 +123,52 @@ Instance path:   Nokia_Driver_Container.Nokia5110_Driver
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      39                 78 %                 
+SLE      55                 98.2 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia_Driver_Container.Nokia5110_Driver:	39 (12.70 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Nokia_Driver_Container.Nokia5110_Driver:	55 (14.95 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      172                93 %                 
-ARI1     10                 50 %                 
+CFG      221                98.2 %               
+ARI1     35                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia_Driver_Container.Nokia5110_Driver:	182 (59.28 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia_Driver_Container.Nokia5110_Driver:	256 (69.57 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   Nokia5110_Memory   ########
 Instance path:   Nokia5110_Driver.Nokia5110_Memory                    
 ======================================================================
 
-SEQUENTIAL ELEMENTS
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-SLE      8                  16 %                 
-=================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.Nokia5110_Memory:	8 (2.61 % Utilization)
-
-
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      119                64.3 %               
-ARI1     2                  10 %                 
+CFG      107                47.6 %               
+ARI1     8                  22.9 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.Nokia5110_Memory:	121 (39.41 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.Nokia5110_Memory:	115 (31.25 % Utilization)
 
 -----------------------------------------------------------
 ########   Utilization report for  cell:   timer   ########
-Instance path:   Nokia_Driver_Container.timer              
+Instance path:   Nokia5110_Driver.timer                    
 ===========================================================
 
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      10                 20 %                 
+SLE      20                 35.7 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia_Driver_Container.timer:	10 (3.26 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.timer:	20 (5.43 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      9                  4.86 %               
-ARI1     10                 50 %                 
+CFG      13                 5.78 %               
+ARI1     19                 54.3 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia_Driver_Container.timer:	19 (6.19 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timer:	32 (8.70 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########
@@ -188,7 +180,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  25 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block LCD_Controller_System.OSC_C0:	1 (0.33 % Utilization)
+Total COMBINATIONAL LOGIC in the block LCD_Controller_System.OSC_C0:	1 (0.27 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
@@ -200,7 +192,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  25 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.33 % Utilization)
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.27 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

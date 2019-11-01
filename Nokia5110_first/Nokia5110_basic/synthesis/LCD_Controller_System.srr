@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: PHOENIX136DESKY
 
-# Tue Oct 29 01:04:05 2019
+# Fri Nov  1 04:21:00 2019
 
 #Implementation: synthesis
 
@@ -43,8 +43,6 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 @N|Running in 64-bit mode
 @N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd":17:7:17:27|Top entity is set to LCD_Controller_System.
 File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
-File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd changed - recompiling
-File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd changed - recompiling
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0.vhd changed - recompiling
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd changed - recompiling
@@ -53,7 +51,8 @@ File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\O
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\OSC_C0\OSC_C0.vhd changed - recompiling
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd changed - recompiling
 VHDL syntax check successful!
-File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\LCD_Controller_System\LCD_Controller_System.vhd":17:7:17:27|Synthesizing work.lcd_controller_system.rtl.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
@@ -74,15 +73,28 @@ Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
 Post processing for work.osc_c0.rtl
 Running optimization stage 1 on OSC_C0 .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":23:7:23:28|Synthesizing work.nokia_driver_container.architecture_nokia_driver_container.
-@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":118:12:118:14|Signal clk in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
-@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":118:4:118:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":120:24:120:36|Referenced variable board_buttons is not in sensitivity list.
+@W: CD276 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":36:4:36:14|Map for port driver_busy of component nokia5110_driver not found
+@W: CD730 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":82:4:82:20|Component declaration has 9 ports but entity declares 10 ports
+@W: CD326 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":82:4:82:20|Port driver_busy of entity work.nokia5110_driver is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":96:12:96:14|Signal clk in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":96:4:96:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":98:24:98:36|Referenced variable board_buttons is not in sensitivity list.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":76:11:76:23|Signal timer_out_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia_Driver_Container.vhd":77:11:77:23|Signal timer_int_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":24:7:24:22|Synthesizing work.nokia5110_driver.architecture_nokia5110_driver.
-@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":42:27:42:28|Using sequential encoding for type lcd_state_machine.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":46:11:46:20|Signal getnewbyte is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":46:27:46:28|Using sequential encoding for type lcd_state_machine.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":22:4:22:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":24:11:24:17|Referenced variable presetn is not in sensitivity list.
+Post processing for work.timer.architecture_timer
+Running optimization stage 1 on timer .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":24:7:24:22|Synthesizing work.nokia5110_memory.architecture_nokia5110_memory.
 Post processing for work.nokia5110_memory.architecture_nokia5110_memory
 Running optimization stage 1 on Nokia5110_Memory .......
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|All reachable assignments to LCD_mem_sig_83_5(4) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|All reachable assignments to LCD_mem_sig_83_5(5) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|All reachable assignments to LCD_mem_sig_83_5(6) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|All reachable assignments to LCD_mem_sig_83_5(7) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|Latch generated from process for signal LCD_mem_sig_83_5(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -93,7 +105,6 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:44:127:48|All reachable assignments to LCD_mem_sig_83_4(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:37:127:41|Latch generated from process for signal LCD_mem_sig_83_3(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:37:127:41|Sharing sequential element LCD_mem_sig_83_3. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -104,14 +115,11 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:30:127:34|All reachable assignments to LCD_mem_sig_83_2(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:23:127:27|Latch generated from process for signal LCD_mem_sig_83_1(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:23:127:27|Sharing sequential element LCD_mem_sig_83_1. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|All reachable assignments to LCD_mem_sig_83_0(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|Latch generated from process for signal LCD_mem_sig_83_0(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -119,7 +127,7 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|All reachable assignments to LCD_mem_sig_82_5(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:9:127:13|Latch generated from process for signal LCD_mem_sig_82_5(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:44:126:48|Latch generated from process for signal LCD_mem_sig_82_4(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:44:126:48|Sharing sequential element LCD_mem_sig_82_4. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:37:126:41|All reachable assignments to LCD_mem_sig_82_3(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -140,10 +148,10 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:23:126:27|All reachable assignments to LCD_mem_sig_82_1(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|All reachable assignments to LCD_mem_sig_82_0(0) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|Latch generated from process for signal LCD_mem_sig_82_0(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|Sharing sequential element LCD_mem_sig_82_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|All reachable assignments to LCD_mem_sig_81_5(7) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|Latch generated from process for signal LCD_mem_sig_81_5(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|Sharing sequential element LCD_mem_sig_81_5. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:44:125:48|All reachable assignments to LCD_mem_sig_81_4(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -164,7 +172,6 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:30:125:34|All reachable assignments to LCD_mem_sig_81_2(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:23:125:27|Latch generated from process for signal LCD_mem_sig_81_1(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:23:125:27|Sharing sequential element LCD_mem_sig_81_1. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -172,6 +179,7 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|All reachable assignments to LCD_mem_sig_81_0(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:16:125:20|Latch generated from process for signal LCD_mem_sig_81_0(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -179,7 +187,8 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|All reachable assignments to LCD_mem_sig_80_5(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|Latch generated from process for signal LCD_mem_sig_80_5(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":125:9:125:13|Sharing sequential element LCD_mem_sig_80_5. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:44:124:48|Latch generated from process for signal LCD_mem_sig_80_4(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:44:124:48|Sharing sequential element LCD_mem_sig_80_4. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:37:124:41|All reachable assignments to LCD_mem_sig_80_3(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
@@ -200,6 +209,7 @@ Running optimization stage 1 on Nokia5110_Memory .......
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:23:124:27|All reachable assignments to LCD_mem_sig_80_1(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:16:124:20|All reachable assignments to LCD_mem_sig_80_0(0) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:16:124:20|Latch generated from process for signal LCD_mem_sig_80_0(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:16:124:20|Sharing sequential element LCD_mem_sig_80_0. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":124:9:124:13|Latch generated from process for signal LCD_mem_sig_79_5(7 downto 0); possible missing assignment in an if or case statement.
@@ -371,15 +381,11 @@ Only the first 100 messages of id 'CL111' are reported. To see all messages use 
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":97:23:97:27|Sharing sequential element LCD_mem_sig_53_1. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:44:96:48|Latch generated from process for signal LCD_mem_sig_52_4(7 downto 0); possible missing assignment in an if or case statement.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:44:96:48|Sharing sequential element LCD_mem_sig_52_4. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:37:96:41|Latch generated from process for signal LCD_mem_sig_52_3(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:30:96:34|Latch generated from process for signal LCD_mem_sig_52_2(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:30:96:34|Sharing sequential element LCD_mem_sig_52_2. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:16:96:20|Latch generated from process for signal LCD_mem_sig_52_0(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:16:96:20|Sharing sequential element LCD_mem_sig_52_0. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL117 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:9:96:13|Latch generated from process for signal LCD_mem_sig_51_5(7 downto 0); possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:9:96:13|Sharing sequential element LCD_mem_sig_51_5. Add a syn_preserve attribute to the element to prevent sharing.
 
 Only the first 100 messages of id 'CL117' are reported. To see all messages use 'report_messages -log C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synlog\LCD_Controller_System_compiler.srr -id CL117' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL117} -count unlimited' in the Tcl shell.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:30:96:34|Sharing sequential element LCD_mem_sig_52_2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:16:96:20|Sharing sequential element LCD_mem_sig_52_0. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":96:9:96:13|Sharing sequential element LCD_mem_sig_51_5. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:37:95:41|Sharing sequential element LCD_mem_sig_51_3. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:37:95:41|Sharing sequential element LCD_mem_sig_51_3. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":95:23:95:27|Sharing sequential element LCD_mem_sig_51_1. Add a syn_preserve attribute to the element to prevent sharing.
@@ -387,17 +393,13 @@ Only the first 100 messages of id 'CL117' are reported. To see all messages use 
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:30:94:34|Sharing sequential element LCD_mem_sig_50_2. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:16:94:20|Sharing sequential element LCD_mem_sig_50_0. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":94:9:94:13|Sharing sequential element LCD_mem_sig_49_5. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":93:23:93:27|Sharing sequential element LCD_mem_sig_49_1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":92:44:92:48|Sharing sequential element LCD_mem_sig_48_4. Add a syn_preserve attribute to the element to prevent sharing.
 
 Only the first 100 messages of id 'CL177' are reported. To see all messages use 'report_messages -log C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synlog\LCD_Controller_System_compiler.srr -id CL177' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL177} -count unlimited' in the Tcl shell.
 Post processing for work.nokia5110_driver.architecture_nokia5110_driver
 Running optimization stage 1 on Nokia5110_Driver .......
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Pruning unused register screen_sent_6. Make sure that there are no unused intermediate registers.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Feedback mux created for signal SPICLK_last_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
-@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":23:4:23:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\timer.vhd":25:11:25:17|Referenced variable presetn is not in sensitivity list.
-Post processing for work.timer.architecture_timer
-Running optimization stage 1 on timer .......
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":146:8:146:9|Feedback mux created for signal SPICLK_last_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 Post processing for work.nokia_driver_container.architecture_nokia_driver_container
 Running optimization stage 1 on Nokia_Driver_Container .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\component\work\FCCC_C0\FCCC_C0.vhd":17:7:17:13|Synthesizing work.fccc_c0.rtl.
@@ -430,9 +432,12 @@ Running optimization stage 2 on CLKINT .......
 Running optimization stage 2 on CCC .......
 Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
 Running optimization stage 2 on FCCC_C0 .......
-Running optimization stage 2 on timer .......
 Running optimization stage 2 on Nokia5110_Memory .......
-@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|Pruning register bits 7 to 1 of LCD_mem_sig_83_5(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":134:8:134:9|Pruning register bits 3 to 1 of LCD_mem_sig_83_5(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:37:127:41|Pruning register bits 7 to 1 of LCD_mem_sig_83_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":127:16:127:20|Pruning register bits 3 to 1 of LCD_mem_sig_83_0(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:16:126:20|Pruning register bits 7 to 2 of LCD_mem_sig_82_0(7 downto 1). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":126:9:126:13|Pruning register bits 6 to 1 of LCD_mem_sig_81_5(6 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:44:99:48|Pruning register bits 6 to 1 of LCD_mem_sig_55_4(6 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":99:37:99:41|Pruning register bits 4 to 1 of LCD_mem_sig_55_3(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":98:37:98:41|Pruning register bits 7 to 6 of LCD_mem_sig_54_3(7 downto 5). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
@@ -444,7 +449,6 @@ Running optimization stage 2 on Nokia5110_Memory .......
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":92:9:92:13|Pruning register bits 7 to 3 of LCD_mem_sig_47_5(7 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":91:44:91:48|Pruning register bits 7 to 1 of LCD_mem_sig_47_4(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":91:9:91:13|Pruning register bit 1 of LCD_mem_sig_46_5(1 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":90:30:90:34|Pruning register bits 6 to 1 of LCD_mem_sig_46_2(6 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":87:16:87:20|Pruning register bits 7 to 2 of LCD_mem_sig_43_0(7 downto 1). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":87:9:87:13|Pruning register bit 6 of LCD_mem_sig_42_5(6 downto 5). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":86:9:86:13|Pruning register bits 4 to 3 of LCD_mem_sig_41_5(4 downto 2). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
@@ -459,9 +463,18 @@ Running optimization stage 2 on Nokia5110_Memory .......
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":65:23:65:27|Pruning register bit 6 of LCD_mem_sig_21_1(6 downto 5). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":56:23:56:27|Pruning register bits 5 to 1 of LCD_mem_sig_12_1(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":55:23:55:27|Pruning register bit 7 of LCD_mem_sig_11_1(7 downto 6). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":44:16:44:20|Pruning register bits 7 to 5 of LCD_mem_sig_0_0(7 downto 4). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Memory.vhd":26:4:26:6|Input CLK is unused.
+Running optimization stage 2 on timer .......
 Running optimization stage 2 on Nokia5110_Driver .......
-@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Optimizing register bit init_step(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":106:8:106:9|Pruning register bit 3 of init_step(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":146:8:146:9|Optimizing register bit init_step(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":146:8:146:9|Pruning register bit 3 of init_step(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":146:8:146:9|Trying to extract state machine for register LCD_State.
+Extracted state machine for register LCD_State
+State machine has 2 reachable states with original encodings of:
+   00
+   10
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\hdl\Nokia5110_Driver.vhd":34:4:34:9|Input enable is unused.
 Running optimization stage 2 on Nokia_Driver_Container .......
 Running optimization stage 2 on RCOSC_25_50MHZ .......
 Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
@@ -475,12 +488,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 110MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 110MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct 29 01:04:07 2019
+# Fri Nov  1 04:21:01 2019
 
 ###########################################################]
 
@@ -507,17 +520,17 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct 29 01:04:07 2019
+# Fri Nov  1 04:21:01 2019
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct 29 01:04:08 2019
+# Fri Nov  1 04:21:01 2019
 
 ###########################################################]
 
@@ -544,12 +557,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct 29 01:04:09 2019
+# Fri Nov  1 04:21:03 2019
 
 ###########################################################]
 Premap Report
 
-# Tue Oct 29 01:04:09 2019
+# Fri Nov  1 04:21:03 2019
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -595,16 +608,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":80:16:80:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_36_0[0] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:23:79:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":65:23:65:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_0_0[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:16:87:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_43_0[1] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:9:87:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":83:30:83:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:16:79:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":98:44:98:48|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_54_4[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":91:30:91:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_47_2[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":127:9:127:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_82_5[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_81_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Removing sequential instance interrupt_pulse (in view: work.timer(architecture_timer)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=21  set on top level netlist LCD_Controller_System
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
@@ -619,9 +632,9 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     39   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     36   
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     23   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     31   
                                                                                                                                   
 0 -       LCD_Controller_System|Board_Buttons[0]            100.0 MHz     10.000        inferred     Inferred_clkgroup_0     1    
 ==================================================================================================================================
@@ -631,21 +644,21 @@ Level     Clock                                             Frequency     Period
 Clock Load Summary
 ***********************
 
-                                                  Clock     Source                                    Clock Pin                                                        Non-clock Pin                                                       Non-clock Pin                                                   
-Clock                                             Load      Pin                                       Seq Example                                                      Seq Example                                                         Comb Example                                                    
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            0         -                                         -                                                                -                                                                   -                                                               
-                                                                                                                                                                                                                                                                                                           
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     39        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.C     -                                                                   FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                            
-                                                                                                                                                                                                                                                                                                           
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     23        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     Nokia_Driver_Container_0.start_up_timer.timer_sig.C              Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.D[0]     Nokia_Driver_Container_0.Nokia_Driver_Comp.un1_clk_spi.I[0](inv)
-                                                                                                                                                                                                                                                                                                           
-LCD_Controller_System|Board_Buttons[0]            1         Board_Buttons[0](port)                    Nokia_Driver_Container_0.LCD_Backlight_sig.C                     -                                                                   Nokia_Driver_Container_0.Board_LEDs_1[0].I[0](inv)              
-===========================================================================================================================================================================================================================================================================================================
+                                                  Clock     Source                                    Clock Pin                                                                  Non-clock Pin                                                       Non-clock Pin                                                   
+Clock                                             Load      Pin                                       Seq Example                                                                Seq Example                                                         Comb Example                                                    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                         -                                                                          -                                                                   -                                                               
+                                                                                                                                                                                                                                                                                                                     
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     36        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.C               -                                                                   FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                            
+                                                                                                                                                                                                                                                                                                                     
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     31        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig.C     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.D[0]     Nokia_Driver_Container_0.Nokia_Driver_Comp.un1_clk_spi.I[0](inv)
+                                                                                                                                                                                                                                                                                                                     
+LCD_Controller_System|Board_Buttons[0]            1         Board_Buttons[0](port)                    Nokia_Driver_Container_0.LCD_Backlight_sig.C                               -                                                                   Nokia_Driver_Container_0.Board_LEDs_1[0].I[0](inv)              
+=====================================================================================================================================================================================================================================================================================================================
 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":121:8:121:9|Found inferred clock LCD_Controller_System|Board_Buttons[0] which controls 1 sequential elements including Nokia_Driver_Container_0.LCD_Backlight_sig. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":44:9:44:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 39 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 23 sequential elements including Nokia_Driver_Container_0.start_up_timer.counter[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":99:8:99:9|Found inferred clock LCD_Controller_System|Board_Buttons[0] which controls 1 sequential elements including Nokia_Driver_Container_0.LCD_Backlight_sig. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 36 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_State[0:1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":24:8:24:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 31 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[18:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
@@ -653,6 +666,11 @@ Finished Pre Mapping Phase.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
@@ -666,12 +684,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Oct 29 01:04:10 2019
+# Fri Nov  1 04:21:03 2019
 
 ###########################################################]
 Map & Optimize Report
 
-# Tue Oct 29 01:04:10 2019
+# Fri Nov  1 04:21:04 2019
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -717,75 +735,84 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|User-specified initial value defined for instance Nokia_Driver_Container_0.start_up_timer.counter[8:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|User-specified initial value defined for instance Nokia_Driver_Container_0.start_up_timer.timer_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":125:16:125:20|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_81_0[0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":88:16:88:20|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":56:23:56:27|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[6:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIDO_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_count[2:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_queue_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[7:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_Y[2:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.chip_enable_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_writing is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":106:8:106:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":121:8:121:9|User-specified initial value defined for instance Nokia_Driver_Container_0.LCD_Backlight_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":44:16:44:20|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_0_0[4] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":24:8:24:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[18:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":24:8:24:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.screen_finished is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[6:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_get_bit is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_count[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIDO_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_Y[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_start is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.data_command_queue_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.inverse_display is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.screen_send is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.chip_enable_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|User-specified initial value defined for instance Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":99:8:99:9|User-specified initial value defined for instance Nokia_Driver_Container_0.LCD_Backlight_sig is being ignored due to limitations in architecture. 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
-@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] is reduced to a combinational gate by constant propagation.
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":44:16:44:20|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_0_0[4] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":56:23:56:27|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":88:16:88:20|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":125:16:125:20|Sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_81_0[0] is reduced to a combinational gate by constant propagation.
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		     2.82ns		 268 /        50
-@N: FP130 |Promoting Net AND2_0_Y on CLKINT  I_71 
+   1		0h:00m:01s		     3.00ns		 308 /        56
+@N: FP130 |Promoting Net AND2_0_Y on CLKINT  I_69 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
 
 
@@ -796,39 +823,39 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 1 non-gated/non-generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 49 clock pin(s) of sequential element(s)
-0 instances converted, 49 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 55 clock pin(s) of sequential element(s)
+0 instances converted, 55 sequential instances remain driven by gated/generated clocks
 
 ========================================== Non-Gated/Non-Generated Clocks ===========================================
 Clock Tree ID     Driving Element        Drive Element Type     Fanout     Sample Instance                           
 ---------------------------------------------------------------------------------------------------------------------
 @K:CKID0003       Board_Buttons[1:0]     port                   1          Nokia_Driver_Container_0.LCD_Backlight_sig
 =====================================================================================================================
-===================================================================================================================== Gated/Generated Clocks =====================================================================================================================
-Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                                                Explanation                                                                                                   
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    39         Nokia_Driver_Container_0.Nokia_Driver_Comp.chip_enable_sig     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    10         Nokia_Driver_Container_0.start_up_timer.counter[0]             Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-==================================================================================================================================================================================================================================================================
+========================================================================================================================== Gated/Generated Clocks ==========================================================================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                                                          Explanation                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    35         Nokia_Driver_Container_0.Nokia_Driver_Comp.screen_send                   Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    20         Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+============================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 142MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 147MB)
 
 Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\synthesis\synwork\LCD_Controller_System_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 147MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 142MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 147MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 147MB)
 
 @W: MT246 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock LCD_Controller_System|Board_Buttons[0] with period 10.00ns. Please declare a user-defined clock on port Board_Buttons[0].
@@ -837,7 +864,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Oct 29 01:04:12 2019
+# Timing Report written on Fri Nov  1 04:21:06 2019
 #
 
 
@@ -857,13 +884,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 3.809
+Worst slack in design: 2.866
 
                                                   Requested     Estimated     Requested     Estimated               Clock        Clock              
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     161.5 MHz     10.000        6.191         3.809     inferred     Inferred_clkgroup_1
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     350.8 MHz     10.000        2.850         7.150     inferred     Inferred_clkgroup_2
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     140.2 MHz     10.000        7.134         2.866     inferred     Inferred_clkgroup_1
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     295.7 MHz     10.000        3.382         6.618     inferred     Inferred_clkgroup_2
 LCD_Controller_System|Board_Buttons[0]            100.0 MHz     546.7 MHz     10.000        1.829         8.171     inferred     Inferred_clkgroup_0
 System                                            100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
 ====================================================================================================================================================
@@ -880,11 +907,11 @@ Clocks                                                                          
 Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                         System                                         |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
-System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      5.507  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      5.849  |  No paths    -      |  No paths    -      |  No paths    -    
 LCD_Controller_System|Board_Buttons[0]         LCD_Controller_System|Board_Buttons[0]         |  10.000      8.171  |  No paths    -      |  No paths    -      |  No paths    -    
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      3.810  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      2.866  |  No paths    -      |  No paths    -      |  No paths    -    
 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  |  10.000      7.150  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  |  10.000      6.618  |  No paths    -      |  No paths    -      |  No paths    -    
 ====================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -911,37 +938,37 @@ Starting Points with Worst Slack
 Instance                                                      Reference                                         Type     Pin     Net                Time        Slack
                                                               Clock                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[3]     0.108       3.809
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[0]     0.087       3.811
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[1]     0.087       3.817
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[2]     0.108       3.888
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[4]     0.108       4.160
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[5]     0.108       4.982
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_Y[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_Y[0]     0.108       5.548
-Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[0]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[0]       0.108       6.242
-Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[1]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[1]       0.108       6.328
-Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[2]       0.108       6.405
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[3]     0.108       2.866
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[2]     0.108       2.965
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[1]     0.108       3.186
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[0]     0.108       3.299
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[4]     0.108       4.039
+Nokia_Driver_Container_0.Nokia_Driver_Comp.frame_start        FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       frame_start        0.108       4.128
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       disp_byte_X[5]     0.108       4.210
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_State[0]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       LCD_State[0]       0.108       4.249
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[0]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[0]       0.108       4.579
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[1]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       init_step[1]       0.087       4.703
 =====================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                                                Starting                                                                                 Required          
-Instance                                                                        Reference                                         Type     Pin     Net                   Time         Slack
-                                                                                Clock                                                                                                      
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[5]     9.745        3.809
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[3]     9.745        3.811
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[4]     9.745        3.811
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[2]     9.745        3.880
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[6]     9.745        3.916
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[1]     9.745        4.118
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[0]     9.745        4.587
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       display_byte_2[7]     9.745        4.595
-Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[1]                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       init_step_6[1]        9.745        6.242
-Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2]                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       init_step_6[2]        9.745        6.242
-===========================================================================================================================================================================================
+                                                               Starting                                                                                 Required          
+Instance                                                       Reference                                         Type     Pin     Net                   Time         Slack
+                                                               Clock                                                                                                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[5]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[5]     9.745        2.866
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[2]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[2]     9.745        3.506
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[4]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[4]     9.745        3.558
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[1]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[1]     9.745        3.850
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[6]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[6]     9.745        3.935
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[3]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[3]     9.745        4.025
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[0]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[0]     9.745        4.170
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[7]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       SPIout_byte_14[7]     9.745        4.596
+Nokia_Driver_Container_0.Nokia_Driver_Comp.init_step[2]        FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       init_step_6[2]        9.745        4.871
+Nokia_Driver_Container_0.Nokia_Driver_Comp.inverse_display     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       inverse_display_0     9.745        4.994
+==========================================================================================================================================================================
 
 
 
@@ -955,45 +982,48 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.745
 
-    - Propagation time:                      5.935
+    - Propagation time:                      6.879
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     3.809
+    = Slack (critical) :                     2.866
 
-    Number of logic level(s):                7
+    Number of logic level(s):                8
     Starting point:                          Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3] / Q
-    Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5] / D
+    Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[5] / D
     The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
     The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                                                          Pin      Pin               Arrival     No. of    
-Name                                                                                           Type     Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]                                      SLE      Q        Out     0.108     0.108       -         
-disp_byte_X[3]                                                                                 Net      -        -       1.359     -           39        
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m7             CFG4     D        In      -         1.467       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m7             CFG4     Y        Out     0.288     1.755       -         
-N_8                                                                                            Net      -        -       0.815     -           4         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d_1_0     CFG3     C        In      -         2.570       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d_1_0     CFG3     Y        Out     0.226     2.795       -         
-m117_d_1_0                                                                                     Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d         CFG3     C        In      -         3.044       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117_d         CFG3     Y        Out     0.203     3.247       -         
-m117_d                                                                                         Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117           CFG4     D        In      -         3.495       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m117           CFG4     Y        Out     0.271     3.767       -         
-N_118                                                                                          Net      -        -       0.497     -           2         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118_2         CFG3     C        In      -         4.264       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118_2         CFG3     Y        Out     0.203     4.467       -         
-m118_1                                                                                         Net      -        -       0.497     -           2         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118           CFG4     D        In      -         4.964       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m118           CFG4     Y        Out     0.271     5.235       -         
-N_119                                                                                          Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m125           CFG4     C        In      -         5.484       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_2_7_0_.m125           CFG4     Y        Out     0.203     5.687       -         
-display_byte_2[5]                                                                              Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[5]                    SLE      D        In      -         5.935       -         
-=========================================================================================================================================================
-Total path delay (propagation time + setup) of 6.191 is 2.029(32.8%) logic and 4.161(67.2%) route.
+Instance / Net                                                                                      Pin      Pin               Arrival     No. of    
+Name                                                                                       Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.disp_byte_X[3]                                  SLE      Q        Out     0.108     0.108       -         
+disp_byte_X[3]                                                                             Net      -        -       1.411     -           44        
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m7           CFG4     D        In      -         1.519       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m7           CFG4     Y        Out     0.288     1.807       -         
+N_8                                                                                        Net      -        -       0.815     -           4         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m22          CFG4     D        In      -         2.621       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m22          CFG4     Y        Out     0.317     2.939       -         
+N_23                                                                                       Net      -        -       0.855     -           5         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m130         CFG4     C        In      -         3.794       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m130         CFG4     Y        Out     0.203     3.997       -         
+N_131                                                                                      Net      -        -       0.497     -           2         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_1       CFG3     B        In      -         4.494       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_1       CFG3     Y        Out     0.165     4.658       -         
+m148_1                                                                                     Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_2       CFG4     D        In      -         4.907       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_2       CFG4     Y        Out     0.326     5.233       -         
+m148_2                                                                                     Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_2_1     CFG3     C        In      -         5.482       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte_7_0_.m148_2_1     CFG3     Y        Out     0.203     5.685       -         
+N_149                                                                                      Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte_14_1_0[5]                           CFG3     C        In      -         5.933       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte_14_1_0[5]                           CFG3     Y        Out     0.226     6.159       -         
+SPIout_byte_14_1[5]                                                                        Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte_14[5]                               CFG4     C        In      -         6.407       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte_14[5]                               CFG4     Y        Out     0.223     6.630       -         
+SPIout_byte_14[5]                                                                          Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPIout_byte[5]                                  SLE      D        In      -         6.879       -         
+=====================================================================================================================================================
+Total path delay (propagation time + setup) of 7.134 is 2.314(32.4%) logic and 4.820(67.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1008,41 +1038,41 @@ Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                                                       Starting                                                                             Arrival          
-Instance                                               Reference                                         Type     Pin     Net               Time        Slack
-                                                       Clock                                                                                                 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.start_up_timer.counter[0]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[0]        0.108       7.150
-Nokia_Driver_Container_0.start_up_timer.counter[1]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[1]        0.108       7.150
-Nokia_Driver_Container_0.start_up_timer.counter[4]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[4]        0.108       7.228
-Nokia_Driver_Container_0.start_up_timer.counter[2]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[2]        0.087       7.237
-Nokia_Driver_Container_0.start_up_timer.counter[5]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[5]        0.108       7.273
-Nokia_Driver_Container_0.start_up_timer.counter[3]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[3]        0.087       7.280
-Nokia_Driver_Container_0.start_up_timer.counter[6]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[6]        0.108       7.350
-Nokia_Driver_Container_0.start_up_timer.timer_sig      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       timer_out_sig     0.108       7.353
-Nokia_Driver_Container_0.start_up_timer.counter[8]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[8]        0.108       7.731
-Nokia_Driver_Container_0.start_up_timer.counter[7]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[7]        0.108       7.808
-=============================================================================================================================================================
+                                                                     Starting                                                                           Arrival          
+Instance                                                             Reference                                         Type     Pin     Net             Time        Slack
+                                                                     Clock                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[11]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[11]     0.108       6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[12]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[12]     0.108       6.696
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[17]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[17]     0.108       6.742
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[18]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[18]     0.108       6.819
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[0]      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[0]      0.108       6.861
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[15]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[15]     0.087       7.013
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[16]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[16]     0.087       7.114
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[7]      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[7]      0.087       7.137
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[1]      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[1]      0.108       7.187
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[4]      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       counter[4]      0.108       7.231
+=========================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                       Starting                                                                                   Required          
-Instance                                               Reference                                         Type     Pin     Net                     Time         Slack
-                                                       Clock                                                                                                        
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.start_up_timer.counter[2]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[2]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.counter[4]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[4]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.counter[5]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[5]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.counter[6]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[6]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.counter[7]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[7]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.counter[8]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[8]            9.745        7.150
-Nokia_Driver_Container_0.start_up_timer.timer_sig      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      EN      un2_counter             9.662        7.416
-Nokia_Driver_Container_0.start_up_timer.counter[3]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_3_S     9.745        7.886
-Nokia_Driver_Container_0.start_up_timer.counter[1]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_1_S     9.745        7.919
-Nokia_Driver_Container_0.start_up_timer.counter[0]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_counter_cry_0_S     9.745        7.935
-====================================================================================================================================================================
+                                                                         Starting                                                                                    Required          
+Instance                                                                 Reference                                         Type     Pin     Net                      Time         Slack
+                                                                         Clock                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[7]          FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[7]             9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[9]          FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[9]             9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[11]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[11]            9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[12]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[12]            9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[17]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[17]            9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[18]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       counter_3[18]            9.745        6.618
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un2_counter              9.745        7.020
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[16]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un5_counter_cry_16_S     9.745        8.124
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[15]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un5_counter_cry_15_S     9.745        8.141
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[14]         FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un5_counter_cry_14_S     9.745        8.157
+=======================================================================================================================================================================================
 
 
 
@@ -1056,33 +1086,36 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.745
 
-    - Propagation time:                      2.595
+    - Propagation time:                      3.127
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 7.150
+    = Slack (non-critical) :                 6.618
 
-    Number of logic level(s):                3
-    Starting point:                          Nokia_Driver_Container_0.start_up_timer.counter[0] / Q
-    Ending point:                            Nokia_Driver_Container_0.start_up_timer.counter[2] / D
+    Number of logic level(s):                4
+    Starting point:                          Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[11] / Q
+    Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[7] / D
     The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
     The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                     Pin      Pin               Arrival     No. of    
-Name                                                      Type     Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.start_up_timer.counter[0]        SLE      Q        Out     0.108     0.108       -         
-counter[0]                                                Net      -        -       0.497     -           2         
-Nokia_Driver_Container_0.start_up_timer.un2_counter_4     CFG3     C        In      -         0.605       -         
-Nokia_Driver_Container_0.start_up_timer.un2_counter_4     CFG3     Y        Out     0.210     0.815       -         
-un2_counter_4                                             Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.start_up_timer.un2_counter       CFG4     D        In      -         1.063       -         
-Nokia_Driver_Container_0.start_up_timer.un2_counter       CFG4     Y        Out     0.288     1.351       -         
-un2_counter                                               Net      -        -       0.896     -           7         
-Nokia_Driver_Container_0.start_up_timer.counter_3[2]      CFG3     A        In      -         2.247       -         
-Nokia_Driver_Container_0.start_up_timer.counter_3[2]      CFG3     Y        Out     0.100     2.347       -         
-counter_3[2]                                              Net      -        -       0.248     -           1         
-Nokia_Driver_Container_0.start_up_timer.counter[2]        SLE      D        In      -         2.595       -         
-====================================================================================================================
-Total path delay (propagation time + setup) of 2.850 is 0.961(33.7%) logic and 1.889(66.3%) route.
+Instance / Net                                                                   Pin      Pin               Arrival     No. of    
+Name                                                                    Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[11]        SLE      Q        Out     0.108     0.108       -         
+counter[11]                                                             Net      -        -       0.497     -           2         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter_10     CFG4     D        In      -         0.605       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter_10     CFG4     Y        Out     0.288     0.893       -         
+un2_counter_10                                                          Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter_14     CFG4     B        In      -         1.141       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter_14     CFG4     Y        Out     0.164     1.306       -         
+un2_counter_14                                                          Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter        CFG4     D        In      -         1.554       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.un2_counter        CFG4     Y        Out     0.288     1.842       -         
+un2_counter                                                             Net      -        -       0.936     -           7         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter_3[7]       CFG2     A        In      -         2.778       -         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter_3[7]       CFG2     Y        Out     0.100     2.878       -         
+counter_3[7]                                                            Net      -        -       0.248     -           1         
+Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[7]         SLE      D        In      -         3.127       -         
+==================================================================================================================================
+Total path delay (propagation time + setup) of 3.382 is 1.203(35.6%) logic and 2.179(64.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1166,8 +1199,8 @@ Starting Points with Worst Slack
 Instance                               Reference     Type               Pin        Net                                                    Time        Slack
                                        Clock                                                                                                               
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       FCCC_C0_0_LOCK                                         0.000       5.507
-FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                GL1        GL1_net_i                                              0.000       7.688
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       FCCC_C0_0_LOCK                                         0.000       5.849
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                GL1        GL1_net_i                                              0.000       7.475
 OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
 ===========================================================================================================================================================
 
@@ -1179,7 +1212,7 @@ Ending Points with Worst Slack
 Instance                                                       Reference     Type     Pin                Net                                                    Time         Slack
                                                                Clock                                                                                                              
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig     System        SLE      EN                 SPICLK_last_sig_0_sqmuxa                               9.662        5.507
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig     System        SLE      EN                 AND2_0_Y                                               9.662        5.849
 FCCC_C0_0.FCCC_C0_0.CCC_INST                                   System        CCC      RCOSC_25_50MHZ     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
 ==================================================================================================================================================================================
 
@@ -1195,34 +1228,31 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.662
 
-    - Propagation time:                      4.155
+    - Propagation time:                      3.814
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 5.507
+    = Slack (non-critical) :                 5.849
 
-    Number of logic level(s):                3
+    Number of logic level(s):                2
     Starting point:                          FCCC_C0_0.FCCC_C0_0.CCC_INST / LOCK
     Ending point:                            Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig / EN
     The start point is clocked by            System [rising]
     The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                                     Pin      Pin               Arrival     No. of    
-Name                                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------------
-FCCC_C0_0.FCCC_C0_0.CCC_INST                                            CCC        LOCK     Out     0.000     0.000       -         
-FCCC_C0_0_LOCK                                                          Net        -        -       1.117     -           1         
-AND2_0                                                                  AND2       A        In      -         1.117       -         
-AND2_0                                                                  AND2       Y        Out     0.087     1.204       -         
-AND2_0                                                                  Net        -        -       1.117     -           1         
-AND2_0_RNIKOS1                                                          CLKINT     A        In      -         2.321       -         
-AND2_0_RNIKOS1                                                          CLKINT     Y        Out     0.375     2.696       -         
-AND2_0_Y                                                                Net        -        -       1.117     -           51        
-Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig_0_sqmuxa     CFG2       A        In      -         3.814       -         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig_0_sqmuxa     CFG2       Y        Out     0.087     3.901       -         
-SPICLK_last_sig_0_sqmuxa                                                Net        -        -       0.254     -           1         
-Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig              SLE        EN       In      -         4.155       -         
-====================================================================================================================================
-Total path delay (propagation time + setup) of 4.493 is 0.887(19.7%) logic and 3.606(80.3%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                           Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST                                   CCC        LOCK     Out     0.000     0.000       -         
+FCCC_C0_0_LOCK                                                 Net        -        -       1.117     -           1         
+AND2_0                                                         AND2       A        In      -         1.117       -         
+AND2_0                                                         AND2       Y        Out     0.087     1.204       -         
+AND2_0                                                         Net        -        -       1.117     -           1         
+AND2_0_RNIKOS1                                                 CLKINT     A        In      -         2.321       -         
+AND2_0_RNIKOS1                                                 CLKINT     Y        Out     0.375     2.696       -         
+AND2_0_Y                                                       Net        -        -       1.117     -           57        
+Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig     SLE        EN       In      -         3.814       -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 4.151 is 0.800(19.3%) logic and 3.351(80.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1232,10 +1262,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 147MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 147MB)
 
 ---------------------------------------
 Resource Usage Report for LCD_Controller_System 
@@ -1247,19 +1277,19 @@ CCC             1 use
 CLKINT          3 uses
 RCOSC_25_50MHZ  1 use
 SYSRESET        1 use
-CFG1           4 uses
-CFG2           21 uses
-CFG3           61 uses
-CFG4           99 uses
+CFG1           5 uses
+CFG2           32 uses
+CFG3           60 uses
+CFG4           128 uses
 
 Carry cells:
-ARI1            18 uses - used for arithmetic functions
-ARI1            2 uses - used for Wide-Mux implementation
-Total ARI1      20 uses
+ARI1            27 uses - used for arithmetic functions
+ARI1            8 uses - used for Wide-Mux implementation
+Total ARI1      35 uses
 
 
 Sequential Cells: 
-SLE            50 uses
+SLE            56 uses
 
 DSP Blocks:    0 of 22 (0%)
 
@@ -1271,7 +1301,7 @@ OUTBUF         23 uses
 
 Global Clock Buffers: 3
 
-Total LUTs:    205
+Total LUTs:    260
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -1279,14 +1309,14 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  50 + 0 + 0 + 0 = 50;
-Total number of LUTs after P&R:  205 + 0 + 0 + 0 = 205;
+Total number of SLEs after P&R:  56 + 0 + 0 + 0 = 56;
+Total number of LUTs after P&R:  260 + 0 + 0 + 0 = 260;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 142MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 147MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Tue Oct 29 01:04:12 2019
+# Fri Nov  1 04:21:06 2019
 
 ###########################################################]

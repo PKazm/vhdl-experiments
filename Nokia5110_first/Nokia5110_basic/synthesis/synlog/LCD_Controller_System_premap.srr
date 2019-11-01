@@ -1,4 +1,4 @@
-# Tue Oct 29 01:04:09 2019
+# Fri Nov  1 04:21:03 2019
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -44,16 +44,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":80:16:80:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_36_0[0] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:23:79:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_1[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":65:23:65:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_21_1[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":55:23:55:27|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_11_1[6] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_0_0[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:16:87:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_43_0[1] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":87:9:87:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_42_5[5] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":85:30:85:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[4] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":83:30:83:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_39_2[2] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":79:16:79:20|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_35_0[3] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_12_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":98:44:98:48|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_54_4[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_44_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":91:30:91:34|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_47_2[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_41_2[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":127:9:127:13|Removing sequential instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_82_5[7] because it is equivalent to instance Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.LCD_mem_sig_81_0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Removing sequential instance interrupt_pulse (in view: work.timer(architecture_timer)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=21  set on top level netlist LCD_Controller_System
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
@@ -68,9 +68,9 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     39   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     36   
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     23   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     31   
                                                                                                                                   
 0 -       LCD_Controller_System|Board_Buttons[0]            100.0 MHz     10.000        inferred     Inferred_clkgroup_0     1    
 ==================================================================================================================================
@@ -80,21 +80,21 @@ Level     Clock                                             Frequency     Period
 Clock Load Summary
 ***********************
 
-                                                  Clock     Source                                    Clock Pin                                                        Non-clock Pin                                                       Non-clock Pin                                                   
-Clock                                             Load      Pin                                       Seq Example                                                      Seq Example                                                         Comb Example                                                    
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            0         -                                         -                                                                -                                                                   -                                                               
-                                                                                                                                                                                                                                                                                                           
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     39        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.C     -                                                                   FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                            
-                                                                                                                                                                                                                                                                                                           
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     23        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     Nokia_Driver_Container_0.start_up_timer.timer_sig.C              Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.D[0]     Nokia_Driver_Container_0.Nokia_Driver_Comp.un1_clk_spi.I[0](inv)
-                                                                                                                                                                                                                                                                                                           
-LCD_Controller_System|Board_Buttons[0]            1         Board_Buttons[0](port)                    Nokia_Driver_Container_0.LCD_Backlight_sig.C                     -                                                                   Nokia_Driver_Container_0.Board_LEDs_1[0].I[0](inv)              
-===========================================================================================================================================================================================================================================================================================================
+                                                  Clock     Source                                    Clock Pin                                                                  Non-clock Pin                                                       Non-clock Pin                                                   
+Clock                                             Load      Pin                                       Seq Example                                                                Seq Example                                                         Comb Example                                                    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                         -                                                                          -                                                                   -                                                               
+                                                                                                                                                                                                                                                                                                                     
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     36        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.C               -                                                                   FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)                            
+                                                                                                                                                                                                                                                                                                                     
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     31        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig.C     Nokia_Driver_Container_0.Nokia_Driver_Comp.SPICLK_last_sig.D[0]     Nokia_Driver_Container_0.Nokia_Driver_Comp.un1_clk_spi.I[0](inv)
+                                                                                                                                                                                                                                                                                                                     
+LCD_Controller_System|Board_Buttons[0]            1         Board_Buttons[0](port)                    Nokia_Driver_Container_0.LCD_Backlight_sig.C                               -                                                                   Nokia_Driver_Container_0.Board_LEDs_1[0].I[0](inv)              
+=====================================================================================================================================================================================================================================================================================================================
 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":121:8:121:9|Found inferred clock LCD_Controller_System|Board_Buttons[0] which controls 1 sequential elements including Nokia_Driver_Container_0.LCD_Backlight_sig. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_memory.vhd":44:9:44:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 39 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.display_mem_comp.display_byte[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":25:8:25:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 23 sequential elements including Nokia_Driver_Container_0.start_up_timer.counter[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia_driver_container.vhd":99:8:99:9|Found inferred clock LCD_Controller_System|Board_Buttons[0] which controls 1 sequential elements including Nokia_Driver_Container_0.LCD_Backlight_sig. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 36 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_State[0:1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\timer.vhd":24:8:24:9|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 31 sequential elements including Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.counter[18:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
@@ -102,6 +102,11 @@ Finished Pre Mapping Phase.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
@@ -115,6 +120,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Oct 29 01:04:10 2019
+# Fri Nov  1 04:21:03 2019
 
 ###########################################################]

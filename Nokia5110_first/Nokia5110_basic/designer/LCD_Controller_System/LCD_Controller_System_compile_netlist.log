@@ -10,13 +10,13 @@ Info: Global design data:
 Info: List of globals that cannot be demoted: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    39     0      0      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
-    10     0      3      'FCCC_C0_0/FCCC_C0_0/GL1_INST' 
+    35     0      0      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    20     0      3      'FCCC_C0_0/FCCC_C0_0/GL1_INST' 
 
 Info: List of globals considered for demotion: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    0      49     2      'AND2_0_RNIKOS1' 
+    0      55     2      'AND2_0_RNIKOS1' 
 
 Info: Demotion information: 
       Disconnected 1 data pins from global 'AND2_0_RNIKOS1'. 

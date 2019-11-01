@@ -105,13 +105,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\LCD_Controller_System\LCD_Controller_System.cxf,actgen_cxf"
 STATE="utd"
-TIME="1572309096"
-SIZE="3131"
+TIME="1572596189"
+SIZE="3225"
 ENDFILE
 VALUE "<project>\component\work\LCD_Controller_System\LCD_Controller_System.vhd,hdl"
 STATE="utd"
-TIME="1572309095"
-SIZE="7370"
+TIME="1572596189"
+SIZE="6859"
 PARENT="<project>\component\work\LCD_Controller_System\LCD_Controller_System.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -152,53 +152,53 @@ SIZE="467"
 ENDFILE
 VALUE "<project>\hdl\Nokia5110_Driver.vhd,hdl"
 STATE="utd"
-TIME="1572322574"
-SIZE="7744"
+TIME="1572596344"
+SIZE="11214"
 ENDFILE
 VALUE "<project>\hdl\Nokia5110_Memory.vhd,hdl"
 STATE="utd"
-TIME="1572325435"
-SIZE="13901"
+TIME="1572556806"
+SIZE="13935"
 ENDFILE
 VALUE "<project>\hdl\Nokia_Driver_Container.vhd,hdl"
 STATE="utd"
-TIME="1572321607"
-SIZE="4721"
+TIME="1572596350"
+SIZE="4301"
 ENDFILE
 VALUE "<project>\hdl\timer.vhd,hdl"
 STATE="utd"
-TIME="1572312293"
-SIZE="1153"
+TIME="1572551757"
+SIZE="1183"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1572305163"
-SIZE="1390"
+TIME="1572570783"
+SIZE="1459"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1572305352"
+TIME="1572570782"
 SIZE="233"
 ENDFILE
 VALUE "<project>\synthesis\LCD_Controller_System.so,so"
 STATE="utd"
-TIME="1572248430"
+TIME="1572570430"
 SIZE="275"
 ENDFILE
 VALUE "<project>\synthesis\LCD_Controller_System.vm,syn_vm"
 STATE="utd"
-TIME="1572316278"
-SIZE="19808"
+TIME="1572570430"
+SIZE="78121"
 ENDFILE
 VALUE "<project>\synthesis\LCD_Controller_System_syn.prj,prj"
 STATE="utd"
-TIME="1572248431"
-SIZE="2949"
+TIME="1572570431"
+SIZE="3274"
 ENDFILE
 VALUE "<project>\synthesis\LCD_Controller_System_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1572248430"
-SIZE="798"
+TIME="1572570430"
+SIZE="1649"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -291,8 +291,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -351,12 +351,15 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Run PROGRAM Action:LCD_Controller_System_PROGRAM.log
-StartPage;StartPage;0
+ReportsCurrentItem;Synthesize:LCD_Controller_System_compile_netlist_hier_resources.csv
 SmartDesign;LCD_Controller_System;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
+LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "Nokia5110_Memory::work","hdl\Nokia5110_Memory.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
 LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
@@ -371,14 +374,10 @@ SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "Nokia_Driver_Container::work","hdl\Nokia_Driver_Container.vhd","FALSE","FALSE"
 SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 ENDLIST
-LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
-SUBBLOCK "Nokia5110_Memory::work","hdl\Nokia5110_Memory.vhd","FALSE","FALSE"
-ENDLIST
 LIST "Nokia5110_Memory::work","hdl\Nokia5110_Memory.vhd","FALSE","FALSE"
 ENDLIST
 LIST "Nokia_Driver_Container::work","hdl\Nokia_Driver_Container.vhd","FALSE","FALSE"
 SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
-SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"

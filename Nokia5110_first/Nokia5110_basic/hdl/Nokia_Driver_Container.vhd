@@ -21,6 +21,9 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity Nokia_Driver_Container is
+generic (
+    g_FPS : natural := 5
+);
 port (
     CLK : in std_logic;     -- assumed to be 100Mhz
     CLK_SPI : in std_logic; -- Must be less than 4Mhz for Nokia5110
@@ -51,7 +54,9 @@ architecture architecture_Nokia_Driver_Container of Nokia_Driver_Container is
 
     component Nokia5110_Driver
         generic (
-            frame_size : natural := 8
+            g_frame_size : natural := 8;
+            g_clk_spi_spd : natural := 2000;    -- khz
+            g_update_rate : natural := g_FPS        -- updates per second, best results below 5 fps
         );
         port (
             CLK : in std_logic;     -- assumed to be 100Mhz
@@ -72,41 +77,14 @@ architecture architecture_Nokia_Driver_Container of Nokia_Driver_Container is
     signal timer_int_sig : std_logic := '0';
     -- END start_up_timer : timer signals
 
-    component timer
-        generic(
-            g_timer_count : natural := 200;
-            g_repeat : std_logic := '1'
-        );
-        port(
-            CLK : in std_logic;
-            PRESETN : in std_logic;
-
-            timer_out : out std_logic;
-            interrupt_pulse : out std_logic
-        );
-    end component;
-
 begin
-
-    start_up_timer : timer
-    generic map (
-        g_timer_count => 500,
-        g_repeat => '0'
-    )
-    port map (
-        CLK => CLK_SPI,
-        PRESETN => RSTn,
-
-        timer_out => timer_out_sig,
-        interrupt_pulse => timer_int_sig
-    );
 
     Nokia_Driver_Comp : Nokia5110_Driver
     port map (
         CLK => CLK,
         CLK_SPI => CLK_SPI,
         RSTn => RSTn,
-        enable => timer_out_sig,
+        enable => '1',
 
         SPIDO => SPIDO,
         SPICLK => SPICLK,
@@ -146,9 +124,9 @@ begin
 	Board_J7(1) <= RSTout;     -- Nokia5110 LCD ~RESET
 	Board_J7(2) <= '0';
 	Board_J7(3) <= LCD_Backlight_sig;     -- Nokia5110 LCD Brightness
-	Board_J7(4) <= '0';
+	Board_J7(4) <= SPIDO;
 
-	Board_J8 <= SPIDO;        -- SPI Data Out
+	Board_J8 <= '0';        -- SPI Data Out
 	Board_J9 <= SPICLK;        -- SPI CLK
 	Board_J10 <= data_command;       -- Nokia5110 D/~C, Command/address and Data in select
 	Board_J11 <= chip_enable;       -- Nokia5110 Chip Enable

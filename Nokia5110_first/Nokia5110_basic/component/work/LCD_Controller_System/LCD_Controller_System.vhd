@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Mon Oct 28 20:31:35 2019
+-- Created by SmartDesign Fri Nov  1 04:16:29 2019
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -61,24 +61,7 @@ component FCCC_C0
         );
 end component;
 -- Nokia_Driver_Container
-component Nokia_Driver_Container
-    -- Port list
-    port(
-        -- Inputs
-        Board_Buttons : in  std_logic_vector(1 downto 0);
-        CLK           : in  std_logic;
-        CLK_SPI       : in  std_logic;
-        RSTn          : in  std_logic;
-        -- Outputs
-        Board_J10     : out std_logic;
-        Board_J11     : out std_logic;
-        Board_J7      : out std_logic_vector(4 downto 0);
-        Board_J8      : out std_logic;
-        Board_J9      : out std_logic;
-        Board_LEDs    : out std_logic_vector(7 downto 0);
-        Board_MOD1    : out std_logic_vector(5 downto 0)
-        );
-end component;
+-- using entity instantiation for component Nokia_Driver_Container
 -- OSC_C0
 component OSC_C0
     -- Port list
@@ -162,7 +145,10 @@ FCCC_C0_0 : FCCC_C0
         GL1            => FCCC_C0_0_GL1 
         );
 -- Nokia_Driver_Container_0
-Nokia_Driver_Container_0 : Nokia_Driver_Container
+Nokia_Driver_Container_0 : entity work.Nokia_Driver_Container
+    generic map( 
+        g_FPS => ( 5 )
+        )
     port map( 
         -- Inputs
         CLK           => FCCC_C0_0_GL0,
@@ -170,13 +156,13 @@ Nokia_Driver_Container_0 : Nokia_Driver_Container
         RSTn          => AND2_0_Y,
         Board_Buttons => Board_Buttons,
         -- Outputs
+        Board_LEDs    => Board_LEDs_net_0,
+        Board_MOD1    => Board_MOD1_net_0,
+        Board_J7      => Board_J7_net_0,
         Board_J8      => Board_J8_net_0,
         Board_J9      => Board_J9_net_0,
         Board_J10     => Board_J10_net_0,
-        Board_J11     => Board_J11_net_0,
-        Board_LEDs    => Board_LEDs_net_0,
-        Board_MOD1    => Board_MOD1_net_0,
-        Board_J7      => Board_J7_net_0 
+        Board_J11     => Board_J11_net_0 
         );
 -- OSC_C0_0
 OSC_C0_0 : OSC_C0

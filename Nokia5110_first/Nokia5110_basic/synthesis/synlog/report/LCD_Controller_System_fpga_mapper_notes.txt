@@ -3,7 +3,8 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 @N: MF284 |Setting synthesis effort to medium for the design
-@N: FP130 |Promoting Net AND2_0_Y on CLKINT  I_71 
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_basic\hdl\nokia5110_driver.vhd":146:8:146:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+@N: FP130 |Promoting Net AND2_0_Y on CLKINT  I_69 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

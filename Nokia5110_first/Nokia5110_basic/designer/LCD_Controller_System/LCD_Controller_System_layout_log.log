@@ -17,7 +17,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 12.600.0 
-Design: LCD_Controller_System           Started: Tue Oct 29 01:04:21 2019
+Design: LCD_Controller_System           Started: Fri Nov  1 04:21:13 2019
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -33,44 +33,44 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: LCD_Controller_System           
-Finished: Tue Oct 29 01:04:25 2019
+Finished: Fri Nov  1 04:21:17 2019
 Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 114.3 Mbytes
+Total Memory Usage: 114.5 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_SystemStarted: Tue Oct 29 01:04:28 2019
+Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_SystemStarted: Fri Nov  1 04:21:20 2019
 
 
 Router completed successfully.
 
 Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_System
-Finished: Tue Oct 29 01:04:33 2019
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
+Finished: Fri Nov  1 04:21:24 2019
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:04
 Total Memory Usage: 429.5 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_SystemStarted: Tue Oct 29 01:04:34 2019
+Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_SystemStarted: Fri Nov  1 04:21:25 2019
 
 
 Router completed successfully.
 
 Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_basic\designer\LCD_Controller_System\LCD_Controller_System
-Finished: Tue Oct 29 01:04:39 2019
+Finished: Fri Nov  1 04:21:30 2019
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.2 Mbytes
+Total Memory Usage: 429.5 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 206  | 12084 | 1.70       |
-| DFF           | 50   | 12084 | 0.41       |
+| 4LUT          | 261  | 12084 | 2.16       |
+| DFF           | 56   | 12084 | 0.46       |
 | I/O Register  | 0    | 246   | 0.00       |
-| Logic Element | 206  | 12084 | 1.70       |
+| Logic Element | 261  | 12084 | 2.16       |
 +---------------+------+-------+------------+
 

@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Tue Oct 29 01:04:18 2019
+<text>Date: Fri Nov  1 04:21:10 2019
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>206</cell>
+ <cell>261</cell>
  <cell>12084</cell>
- <cell>1.70</cell>
+ <cell>2.16</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>50</cell>
+ <cell>56</cell>
  <cell>12084</cell>
- <cell>0.41</cell>
+ <cell>0.46</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>206</cell>
- <cell>50</cell>
+ <cell>261</cell>
+ <cell>56</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>206</cell>
- <cell>50</cell>
+ <cell>261</cell>
+ <cell>56</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -238,19 +238,19 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>1</cell>
+ <cell>4</cell>
 </row>
 <row>
  <cell>8</cell>
  <cell>1</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>19</cell>
  <cell>1</cell>
 </row>
 <row>
  <cell>Total</cell>
- <cell>3</cell>
+ <cell>6</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -342,7 +342,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>50</cell>
+ <cell>56</cell>
  <cell>INT_NET</cell>
  <cell>Net   : AND2_0_Y</cell>
 </row>
@@ -357,7 +357,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>39</cell>
+ <cell>35</cell>
  <cell>INT_NET</cell>
  <cell>Net   : FCCC_C0_0_GL0</cell>
 </row>
@@ -372,9 +372,9 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>13</cell>
+ <cell>23</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Board_J9_c</cell>
+ <cell>Net   : FCCC_C0_0_GL1</cell>
 </row>
 <row>
  <cell></cell>
@@ -403,7 +403,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>42</cell>
+ <cell>51</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]</cell>
 </row>
@@ -413,17 +413,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]</cell>
 </row>
 <row>
- <cell>39</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
-</row>
-<row>
- <cell>39</cell>
+ <cell>44</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]</cell>
 </row>
@@ -433,7 +423,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]</cell>
 </row>
 <row>
- <cell>39</cell>
+ <cell>42</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]</cell>
 </row>
@@ -443,7 +433,37 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]</cell>
 </row>
 <row>
- <cell>33</cell>
+ <cell>41</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
+</row>
+<row>
+ <cell>34</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_start_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_start</cell>
+</row>
+<row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
+</row>
+<row>
+ <cell>26</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]</cell>
 </row>
@@ -453,7 +473,17 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]</cell>
 </row>
 <row>
- <cell>27</cell>
+ <cell>26</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_0_sqmuxa_1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/LCD_State_RNITQT7[0]</cell>
+</row>
+<row>
+ <cell>24</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]</cell>
 </row>
@@ -463,7 +493,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]</cell>
 </row>
 <row>
- <cell>23</cell>
+ <cell>20</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]</cell>
 </row>
@@ -471,36 +501,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]</cell>
-</row>
-<row>
- <cell>22</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/timer_out_sig</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/start_up_timer/timer_sig</cell>
-</row>
-<row>
- <cell>21</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing</cell>
-</row>
-<row>
- <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -511,7 +511,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>42</cell>
+ <cell>51</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]</cell>
 </row>
@@ -521,17 +521,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[4]</cell>
 </row>
 <row>
- <cell>39</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
-</row>
-<row>
- <cell>39</cell>
+ <cell>44</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]</cell>
 </row>
@@ -541,7 +531,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[3]</cell>
 </row>
 <row>
- <cell>39</cell>
+ <cell>42</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]</cell>
 </row>
@@ -551,7 +541,37 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[2]</cell>
 </row>
 <row>
- <cell>33</cell>
+ <cell>41</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[5]</cell>
+</row>
+<row>
+ <cell>34</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_start_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_start</cell>
+</row>
+<row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
+</row>
+<row>
+ <cell>26</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]</cell>
 </row>
@@ -561,7 +581,17 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[0]</cell>
 </row>
 <row>
- <cell>27</cell>
+ <cell>26</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/init_step_0_sqmuxa_1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/LCD_State_RNITQT7[0]</cell>
+</row>
+<row>
+ <cell>24</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]</cell>
 </row>
@@ -571,7 +601,7 @@
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[1]</cell>
 </row>
 <row>
- <cell>23</cell>
+ <cell>20</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]</cell>
 </row>
@@ -579,36 +609,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_X[0]</cell>
-</row>
-<row>
- <cell>22</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/timer_out_sig</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/start_up_timer/timer_sig</cell>
-</row>
-<row>
- <cell>21</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/frame_writing</cell>
-</row>
-<row>
- <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia_Driver_Container_0/Nokia_Driver_Comp/disp_byte_Y[1]</cell>
 </row>
 </table>
 </doc>

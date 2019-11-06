@@ -1,0 +1,26 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       4 
+      Globals that cannot be demoted:      0 
+      Globals considered for demotion:     4 
+
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    104    0      0      'CLK_RNIQO92' 
+    22     0      3      'Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7' 
+    0      91     4      'RSTn_RNI7ROC' 
+    0      28     0      'Nokia5110_Driver_0/rstn_i_0_RNIVLU5' 
+
+Info: Demotion information: 
+      Disconnected 3 data pins from global 'Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7'. 
+      Disconnected 5 data pins from global 'RSTn_RNI7ROC'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+
+Info: BLK014: Adding interface buffers. Port processed: 37, Added buffers: 37.

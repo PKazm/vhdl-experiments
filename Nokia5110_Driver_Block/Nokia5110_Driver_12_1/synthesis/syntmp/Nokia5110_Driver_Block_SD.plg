@@ -1,0 +1,16 @@
+@P:  Worst Slack : 3.383
+@P:  Nokia5110_Driver_Block_SD|CLK - Estimated Frequency : 151.1 MHz
+@P:  Nokia5110_Driver_Block_SD|CLK - Requested Frequency : 100.0 MHz
+@P:  Nokia5110_Driver_Block_SD|CLK - Estimated Period : 6.617
+@P:  Nokia5110_Driver_Block_SD|CLK - Requested Period : 10.000
+@P:  Nokia5110_Driver_Block_SD|CLK - Slack : 3.383
+@P:  timerZ1|timer_clock_out_sig_inferred_clock - Estimated Frequency : 267.8 MHz
+@P:  timerZ1|timer_clock_out_sig_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  timerZ1|timer_clock_out_sig_inferred_clock - Estimated Period : 3.734
+@P:  timerZ1|timer_clock_out_sig_inferred_clock - Requested Period : 10.000
+@P:  timerZ1|timer_clock_out_sig_inferred_clock - Slack : 6.266
+@P: Nokia5110_Driver_Block_SD Part : m2s010tq144std
+@P: Nokia5110_Driver_Block_SD Register bits  : 122 
+@P: Nokia5110_Driver_Block_SD DSP Blocks  : 0
+@P: Nokia5110_Driver_Block_SD RAM64x18 :  4
+@P:  CPU Time : 0h:00m:01s

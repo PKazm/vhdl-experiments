@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Violation Report Min Delay Analysis
+</title>
+<text>SmartTime Version 12.600.0.14</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
+<text>Date: Wed Nov  6 04:24:12 2019
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>Nokia5110_Driver_Block_SD</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>SmartFusion2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2S010</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>144 TQ</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Pre-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Min Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Max Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 85 C</cell>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>Primary</cell>
+</row>
+</table>
+<text></text>
+<text>No Path</text>
+</doc>

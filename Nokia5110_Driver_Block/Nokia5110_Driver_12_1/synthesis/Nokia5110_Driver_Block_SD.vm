@@ -1,0 +1,4232 @@
+//
+// Written by Synplify Pro 
+// Product Version "N-2018.03M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact, Build 2461R"
+// Wed Nov  6 04:23:11 2019
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\timer.vhd "
+// file 10 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\component\work\uram_c0\uram_c0_0\uram_c0_uram_c0_0_uram.vhd "
+// file 11 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\generic\smartfusion2.vhd "
+// file 12 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd "
+// file 13 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\component\work\uram_c0\uram_c0.vhd "
+// file 14 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\component\work\nokia5110_driver_block_sd\nokia5110_driver_block_sd.vhd "
+// file 15 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\nlconst.dat "
+// file 16 "\c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\designer\nokia5110_driver_block_sd\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module timerZ1 (
+  rstn_i_i,
+  rstn,
+  CLK,
+  CLK_SPI_sig
+)
+;
+input rstn_i_i ;
+input rstn ;
+input CLK ;
+output CLK_SPI_sig ;
+wire rstn_i_i ;
+wire rstn ;
+wire CLK ;
+wire CLK_SPI_sig ;
+wire [5:0] counter;
+wire [0:0] counter_i;
+wire [5:1] counter_3;
+wire timer_clock_out_sig_Z ;
+wire VCC ;
+wire N_5_i ;
+wire GND ;
+wire un11_counter_axbxc2_Z ;
+wire un11_counter_axbxc3_Z ;
+wire N_7 ;
+wire N_9 ;
+wire un11_counter_c4 ;
+wire N_1 ;
+  CLKINT timer_clock_out_sig_inferred_clock_RNIPHR7 (
+	.Y(CLK_SPI_sig),
+	.A(timer_clock_out_sig_Z)
+);
+  CFG1 \counter_RNO[0]  (
+	.A(counter[0]),
+	.Y(counter_i[0])
+);
+defparam \counter_RNO[0] .INIT=2'h1;
+// @9:26
+  SLE timer_clock_out_sig (
+	.Q(timer_clock_out_sig_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(CLK),
+	.D(N_5_i),
+	.EN(rstn),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[0]  (
+	.Q(counter[0]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(counter_i[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[1]  (
+	.Q(counter[1]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(counter_3[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[2]  (
+	.Q(counter[2]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(un11_counter_axbxc2_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[3]  (
+	.Q(counter[3]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(un11_counter_axbxc3_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[4]  (
+	.Q(counter[4]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(counter_3[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[5]  (
+	.Q(counter[5]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK),
+	.D(counter_3[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  CFG4 \counter_RNIJN5C[4]  (
+	.A(counter[4]),
+	.B(counter[2]),
+	.C(counter[1]),
+	.D(counter[0]),
+	.Y(N_7)
+);
+defparam \counter_RNIJN5C[4] .INIT=16'hFDFF;
+// @9:38
+  CFG3 un11_counter_axbxc2 (
+	.A(counter[2]),
+	.B(counter[1]),
+	.C(counter[0]),
+	.Y(un11_counter_axbxc2_Z)
+);
+defparam un11_counter_axbxc2.INIT=8'h6A;
+// @9:33
+  CFG3 un2_counter_0_o3 (
+	.A(counter[5]),
+	.B(counter[3]),
+	.C(N_7),
+	.Y(N_9)
+);
+defparam un2_counter_0_o3.INIT=8'hFD;
+// @9:38
+  CFG4 un11_counter_ac0_5 (
+	.A(counter[3]),
+	.B(counter[2]),
+	.C(counter[1]),
+	.D(counter[0]),
+	.Y(un11_counter_c4)
+);
+defparam un11_counter_ac0_5.INIT=16'h8000;
+// @9:38
+  CFG4 un11_counter_axbxc3 (
+	.A(counter[3]),
+	.B(counter[2]),
+	.C(counter[1]),
+	.D(counter[0]),
+	.Y(un11_counter_axbxc3_Z)
+);
+defparam un11_counter_axbxc3.INIT=16'h6AAA;
+// @9:30
+  CFG3 \counter_3[1]  (
+	.A(counter[1]),
+	.B(counter[0]),
+	.C(N_9),
+	.Y(counter_3[1])
+);
+defparam \counter_3[1] .INIT=8'h60;
+// @9:30
+  CFG3 \counter_3[4]  (
+	.A(un11_counter_c4),
+	.B(N_9),
+	.C(counter[4]),
+	.Y(counter_3[4])
+);
+defparam \counter_3[4] .INIT=8'h48;
+// @9:26
+  CFG4 timer_clock_out_sig_RNO (
+	.A(timer_clock_out_sig_Z),
+	.B(N_7),
+	.C(counter[5]),
+	.D(counter[3]),
+	.Y(N_5_i)
+);
+defparam timer_clock_out_sig_RNO.INIT=16'hA8BA;
+// @9:30
+  CFG4 \counter_3[5]  (
+	.A(un11_counter_c4),
+	.B(N_9),
+	.C(counter[5]),
+	.D(counter[4]),
+	.Y(counter_3[5])
+);
+defparam \counter_3[5] .INIT=16'h48C0;
+//@12:176
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* timerZ1 */
+
+module timerZ0 (
+  timer_indicator_sig,
+  CLK_SPI_sig,
+  rstn_i_i
+)
+;
+output timer_indicator_sig ;
+input CLK_SPI_sig ;
+input rstn_i_i ;
+wire timer_indicator_sig ;
+wire CLK_SPI_sig ;
+wire rstn_i_i ;
+wire [20:0] counter;
+wire [0:0] counter_i;
+wire [20:7] counter_3;
+wire [1:1] counter_RNI8U205;
+wire VCC ;
+wire GND ;
+wire un11_counter_cry_16_S ;
+wire un11_counter_cry_1_S ;
+wire un11_counter_cry_2_S ;
+wire un11_counter_cry_3_S ;
+wire un11_counter_cry_4_S ;
+wire un11_counter_cry_5_S ;
+wire un11_counter_cry_6_S ;
+wire un11_counter_cry_8_S ;
+wire un11_counter_cry_9_S ;
+wire un11_counter_cry_11_S ;
+wire un11_counter_cry_12_S ;
+wire un11_counter_cry_13_S ;
+wire un11_counter_cry_14_S ;
+wire un5_counter_i ;
+wire un11_counter_s_1_78_FCO ;
+wire un11_counter_s_1_78_S ;
+wire un11_counter_s_1_78_Y ;
+wire un11_counter_cry_1_Z ;
+wire un11_counter_cry_1_Y ;
+wire un11_counter_cry_2_Z ;
+wire un11_counter_cry_2_Y ;
+wire un11_counter_cry_3_Z ;
+wire un11_counter_cry_3_Y ;
+wire un11_counter_cry_4_Z ;
+wire un11_counter_cry_4_Y ;
+wire un11_counter_cry_5_Z ;
+wire un11_counter_cry_5_Y ;
+wire un11_counter_cry_6_Z ;
+wire un11_counter_cry_6_Y ;
+wire un11_counter_cry_7_Z ;
+wire un11_counter_cry_7_S ;
+wire un11_counter_cry_7_Y ;
+wire un11_counter_cry_8_Z ;
+wire un11_counter_cry_8_Y ;
+wire un11_counter_cry_9_Z ;
+wire un11_counter_cry_9_Y ;
+wire un11_counter_cry_10_Z ;
+wire un11_counter_cry_10_S ;
+wire un11_counter_cry_10_Y ;
+wire un11_counter_cry_11_Z ;
+wire un11_counter_cry_11_Y ;
+wire un11_counter_cry_12_Z ;
+wire un11_counter_cry_12_Y ;
+wire un11_counter_cry_13_Z ;
+wire un11_counter_cry_13_Y ;
+wire un11_counter_cry_14_Z ;
+wire un11_counter_cry_14_Y ;
+wire un11_counter_cry_15_Z ;
+wire un11_counter_cry_15_S ;
+wire un11_counter_cry_15_Y ;
+wire un11_counter_cry_16_Z ;
+wire un11_counter_cry_16_Y ;
+wire un11_counter_cry_17_Z ;
+wire un11_counter_cry_17_S ;
+wire un11_counter_cry_17_Y ;
+wire un11_counter_cry_18_Z ;
+wire un11_counter_cry_18_S ;
+wire un11_counter_cry_18_Y ;
+wire un11_counter_s_20_FCO ;
+wire un11_counter_s_20_S ;
+wire un11_counter_s_20_Y ;
+wire un11_counter_cry_19_Z ;
+wire un11_counter_cry_19_S ;
+wire un11_counter_cry_19_Y ;
+wire m31_8 ;
+wire m31_7 ;
+wire m31_6 ;
+wire m19_8 ;
+wire m19_7 ;
+wire m19_6 ;
+wire m7_e_5 ;
+wire m7_e_4 ;
+wire N_39_mux ;
+wire N_1 ;
+  CFG1 \counter_RNO[0]  (
+	.A(counter[0]),
+	.Y(counter_i[0])
+);
+defparam \counter_RNO[0] .INIT=2'h1;
+// @9:26
+  SLE \counter[15]  (
+	.Q(counter[15]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[16]  (
+	.Q(counter[16]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_16_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[17]  (
+	.Q(counter[17]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[17]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[18]  (
+	.Q(counter[18]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[18]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[19]  (
+	.Q(counter[19]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[19]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[20]  (
+	.Q(counter[20]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[20]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[0]  (
+	.Q(counter[0]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_i[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[1]  (
+	.Q(counter[1]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_1_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[2]  (
+	.Q(counter[2]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_2_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[3]  (
+	.Q(counter[3]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_3_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[4]  (
+	.Q(counter[4]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_4_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[5]  (
+	.Q(counter[5]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_5_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[6]  (
+	.Q(counter[6]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_6_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[7]  (
+	.Q(counter[7]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[8]  (
+	.Q(counter[8]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_8_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[9]  (
+	.Q(counter[9]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_9_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[10]  (
+	.Q(counter[10]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_3[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[11]  (
+	.Q(counter[11]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_11_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[12]  (
+	.Q(counter[12]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_12_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[13]  (
+	.Q(counter[13]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_13_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE \counter[14]  (
+	.Q(counter[14]),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(un11_counter_cry_14_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  SLE timer_indic_sig (
+	.Q(timer_indicator_sig),
+	.ADn(VCC),
+	.ALn(rstn_i_i),
+	.CLK(CLK_SPI_sig),
+	.D(counter_RNI8U205[1]),
+	.EN(un5_counter_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:38
+  ARI1 un11_counter_s_1_78 (
+	.FCO(un11_counter_s_1_78_FCO),
+	.S(un11_counter_s_1_78_S),
+	.Y(un11_counter_s_1_78_Y),
+	.B(counter[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam un11_counter_s_1_78.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_1 (
+	.FCO(un11_counter_cry_1_Z),
+	.S(un11_counter_cry_1_S),
+	.Y(un11_counter_cry_1_Y),
+	.B(counter[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_s_1_78_FCO)
+);
+defparam un11_counter_cry_1.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_2 (
+	.FCO(un11_counter_cry_2_Z),
+	.S(un11_counter_cry_2_S),
+	.Y(un11_counter_cry_2_Y),
+	.B(counter[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_1_Z)
+);
+defparam un11_counter_cry_2.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_3 (
+	.FCO(un11_counter_cry_3_Z),
+	.S(un11_counter_cry_3_S),
+	.Y(un11_counter_cry_3_Y),
+	.B(counter[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_2_Z)
+);
+defparam un11_counter_cry_3.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_4 (
+	.FCO(un11_counter_cry_4_Z),
+	.S(un11_counter_cry_4_S),
+	.Y(un11_counter_cry_4_Y),
+	.B(counter[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_3_Z)
+);
+defparam un11_counter_cry_4.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_5 (
+	.FCO(un11_counter_cry_5_Z),
+	.S(un11_counter_cry_5_S),
+	.Y(un11_counter_cry_5_Y),
+	.B(counter[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_4_Z)
+);
+defparam un11_counter_cry_5.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_6 (
+	.FCO(un11_counter_cry_6_Z),
+	.S(un11_counter_cry_6_S),
+	.Y(un11_counter_cry_6_Y),
+	.B(counter[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_5_Z)
+);
+defparam un11_counter_cry_6.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_7 (
+	.FCO(un11_counter_cry_7_Z),
+	.S(un11_counter_cry_7_S),
+	.Y(un11_counter_cry_7_Y),
+	.B(counter[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_6_Z)
+);
+defparam un11_counter_cry_7.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_8 (
+	.FCO(un11_counter_cry_8_Z),
+	.S(un11_counter_cry_8_S),
+	.Y(un11_counter_cry_8_Y),
+	.B(counter[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_7_Z)
+);
+defparam un11_counter_cry_8.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_9 (
+	.FCO(un11_counter_cry_9_Z),
+	.S(un11_counter_cry_9_S),
+	.Y(un11_counter_cry_9_Y),
+	.B(counter[9]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_8_Z)
+);
+defparam un11_counter_cry_9.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_10 (
+	.FCO(un11_counter_cry_10_Z),
+	.S(un11_counter_cry_10_S),
+	.Y(un11_counter_cry_10_Y),
+	.B(counter[10]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_9_Z)
+);
+defparam un11_counter_cry_10.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_11 (
+	.FCO(un11_counter_cry_11_Z),
+	.S(un11_counter_cry_11_S),
+	.Y(un11_counter_cry_11_Y),
+	.B(counter[11]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_10_Z)
+);
+defparam un11_counter_cry_11.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_12 (
+	.FCO(un11_counter_cry_12_Z),
+	.S(un11_counter_cry_12_S),
+	.Y(un11_counter_cry_12_Y),
+	.B(counter[12]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_11_Z)
+);
+defparam un11_counter_cry_12.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_13 (
+	.FCO(un11_counter_cry_13_Z),
+	.S(un11_counter_cry_13_S),
+	.Y(un11_counter_cry_13_Y),
+	.B(counter[13]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_12_Z)
+);
+defparam un11_counter_cry_13.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_14 (
+	.FCO(un11_counter_cry_14_Z),
+	.S(un11_counter_cry_14_S),
+	.Y(un11_counter_cry_14_Y),
+	.B(counter[14]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_13_Z)
+);
+defparam un11_counter_cry_14.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_15 (
+	.FCO(un11_counter_cry_15_Z),
+	.S(un11_counter_cry_15_S),
+	.Y(un11_counter_cry_15_Y),
+	.B(counter[15]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_14_Z)
+);
+defparam un11_counter_cry_15.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_16 (
+	.FCO(un11_counter_cry_16_Z),
+	.S(un11_counter_cry_16_S),
+	.Y(un11_counter_cry_16_Y),
+	.B(counter[16]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_15_Z)
+);
+defparam un11_counter_cry_16.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_17 (
+	.FCO(un11_counter_cry_17_Z),
+	.S(un11_counter_cry_17_S),
+	.Y(un11_counter_cry_17_Y),
+	.B(counter[17]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_16_Z)
+);
+defparam un11_counter_cry_17.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_18 (
+	.FCO(un11_counter_cry_18_Z),
+	.S(un11_counter_cry_18_S),
+	.Y(un11_counter_cry_18_Y),
+	.B(counter[18]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_17_Z)
+);
+defparam un11_counter_cry_18.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_s_20 (
+	.FCO(un11_counter_s_20_FCO),
+	.S(un11_counter_s_20_S),
+	.Y(un11_counter_s_20_Y),
+	.B(counter[20]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_19_Z)
+);
+defparam un11_counter_s_20.INIT=20'h4AA00;
+// @9:38
+  ARI1 un11_counter_cry_19 (
+	.FCO(un11_counter_cry_19_Z),
+	.S(un11_counter_cry_19_S),
+	.Y(un11_counter_cry_19_Y),
+	.B(counter[19]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un11_counter_cry_18_Z)
+);
+defparam un11_counter_cry_19.INIT=20'h4AA00;
+  CFG4 \counter_RNI6BR61[5]  (
+	.A(counter[20]),
+	.B(counter[15]),
+	.C(counter[10]),
+	.D(counter[5]),
+	.Y(m31_8)
+);
+defparam \counter_RNI6BR61[5] .INIT=16'h8000;
+  CFG4 \counter_RNII75B[1]  (
+	.A(counter[4]),
+	.B(counter[3]),
+	.C(counter[2]),
+	.D(counter[1]),
+	.Y(m31_7)
+);
+defparam \counter_RNII75B[1] .INIT=16'h8000;
+  CFG4 \counter_RNITHJT[9]  (
+	.A(counter[16]),
+	.B(counter[14]),
+	.C(counter[9]),
+	.D(counter[0]),
+	.Y(m31_6)
+);
+defparam \counter_RNITHJT[9] .INIT=16'h0100;
+  CFG4 timer_indic_sig_RNO_0 (
+	.A(counter[20]),
+	.B(counter[15]),
+	.C(counter[10]),
+	.D(counter[0]),
+	.Y(m19_8)
+);
+defparam timer_indic_sig_RNO_0.INIT=16'h0001;
+  CFG4 timer_indic_sig_RNO_1 (
+	.A(counter[5]),
+	.B(counter[4]),
+	.C(counter[3]),
+	.D(counter[1]),
+	.Y(m19_7)
+);
+defparam timer_indic_sig_RNO_1.INIT=16'h0001;
+  CFG4 timer_indic_sig_RNO_2 (
+	.A(counter[16]),
+	.B(counter[14]),
+	.C(counter[9]),
+	.D(counter[2]),
+	.Y(m19_6)
+);
+defparam timer_indic_sig_RNO_2.INIT=16'h0080;
+  CFG4 \counter_RNINRQ61[8]  (
+	.A(counter[19]),
+	.B(counter[18]),
+	.C(counter[13]),
+	.D(counter[8]),
+	.Y(m7_e_5)
+);
+defparam \counter_RNINRQ61[8] .INIT=16'h0008;
+  CFG3 \counter_RNI3BJH[6]  (
+	.A(counter[17]),
+	.B(counter[7]),
+	.C(counter[6]),
+	.Y(m7_e_4)
+);
+defparam \counter_RNI3BJH[6] .INIT=8'h20;
+  CFG4 \counter_RNIJPEG2[11]  (
+	.A(counter[11]),
+	.B(counter[12]),
+	.C(m7_e_5),
+	.D(m7_e_4),
+	.Y(N_39_mux)
+);
+defparam \counter_RNIJPEG2[11] .INIT=16'h1000;
+  CFG4 \counter_RNI8U205[1]  (
+	.A(m31_8),
+	.B(m31_7),
+	.C(m31_6),
+	.D(N_39_mux),
+	.Y(counter_RNI8U205[1])
+);
+defparam \counter_RNI8U205[1] .INIT=16'h8000;
+// @9:26
+  CFG4 timer_indic_sig_RNO (
+	.A(m19_8),
+	.B(N_39_mux),
+	.C(m19_7),
+	.D(m19_6),
+	.Y(un5_counter_i)
+);
+defparam timer_indic_sig_RNO.INIT=16'h7FFF;
+// @9:30
+  CFG2 \counter_3[20]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_s_20_S),
+	.Y(counter_3[20])
+);
+defparam \counter_3[20] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[19]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_19_S),
+	.Y(counter_3[19])
+);
+defparam \counter_3[19] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[18]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_18_S),
+	.Y(counter_3[18])
+);
+defparam \counter_3[18] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[17]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_17_S),
+	.Y(counter_3[17])
+);
+defparam \counter_3[17] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[15]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_15_S),
+	.Y(counter_3[15])
+);
+defparam \counter_3[15] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[10]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_10_S),
+	.Y(counter_3[10])
+);
+defparam \counter_3[10] .INIT=4'h4;
+// @9:30
+  CFG2 \counter_3[7]  (
+	.A(counter_RNI8U205[1]),
+	.B(un11_counter_cry_7_S),
+	.Y(counter_3[7])
+);
+defparam \counter_3[7] .INIT=4'h4;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* timerZ0 */
+
+module Nokia5110_Driver (
+  URAM_C0_0_B_DOUT,
+  PADDR,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_5,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_0,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_1,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_2,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_3,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_4,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_8,
+  PWDATA,
+  Nokia5110_Driver_0_uSRAM_C_DIN,
+  PRDATA,
+  Nokia5110_Driver_0_uSRAM_B_ADDR,
+  PENABLE,
+  SPICLK_1z,
+  SPIDO_1z,
+  PWRITE,
+  PSEL,
+  Nokia5110_Driver_0_uSRAM_C_BLK,
+  data_command,
+  driver_busy,
+  CLK,
+  RSTn,
+  chip_enable_sig_i
+)
+;
+input [7:0] URAM_C0_0_B_DOUT ;
+input [7:0] PADDR ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+output Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+input [7:0] PWDATA ;
+output [7:0] Nokia5110_Driver_0_uSRAM_C_DIN ;
+output [7:0] PRDATA ;
+output [8:0] Nokia5110_Driver_0_uSRAM_B_ADDR ;
+input PENABLE ;
+output SPICLK_1z ;
+output SPIDO_1z ;
+input PWRITE ;
+input PSEL ;
+output Nokia5110_Driver_0_uSRAM_C_BLK ;
+output data_command ;
+output driver_busy ;
+input CLK ;
+input RSTn ;
+output chip_enable_sig_i ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+wire PENABLE ;
+wire SPICLK_1z ;
+wire SPIDO_1z ;
+wire PWRITE ;
+wire PSEL ;
+wire Nokia5110_Driver_0_uSRAM_C_BLK ;
+wire data_command ;
+wire driver_busy ;
+wire CLK ;
+wire RSTn ;
+wire chip_enable_sig_i ;
+wire [8:3] uSRAM_B_ADDR_sig_7;
+wire [2:0] frame_count;
+wire [2:0] frame_count_8;
+wire [2:0] init_step;
+wire [0:0] uSRAM_B_ADDR_sig_RNINMS51_S;
+wire [1:1] uSRAM_B_ADDR_sig_RNI6ULC1_S;
+wire [2:2] uSRAM_B_ADDR_sig_RNIM6FJ1_S;
+wire [7:0] SPIout_byte;
+wire [7:2] SPIout_byte_10;
+wire [7:0] prdata_sig_12;
+wire [2:0] LCD_reg_mem_X;
+wire [6:0] LCD_reg_mem_Y;
+wire [6:0] LCD_reg_Vop_set;
+wire [7:0] Driver_reg_ctrl;
+wire [2:0] LCD_reg_func_set;
+wire [2:0] LCD_reg_disp_ctrl;
+wire [1:0] LCD_reg_temp_ctrl;
+wire [2:0] LCD_reg_bias_sys;
+wire [0:0] LCD_State;
+wire [0:0] LCD_State_ns;
+wire [0:0] un1_screen_send_6_i;
+wire [0:0] uSRAM_B_ADDR_sig_RNINMS51_Y;
+wire [1:1] uSRAM_B_ADDR_sig_RNI6ULC1_Y;
+wire [2:2] uSRAM_B_ADDR_sig_RNIM6FJ1_Y;
+wire [3:3] uSRAM_B_ADDR_sig_RNI7G8Q1_S;
+wire [3:3] uSRAM_B_ADDR_sig_RNI7G8Q1_Y;
+wire [4:4] uSRAM_B_ADDR_sig_RNIPQ112_S;
+wire [4:4] uSRAM_B_ADDR_sig_RNIPQ112_Y;
+wire [5:5] uSRAM_B_ADDR_sig_RNIC6R72_S;
+wire [5:5] uSRAM_B_ADDR_sig_RNIC6R72_Y;
+wire [6:6] uSRAM_B_ADDR_sig_RNI0JKE2_S;
+wire [6:6] uSRAM_B_ADDR_sig_RNI0JKE2_Y;
+wire [8:8] uSRAM_B_ADDR_sig_7_RNO_FCO;
+wire [8:8] uSRAM_B_ADDR_sig_7_RNO_S;
+wire [8:8] uSRAM_B_ADDR_sig_7_RNO_Y;
+wire [7:7] uSRAM_B_ADDR_sig_RNIL0EL2_S;
+wire [7:7] uSRAM_B_ADDR_sig_RNIL0EL2_Y;
+wire [6:4] prdata_sig_12_0_iv_0_0;
+wire [8:4] math_result_7;
+wire [0:0] prdata_sig_12_iv_0_0_a2_2_0;
+wire [5:1] prdata_sig_12_0_iv_0_0_1;
+wire [0:0] SPIout_byte_10_0_iv_i_2_1;
+wire [0:0] SPIout_byte_10_0_iv_i_2;
+wire [5:5] math_result_7_0_0_0_a2_0;
+wire [2:2] math_result_7_0_a3_0_a2_0_a2_0;
+wire [2:2] SPIout_byte_10_1_iv_0_0_0;
+wire [6:4] SPIout_byte_10_0_iv_0_0_0;
+wire [7:3] SPIout_byte_10_0_iv_0_0;
+wire [5:5] SPIout_byte_10_1_iv_i_1;
+wire [5:5] SPIout_byte_10_1_iv_i_0;
+wire [1:1] init_step_6_i_0_0;
+wire [2:2] SPIout_byte_10_1_iv_0_0_2;
+wire [2:2] prdata_sig_12_iv_0_a2_0_1;
+wire [0:0] prdata_sig_12_iv_0_0_2;
+wire [2:2] prdata_sig_12_iv_0_2;
+wire [0:0] prdata_sig_12_iv_0_0_0;
+wire [0:0] prdata_sig_12_iv_0_0_1;
+wire [2:2] prdata_sig_12_iv_0_1;
+wire [2:2] prdata_sig_12_iv_0_0;
+wire [1:1] prdata_sig_12_0_iv_0_0_0;
+wire [1:1] prdata_sig_12_0_iv_0_0_2;
+wire rstn_i_i ;
+wire rstn_i_0_Z ;
+wire chip_enable_sig_Z ;
+wire VCC ;
+wire GND ;
+wire un21_math_result_axbxc3_Z ;
+wire N_31_i ;
+wire N_3_i ;
+wire N_22_i ;
+wire un1_screen_send_7_i ;
+wire un21_math_result_axbxc0_Z ;
+wire un21_math_result_axbxc1_Z ;
+wire un21_math_result_axbxc2_Z ;
+wire un47_psel ;
+wire N_20_i ;
+wire SPIout_byte_10_1_iv_90_1 ;
+wire N_21_i ;
+wire un61_psel ;
+wire un54_psel ;
+wire un40_psel ;
+wire un5_psel ;
+wire un12_psel ;
+wire un19_psel ;
+wire un26_psel ;
+wire un33_psel ;
+wire N_4_i ;
+wire frame_get_bit_Z ;
+wire frame_get_bit_4_iv_i ;
+wire screen_finished_Z ;
+wire screen_finished_0_sqmuxa_Z ;
+wire screen_finishedce_Z ;
+wire SPIDO_sig_Z ;
+wire SPIout_byte_9_sqmuxa ;
+wire data_command_queue_sig_Z ;
+wire frame_start_Z ;
+wire frame_start_0_sqmuxa ;
+wire N_2_i ;
+wire SPIDO_sig_0_sqmuxa_i_0_0_Z ;
+wire SPICLK_last_sig_Z ;
+wire CLK_SPI_sig ;
+wire timer_indicator_last_sig_Z ;
+wire timer_indicator_sig ;
+wire un21_math_result_axbxc6_Z ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_0_cy ;
+wire screen_finished_RNI9G3V_S ;
+wire screen_finished_RNI9G3V_Y ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_0 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_1 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_2 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_3 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_4 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_5 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_6 ;
+wire un1_uSRAM_B_ADDR_sig_1_cry_7 ;
+wire N_303 ;
+wire un1_pwrite ;
+wire N_300 ;
+wire frame_count_0_sqmuxa_Z ;
+wire un1_frame_count_0_sqmuxa_Z ;
+wire N_320 ;
+wire N_319 ;
+wire N_302 ;
+wire N_307 ;
+wire N_318 ;
+wire N_309 ;
+wire N_342 ;
+wire N_324 ;
+wire N_221 ;
+wire N_263 ;
+wire N_190 ;
+wire un21_math_result_c2 ;
+wire frame_start_0_sqmuxa_0_a2_1_Z ;
+wire N_169 ;
+wire N_82 ;
+wire N_305 ;
+wire N_304 ;
+wire un2_screen_send ;
+wire rstn_Z ;
+wire N_181 ;
+wire screen_finished_0_sqmuxa_6_Z ;
+wire screen_finished_0_sqmuxa_5_Z ;
+wire un8_screen_send ;
+wire N_154 ;
+wire un1_screen_send_8_i_0_a2_i_Z ;
+wire N_211 ;
+wire SPIout_byte_10_1_iv_90_1_0 ;
+wire N_76 ;
+wire un1_screen_send_8_i_0_i_Z ;
+wire N_334 ;
+wire N_331 ;
+wire N_301 ;
+wire N_312 ;
+wire N_164 ;
+wire N_335 ;
+wire N_317 ;
+wire N_291 ;
+wire N_205 ;
+wire N_220 ;
+wire N_343 ;
+wire SPIout_byte_10_1_iv_90_1_2 ;
+wire N_255 ;
+wire N_228 ;
+wire CO0_0 ;
+wire N_323 ;
+wire N_316 ;
+wire N_269 ;
+wire N_15 ;
+wire N_14 ;
+  CLKINT rstn_i_0_RNIVLU5 (
+	.Y(rstn_i_i),
+	.A(rstn_i_0_Z)
+);
+  CFG1 chip_enable_sig_RNIDACE (
+	.A(chip_enable_sig_Z),
+	.Y(chip_enable_sig_i)
+);
+defparam chip_enable_sig_RNIDACE.INIT=2'h1;
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[8]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[8]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[5]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_5),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un21_math_result_axbxc3_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \frame_count[0]  (
+	.Q(frame_count[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(frame_count_8[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \frame_count[1]  (
+	.Q(frame_count[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(frame_count_8[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \frame_count[2]  (
+	.Q(frame_count[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(frame_count_8[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \init_step[0]  (
+	.Q(init_step[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_31_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \init_step[1]  (
+	.Q(init_step[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_3_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \init_step[2]  (
+	.Q(init_step[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_22_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[0]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_RNINMS51_S[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[1]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_RNI6ULC1_S[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[2]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_RNIM6FJ1_S[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[3]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[4]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[5]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[6]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \uSRAM_B_ADDR_sig[7]  (
+	.Q(Nokia5110_Driver_0_uSRAM_B_ADDR[7]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(uSRAM_B_ADDR_sig_7[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[6]  (
+	.Q(SPIout_byte[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10[6]),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[7]  (
+	.Q(SPIout_byte[7]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10[7]),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[0]  (
+	.Q(PRDATA[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[1]  (
+	.Q(PRDATA[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[2]  (
+	.Q(PRDATA[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[3]  (
+	.Q(PRDATA[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[4]  (
+	.Q(PRDATA[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[5]  (
+	.Q(PRDATA[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[6]  (
+	.Q(PRDATA[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:207
+  SLE \prdata_sig[7]  (
+	.Q(PRDATA[7]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(prdata_sig_12[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[0]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_0),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(LCD_reg_mem_X[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[1]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_1),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(LCD_reg_mem_X[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[2]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_2),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un21_math_result_axbxc0_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[3]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_3),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un21_math_result_axbxc1_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[4]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_4),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un21_math_result_axbxc2_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[0]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[1]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[2]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[3]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[3]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[4]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[4]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[5]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[5]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[6]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[6]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE \uSRAM_C_DIN_sig[7]  (
+	.Q(Nokia5110_Driver_0_uSRAM_C_DIN[7]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[7]),
+	.EN(un47_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[0]  (
+	.Q(SPIout_byte[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_20_i),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[1]  (
+	.Q(SPIout_byte[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10_1_iv_90_1),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[2]  (
+	.Q(SPIout_byte[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10[2]),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[3]  (
+	.Q(SPIout_byte[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10[3]),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[4]  (
+	.Q(SPIout_byte[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte_10[4]),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \SPIout_byte[5]  (
+	.Q(SPIout_byte[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_21_i),
+	.EN(un1_screen_send_7_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[4]  (
+	.Q(LCD_reg_mem_Y[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[4]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[5]  (
+	.Q(LCD_reg_mem_Y[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[5]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[6]  (
+	.Q(LCD_reg_mem_Y[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[6]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:387
+  SLE \LCD_reg_mem_X[0]  (
+	.Q(LCD_reg_mem_X[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un54_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:387
+  SLE \LCD_reg_mem_X[1]  (
+	.Q(LCD_reg_mem_X[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un54_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:387
+  SLE \LCD_reg_mem_X[2]  (
+	.Q(LCD_reg_mem_X[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un54_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[0]  (
+	.Q(LCD_reg_mem_Y[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[1]  (
+	.Q(LCD_reg_mem_Y[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[2]  (
+	.Q(LCD_reg_mem_Y[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:403
+  SLE \LCD_reg_mem_Y[3]  (
+	.Q(LCD_reg_mem_Y[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[3]),
+	.EN(un61_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[2]  (
+	.Q(LCD_reg_Vop_set[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[3]  (
+	.Q(LCD_reg_Vop_set[3]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[3]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[4]  (
+	.Q(LCD_reg_Vop_set[4]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[4]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[5]  (
+	.Q(LCD_reg_Vop_set[5]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[5]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[6]  (
+	.Q(LCD_reg_Vop_set[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[6]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[5]  (
+	.Q(Driver_reg_ctrl[5]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[5]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[6]  (
+	.Q(Driver_reg_ctrl[6]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[6]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[7]  (
+	.Q(Driver_reg_ctrl[7]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[7]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:285
+  SLE \LCD_reg_func_set[0]  (
+	.Q(LCD_reg_func_set[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un12_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:285
+  SLE \LCD_reg_func_set[1]  (
+	.Q(LCD_reg_func_set[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un12_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:285
+  SLE \LCD_reg_func_set[2]  (
+	.Q(LCD_reg_func_set[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un12_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:302
+  SLE \LCD_reg_disp_ctrl[0]  (
+	.Q(LCD_reg_disp_ctrl[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un19_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:302
+  SLE \LCD_reg_disp_ctrl[2]  (
+	.Q(LCD_reg_disp_ctrl[2]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un19_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:321
+  SLE \LCD_reg_temp_ctrl[0]  (
+	.Q(LCD_reg_temp_ctrl[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un26_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:321
+  SLE \LCD_reg_temp_ctrl[1]  (
+	.Q(LCD_reg_temp_ctrl[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un26_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:337
+  SLE \LCD_reg_bias_sys[0]  (
+	.Q(LCD_reg_bias_sys[0]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un33_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:337
+  SLE \LCD_reg_bias_sys[1]  (
+	.Q(LCD_reg_bias_sys[1]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un33_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:337
+  SLE \LCD_reg_bias_sys[2]  (
+	.Q(LCD_reg_bias_sys[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un33_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[0]  (
+	.Q(LCD_reg_Vop_set[0]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:353
+  SLE \LCD_reg_Vop_set[1]  (
+	.Q(LCD_reg_Vop_set[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un40_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE \LCD_State[0]  (
+	.Q(LCD_State[0]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(LCD_State_ns[0]),
+	.EN(N_4_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE frame_get_bit (
+	.Q(frame_get_bit_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(frame_get_bit_4_iv_i),
+	.EN(driver_busy),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE screen_finished (
+	.Q(screen_finished_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(screen_finished_0_sqmuxa_Z),
+	.EN(screen_finishedce_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE SPIDO_sig (
+	.Q(SPIDO_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(SPIout_byte[7]),
+	.EN(SPIout_byte_9_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE data_command_sig (
+	.Q(data_command),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(data_command_queue_sig_Z),
+	.EN(SPIout_byte_9_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE frame_start (
+	.Q(frame_start_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(frame_start_0_sqmuxa),
+	.EN(driver_busy),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE data_command_queue_sig (
+	.Q(data_command_queue_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(N_2_i),
+	.EN(driver_busy),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE chip_enable_sig (
+	.Q(chip_enable_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(driver_busy),
+	.EN(SPIDO_sig_0_sqmuxa_i_0_0_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE SPICLK_last_sig (
+	.Q(SPICLK_last_sig_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(CLK),
+	.D(CLK_SPI_sig),
+	.EN(RSTn),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:116
+  SLE timer_indicator_last_sig (
+	.Q(timer_indicator_last_sig_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(CLK),
+	.D(timer_indicator_sig),
+	.EN(RSTn),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[0]  (
+	.Q(Driver_reg_ctrl[0]),
+	.ADn(GND),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[0]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[1]  (
+	.Q(Driver_reg_ctrl[1]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[1]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[2]  (
+	.Q(Driver_reg_ctrl[2]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[2]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[3]  (
+	.Q(Driver_reg_ctrl[3]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[3]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:251
+  SLE \Driver_reg_ctrl[4]  (
+	.Q(Driver_reg_ctrl[4]),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(PWDATA[4]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:369
+  SLE uSRAM_C_BLK_sig (
+	.Q(Nokia5110_Driver_0_uSRAM_C_BLK),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un47_psel),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:457
+  SLE screen_send (
+	.Q(driver_busy),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un1_screen_send_6_i[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:421
+  SLE \uSRAM_A_ADDR_sig[8]  (
+	.Q(Nokia5110_Driver_0_uSRAM_A_ADDR_8),
+	.ADn(VCC),
+	.ALn(RSTn),
+	.CLK(CLK),
+	.D(un21_math_result_axbxc6_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @12:477
+  ARI1 screen_finished_RNI9G3V (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_0_cy),
+	.S(screen_finished_RNI9G3V_S),
+	.Y(screen_finished_RNI9G3V_Y),
+	.B(LCD_State[0]),
+	.C(frame_start_Z),
+	.D(screen_finished_Z),
+	.A(driver_busy),
+	.FCI(VCC)
+);
+defparam screen_finished_RNI9G3V.INIT=20'h40800;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNINMS51[0]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_0),
+	.S(uSRAM_B_ADDR_sig_RNINMS51_S[0]),
+	.Y(uSRAM_B_ADDR_sig_RNINMS51_Y[0]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_0_cy)
+);
+defparam \uSRAM_B_ADDR_sig_RNINMS51[0] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNI6ULC1[1]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_1),
+	.S(uSRAM_B_ADDR_sig_RNI6ULC1_S[1]),
+	.Y(uSRAM_B_ADDR_sig_RNI6ULC1_Y[1]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_0)
+);
+defparam \uSRAM_B_ADDR_sig_RNI6ULC1[1] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNIM6FJ1[2]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_2),
+	.S(uSRAM_B_ADDR_sig_RNIM6FJ1_S[2]),
+	.Y(uSRAM_B_ADDR_sig_RNIM6FJ1_Y[2]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_1)
+);
+defparam \uSRAM_B_ADDR_sig_RNIM6FJ1[2] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNI7G8Q1[3]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_3),
+	.S(uSRAM_B_ADDR_sig_RNI7G8Q1_S[3]),
+	.Y(uSRAM_B_ADDR_sig_RNI7G8Q1_Y[3]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_2)
+);
+defparam \uSRAM_B_ADDR_sig_RNI7G8Q1[3] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNIPQ112[4]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_4),
+	.S(uSRAM_B_ADDR_sig_RNIPQ112_S[4]),
+	.Y(uSRAM_B_ADDR_sig_RNIPQ112_Y[4]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_3)
+);
+defparam \uSRAM_B_ADDR_sig_RNIPQ112[4] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNIC6R72[5]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_5),
+	.S(uSRAM_B_ADDR_sig_RNIC6R72_S[5]),
+	.Y(uSRAM_B_ADDR_sig_RNIC6R72_Y[5]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_4)
+);
+defparam \uSRAM_B_ADDR_sig_RNIC6R72[5] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNI0JKE2[6]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_6),
+	.S(uSRAM_B_ADDR_sig_RNI0JKE2_S[6]),
+	.Y(uSRAM_B_ADDR_sig_RNI0JKE2_Y[6]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_5)
+);
+defparam \uSRAM_B_ADDR_sig_RNI0JKE2[6] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_7_RNO[8]  (
+	.FCO(uSRAM_B_ADDR_sig_7_RNO_FCO[8]),
+	.S(uSRAM_B_ADDR_sig_7_RNO_S[8]),
+	.Y(uSRAM_B_ADDR_sig_7_RNO_Y[8]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_7)
+);
+defparam \uSRAM_B_ADDR_sig_7_RNO[8] .INIT=20'h4AA00;
+// @12:477
+  ARI1 \uSRAM_B_ADDR_sig_RNIL0EL2[7]  (
+	.FCO(un1_uSRAM_B_ADDR_sig_1_cry_7),
+	.S(uSRAM_B_ADDR_sig_RNIL0EL2_S[7]),
+	.Y(uSRAM_B_ADDR_sig_RNIL0EL2_Y[7]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_uSRAM_B_ADDR_sig_1_cry_6)
+);
+defparam \uSRAM_B_ADDR_sig_RNIL0EL2[7] .INIT=20'h4AA00;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[4]  (
+	.A(N_303),
+	.B(PADDR[2]),
+	.C(Driver_reg_ctrl[4]),
+	.D(PADDR[0]),
+	.Y(prdata_sig_12_0_iv_0_0[4])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[4] .INIT=16'h00A8;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_4[5]  (
+	.A(PADDR[4]),
+	.B(un1_pwrite),
+	.C(N_300),
+	.D(PADDR[1]),
+	.Y(N_303)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_4[5] .INIT=16'h0040;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.frame_count_8[1]  (
+	.A(frame_count_0_sqmuxa_Z),
+	.B(un1_frame_count_0_sqmuxa_Z),
+	.C(frame_count[1]),
+	.D(frame_count[0]),
+	.Y(frame_count_8[1])
+);
+defparam \p_LCD_SPI_Control.frame_count_8[1] .INIT=16'h48C0;
+// @12:430
+  CFG4 \math_result_7_0_0_0[4]  (
+	.A(LCD_reg_mem_Y[0]),
+	.B(LCD_reg_mem_Y[1]),
+	.C(LCD_reg_mem_Y[2]),
+	.D(N_320),
+	.Y(math_result_7[4])
+);
+defparam \math_result_7_0_0_0[4] .INIT=16'h1A00;
+// @12:305
+  CFG4 \p_LCD_reg_disp_ctrl.un19_psel_0_a2  (
+	.A(PADDR[1]),
+	.B(PADDR[2]),
+	.C(PADDR[0]),
+	.D(N_319),
+	.Y(un19_psel)
+);
+defparam \p_LCD_reg_disp_ctrl.un19_psel_0_a2 .INIT=16'h0200;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_2_0[0]  (
+	.A(PADDR[1]),
+	.B(PADDR[2]),
+	.C(PADDR[0]),
+	.D(N_302),
+	.Y(prdata_sig_12_iv_0_0_a2_2_0[0])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_2_0[0] .INIT=16'h0200;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_5[3]  (
+	.A(N_300),
+	.B(un1_pwrite),
+	.C(PADDR[4]),
+	.Y(N_302)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_5[3] .INIT=8'h08;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_5[5]  (
+	.A(N_300),
+	.B(un1_pwrite),
+	.C(N_307),
+	.D(PADDR[4]),
+	.Y(N_318)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_5[5] .INIT=16'h8000;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_a2_9[2]  (
+	.A(init_step[0]),
+	.B(init_step[1]),
+	.C(LCD_State[0]),
+	.D(frame_start_Z),
+	.Y(N_309)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_a2_9[2] .INIT=16'h0400;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_7[0]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_302),
+	.Y(N_342)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_7[0] .INIT=8'h20;
+// @12:324
+  CFG4 \p_LCD_reg_temp_ctrl.un26_psel_0_a2  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_319),
+	.D(PADDR[1]),
+	.Y(un26_psel)
+);
+defparam \p_LCD_reg_temp_ctrl.un26_psel_0_a2 .INIT=16'h2000;
+// @12:288
+  CFG4 \p_LCD_reg_func_set.un12_psel_0_a2  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_319),
+	.D(PADDR[1]),
+	.Y(un12_psel)
+);
+defparam \p_LCD_reg_func_set.un12_psel_0_a2 .INIT=16'h0020;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_7[3]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(PADDR[1]),
+	.Y(N_307)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_7[3] .INIT=8'h10;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_6[0]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_303),
+	.Y(N_324)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_6[0] .INIT=8'h10;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_2[3]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_302),
+	.D(Driver_reg_ctrl[3]),
+	.Y(N_221)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_2[3] .INIT=16'h1000;
+// @12:254
+  CFG4 \p_Driver_reg_ctrl.un5_psel_0_a2  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(N_319),
+	.D(PADDR[1]),
+	.Y(un5_psel)
+);
+defparam \p_Driver_reg_ctrl.un5_psel_0_a2 .INIT=16'h0010;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[5]  (
+	.A(N_318),
+	.B(N_303),
+	.C(LCD_reg_mem_Y[5]),
+	.D(prdata_sig_12_0_iv_0_0_1[5]),
+	.Y(prdata_sig_12[5])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[5] .INIT=16'hA0EC;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_1[5]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.C(LCD_reg_Vop_set[5]),
+	.D(Driver_reg_ctrl[5]),
+	.Y(prdata_sig_12_0_iv_0_0_1[5])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_1[5] .INIT=16'h4C5D;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_2[0]  (
+	.A(N_263),
+	.B(SPIout_byte_10_0_iv_i_2_1[0]),
+	.C(LCD_State[0]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_0_iv_i_2[0])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_2[0] .INIT=16'hAEFF;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_2_1[0]  (
+	.A(LCD_reg_Vop_set[0]),
+	.B(LCD_reg_disp_ctrl[0]),
+	.C(init_step[2]),
+	.D(init_step[1]),
+	.Y(SPIout_byte_10_0_iv_i_2_1[0])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_2_1[0] .INIT=16'h35F0;
+// @12:183
+  CFG2 rstn_i_0 (
+	.A(Driver_reg_ctrl[0]),
+	.B(RSTn),
+	.Y(rstn_i_0_Z)
+);
+defparam rstn_i_0.INIT=4'h8;
+// @12:457
+  CFG3 \init_step_RNO[2]  (
+	.A(init_step[2]),
+	.B(N_309),
+	.C(N_190),
+	.Y(N_22_i)
+);
+defparam \init_step_RNO[2] .INIT=8'hA3;
+// @12:447
+  CFG2 un21_math_result_axbxc3 (
+	.A(math_result_7[5]),
+	.B(un21_math_result_c2),
+	.Y(un21_math_result_axbxc3_Z)
+);
+defparam un21_math_result_axbxc3.INIT=4'h2;
+// @12:447
+  CFG2 un21_math_result_axbxc6 (
+	.A(un21_math_result_c2),
+	.B(math_result_7[8]),
+	.Y(un21_math_result_axbxc6_Z)
+);
+defparam un21_math_result_axbxc6.INIT=4'hE;
+// @12:430
+  CFG3 \math_result_7_0_a2_0_a2_1_a2[8]  (
+	.A(LCD_reg_mem_Y[2]),
+	.B(LCD_reg_mem_Y[1]),
+	.C(N_320),
+	.Y(math_result_7[8])
+);
+defparam \math_result_7_0_a2_0_a2_1_a2[8] .INIT=8'h20;
+// @12:495
+  CFG2 frame_start_0_sqmuxa_0_a2_1 (
+	.A(frame_start_Z),
+	.B(frame_count[0]),
+	.Y(frame_start_0_sqmuxa_0_a2_1_Z)
+);
+defparam frame_start_0_sqmuxa_0_a2_1.INIT=4'h1;
+// @12:430
+  CFG2 \math_result_7_0_0_0_a2_0[5]  (
+	.A(LCD_reg_mem_Y[1]),
+	.B(LCD_reg_mem_Y[2]),
+	.Y(math_result_7_0_0_0_a2_0[5])
+);
+defparam \math_result_7_0_0_0_a2_0[5] .INIT=4'h2;
+// @12:507
+  CFG2 \init_step_RNIJEA6[1]  (
+	.A(init_step[2]),
+	.B(init_step[1]),
+	.Y(N_169)
+);
+defparam \init_step_RNIJEA6[1] .INIT=4'h7;
+// @12:495
+  CFG2 un1_screen_send_8_i_0_i_o2 (
+	.A(frame_start_Z),
+	.B(LCD_State[0]),
+	.Y(N_82)
+);
+defparam un1_screen_send_8_i_0_i_o2.INIT=4'hD;
+// @12:324
+  CFG2 \p_LCD_reg_temp_ctrl.un26_psel_0_a2_0  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.Y(N_305)
+);
+defparam \p_LCD_reg_temp_ctrl.un26_psel_0_a2_0 .INIT=4'h2;
+// @12:210
+  CFG2 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_6[3]  (
+	.A(PADDR[0]),
+	.B(PADDR[2]),
+	.Y(N_304)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_6[3] .INIT=4'h1;
+// @12:210
+  CFG2 \APB_Reg_Read_process.un1_pwrite_0_a2  (
+	.A(PSEL),
+	.B(PWRITE),
+	.Y(un1_pwrite)
+);
+defparam \APB_Reg_Read_process.un1_pwrite_0_a2 .INIT=4'h2;
+// @12:590
+  CFG2 SPIDO (
+	.A(SPIDO_sig_Z),
+	.B(driver_busy),
+	.Y(SPIDO_1z)
+);
+defparam SPIDO.INIT=4'h8;
+// @12:591
+  CFG2 SPICLK (
+	.A(CLK_SPI_sig),
+	.B(driver_busy),
+	.Y(SPICLK_1z)
+);
+defparam SPICLK.INIT=4'h8;
+// @12:478
+  CFG2 \p_LCD_SPI_Control.un2_screen_send  (
+	.A(CLK_SPI_sig),
+	.B(SPICLK_last_sig_Z),
+	.Y(un2_screen_send)
+);
+defparam \p_LCD_SPI_Control.un2_screen_send .INIT=4'h4;
+// @12:183
+  CFG2 rstn (
+	.A(Driver_reg_ctrl[0]),
+	.B(RSTn),
+	.Y(rstn_Z)
+);
+defparam rstn.INIT=4'h8;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_m2[1]  (
+	.A(PADDR[1]),
+	.B(LCD_reg_temp_ctrl[1]),
+	.C(LCD_reg_func_set[1]),
+	.Y(N_181)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_m2[1] .INIT=8'hD8;
+// @4:2204
+  CFG4 screen_finished_0_sqmuxa_6 (
+	.A(Nokia5110_Driver_0_uSRAM_B_ADDR[5]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[4]),
+	.C(Nokia5110_Driver_0_uSRAM_B_ADDR[2]),
+	.D(Nokia5110_Driver_0_uSRAM_B_ADDR[1]),
+	.Y(screen_finished_0_sqmuxa_6_Z)
+);
+defparam screen_finished_0_sqmuxa_6.INIT=16'h8000;
+// @4:2204
+  CFG4 screen_finished_0_sqmuxa_5 (
+	.A(Nokia5110_Driver_0_uSRAM_B_ADDR[7]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[0]),
+	.C(Nokia5110_Driver_0_uSRAM_B_ADDR[8]),
+	.D(screen_finished_Z),
+	.Y(screen_finished_0_sqmuxa_5_Z)
+);
+defparam screen_finished_0_sqmuxa_5.INIT=16'h0080;
+// @12:430
+  CFG3 \math_result_7_0_a3_0_a2_0_a2_0[2]  (
+	.A(LCD_reg_mem_Y[1]),
+	.B(LCD_reg_mem_Y[0]),
+	.C(LCD_reg_mem_Y[2]),
+	.Y(math_result_7_0_a3_0_a2_0_a2_0[2])
+);
+defparam \math_result_7_0_a3_0_a2_0_a2_0[2] .INIT=8'h4C;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_8[3]  (
+	.A(PADDR[7]),
+	.B(PADDR[6]),
+	.C(PADDR[5]),
+	.D(PADDR[3]),
+	.Y(N_300)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_8[3] .INIT=16'h0001;
+// @12:430
+  CFG4 \math_result_7_0_0_a2_2[4]  (
+	.A(LCD_reg_mem_Y[6]),
+	.B(LCD_reg_mem_Y[5]),
+	.C(LCD_reg_mem_Y[4]),
+	.D(LCD_reg_mem_Y[3]),
+	.Y(N_320)
+);
+defparam \math_result_7_0_0_a2_2[4] .INIT=16'h0001;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_a2_0[0]  (
+	.A(init_step[1]),
+	.B(LCD_State[0]),
+	.C(LCD_reg_bias_sys[0]),
+	.D(init_step[0]),
+	.Y(N_263)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_i_a2_0[0] .INIT=16'h2300;
+// @12:484
+  CFG3 \p_LCD_SPI_Control.un8_screen_send  (
+	.A(frame_count[2]),
+	.B(frame_count[1]),
+	.C(frame_count[0]),
+	.Y(un8_screen_send)
+);
+defparam \p_LCD_SPI_Control.un8_screen_send .INIT=8'h80;
+// @12:457
+  CFG3 screen_finishedce (
+	.A(frame_start_Z),
+	.B(driver_busy),
+	.C(LCD_State[0]),
+	.Y(screen_finishedce_Z)
+);
+defparam screen_finishedce.INIT=8'h80;
+// @12:477
+  CFG2 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_o2[6]  (
+	.A(N_82),
+	.B(init_step[0]),
+	.Y(N_154)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_o2[6] .INIT=4'hB;
+// @12:495
+  CFG3 un1_screen_send_8_i_0_a2_i (
+	.A(frame_start_Z),
+	.B(screen_finished_Z),
+	.C(LCD_State[0]),
+	.Y(un1_screen_send_8_i_0_a2_i_Z)
+);
+defparam un1_screen_send_8_i_0_a2_i.INIT=8'h7F;
+// @12:457
+  CFG3 SPIDO_sig_0_sqmuxa_i_0_0 (
+	.A(frame_start_Z),
+	.B(frame_get_bit_Z),
+	.C(driver_busy),
+	.Y(SPIDO_sig_0_sqmuxa_i_0_0_Z)
+);
+defparam SPIDO_sig_0_sqmuxa_i_0_0.INIT=8'h4F;
+// @12:495
+  CFG3 SPIout_byte_9_sqmuxa_0_a2_0_a2 (
+	.A(frame_start_Z),
+	.B(frame_get_bit_Z),
+	.C(driver_busy),
+	.Y(SPIout_byte_9_sqmuxa)
+);
+defparam SPIout_byte_9_sqmuxa_0_a2_0_a2.INIT=8'h40;
+// @12:477
+  CFG3 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_3[6]  (
+	.A(LCD_State[0]),
+	.B(frame_start_Z),
+	.C(URAM_C0_0_B_DOUT[6]),
+	.Y(N_211)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_3[6] .INIT=8'h80;
+// @12:457
+  CFG2 \LCD_State_RNO[0]  (
+	.A(frame_start_Z),
+	.B(driver_busy),
+	.Y(N_4_i)
+);
+defparam \LCD_State_RNO[0] .INIT=4'h8;
+// @12:457
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1_0  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte[0]),
+	.C(URAM_C0_0_B_DOUT[1]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_1_iv_90_1_0)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1_0 .INIT=16'hA0CC;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_0[2]  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte[1]),
+	.C(URAM_C0_0_B_DOUT[2]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_1_iv_0_0_0[2])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_0[2] .INIT=16'hA0CC;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_0[4]  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte[3]),
+	.C(URAM_C0_0_B_DOUT[4]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_0_iv_0_0_0[4])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_0[4] .INIT=16'hA0CC;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[7]  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte[6]),
+	.C(URAM_C0_0_B_DOUT[7]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_0_iv_0_0[7])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[7] .INIT=16'hA0CC;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[3]  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte[2]),
+	.C(URAM_C0_0_B_DOUT[3]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_0_iv_0_0[3])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[3] .INIT=16'hA0CC;
+// @12:495
+  CFG4 frame_start_0_sqmuxa_0_a2 (
+	.A(frame_count[2]),
+	.B(frame_count[1]),
+	.C(un2_screen_send),
+	.D(frame_start_0_sqmuxa_0_a2_1_Z),
+	.Y(frame_start_0_sqmuxa)
+);
+defparam frame_start_0_sqmuxa_0_a2.INIT=16'h1000;
+// @12:495
+  CFG4 uSRAM_B_ADDR_sig_1_sqmuxa_1_0_a2_i (
+	.A(frame_start_Z),
+	.B(screen_finished_0_sqmuxa_Z),
+	.C(driver_busy),
+	.D(LCD_State[0]),
+	.Y(N_76)
+);
+defparam uSRAM_B_ADDR_sig_1_sqmuxa_1_0_a2_i.INIT=16'h7FFF;
+// @12:477
+  CFG3 \init_step_6_i_m2_i_o2[2]  (
+	.A(driver_busy),
+	.B(N_82),
+	.C(init_step[1]),
+	.Y(N_190)
+);
+defparam \init_step_6_i_m2_i_o2[2] .INIT=8'hDF;
+// @12:457
+  CFG4 \LCD_State_ns_0_0_0[0]  (
+	.A(screen_finished_Z),
+	.B(init_step[0]),
+	.C(LCD_State[0]),
+	.D(N_169),
+	.Y(LCD_State_ns[0])
+);
+defparam \LCD_State_ns_0_0_0[0] .INIT=16'h5053;
+// @12:495
+  CFG4 un1_screen_send_8_i_0_i (
+	.A(screen_finished_Z),
+	.B(frame_get_bit_Z),
+	.C(frame_start_Z),
+	.D(N_82),
+	.Y(un1_screen_send_8_i_0_i_Z)
+);
+defparam un1_screen_send_8_i_0_i.INIT=16'h53FF;
+// @12:477
+  CFG3 \init_step_6_i_0_a2_2[1]  (
+	.A(init_step[1]),
+	.B(N_82),
+	.C(init_step[0]),
+	.Y(N_334)
+);
+defparam \init_step_6_i_0_a2_2[1] .INIT=8'h20;
+// @12:477
+  CFG3 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_a2_3[5]  (
+	.A(init_step[2]),
+	.B(N_82),
+	.C(init_step[0]),
+	.Y(N_331)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_a2_3[5] .INIT=8'h02;
+// @12:210
+  CFG2 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_4[3]  (
+	.A(N_300),
+	.B(un1_pwrite),
+	.Y(N_301)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_4[3] .INIT=4'h8;
+// @12:457
+  CFG3 data_command_queue_sig_RNO (
+	.A(frame_start_Z),
+	.B(N_82),
+	.C(data_command_queue_sig_Z),
+	.Y(N_2_i)
+);
+defparam data_command_queue_sig_RNO.INIT=8'hC8;
+// @12:457
+  CFG3 \p_LCD_SPI_Control.frame_get_bit_4_iv_i  (
+	.A(frame_get_bit_Z),
+	.B(un2_screen_send),
+	.C(un1_screen_send_8_i_0_i_Z),
+	.Y(frame_get_bit_4_iv_i)
+);
+defparam \p_LCD_SPI_Control.frame_get_bit_4_iv_i .INIT=8'hE0;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_0[6]  (
+	.A(init_step[2]),
+	.B(SPIout_byte[5]),
+	.C(N_154),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_0_iv_0_0_0[6])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0_0[6] .INIT=16'h0ACE;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_1[5]  (
+	.A(N_331),
+	.B(URAM_C0_0_B_DOUT[5]),
+	.C(LCD_State[0]),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_1_iv_i_1[5])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_1[5] .INIT=16'hBAAA;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_0[5]  (
+	.A(init_step[1]),
+	.B(SPIout_byte[4]),
+	.C(N_154),
+	.D(frame_start_Z),
+	.Y(SPIout_byte_10_1_iv_i_0[5])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_i_0[5] .INIT=16'h0537;
+// @4:2204
+  CFG4 screen_finished_0_sqmuxa (
+	.A(Nokia5110_Driver_0_uSRAM_B_ADDR[3]),
+	.B(Nokia5110_Driver_0_uSRAM_B_ADDR[6]),
+	.C(screen_finished_0_sqmuxa_6_Z),
+	.D(screen_finished_0_sqmuxa_5_Z),
+	.Y(screen_finished_0_sqmuxa_Z)
+);
+defparam screen_finished_0_sqmuxa.INIT=16'h4000;
+// @12:288
+  CFG4 \p_LCD_reg_func_set.un12_psel_0_a2_2  (
+	.A(PWRITE),
+	.B(PSEL),
+	.C(PENABLE),
+	.D(N_300),
+	.Y(N_312)
+);
+defparam \p_LCD_reg_func_set.un12_psel_0_a2_2 .INIT=16'h8000;
+// @12:447
+  CFG3 un21_math_result_axbxc0 (
+	.A(N_320),
+	.B(math_result_7_0_a3_0_a2_0_a2_0[2]),
+	.C(LCD_reg_mem_X[2]),
+	.Y(un21_math_result_axbxc0_Z)
+);
+defparam un21_math_result_axbxc0.INIT=8'h78;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_o2[2]  (
+	.A(init_step[2]),
+	.B(N_82),
+	.C(init_step[0]),
+	.D(init_step[1]),
+	.Y(N_164)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_o2[2] .INIT=16'h3001;
+// @12:477
+  CFG3 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_4[4]  (
+	.A(init_step[2]),
+	.B(N_154),
+	.C(init_step[1]),
+	.Y(N_335)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_4[4] .INIT=8'h01;
+// @12:477
+  CFG2 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_2[7]  (
+	.A(N_309),
+	.B(init_step[2]),
+	.Y(N_317)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_a2_2[7] .INIT=4'h2;
+// @12:477
+  CFG2 un1_screen_send_7_0_0_a2_0 (
+	.A(N_334),
+	.B(init_step[2]),
+	.Y(N_291)
+);
+defparam un1_screen_send_7_0_0_a2_0.INIT=4'h8;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_a2[2]  (
+	.A(init_step[2]),
+	.B(N_309),
+	.C(LCD_reg_disp_ctrl[2]),
+	.D(LCD_reg_Vop_set[2]),
+	.Y(N_205)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_a2[2] .INIT=16'hC480;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[8]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_7_RNO_S[8]),
+	.Y(uSRAM_B_ADDR_sig_7[8])
+);
+defparam \uSRAM_B_ADDR_sig_7[8] .INIT=4'h8;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[7]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_RNIL0EL2_S[7]),
+	.Y(uSRAM_B_ADDR_sig_7[7])
+);
+defparam \uSRAM_B_ADDR_sig_7[7] .INIT=4'h8;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[6]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_RNI0JKE2_S[6]),
+	.Y(uSRAM_B_ADDR_sig_7[6])
+);
+defparam \uSRAM_B_ADDR_sig_7[6] .INIT=4'h8;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[5]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_RNIC6R72_S[5]),
+	.Y(uSRAM_B_ADDR_sig_7[5])
+);
+defparam \uSRAM_B_ADDR_sig_7[5] .INIT=4'h8;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[4]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_RNIPQ112_S[4]),
+	.Y(uSRAM_B_ADDR_sig_7[4])
+);
+defparam \uSRAM_B_ADDR_sig_7[4] .INIT=4'h8;
+// @12:477
+  CFG2 \uSRAM_B_ADDR_sig_7[3]  (
+	.A(N_76),
+	.B(uSRAM_B_ADDR_sig_RNI7G8Q1_S[3]),
+	.Y(uSRAM_B_ADDR_sig_7[3])
+);
+defparam \uSRAM_B_ADDR_sig_7[3] .INIT=4'h8;
+// @12:457
+  CFG4 screen_send_RNO (
+	.A(driver_busy),
+	.B(un1_screen_send_8_i_0_a2_i_Z),
+	.C(timer_indicator_sig),
+	.D(timer_indicator_last_sig_Z),
+	.Y(un1_screen_send_6_i[0])
+);
+defparam screen_send_RNO.INIT=16'h88D8;
+// @12:477
+  CFG4 \init_step_6_i_0_0[1]  (
+	.A(driver_busy),
+	.B(init_step[1]),
+	.C(N_154),
+	.D(N_331),
+	.Y(init_step_6_i_0_0[1])
+);
+defparam \init_step_6_i_0_0[1] .INIT=16'hBB31;
+// @12:495
+  CFG4 frame_count_0_sqmuxa (
+	.A(driver_busy),
+	.B(un2_screen_send),
+	.C(un8_screen_send),
+	.D(un1_screen_send_8_i_0_a2_i_Z),
+	.Y(frame_count_0_sqmuxa_Z)
+);
+defparam frame_count_0_sqmuxa.INIT=16'h0800;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0[3]  (
+	.A(N_309),
+	.B(SPIout_byte_10_0_iv_0_0[3]),
+	.C(LCD_reg_Vop_set[3]),
+	.D(init_step[2]),
+	.Y(SPIout_byte_10[3])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0[3] .INIT=16'hEEEC;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_a2[3]  (
+	.A(N_307),
+	.B(PADDR[4]),
+	.C(LCD_reg_mem_Y[3]),
+	.D(N_301),
+	.Y(N_220)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_a2[3] .INIT=16'hA200;
+// @12:447
+  CFG4 un21_math_result_ac0_1 (
+	.A(N_320),
+	.B(LCD_reg_mem_X[2]),
+	.C(math_result_7_0_a3_0_a2_0_a2_0[2]),
+	.D(math_result_7_0_0_0_a2_0[5]),
+	.Y(un21_math_result_c2)
+);
+defparam un21_math_result_ac0_1.INIT=16'h8000;
+// @12:447
+  CFG4 un21_math_result_axbxc1 (
+	.A(N_320),
+	.B(LCD_reg_mem_X[2]),
+	.C(math_result_7_0_a3_0_a2_0_a2_0[2]),
+	.D(math_result_7_0_0_0_a2_0[5]),
+	.Y(un21_math_result_axbxc1_Z)
+);
+defparam un21_math_result_axbxc1.INIT=16'h2A80;
+// @12:430
+  CFG4 \math_result_7_0_0_0[5]  (
+	.A(LCD_reg_mem_Y[0]),
+	.B(N_320),
+	.C(math_result_7_0_0_0_a2_0[5]),
+	.D(math_result_7[8]),
+	.Y(math_result_7[5])
+);
+defparam \math_result_7_0_0_0[5] .INIT=16'hEAC0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_8[0]  (
+	.A(PADDR[4]),
+	.B(PADDR[1]),
+	.C(N_305),
+	.D(N_301),
+	.Y(N_343)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2_8[0] .INIT=16'h2000;
+// @12:288
+  CFG2 \p_LCD_reg_func_set.un12_psel_0_a2_0  (
+	.A(N_312),
+	.B(PADDR[4]),
+	.Y(N_319)
+);
+defparam \p_LCD_reg_func_set.un12_psel_0_a2_0 .INIT=4'h2;
+// @12:457
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1_2  (
+	.A(LCD_reg_Vop_set[1]),
+	.B(LCD_reg_func_set[1]),
+	.C(N_317),
+	.D(N_164),
+	.Y(SPIout_byte_10_1_iv_90_1_2)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1_2 .INIT=16'hECA0;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_2[2]  (
+	.A(N_205),
+	.B(LCD_reg_bias_sys[2]),
+	.C(SPIout_byte_10_1_iv_0_0_0[2]),
+	.D(N_335),
+	.Y(SPIout_byte_10_1_iv_0_0_2[2])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0_2[2] .INIT=16'hFEFA;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_iv_0_a2_0_1[2]  (
+	.A(PADDR[2]),
+	.B(PADDR[1]),
+	.C(N_302),
+	.Y(prdata_sig_12_iv_0_a2_0_1[2])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_a2_0_1[2] .INIT=8'h40;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0[7]  (
+	.A(N_317),
+	.B(SPIout_byte_10_0_iv_0_0[7]),
+	.C(init_step[1]),
+	.D(N_331),
+	.Y(SPIout_byte_10[7])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0[7] .INIT=16'hEFEE;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[4]  (
+	.A(N_317),
+	.B(LCD_reg_Vop_set[4]),
+	.C(SPIout_byte_10_0_iv_0_0_0[4]),
+	.D(N_335),
+	.Y(SPIout_byte_10[4])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[4] .INIT=16'hFFF8;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[6]  (
+	.A(SPIout_byte_10_0_iv_0_0_0[6]),
+	.B(N_211),
+	.C(LCD_reg_Vop_set[6]),
+	.D(N_317),
+	.Y(SPIout_byte_10[6])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_0_iv_0_0[6] .INIT=16'hFEEE;
+// @12:447
+  CFG2 un21_math_result_axbxc2 (
+	.A(un21_math_result_c2),
+	.B(math_result_7[4]),
+	.Y(un21_math_result_axbxc2_Z)
+);
+defparam un21_math_result_axbxc2.INIT=4'h6;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_iv_0_a2[2]  (
+	.A(LCD_reg_func_set[2]),
+	.B(PADDR[1]),
+	.C(N_342),
+	.Y(N_255)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_a2[2] .INIT=8'hE0;
+// @12:406
+  CFG3 \p_LCD_reg_mem_Y.un61_psel_0_a2  (
+	.A(PADDR[4]),
+	.B(N_312),
+	.C(N_307),
+	.Y(un61_psel)
+);
+defparam \p_LCD_reg_mem_Y.un61_psel_0_a2 .INIT=8'h80;
+// @12:390
+  CFG4 \p_LCD_reg_mem_X.un54_psel_0_a2  (
+	.A(PADDR[4]),
+	.B(PADDR[1]),
+	.C(N_312),
+	.D(N_305),
+	.Y(un54_psel)
+);
+defparam \p_LCD_reg_mem_X.un54_psel_0_a2 .INIT=16'h2000;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2[0]  (
+	.A(LCD_reg_temp_ctrl[0]),
+	.B(LCD_reg_func_set[0]),
+	.C(PADDR[1]),
+	.D(N_342),
+	.Y(N_228)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_a2[0] .INIT=16'hAC00;
+// @12:482
+  CFG2 \p_LCD_SPI_Control.frame_count_8_RNO[2]  (
+	.A(frame_count_0_sqmuxa_Z),
+	.B(frame_count[0]),
+	.Y(CO0_0)
+);
+defparam \p_LCD_SPI_Control.frame_count_8_RNO[2] .INIT=4'h8;
+// @12:457
+  CFG4 un1_screen_send_7_0_0_a2_0_RNIUAJF (
+	.A(driver_busy),
+	.B(frame_get_bit_Z),
+	.C(N_291),
+	.D(frame_start_Z),
+	.Y(un1_screen_send_7_i)
+);
+defparam un1_screen_send_7_0_0_a2_0_RNIUAJF.INIT=16'h0A08;
+// @12:457
+  CFG3 \SPIout_byte_RNO[0]  (
+	.A(LCD_State[0]),
+	.B(SPIout_byte_10_0_iv_i_2[0]),
+	.C(URAM_C0_0_B_DOUT[0]),
+	.Y(N_20_i)
+);
+defparam \SPIout_byte_RNO[0] .INIT=8'h31;
+// @12:457
+  CFG4 \init_step_RNO[0]  (
+	.A(driver_busy),
+	.B(init_step[0]),
+	.C(N_82),
+	.D(N_169),
+	.Y(N_31_i)
+);
+defparam \init_step_RNO[0] .INIT=16'hC6CC;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_2[0]  (
+	.A(N_318),
+	.B(N_343),
+	.C(LCD_reg_mem_Y[0]),
+	.D(LCD_reg_mem_X[0]),
+	.Y(prdata_sig_12_iv_0_0_2[0])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_2[0] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_2[2]  (
+	.A(N_318),
+	.B(N_343),
+	.C(LCD_reg_mem_Y[2]),
+	.D(LCD_reg_mem_X[2]),
+	.Y(prdata_sig_12_iv_0_2[2])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_2[2] .INIT=16'hECA0;
+// @12:457
+  CFG4 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1  (
+	.A(LCD_reg_bias_sys[1]),
+	.B(SPIout_byte_10_1_iv_90_1_2),
+	.C(N_335),
+	.D(SPIout_byte_10_1_iv_90_1_0),
+	.Y(SPIout_byte_10_1_iv_90_1)
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_90_1 .INIT=16'hFFEC;
+// @12:477
+  CFG3 \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0[2]  (
+	.A(N_164),
+	.B(SPIout_byte_10_1_iv_0_0_2[2]),
+	.C(LCD_reg_func_set[2]),
+	.Y(SPIout_byte_10[2])
+);
+defparam \p_LCD_SPI_Control.SPIout_byte_10_1_iv_0_0[2] .INIT=8'hEC;
+// @12:373
+  CFG4 \p_LCD_reg_mem_data.un47_psel_0_a2  (
+	.A(PADDR[4]),
+	.B(PADDR[1]),
+	.C(N_312),
+	.D(N_304),
+	.Y(un47_psel)
+);
+defparam \p_LCD_reg_mem_data.un47_psel_0_a2 .INIT=16'h2000;
+// @12:477
+  CFG4 un1_frame_count_0_sqmuxa (
+	.A(un2_screen_send),
+	.B(driver_busy),
+	.C(frame_count_0_sqmuxa_Z),
+	.D(un1_screen_send_8_i_0_a2_i_Z),
+	.Y(un1_frame_count_0_sqmuxa_Z)
+);
+defparam un1_frame_count_0_sqmuxa.INIT=16'hF7F3;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_2[4]  (
+	.A(PADDR[2]),
+	.B(PADDR[0]),
+	.C(N_303),
+	.Y(N_323)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_2[4] .INIT=8'h20;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_0[7]  (
+	.A(PADDR[2]),
+	.B(PADDR[0]),
+	.C(N_303),
+	.Y(N_316)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2_0[7] .INIT=8'h80;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2[4]  (
+	.A(LCD_reg_Vop_set[4]),
+	.B(PADDR[2]),
+	.C(N_303),
+	.Y(N_269)
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_a2[4] .INIT=8'h80;
+// @12:477
+  CFG3 \p_LCD_SPI_Control.frame_count_8[0]  (
+	.A(frame_count_0_sqmuxa_Z),
+	.B(un1_frame_count_0_sqmuxa_Z),
+	.C(frame_count[0]),
+	.Y(frame_count_8[0])
+);
+defparam \p_LCD_SPI_Control.frame_count_8[0] .INIT=8'h48;
+// @12:457
+  CFG4 \SPIout_byte_RNO[5]  (
+	.A(N_309),
+	.B(LCD_reg_Vop_set[5]),
+	.C(SPIout_byte_10_1_iv_i_1[5]),
+	.D(SPIout_byte_10_1_iv_i_0[5]),
+	.Y(N_21_i)
+);
+defparam \SPIout_byte_RNO[5] .INIT=16'h000D;
+// @12:457
+  CFG4 \init_step_RNO[1]  (
+	.A(init_step[2]),
+	.B(driver_busy),
+	.C(N_334),
+	.D(init_step_6_i_0_0[1]),
+	.Y(N_3_i)
+);
+defparam \init_step_RNO[1] .INIT=16'h00BF;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_0[0]  (
+	.A(prdata_sig_12_iv_0_0_a2_2_0[0]),
+	.B(N_324),
+	.C(LCD_reg_disp_ctrl[0]),
+	.D(Driver_reg_ctrl[0]),
+	.Y(prdata_sig_12_iv_0_0_0[0])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_0[0] .INIT=16'hECA0;
+// @12:356
+  CFG4 \p_LCD_reg_Vop_set.un40_psel_0_a2  (
+	.A(PADDR[2]),
+	.B(PADDR[1]),
+	.C(PADDR[0]),
+	.D(N_319),
+	.Y(un40_psel)
+);
+defparam \p_LCD_reg_Vop_set.un40_psel_0_a2 .INIT=16'h2000;
+// @12:340
+  CFG4 \p_LCD_reg_bias_sys.un33_psel_0_a2  (
+	.A(PADDR[2]),
+	.B(PADDR[1]),
+	.C(PADDR[0]),
+	.D(N_319),
+	.Y(un33_psel)
+);
+defparam \p_LCD_reg_bias_sys.un33_psel_0_a2 .INIT=16'h0200;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0[7]  (
+	.A(N_316),
+	.B(Driver_reg_ctrl[7]),
+	.C(N_324),
+	.Y(prdata_sig_12[7])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0[7] .INIT=8'hEA;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0_1[0]  (
+	.A(N_323),
+	.B(N_316),
+	.C(LCD_reg_bias_sys[0]),
+	.D(LCD_reg_Vop_set[0]),
+	.Y(prdata_sig_12_iv_0_0_1[0])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0_1[0] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_1[2]  (
+	.A(prdata_sig_12_iv_0_a2_0_1[2]),
+	.B(N_323),
+	.C(LCD_reg_disp_ctrl[2]),
+	.D(LCD_reg_bias_sys[2]),
+	.Y(prdata_sig_12_iv_0_1[2])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_1[2] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0[2]  (
+	.A(N_316),
+	.B(N_324),
+	.C(LCD_reg_Vop_set[2]),
+	.D(Driver_reg_ctrl[2]),
+	.Y(prdata_sig_12_iv_0_0[2])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0[2] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_1[1]  (
+	.A(N_343),
+	.B(N_316),
+	.C(LCD_reg_mem_X[1]),
+	.D(LCD_reg_Vop_set[1]),
+	.Y(prdata_sig_12_0_iv_0_0_1[1])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_1[1] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_0[1]  (
+	.A(N_323),
+	.B(N_324),
+	.C(LCD_reg_bias_sys[1]),
+	.D(Driver_reg_ctrl[1]),
+	.Y(prdata_sig_12_0_iv_0_0_0[1])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_0[1] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[6]  (
+	.A(N_316),
+	.B(N_324),
+	.C(LCD_reg_Vop_set[6]),
+	.D(Driver_reg_ctrl[6]),
+	.Y(prdata_sig_12_0_iv_0_0[6])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[6] .INIT=16'hECA0;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0[4]  (
+	.A(LCD_reg_mem_Y[4]),
+	.B(N_318),
+	.C(N_269),
+	.D(prdata_sig_12_0_iv_0_0[4]),
+	.Y(prdata_sig_12[4])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0[4] .INIT=16'hFFF8;
+// @12:477
+  CFG4 \p_LCD_SPI_Control.frame_count_8[2]  (
+	.A(frame_count[1]),
+	.B(frame_count[2]),
+	.C(un1_frame_count_0_sqmuxa_Z),
+	.D(CO0_0),
+	.Y(frame_count_8[2])
+);
+defparam \p_LCD_SPI_Control.frame_count_8[2] .INIT=16'h60C0;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_2[1]  (
+	.A(prdata_sig_12_0_iv_0_0_0[1]),
+	.B(N_318),
+	.C(LCD_reg_mem_Y[1]),
+	.Y(prdata_sig_12_0_iv_0_0_2[1])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0_2[1] .INIT=8'hEA;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[3]  (
+	.A(LCD_reg_Vop_set[3]),
+	.B(N_316),
+	.C(N_220),
+	.D(N_221),
+	.Y(prdata_sig_12[3])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[3] .INIT=16'hFFF8;
+// @12:210
+  CFG3 \APB_Reg_Read_process.prdata_sig_12_0_iv_0[6]  (
+	.A(prdata_sig_12_0_iv_0_0[6]),
+	.B(N_318),
+	.C(LCD_reg_mem_Y[6]),
+	.Y(prdata_sig_12[6])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0[6] .INIT=8'hEA;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0[2]  (
+	.A(N_255),
+	.B(prdata_sig_12_iv_0_0[2]),
+	.C(prdata_sig_12_iv_0_1[2]),
+	.D(prdata_sig_12_iv_0_2[2]),
+	.Y(prdata_sig_12[2])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0[2] .INIT=16'hFFFE;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[1]  (
+	.A(N_181),
+	.B(N_342),
+	.C(prdata_sig_12_0_iv_0_0_2[1]),
+	.D(prdata_sig_12_0_iv_0_0_1[1]),
+	.Y(prdata_sig_12[1])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_0_iv_0_0[1] .INIT=16'hFFF8;
+// @12:210
+  CFG4 \APB_Reg_Read_process.prdata_sig_12_iv_0_0[0]  (
+	.A(prdata_sig_12_iv_0_0_1[0]),
+	.B(N_228),
+	.C(prdata_sig_12_iv_0_0_0[0]),
+	.D(prdata_sig_12_iv_0_0_2[0]),
+	.Y(prdata_sig_12[0])
+);
+defparam \APB_Reg_Read_process.prdata_sig_12_iv_0_0[0] .INIT=16'hFFFE;
+// @12:176
+  timerZ1 SPI_timer (
+	.rstn_i_i(rstn_i_i),
+	.rstn(rstn_Z),
+	.CLK(CLK),
+	.CLK_SPI_sig(CLK_SPI_sig)
+);
+// @12:189
+  timerZ0 LCD_timer (
+	.timer_indicator_sig(timer_indicator_sig),
+	.CLK_SPI_sig(CLK_SPI_sig),
+	.rstn_i_i(rstn_i_i)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* Nokia5110_Driver */
+
+module URAM_C0_URAM_C0_0_URAM (
+  URAM_C0_0_B_DOUT,
+  Nokia5110_Driver_0_uSRAM_C_DIN,
+  Nokia5110_Driver_0_uSRAM_B_ADDR,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_8,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_5,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_0,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_1,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_2,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_3,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_4,
+  CLK,
+  Nokia5110_Driver_0_uSRAM_C_BLK
+)
+;
+output [7:0] URAM_C0_0_B_DOUT ;
+input [7:0] Nokia5110_Driver_0_uSRAM_C_DIN ;
+input [8:0] Nokia5110_Driver_0_uSRAM_B_ADDR ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+input CLK ;
+input Nokia5110_Driver_0_uSRAM_C_BLK ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+wire CLK ;
+wire Nokia5110_Driver_0_uSRAM_C_BLK ;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R3C0_A_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R3C0_B_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R1C0_A_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R1C0_B_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R2C0_A_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R2C0_B_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R0C0_A_DOUT;
+wire [17:8] URAM_C0_URAM_C0_0_URAM_R0C0_B_DOUT;
+wire \Z\BLKX1[0]\  ;
+wire \Z\BLKY1[0]\  ;
+wire \Z\BLKZ1[1]\  ;
+wire \Z\BLKZ1[0]\  ;
+wire \Z\QBX_TEMPR0[3]\  ;
+wire \Z\QBX_TEMPR1[3]\  ;
+wire \Z\QBX_TEMPR2[3]\  ;
+wire \Z\QBX_TEMPR3[3]\  ;
+wire \Z\BLKZ0[0]\  ;
+wire \Z\QBX_TEMPR0[7]\  ;
+wire \Z\QBX_TEMPR1[7]\  ;
+wire \Z\QBX_TEMPR2[7]\  ;
+wire \Z\QBX_TEMPR3[7]\  ;
+wire \Z\QAX_TEMPR3[0]\  ;
+wire \Z\QAX_TEMPR3[1]\  ;
+wire \Z\QAX_TEMPR3[2]\  ;
+wire \Z\QAX_TEMPR3[3]\  ;
+wire \Z\QAX_TEMPR3[4]\  ;
+wire \Z\QAX_TEMPR3[5]\  ;
+wire \Z\QAX_TEMPR3[6]\  ;
+wire \Z\QAX_TEMPR3[7]\  ;
+wire \Z\QBX_TEMPR3[0]\  ;
+wire \Z\QBX_TEMPR3[1]\  ;
+wire \Z\QBX_TEMPR3[2]\  ;
+wire \Z\QBX_TEMPR3[4]\  ;
+wire \Z\QBX_TEMPR3[5]\  ;
+wire \Z\QBX_TEMPR3[6]\  ;
+wire URAM_C0_URAM_C0_0_URAM_R3C0_BUSY ;
+wire VCC ;
+wire GND ;
+wire \Z\BLKY0[0]\  ;
+wire \Z\QAX_TEMPR1[0]\  ;
+wire \Z\QAX_TEMPR1[1]\  ;
+wire \Z\QAX_TEMPR1[2]\  ;
+wire \Z\QAX_TEMPR1[3]\  ;
+wire \Z\QAX_TEMPR1[4]\  ;
+wire \Z\QAX_TEMPR1[5]\  ;
+wire \Z\QAX_TEMPR1[6]\  ;
+wire \Z\QAX_TEMPR1[7]\  ;
+wire \Z\QBX_TEMPR1[0]\  ;
+wire \Z\QBX_TEMPR1[1]\  ;
+wire \Z\QBX_TEMPR1[2]\  ;
+wire \Z\QBX_TEMPR1[4]\  ;
+wire \Z\QBX_TEMPR1[5]\  ;
+wire \Z\QBX_TEMPR1[6]\  ;
+wire URAM_C0_URAM_C0_0_URAM_R1C0_BUSY ;
+wire \Z\QAX_TEMPR2[0]\  ;
+wire \Z\QAX_TEMPR2[1]\  ;
+wire \Z\QAX_TEMPR2[2]\  ;
+wire \Z\QAX_TEMPR2[3]\  ;
+wire \Z\QAX_TEMPR2[4]\  ;
+wire \Z\QAX_TEMPR2[5]\  ;
+wire \Z\QAX_TEMPR2[6]\  ;
+wire \Z\QAX_TEMPR2[7]\  ;
+wire \Z\QBX_TEMPR2[0]\  ;
+wire \Z\QBX_TEMPR2[1]\  ;
+wire \Z\QBX_TEMPR2[2]\  ;
+wire \Z\QBX_TEMPR2[4]\  ;
+wire \Z\QBX_TEMPR2[5]\  ;
+wire \Z\QBX_TEMPR2[6]\  ;
+wire URAM_C0_URAM_C0_0_URAM_R2C0_BUSY ;
+wire \Z\BLKX0[0]\  ;
+wire \Z\QBX_TEMPR0[2]\  ;
+wire \Z\QBX_TEMPR0[5]\  ;
+wire \Z\QBX_TEMPR0[0]\  ;
+wire \Z\QBX_TEMPR0[6]\  ;
+wire \Z\QBX_TEMPR0[4]\  ;
+wire \Z\QAX_TEMPR0[0]\  ;
+wire \Z\QAX_TEMPR0[1]\  ;
+wire \Z\QAX_TEMPR0[2]\  ;
+wire \Z\QAX_TEMPR0[3]\  ;
+wire \Z\QAX_TEMPR0[4]\  ;
+wire \Z\QAX_TEMPR0[5]\  ;
+wire \Z\QAX_TEMPR0[6]\  ;
+wire \Z\QAX_TEMPR0[7]\  ;
+wire \Z\QBX_TEMPR0[1]\  ;
+wire URAM_C0_URAM_C0_0_URAM_R0C0_BUSY ;
+// @10:243
+  CFG1 \CFG2_BLKX1[0]\  (
+	.A(Nokia5110_Driver_0_uSRAM_A_ADDR_8),
+	.Y(\Z\BLKX1[0]\ )
+);
+defparam \CFG2_BLKX1[0]\ .INIT=2'h1;
+// @10:256
+  CFG1 \CFG2_BLKY1[0]\  (
+	.A(Nokia5110_Driver_0_uSRAM_B_ADDR[8]),
+	.Y(\Z\BLKY1[0]\ )
+);
+defparam \CFG2_BLKY1[0]\ .INIT=2'h1;
+// @10:393
+  CFG2 \CFG2_BLKZ1[1]\  (
+	.A(Nokia5110_Driver_0_uSRAM_A_ADDR_8),
+	.B(Nokia5110_Driver_0_uSRAM_C_BLK),
+	.Y(\Z\BLKZ1[1]\ )
+);
+defparam \CFG2_BLKZ1[1]\ .INIT=4'h8;
+// @10:467
+  CFG2 \CFG2_BLKZ1[0]\  (
+	.A(Nokia5110_Driver_0_uSRAM_A_ADDR_8),
+	.B(Nokia5110_Driver_0_uSRAM_C_BLK),
+	.Y(\Z\BLKZ1[0]\ )
+);
+defparam \CFG2_BLKZ1[0]\ .INIT=4'h4;
+// @10:475
+  OR4 \OR4_B_DOUT[3]\  (
+	.Y(URAM_C0_0_B_DOUT[3]),
+	.A(\Z\QBX_TEMPR0[3]\ ),
+	.B(\Z\QBX_TEMPR1[3]\ ),
+	.C(\Z\QBX_TEMPR2[3]\ ),
+	.D(\Z\QBX_TEMPR3[3]\ )
+);
+// @10:472
+  INV \INVBLKZ0[0]\  (
+	.Y(\Z\BLKZ0[0]\ ),
+	.A(Nokia5110_Driver_0_uSRAM_A_ADDR_5)
+);
+// @10:459
+  OR4 \OR4_B_DOUT[7]\  (
+	.Y(URAM_C0_0_B_DOUT[7]),
+	.A(\Z\QBX_TEMPR0[7]\ ),
+	.B(\Z\QBX_TEMPR1[7]\ ),
+	.C(\Z\QBX_TEMPR2[7]\ ),
+	.D(\Z\QBX_TEMPR3[7]\ )
+);
+// @10:401
+  RAM64x18 URAM_C0_URAM_C0_0_URAM_R3C0 (
+	.A_DOUT({URAM_C0_URAM_C0_0_URAM_R3C0_A_DOUT[17:8], \Z\QAX_TEMPR3[7]\ , \Z\QAX_TEMPR3[6]\ , \Z\QAX_TEMPR3[5]\ , \Z\QAX_TEMPR3[4]\ , \Z\QAX_TEMPR3[3]\ , \Z\QAX_TEMPR3[2]\ , \Z\QAX_TEMPR3[1]\ , \Z\QAX_TEMPR3[0]\ }),
+	.B_DOUT({URAM_C0_URAM_C0_0_URAM_R3C0_B_DOUT[17:8], \Z\QBX_TEMPR3[7]\ , \Z\QBX_TEMPR3[6]\ , \Z\QBX_TEMPR3[5]\ , \Z\QBX_TEMPR3[4]\ , \Z\QBX_TEMPR3[3]\ , \Z\QBX_TEMPR3[2]\ , \Z\QBX_TEMPR3[1]\ , \Z\QBX_TEMPR3[0]\ }),
+	.BUSY(URAM_C0_URAM_C0_0_URAM_R3C0_BUSY),
+	.A_ADDR_CLK(VCC),
+	.A_DOUT_CLK(VCC),
+	.A_ADDR_SRST_N(VCC),
+	.A_DOUT_SRST_N(VCC),
+	.A_ADDR_ARST_N(VCC),
+	.A_DOUT_ARST_N(VCC),
+	.A_ADDR_EN(VCC),
+	.A_DOUT_EN(VCC),
+	.A_BLK({Nokia5110_Driver_0_uSRAM_A_ADDR_8, Nokia5110_Driver_0_uSRAM_A_ADDR_5}),
+	.A_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.B_ADDR_CLK(VCC),
+	.B_DOUT_CLK(VCC),
+	.B_ADDR_SRST_N(VCC),
+	.B_DOUT_SRST_N(VCC),
+	.B_ADDR_ARST_N(VCC),
+	.B_DOUT_ARST_N(VCC),
+	.B_ADDR_EN(VCC),
+	.B_DOUT_EN(VCC),
+	.B_BLK(Nokia5110_Driver_0_uSRAM_B_ADDR[8:7]),
+	.B_ADDR({Nokia5110_Driver_0_uSRAM_B_ADDR[6:0], GND, GND, GND}),
+	.C_CLK(CLK),
+	.C_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.C_DIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, Nokia5110_Driver_0_uSRAM_C_DIN[7:0]}),
+	.C_WEN(VCC),
+	.C_BLK({\Z\BLKZ1[1]\ , Nokia5110_Driver_0_uSRAM_A_ADDR_5}),
+	.A_EN(VCC),
+	.A_ADDR_LAT(VCC),
+	.A_DOUT_LAT(VCC),
+	.A_WIDTH({GND, VCC, VCC}),
+	.B_EN(VCC),
+	.B_ADDR_LAT(VCC),
+	.B_DOUT_LAT(VCC),
+	.B_WIDTH({GND, VCC, VCC}),
+	.C_EN(VCC),
+	.C_WIDTH({GND, VCC, VCC}),
+	.SII_LOCK(GND)
+);
+defparam URAM_C0_URAM_C0_0_URAM_R3C0.MEMORYFILE="URAM_C0_URAM_C0_0_URAM_R3C0.mem";
+// @10:398
+  INV \INVBLKY0[0]\  (
+	.Y(\Z\BLKY0[0]\ ),
+	.A(Nokia5110_Driver_0_uSRAM_B_ADDR[7])
+);
+// @10:335
+  RAM64x18 URAM_C0_URAM_C0_0_URAM_R1C0 (
+	.A_DOUT({URAM_C0_URAM_C0_0_URAM_R1C0_A_DOUT[17:8], \Z\QAX_TEMPR1[7]\ , \Z\QAX_TEMPR1[6]\ , \Z\QAX_TEMPR1[5]\ , \Z\QAX_TEMPR1[4]\ , \Z\QAX_TEMPR1[3]\ , \Z\QAX_TEMPR1[2]\ , \Z\QAX_TEMPR1[1]\ , \Z\QAX_TEMPR1[0]\ }),
+	.B_DOUT({URAM_C0_URAM_C0_0_URAM_R1C0_B_DOUT[17:8], \Z\QBX_TEMPR1[7]\ , \Z\QBX_TEMPR1[6]\ , \Z\QBX_TEMPR1[5]\ , \Z\QBX_TEMPR1[4]\ , \Z\QBX_TEMPR1[3]\ , \Z\QBX_TEMPR1[2]\ , \Z\QBX_TEMPR1[1]\ , \Z\QBX_TEMPR1[0]\ }),
+	.BUSY(URAM_C0_URAM_C0_0_URAM_R1C0_BUSY),
+	.A_ADDR_CLK(VCC),
+	.A_DOUT_CLK(VCC),
+	.A_ADDR_SRST_N(VCC),
+	.A_DOUT_SRST_N(VCC),
+	.A_ADDR_ARST_N(VCC),
+	.A_DOUT_ARST_N(VCC),
+	.A_ADDR_EN(VCC),
+	.A_DOUT_EN(VCC),
+	.A_BLK({\Z\BLKX1[0]\ , Nokia5110_Driver_0_uSRAM_A_ADDR_5}),
+	.A_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.B_ADDR_CLK(VCC),
+	.B_DOUT_CLK(VCC),
+	.B_ADDR_SRST_N(VCC),
+	.B_DOUT_SRST_N(VCC),
+	.B_ADDR_ARST_N(VCC),
+	.B_DOUT_ARST_N(VCC),
+	.B_ADDR_EN(VCC),
+	.B_DOUT_EN(VCC),
+	.B_BLK({\Z\BLKY1[0]\ , Nokia5110_Driver_0_uSRAM_B_ADDR[7]}),
+	.B_ADDR({Nokia5110_Driver_0_uSRAM_B_ADDR[6:0], GND, GND, GND}),
+	.C_CLK(CLK),
+	.C_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.C_DIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, Nokia5110_Driver_0_uSRAM_C_DIN[7:0]}),
+	.C_WEN(VCC),
+	.C_BLK({\Z\BLKZ1[0]\ , Nokia5110_Driver_0_uSRAM_A_ADDR_5}),
+	.A_EN(VCC),
+	.A_ADDR_LAT(VCC),
+	.A_DOUT_LAT(VCC),
+	.A_WIDTH({GND, VCC, VCC}),
+	.B_EN(VCC),
+	.B_ADDR_LAT(VCC),
+	.B_DOUT_LAT(VCC),
+	.B_WIDTH({GND, VCC, VCC}),
+	.C_EN(VCC),
+	.C_WIDTH({GND, VCC, VCC}),
+	.SII_LOCK(GND)
+);
+defparam URAM_C0_URAM_C0_0_URAM_R1C0.MEMORYFILE="URAM_C0_URAM_C0_0_URAM_R1C0.mem";
+// @10:277
+  RAM64x18 URAM_C0_URAM_C0_0_URAM_R2C0 (
+	.A_DOUT({URAM_C0_URAM_C0_0_URAM_R2C0_A_DOUT[17:8], \Z\QAX_TEMPR2[7]\ , \Z\QAX_TEMPR2[6]\ , \Z\QAX_TEMPR2[5]\ , \Z\QAX_TEMPR2[4]\ , \Z\QAX_TEMPR2[3]\ , \Z\QAX_TEMPR2[2]\ , \Z\QAX_TEMPR2[1]\ , \Z\QAX_TEMPR2[0]\ }),
+	.B_DOUT({URAM_C0_URAM_C0_0_URAM_R2C0_B_DOUT[17:8], \Z\QBX_TEMPR2[7]\ , \Z\QBX_TEMPR2[6]\ , \Z\QBX_TEMPR2[5]\ , \Z\QBX_TEMPR2[4]\ , \Z\QBX_TEMPR2[3]\ , \Z\QBX_TEMPR2[2]\ , \Z\QBX_TEMPR2[1]\ , \Z\QBX_TEMPR2[0]\ }),
+	.BUSY(URAM_C0_URAM_C0_0_URAM_R2C0_BUSY),
+	.A_ADDR_CLK(VCC),
+	.A_DOUT_CLK(VCC),
+	.A_ADDR_SRST_N(VCC),
+	.A_DOUT_SRST_N(VCC),
+	.A_ADDR_ARST_N(VCC),
+	.A_DOUT_ARST_N(VCC),
+	.A_ADDR_EN(VCC),
+	.A_DOUT_EN(VCC),
+	.A_BLK({Nokia5110_Driver_0_uSRAM_A_ADDR_8, \Z\BLKX0[0]\ }),
+	.A_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.B_ADDR_CLK(VCC),
+	.B_DOUT_CLK(VCC),
+	.B_ADDR_SRST_N(VCC),
+	.B_DOUT_SRST_N(VCC),
+	.B_ADDR_ARST_N(VCC),
+	.B_DOUT_ARST_N(VCC),
+	.B_ADDR_EN(VCC),
+	.B_DOUT_EN(VCC),
+	.B_BLK({Nokia5110_Driver_0_uSRAM_B_ADDR[8], \Z\BLKY0[0]\ }),
+	.B_ADDR({Nokia5110_Driver_0_uSRAM_B_ADDR[6:0], GND, GND, GND}),
+	.C_CLK(CLK),
+	.C_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.C_DIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, Nokia5110_Driver_0_uSRAM_C_DIN[7:0]}),
+	.C_WEN(VCC),
+	.C_BLK({\Z\BLKZ1[1]\ , \Z\BLKZ0[0]\ }),
+	.A_EN(VCC),
+	.A_ADDR_LAT(VCC),
+	.A_DOUT_LAT(VCC),
+	.A_WIDTH({GND, VCC, VCC}),
+	.B_EN(VCC),
+	.B_ADDR_LAT(VCC),
+	.B_DOUT_LAT(VCC),
+	.B_WIDTH({GND, VCC, VCC}),
+	.C_EN(VCC),
+	.C_WIDTH({GND, VCC, VCC}),
+	.SII_LOCK(GND)
+);
+defparam URAM_C0_URAM_C0_0_URAM_R2C0.MEMORYFILE="URAM_C0_URAM_C0_0_URAM_R2C0.mem";
+// @10:265
+  OR4 \OR4_B_DOUT[2]\  (
+	.Y(URAM_C0_0_B_DOUT[2]),
+	.A(\Z\QBX_TEMPR0[2]\ ),
+	.B(\Z\QBX_TEMPR1[2]\ ),
+	.C(\Z\QBX_TEMPR2[2]\ ),
+	.D(\Z\QBX_TEMPR3[2]\ )
+);
+// @10:261
+  OR4 \OR4_B_DOUT[5]\  (
+	.Y(URAM_C0_0_B_DOUT[5]),
+	.A(\Z\QBX_TEMPR0[5]\ ),
+	.B(\Z\QBX_TEMPR1[5]\ ),
+	.C(\Z\QBX_TEMPR2[5]\ ),
+	.D(\Z\QBX_TEMPR3[5]\ )
+);
+// @10:248
+  OR4 \OR4_B_DOUT[0]\  (
+	.Y(URAM_C0_0_B_DOUT[0]),
+	.A(\Z\QBX_TEMPR0[0]\ ),
+	.B(\Z\QBX_TEMPR1[0]\ ),
+	.C(\Z\QBX_TEMPR2[0]\ ),
+	.D(\Z\QBX_TEMPR3[0]\ )
+);
+// @10:235
+  OR4 \OR4_B_DOUT[6]\  (
+	.Y(URAM_C0_0_B_DOUT[6]),
+	.A(\Z\QBX_TEMPR0[6]\ ),
+	.B(\Z\QBX_TEMPR1[6]\ ),
+	.C(\Z\QBX_TEMPR2[6]\ ),
+	.D(\Z\QBX_TEMPR3[6]\ )
+);
+// @10:222
+  OR4 \OR4_B_DOUT[4]\  (
+	.Y(URAM_C0_0_B_DOUT[4]),
+	.A(\Z\QBX_TEMPR0[4]\ ),
+	.B(\Z\QBX_TEMPR1[4]\ ),
+	.C(\Z\QBX_TEMPR2[4]\ ),
+	.D(\Z\QBX_TEMPR3[4]\ )
+);
+// @10:160
+  RAM64x18 URAM_C0_URAM_C0_0_URAM_R0C0 (
+	.A_DOUT({URAM_C0_URAM_C0_0_URAM_R0C0_A_DOUT[17:8], \Z\QAX_TEMPR0[7]\ , \Z\QAX_TEMPR0[6]\ , \Z\QAX_TEMPR0[5]\ , \Z\QAX_TEMPR0[4]\ , \Z\QAX_TEMPR0[3]\ , \Z\QAX_TEMPR0[2]\ , \Z\QAX_TEMPR0[1]\ , \Z\QAX_TEMPR0[0]\ }),
+	.B_DOUT({URAM_C0_URAM_C0_0_URAM_R0C0_B_DOUT[17:8], \Z\QBX_TEMPR0[7]\ , \Z\QBX_TEMPR0[6]\ , \Z\QBX_TEMPR0[5]\ , \Z\QBX_TEMPR0[4]\ , \Z\QBX_TEMPR0[3]\ , \Z\QBX_TEMPR0[2]\ , \Z\QBX_TEMPR0[1]\ , \Z\QBX_TEMPR0[0]\ }),
+	.BUSY(URAM_C0_URAM_C0_0_URAM_R0C0_BUSY),
+	.A_ADDR_CLK(VCC),
+	.A_DOUT_CLK(VCC),
+	.A_ADDR_SRST_N(VCC),
+	.A_DOUT_SRST_N(VCC),
+	.A_ADDR_ARST_N(VCC),
+	.A_DOUT_ARST_N(VCC),
+	.A_ADDR_EN(VCC),
+	.A_DOUT_EN(VCC),
+	.A_BLK({\Z\BLKX1[0]\ , \Z\BLKX0[0]\ }),
+	.A_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.B_ADDR_CLK(VCC),
+	.B_DOUT_CLK(VCC),
+	.B_ADDR_SRST_N(VCC),
+	.B_DOUT_SRST_N(VCC),
+	.B_ADDR_ARST_N(VCC),
+	.B_DOUT_ARST_N(VCC),
+	.B_ADDR_EN(VCC),
+	.B_DOUT_EN(VCC),
+	.B_BLK({\Z\BLKY1[0]\ , \Z\BLKY0[0]\ }),
+	.B_ADDR({Nokia5110_Driver_0_uSRAM_B_ADDR[6:0], GND, GND, GND}),
+	.C_CLK(CLK),
+	.C_ADDR({Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_5, Nokia5110_Driver_0_uSRAM_A_ADDR_4, Nokia5110_Driver_0_uSRAM_A_ADDR_3, Nokia5110_Driver_0_uSRAM_A_ADDR_2, Nokia5110_Driver_0_uSRAM_A_ADDR_1, Nokia5110_Driver_0_uSRAM_A_ADDR_0, GND, GND, GND}),
+	.C_DIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, Nokia5110_Driver_0_uSRAM_C_DIN[7:0]}),
+	.C_WEN(VCC),
+	.C_BLK({\Z\BLKZ1[0]\ , \Z\BLKZ0[0]\ }),
+	.A_EN(VCC),
+	.A_ADDR_LAT(VCC),
+	.A_DOUT_LAT(VCC),
+	.A_WIDTH({GND, VCC, VCC}),
+	.B_EN(VCC),
+	.B_ADDR_LAT(VCC),
+	.B_DOUT_LAT(VCC),
+	.B_WIDTH({GND, VCC, VCC}),
+	.C_EN(VCC),
+	.C_WIDTH({GND, VCC, VCC}),
+	.SII_LOCK(GND)
+);
+defparam URAM_C0_URAM_C0_0_URAM_R0C0.MEMORYFILE="URAM_C0_URAM_C0_0_URAM_R0C0.mem";
+// @10:156
+  OR4 \OR4_B_DOUT[1]\  (
+	.Y(URAM_C0_0_B_DOUT[1]),
+	.A(\Z\QBX_TEMPR0[1]\ ),
+	.B(\Z\QBX_TEMPR1[1]\ ),
+	.C(\Z\QBX_TEMPR2[1]\ ),
+	.D(\Z\QBX_TEMPR3[1]\ )
+);
+// @10:148
+  INV \INVBLKX0[0]\  (
+	.Y(\Z\BLKX0[0]\ ),
+	.A(Nokia5110_Driver_0_uSRAM_A_ADDR_5)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* URAM_C0_URAM_C0_0_URAM */
+
+module URAM_C0 (
+  Nokia5110_Driver_0_uSRAM_A_ADDR_8,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_5,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_0,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_1,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_2,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_3,
+  Nokia5110_Driver_0_uSRAM_A_ADDR_4,
+  Nokia5110_Driver_0_uSRAM_B_ADDR,
+  Nokia5110_Driver_0_uSRAM_C_DIN,
+  URAM_C0_0_B_DOUT,
+  Nokia5110_Driver_0_uSRAM_C_BLK,
+  CLK
+)
+;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+input Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+input [8:0] Nokia5110_Driver_0_uSRAM_B_ADDR ;
+input [7:0] Nokia5110_Driver_0_uSRAM_C_DIN ;
+output [7:0] URAM_C0_0_B_DOUT ;
+input Nokia5110_Driver_0_uSRAM_C_BLK ;
+input CLK ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_8 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_5 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_0 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_1 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_2 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_3 ;
+wire Nokia5110_Driver_0_uSRAM_A_ADDR_4 ;
+wire Nokia5110_Driver_0_uSRAM_C_BLK ;
+wire CLK ;
+wire GND ;
+wire VCC ;
+// @13:83
+  URAM_C0_URAM_C0_0_URAM URAM_C0_0 (
+	.URAM_C0_0_B_DOUT(URAM_C0_0_B_DOUT[7:0]),
+	.Nokia5110_Driver_0_uSRAM_C_DIN(Nokia5110_Driver_0_uSRAM_C_DIN[7:0]),
+	.Nokia5110_Driver_0_uSRAM_B_ADDR(Nokia5110_Driver_0_uSRAM_B_ADDR[8:0]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_8(Nokia5110_Driver_0_uSRAM_A_ADDR_8),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_5(Nokia5110_Driver_0_uSRAM_A_ADDR_5),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_0(Nokia5110_Driver_0_uSRAM_A_ADDR_0),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_1(Nokia5110_Driver_0_uSRAM_A_ADDR_1),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_2(Nokia5110_Driver_0_uSRAM_A_ADDR_2),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_3(Nokia5110_Driver_0_uSRAM_A_ADDR_3),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_4(Nokia5110_Driver_0_uSRAM_A_ADDR_4),
+	.CLK(CLK),
+	.Nokia5110_Driver_0_uSRAM_C_BLK(Nokia5110_Driver_0_uSRAM_C_BLK)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* URAM_C0 */
+
+module Nokia5110_Driver_Block_SD (
+  CLK,
+  PADDR,
+  PENABLE,
+  PSEL,
+  PWDATA,
+  PWRITE,
+  RSTn,
+  PRDATA,
+  PREADY,
+  PSLVERR,
+  RSTout,
+  SPICLK,
+  SPIDO,
+  chip_enable,
+  data_command,
+  driver_busy
+)
+;
+input CLK ;
+input [7:0] PADDR ;
+input PENABLE ;
+input PSEL ;
+input [7:0] PWDATA ;
+input PWRITE ;
+input RSTn ;
+output [7:0] PRDATA ;
+output PREADY ;
+output PSLVERR ;
+output RSTout ;
+output SPICLK ;
+output SPIDO ;
+output chip_enable ;
+output data_command ;
+output driver_busy ;
+wire CLK ;
+wire PENABLE ;
+wire PSEL ;
+wire PWRITE ;
+wire RSTn ;
+wire PREADY ;
+wire PSLVERR ;
+wire RSTout ;
+wire SPICLK ;
+wire SPIDO ;
+wire chip_enable ;
+wire data_command ;
+wire driver_busy ;
+wire [8:0] Nokia5110_Driver_0_uSRAM_A_ADDR;
+wire [7:0] URAM_C0_0_B_DOUT;
+wire [7:0] Nokia5110_Driver_0_uSRAM_C_DIN;
+wire [8:0] Nokia5110_Driver_0_uSRAM_B_ADDR;
+wire NN_1 ;
+wire Nokia5110_Driver_0_uSRAM_C_BLK ;
+wire GND ;
+wire VCC ;
+  CLKINT RSTn_RNI7ROC (
+	.Y(RSTout),
+	.A(RSTn)
+);
+  CLKINT CLK_RNIQO92 (
+	.Y(NN_1),
+	.A(CLK)
+);
+// @14:120
+  Nokia5110_Driver Nokia5110_Driver_0 (
+	.URAM_C0_0_B_DOUT(URAM_C0_0_B_DOUT[7:0]),
+	.PADDR(PADDR[7:0]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_5(Nokia5110_Driver_0_uSRAM_A_ADDR[5]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_0(Nokia5110_Driver_0_uSRAM_A_ADDR[0]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_1(Nokia5110_Driver_0_uSRAM_A_ADDR[1]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_2(Nokia5110_Driver_0_uSRAM_A_ADDR[2]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_3(Nokia5110_Driver_0_uSRAM_A_ADDR[3]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_4(Nokia5110_Driver_0_uSRAM_A_ADDR[4]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_8(Nokia5110_Driver_0_uSRAM_A_ADDR[8]),
+	.PWDATA(PWDATA[7:0]),
+	.Nokia5110_Driver_0_uSRAM_C_DIN(Nokia5110_Driver_0_uSRAM_C_DIN[7:0]),
+	.PRDATA(PRDATA[7:0]),
+	.Nokia5110_Driver_0_uSRAM_B_ADDR(Nokia5110_Driver_0_uSRAM_B_ADDR[8:0]),
+	.PENABLE(PENABLE),
+	.SPICLK_1z(SPICLK),
+	.SPIDO_1z(SPIDO),
+	.PWRITE(PWRITE),
+	.PSEL(PSEL),
+	.Nokia5110_Driver_0_uSRAM_C_BLK(Nokia5110_Driver_0_uSRAM_C_BLK),
+	.data_command(data_command),
+	.driver_busy(driver_busy),
+	.CLK(NN_1),
+	.RSTn(RSTout),
+	.chip_enable_sig_i(chip_enable)
+);
+// @14:155
+  URAM_C0 URAM_C0_0 (
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_8(Nokia5110_Driver_0_uSRAM_A_ADDR[8]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_5(Nokia5110_Driver_0_uSRAM_A_ADDR[5]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_0(Nokia5110_Driver_0_uSRAM_A_ADDR[0]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_1(Nokia5110_Driver_0_uSRAM_A_ADDR[1]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_2(Nokia5110_Driver_0_uSRAM_A_ADDR[2]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_3(Nokia5110_Driver_0_uSRAM_A_ADDR[3]),
+	.Nokia5110_Driver_0_uSRAM_A_ADDR_4(Nokia5110_Driver_0_uSRAM_A_ADDR[4]),
+	.Nokia5110_Driver_0_uSRAM_B_ADDR(Nokia5110_Driver_0_uSRAM_B_ADDR[8:0]),
+	.Nokia5110_Driver_0_uSRAM_C_DIN(Nokia5110_Driver_0_uSRAM_C_DIN[7:0]),
+	.URAM_C0_0_B_DOUT(URAM_C0_0_B_DOUT[7:0]),
+	.Nokia5110_Driver_0_uSRAM_C_BLK(Nokia5110_Driver_0_uSRAM_C_BLK),
+	.CLK(NN_1)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+assign PREADY = VCC;
+assign PSLVERR = GND;
+endmodule /* Nokia5110_Driver_Block_SD */
+

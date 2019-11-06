@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Tue Nov  5 23:55:15 2019
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1
+Component :  Nokia5110_Driver_Block_SD
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd
+

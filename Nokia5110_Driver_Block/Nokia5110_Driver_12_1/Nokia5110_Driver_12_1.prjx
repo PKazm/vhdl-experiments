@@ -1,0 +1,381 @@
+KEY LIBERO "12.600"
+KEY CAPTURE "12.600.0.14"
+KEY DEFAULT_IMPORT_LOC "D:\Appsnotes\2010\User_Logic_to_MSS\design_files\User_Logic_MSS_DF_old\APB_master_fabric\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_N"
+KEY VendorTechnology_Package "tq144"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "Nokia5110_Driver_Block_SD::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\SgCore\URAM\1.0.101\URAM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1573029271"
+SIZE="241"
+PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.cxf,actgen_cxf"
+STATE="utd"
+TIME="1573016115"
+SIZE="5158"
+ENDFILE
+VALUE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd,hdl"
+STATE="utd"
+TIME="1573016115"
+SIZE="7108"
+PARENT="<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\SD_tb\SD_tb.cxf,actgen_cxf"
+STATE="utd"
+TIME="1572928346"
+SIZE="657"
+ENDFILE
+VALUE "<project>\component\work\URAM_C0\URAM_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1573029271"
+SIZE="7290"
+ENDFILE
+VALUE "<project>\component\work\URAM_C0\URAM_C0.vhd,hdl"
+STATE="utd"
+TIME="1573029271"
+SIZE="3746"
+PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1573029271"
+SIZE="1223"
+PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
+STATE="utd"
+TIME="1573029271"
+SIZE="23786"
+PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\Nokia5110_Driver_Block_SD.ide_des,ide_des"
+STATE="utd"
+TIME="1572936635"
+SIZE="241"
+ENDFILE
+VALUE "<project>\hdl\Nokia5110_Driver.vhd,hdl"
+STATE="utd"
+TIME="1573031640"
+SIZE="24593"
+ENDFILE
+VALUE "<project>\hdl\timer.vhd,hdl"
+STATE="utd"
+TIME="1573023114"
+SIZE="1523"
+ENDFILE
+VALUE "<project>\simulation\Nokia5110_Driver_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1573029472"
+SIZE="8276"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1573029274"
+SIZE="1113"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1573029274"
+SIZE="233"
+ENDFILE
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
+STATE="utd"
+TIME="1573029269"
+SIZE="1280"
+PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
+ENDFILE
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
+STATE="utd"
+TIME="1573029269"
+SIZE="1280"
+PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
+ENDFILE
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
+STATE="utd"
+TIME="1573029269"
+SIZE="1280"
+PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
+ENDFILE
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
+STATE="utd"
+TIME="1573029269"
+SIZE="1200"
+PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
+ENDFILE
+VALUE "<project>\stimulus\Nokia5110_Driver_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1573023705"
+SIZE="5025"
+ENDFILE
+VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD.so,so"
+STATE="utd"
+TIME="1573030396"
+SIZE="289"
+ENDFILE
+VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD.vm,syn_vm"
+STATE="utd"
+TIME="1573030395"
+SIZE="99661"
+ENDFILE
+VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD_syn.prj,prj"
+STATE="utd"
+TIME="1573030396"
+SIZE="2712"
+ENDFILE
+VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1573030395"
+SIZE="1336"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "Nokia5110_Driver_Block_SD::work"
+FILE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\Nokia5110_Driver_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Nokia5110_Driver_Block_SD.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "URAM_C0_URAM_C0_0_URAM::work"
+FILE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST Nokia5110_Driver_Block_SD
+VALUE "<project>\stimulus\Nokia5110_Driver_tb.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+LIST URAM_C0_URAM_C0_0_URAM
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
+VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=2.1ms
+Resolution=100ps
+VsimOpt=
+EntityName=Nokia5110_Driver_tb
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=TRUE
+LibraryPath=C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=TRUE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="SynplifyProME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSimME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l testbench_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Designer\binfp\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="IdentifyDebugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "Nokia5110_Driver_Block_SD::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Nokia5110_Driver_Block_SD.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver_Block_SD::work","component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd","TRUE","FALSE"
+SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
+ENDLIST
+LIST "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
+SUBBLOCK "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver_tb::work","stimulus\Nokia5110_Driver_tb.vhd","FALSE","TRUE"
+SUBBLOCK "Nokia5110_Driver_Block_SD::work","component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd","TRUE","FALSE"
+ENDLIST
+LIST "SD_tb::work","component\work\SD_tb\SD_tb.cxf","TRUE","TRUE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

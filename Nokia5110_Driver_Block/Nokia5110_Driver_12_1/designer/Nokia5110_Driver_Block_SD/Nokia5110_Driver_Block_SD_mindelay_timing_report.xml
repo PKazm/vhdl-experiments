@@ -1,0 +1,3127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Report Min Delay Analysis
+</title>
+<text>SmartTime Version 12.600.0.14</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
+<text>Date: Wed Nov  6 04:24:12 2019
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>Nokia5110_Driver_Block_SD</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>SmartFusion2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2S010</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>144 TQ</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Pre-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Min Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Max Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 85 C</cell>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>Primary</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>External Hold (ns)</cell>
+ <cell>Min Clock-To-Out (ns)</cell>
+</header>
+<row>
+ <cell>CLK</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>1.040</cell>
+ <cell>2.195</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Min Delay (ns)</cell>
+ <cell>Max Delay (ns)</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell>0.643</cell>
+</row>
+</table>
+</section>
+<section>
+<name>Clock Domain CLK</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>0.761</cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell>0.160</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R1C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>0.761</cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell>0.160</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R2C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>0.761</cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell>0.160</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R3C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>0.761</cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell>0.160</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>Nokia5110_Driver_0/SPIout_byte[7]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPIDO_sig:D</cell>
+ <cell>0.579</cell>
+ <cell></cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>0.571</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>0.717</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.052</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.220</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>1.566</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/uSRAM_A_ADDR_sig[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.072</cell>
+ <cell>1.638</cell>
+ <cell>8</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/CFG_11:C</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0_uSRAM_A_ADDR[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.551</cell>
+ <cell>2.189</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/CFG_11:IPC</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2_IP_BC</cell>
+ <cell>+</cell>
+ <cell>0.138</cell>
+ <cell>2.327</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>net</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/C_ADDR_net[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.327</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>N/C</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/FF_12:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/FF_12:IPCLKn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE_IP_CLK</cell>
+ <cell>+</cell>
+ <cell>0.039</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/INST_RAM64x18_IP:C_CLK</cell>
+ <cell>net</cell>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/C_CLK_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>URAM_C0_0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM_R0C0/INST_RAM64x18_IP:C_ADDR[3]</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:RAM64x18_IP</cell>
+ <cell>+</cell>
+ <cell>0.160</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Hold</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+ <cell>External Hold (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>PWDATA[7]</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[7]:D</cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>1.040</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>PWDATA[7]</cell>
+ <cell>Nokia5110_Driver_0/uSRAM_C_DIN_sig[7]:D</cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>1.040</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>PWDATA[3]</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[3]:D</cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>1.032</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>PWDATA[3]</cell>
+ <cell>Nokia5110_Driver_0/LCD_reg_Vop_set[3]:D</cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>1.032</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>PWDATA[3]</cell>
+ <cell>Nokia5110_Driver_0/LCD_reg_mem_Y[3]:D</cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.583</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>1.032</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: PWDATA[7]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: Nokia5110_Driver_0/Driver_reg_ctrl[7]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PWDATA[7]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PWDATA[7]:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_PWDATA[7]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_PWDATA[7]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[7]:D</cell>
+ <cell>net</cell>
+ <cell>PWDATA[7]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.525</cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.575</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.052</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.537</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.345</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.173</cell>
+ <cell>N/C</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[7]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.357</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[7]:D</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Clock to Out (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>Nokia5110_Driver_0/data_command_sig:CLK</cell>
+ <cell>data_command</cell>
+ <cell>0.629</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>Nokia5110_Driver_0/prdata_sig[0]:CLK</cell>
+ <cell>PRDATA[0]</cell>
+ <cell>0.629</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>Nokia5110_Driver_0/prdata_sig[1]:CLK</cell>
+ <cell>PRDATA[1]</cell>
+ <cell>0.629</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>Nokia5110_Driver_0/prdata_sig[2]:CLK</cell>
+ <cell>PRDATA[2]</cell>
+ <cell>0.629</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>Nokia5110_Driver_0/prdata_sig[3]:CLK</cell>
+ <cell>PRDATA[3]</cell>
+ <cell>0.629</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>2.195</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: Nokia5110_Driver_0/data_command_sig:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: data_command</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>0.571</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>0.717</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.052</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.220</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/data_command_sig:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>1.566</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/data_command_sig:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>1.624</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_data_command:A</cell>
+ <cell>net</cell>
+ <cell>data_command</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_data_command:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>2.195</cell>
+ <cell>0</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data_command</cell>
+ <cell>net</cell>
+ <cell>I_NET_data_command</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.195</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data_command</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q to CLK</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>Skew (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[0]:ALn</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.011</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[1]:ALn</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.011</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[2]:ALn</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.011</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[3]:ALn</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.011</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[4]:ALn</cell>
+ <cell>2.145</cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.011</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: Nokia5110_Driver_0/SPI_timer/counter[0]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>0.571</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>0.717</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.052</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.220</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>1.566</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>1.624</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0:A</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.529</cell>
+ <cell>2.153</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>2.203</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_0_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>2.724</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>2.870</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>3.205</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>3.373</cell>
+ <cell>28</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[0]:ALn</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_i</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.338</cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.711</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>N/C</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.357</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/counter[0]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Removal</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>External Removal (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:ALn</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.028</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[1]:ALn</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.028</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[2]:ALn</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.028</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[3]:ALn</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.028</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[4]:ALn</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.028</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: Nokia5110_Driver_0/Driver_reg_ctrl[0]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RSTn_RNI7ROC:An</cell>
+ <cell>net</cell>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.543</cell>
+ <cell>0.593</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RSTn_RNI7ROC:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>0.739</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RSTn_RNI7ROC/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>RSTn_RNI7ROC/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.074</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RSTn_RNI7ROC/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.242</cell>
+ <cell>91</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:ALn</cell>
+ <cell>net</cell>
+ <cell>RSTout</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.345</cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.587</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CLK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_CLK:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.052</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:An</cell>
+ <cell>net</cell>
+ <cell>CLK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.537</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CLK_RNIQO92/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.345</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CLK_RNIQO92/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.173</cell>
+ <cell>N/C</cell>
+ <cell>104</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.357</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/Driver_reg_ctrl[0]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Clock Domain Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:CLK</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:D</cell>
+ <cell>1.179</cell>
+ <cell></cell>
+ <cell>2.703</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[11]:CLK</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[12]:D</cell>
+ <cell>1.271</cell>
+ <cell></cell>
+ <cell>2.795</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[12]:CLK</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[13]:D</cell>
+ <cell>1.271</cell>
+ <cell></cell>
+ <cell>2.795</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[13]:CLK</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[14]:D</cell>
+ <cell>1.271</cell>
+ <cell></cell>
+ <cell>2.795</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[7]:CLK</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[8]:D</cell>
+ <cell>1.271</cell>
+ <cell></cell>
+ <cell>2.795</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: Nokia5110_Driver_0/LCD_timer/counter[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: Nokia5110_Driver_0/LCD_timer/counter[0]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.703</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.538</cell>
+ <cell>0.538</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>0.684</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.019</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.187</cell>
+ <cell>22</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/CLK_SPI_sig</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.337</cell>
+ <cell>1.524</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>1.582</cell>
+ <cell>4</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter_RNO[0]:A</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.533</cell>
+ <cell>2.115</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter_RNO[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.067</cell>
+ <cell>2.182</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:D</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter_i[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>2.703</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.703</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.538</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>N/C</cell>
+ <cell>22</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/CLK_SPI_sig</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.337</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:D</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Hold</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET CLK to Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Removal</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>External Removal (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:ALn</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.637</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[10]:ALn</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.637</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[11]:ALn</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.637</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[12]:ALn</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.637</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>RSTn</cell>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[13]:ALn</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>-0.637</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: Nokia5110_Driver_0/LCD_timer/counter[0]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0:B</cell>
+ <cell>net</cell>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.543</cell>
+ <cell>0.593</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.106</cell>
+ <cell>0.699</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_0_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>1.220</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.146</cell>
+ <cell>1.366</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>1.701</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>1.869</cell>
+ <cell>28</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:ALn</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/rstn_i_i</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.338</cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.207</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig:Q</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.554</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7:YNn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_YNn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.345</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.173</cell>
+ <cell>N/C</cell>
+ <cell>22</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>Nokia5110_Driver_0/CLK_SPI_sig</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.347</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>Nokia5110_Driver_0/LCD_timer/counter[0]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set Pin to Pin</name>
+<section>
+<name>SET Input to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RSTn</cell>
+ <cell>RSTout</cell>
+ <cell>0.643</cell>
+ <cell></cell>
+ <cell>0.643</cell>
+ <cell></cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: RSTout</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.643</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:A</cell>
+ <cell>net</cell>
+ <cell>I_NET_RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTn:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.050</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTout:A</cell>
+ <cell>net</cell>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.543</cell>
+ <cell>0.593</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>BLOCK_INTERFACE_I_RSTout:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.643</cell>
+ <cell>0</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RSTout</cell>
+ <cell>net</cell>
+ <cell>I_NET_RSTout</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.643</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.643</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RSTn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RSTout</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+</table>
+</section>
+</section>
+<section>
+<name>Path Set User Sets</name>
+</section>
+</doc>

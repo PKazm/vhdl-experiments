@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Resource Report</title>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
+<text>Date: Wed Nov  6 04:23:17 2019
+</text>
+<section><name>Device Selection</name></section>
+<table>
+<header>
+</header>
+<row>
+ <cell>Family</cell>
+ <cell>SmartFusion2</cell>
+</row>
+<row>
+ <cell>Device</cell>
+ <cell>M2S010</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>144 TQ</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Temp</cell>
+ <cell>0:25:85</cell>
+</row>
+<row>
+ <cell>Voltage</cell>
+ <cell>1.26:1.20:1.14</cell>
+</row>
+<row>
+ <cell>Core Voltage</cell>
+ <cell>1.2V</cell>
+</row>
+<row>
+ <cell>Ramp Rate</cell>
+ <cell>100ms Minimum</cell>
+</row>
+<row>
+ <cell>System Controller Suspend Mode</cell>
+ <cell>No</cell>
+</row>
+<row>
+ <cell>PLL Supply Voltage</cell>
+ <cell>2.5V</cell>
+</row>
+<row>
+ <cell>Default I/O technology</cell>
+ <cell>LVCMOS 2.5V</cell>
+</row>
+<row>
+ <cell>Restrict Probe Pins</cell>
+ <cell>Yes</cell>
+</row>
+<row>
+ <cell>Restrict SPI Pins</cell>
+ <cell>No</cell>
+</row>
+</table>
+<section><name>Source Files</name></section>
+<table>
+<header>
+</header>
+<row>
+ <cell>Topcell</cell>
+ <cell>Nokia5110_Driver_Block_SD</cell>
+</row>
+<row>
+ <cell>Format</cell>
+ <cell>Verilog</cell>
+</row>
+<row>
+ <cell>Source</cell>
+ <cell>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Nokia5110_Driver_Block_SD.vm</cell>
+</row>
+</table>
+<section><name>Options</name></section>
+<table>
+<header>
+</header>
+<row>
+ <cell>Enable Single Event Transient mitigation</cell>
+ <cell>false</cell>
+</row>
+<row>
+ <cell>Enable Design Separation Methodology</cell>
+ <cell>false</cell>
+</row>
+<row>
+ <cell>Limit the number of high fanout nets to display to</cell>
+ <cell>10</cell>
+</row>
+</table>
+<section><name>Resource Usage</name></section>
+<table>
+<header>
+ <cell>Type</cell>
+ <cell>Used</cell>
+ <cell>Total</cell>
+ <cell>Percentage</cell>
+</header>
+<row>
+ <cell>4LUT</cell>
+ <cell>390</cell>
+ <cell>12084</cell>
+ <cell>3.23</cell>
+</row>
+<row>
+ <cell>DFF</cell>
+ <cell>266</cell>
+ <cell>12084</cell>
+ <cell>2.20</cell>
+</row>
+<row>
+ <cell>I/O Register</cell>
+ <cell>0</cell>
+ <cell>252</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>User I/O</cell>
+ <cell>0</cell>
+ <cell>84</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>-- Single-ended I/O</cell>
+ <cell>0</cell>
+ <cell>84</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>-- Differential I/O Pairs</cell>
+ <cell>0</cell>
+ <cell>37</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>RAM64x18</cell>
+ <cell>4</cell>
+ <cell>22</cell>
+ <cell>18.18</cell>
+</row>
+<row>
+ <cell>RAM1K18</cell>
+ <cell>0</cell>
+ <cell>21</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>MACC</cell>
+ <cell>0</cell>
+ <cell>22</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>Chip Globals</cell>
+ <cell>4</cell>
+ <cell>8</cell>
+ <cell>50.00</cell>
+</row>
+<row>
+ <cell>CCC</cell>
+ <cell>0</cell>
+ <cell>2</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>RCOSC_25_50MHZ</cell>
+ <cell>0</cell>
+ <cell>1</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>RCOSC_1MHZ</cell>
+ <cell>0</cell>
+ <cell>1</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>XTLOSC</cell>
+ <cell>0</cell>
+ <cell>1</cell>
+ <cell>0.00</cell>
+</row>
+<row>
+ <cell>MSS</cell>
+ <cell>0</cell>
+ <cell>1</cell>
+ <cell>0.00</cell>
+</row>
+</table>
+<section><name>Detailed Logic Resource Usage</name></section>
+<table>
+<header>
+ <cell>Type</cell>
+ <cell>4LUT</cell>
+ <cell>DFF</cell>
+</header>
+<row>
+ <cell>Fabric Logic</cell>
+ <cell>246</cell>
+ <cell>122</cell>
+</row>
+<row>
+ <cell>RAM64x18 Interface Logic</cell>
+ <cell>144</cell>
+ <cell>144</cell>
+</row>
+<row>
+ <cell>RAM1K18 Interface Logic</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>MACC Interface Logic</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>Total Used</cell>
+ <cell>390</cell>
+ <cell>266</cell>
+</row>
+</table>
+<section><name>Detailed Carry Chains Resource Usage</name></section>
+<table>
+<header>
+</header>
+<row>
+ <cell>Length</cell>
+ <cell>Used</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>21</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>Total</cell>
+ <cell>2</cell>
+</row>
+</table>
+<section><name>I/O Function</name></section>
+<table>
+<header>
+ <cell>Type</cell>
+ <cell>w/o register</cell>
+ <cell>w/ register</cell>
+ <cell>w/ DDR register</cell>
+</header>
+<row>
+ <cell>Input I/O</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>Output I/O</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>Bidirectional I/O</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>Differential Input I/O Pairs</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>Differential Output I/O Pairs</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+ <cell>0</cell>
+</row>
+</table>
+<section><name>I/O Technology</name></section>
+<table>
+<header>
+ <cell>I/O Standard</cell>
+ <cell>Vddi</cell>
+ <cell>Vref</cell>
+ <cell>Input</cell>
+ <cell>Output</cell>
+ <cell>Bidirectional</cell>
+</header>
+</table>
+<section><name>Nets assigned to chip global resources</name></section>
+<table>
+<header>
+ <cell>Fanout</cell>
+ <cell>Type</cell>
+ <cell>Name</cell>
+</header>
+<row>
+ <cell>104</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : NN_1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: CLK_RNIQO92/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>91</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : RSTout</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: RSTn_RNI7ROC/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>28</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/rstn_i_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>22</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/CLK_SPI_sig</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+</table>
+<section><name>Nets assigned to row global resources</name></section>
+<table>
+<header>
+ <cell>Fanout</cell>
+ <cell>Type</cell>
+ <cell>Name</cell>
+</header>
+</table>
+<section><name>High fanout nets</name></section>
+<table>
+<header>
+ <cell>Fanout</cell>
+ <cell>Type</cell>
+ <cell>Name</cell>
+</header>
+<row>
+ <cell>23</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/frame_start_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/frame_start</cell>
+</row>
+<row>
+ <cell>21</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : driver_busy</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/screen_send</cell>
+</row>
+<row>
+ <cell>19</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[2]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[0]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[1]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0_uSRAM_A_ADDR[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0_uSRAM_A_ADDR[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/uSRAM_A_ADDR_sig[4]</cell>
+</row>
+<row>
+ <cell>12</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/init_step[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/init_step[2]</cell>
+</row>
+<row>
+ <cell>11</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/init_step[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/init_step[1]</cell>
+</row>
+</table>
+<section><name>High fanout nets (through buffer trees)</name></section>
+<table>
+<header>
+ <cell>Fanout</cell>
+ <cell>Type</cell>
+ <cell>Name</cell>
+</header>
+<row>
+ <cell>23</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/frame_start_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/frame_start</cell>
+</row>
+<row>
+ <cell>21</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : driver_busy</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/screen_send</cell>
+</row>
+<row>
+ <cell>19</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[2]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[0]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PADDR[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: BLOCK_INTERFACE_I_PADDR[1]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0_uSRAM_A_ADDR[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0_uSRAM_A_ADDR[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/uSRAM_A_ADDR_sig[4]</cell>
+</row>
+<row>
+ <cell>12</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/init_step[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/init_step[2]</cell>
+</row>
+<row>
+ <cell>11</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/init_step[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/init_step[1]</cell>
+</row>
+</table>
+</doc>

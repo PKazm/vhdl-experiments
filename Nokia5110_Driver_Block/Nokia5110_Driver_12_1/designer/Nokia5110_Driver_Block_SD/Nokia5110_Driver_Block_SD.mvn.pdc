@@ -1,0 +1,42 @@
+# Microsemi Physical design constraints file
+
+# Version: v12.1 12.600.0.14
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ , Speed grade: STD 
+
+# Date generated: Wed Nov  6 04:23:17 2019 
+
+
+#
+# IO banks setting
+#
+
+
+#
+# Block constraints
+#
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+
+#
+# Core cell constraints
+#
+

@@ -1,0 +1,53 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\synthesis\\synwork\\Nokia5110_Driver_Block_SD_comp.srs|-top|work.Nokia5110_Driver_Block_SD|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\bin64\\c_vhdl.exe":1545375128
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\location.map":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std1164.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std_textio.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\numeric.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1545375136
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\hdl\\timer.vhd":1573023114
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\URAM_C0\\URAM_C0_0\\URAM_C0_URAM_C0_0_URAM.vhd":1573029271
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1545375133
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\hdl\\Nokia5110_Driver.vhd":1573031640
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\URAM_C0\\URAM_C0.vhd":1573029271
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\Nokia5110_Driver_Block_SD\\Nokia5110_Driver_Block_SD.vhd":1573016115
+0 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd" vhdl
+1 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd" vhdl
+2 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd" vhdl
+3 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd" vhdl
+4 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 -1
+3 2 
+4 1 3 
+
+# Dependency Lists (Users Of)
+0 1 
+1 4 
+2 3 
+3 4 
+4 -1
+
+# Design Unit to File Association
+arch work timer architecture_timer 0
+module work timer 0
+arch work nokia5110_driver architecture_nokia5110_driver 1
+module work nokia5110_driver 1
+arch work uram_c0_uram_c0_0_uram def_arch 2
+module work uram_c0_uram_c0_0_uram 2
+arch work uram_c0 rtl 3
+module work uram_c0 3
+arch work nokia5110_driver_block_sd rtl 4
+module work nokia5110_driver_block_sd 4
+
+
+# Configuration files used

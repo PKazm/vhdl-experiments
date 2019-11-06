@@ -1,0 +1,34 @@
+Resource Usage Report for Nokia5110_Driver_Block_SD 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          4 uses
+INV             3 uses
+OR4             8 uses
+CFG1           5 uses
+CFG2           37 uses
+CFG3           38 uses
+CFG4           92 uses
+
+Carry cells:
+ARI1            31 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            122 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+Global Clock Buffers: 4
+
+Total LUTs:    203
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 144; LUTs = 144;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  122 + 144 + 0 + 0 = 266;
+Total number of LUTs after P&R:  203 + 144 + 0 + 0 = 347;
+

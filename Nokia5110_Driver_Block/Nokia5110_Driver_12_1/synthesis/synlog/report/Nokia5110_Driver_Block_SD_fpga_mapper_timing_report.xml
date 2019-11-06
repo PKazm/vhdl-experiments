@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synlog\Nokia5110_Driver_Block_SD_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>Nokia5110_Driver_Block_SD|CLK</data>
+<data>100.0 MHz</data>
+<data>151.1 MHz</data>
+<data>3.383</data>
+</row>
+<row>
+<data>timerZ1|timer_clock_out_sig_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>267.8 MHz</data>
+<data>6.266</data>
+</row>
+</report_table>

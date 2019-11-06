@@ -9,4 +9,4 @@ Project Chronology:
 2. APB3_Practice
 3. Ultimate LED Controller (builds off APB3_Practice)
 4. Nokia5110_first
-5. Nokia5110_Driver_Block
+5. Nokia5110_Driver_Block (builds off Nokia5110_first)

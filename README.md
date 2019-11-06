@@ -8,3 +8,5 @@ Project Chronology:
 1. Basic_VHDL_Thing
 2. APB3_Practice
 3. Ultimate LED Controller (builds off APB3_Practice)
+4. Nokia5110_first
+5. Nokia5110_Driver_Block

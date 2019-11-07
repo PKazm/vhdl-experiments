@@ -4,6 +4,8 @@ SmartFusion2 = C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompile
 presynth = presynth
 syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.1\Designer/lib/actel/syncad_vhdl_lib
 
+COREABC_LIB = COREABC_LIB
+COREAPB3_LIB = COREAPB3_LIB
 [vcom]
 VHDL93 = 1
 

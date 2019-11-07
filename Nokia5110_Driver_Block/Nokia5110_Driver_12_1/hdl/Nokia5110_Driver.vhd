@@ -23,9 +23,9 @@ use IEEE.numeric_std.all;
 
 entity Nokia5110_Driver is
 generic (
-    g_clk_spd : natural := 100;     -- Mhz
+    g_clk_period : natural := 10;     -- 10 ns = 100Mhz
+    g_clk_spi_div : natural := 50;      -- (g_clk_period * g_clk_spi_div) should be > 250ns (4Mhz max SPI clock rate)
     g_frame_size : natural := 8;
-    g_clk_spi_spd : natural := 2000;       -- khz
     g_update_rate : natural := 1        -- updates per second, best results below 5 fps
 );
 port (
@@ -133,6 +133,7 @@ architecture architecture_Nokia5110_Driver of Nokia5110_Driver is
     constant disp_X_CON : natural := 84;        -- why use constants? because magic numbers are bad
     constant disp_Y_CON : natural := 6;         -- also debugging to with smaller "screen sizes" can be done by changing these
     constant disp_total_mem_CON : natural := 504;       -- total memory slots used by the display uSRAM
+    signal mem_addr_updated : std_logic := '0';
     -- X address is 0 to 83, Y address is 0 to 5
     -- total LCD bytes is X * Y = max 503 = (84 * 6) - 1
     -- BEGIN uSRAM Connection signals
@@ -175,7 +176,7 @@ begin
 
     SPI_timer : timer
     generic map (
-        g_timer_count => (g_clk_spd * 1000) / g_clk_spi_spd,
+        g_timer_count => g_clk_spi_div,
         g_repeat => '1'
     )
     port map (
@@ -188,7 +189,7 @@ begin
 
     LCD_timer : timer
     generic map (
-        g_timer_count => (g_clk_spi_spd * 1000) / g_update_rate,
+        g_timer_count => 1000000000 / (g_clk_period * g_clk_spi_div * g_update_rate),
         g_repeat => '1'
     )
     port map (
@@ -376,6 +377,7 @@ begin
                 uSRAM_C_BLK_sig <= '1';
             else
                 uSRAM_C_BLK_sig <= '0';
+                LCD_reg_mem_data <= uSRAM_A_DOUT_sig;
             end if;
         end if;
     end process;
@@ -389,7 +391,7 @@ begin
         elsif(rising_edge(CLK)) then
             if(PSEL = '1' and PENABLE = '1' and PWRITE = '1' and PADDR = LCD_reg_mem_X_ADDR) then
                 -- LCD_reg_mem_X is used in p_Calc_Mem_ADDR to calculate uSRAM location
-                LCD_reg_mem_X <= "00000" & PWDATA(2 downto 0);        -- 5 = 0b101
+                LCD_reg_mem_X <= '0' & PWDATA(6 downto 0);        -- 83 = 0b1010011
             else
                 null;
             end if;
@@ -405,7 +407,7 @@ begin
         elsif(rising_edge(CLK)) then
             if(PSEL = '1' and PENABLE = '1' and PWRITE = '1' and PADDR = LCD_reg_mem_Y_ADDR) then
                 -- LCD_reg_mem_Y is used in p_Calc_Mem_ADDR to calculate uSRAM location
-                LCD_reg_mem_Y <= '0' & PWDATA(6 downto 0);        -- 83 = 0b1010011
+                LCD_reg_mem_Y <= "00000" & PWDATA(2 downto 0);        -- 5 = 0b101
             else
                 null;
             end if;

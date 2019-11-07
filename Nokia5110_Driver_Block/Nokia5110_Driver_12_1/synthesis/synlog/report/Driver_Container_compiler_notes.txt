@@ -1,0 +1,103 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd":17:7:17:22|Top entity is set to Driver_Container.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd":17:7:17:22|Synthesizing work.driver_container.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd":17:7:17:31|Synthesizing work.nokia5110_driver_block_sd.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd":17:7:17:13|Synthesizing work.uram_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd":8:7:8:28|Synthesizing work.uram_c0_uram_c0_0_uram.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":155:10:155:13|Synthesizing smartfusion2.cfg2.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":629:10:629:17|Synthesizing smartfusion2.ram64x18.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":305:10:305:12|Synthesizing smartfusion2.or4.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":342:10:342:12|Synthesizing smartfusion2.inv.syn_black_box.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0.vhd":17:7:17:12|Synthesizing work.osc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":8:7:8:25|Synthesizing work.osc_c0_osc_c0_0_osc.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":24:7:24:22|Synthesizing work.nokia5110_driver.architecture_nokia5110_driver.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":76:27:76:28|Using sequential encoding for type lcd_state_machine.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0.vhd":17:7:17:13|Synthesizing work.fccc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c0_fccc_c0_0_fccc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd":20:7:20:17|Synthesizing work.coreapb3_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":34:7:34:14|Synthesizing coreapb3_lib.coreapb3.coreapb3_arch.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":665:16:665:29|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0.vhd":20:7:20:16|Synthesizing work.coreabc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":58:7:58:37|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":223:13:223:14|Using sequential encoding for type ticycle.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":665:4:665:18|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1001:27:1001:40|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd":31:7:31:42|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd":120:6:120:19|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":33:7:33:39|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":23:7:23:38|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Trying to extract state machine for register ICYCLE.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":109:9:109:17|Input PSLVERR_M is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":112:9:112:13|Input IO_IN is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":116:9:116:14|Input INTREQ is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":120:9:120:18|Input INITDATVAL is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":121:9:121:16|Input INITDONE is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":122:9:122:16|Input INITADDR is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":123:9:123:16|Input INITDATA is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":126:9:126:14|Input PSEL_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":127:9:127:17|Input PENABLE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":128:9:128:16|Input PWRITE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":129:9:129:15|Input PADDR_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":130:9:130:16|Input PWDATA_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":75:0:75:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":76:0:76:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":77:0:77:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":108:0:108:7|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":109:0:109:7|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":110:0:110:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":111:0:111:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":112:0:112:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":113:0:113:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":114:0:114:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":115:0:115:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":116:0:116:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":117:0:117:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":118:0:118:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":119:0:119:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":120:0:120:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":121:0:121:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":122:0:122:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":125:0:125:7|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":126:0:126:7|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":127:0:127:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":128:0:128:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":129:0:129:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":130:0:130:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":131:0:131:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":132:0:132:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":133:0:133:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":134:0:134:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":135:0:135:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":136:0:136:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":137:0:137:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":138:0:138:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":139:0:139:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":142:0:142:8|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":143:0:143:8|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":144:0:144:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":145:0:145:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":146:0:146:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":147:0:147:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":148:0:148:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":149:0:149:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":150:0:150:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":151:0:151:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":152:0:152:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":153:0:153:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":154:0:154:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":155:0:155:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":156:0:156:9|Input PSLVERRS15 is unused.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":459:8:459:9|Trying to extract state machine for register LCD_State.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+@N|Running in 64-bit mode
+

@@ -38,9 +38,9 @@ Read Width A                    : 8
 Read Depth B                    : 504
 Read Width B                    : 8
 A_ADDR_LAT                      : Latch
-A_DOUT_LAT                      : Latch
+A_DOUT_LAT                      : Register
 B_ADDR_LAT                      : Latch
-B_DOUT_LAT                      : Latch
+B_DOUT_LAT                      : Register
 Portname A_DOUT                 : A_DOUT
 Portname B_DOUT                 : B_DOUT
 Portname A_CLK                  : A_CLK

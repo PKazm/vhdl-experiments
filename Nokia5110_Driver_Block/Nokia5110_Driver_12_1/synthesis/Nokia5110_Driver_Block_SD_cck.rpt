@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Wed Nov  6 04:23:09 2019
+# Written on Wed Nov  6 16:00:24 2019
 
 ##### DESIGN INFO #######################################################
 
@@ -35,13 +35,15 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                       Ending                                         |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia5110_Driver_Block_SD|CLK                  Nokia5110_Driver_Block_SD|CLK                  |     10.000           |     No paths         |     No paths         |     No paths                         
-Nokia5110_Driver_Block_SD|CLK                  timerZ1|timer_clock_out_sig_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-timerZ1|timer_clock_out_sig_inferred_clock     Nokia5110_Driver_Block_SD|CLK                  |     Diff grp         |     No paths         |     No paths         |     No paths                         
-timerZ1|timer_clock_out_sig_inferred_clock     timerZ1|timer_clock_out_sig_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-=========================================================================================================================================================================================================
+Starting                                          Ending                                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            System                                            |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     timerZ1|timer_clock_out_sig_inferred_clock        |     Diff grp         |     No paths         |     No paths         |     No paths                         
+timerZ1|timer_clock_out_sig_inferred_clock        FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+timerZ1|timer_clock_out_sig_inferred_clock        timerZ1|timer_clock_out_sig_inferred_clock        |     10.000           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -49,36 +51,6 @@ timerZ1|timer_clock_out_sig_inferred_clock     timerZ1|timer_clock_out_sig_infer
 Unconstrained Start/End Points
 ******************************
 
-p:PADDR[0]
-p:PADDR[1]
-p:PADDR[2]
-p:PADDR[3]
-p:PADDR[4]
-p:PADDR[5]
-p:PADDR[6]
-p:PADDR[7]
-p:PENABLE
-p:PRDATA[0]
-p:PRDATA[1]
-p:PRDATA[2]
-p:PRDATA[3]
-p:PRDATA[4]
-p:PRDATA[5]
-p:PRDATA[6]
-p:PRDATA[7]
-p:PREADY
-p:PSEL
-p:PSLVERR
-p:PWDATA[0]
-p:PWDATA[1]
-p:PWDATA[2]
-p:PWDATA[3]
-p:PWDATA[4]
-p:PWDATA[5]
-p:PWDATA[6]
-p:PWDATA[7]
-p:PWRITE
-p:RSTn
 p:RSTout
 p:SPIDO
 p:chip_enable

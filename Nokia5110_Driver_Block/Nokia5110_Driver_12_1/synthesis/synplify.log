@@ -2,10 +2,10 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
 Hostname:    PHOENIX136DESKY
-Date:        Wed Nov  6 04:23:06 2019
+Date:        Wed Nov  6 16:02:06 2019
 Version:     N-2018.03M-SP1-1
 
-Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log Nokia5110_Driver_Block_SD_syn.tcl
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log Driver_Container_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -15,65 +15,67 @@ License Option: actel_oem
 
 Running in Vendor Mode
 
-auto_infer_blackbox is not supported in current product.
-log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Nokia5110_Driver_Block_SD.srr"
+"automatic_compile_point" is unrecognized option for current device
+Implementation not found: synthesis
+log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Driver_Container.srr"
 Running: synthesis in foreground
 
-Running Nokia5110_Driver_Block_SD_syn|synthesis
+Running Driver_Container_syn|synthesis
 
-Running Flow: compile (Compile) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:06 2019
+Running Flow: compile (Compile) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:06 2019
 
-Running Flow: compile_flow (Compile Process) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:06 2019
+Running Flow: compile_flow (Compile Process) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:06 2019
 
-Running: compiler (Compile Input) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:06 2019
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Nokia5110_Driver_Block_SD_comp.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Nokia5110_Driver_Block_SD.srs
+Running: compiler (Compile Input) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:06 2019
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Driver_Container_comp.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Driver_Container.srs
 
 compiler completed
-# Wed Nov  6 04:23:08 2019
+# Wed Nov  6 16:02:08 2019
 
 Return Code: 0
 Run Time:00h:00m:02s
 
-Running: multi_srs_gen (Multi-srs Generator) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:08 2019
+Running: multi_srs_gen (Multi-srs Generator) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:08 2019
 
 multi_srs_gen completed
-# Wed Nov  6 04:23:09 2019
+# Wed Nov  6 16:02:08 2019
 
 Return Code: 0
-Run Time:00h:00m:01s
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Nokia5110_Driver_Block_SD_mult.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Nokia5110_Driver_Block_SD.srs
-Complete: Compile Process on Nokia5110_Driver_Block_SD_syn|synthesis
+Run Time:00h:00m:00s
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Driver_Container_mult.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Driver_Container.srs
+Complete: Compile Process on Driver_Container_syn|synthesis
 
-Running: premap (Premap) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:09 2019
+Running: premap (Premap) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:08 2019
 
 premap completed with warnings
-# Wed Nov  6 04:23:09 2019
+# Wed Nov  6 16:02:09 2019
 
 Return Code: 1
-Run Time:00h:00m:00s
-Complete: Compile on Nokia5110_Driver_Block_SD_syn|synthesis
+Run Time:00h:00m:01s
+Complete: Compile on Driver_Container_syn|synthesis
 
-Running Flow: map (Map) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:10 2019
+Running Flow: map (Map) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:09 2019
 License granted for 4 parallel jobs
 
-Running: fpga_mapper (Map & Optimize) on Nokia5110_Driver_Block_SD_syn|synthesis
-# Wed Nov  6 04:23:10 2019
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Nokia5110_Driver_Block_SD_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Nokia5110_Driver_Block_SD.srm
+Running: fpga_mapper (Map & Optimize) on Driver_Container_syn|synthesis
+# Wed Nov  6 16:02:09 2019
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Driver_Container_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Driver_Container.srm
 
 fpga_mapper completed with warnings
-# Wed Nov  6 04:23:12 2019
+# Wed Nov  6 16:02:12 2019
 
 Return Code: 1
-Run Time:00h:00m:02s
-Complete: Map on Nokia5110_Driver_Block_SD_syn|synthesis
-Complete: Logic Synthesis on Nokia5110_Driver_Block_SD_syn|synthesis
-TCL script complete: "Nokia5110_Driver_Block_SD_syn.tcl"
+Run Time:00h:00m:03s
+Complete: Map on Driver_Container_syn|synthesis
+Complete: Logic Synthesis on Driver_Container_syn|synthesis
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\Driver_Container.srr to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\backup\Driver_Container.srr
+TCL script complete: "Driver_Container_syn.tcl"
 exit status=0
 exit status=0
 License checkin: synplifypro_actel

@@ -1,0 +1,152 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/simulation
+Pcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 w1572988165
+R0
+8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+l0
+L30
+V6XQdn^E]^IOnRfgRRBHVY3
+!s100 M`a74h2Z=cgYBZBf=LgIj0
+Z4 OW;C;10.7c;67
+33
+Z5 !s110 1573074176
+!i10b 1
+Z6 !s108 1573074176.000000
+!s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!i113 1
+Z7 o-2008 -explicit -work COREAPB3_LIB -O0
+Z8 tCvgOpt 0
+Ecoreapb3
+R3
+Z9 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+R0
+Z10 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd
+Z11 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd
+l0
+L34
+VamPF_`f[kKjGCGOV?Yh_K3
+!s100 cjbRHcKg3E]Fo9Pm?ENf:3
+R4
+33
+R5
+!i10b 1
+R6
+Z12 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd|
+Z13 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd|
+!i113 1
+R7
+R8
+Acoreapb3_arch
+R9
+R1
+R2
+DEx4 work 8 coreapb3 0 22 amPF_`f[kKjGCGOV?Yh_K3
+l634
+L161
+V_4aXKgJVOfYg=Ge6MSak93
+!s100 3TMQMOX]@oEeBnCR>KF>h3
+R4
+33
+R5
+!i10b 1
+R6
+R12
+R13
+!i113 1
+R7
+R8
+Ecoreapb3_iaddr_reg
+R3
+R1
+R2
+R0
+Z14 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd
+Z15 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd
+l0
+L24
+VoA[l_jmQ[iX^89bkD@7Ca3
+!s100 6gWM7KQe_TN6dXNI7omMN2
+R4
+33
+R5
+!i10b 1
+R6
+Z16 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd|
+Z17 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd|
+!i113 1
+R7
+R8
+Artl
+R1
+R2
+DEx4 work 18 coreapb3_iaddr_reg 0 22 oA[l_jmQ[iX^89bkD@7Ca3
+l54
+L46
+V@A2iL_b]Z8U?8dh8?_lhl2
+!s100 ATVOXl2PJ:7K8]3@Rm9Rl0
+R4
+33
+R5
+!i10b 1
+R6
+R16
+R17
+!i113 1
+R7
+R8
+Ecoreapb3_muxptob3
+R3
+R9
+R1
+R2
+R0
+Z18 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd
+Z19 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd
+l0
+L33
+VKR;2=UTAPNBFi:XG^ST]>0
+!s100 `me8:T4T93:XHkJeT]<ej3
+R4
+33
+R5
+!i10b 1
+R6
+Z20 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd|
+Z21 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd|
+!i113 1
+R7
+R8
+Acoreapb3_muxptob3_arch
+R9
+R1
+R2
+DEx4 work 17 coreapb3_muxptob3 0 22 KR;2=UTAPNBFi:XG^ST]>0
+l84
+L61
+VI;HT^9l:Hf4;LQ;0HRahG2
+!s100 WSg:LRFMHFAbm3FWcLDOR1
+R4
+33
+R5
+!i10b 1
+R6
+R20
+R21
+!i113 1
+R7
+R8

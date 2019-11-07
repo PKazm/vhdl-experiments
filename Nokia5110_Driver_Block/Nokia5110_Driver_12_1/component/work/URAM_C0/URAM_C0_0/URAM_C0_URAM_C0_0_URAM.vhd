@@ -178,7 +178,7 @@ begin
          => \QBX_TEMPR0[4]\, B_DOUT(3) => \QBX_TEMPR0[3]\, 
         B_DOUT(2) => \QBX_TEMPR0[2]\, B_DOUT(1) => 
         \QBX_TEMPR0[1]\, B_DOUT(0) => \QBX_TEMPR0[0]\, BUSY => 
-        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => \VCC\, 
+        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => CLK, 
         A_ADDR_SRST_N => \VCC\, A_DOUT_SRST_N => \VCC\, 
         A_ADDR_ARST_N => \VCC\, A_DOUT_ARST_N => \VCC\, A_ADDR_EN
          => \VCC\, A_DOUT_EN => \VCC\, A_BLK(1) => \BLKX1[0]\, 
@@ -187,33 +187,33 @@ begin
         A_ADDR(3), A_ADDR(5) => A_ADDR(2), A_ADDR(4) => A_ADDR(1), 
         A_ADDR(3) => A_ADDR(0), A_ADDR(2) => \GND\, A_ADDR(1) => 
         \GND\, A_ADDR(0) => \GND\, B_ADDR_CLK => \VCC\, 
-        B_DOUT_CLK => \VCC\, B_ADDR_SRST_N => \VCC\, 
-        B_DOUT_SRST_N => \VCC\, B_ADDR_ARST_N => \VCC\, 
-        B_DOUT_ARST_N => \VCC\, B_ADDR_EN => \VCC\, B_DOUT_EN => 
-        \VCC\, B_BLK(1) => \BLKY1[0]\, B_BLK(0) => \BLKY0[0]\, 
-        B_ADDR(9) => B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7)
-         => B_ADDR(4), B_ADDR(6) => B_ADDR(3), B_ADDR(5) => 
-        B_ADDR(2), B_ADDR(4) => B_ADDR(1), B_ADDR(3) => B_ADDR(0), 
-        B_ADDR(2) => \GND\, B_ADDR(1) => \GND\, B_ADDR(0) => 
-        \GND\, C_CLK => CLK, C_ADDR(9) => C_ADDR(6), C_ADDR(8)
-         => C_ADDR(5), C_ADDR(7) => C_ADDR(4), C_ADDR(6) => 
-        C_ADDR(3), C_ADDR(5) => C_ADDR(2), C_ADDR(4) => C_ADDR(1), 
-        C_ADDR(3) => C_ADDR(0), C_ADDR(2) => \GND\, C_ADDR(1) => 
-        \GND\, C_ADDR(0) => \GND\, C_DIN(17) => \GND\, C_DIN(16)
-         => \GND\, C_DIN(15) => \GND\, C_DIN(14) => \GND\, 
-        C_DIN(13) => \GND\, C_DIN(12) => \GND\, C_DIN(11) => 
-        \GND\, C_DIN(10) => \GND\, C_DIN(9) => \GND\, C_DIN(8)
-         => \GND\, C_DIN(7) => C_DIN(7), C_DIN(6) => C_DIN(6), 
-        C_DIN(5) => C_DIN(5), C_DIN(4) => C_DIN(4), C_DIN(3) => 
-        C_DIN(3), C_DIN(2) => C_DIN(2), C_DIN(1) => C_DIN(1), 
-        C_DIN(0) => C_DIN(0), C_WEN => \VCC\, C_BLK(1) => 
-        \BLKZ1[0]\, C_BLK(0) => \BLKZ0[0]\, A_EN => \VCC\, 
-        A_ADDR_LAT => \VCC\, A_DOUT_LAT => \VCC\, A_WIDTH(2) => 
-        \GND\, A_WIDTH(1) => \VCC\, A_WIDTH(0) => \VCC\, B_EN => 
-        \VCC\, B_ADDR_LAT => \VCC\, B_DOUT_LAT => \VCC\, 
-        B_WIDTH(2) => \GND\, B_WIDTH(1) => \VCC\, B_WIDTH(0) => 
-        \VCC\, C_EN => \VCC\, C_WIDTH(2) => \GND\, C_WIDTH(1) => 
-        \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK => \GND\);
+        B_DOUT_CLK => CLK, B_ADDR_SRST_N => \VCC\, B_DOUT_SRST_N
+         => \VCC\, B_ADDR_ARST_N => \VCC\, B_DOUT_ARST_N => \VCC\, 
+        B_ADDR_EN => \VCC\, B_DOUT_EN => \VCC\, B_BLK(1) => 
+        \BLKY1[0]\, B_BLK(0) => \BLKY0[0]\, B_ADDR(9) => 
+        B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7) => B_ADDR(4), 
+        B_ADDR(6) => B_ADDR(3), B_ADDR(5) => B_ADDR(2), B_ADDR(4)
+         => B_ADDR(1), B_ADDR(3) => B_ADDR(0), B_ADDR(2) => \GND\, 
+        B_ADDR(1) => \GND\, B_ADDR(0) => \GND\, C_CLK => CLK, 
+        C_ADDR(9) => C_ADDR(6), C_ADDR(8) => C_ADDR(5), C_ADDR(7)
+         => C_ADDR(4), C_ADDR(6) => C_ADDR(3), C_ADDR(5) => 
+        C_ADDR(2), C_ADDR(4) => C_ADDR(1), C_ADDR(3) => C_ADDR(0), 
+        C_ADDR(2) => \GND\, C_ADDR(1) => \GND\, C_ADDR(0) => 
+        \GND\, C_DIN(17) => \GND\, C_DIN(16) => \GND\, C_DIN(15)
+         => \GND\, C_DIN(14) => \GND\, C_DIN(13) => \GND\, 
+        C_DIN(12) => \GND\, C_DIN(11) => \GND\, C_DIN(10) => 
+        \GND\, C_DIN(9) => \GND\, C_DIN(8) => \GND\, C_DIN(7) => 
+        C_DIN(7), C_DIN(6) => C_DIN(6), C_DIN(5) => C_DIN(5), 
+        C_DIN(4) => C_DIN(4), C_DIN(3) => C_DIN(3), C_DIN(2) => 
+        C_DIN(2), C_DIN(1) => C_DIN(1), C_DIN(0) => C_DIN(0), 
+        C_WEN => \VCC\, C_BLK(1) => \BLKZ1[0]\, C_BLK(0) => 
+        \BLKZ0[0]\, A_EN => \VCC\, A_ADDR_LAT => \VCC\, 
+        A_DOUT_LAT => \GND\, A_WIDTH(2) => \GND\, A_WIDTH(1) => 
+        \VCC\, A_WIDTH(0) => \VCC\, B_EN => \VCC\, B_ADDR_LAT => 
+        \VCC\, B_DOUT_LAT => \GND\, B_WIDTH(2) => \GND\, 
+        B_WIDTH(1) => \VCC\, B_WIDTH(0) => \VCC\, C_EN => \VCC\, 
+        C_WIDTH(2) => \GND\, C_WIDTH(1) => \VCC\, C_WIDTH(0) => 
+        \VCC\, SII_LOCK => \GND\);
     
     \OR4_A_DOUT[1]\ : OR4
       port map(A => \QAX_TEMPR0[1]\, B => \QAX_TEMPR1[1]\, C => 
@@ -295,7 +295,7 @@ begin
          => \QBX_TEMPR2[4]\, B_DOUT(3) => \QBX_TEMPR2[3]\, 
         B_DOUT(2) => \QBX_TEMPR2[2]\, B_DOUT(1) => 
         \QBX_TEMPR2[1]\, B_DOUT(0) => \QBX_TEMPR2[0]\, BUSY => 
-        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => \VCC\, 
+        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => CLK, 
         A_ADDR_SRST_N => \VCC\, A_DOUT_SRST_N => \VCC\, 
         A_ADDR_ARST_N => \VCC\, A_DOUT_ARST_N => \VCC\, A_ADDR_EN
          => \VCC\, A_DOUT_EN => \VCC\, A_BLK(1) => \BLKX1[1]\, 
@@ -304,33 +304,33 @@ begin
         A_ADDR(3), A_ADDR(5) => A_ADDR(2), A_ADDR(4) => A_ADDR(1), 
         A_ADDR(3) => A_ADDR(0), A_ADDR(2) => \GND\, A_ADDR(1) => 
         \GND\, A_ADDR(0) => \GND\, B_ADDR_CLK => \VCC\, 
-        B_DOUT_CLK => \VCC\, B_ADDR_SRST_N => \VCC\, 
-        B_DOUT_SRST_N => \VCC\, B_ADDR_ARST_N => \VCC\, 
-        B_DOUT_ARST_N => \VCC\, B_ADDR_EN => \VCC\, B_DOUT_EN => 
-        \VCC\, B_BLK(1) => \BLKY1[1]\, B_BLK(0) => \BLKY0[0]\, 
-        B_ADDR(9) => B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7)
-         => B_ADDR(4), B_ADDR(6) => B_ADDR(3), B_ADDR(5) => 
-        B_ADDR(2), B_ADDR(4) => B_ADDR(1), B_ADDR(3) => B_ADDR(0), 
-        B_ADDR(2) => \GND\, B_ADDR(1) => \GND\, B_ADDR(0) => 
-        \GND\, C_CLK => CLK, C_ADDR(9) => C_ADDR(6), C_ADDR(8)
-         => C_ADDR(5), C_ADDR(7) => C_ADDR(4), C_ADDR(6) => 
-        C_ADDR(3), C_ADDR(5) => C_ADDR(2), C_ADDR(4) => C_ADDR(1), 
-        C_ADDR(3) => C_ADDR(0), C_ADDR(2) => \GND\, C_ADDR(1) => 
-        \GND\, C_ADDR(0) => \GND\, C_DIN(17) => \GND\, C_DIN(16)
-         => \GND\, C_DIN(15) => \GND\, C_DIN(14) => \GND\, 
-        C_DIN(13) => \GND\, C_DIN(12) => \GND\, C_DIN(11) => 
-        \GND\, C_DIN(10) => \GND\, C_DIN(9) => \GND\, C_DIN(8)
-         => \GND\, C_DIN(7) => C_DIN(7), C_DIN(6) => C_DIN(6), 
-        C_DIN(5) => C_DIN(5), C_DIN(4) => C_DIN(4), C_DIN(3) => 
-        C_DIN(3), C_DIN(2) => C_DIN(2), C_DIN(1) => C_DIN(1), 
-        C_DIN(0) => C_DIN(0), C_WEN => \VCC\, C_BLK(1) => 
-        \BLKZ1[1]\, C_BLK(0) => \BLKZ0[0]\, A_EN => \VCC\, 
-        A_ADDR_LAT => \VCC\, A_DOUT_LAT => \VCC\, A_WIDTH(2) => 
-        \GND\, A_WIDTH(1) => \VCC\, A_WIDTH(0) => \VCC\, B_EN => 
-        \VCC\, B_ADDR_LAT => \VCC\, B_DOUT_LAT => \VCC\, 
-        B_WIDTH(2) => \GND\, B_WIDTH(1) => \VCC\, B_WIDTH(0) => 
-        \VCC\, C_EN => \VCC\, C_WIDTH(2) => \GND\, C_WIDTH(1) => 
-        \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK => \GND\);
+        B_DOUT_CLK => CLK, B_ADDR_SRST_N => \VCC\, B_DOUT_SRST_N
+         => \VCC\, B_ADDR_ARST_N => \VCC\, B_DOUT_ARST_N => \VCC\, 
+        B_ADDR_EN => \VCC\, B_DOUT_EN => \VCC\, B_BLK(1) => 
+        \BLKY1[1]\, B_BLK(0) => \BLKY0[0]\, B_ADDR(9) => 
+        B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7) => B_ADDR(4), 
+        B_ADDR(6) => B_ADDR(3), B_ADDR(5) => B_ADDR(2), B_ADDR(4)
+         => B_ADDR(1), B_ADDR(3) => B_ADDR(0), B_ADDR(2) => \GND\, 
+        B_ADDR(1) => \GND\, B_ADDR(0) => \GND\, C_CLK => CLK, 
+        C_ADDR(9) => C_ADDR(6), C_ADDR(8) => C_ADDR(5), C_ADDR(7)
+         => C_ADDR(4), C_ADDR(6) => C_ADDR(3), C_ADDR(5) => 
+        C_ADDR(2), C_ADDR(4) => C_ADDR(1), C_ADDR(3) => C_ADDR(0), 
+        C_ADDR(2) => \GND\, C_ADDR(1) => \GND\, C_ADDR(0) => 
+        \GND\, C_DIN(17) => \GND\, C_DIN(16) => \GND\, C_DIN(15)
+         => \GND\, C_DIN(14) => \GND\, C_DIN(13) => \GND\, 
+        C_DIN(12) => \GND\, C_DIN(11) => \GND\, C_DIN(10) => 
+        \GND\, C_DIN(9) => \GND\, C_DIN(8) => \GND\, C_DIN(7) => 
+        C_DIN(7), C_DIN(6) => C_DIN(6), C_DIN(5) => C_DIN(5), 
+        C_DIN(4) => C_DIN(4), C_DIN(3) => C_DIN(3), C_DIN(2) => 
+        C_DIN(2), C_DIN(1) => C_DIN(1), C_DIN(0) => C_DIN(0), 
+        C_WEN => \VCC\, C_BLK(1) => \BLKZ1[1]\, C_BLK(0) => 
+        \BLKZ0[0]\, A_EN => \VCC\, A_ADDR_LAT => \VCC\, 
+        A_DOUT_LAT => \GND\, A_WIDTH(2) => \GND\, A_WIDTH(1) => 
+        \VCC\, A_WIDTH(0) => \VCC\, B_EN => \VCC\, B_ADDR_LAT => 
+        \VCC\, B_DOUT_LAT => \GND\, B_WIDTH(2) => \GND\, 
+        B_WIDTH(1) => \VCC\, B_WIDTH(0) => \VCC\, C_EN => \VCC\, 
+        C_WIDTH(2) => \GND\, C_WIDTH(1) => \VCC\, C_WIDTH(0) => 
+        \VCC\, SII_LOCK => \GND\);
     
     URAM_C0_URAM_C0_0_URAM_R1C0 : RAM64x18
       generic map(MEMORYFILE => "URAM_C0_URAM_C0_0_URAM_R1C0.mem"
@@ -353,7 +353,7 @@ begin
          => \QBX_TEMPR1[4]\, B_DOUT(3) => \QBX_TEMPR1[3]\, 
         B_DOUT(2) => \QBX_TEMPR1[2]\, B_DOUT(1) => 
         \QBX_TEMPR1[1]\, B_DOUT(0) => \QBX_TEMPR1[0]\, BUSY => 
-        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => \VCC\, 
+        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => CLK, 
         A_ADDR_SRST_N => \VCC\, A_DOUT_SRST_N => \VCC\, 
         A_ADDR_ARST_N => \VCC\, A_DOUT_ARST_N => \VCC\, A_ADDR_EN
          => \VCC\, A_DOUT_EN => \VCC\, A_BLK(1) => \BLKX1[0]\, 
@@ -362,33 +362,33 @@ begin
         A_ADDR(3), A_ADDR(5) => A_ADDR(2), A_ADDR(4) => A_ADDR(1), 
         A_ADDR(3) => A_ADDR(0), A_ADDR(2) => \GND\, A_ADDR(1) => 
         \GND\, A_ADDR(0) => \GND\, B_ADDR_CLK => \VCC\, 
-        B_DOUT_CLK => \VCC\, B_ADDR_SRST_N => \VCC\, 
-        B_DOUT_SRST_N => \VCC\, B_ADDR_ARST_N => \VCC\, 
-        B_DOUT_ARST_N => \VCC\, B_ADDR_EN => \VCC\, B_DOUT_EN => 
-        \VCC\, B_BLK(1) => \BLKY1[0]\, B_BLK(0) => B_ADDR(7), 
-        B_ADDR(9) => B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7)
-         => B_ADDR(4), B_ADDR(6) => B_ADDR(3), B_ADDR(5) => 
-        B_ADDR(2), B_ADDR(4) => B_ADDR(1), B_ADDR(3) => B_ADDR(0), 
-        B_ADDR(2) => \GND\, B_ADDR(1) => \GND\, B_ADDR(0) => 
-        \GND\, C_CLK => CLK, C_ADDR(9) => C_ADDR(6), C_ADDR(8)
-         => C_ADDR(5), C_ADDR(7) => C_ADDR(4), C_ADDR(6) => 
-        C_ADDR(3), C_ADDR(5) => C_ADDR(2), C_ADDR(4) => C_ADDR(1), 
-        C_ADDR(3) => C_ADDR(0), C_ADDR(2) => \GND\, C_ADDR(1) => 
-        \GND\, C_ADDR(0) => \GND\, C_DIN(17) => \GND\, C_DIN(16)
-         => \GND\, C_DIN(15) => \GND\, C_DIN(14) => \GND\, 
-        C_DIN(13) => \GND\, C_DIN(12) => \GND\, C_DIN(11) => 
-        \GND\, C_DIN(10) => \GND\, C_DIN(9) => \GND\, C_DIN(8)
-         => \GND\, C_DIN(7) => C_DIN(7), C_DIN(6) => C_DIN(6), 
-        C_DIN(5) => C_DIN(5), C_DIN(4) => C_DIN(4), C_DIN(3) => 
-        C_DIN(3), C_DIN(2) => C_DIN(2), C_DIN(1) => C_DIN(1), 
-        C_DIN(0) => C_DIN(0), C_WEN => \VCC\, C_BLK(1) => 
-        \BLKZ1[0]\, C_BLK(0) => C_ADDR(7), A_EN => \VCC\, 
-        A_ADDR_LAT => \VCC\, A_DOUT_LAT => \VCC\, A_WIDTH(2) => 
-        \GND\, A_WIDTH(1) => \VCC\, A_WIDTH(0) => \VCC\, B_EN => 
-        \VCC\, B_ADDR_LAT => \VCC\, B_DOUT_LAT => \VCC\, 
-        B_WIDTH(2) => \GND\, B_WIDTH(1) => \VCC\, B_WIDTH(0) => 
-        \VCC\, C_EN => \VCC\, C_WIDTH(2) => \GND\, C_WIDTH(1) => 
-        \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK => \GND\);
+        B_DOUT_CLK => CLK, B_ADDR_SRST_N => \VCC\, B_DOUT_SRST_N
+         => \VCC\, B_ADDR_ARST_N => \VCC\, B_DOUT_ARST_N => \VCC\, 
+        B_ADDR_EN => \VCC\, B_DOUT_EN => \VCC\, B_BLK(1) => 
+        \BLKY1[0]\, B_BLK(0) => B_ADDR(7), B_ADDR(9) => B_ADDR(6), 
+        B_ADDR(8) => B_ADDR(5), B_ADDR(7) => B_ADDR(4), B_ADDR(6)
+         => B_ADDR(3), B_ADDR(5) => B_ADDR(2), B_ADDR(4) => 
+        B_ADDR(1), B_ADDR(3) => B_ADDR(0), B_ADDR(2) => \GND\, 
+        B_ADDR(1) => \GND\, B_ADDR(0) => \GND\, C_CLK => CLK, 
+        C_ADDR(9) => C_ADDR(6), C_ADDR(8) => C_ADDR(5), C_ADDR(7)
+         => C_ADDR(4), C_ADDR(6) => C_ADDR(3), C_ADDR(5) => 
+        C_ADDR(2), C_ADDR(4) => C_ADDR(1), C_ADDR(3) => C_ADDR(0), 
+        C_ADDR(2) => \GND\, C_ADDR(1) => \GND\, C_ADDR(0) => 
+        \GND\, C_DIN(17) => \GND\, C_DIN(16) => \GND\, C_DIN(15)
+         => \GND\, C_DIN(14) => \GND\, C_DIN(13) => \GND\, 
+        C_DIN(12) => \GND\, C_DIN(11) => \GND\, C_DIN(10) => 
+        \GND\, C_DIN(9) => \GND\, C_DIN(8) => \GND\, C_DIN(7) => 
+        C_DIN(7), C_DIN(6) => C_DIN(6), C_DIN(5) => C_DIN(5), 
+        C_DIN(4) => C_DIN(4), C_DIN(3) => C_DIN(3), C_DIN(2) => 
+        C_DIN(2), C_DIN(1) => C_DIN(1), C_DIN(0) => C_DIN(0), 
+        C_WEN => \VCC\, C_BLK(1) => \BLKZ1[0]\, C_BLK(0) => 
+        C_ADDR(7), A_EN => \VCC\, A_ADDR_LAT => \VCC\, A_DOUT_LAT
+         => \GND\, A_WIDTH(2) => \GND\, A_WIDTH(1) => \VCC\, 
+        A_WIDTH(0) => \VCC\, B_EN => \VCC\, B_ADDR_LAT => \VCC\, 
+        B_DOUT_LAT => \GND\, B_WIDTH(2) => \GND\, B_WIDTH(1) => 
+        \VCC\, B_WIDTH(0) => \VCC\, C_EN => \VCC\, C_WIDTH(2) => 
+        \GND\, C_WIDTH(1) => \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK
+         => \GND\);
     
     \CFG2_BLKZ1[1]\ : CFG2
       generic map(INIT => x"8")
@@ -419,7 +419,7 @@ begin
          => \QBX_TEMPR3[4]\, B_DOUT(3) => \QBX_TEMPR3[3]\, 
         B_DOUT(2) => \QBX_TEMPR3[2]\, B_DOUT(1) => 
         \QBX_TEMPR3[1]\, B_DOUT(0) => \QBX_TEMPR3[0]\, BUSY => 
-        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => \VCC\, 
+        OPEN, A_ADDR_CLK => \VCC\, A_DOUT_CLK => CLK, 
         A_ADDR_SRST_N => \VCC\, A_DOUT_SRST_N => \VCC\, 
         A_ADDR_ARST_N => \VCC\, A_DOUT_ARST_N => \VCC\, A_ADDR_EN
          => \VCC\, A_DOUT_EN => \VCC\, A_BLK(1) => \BLKX1[1]\, 
@@ -428,33 +428,33 @@ begin
         A_ADDR(3), A_ADDR(5) => A_ADDR(2), A_ADDR(4) => A_ADDR(1), 
         A_ADDR(3) => A_ADDR(0), A_ADDR(2) => \GND\, A_ADDR(1) => 
         \GND\, A_ADDR(0) => \GND\, B_ADDR_CLK => \VCC\, 
-        B_DOUT_CLK => \VCC\, B_ADDR_SRST_N => \VCC\, 
-        B_DOUT_SRST_N => \VCC\, B_ADDR_ARST_N => \VCC\, 
-        B_DOUT_ARST_N => \VCC\, B_ADDR_EN => \VCC\, B_DOUT_EN => 
-        \VCC\, B_BLK(1) => \BLKY1[1]\, B_BLK(0) => B_ADDR(7), 
-        B_ADDR(9) => B_ADDR(6), B_ADDR(8) => B_ADDR(5), B_ADDR(7)
-         => B_ADDR(4), B_ADDR(6) => B_ADDR(3), B_ADDR(5) => 
-        B_ADDR(2), B_ADDR(4) => B_ADDR(1), B_ADDR(3) => B_ADDR(0), 
-        B_ADDR(2) => \GND\, B_ADDR(1) => \GND\, B_ADDR(0) => 
-        \GND\, C_CLK => CLK, C_ADDR(9) => C_ADDR(6), C_ADDR(8)
-         => C_ADDR(5), C_ADDR(7) => C_ADDR(4), C_ADDR(6) => 
-        C_ADDR(3), C_ADDR(5) => C_ADDR(2), C_ADDR(4) => C_ADDR(1), 
-        C_ADDR(3) => C_ADDR(0), C_ADDR(2) => \GND\, C_ADDR(1) => 
-        \GND\, C_ADDR(0) => \GND\, C_DIN(17) => \GND\, C_DIN(16)
-         => \GND\, C_DIN(15) => \GND\, C_DIN(14) => \GND\, 
-        C_DIN(13) => \GND\, C_DIN(12) => \GND\, C_DIN(11) => 
-        \GND\, C_DIN(10) => \GND\, C_DIN(9) => \GND\, C_DIN(8)
-         => \GND\, C_DIN(7) => C_DIN(7), C_DIN(6) => C_DIN(6), 
-        C_DIN(5) => C_DIN(5), C_DIN(4) => C_DIN(4), C_DIN(3) => 
-        C_DIN(3), C_DIN(2) => C_DIN(2), C_DIN(1) => C_DIN(1), 
-        C_DIN(0) => C_DIN(0), C_WEN => \VCC\, C_BLK(1) => 
-        \BLKZ1[1]\, C_BLK(0) => C_ADDR(7), A_EN => \VCC\, 
-        A_ADDR_LAT => \VCC\, A_DOUT_LAT => \VCC\, A_WIDTH(2) => 
-        \GND\, A_WIDTH(1) => \VCC\, A_WIDTH(0) => \VCC\, B_EN => 
-        \VCC\, B_ADDR_LAT => \VCC\, B_DOUT_LAT => \VCC\, 
-        B_WIDTH(2) => \GND\, B_WIDTH(1) => \VCC\, B_WIDTH(0) => 
-        \VCC\, C_EN => \VCC\, C_WIDTH(2) => \GND\, C_WIDTH(1) => 
-        \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK => \GND\);
+        B_DOUT_CLK => CLK, B_ADDR_SRST_N => \VCC\, B_DOUT_SRST_N
+         => \VCC\, B_ADDR_ARST_N => \VCC\, B_DOUT_ARST_N => \VCC\, 
+        B_ADDR_EN => \VCC\, B_DOUT_EN => \VCC\, B_BLK(1) => 
+        \BLKY1[1]\, B_BLK(0) => B_ADDR(7), B_ADDR(9) => B_ADDR(6), 
+        B_ADDR(8) => B_ADDR(5), B_ADDR(7) => B_ADDR(4), B_ADDR(6)
+         => B_ADDR(3), B_ADDR(5) => B_ADDR(2), B_ADDR(4) => 
+        B_ADDR(1), B_ADDR(3) => B_ADDR(0), B_ADDR(2) => \GND\, 
+        B_ADDR(1) => \GND\, B_ADDR(0) => \GND\, C_CLK => CLK, 
+        C_ADDR(9) => C_ADDR(6), C_ADDR(8) => C_ADDR(5), C_ADDR(7)
+         => C_ADDR(4), C_ADDR(6) => C_ADDR(3), C_ADDR(5) => 
+        C_ADDR(2), C_ADDR(4) => C_ADDR(1), C_ADDR(3) => C_ADDR(0), 
+        C_ADDR(2) => \GND\, C_ADDR(1) => \GND\, C_ADDR(0) => 
+        \GND\, C_DIN(17) => \GND\, C_DIN(16) => \GND\, C_DIN(15)
+         => \GND\, C_DIN(14) => \GND\, C_DIN(13) => \GND\, 
+        C_DIN(12) => \GND\, C_DIN(11) => \GND\, C_DIN(10) => 
+        \GND\, C_DIN(9) => \GND\, C_DIN(8) => \GND\, C_DIN(7) => 
+        C_DIN(7), C_DIN(6) => C_DIN(6), C_DIN(5) => C_DIN(5), 
+        C_DIN(4) => C_DIN(4), C_DIN(3) => C_DIN(3), C_DIN(2) => 
+        C_DIN(2), C_DIN(1) => C_DIN(1), C_DIN(0) => C_DIN(0), 
+        C_WEN => \VCC\, C_BLK(1) => \BLKZ1[1]\, C_BLK(0) => 
+        C_ADDR(7), A_EN => \VCC\, A_ADDR_LAT => \VCC\, A_DOUT_LAT
+         => \GND\, A_WIDTH(2) => \GND\, A_WIDTH(1) => \VCC\, 
+        A_WIDTH(0) => \VCC\, B_EN => \VCC\, B_ADDR_LAT => \VCC\, 
+        B_DOUT_LAT => \GND\, B_WIDTH(2) => \GND\, B_WIDTH(1) => 
+        \VCC\, B_WIDTH(0) => \VCC\, C_EN => \VCC\, C_WIDTH(2) => 
+        \GND\, C_WIDTH(1) => \VCC\, C_WIDTH(0) => \VCC\, SII_LOCK
+         => \GND\);
     
     \OR4_B_DOUT[7]\ : OR4
       port map(A => \QBX_TEMPR0[7]\, B => \QBX_TEMPR1[7]\, C => 

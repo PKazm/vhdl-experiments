@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Wed Nov  6 04:23:09 2019
+# Written on Wed Nov  6 16:00:24 2019
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\designer\Nokia5110_Driver_Block_SD\synthesis.fdc"
@@ -30,22 +30,26 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                          Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                          Frequency     Period        Type         Group                   Load 
--------------------------------------------------------------------------------------------------------------------------------
-0 -       Nokia5110_Driver_Block_SD|CLK                  100.0 MHz     10.000        inferred     Inferred_clkgroup_0     128  
-                                                                                                                               
-0 -       timerZ1|timer_clock_out_sig_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     34   
-===============================================================================================================================
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     197  
+                                                                                                                                  
+0 -       timerZ1|timer_clock_out_sig_inferred_clock        100.0 MHz     10.000        inferred     Inferred_clkgroup_1     34   
+==================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                               Clock     Source                                                          Clock Pin                                                 Non-clock Pin                               Non-clock Pin                               
-Clock                                          Load      Pin                                                             Seq Example                                               Seq Example                                 Comb Example                                
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia5110_Driver_Block_SD|CLK                  128       CLK(port)                                                       URAM_C0_0.URAM_C0_0.URAM_C0_URAM_C0_0_URAM_R0C0.C_CLK     -                                           -                                           
-                                                                                                                                                                                                                                                                           
-timerZ1|timer_clock_out_sig_inferred_clock     34        Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.Q[0](dffe)     Nokia5110_Driver_0.LCD_timer.timer_indic_sig.C            Nokia5110_Driver_0.SPICLK_last_sig.D[0]     Nokia5110_Driver_0.un1_CLK_SPI_sig.I[0](inv)
-===========================================================================================================================================================================================================================================================================
+                                                  Clock     Source                                                          Clock Pin                                                 Non-clock Pin                               Non-clock Pin                               
+Clock                                             Load      Pin                                                             Seq Example                                               Seq Example                                 Comb Example                                
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                                               -                                                         -                                           -                                           
+                                                                                                                                                                                                                                                                              
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     197       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                           URAM_C0_0.URAM_C0_0.URAM_C0_URAM_C0_0_URAM_R0C0.C_CLK     -                                           FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
+                                                                                                                                                                                                                                                                              
+timerZ1|timer_clock_out_sig_inferred_clock        34        Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.Q[0](dffe)     Nokia5110_Driver_0.LCD_timer.timer_indic_sig.C            Nokia5110_Driver_0.SPICLK_last_sig.D[0]     Nokia5110_Driver_0.un1_CLK_SPI_sig.I[0](inv)
+==============================================================================================================================================================================================================================================================================

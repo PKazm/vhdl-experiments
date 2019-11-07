@@ -1,0 +1,32 @@
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/synthesis/Driver_Container.vm(150): WARNING: net 'N_377' does not have a driver (VDB-1002)
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/synthesis/Driver_Container.vm(468): WARNING: net 'N_378' does not have a driver (VDB-1002)
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/synthesis/Driver_Container.vm(6086): WARNING: net 'N_381' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       4 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     3 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    151    0      0      'Nokia5110_Driver_Block_SD_0/FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    22     0      3      'Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIQ0N4' 
+    0      105    6      'Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI5R5B' 
+    0      28     0      'Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/rstn_i_0_RNI01NC' 
+
+Info: Demotion information: 
+      Disconnected 3 data pins from global 'Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIQ0N4'. 
+      Disconnected 5 data pins from global 'Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI5R5B'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

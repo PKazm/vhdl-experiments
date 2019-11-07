@@ -16,18 +16,80 @@ Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd (2019-11-06 01:53:09, 2019-11-06 04:14:00)
+42       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 2
+Modules that may have changed as a result of file changes: 33
 MID:  lib.cell.view
+10       coreabc_lib.coreabc_c0_coreabc_c0_0_acmtable.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+12       coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+14       coreabc_lib.coreabc_c0_coreabc_c0_0_debugblk.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+16       coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+18       coreabc_lib.coreabc_c0_coreabc_c0_0_instructnvm.bb may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+20       coreabc_lib.coreabc_c0_coreabc_c0_0_instructram.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+22       coreabc_lib.coreabc_c0_coreabc_c0_0_iram512x9.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+24       coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+26       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x16.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+28       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x8.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+30       coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+32       coreabc_lib.coreabc_c0_coreabc_c0_0_textio_test.tb may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+34       coreapb3_lib.coreapb3.coreapb3_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+36       coreapb3_lib.coreapb3_iaddr_reg.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+38       coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+40       work.coreabc_c0.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+42       work.coreapb3_c0.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+64       work.driver_container.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (architecture and entity definition)
+44       work.fccc_c0.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+46       work.fccc_c0_fccc_c0_0_fccc.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
 0        work.nokia5110_driver.architecture_nokia5110_driver may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd (2019-11-06 01:53:09, 2019-11-06 04:14:00) <-- (architecture and entity definition)
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+2        work.nokia5110_driver_block_sd.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+48       work.osc_c0.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+50       work.osc_c0_osc_c0_0_osc.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+52       work.rcosc_1mhz.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+54       work.rcosc_1mhz_fab.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+56       work.rcosc_25_50mhz.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+58       work.rcosc_25_50mhz_fab.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
 4        work.timer.architecture_timer may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd (2019-11-06 01:53:09, 2019-11-06 04:14:00) <-- (may instantiate this module)
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+6        work.uram_c0.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+8        work.uram_c0_uram_c0_0_uram.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+60       work.xtlosc.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
+62       work.xtlosc_fab.def_arch may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd (N/A, 2019-11-06 16:00:14) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 15
+Unmodified files: 42
 FID:  path (timestamp)
 0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
 1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
@@ -40,17 +102,38 @@ FID:  path (timestamp)
 8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
 9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
 10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
-11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd (2019-11-05 23:55:15)
-12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd (2019-11-06 03:34:31)
-13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd (2019-11-06 03:34:31)
+16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd (2019-11-05 16:09:25)
+17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd (2019-11-05 16:09:25)
+18       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd (2019-11-05 16:09:25)
+19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd (2019-11-05 16:09:25)
+20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-11-06 13:59:59)
+21       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0.vhd (2019-11-06 15:55:43)
+22       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd (2019-11-06 15:55:42)
+23       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd (2019-11-06 15:55:43)
+24       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd (2019-11-06 15:55:43)
+25       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd (2019-11-06 15:55:43)
+26       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd (2019-11-06 15:55:42)
+27       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd (2019-11-06 15:55:43)
+28       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd (2019-11-06 15:55:43)
+29       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd (2019-11-06 15:55:43)
+30       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd (2019-11-06 15:55:43)
+31       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd (2019-11-06 15:55:43)
+32       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd (2019-11-06 15:55:43)
+33       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd (2019-11-06 15:55:43)
+34       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd (2019-11-06 15:55:43)
+35       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd (2019-11-06 15:55:43)
+36       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd (2019-11-06 15:55:43)
+37       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd (2019-11-06 14:02:37)
+38       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0.vhd (2019-11-06 14:00:15)
+39       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2019-11-06 14:00:15)
+11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd (2019-11-06 14:15:43)
+40       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0.vhd (2019-11-06 13:59:59)
+41       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2019-11-06 13:59:59)
+12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd (2019-11-06 14:50:53)
+13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd (2019-11-06 14:50:52)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd (2019-11-06 14:46:24)
 15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd (2019-11-06 01:51:54)
 
 *******************************************************************
-Unchanged modules: 6
+Unchanged modules: 0
 MID:  lib.cell.view
-2        work.nokia5110_driver_block_sd.rtl
-3        work.nokia5110_driver_block_sd.vhdl
-6        work.uram_c0.rtl
-7        work.uram_c0.vhdl
-8        work.uram_c0_uram_c0_0_uram.def_arch
-9        work.uram_c0_uram_c0_0_uram.vhdl

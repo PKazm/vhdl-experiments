@@ -9,11 +9,11 @@
  			
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
- <tr> <td class="optionTitle" align="left"> Project Name</td> <td> Nokia5110_Driver_Block_SD_syn</td> <td class="optionTitle" align="left"> Device Name</td> <td> synthesis: Microsemi SmartFusion2 : M2S010</td> </tr>
-<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> <td class="optionTitle" align="left"> Top Module</td> <td> work.Nokia5110_Driver_Block_SD</td> </tr>
+ <tr> <td class="optionTitle" align="left"> Project Name</td> <td> Driver_Container_syn</td> <td class="optionTitle" align="left"> Device Name</td> <td> synthesis: Microsemi SmartFusion2 : M2S010</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> <td class="optionTitle" align="left"> Top Module</td> <td> work.Driver_Container</td> </tr>
  		 </thead> 
 		 <tbody> <tr> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> </tr>
-<tr> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 10000</td> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 1</td> </tr>
+<tr> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 10000</td> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 0</td> </tr>
 <tr> <td class="optionTitle" align="left"> Disable Sequential Optimizations</td> <td> 0</td> <td class="optionTitle" align="left"> FSM Compiler</td> <td> 1</td> </tr>
  
 </tbody> 
@@ -33,40 +33,40 @@
          </tr>
   <tr>
   <td class="optionTitle"> (compiler)</td><td>Complete</td>
- <td>20</td>
- <td>13</td>
+ <td>102</td>
+ <td>79</td>
 <td>0</td>
 <td>-</td>
 <td>00m:01s</td>
 <td>-</td>
-<td><font size="-1">11/6/2019</font><br/><font size="-2">4:23:07 AM</font></td>
+<td><font size="-1">11/6/2019</font><br/><font size="-2">4:02:07 PM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (premap)</td><td>Complete</td>
- <td>11</td>
- <td>2</td>
+ <td>12</td>
+ <td>3</td>
 <td>0</td>
 <td>0m:00s</td>
 <td>0m:00s</td>
-<td>135MB</td>
-<td><font size="-1">11/6/2019</font><br/><font size="-2">4:23:09 AM</font></td>
+<td>137MB</td>
+<td><font size="-1">11/6/2019</font><br/><font size="-2">4:02:09 PM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
- <td>15</td>
- <td>56</td>
+ <td>18</td>
+ <td>69</td>
 <td>0</td>
-<td>0m:01s</td>
 <td>0m:02s</td>
-<td>145MB</td>
-<td><font size="-1">11/6/2019</font><br/><font size="-2">4:23:12 AM</font></td>
+<td>0m:02s</td>
+<td>144MB</td>
+<td><font size="-1">11/6/2019</font><br/><font size="-2">4:02:12 PM</font></td>
 </tr> 
 
 <tr>
   <td class="optionTitle">Multi-srs Generator</td>
-  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">11/6/2019</font><br/><font size="-2">4:23:08 AM</font></td> 		</tbody>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td><font size="-1">11/6/2019</font><br/><font size="-2">4:02:08 PM</font></td> 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -74,21 +74,23 @@
 <tfoot> <tr> <td class="optionTitle" colspan="2"></td><td class="optionTitle" colspan="2"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Carry Cells used" class="optionTitle" align="left">Carry Cells</td> <td>31</td>
-<td title ="Total Sequential Cells used" class="optionTitle" align="left">Sequential Cells</td> <td>122</td>
+<td title ="Total Carry Cells used" class="optionTitle" align="left">Carry Cells</td> <td>37</td>
+<td title ="Total Sequential Cells used" class="optionTitle" align="left">Sequential Cells</td> <td>159</td>
 </tr>
 <tr> 
 <td title ="Total DSP Blocks used" class="optionTitle" align="left">DSP Blocks
 (dsp_used)</td> <td>0</td>
-<td title ="Total Global Clock Buffers used" class="optionTitle" align="left">Global Clock Buffers</td> <td>4</td>
+<td title ="Total I/O Cells used" class="optionTitle" align="left">I/O Cells</td> <td>8</td>
 </tr>
 <tr> 
+<td title ="Total Global Clock Buffers used" class="optionTitle" align="left">Global Clock Buffers</td> <td>4</td>
 <td title ="Total RAM64x18 used" class="optionTitle" align="left">RAM64x18
-(v_ram)</td> <td>4</td>
-<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
-(total_luts)</td> <td>203</td>
+(v_ram)</td> <td>5</td>
 </tr>
- 
+<tr> 
+<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
+(total_luts)</td> <td>304</td>
+<td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -97,15 +99,16 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">Nokia5110_Driver_Block_SD|CLK</td><td  align="left">100.0 MHz</td><td  align="left">151.1 MHz</td><td  align="left">3.383</td></tr> 
-<tr> <td  align="left">timerZ1|timer_clock_out_sig_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">267.8 MHz</td><td  align="left">6.266</td></tr> 
+<tr> <td  align="left">FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">157.8 MHz</td><td  align="left">3.663</td></tr> 
+<tr> <td  align="left">timerZ1|timer_clock_out_sig_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">269.1 MHz</td><td  align="left">6.284</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">100.0 MHz</td><td  align="left">895.2 MHz</td><td  align="left">8.883</td></tr> 
 </tbody> 
  </table>
 <br>
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
  				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
  <tbody> <tr> 
-<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 1</td>
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>0 / 2</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>

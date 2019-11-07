@@ -101,5 +101,4 @@ compile \
     -fam SmartFusion2 \
     -die PA4M1000_N \
     -pkg tq144 \
-    -merge_pdc 0 \
-    -block 1 
+    -merge_pdc 0

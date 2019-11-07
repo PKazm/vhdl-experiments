@@ -1,0 +1,57 @@
+Analysis
+
+---------------------------------------------
+
+Programming Errors
+
+None
+
+---------------------------------------------
+
+Instructions Used
+
+APBREAD, APBWRT, APBWRT ACC, CMP, DEF, INC, JUMP, LOAD
+
+---------------------------------------------
+
+Constraints
+
+   Accumulator operated on with 84 so 'Data Bus Width' >= 7.
+   Maximum APB slot used is 0 so 'Number of APB Slots' >= 1.
+   Maximum APB address used 18 so 'APB Slot Size' >= 32 locations
+   Maximum program counter is 15 so 'Maximum Number of Instructions' >= 16.
+   Z register not used so 'Z Register size' may be set to disabled.
+   'INPUTn' not used so 'Number of I/O Flags' >= 0.
+   'IOWRT' not used so 'Number of I/O Outputs' >= 0.
+   Does not use stack ('CALL', 'RETURN', 'RETISR', 'PUSH' or 'POP'), 'RAMREAD' or 'RAMWRT' so no need for 'Internal Data/Stack Memory'.
+
+---------------------------------------------
+
+Instruction Store Details
+
+   Width of instructions is Data+Addr+Slots+6 = 8+8+1+6 = 23 bits
+
+---------------------------------------------
+
+Labels
+
+Address 0:$MAIN
+Address 0:$crazy_loop
+Address 9:$WRT_Y_ADDDR
+Address 11:$WRT_X_ADDR
+
+---------------------------------------------
+
+Symbols
+
+Line 2:Driver_ctrl_ADDR=0x0
+Line 3:LCD_func_set_ADDR=0x1
+Line 4:LCD_disp_ctrl_ADDR=0x2
+Line 5:LCD_temp_ctrl_ADDR=0x3
+Line 6:LCD_bias_sys_ADDR=0x4
+Line 7:LCD_Vop_set_ADDR=0x5
+Line 8:LCD_mem_data_ADDR=0x10
+Line 9:LCD_mem_X_ADDR=0x11
+Line 10:LCD_mem_Y_ADDR=0x12
+
+---------------------------------------------

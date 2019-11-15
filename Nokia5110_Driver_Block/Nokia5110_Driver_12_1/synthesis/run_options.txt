@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03M-SP1-1
 #--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\run_options.txt
-#--  Written on Wed Nov  6 16:02:06 2019
+#--  Written on Sat Nov  9 00:56:22 2019
 
 
 #project files

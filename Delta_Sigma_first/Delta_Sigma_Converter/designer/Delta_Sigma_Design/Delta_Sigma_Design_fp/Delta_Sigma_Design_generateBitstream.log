@@ -1,0 +1,20 @@
+Software Version: 12.600.0.14
+Opened 'C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design_fp\Delta_Sigma_Design.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design.pdb' has been loaded successfully.
+DESIGN : Delta_Sigma_Design;  CHECKSUM : 0000;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Thu Nov 14 20:54:08 2019 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design.ppd'; file programs Fabric.
+Fabric component bitstream digest: 176ada764a821a24c7494b72cb9fb8d41c8baf9e5524727813735c6882a483c1
+Finished: Thu Nov 14 20:54:16 2019 (Elapsed time 00:00:08)
+
+The 'export_single_ppd' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design_fp\Delta_Sigma_Design.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

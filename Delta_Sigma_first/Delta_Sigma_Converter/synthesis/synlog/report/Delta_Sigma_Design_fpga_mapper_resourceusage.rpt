@@ -1,0 +1,44 @@
+Resource Usage Report for Delta_Sigma_Design 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          5 uses
+INV             3 uses
+OR4             16 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           8 uses
+CFG2           77 uses
+CFG3           151 uses
+CFG4           343 uses
+
+Carry cells:
+ARI1            88 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            301 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 21
+I/O primitives: 19
+INBUF_DIFF     1 use
+OUTBUF         18 uses
+
+
+Global Clock Buffers: 5
+
+Total LUTs:    667
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 216; LUTs = 216;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  301 + 216 + 0 + 0 = 517;
+Total number of LUTs after P&R:  667 + 216 + 0 + 0 = 883;
+

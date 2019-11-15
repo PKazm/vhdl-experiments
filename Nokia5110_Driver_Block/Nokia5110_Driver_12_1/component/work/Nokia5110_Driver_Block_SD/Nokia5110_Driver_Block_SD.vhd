@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Nov  6 14:15:43 2019
+-- Created by SmartDesign Sat Nov  9 00:56:17 2019
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -155,14 +155,14 @@ signal chip_enable_net_1                                  : std_logic;
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
+signal COREABC_C0_0_APB3master_PADDR                      : std_logic_vector(19 downto 0);
 signal COREABC_C0_0_APB3master_PADDR_0_31to20             : std_logic_vector(31 downto 20);
 signal COREABC_C0_0_APB3master_PADDR_0_19to0              : std_logic_vector(19 downto 0);
 signal COREABC_C0_0_APB3master_PADDR_0                    : std_logic_vector(31 downto 0);
-signal COREABC_C0_0_APB3master_PADDR                      : std_logic_vector(19 downto 0);
 
+signal COREABC_C0_0_APB3master_PRDATA                     : std_logic_vector(31 downto 0);
 signal COREABC_C0_0_APB3master_PRDATA_0_7to0              : std_logic_vector(7 downto 0);
 signal COREABC_C0_0_APB3master_PRDATA_0                   : std_logic_vector(7 downto 0);
-signal COREABC_C0_0_APB3master_PRDATA                     : std_logic_vector(31 downto 0);
 
 signal COREABC_C0_0_APB3master_PWDATA                     : std_logic_vector(7 downto 0);
 signal COREABC_C0_0_APB3master_PWDATA_0_31to8             : std_logic_vector(31 downto 8);
@@ -230,41 +230,41 @@ begin
 COREABC_C0_0 : COREABC_C0
     port map( 
         -- Inputs
-        IO_IN     => COREABC_C0_0_IO_OUT,
         NSYSRESET => FCCC_C0_0_LOCK,
         PCLK      => FCCC_C0_0_GL0,
         PREADY_M  => COREABC_C0_0_APB3master_PREADY,
         PSLVERR_M => COREABC_C0_0_APB3master_PSLVERR,
+        IO_IN     => COREABC_C0_0_IO_OUT,
         PRDATA_M  => COREABC_C0_0_APB3master_PRDATA_0,
         -- Outputs
-        IO_OUT    => COREABC_C0_0_IO_OUT,
         PRESETN   => COREABC_C0_0_PRESETN,
-        PADDR_M   => COREABC_C0_0_APB3master_PADDR,
         PSEL_M    => COREABC_C0_0_APB3master_PSELx,
         PENABLE_M => COREABC_C0_0_APB3master_PENABLE,
         PWRITE_M  => COREABC_C0_0_APB3master_PWRITE,
+        IO_OUT    => COREABC_C0_0_IO_OUT,
+        PADDR_M   => COREABC_C0_0_APB3master_PADDR,
         PWDATA_M  => COREABC_C0_0_APB3master_PWDATA 
         );
 -- CoreAPB3_C0_0
 CoreAPB3_C0_0 : CoreAPB3_C0
     port map( 
         -- Inputs
-        PADDR     => COREABC_C0_0_APB3master_PADDR_0,
         PSEL      => COREABC_C0_0_APB3master_PSELx,
         PENABLE   => COREABC_C0_0_APB3master_PENABLE,
         PWRITE    => COREABC_C0_0_APB3master_PWRITE,
-        PWDATA    => COREABC_C0_0_APB3master_PWDATA_0,
-        PRDATAS0  => CoreAPB3_C0_0_APBmslave0_PRDATA_0,
         PREADYS0  => CoreAPB3_C0_0_APBmslave0_PREADY,
         PSLVERRS0 => CoreAPB3_C0_0_APBmslave0_PSLVERR,
+        PADDR     => COREABC_C0_0_APB3master_PADDR_0,
+        PWDATA    => COREABC_C0_0_APB3master_PWDATA_0,
+        PRDATAS0  => CoreAPB3_C0_0_APBmslave0_PRDATA_0,
         -- Outputs
-        PRDATA    => COREABC_C0_0_APB3master_PRDATA,
         PREADY    => COREABC_C0_0_APB3master_PREADY,
         PSLVERR   => COREABC_C0_0_APB3master_PSLVERR,
-        PADDRS    => CoreAPB3_C0_0_APBmslave0_PADDR,
         PSELS0    => CoreAPB3_C0_0_APBmslave0_PSELx,
         PENABLES  => CoreAPB3_C0_0_APBmslave0_PENABLE,
         PWRITES   => CoreAPB3_C0_0_APBmslave0_PWRITE,
+        PRDATA    => COREABC_C0_0_APB3master_PRDATA,
+        PADDRS    => CoreAPB3_C0_0_APBmslave0_PADDR,
         PWDATAS   => CoreAPB3_C0_0_APBmslave0_PWDATA 
         );
 -- FCCC_C0_0
@@ -279,8 +279,8 @@ FCCC_C0_0 : FCCC_C0
 -- Nokia5110_Driver_0
 Nokia5110_Driver_0 : entity work.Nokia5110_Driver
     generic map( 
-        g_clk_spd     => ( 100 ),
-        g_clk_spi_spd => ( 2000 ),
+        g_clk_period  => ( 10 ),
+        g_clk_spi_div => ( 50 ),
         g_frame_size  => ( 8 ),
         g_update_rate => ( 1 )
         )
@@ -288,10 +288,10 @@ Nokia5110_Driver_0 : entity work.Nokia5110_Driver
         -- Inputs
         CLK          => FCCC_C0_0_GL0,
         RSTn         => COREABC_C0_0_PRESETN,
+        PADDR        => CoreAPB3_C0_0_APBmslave0_PADDR_0,
         PSEL         => CoreAPB3_C0_0_APBmslave0_PSELx,
         PENABLE      => CoreAPB3_C0_0_APBmslave0_PENABLE,
         PWRITE       => CoreAPB3_C0_0_APBmslave0_PWRITE,
-        PADDR        => CoreAPB3_C0_0_APBmslave0_PADDR_0,
         PWDATA       => CoreAPB3_C0_0_APBmslave0_PWDATA_0,
         uSRAM_A_DOUT => URAM_C0_0_A_DOUT,
         uSRAM_B_DOUT => URAM_C0_0_B_DOUT,
@@ -303,11 +303,11 @@ Nokia5110_Driver_0 : entity work.Nokia5110_Driver
         chip_enable  => chip_enable_net_0,
         RSTout       => RSTout_net_0,
         PREADY       => CoreAPB3_C0_0_APBmslave0_PREADY,
-        PSLVERR      => CoreAPB3_C0_0_APBmslave0_PSLVERR,
-        uSRAM_C_BLK  => Nokia5110_Driver_0_uSRAM_C_BLK,
         PRDATA       => CoreAPB3_C0_0_APBmslave0_PRDATA,
+        PSLVERR      => CoreAPB3_C0_0_APBmslave0_PSLVERR,
         uSRAM_A_ADDR => Nokia5110_Driver_0_uSRAM_A_ADDR,
         uSRAM_B_ADDR => Nokia5110_Driver_0_uSRAM_B_ADDR,
+        uSRAM_C_BLK  => Nokia5110_Driver_0_uSRAM_C_BLK,
         uSRAM_C_ADDR => Nokia5110_Driver_0_uSRAM_C_ADDR,
         uSRAM_C_DIN  => Nokia5110_Driver_0_uSRAM_C_DIN 
         );

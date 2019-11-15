@@ -1,4 +1,4 @@
-# Wed Nov  6 16:02:09 2019
+# Sat Nov  9 00:56:26 2019
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -53,8 +53,7 @@ Available hyper_sources - for debug and ip models
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_timer.counter[20:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_timer.timer_indic_sig is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":423:8:423:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_A_ADDR_sig[8] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":423:8:423:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_A_ADDR_sig[5:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":423:8:423:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_A_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":208:8:208:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.prdata_sig[7:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":459:8:459:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_B_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":459:8:459:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.init_step[2:0] is being ignored due to limitations in architecture. 
@@ -68,8 +67,8 @@ Available hyper_sources - for debug and ip models
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":459:8:459:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.frame_start is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":459:8:459:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.data_command_queue_sig is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":459:8:459:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.screen_send is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":405:8:405:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_mem_Y[6:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":389:8:389:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_mem_X[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":405:8:405:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_mem_Y[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":389:8:389:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_mem_X[6:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":370:8:370:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_C_DIN_sig[7:0] is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":370:8:370:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_C_BLK_sig is being ignored due to limitations in architecture. 
 @W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|User-specified initial value defined for instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[7:0] is being ignored due to limitations in architecture. 
@@ -123,15 +122,15 @@ original code -> new code
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
 
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":338:8:338:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_bias_sys[1] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":338:8:338:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_bias_sys[0] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[5] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[4] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[3] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Removing instance Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_DATA[6] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_DATA[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[2] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":338:8:338:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_bias_sys[2] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[6] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[3] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":338:8:338:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_bias_sys[1] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":338:8:338:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_bias_sys[0] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[5] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[4] because it is equivalent to instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\hdl\nokia5110_driver.vhd":354:8:354:9|Removing sequential instance Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_Vop_set[1] (in view: work.Driver_Container(rtl)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
@@ -143,7 +142,7 @@ Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
@@ -152,30 +151,30 @@ Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elaps
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 143MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		     3.06ns		 337 /       159
-@N: FP130 |Promoting Net Board_J7_c[1] on CLKINT  I_101 
-@N: FP130 |Promoting Net Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.rstn_i_i on CLKINT  I_102 
-@N: FP130 |Promoting Net Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.CLK_SPI_sig on CLKINT  I_103 
+   1		0h:00m:01s		     3.06ns		 368 /       161
+@N: FP130 |Promoting Net Board_J7_c[1] on CLKINT  I_126 
+@N: FP130 |Promoting Net Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.rstn_i_i on CLKINT  I_127 
+@N: FP130 |Promoting Net Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.CLK_SPI_sig on CLKINT  I_128 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 143MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 143MB)
 
 
 
@@ -186,13 +185,13 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 173 clock pin(s) of sequential element(s)
-0 instances converted, 173 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 175 clock pin(s) of sequential element(s)
+0 instances converted, 175 sequential instances remain driven by gated/generated clocks
 
 ==================================================================================================================================================== Gated/Generated Clocks ====================================================================================================================================================
 Clock Tree ID     Driving Element                                                                  Drive Element Type     Fanout     Sample Instance                                                              Explanation                                                                                                   
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       Nokia5110_Driver_Block_SD_0.FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    151        Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.uSRAM_A_ADDR_sig[8]           Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       Nokia5110_Driver_Block_SD_0.FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    153        Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.screen_send                   Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
 @K:CKID0002       Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig     SLE                    22         Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_timer.timer_indic_sig     No generated or derived clock directive on output of sequential instance                                      
 ================================================================================================================================================================================================================================================================================================================================
 
@@ -200,20 +199,20 @@ Clock Tree ID     Driving Element                                               
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 144MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 143MB)
 
 Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\Driver_Container_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 144MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 144MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 143MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 144MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
 
 @W: MT246 :"c:\users\phoenix136\dropbox\fpga\microsemi\nokia5110_driver_12_1\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Nokia5110_Driver_Block_SD_0.FCCC_C0_0.FCCC_C0_0.GL0_net.
@@ -221,7 +220,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Nov  6 16:02:11 2019
+# Timing Report written on Sat Nov  9 00:56:28 2019
 #
 
 
@@ -288,41 +287,41 @@ Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                                                                                                 Starting                                                                                       Arrival          
-Instance                                                                                         Reference                                         Type         Pin           Net               Time        Slack
-                                                                                                 Clock                                                                                                           
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]                              FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[1]     0.087       3.663
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[2]                              FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[2]     0.087       3.739
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[1]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[1]      0.108       3.990
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[0]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[0]      0.108       4.033
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[2]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[2]      0.108       4.312
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[5]     RD_r0c0[5]        1.747       4.334
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[4]     RD_r0c0[4]        1.747       4.642
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[6]     RD_r0c0[6]        1.747       4.736
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[7]     RD_r0c0[7]        1.747       4.797
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[3]     RD_r0c0[3]        1.747       5.036
-=================================================================================================================================================================================================================
+                                                                                                 Starting                                                                                        Arrival          
+Instance                                                                                         Reference                                         Type         Pin           Net                Time        Slack
+                                                                                                 Clock                                                                                                            
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]                              FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[1]      0.087       3.663
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[2]                              FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[2]      0.087       3.739
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[1]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[1]       0.087       4.059
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[0]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[0]       0.108       4.107
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.INSTR_CMD[2]                               FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[2]       0.108       4.253
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[3]     RD_r0c0[3]         1.747       4.409
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[6]     RD_r0c0[6]         1.747       4.560
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[7]     RD_r0c0[7]         1.747       4.719
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[4]     RD_r0c0[4]         1.747       4.736
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[1]                             FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             ACCUMULATOR[1]     0.108       4.894
+==================================================================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                                         Starting                                                                                         Required          
-Instance                                                                 Reference                                         Type     Pin     Net                           Time         Slack
-                                                                         Clock                                                                                                              
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.STD_ACCUM_ZERO     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       un1_std_accum_zero            9.745        3.663
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[4]                 9.745        4.546
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[6]                 9.745        4.546
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[1]                 9.745        4.613
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[0]                 9.745        4.652
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[2]                 9.745        4.652
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[5]                 9.745        4.985
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]                 9.745        4.991
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.STD_ACCUM_NEG      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]                 9.745        4.991
-Nokia5110_Driver_Block_SD_0.Nokia5110_Driver_0.LCD_reg_mem_data[0]       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      EN      LCD_reg_mem_data_1_sqmuxa     9.662        5.026
-============================================================================================================================================================================================
+                                                                         Starting                                                                                  Required          
+Instance                                                                 Reference                                         Type     Pin     Net                    Time         Slack
+                                                                         Clock                                                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.STD_ACCUM_ZERO     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       un1_std_accum_zero     9.745        3.663
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[4]          9.745        4.546
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[6]          9.745        4.546
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[1]          9.745        4.613
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[2]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[2]          9.745        4.613
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[0]          9.745        4.652
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]          9.745        4.991
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.STD_ACCUM_NEG      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]          9.745        4.991
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[3]          9.745        5.050
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[5]          9.745        5.185
+=====================================================================================================================================================================================
 
 
 
@@ -360,12 +359,12 @@ ALUOUT_2_sqmuxa_sn                                                             N
 Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0_1          CFG3     B        In      -         3.364       -         
 Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0_1          CFG3     Y        Out     0.164     3.528       -         
 ACCUM_NEXT_m0_1                                                                Net      -        -       0.497     -           2         
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0[4]         CFG4     C        In      -         4.025       -         
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0[4]         CFG4     Y        Out     0.210     4.235       -         
-ACCUM_NEXT_m0[4]                                                               Net      -        -       0.248     -           1         
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[4]            CFG3     C        In      -         4.483       -         
-Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[4]            CFG3     Y        Out     0.210     4.693       -         
-ACCUM_NEXT[4]                                                                  Net      -        -       0.497     -           2         
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0[6]         CFG4     C        In      -         4.025       -         
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m0[6]         CFG4     Y        Out     0.210     4.235       -         
+ACCUM_NEXT_m0[6]                                                               Net      -        -       0.248     -           1         
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[6]            CFG3     C        In      -         4.483       -         
+Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[6]            CFG3     Y        Out     0.210     4.693       -         
+ACCUM_NEXT[6]                                                                  Net      -        -       0.497     -           2         
 Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero_5     CFG4     D        In      -         5.190       -         
 Nokia5110_Driver_Block_SD_0.COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero_5     CFG4     Y        Out     0.317     5.507       -         
 un1_std_accum_zero_5                                                           Net      -        -       0.248     -           1         
@@ -540,10 +539,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
 
 ---------------------------------------
 Resource Usage Report for Driver_Container 
@@ -556,18 +555,18 @@ INV             3 uses
 OR4             16 uses
 RCOSC_25_50MHZ  1 use
 CFG1           6 uses
-CFG2           50 uses
-CFG3           68 uses
+CFG2           53 uses
+CFG3           72 uses
 CFG4           143 uses
 
 Carry cells:
-ARI1            31 uses - used for arithmetic functions
-ARI1            6 uses - used for Wide-Mux implementation
-Total ARI1      37 uses
+ARI1            38 uses - used for arithmetic functions
+ARI1            2 uses - used for Wide-Mux implementation
+Total ARI1      40 uses
 
 
 Sequential Cells: 
-SLE            159 uses
+SLE            161 uses
 
 DSP Blocks:    0 of 22 (0%)
 
@@ -581,7 +580,7 @@ Global Clock Buffers: 4
 RAM/ROM usage summary
 Total Block RAMs (RAM64x18) : 5 of 22 (22%)
 
-Total LUTs:    304
+Total LUTs:    314
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -589,14 +588,14 @@ RAM64x18 Interface Logic : SLEs = 180; LUTs = 180;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  159 + 180 + 0 + 0 = 339;
-Total number of LUTs after P&R:  304 + 180 + 0 + 0 = 484;
+Total number of SLEs after P&R:  161 + 180 + 0 + 0 = 341;
+Total number of LUTs after P&R:  314 + 180 + 0 + 0 = 494;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 27MB peak: 144MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 28MB peak: 143MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Wed Nov  6 16:02:12 2019
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sat Nov  9 00:56:28 2019
 
 ###########################################################]

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delta Sigma Converter" version="4">
+  <OBJECT>
+    <ID name="Delta Sigma Converter" mc="Infrastructure.DiagramSet" uid="f8c250c0-5c6e-40be-8d5b-710e9c8c7ec0"/>
+    <PID name="Delta Sigma Converter" mc="Standard.Project" uid="f0baa60b-6b44-4573-a7ed-181f49ab99fc"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Delta Sigma Converter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

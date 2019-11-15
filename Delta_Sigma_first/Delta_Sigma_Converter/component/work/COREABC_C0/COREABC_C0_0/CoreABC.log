@@ -1,0 +1,64 @@
+Analysis
+
+---------------------------------------------
+
+Programming Errors
+
+None
+
+---------------------------------------------
+
+Instructions Used
+
+APBREAD, APBWRT, APBWRT ACC, APBWRT DAT, CMP, DEF, HALT, INC, IOREAD, JUMP, LOAD, RAMREAD, RAMWRT, RAMWRT ACC, RAMWRT DAT, RETISR
+
+---------------------------------------------
+
+Constraints
+
+   Accumulator operated on with 84 so 'Data Bus Width' >= 7.
+   Maximum APB slot used is 1 so 'Number of APB Slots' >= 2.
+   Maximum APB address used 19 so 'APB Slot Size' >= 32 locations
+   Maximum program counter is 44 so 'Maximum Number of Instructions' >= 64.
+   Z register not used so 'Z Register size' may be set to disabled.
+   'INPUTn' not used so 'Number of I/O Flags' >= 0.
+   'IOWRT' not used so 'Number of I/O Outputs' >= 0.
+   Uses stack ('CALL', 'RETURN', 'RETISR', 'PUSH' or 'POP'), 'RAMREAD' or 'RAMWRT' so requires 'Internal Data/Stack Memory'.
+   Uses stack - please ensure 'Stack Size' is sufficient.
+   Uses 'RETISR' - please ensure that 'ISR Address' is set.
+
+---------------------------------------------
+
+Instruction Store Details
+
+   Width of instructions is Data+Addr+Slots+6 = 8+8+1+6 = 23 bits
+
+---------------------------------------------
+
+Labels
+
+Address 4:$Shift_Pixels
+Address 10:$save_y_pos
+Address 24:$MAIN
+Address 27:$clear_lcd
+Address 37:$WRT_Y_ADDDR
+Address 39:$WRT_X_ADDR
+Address 42:$Halt_Stuff
+
+---------------------------------------------
+
+Symbols
+
+Line 38:DSC_ctrl_ADDR=0x0
+Line 39:DSC_pixels0_ADDR=0x10
+Line 40:DSC_pixels1_ADDR=0x11
+Line 41:DSC_pixels2_ADDR=0x12
+Line 42:DSC_pixels3_ADDR=0x13
+Line 44:LCD_pixels_data_ADDR=0x10
+Line 45:LCD_pixels_X_ADDR=0x11
+Line 46:LCD_pixels_Y_ADDR=0x12
+Line 48:RAM_pixels=0x0
+Line 49:RAM_pixels_last=0x1
+Line 50:RAM_Y_pos=0x2
+
+---------------------------------------------

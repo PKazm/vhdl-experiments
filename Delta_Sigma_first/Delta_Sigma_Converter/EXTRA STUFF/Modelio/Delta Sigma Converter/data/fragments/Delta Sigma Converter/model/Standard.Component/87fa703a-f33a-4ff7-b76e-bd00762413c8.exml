@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delta Sigma ADC" version="4">
+  <OBJECT>
+    <ID name="Delta Sigma ADC" mc="Standard.Component" uid="87fa703a-f33a-4ff7-b76e-bd00762413c8"/>
+    <PID name="FPGA Fabric" mc="Standard.Package" uid="719f6005-8a0b-43c5-a74d-27c93fcb0e9b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Delta Sigma ADC]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

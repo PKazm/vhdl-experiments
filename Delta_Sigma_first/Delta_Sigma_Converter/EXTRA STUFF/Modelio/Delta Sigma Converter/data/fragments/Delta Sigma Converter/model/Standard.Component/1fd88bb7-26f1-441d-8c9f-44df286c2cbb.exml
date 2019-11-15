@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nokia5110 LCD" version="4">
+  <OBJECT>
+    <ID name="Nokia5110 LCD" mc="Standard.Component" uid="1fd88bb7-26f1-441d-8c9f-44df286c2cbb"/>
+    <PID name="delta sigma converter" mc="Standard.Package" uid="7014064f-5a03-489f-9467-9d9fabd9a47f"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nokia5110 LCD]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="SPI" mc="Standard.Port" uid="9e2d9fa4-0559-4070-bcdc-7507f2c77c18"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">In</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[SPI]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="5d2945c5-541f-405b-b980-2f0cc5f21824"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,104 @@
+#add_file options
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/support.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/acmtable.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructnvm_bb.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/iram512x9_rtl.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructram.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/misc.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/textio.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/debugblk.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructions.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram128x8_smartfusion2.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram256x16_rtl.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram256x8_rtl.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ramblocks.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/coreabc.vhd"
+add_file -lib COREABC_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/components.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0.vhd"
+add_file -lib COREAPB3_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd"
+add_file -lib COREAPB3_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd"
+add_file -lib COREAPB3_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd"
+add_file -lib COREAPB3_LIB -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Converter.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/timer.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Nokia5110_Driver.vhd"
+add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/synthesis.fdc"
+
+
+
+#project files
+
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+set_option -vhdl2008 1
+
+#device options
+set_option -technology SmartFusion2
+set_option -part M2S010
+set_option -package TQ144
+set_option -speed_grade STD
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency 100.000
+set_option -srs_instrumentation 1
+
+set_option -top_module work.Delta_Sigma_Design
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# actel_options
+set_option -rw_check_on_ram 0
+
+# Microsemi G4
+set_option -run_prop_extract 1
+set_option -maxfan 10000
+set_option -clock_globalthreshold 2
+set_option -async_globalthreshold 12
+set_option -globalthreshold 5000
+set_option -low_power_ram_decomp 0
+set_option -seqshift_to_uram 0
+set_option -opcond COMTC
+set_option -retiming 0
+set_option -report_path 4000
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+set_option -disable_ramindex 0
+set_option -microsemi_enhanced_flow 1
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+# Compiler Options
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./Delta_Sigma_Design.vm"
+impl -active "synthesis"

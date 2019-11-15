@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component> 
+<vendor></vendor>
+<library></library>
+<name>URAM_C0_URAM_C0_0_URAM</name>
+<version></version>
+<hwModel>
+<views>
+<view>
+<name>HDL</name>
+<fileSetRef>HDL_FILESET</fileSetRef>
+</view>
+<view>
+<name>SIMULATION</name>
+<fileSetRef>ANY_SIMULATION_FILESET</fileSetRef>
+</view>
+<view>
+<name>OTHER</name>
+<fileSetRef>OTHER_FILESET</fileSetRef>
+</view>
+</views>
+</hwModel>
+<fileSets>
+<fileSet fileSetId="HDL_FILESET">
+<file>
+<name>URAM_C0_URAM_C0_0_URAM.vhd</name>
+<userFileType>vhdlSource</userFileType>
+</file>
+</fileSet>
+<fileSet fileSetId="ANY_SIMULATION_FILESET">
+<file>
+<name>URAM_C0_URAM_C0_0_URAM_R0C0.mem</name>
+<userFileType>MEM</userFileType>
+</file>
+<file>
+<name>URAM_C0_URAM_C0_0_URAM_R1C0.mem</name>
+<userFileType>MEM</userFileType>
+</file>
+<file>
+<name>URAM_C0_URAM_C0_0_URAM_R2C0.mem</name>
+<userFileType>MEM</userFileType>
+</file>
+<file>
+<name>URAM_C0_URAM_C0_0_URAM_R3C0.mem</name>
+<userFileType>MEM</userFileType>
+</file>
+</fileSet>
+<fileSet fileSetId="OTHER_FILESET">
+<file>
+<name>URAM_C0_URAM_C0_0_URAM.shx</name>
+<userFileType>Other</userFileType>
+</file>
+</fileSet>
+</fileSets>
+</component>

@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>69</data>
+<data>68</data>
 <report_link name="more">
 <data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synlog\report\Driver_Container_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:02s</data>
+<data>0h:00m:01s</data>
 </info>
 <info name="Real Time">
 <data>0h:00m:02s</data>
 </info>
 <info name="Peak Memory">
-<data>144MB</data>
+<data>143MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1573074132</data>
+<data type="timestamp">1573278988</data>
 </info>
 </job_info>
 </job_run_status>

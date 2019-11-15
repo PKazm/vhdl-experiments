@@ -2,10 +2,10 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synplify.exe
 Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
 Hostname:    PHOENIX136DESKY
-Date:        Wed Nov  6 04:44:48 2019
+Date:        Sat Nov  9 00:56:55 2019
 Version:     N-2018.03M-SP1-1
 
-Arguments:   -product synplify_pro Nokia5110_Driver_Block_SD_syn.tcl
+Arguments:   -product synplify_pro Driver_Container_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -16,6 +16,6 @@ License Option: actel_oem
 
 
 auto_infer_blackbox is not supported in current product.
-TCL script complete: "Nokia5110_Driver_Block_SD_syn.tcl"
+TCL script complete: "Driver_Container_syn.tcl"
 exit status=0
 License checkin: synplifypro_actel

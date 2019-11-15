@@ -86,6 +86,9 @@ architecture architecture_Nokia5110_Driver of Nokia5110_Driver is
     signal screen_send : std_logic := '0';
     signal screen_finished : std_logic := '0';
 
+    signal refresh_indicator : std_logic := '0';
+
+    constant indicator_byte : std_logic_vector(7 downto 0) := X"0F";
 
     -- BEGIN LED Driver Register signals
     constant Driver_reg_ctrl_ADDR : std_logic_vector(7 downto 0) := X"00";
@@ -250,10 +253,10 @@ begin
     p_Driver_reg_ctrl : process(CLK, RSTn)
     begin
         if(RSTn = '0') then
-            Driver_reg_ctrl <= "00000001";
+            Driver_reg_ctrl <= "00000011";
         elsif(rising_edge(CLK)) then
             if(PSEL = '1' and PENABLE = '1' and PWRITE = '1' and PADDR = Driver_reg_ctrl_ADDR) then
-                -- 0bXXXXXXX & enable
+                -- 0bXXXXXX & refresh indicator & enable
                 Driver_reg_ctrl <= PWDATA;
             else
                 null;
@@ -465,6 +468,7 @@ begin
             screen_send <= '0';
             screen_finished <= '0';
 
+            refresh_indicator <= '0';
             uSRAM_B_ADDR_sig <= (others => '0');
             SPIout_byte <= (others => '0');
 
@@ -533,14 +537,21 @@ begin
                             end case;
                         when data =>
                             data_command_queue_sig <= '1';
-
-                            SPIout_byte <= uSRAM_B_DOUT_sig;
+                                
+                            if(Driver_reg_ctrl(1) = '1' and uSRAM_B_ADDR_sig = 0 and refresh_indicator = '1') then
+                                SPIout_byte <= not indicator_byte;
+                            elsif(Driver_reg_ctrl(1) = '1' and uSRAM_B_ADDR_sig = 0 and refresh_indicator = '0') then
+                                SPIout_byte <= indicator_byte;
+                            else
+                                SPIout_byte <= uSRAM_B_DOUT_sig;
+                            end if;
                             -- iterate through (x, y) of screen memory
                             if(screen_finished = '0') then
                                 if(uSRAM_B_ADDR_sig = disp_total_mem_CON - 1) then
                                     uSRAM_B_ADDR_sig <= (others => '0');
                                     -- last screen byte is put in the buffer
                                     screen_finished <= '1';     -- send last byte
+                                    refresh_indicator <= not refresh_indicator;
                                 else
                                     uSRAM_B_ADDR_sig <= uSRAM_B_ADDR_sig + 1;
                                 end if;
@@ -559,7 +570,6 @@ begin
                     -- this should occur on the second rising_edge(CLK) after falling_edge(CLK_SPI) if frame_start
                     -- this should occur on the first rising_edge(CLK) after falling_edge(CLK_SPI) if middle/end of frame
                     frame_get_bit <= '0';
-
                     SPIDO_sig <= SPIout_byte(SPIout_byte'high);                         -- send bit out
                     SPIout_byte <= SPIout_byte(SPIout_byte'high - 1 downto 0) & '0';    -- shift output register
                     chip_enable_sig <= '1';                                             -- ensure chip_enable is... enabled

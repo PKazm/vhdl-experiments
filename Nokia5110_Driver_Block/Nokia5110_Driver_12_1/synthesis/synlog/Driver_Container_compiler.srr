@@ -33,9 +33,41 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 
 @N|Running in 64-bit mode
 @N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd":17:7:17:22|Top entity is set to Driver_Container.
-Options changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd changed - recompiling
 VHDL syntax check successful!
-Options changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd":17:7:17:22|Synthesizing work.driver_container.rtl.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd":17:7:17:31|Synthesizing work.nokia5110_driver_block_sd.rtl.
@@ -94,14 +126,14 @@ Running optimization stage 1 on Nokia5110_Driver .......
 @W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":140:78:140:78|Sharing sequential element uSRAM_C_ADDR_sig. Add a syn_preserve attribute to the element to prevent sharing.
 @A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":459:8:459:9|Feedback mux created for signal SPICLK_last_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":116:42:116:44|Feedback mux created for signal timer_indicator_last_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Optimizing register bit LCD_reg_mem_X(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Optimizing register bit LCD_reg_mem_X(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Optimizing register bit LCD_reg_mem_X(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Optimizing register bit LCD_reg_mem_X(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Optimizing register bit LCD_reg_mem_X(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Optimizing register bit LCD_reg_mem_Y(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Optimizing register bit LCD_reg_mem_Y(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Optimizing register bit LCD_reg_mem_Y(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Optimizing register bit LCD_reg_mem_Y(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Optimizing register bit LCD_reg_mem_Y(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Pruning register bits 7 to 3 of LCD_reg_mem_X(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Pruning register bit 7 of LCD_reg_mem_Y(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":389:8:389:9|Pruning register bit 7 of LCD_reg_mem_X(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":405:8:405:9|Pruning register bits 7 to 3 of LCD_reg_mem_Y(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0.vhd":17:7:17:13|Synthesizing work.fccc_c0.rtl.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c0_fccc_c0_0_fccc.def_arch.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
@@ -291,7 +323,6 @@ Running optimization stage 2 on timerZ1 .......
 Running optimization stage 2 on timerZ0 .......
 Running optimization stage 2 on Nokia5110_Driver .......
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":459:8:459:9|Optimizing register bit init_step(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":423:8:423:9|Pruning register bits 7 to 6 of uSRAM_A_ADDR_sig(8 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":459:8:459:9|Pruning register bit 3 of init_step(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd":459:8:459:9|Trying to extract state machine for register LCD_State.
 Extracted state machine for register LCD_State
@@ -318,12 +349,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 104MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov  6 16:02:06 2019
+# Sat Nov  9 00:56:23 2019
 
 ###########################################################]
 
@@ -343,13 +374,14 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
 @N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\synthesis\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov  6 16:02:07 2019
+# Sat Nov  9 00:56:23 2019
 
 ###########################################################]
 @END
@@ -359,6 +391,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov  6 16:02:07 2019
+# Sat Nov  9 00:56:24 2019
 
 ###########################################################]

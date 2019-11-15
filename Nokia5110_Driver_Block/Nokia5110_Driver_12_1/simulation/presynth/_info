@@ -24,9 +24,9 @@ V7fdna<7n<?3OCnzOCH`Je0
 !s100 `b2D[?1M>]KW[7`fEFgaE2
 Z9 OW;C;10.7c;67
 33
-Z10 !s110 1573074176
+Z10 !s110 1573543063
 !i10b 1
-Z11 !s108 1573074176.000000
+Z11 !s108 1573543063.000000
 Z12 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/COREABC_C0/COREABC_C0.vhd|
 Z13 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/COREABC_C0/COREABC_C0.vhd|
 !i113 1
@@ -109,50 +109,50 @@ VZV;]SF^D@CHX_V?_3Y_BV3
 !s100 B=]k6jc[BgL4Lj5YcZTn12
 R9
 33
-Z26 !s110 1573074178
+Z26 !s110 1573543065
 !i10b 1
-Z27 !s108 1573074178.000000
+Z27 !s108 1573543065.000000
 Z28 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Driver_Container/Driver_Container.vhd|
-!s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Driver_Container/Driver_Container.vhd|
+Z29 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Driver_Container/Driver_Container.vhd|
 !i113 1
 R14
 R15
 Artl
 R5
 R6
-DEx4 work 16 driver_container 0 22 ZV;]SF^D@CHX_V?_3Y_BV3
+Z30 DEx4 work 16 driver_container 0 22 ZV;]SF^D@CHX_V?_3Y_BV3
 l66
 L30
-VcO<6;@7[ODNjWi3YTKAQ91
-!s100 ADfjLTK8`>Yc?GOFB[fd<3
+Z31 VcO<6;@7[ODNjWi3YTKAQ91
+Z32 !s100 ADfjLTK8`>Yc?GOFB[fd<3
 R9
 33
 R26
 !i10b 1
 R27
 R28
-Z29 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Driver_Container/Driver_Container.vhd|
+R29
 !i113 1
 R14
 R15
 Efccc_c0
-Z30 w1573066815
+Z33 w1573066815
 R5
 R6
 R0
-Z31 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd
-Z32 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd
+Z34 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd
+Z35 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd
 l0
 L17
 V9oC6?:oc9FWW`bPDD9i_91
 !s100 iOA_bao5QZW1VO1zTd3M61
 R9
 33
-Z33 !s110 1573074177
+Z36 !s110 1573543064
 !i10b 1
-Z34 !s108 1573074177.000000
-Z35 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd|
-Z36 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd|
+Z37 !s108 1573543064.000000
+Z38 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd|
+Z39 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0.vhd|
 !i113 1
 R14
 R15
@@ -166,38 +166,38 @@ V;JOT=TQN?QRb7GH8kG0182
 !s100 GiUHblYGgCC]zlMb@0H5?1
 R9
 33
-R33
-!i10b 1
-R34
-R35
 R36
+!i10b 1
+R37
+R38
+R39
 !i113 1
 R14
 R15
 Efccc_c0_fccc_c0_0_fccc
-R30
+R33
 R5
 R6
 R0
-Z37 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
-Z38 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z40 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z41 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
 l0
 L8
 V=:D_:QDS6M2CZ7U2KCH^h2
 !s100 QjN8`VF]9nORceO>E3IEa3
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z39 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
-Z40 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+R37
+Z42 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+Z43 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
 !i113 1
 R14
 R15
 Adef_arch
 DEx12 smartfusion2 6 XTLOSC 0 22 Dg1SIo80bB@j0V0VzS_@n1
-Z41 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+Z44 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
 DEx12 smartfusion2 10 RCOSC_1MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
 R5
 R6
@@ -208,33 +208,33 @@ Vz@S:^JFGhI2a4fm?bndOG2
 !s100 azgSDhnXXD3IUbbRd68KX3
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R39
-R40
+R37
+R42
+R43
 !i113 1
 R14
 R15
 Enokia5110_driver
-Z42 w1573069584
+Z45 w1573542636
 R22
 R5
 R6
 R0
-Z43 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd
-Z44 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd
+Z46 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd
+Z47 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd
 l0
 L24
-V5G2:42RXLLAM9a>1Xd>gf0
-!s100 SMVWZ`n=MQ]A:hLjZ7Kbg2
+V^fP6<HRG:QoQB^adanW]K0
+!s100 @^em4G6dTKc0_=BlGLi_Y0
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z45 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd|
-Z46 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd|
+R37
+Z48 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd|
+Z49 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Driver.vhd|
 !i113 1
 R14
 R15
@@ -242,28 +242,28 @@ Aarchitecture_nokia5110_driver
 R22
 R5
 R6
-Z47 DEx4 work 16 nokia5110_driver 0 22 5G2:42RXLLAM9a>1Xd>gf0
-l175
+Z50 DEx4 work 16 nokia5110_driver 0 22 ^fP6<HRG:QoQB^adanW]K0
+l176
 L75
-V^=^4:J7zF4@BIWW<=YPDS1
-!s100 ;2<D5R=cYf@P9TKDGT4ZM3
+VmJEa>3DTZgz3YainQC_9]3
+!s100 ]WEMCL?ceiMPRZ2Yl[8kX2
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R45
-R46
+R37
+R48
+R49
 !i113 1
 R14
 R15
 Enokia5110_driver_block_sd
-Z48 w1573067743
+Z51 w1573278977
 R5
 R6
 R0
-Z49 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd
-Z50 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd
+Z52 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd
+Z53 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd
 l0
 L17
 VYeVDE<cIgHViU9j0GzI`J1
@@ -273,57 +273,57 @@ R9
 R26
 !i10b 1
 R27
-Z51 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd|
-Z52 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd|
+Z54 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd|
+Z55 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/Nokia5110_Driver_Block_SD/Nokia5110_Driver_Block_SD.vhd|
 !i113 1
 R14
 R15
 Artl
 R22
-R47
-R41
+R50
+R44
 DEx12 smartfusion2 14 RCOSC_25_50MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
 R5
 R6
 DEx4 work 25 nokia5110_driver_block_sd 0 22 YeVDE<cIgHViU9j0GzI`J1
 l186
 L32
-Vhk7[be:D8D_DUEWalX_`d2
-!s100 ^oblz05gHAzjHoO?]C0Ad3
+VYNRH2bnfE67ojY9^`1ff@2
+!s100 KSV:`IDY6j9L]OWdd]O0U1
 R9
 33
 R26
 !i10b 1
 R27
-R51
-R52
+R54
+R55
 !i113 1
 R14
 R15
 Enokia5110_driver_tb
-Z53 w1573023705
-Z54 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+Z56 w1573023705
+Z57 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
 R5
 R6
 R0
-Z55 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd
-Z56 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd
+Z58 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd
+Z59 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd
 l0
 L26
 V7mLnKP@IcSGEW@?oA=P@@1
 !s100 `M;MY:_zMe7GM3T<SJC7H3
 R9
 33
-Z57 !s110 1573067775
+Z60 !s110 1573067775
 !i10b 1
-Z58 !s108 1573067775.000000
-Z59 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd|
-Z60 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd|
+Z61 !s108 1573067775.000000
+Z62 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd|
+Z63 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/stimulus/Nokia5110_Driver_tb.vhd|
 !i113 1
 R14
 R15
 Abehavioral
-R54
+R57
 R5
 R6
 DEx4 work 19 nokia5110_driver_tb 0 22 7mLnKP@IcSGEW@?oA=P@@1
@@ -333,33 +333,33 @@ VDe>z`oR:9KEOT?N1FToB[3
 !s100 T3K;>5Sz7n@EhEh5h0?Wc0
 R9
 33
-R57
-!i10b 1
-R58
-R59
 R60
+!i10b 1
+R61
+R62
+R63
 !i113 1
 R14
 R15
 Enokia5110_memory
-Z61 w1572916304
+Z64 w1572916304
 R22
 R5
 R6
 R0
-Z62 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd
-Z63 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd
+Z65 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd
+Z66 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd
 l0
 L24
 VnoFd[K>IBSb8@:bF`ZVz72
 !s100 8>d89Gh^89oDdgXb8zDh[0
 R9
 33
-Z64 !s110 1572927286
+Z67 !s110 1572927286
 !i10b 1
-Z65 !s108 1572927285.000000
-Z66 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd|
-Z67 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd|
+Z68 !s108 1572927285.000000
+Z69 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd|
+Z70 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/Nokia5110_Memory.vhd|
 !i113 1
 R14
 R15
@@ -374,32 +374,32 @@ Vgk]I7;1H`7kN85=eE7`EZ1
 !s100 l4=_jVcICn6WRkEK15TL=0
 R9
 33
-R64
-!i10b 1
-R65
-R66
 R67
+!i10b 1
+R68
+R69
+R70
 !i113 1
 R14
 R15
 Eosc_c0
-Z68 w1573066799
+Z71 w1573066799
 R5
 R6
 R0
-Z69 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd
-Z70 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd
+Z72 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd
+Z73 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd
 l0
 L17
 V;9f:oAhA_Yn;NSNQG<[f:1
 !s100 Yf_ZSillhlhcFGRD9njA;0
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z71 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd|
-Z72 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd|
+R37
+Z74 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd|
+Z75 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0.vhd|
 !i113 1
 R14
 R15
@@ -413,32 +413,32 @@ VOFnD7z[I]8W[K[i4ZoEST1
 !s100 Yebk`f[LaoaULcj[lFUSL0
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R71
-R72
+R37
+R74
+R75
 !i113 1
 R14
 R15
 Eosc_c0_osc_c0_0_osc
-R68
+R71
 R5
 R6
 R0
-Z73 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
-Z74 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z76 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z77 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
 l0
 L8
 V=RTjS>oH[4=XjoXn^`jZ13
 !s100 ImDYGYTfEB_O;]h:c4C>f1
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z75 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
-Z76 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+R37
+Z78 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+Z79 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
 !i113 1
 R14
 R15
@@ -452,33 +452,33 @@ V1oa1O8Mi7^mOUoQz_9K461
 !s100 li@AIJ9Yl0<2d:3ki;e^Y2
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R75
-R76
+R37
+R78
+R79
 !i113 1
 R14
 R15
 Etimer
-Z77 w1573023114
+Z80 w1573023114
 R22
 R5
 R6
 R0
-Z78 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd
-Z79 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd
+Z81 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd
+Z82 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd
 l0
 L6
 VB3DOdMXQn]CEB:3<az@3G1
 !s100 FL;V];9M^olV]ajK35P`k3
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z80 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd|
-Z81 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd|
+R37
+Z83 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd|
+Z84 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/hdl/timer.vhd|
 !i113 1
 R14
 R15
@@ -493,32 +493,32 @@ VGAIBHjQN9U;Aj0UH`cJPh3
 !s100 ]`BnRmLWS5l:l[O2CdbEg2
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R80
-R81
+R37
+R83
+R84
 !i113 1
 R14
 R15
 Euram_c0
-Z82 w1573069853
+Z85 w1573069853
 R5
 R6
 R0
-Z83 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd
-Z84 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd
+Z86 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd
+Z87 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd
 l0
 L17
 Vg3TY5WDSCeV1eK>_;[0;[0
 !s100 =`ZYJYPcn9o83;57VWZ:M1
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z85 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd|
-Z86 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd|
+R37
+Z88 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd|
+Z89 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0.vhd|
 !i113 1
 R14
 R15
@@ -532,32 +532,32 @@ Vdn?RAB5bgeS:W0^7XXO8c3
 !s100 cU@jb`Nz]S;M1RXMSCJX=0
 R9
 33
-R33
+R26
 !i10b 1
-R34
-R85
-R86
+R37
+R88
+R89
 !i113 1
 R14
 R15
 Euram_c0_uram_c0_0_uram
-Z87 w1573069852
+Z90 w1573069852
 R5
 R6
 R0
-Z88 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
-Z89 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
+Z91 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
+Z92 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
 l0
 L8
 Vd]]H?R:XUU2W2SdQSLZJF0
 !s100 T9OHMMWEaCaJ6eX5I7?J82
 R9
 33
-R33
+R36
 !i10b 1
-R34
-Z90 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
-Z91 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
+R37
+Z93 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
+Z94 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Nokia5110_Driver_12_1/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
 !i113 1
 R14
 R15
@@ -571,11 +571,11 @@ Vzj:i7TGfo_DHW_?UR:Faa0
 !s100 eS44?eDZ7d49KPb_XD;<b0
 R9
 33
-R33
+R36
 !i10b 1
-R34
-R90
-R91
+R37
+R93
+R94
 !i113 1
 R14
 R15

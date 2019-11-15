@@ -1,0 +1,21 @@
+----------------------------------------------------------------
+-Pin Report - Date: Sat Nov  9 00:58:23 2019 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v12.1
+-Version: 12.600.0.14
+-Design Name: Driver_Container
+-Family: SmartFusion2
+-Die: M2S010
+-Package: 144 TQ
+-----------------------------------------------------------------
+
+Port        |Pin |Fixed |Function             |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+------------|----|------|---------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+Board_J7[0]  92   Yes    MSIO5PB2/USB_DATA4_B  Bank2     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J7[1]  16   Yes    MSIO77PB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J7[2]  94   Yes    MSIO6PB2/USB_DATA6_B  Bank2     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J7[3]  21   Yes    MSIO81NB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J7[4]  22   Yes    MSIO81PB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J9     4    Yes    MSIO67PB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J10    7    Yes    MSIO71NB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
+Board_J11    19   Yes    MSIO79NB7             Bank7     LVCMOS25   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 

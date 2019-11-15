@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.Delta_Sigma_Design  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synwork\Delta_Sigma_Design_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synwork\Delta_Sigma_Design_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synlog\Delta_Sigma_Design_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.Delta_Sigma_Design -multisrs ..\synwork\Delta_Sigma_Design_comp.srs -osyn ..\synwork\Delta_Sigma_Design_mult.srs -log ..\synlog\Delta_Sigma_Design_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\Delta_Sigma_Design_comp.srs|io:i|time:1573782789|size:65856|exec:0|csum:81358273E19463051CE75C9F9E8B32DD
+file:..\synwork\Delta_Sigma_Design_mult.srs|io:o|time:1573782791|size:8766|exec:0|csum:
+file:..\synlog\Delta_Sigma_Design_multi_srs_gen.srr|io:o|time:1573782791|size:1214|exec:0|csum:
+file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

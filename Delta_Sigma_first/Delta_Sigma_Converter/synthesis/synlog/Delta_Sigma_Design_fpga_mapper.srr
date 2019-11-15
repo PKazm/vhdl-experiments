@@ -1,0 +1,712 @@
+# Thu Nov 14 20:53:12 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Delta_Sigma_Design(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Delta_Sigma_Design(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Delta_Sigma_Design(rtl)) with 2 words by 2 bits.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|Removing sequential instance timer_clock_out_sig (in view: work.timerZ0(architecture_timer)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|Boundary register timer_clock_out_sig (in view: work.timerZ0(architecture_timer)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":78:45:78:47|User-specified initial value defined for instance Delta_Sigma_Converter_0.pwm_quantized_value[11:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":78:45:78:47|User-specified initial value defined for instance Delta_Sigma_Converter_0.pwm_quantized_counter[11:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":106:8:106:9|User-specified initial value defined for instance Delta_Sigma_Converter_0.prdata_sig[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":243:2:243:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.pixels_ready is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":176:2:176:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.pwm_counter[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":226:2:226:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.pixel_sig[31:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":142:8:142:9|User-specified initial value defined for instance Delta_Sigma_Converter_0.DSC_ctrl_reg[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":176:2:176:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.pwm_interrupt is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":243:2:243:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.DSC_data3_pixels_reg[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":243:2:243:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.DSC_data2_pixels_reg[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":243:2:243:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.DSC_data1_pixels_reg[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":243:2:243:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.DSC_data0_pixels_reg[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":176:2:176:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.pwm_interrupt_last is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":166:2:166:3|User-specified initial value defined for instance Delta_Sigma_Converter_0.analog_FF is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPI_timer.counter[5:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_timer.counter[20:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_timer.timer_indic_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":424:8:424:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_A_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":209:8:209:9|User-specified initial value defined for instance Nokia5110_Driver_0.prdata_sig[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_B_ADDR_sig[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.init_step[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_get_bit is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPIDO_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_count[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPIout_byte[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.screen_finished is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":371:8:371:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_data[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.refresh_indicator is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.data_command_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.frame_start is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.data_command_queue_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.screen_send is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":406:8:406:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_Y[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":390:8:390:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_mem_X[6:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":371:8:371:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_C_DIN_sig[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":371:8:371:9|User-specified initial value defined for instance Nokia5110_Driver_0.uSRAM_C_BLK_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":355:8:355:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_Vop_set[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_bias_sys[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_temp_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_disp_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|User-specified initial value defined for instance Nokia5110_Driver_0.LCD_reg_func_set[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":253:8:253:9|User-specified initial value defined for instance Nokia5110_Driver_0.Driver_reg_ctrl[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.chip_enable_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|User-specified initial value defined for instance Nokia5110_Driver_0.SPICLK_last_sig is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":117:42:117:44|User-specified initial value defined for instance Nokia5110_Driver_0.timer_indicator_last_sig is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+Encoding state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|There are no possible illegal states for state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Found counter in view:coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl) instance SMADDR[5:0] 
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":176:2:176:3|Found counter in view:work.Delta_Sigma_Converter(architecture_delta_sigma_converter) instance pwm_counter[7:0] 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":78:45:78:47|Removing sequential instance pwm_quantized_value[0] (in view: work.Delta_Sigma_Converter(architecture_delta_sigma_converter)) because it does not drive other instances.
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+@W: MO161 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":355:8:355:9|Register bit LCD_reg_Vop_set[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|Register bit LCD_reg_bias_sys[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|Register bit LCD_reg_bias_sys[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|Register bit LCD_reg_bias_sys[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|Register bit LCD_reg_bias_sys[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":339:8:339:9|Register bit LCD_reg_bias_sys[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":323:8:323:9|Register bit LCD_reg_temp_ctrl[2] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":304:8:304:9|Register bit LCD_reg_disp_ctrl[1] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|Register bit LCD_reg_func_set[7] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|Register bit LCD_reg_func_set[6] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|Register bit LCD_reg_func_set[5] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|Register bit LCD_reg_func_set[4] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":287:8:287:9|Register bit LCD_reg_func_set[3] (in view view:work.Nokia5110_Driver(architecture_nokia5110_driver)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Removing instance COREABC_C0_0.COREABC_C0_0.INSTR_DATA[6] because it is equivalent to instance COREABC_C0_0.COREABC_C0_0.INSTR_DATA[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\instructions.vhd":103:3:103:6|Found ROM COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0[15:0] (in view: work.Delta_Sigma_Design(rtl)) with 45 words by 16 bits.
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 165MB peak: 167MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		     0.31ns		 717 /       301
+@N: FP130 |Promoting Net Board_J7_c[3] on CLKINT  I_501 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.rstn_i_i on CLKINT  I_502 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.CLK_SPI_sig on CLKINT  I_503 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 165MB peak: 167MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 166MB peak: 167MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 309 clock pin(s) of sequential element(s)
+0 instances converted, 309 sequential instances remain driven by gated/generated clocks
+
+======================================================================================================================== Gated/Generated Clocks ========================================================================================================================
+Clock Tree ID     Driving Element                                      Drive Element Type     Fanout     Sample Instance                                  Explanation                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    188        Nokia5110_Driver_0.screen_send                   Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    99         Delta_Sigma_Converter_0.pwm_counter[7]           Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig     SLE                    22         Nokia5110_Driver_0.LCD_timer.timer_indic_sig     No generated or derived clock directive on output of sequential instance                                      
+========================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 137MB peak: 167MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synwork\Delta_Sigma_Design_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 166MB peak: 168MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 163MB peak: 168MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 164MB peak: 168MB)
+
+@W: MT246 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
+@W: MT420 |Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock with period 10.00ns. Please declare a user-defined clock on net Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.
+@W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL1_net.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 14 20:53:15 2019
+#
+
+
+Top view:               Delta_Sigma_Design
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.037
+
+                                                  Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     125.6 MHz     10.000        7.963         2.037     inferred     Inferred_clkgroup_0
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     254.0 MHz     10.000        3.938         6.062     inferred     Inferred_clkgroup_2
+timerZ1|timer_clock_out_sig_inferred_clock        100.0 MHz     269.1 MHz     10.000        3.716         6.284     inferred     Inferred_clkgroup_1
+System                                            100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
+====================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                         System                                         |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      2.037  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+timerZ1|timer_clock_out_sig_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+timerZ1|timer_clock_out_sig_inferred_clock     timerZ1|timer_clock_out_sig_inferred_clock     |  10.000      6.284  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock  |  10.000      6.062  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                     Starting                                                                                       Arrival          
+Instance                                                             Reference                                         Type         Pin           Net               Time        Slack
+                                                                     Clock                                                                                                           
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[4]                   FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[1]     0.108       2.037
+COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[5]                   FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_SCMD[2]     0.108       2.081
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r1c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[0]     RD_r1c0[0]        1.747       2.206
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[0]     RD_r0c0[0]        1.747       2.328
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r1c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[1]     RD_r1c0[1]        1.747       2.594
+COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[1]                   FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[1]      0.108       2.641
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r1c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[2]     RD_r1c0[2]        1.747       2.668
+COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[2]                   FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE          Q             INSTR_CMD[2]      0.108       2.676
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[1]     RD_r0c0[1]        1.747       2.716
+COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r1c0.U_RAM64x18     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     RAM64x18     A_DOUT[3]     RD_r1c0[3]        1.747       2.717
+=====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                             Starting                                                                                  Required          
+Instance                                     Reference                                         Type     Pin     Net                    Time         Slack
+                                             Clock                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+COREABC_C0_0.COREABC_C0_0.ISR_ACCUM_ZERO     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       un1_std_accum_zero     9.745        2.037
+COREABC_C0_0.COREABC_C0_0.STD_ACCUM_ZERO     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       un1_std_accum_zero     9.745        2.037
+COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]          9.745        2.816
+COREABC_C0_0.COREABC_C0_0.ISR_ACCUM_NEG      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]          9.745        2.816
+COREABC_C0_0.COREABC_C0_0.STD_ACCUM_NEG      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[7]          9.745        2.816
+COREABC_C0_0.COREABC_C0_0.STKPTR[2]          FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       STKPTR_11[2]           9.745        2.994
+COREABC_C0_0.COREABC_C0_0.STKPTR[3]          FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       STKPTR_11[3]           9.745        3.040
+COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[6]          9.745        3.321
+COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[0]          9.745        3.384
+COREABC_C0_0.COREABC_C0_0.ACCUMULATOR[1]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       ACCUM_NEXT[1]          9.745        3.422
+=========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      7.708
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.037
+
+    Number of logic level(s):                8
+    Starting point:                          COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[4] / Q
+    Ending point:                            COREABC_C0_0.COREABC_C0_0.ISR_ACCUM_ZERO / D
+    The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                  Pin      Pin               Arrival     No. of    
+Name                                                   Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0_dreg[4]     SLE      Q        Out     0.108     0.108       -         
+INSTR_SCMD[1]                                          Net      -        -       1.224     -           25        
+COREABC_C0_0.COREABC_C0_0.un6_readram                  CFG2     A        In      -         1.332       -         
+COREABC_C0_0.COREABC_C0_0.un6_readram                  CFG2     Y        Out     0.087     1.419       -         
+un6_readram                                            Net      -        -       0.497     -           2         
+COREABC_C0_0.COREABC_C0_0.un3_readram                  CFG4     D        In      -         1.916       -         
+COREABC_C0_0.COREABC_C0_0.un3_readram                  CFG4     Y        Out     0.317     2.233       -         
+un3_readram                                            Net      -        -       1.299     -           33        
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m2s2              CFG3     C        In      -         3.533       -         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m2s2              CFG3     Y        Out     0.226     3.758       -         
+ACCUM_NEXT_sm0                                         Net      -        -       0.977     -           8         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m2[0]             CFG3     C        In      -         4.735       -         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_m2[0]             CFG3     Y        Out     0.226     4.961       -         
+ACCUM_NEXT_m2[0]                                       Net      -        -       0.248     -           1         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_d[0]              CFG4     C        In      -         5.209       -         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT_d[0]              CFG4     Y        Out     0.210     5.419       -         
+ACCUM_NEXT_d[0]                                        Net      -        -       0.248     -           1         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[0]                CFG4     C        In      -         5.668       -         
+COREABC_C0_0.COREABC_C0_0.ACCUM_NEXT[0]                CFG4     Y        Out     0.210     5.877       -         
+ACCUM_NEXT[0]                                          Net      -        -       0.497     -           2         
+COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero_4         CFG4     D        In      -         6.374       -         
+COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero_4         CFG4     Y        Out     0.317     6.691       -         
+un1_std_accum_zero_4                                   Net      -        -       0.248     -           1         
+COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero           CFG4     D        In      -         6.940       -         
+COREABC_C0_0.COREABC_C0_0.un1_std_accum_zero           CFG4     Y        Out     0.271     7.211       -         
+un1_std_accum_zero                                     Net      -        -       0.497     -           2         
+COREABC_C0_0.COREABC_C0_0.ISR_ACCUM_ZERO               SLE      D        In      -         7.708       -         
+=================================================================================================================
+Total path delay (propagation time + setup) of 7.963 is 2.227(28.0%) logic and 5.736(72.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                     Starting                                                                                        Arrival          
+Instance                                             Reference                                         Type     Pin     Net                          Time        Slack
+                                                     Clock                                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Delta_Sigma_Converter_0.pwm_quantized_value[1]       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_value[1]       0.087       6.062
+Delta_Sigma_Converter_0.pwm_quantized_value[2]       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_value[2]       0.087       6.163
+Delta_Sigma_Converter_0.pwm_quantized_counter[1]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[1]     0.108       6.196
+Delta_Sigma_Converter_0.pwm_quantized_counter[6]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[6]     0.108       6.235
+Delta_Sigma_Converter_0.pwm_quantized_value[5]       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_value[5]       0.087       6.245
+Delta_Sigma_Converter_0.pwm_quantized_value[6]       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_value[6]       0.087       6.288
+Delta_Sigma_Converter_0.pwm_quantized_counter[2]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[2]     0.108       6.290
+Delta_Sigma_Converter_0.pwm_quantized_counter[7]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[7]     0.108       6.322
+Delta_Sigma_Converter_0.pwm_quantized_counter[8]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[8]     0.108       6.329
+Delta_Sigma_Converter_0.pwm_quantized_counter[3]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      Q       pwm_quantized_counter[3]     0.108       6.365
+======================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                      Starting                                                                                                    Required          
+Instance                                              Reference                                         Type     Pin     Net                                      Time         Slack
+                                                      Clock                                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Delta_Sigma_Converter_0.pixel_sig[2]                  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       N_59                                     9.745        6.062
+Delta_Sigma_Converter_0.pixel_sig[3]                  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       pixel_sig_RNO[3]                         9.745        6.062
+Delta_Sigma_Converter_0.pixel_sig[0]                  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       N_32_0_i                                 9.745        6.124
+Delta_Sigma_Converter_0.pwm_quantized_counter[11]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_pwm_quantized_counter_2_s_11_S       9.745        6.196
+Delta_Sigma_Converter_0.pwm_quantized_counter[10]     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_pwm_quantized_counter_2_cry_10_S     9.745        6.213
+Delta_Sigma_Converter_0.pwm_quantized_counter[9]      FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       un1_pwm_quantized_counter_2_cry_9_S      9.745        6.229
+Delta_Sigma_Converter_0.pixel_sig[4]                  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       N_345                                    9.745        6.231
+Delta_Sigma_Converter_0.pixel_sig[8]                  FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       N_21                                     9.745        6.231
+Delta_Sigma_Converter_0.pixel_sig[12]                 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       pixel_sig_RNO[12]                        9.745        6.231
+Delta_Sigma_Converter_0.pixel_sig[16]                 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     SLE      D       N_334_i                                  9.745        6.231
+====================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.682
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 6.062
+
+    Number of logic level(s):                4
+    Starting point:                          Delta_Sigma_Converter_0.pwm_quantized_value[1] / Q
+    Ending point:                            Delta_Sigma_Converter_0.pixel_sig[3] / D
+    The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                         Pin      Pin               Arrival     No. of    
+Name                                                          Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+Delta_Sigma_Converter_0.pwm_quantized_value[1]                SLE      Q        Out     0.087     0.087       -         
+pwm_quantized_value[1]                                        Net      -        -       0.248     -           1         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIMTSK[1]        CFG4     D        In      -         0.336       -         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIMTSK[1]        CFG4     Y        Out     0.326     0.662       -         
+m1_0_a2_3                                                     Net      -        -       0.248     -           1         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIHCBV[3]        CFG3     C        In      -         0.911       -         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIHCBV[3]        CFG3     Y        Out     0.210     1.120       -         
+N_65_mux                                                      Net      -        -       0.855     -           5         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIK3Q91_1[7]     CFG3     B        In      -         1.976       -         
+Delta_Sigma_Converter_0.pwm_quantized_value_RNIK3Q91_1[7]     CFG3     Y        Out     0.164     2.140       -         
+N_359                                                         Net      -        -       0.977     -           8         
+Delta_Sigma_Converter_0.pixel_sig_RNO[3]                      CFG4     D        In      -         3.116       -         
+Delta_Sigma_Converter_0.pixel_sig_RNO[3]                      CFG4     Y        Out     0.317     3.434       -         
+pixel_sig_RNO[3]                                              Net      -        -       0.248     -           1         
+Delta_Sigma_Converter_0.pixel_sig[3]                          SLE      D        In      -         3.682       -         
+========================================================================================================================
+Total path delay (propagation time + setup) of 3.938 is 1.360(34.5%) logic and 2.577(65.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: timerZ1|timer_clock_out_sig_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                             Starting                                                                        Arrival          
+Instance                                     Reference                                      Type     Pin     Net             Time        Slack
+                                             Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[6]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[6]      0.108       6.284
+Nokia5110_Driver_0.LCD_timer.counter[8]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[8]      0.087       6.288
+Nokia5110_Driver_0.LCD_timer.counter[17]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[17]     0.108       6.362
+Nokia5110_Driver_0.LCD_timer.counter[11]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[11]     0.087       6.371
+Nokia5110_Driver_0.LCD_timer.counter[18]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[18]     0.108       6.407
+Nokia5110_Driver_0.LCD_timer.counter[13]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[13]     0.087       6.414
+Nokia5110_Driver_0.LCD_timer.counter[19]     timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[19]     0.108       6.484
+Nokia5110_Driver_0.LCD_timer.counter[0]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[0]      0.108       6.751
+Nokia5110_Driver_0.LCD_timer.counter[1]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[1]      0.108       6.865
+Nokia5110_Driver_0.LCD_timer.counter[9]      timerZ1|timer_clock_out_sig_inferred_clock     SLE      Q       counter[9]      0.087       6.903
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                 Starting                                                                                  Required          
+Instance                                         Reference                                      Type     Pin     Net                       Time         Slack
+                                                 Clock                                                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[7]          timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[7]              9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[10]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[10]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[15]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[15]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[17]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[17]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[18]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[18]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[19]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[19]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.counter[20]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_3[20]             9.745        6.284
+Nokia5110_Driver_0.LCD_timer.timer_indic_sig     timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       counter_RNI8U205[1]       9.745        6.652
+Nokia5110_Driver_0.LCD_timer.timer_indic_sig     timerZ1|timer_clock_out_sig_inferred_clock     SLE      EN      un5_counter_i             9.662        7.420
+Nokia5110_Driver_0.LCD_timer.counter[16]         timerZ1|timer_clock_out_sig_inferred_clock     SLE      D       un11_counter_cry_16_S     9.745        8.055
+=============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.461
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 6.284
+
+    Number of logic level(s):                4
+    Starting point:                          Nokia5110_Driver_0.LCD_timer.counter[6] / Q
+    Ending point:                            Nokia5110_Driver_0.LCD_timer.counter[7] / D
+    The start point is clocked by            timerZ1|timer_clock_out_sig_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            timerZ1|timer_clock_out_sig_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                Pin      Pin               Arrival     No. of    
+Name                                                 Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------
+Nokia5110_Driver_0.LCD_timer.counter[6]              SLE      Q        Out     0.108     0.108       -         
+counter[6]                                           Net      -        -       0.497     -           2         
+Nokia5110_Driver_0.LCD_timer.counter_RNIPTQ61[6]     CFG4     D        In      -         0.605       -         
+Nokia5110_Driver_0.LCD_timer.counter_RNIPTQ61[6]     CFG4     Y        Out     0.288     0.893       -         
+m7_e_5                                               Net      -        -       0.248     -           1         
+Nokia5110_Driver_0.LCD_timer.counter_RNIJPEG2[7]     CFG4     C        In      -         1.141       -         
+Nokia5110_Driver_0.LCD_timer.counter_RNIJPEG2[7]     CFG4     Y        Out     0.210     1.351       -         
+N_39_mux                                             Net      -        -       0.497     -           2         
+Nokia5110_Driver_0.LCD_timer.counter_RNI8U205[1]     CFG4     D        In      -         1.848       -         
+Nokia5110_Driver_0.LCD_timer.counter_RNI8U205[1]     CFG4     Y        Out     0.288     2.136       -         
+counter_RNI8U205[1]                                  Net      -        -       0.977     -           8         
+Nokia5110_Driver_0.LCD_timer.counter_3[7]            CFG2     A        In      -         3.112       -         
+Nokia5110_Driver_0.LCD_timer.counter_3[7]            CFG2     Y        Out     0.100     3.212       -         
+counter_3[7]                                         Net      -        -       0.248     -           1         
+Nokia5110_Driver_0.LCD_timer.counter[7]              SLE      D        In      -         3.461       -         
+===============================================================================================================
+Total path delay (propagation time + setup) of 3.716 is 1.249(33.6%) logic and 2.468(66.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                                                           Arrival          
+Instance                               Reference     Type               Pin        Net                                                    Time        Slack
+                                       Clock                                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
+===========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                                                                         Required          
+Instance                         Reference     Type     Pin                Net                                                    Time         Slack
+                                 Clock                                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_C0_0.FCCC_C0_0.CCC_INST     System        CCC      RCOSC_25_50MHZ     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
+====================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      1.117
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 8.883
+
+    Number of logic level(s):                0
+    Starting point:                          OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ / CLKOUT
+    Ending point:                            FCCC_C0_0.FCCC_C0_0.CCC_INST / RCOSC_25_50MHZ
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                            Pin                Pin               Arrival     No. of    
+Name                                                   Type               Name               Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------
+OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ                     RCOSC_25_50MHZ     CLKOUT             Out     0.000     0.000       -         
+OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     Net                -                  -       1.117     -           1         
+FCCC_C0_0.FCCC_C0_0.CCC_INST                           CCC                RCOSC_25_50MHZ     In      -         1.117       -         
+=====================================================================================================================================
+Total path delay (propagation time + setup) of 1.117 is 0.000(0.0%) logic and 1.117(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 164MB peak: 168MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 164MB peak: 168MB)
+
+---------------------------------------
+Resource Usage Report for Delta_Sigma_Design 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          5 uses
+INV             3 uses
+OR4             16 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           8 uses
+CFG2           77 uses
+CFG3           151 uses
+CFG4           343 uses
+
+Carry cells:
+ARI1            88 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            301 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 21
+I/O primitives: 19
+INBUF_DIFF     1 use
+OUTBUF         18 uses
+
+
+Global Clock Buffers: 5
+
+RAM/ROM usage summary
+Total Block RAMs (RAM64x18) : 6 of 22 (27%)
+
+Total LUTs:    667
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 216; LUTs = 216;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  301 + 216 + 0 + 0 = 517;
+Total number of LUTs after P&R:  667 + 216 + 0 + 0 = 883;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 28MB peak: 168MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Thu Nov 14 20:53:16 2019
+
+###########################################################]

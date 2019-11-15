@@ -1,0 +1,122 @@
+# Thu Nov 14 20:53:11 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 106MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 107MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Removing sequential instance COREABC_C0_0.COREABC_C0_0.INSTR_SLOT[0] because it is equivalent to instance COREABC_C0_0.COREABC_C0_0.INSTR_MUXC. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|Removing sequential instance timer_indic_sig (in view: work.timerZ1(architecture_timer)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance IO_OUT[0] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=21  set on top level netlist Delta_Sigma_Design
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     219  
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     100  
+                                                                                                                                  
+0 -       timerZ1|timer_clock_out_sig_inferred_clock        100.0 MHz     10.000        inferred     Inferred_clkgroup_1     34   
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                                          Clock Pin                                                 Non-clock Pin                               Non-clock Pin                               
+Clock                                             Load      Pin                                                             Seq Example                                               Seq Example                                 Comb Example                                
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                                               -                                                         -                                           -                                           
+                                                                                                                                                                                                                                                                              
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     219       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                           URAM_C0_0.URAM_C0_0.URAM_C0_URAM_C0_0_URAM_R0C0.C_CLK     -                                           FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
+                                                                                                                                                                                                                                                                              
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)                           Delta_Sigma_Converter_0.analog_FF.C                       -                                           FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)        
+                                                                                                                                                                                                                                                                              
+timerZ1|timer_clock_out_sig_inferred_clock        34        Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.Q[0](dffe)     Nokia5110_Driver_0.LCD_timer.timer_indic_sig.C            Nokia5110_Driver_0.SPICLK_last_sig.D[0]     Nokia5110_Driver_0.un1_CLK_SPI_sig.I[0](inv)
+==============================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":103:4:103:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 219 sequential elements including COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR8\.ram_r0c0.U_RAM64x18. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|Found inferred clock timerZ1|timer_clock_out_sig_inferred_clock which controls 34 sequential elements including Nokia5110_Driver_0.LCD_timer.counter[20:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":78:45:78:47|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 100 sequential elements including Delta_Sigma_Converter_0.pwm_quantized_value[11:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+Encoding state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|There are no possible illegal states for state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)); safe FSM implementation is not required.
+Encoding state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver))
+original code -> new code
+   00 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 51MB peak: 138MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 20:53:12 2019
+
+###########################################################]

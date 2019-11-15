@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="delta sigma converter" version="4">
+  <OBJECT>
+    <ID name="delta sigma converter" mc="Standard.Package" uid="7014064f-5a03-489f-9467-9d9fabd9a47f"/>
+    <PID name="Delta Sigma Converter" mc="Standard.Project" uid="f0baa60b-6b44-4573-a7ed-181f49ab99fc"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[delta sigma converter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="FPGA Fabric" mc="Standard.Package" uid="719f6005-8a0b-43c5-a74d-27c93fcb0e9b"/>
+        <COMPID name="Nokia5110 LCD" mc="Standard.Component" uid="1fd88bb7-26f1-441d-8c9f-44df286c2cbb"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="delta sigma converter Class diagram" mc="Standard.ClassDiagram" uid="757539a0-b7a2-4a01-950e-769f11ba8f76"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

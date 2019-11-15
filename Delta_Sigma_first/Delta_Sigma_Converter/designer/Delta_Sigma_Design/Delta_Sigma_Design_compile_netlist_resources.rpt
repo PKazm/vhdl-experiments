@@ -1,0 +1,185 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+Date: Thu Nov 14 20:53:21 2019
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+--------------------------------------------------------------------------------------------------+
+| Topcell | Delta_Sigma_Design                                                                               |
+| Format  | Verilog                                                                                          |
+| Source  | C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design.vm |
++---------+--------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 899  | 12084 | 7.44       |
+| DFF                       | 517  | 12084 | 4.28       |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 20   | 84    | 23.81      |
+| -- Single-ended I/O       | 18   | 84    | 21.43      |
+| -- Differential I/O Pairs | 1    | 37    | 2.70       |
+| RAM64x18                  | 6    | 22    | 27.27      |
+| RAM1K18                   | 0    | 21    | 0.00       |
+| MACC                      | 0    | 22    | 0.00       |
+| Chip Globals              | 5    | 8     | 62.50      |
+| CCC                       | 1    | 2     | 50.00      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 0    | 1     | 0.00       |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 683  | 301 |
+| RAM64x18 Interface Logic | 216  | 216 |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 899  | 517 |
++--------------------------+------+-----+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 7      | 3    |
+| 8      | 3    |
+| 10     | 1    |
+| 12     | 1    |
+| 21     | 1    |
+| Total  | 9    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 0            | 0           | 0               |
+| Output I/O                    | 18           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 1            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++------------------------------+--------+--------+-------+--------+---------------+
+| I/O Standard                 | Vddi   | Vref   | Input | Output | Bidirectional |
++------------------------------+--------+--------+-------+--------+---------------+
+| LVCMOS25                     |  2.50v |  N/A   |  0    |  18    |  0            |
+| SSTL2I (Input/Bidirectional) |  2.50v |  1.25v |  2    |  0     |  0            |
++------------------------------+--------+--------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  0    | 0.00%      |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  20   | 100.00%    |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                    |
++--------+---------+-----------------------------------------------------------------------------------------+
+| 243    | INT_NET | Net   : Board_J7_c[3]                                                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF/U0_RGB1                              |
+|        |         | Source: NETLIST                                                                         |
+| 188    | INT_NET | Net   : FCCC_C0_0_GL0                                                                   |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1                                            |
+|        |         | Source: NETLIST                                                                         |
+| 99     | INT_NET | Net   : FCCC_C0_0_GL1_1                                                                 |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1                                            |
+|        |         | Source: NETLIST                                                                         |
+| 28     | INT_NET | Net   : Nokia5110_Driver_0/rstn_i_i                                                     |
+|        |         | Driver: Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1                                     |
+|        |         | Source: NETLIST                                                                         |
+| 22     | INT_NET | Net   : Nokia5110_Driver_0/CLK_SPI_sig                                                  |
+|        |         | Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1 |
+|        |         | Source: NETLIST                                                                         |
++--------+---------+-----------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+---------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                      |
++--------+---------+---------------------------------------------------------------------------+
+| 65     | INT_NET | Net   : Delta_Sigma_Converter_0/un4_pwm_interrupt_last                    |
+|        |         | Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last |
+| 33     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[0]                                  |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]                |
+| 33     | INT_NET | Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z                           |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/un3_readram                             |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[11]                   |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[11]                   |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[10]                   |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[10]                   |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[9]                    |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[9]                    |
+| 29     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[4]                                  |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[14]                |
+| 27     | INT_NET | Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]                               |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]                               |
+| 25     | INT_NET | Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]                           |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]                 |
+| 25     | INT_NET | Net   : Nokia5110_Driver_0_driver_busy                                    |
+|        |         | Driver: Nokia5110_Driver_0/screen_send                                    |
++--------+---------+---------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+---------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                      |
++--------+---------+---------------------------------------------------------------------------+
+| 65     | INT_NET | Net   : Delta_Sigma_Converter_0/un4_pwm_interrupt_last                    |
+|        |         | Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last |
+| 33     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[0]                                  |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]                |
+| 33     | INT_NET | Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z                           |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/un3_readram                             |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[11]                   |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[11]                   |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[10]                   |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[10]                   |
+| 32     | INT_NET | Net   : Delta_Sigma_Converter_0/pwm_quantized_value[9]                    |
+|        |         | Driver: Delta_Sigma_Converter_0/pwm_quantized_value[9]                    |
+| 29     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[4]                                  |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[14]                |
+| 27     | INT_NET | Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]                               |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]                               |
+| 25     | INT_NET | Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]                           |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]                 |
+| 25     | INT_NET | Net   : Nokia5110_Driver_0_driver_busy                                    |
+|        |         | Driver: Nokia5110_Driver_0/screen_send                                    |
++--------+---------+---------------------------------------------------------------------------+
+

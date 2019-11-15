@@ -1,0 +1,584 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/simulation
+Ecoreabc_c0
+Z1 w1573707824
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx11 coreabc_lib 34 coreabc_c0_coreabc_c0_0_components 0 22 nR?>R4L6jQf8?3e@=K5WO0
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z7 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0.vhd
+Z8 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0.vhd
+l0
+L20
+VcT1Z?84XG:_A9mN6F6jYH2
+!s100 oP_BdDf3E[aSDU[f=UBVh0
+Z9 OW;C;10.7c;67
+33
+Z10 !s110 1573772638
+!i10b 1
+Z11 !s108 1573772638.000000
+Z12 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0.vhd|
+Z13 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/COREABC_C0/COREABC_C0.vhd|
+!i113 1
+Z14 o-2008 -explicit -work presynth -O0
+Z15 tCvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 coreabc_c0 0 22 cT1Z?84XG:_A9mN6F6jYH2
+l152
+L45
+VEQ9k^:aoT]czIhfbdg@R@0
+!s100 6C:nK1ZVH2i`BGoO00eek2
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecoreapb3_c0
+Z16 w1573106292
+Z17 DPx12 coreapb3_lib 10 components 0 22 6XQdn^E]^IOnRfgRRBHVY3
+R5
+R6
+R0
+Z18 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd
+Z19 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd
+l0
+L20
+VggeS2z4ogHP9@d[QXg63Z0
+!s100 >FC6=M6M9h0m;=;KK;3D21
+R9
+33
+R10
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
+Z21 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
+!i113 1
+R14
+R15
+Artl
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+DEx12 coreapb3_lib 8 coreapb3 0 22 amPF_`f[kKjGCGOV?Yh_K3
+R17
+R5
+R6
+DEx4 work 11 coreapb3_c0 0 22 ggeS2z4ogHP9@d[QXg63Z0
+l99
+L50
+VRkQeFkMcOjfFOF=728OlP2
+!s100 42dg^WbVP0WAX4J_P`B4:3
+R9
+33
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R14
+R15
+Edelta_sigma_container
+Z23 w1572470977
+R5
+R6
+R0
+Z24 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Container.vhd
+Z25 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Container.vhd
+l0
+L23
+Vci9J=W=Em@13RfB]G1Z>]2
+!s100 TT@<=;4XUcH?hb=fP82m=0
+R9
+33
+Z26 !s110 1572471187
+!i10b 1
+Z27 !s108 1572471187.000000
+Z28 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Container.vhd|
+Z29 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Container.vhd|
+!i113 1
+R14
+R15
+Aarchitecture_delta_sigma_container
+R5
+R6
+DEx4 work 21 delta_sigma_container 0 22 ci9J=W=Em@13RfB]G1Z>]2
+l55
+L38
+V?UARTDiU5;k:E^=_B_lOa1
+!s100 V@UGSLkjIiAKejFA8[lS72
+R9
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R14
+R15
+Edelta_sigma_converter
+Z30 w1573770109
+R22
+R5
+R6
+R0
+Z31 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Converter.vhd
+Z32 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Converter.vhd
+l0
+L24
+V>iPCYi9AH>9mfY>7XiZAZ2
+!s100 lK[>Vgc7MIYj5i8bQlA9E2
+R9
+33
+Z33 !s110 1573772640
+!i10b 1
+Z34 !s108 1573772640.000000
+Z35 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Converter.vhd|
+Z36 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Delta_Sigma_Converter.vhd|
+!i113 1
+R14
+R15
+Aarchitecture_delta_sigma_converter
+R22
+R5
+R6
+Z37 DEx4 work 21 delta_sigma_converter 0 22 >iPCYi9AH>9mfY>7XiZAZ2
+l101
+L60
+Vmo@5LLHTn]Ck_Wa6`FJlh2
+!s100 <hLXU`TDWLbQK:DTW2c<F1
+R9
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R14
+R15
+Edelta_sigma_design
+Z38 w1573770754
+R5
+R6
+R0
+Z39 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd
+Z40 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd
+l0
+L17
+Vj`Ea;hjMh?:HCQSh@H6l01
+!s100 CE=K@8^2=hgSiBX:B5zZc3
+R9
+33
+R33
+!i10b 1
+R34
+Z41 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd|
+Z42 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd|
+!i113 1
+R14
+R15
+Artl
+Z43 DEx4 work 16 nokia5110_driver 0 22 ^fP6<HRG:QoQB^adanW]K0
+Z44 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+DEx12 smartfusion2 14 RCOSC_25_50MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R22
+R37
+R5
+R6
+DEx4 work 18 delta_sigma_design 0 22 j`Ea;hjMh?:HCQSh@H6l01
+l259
+L37
+V^WG`VZVJU_30mIh15A_jV2
+!s100 S7MO6<IDD[O_I:1AOTSbo2
+R9
+33
+R33
+!i10b 1
+R34
+R41
+R42
+!i113 1
+R14
+R15
+Edelta_sigma_tb
+Z45 w1573772615
+Z46 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+R22
+R5
+R6
+R0
+Z47 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/stimulus/Delta_Sigma_tb.vhd
+Z48 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/stimulus/Delta_Sigma_tb.vhd
+l0
+L27
+V4l6ai>6UUdgWTbfLYfMNk0
+!s100 T:EW=@f7K4kC>QfkaX=ga0
+R9
+33
+R33
+!i10b 1
+R34
+Z49 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/stimulus/Delta_Sigma_tb.vhd|
+Z50 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/stimulus/Delta_Sigma_tb.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R46
+R22
+R5
+R6
+Z51 DEx4 work 14 delta_sigma_tb 0 22 4l6ai>6UUdgWTbfLYfMNk0
+l83
+L30
+V>mo;<njQ@Nz`0dRQ2KEIl1
+!s100 PzGZ[Z]z>E>hL3AWS_>ZV2
+R9
+33
+R33
+!i10b 1
+R34
+R49
+R50
+!i113 1
+R14
+R15
+Efccc_c0
+Z52 w1573702132
+R5
+R6
+R0
+Z53 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0.vhd
+Z54 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0.vhd
+l0
+L17
+VbOb=_W`5ioUfeN=gTcN@[2
+!s100 o_L9aRQQQAW@5VM@15AMb1
+R9
+33
+Z55 !s110 1573772639
+!i10b 1
+Z56 !s108 1573772639.000000
+Z57 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0.vhd|
+Z58 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0.vhd|
+!i113 1
+R14
+R15
+Artl
+R5
+R6
+DEx4 work 7 fccc_c0 0 22 bOb=_W`5ioUfeN=gTcN@[2
+l63
+L31
+VWCGhVf5[I92`>SWVNPDcC1
+!s100 hXk165>7<kb0>0]VI>VoT2
+R9
+33
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R14
+R15
+Efccc_c0_fccc_c0_0_fccc
+R52
+R5
+R6
+R0
+Z59 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z60 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+l0
+L8
+V<<en;mm[Fb_NZ50F0fbY01
+!s100 <fX8]63S5^Pbcf`ho0i>_0
+R9
+33
+R55
+!i10b 1
+R56
+Z61 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+Z62 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+!i113 1
+R14
+R15
+Adef_arch
+DEx12 smartfusion2 6 XTLOSC 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R44
+DEx12 smartfusion2 10 RCOSC_1MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R5
+R6
+DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 <<en;mm[Fb_NZ50F0fbY01
+l95
+L18
+V=cSMoiC3Vn5c39_;UkRWF0
+!s100 NaDDF`>I;C1R_eQ;DzNRX2
+R9
+33
+R55
+!i10b 1
+R56
+R61
+R62
+!i113 1
+R14
+R15
+Enokia5110_driver
+Z63 w1573544524
+R22
+R5
+R6
+R0
+Z64 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Nokia5110_Driver.vhd
+Z65 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Nokia5110_Driver.vhd
+l0
+L24
+V^fP6<HRG:QoQB^adanW]K0
+!s100 @^em4G6dTKc0_=BlGLi_Y0
+R9
+33
+R55
+!i10b 1
+R56
+Z66 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Nokia5110_Driver.vhd|
+Z67 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/Nokia5110_Driver.vhd|
+!i113 1
+R14
+R15
+Aarchitecture_nokia5110_driver
+R22
+R5
+R6
+R43
+l176
+L75
+VW?JiG3^5oa;DNaG7f5WIP1
+!s100 G>A9RaGb1Yo^28R]EBCD73
+R9
+33
+R55
+!i10b 1
+R56
+R66
+R67
+!i113 1
+R14
+R15
+Eosc_c0
+Z68 w1572468257
+R5
+R6
+R0
+Z69 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0.vhd
+Z70 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0.vhd
+l0
+L17
+V;9f:oAhA_Yn;NSNQG<[f:1
+!s100 Yf_ZSillhlhcFGRD9njA;0
+R9
+33
+R55
+!i10b 1
+R56
+Z71 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0.vhd|
+Z72 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0.vhd|
+!i113 1
+R14
+R15
+Artl
+R5
+R6
+DEx4 work 6 osc_c0 0 22 ;9f:oAhA_Yn;NSNQG<[f:1
+l56
+L27
+VOFnD7z[I]8W[K[i4ZoEST1
+!s100 Yebk`f[LaoaULcj[lFUSL0
+R9
+33
+R55
+!i10b 1
+R56
+R71
+R72
+!i113 1
+R14
+R15
+Eosc_c0_osc_c0_0_osc
+R68
+R5
+R6
+R0
+Z73 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z74 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+l0
+L8
+V=RTjS>oH[4=XjoXn^`jZ13
+!s100 ImDYGYTfEB_O;]h:c4C>f1
+R9
+33
+R55
+!i10b 1
+R56
+Z75 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+Z76 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+!i113 1
+R14
+R15
+Adef_arch
+R5
+R6
+DEx4 work 19 osc_c0_osc_c0_0_osc 0 22 =RTjS>oH[4=XjoXn^`jZ13
+l31
+L21
+V1oa1O8Mi7^mOUoQz_9K461
+!s100 li@AIJ9Yl0<2d:3ki;e^Y2
+R9
+33
+R55
+!i10b 1
+R56
+R75
+R76
+!i113 1
+R14
+R15
+Etimer
+Z77 w1573102151
+R22
+R5
+R6
+R0
+Z78 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/timer.vhd
+Z79 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/timer.vhd
+l0
+L6
+VB3DOdMXQn]CEB:3<az@3G1
+!s100 FL;V];9M^olV]ajK35P`k3
+R9
+33
+R55
+!i10b 1
+R56
+Z80 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/timer.vhd|
+Z81 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/hdl/timer.vhd|
+!i113 1
+R14
+R15
+Aarchitecture_timer
+R22
+R5
+R6
+DEx4 work 5 timer 0 22 B3DOdMXQn]CEB:3<az@3G1
+l23
+L19
+VGAIBHjQN9U;Aj0UH`cJPh3
+!s100 ]`BnRmLWS5l:l[O2CdbEg2
+R9
+33
+R55
+!i10b 1
+R56
+R80
+R81
+!i113 1
+R14
+R15
+Euram_c0
+Z82 w1573106199
+R5
+R6
+R0
+Z83 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0.vhd
+Z84 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0.vhd
+l0
+L17
+Vg3TY5WDSCeV1eK>_;[0;[0
+!s100 =`ZYJYPcn9o83;57VWZ:M1
+R9
+33
+R33
+!i10b 1
+R34
+Z85 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0.vhd|
+Z86 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0.vhd|
+!i113 1
+R14
+R15
+Artl
+R5
+R6
+DEx4 work 7 uram_c0 0 22 g3TY5WDSCeV1eK>_;[0;[0
+l67
+L35
+VY[ICKfFi`AjMQlk5C?S0^1
+!s100 e>HS8;iBjBkB_24SL1QZO2
+R9
+33
+R33
+!i10b 1
+R34
+R85
+R86
+!i113 1
+R14
+R15
+Euram_c0_uram_c0_0_uram
+Z87 w1573106198
+R5
+R6
+R0
+Z88 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
+Z89 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd
+l0
+L8
+Vd]]H?R:XUU2W2SdQSLZJF0
+!s100 T9OHMMWEaCaJ6eX5I7?J82
+R9
+33
+R55
+!i10b 1
+R56
+Z90 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
+Z91 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd|
+!i113 1
+R14
+R15
+Adef_arch
+R5
+R6
+DEx4 work 22 uram_c0_uram_c0_0_uram 0 22 d]]H?R:XUU2W2SdQSLZJF0
+l138
+L22
+VJj02^gSi0iE2BV`0dE``k0
+!s100 NViJLKVl]Q=CZCe:BIDXj3
+R9
+33
+R55
+!i10b 1
+R56
+R90
+R91
+!i113 1
+R14
+R15

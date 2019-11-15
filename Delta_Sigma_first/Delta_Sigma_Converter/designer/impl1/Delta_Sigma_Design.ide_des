@@ -1,0 +1,12 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\impl1\Delta_Sigma_Design.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc;pdc"
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\constraint\io\user.pdc;pdc"
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\constraint\io\user1.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

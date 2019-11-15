@@ -1,0 +1,14 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Thu Nov 14 20:53:01 2019
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter
+Component :  Delta_Sigma_Design
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd
+
+Stimulus files for all Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/component/work/Delta_Sigma_Design/subsystem.bfm
+

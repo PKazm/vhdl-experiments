@@ -1,0 +1,20 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_5[1:0] (in view: work.Delta_Sigma_Design(rtl)) with 2 words by 2 bits.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\timer.vhd":26:8:26:9|Removing sequential instance timer_clock_out_sig (in view: work.timerZ0(architecture_timer)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|There are no possible illegal states for state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Found counter in view:coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl) instance SMADDR[5:0] 
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":176:2:176:3|Found counter in view:work.Delta_Sigma_Converter(architecture_delta_sigma_converter) instance pwm_counter[7:0] 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\delta_sigma_converter.vhd":78:45:78:47|Removing sequential instance pwm_quantized_value[0] (in view: work.Delta_Sigma_Converter(architecture_delta_sigma_converter)) because it does not drive other instances.
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\hdl\nokia5110_driver.vhd":460:8:460:9|There are no possible illegal states for state machine LCD_State[0:1] (in view: work.Nokia5110_Driver(architecture_nokia5110_driver)); safe FSM implementation is not required.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\delta_sigma_converter\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\instructions.vhd":103:3:103:6|Found ROM COREABC_C0_0.COREABC_C0_0.UROM\.UROM.INS_0[15:0] (in view: work.Delta_Sigma_Design(rtl)) with 45 words by 16 bits.
+@N: FP130 |Promoting Net Board_J7_c[3] on CLKINT  I_501 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.rstn_i_i on CLKINT  I_502 
+@N: FP130 |Promoting Net Nokia5110_Driver_0.CLK_SPI_sig on CLKINT  I_503 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

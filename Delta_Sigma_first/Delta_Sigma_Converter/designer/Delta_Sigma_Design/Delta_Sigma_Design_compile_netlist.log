@@ -1,0 +1,32 @@
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/synthesis/Delta_Sigma_Design.vm(11949): WARNING: net 'N_1039' does not have a driver (VDB-1002)
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/synthesis/Delta_Sigma_Design.vm(11950): WARNING: net 'N_1040' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       5 
+      Globals that cannot be demoted:      2 
+      Globals considered for demotion:     3 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    188    0      0      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    99     0      0      'FCCC_C0_0/FCCC_C0_0/GL1_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    22     0      3      'Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7' 
+    0      242    7      'COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF' 
+    0      28     0      'Nokia5110_Driver_0/rstn_i_0_RNIVLU5' 
+
+Info: Demotion information: 
+      Disconnected 3 data pins from global 'Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7'. 
+      Disconnected 6 data pins from global 'COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

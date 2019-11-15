@@ -18,9 +18,9 @@ The file contains the information about resource utilization per module to be di
 </column_headers>
 <module>
 <data>Driver_Container</data>
-<data>159</data>
-<data>267</data>
-<data>37</data>
+<data>161</data>
+<data>274</data>
+<data>40</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -29,9 +29,9 @@ The file contains the information about resource utilization per module to be di
 <data>8</data>
 <module>
 <data>Nokia5110_Driver_Block_SD</data>
-<data>159</data>
-<data>267</data>
-<data>37</data>
+<data>161</data>
+<data>274</data>
+<data>40</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -124,9 +124,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Nokia5110_Driver</data>
-<data>121</data>
-<data>145</data>
-<data>37</data>
+<data>123</data>
+<data>152</data>
+<data>40</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -148,7 +148,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>timerZ1</data>
 <data>7</data>
-<data>10</data>
+<data>11</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>

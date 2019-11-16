@@ -1,5 +1,5 @@
 #defaultlanguage:vhdl
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\synthesis\\synwork\\Driver_Container_comp.srs|-top|work.Driver_Container|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\synthesis\\synwork\\Driver_Container_comp.srs|-top|work.Driver_Container|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|COREABC_LIB|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\bin64\\c_vhdl.exe":1545375128
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\location.map":1545375136
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std.vhd":1545375136
@@ -25,7 +25,6 @@
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.vhd":1573066815
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\hdl\\timer.vhd":1573023114
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1573066799
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\URAM_C0\\URAM_C0_0\\URAM_C0_URAM_C0_0_URAM.vhd":1573069852
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\COREABC_C0\\COREABC_C0_0\\rtl\\vhdl\\core\\acmtable.vhd":1573073742
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\COREABC_C0\\COREABC_C0_0\\rtl\\vhdl\\core\\instructnvm_bb.vhd":1573073743
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\COREABC_C0\\COREABC_C0_0\\rtl\\vhdl\\core\\instructram.vhd":1573073743
@@ -38,12 +37,11 @@
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1572988165
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\CoreAPB3_C0\\CoreAPB3_C0.vhd":1573066957
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\FCCC_C0\\FCCC_C0.vhd":1573066815
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\hdl\\Nokia5110_Driver.vhd":1573165487
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\hdl\\Nokia5110_Driver.vhd":1573888647
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\Nokia5110_Driver_Block_SD\\Nokia5110_Driver_Block_SD.vhd":1573888700
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.vhd":1573066799
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\OSC_C0\\OSC_C0.vhd":1573066799
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\URAM_C0\\URAM_C0.vhd":1573069853
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\Nokia5110_Driver_Block_SD\\Nokia5110_Driver_Block_SD.vhd":1573278977
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\Driver_Container\\Driver_Container.vhd":1573074014
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Nokia5110_Driver_12_1\\component\\work\\Driver_Container\\Driver_Container.vhd":1573877300
 0 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd" vhdl
 1 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd" vhdl
 2 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd" vhdl
@@ -69,13 +67,11 @@
 22 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\FCCC_C0\FCCC_C0.vhd" vhdl
 23 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\timer.vhd" vhdl
 24 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\hdl\Nokia5110_Driver.vhd" vhdl
-25 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
-26 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd" vhdl
-27 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0.vhd" vhdl
-28 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd" vhdl
-29 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\URAM_C0\URAM_C0.vhd" vhdl
-30 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd" vhdl
-31 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd" vhdl
+25 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd" vhdl
+26 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
+27 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd" vhdl
+28 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\OSC_C0\OSC_C0.vhd" vhdl
+29 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Driver_Container\Driver_Container.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1
@@ -103,13 +99,11 @@
 22 21 
 23 -1
 24 23 
-25 -1
-26 25 
+25 24 
+26 -1
 27 26 
-28 -1
-29 28 
-30 15 20 22 24 27 29 
-31 30 
+28 27 
+29 15 20 22 25 28 
 
 # Dependency Lists (Users Of)
 0 13 12 8 7 4 2 1 
@@ -127,23 +121,21 @@
 12 13 
 13 15 
 14 15 
-15 30 
+15 29 
 16 18 
 17 18 
 18 20 
 19 20 
-20 30 
+20 29 
 21 22 
-22 30 
+22 29 
 23 24 
-24 30 
-25 26 
+24 25 
+25 29 
 26 27 
-27 30 
+27 28 
 28 29 
-29 30 
-30 31 
-31 -1
+29 -1
 
 # Design Unit to File Association
 arch coreabc_lib coreabc_c0_coreabc_c0_0_acmtable rtl 1
@@ -188,30 +180,26 @@ arch work timer architecture_timer 23
 module work timer 23
 arch work nokia5110_driver architecture_nokia5110_driver 24
 module work nokia5110_driver 24
-arch work xtlosc_fab def_arch 25
-module work xtlosc_fab 25
-arch work rcosc_25_50mhz_fab def_arch 25
-module work rcosc_25_50mhz_fab 25
-arch work rcosc_1mhz_fab def_arch 25
-module work rcosc_1mhz_fab 25
-arch work xtlosc def_arch 25
-module work xtlosc 25
-arch work rcosc_25_50mhz def_arch 25
-module work rcosc_25_50mhz 25
-arch work rcosc_1mhz def_arch 25
-module work rcosc_1mhz 25
-arch work osc_c0_osc_c0_0_osc def_arch 26
-module work osc_c0_osc_c0_0_osc 26
-arch work osc_c0 rtl 27
-module work osc_c0 27
-arch work uram_c0_uram_c0_0_uram def_arch 28
-module work uram_c0_uram_c0_0_uram 28
-arch work uram_c0 rtl 29
-module work uram_c0 29
-arch work nokia5110_driver_block_sd rtl 30
-module work nokia5110_driver_block_sd 30
-arch work driver_container rtl 31
-module work driver_container 31
+arch work nokia5110_driver_block_sd rtl 25
+module work nokia5110_driver_block_sd 25
+arch work xtlosc_fab def_arch 26
+module work xtlosc_fab 26
+arch work rcosc_25_50mhz_fab def_arch 26
+module work rcosc_25_50mhz_fab 26
+arch work rcosc_1mhz_fab def_arch 26
+module work rcosc_1mhz_fab 26
+arch work xtlosc def_arch 26
+module work xtlosc 26
+arch work rcosc_25_50mhz def_arch 26
+module work rcosc_25_50mhz 26
+arch work rcosc_1mhz def_arch 26
+module work rcosc_1mhz 26
+arch work osc_c0_osc_c0_0_osc def_arch 27
+module work osc_c0_osc_c0_0_osc 27
+arch work osc_c0 rtl 28
+module work osc_c0 28
+arch work driver_container rtl 29
+module work driver_container 29
 
 
 # Configuration files used

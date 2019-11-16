@@ -225,12 +225,6 @@ END_USE_CONSTRAINT
 USE_FOR_ANY_TOOL="FALSE"
 IS_READONLY="TRUE"
 ENDFILE
-VALUE "<project>\component\Actel\SgCore\URAM\1.0.101\URAM.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573069853"
-SIZE="241"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0.cxf,actgen_cxf"
 STATE="utd"
 TIME="1573073744"
@@ -424,13 +418,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Driver_Container\Driver_Container.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573074014"
-SIZE="1984"
+TIME="1573877300"
+SIZE="2547"
 ENDFILE
 VALUE "<project>\component\work\Driver_Container\Driver_Container.vhd,hdl"
 STATE="utd"
-TIME="1573074014"
-SIZE="4152"
+TIME="1573877300"
+SIZE="14704"
 PARENT="<project>\component\work\Driver_Container\Driver_Container.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -461,13 +455,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573278978"
-SIZE="3048"
+TIME="1573888701"
+SIZE="5300"
 ENDFILE
 VALUE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd,hdl"
 STATE="utd"
-TIME="1573278977"
-SIZE="15597"
+TIME="1573888700"
+SIZE="5178"
 PARENT="<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -501,31 +495,6 @@ STATE="utd"
 TIME="1572928346"
 SIZE="657"
 ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573069853"
-SIZE="7290"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0.vhd,hdl"
-STATE="utd"
-TIME="1573069853"
-SIZE="3746"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573069852"
-SIZE="1223"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
-STATE="utd"
-TIME="1573069852"
-SIZE="23770"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-IS_READONLY="TRUE"
-ENDFILE
 VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
 STATE="utd"
 TIME="1573074082"
@@ -543,8 +512,8 @@ SIZE="366"
 ENDFILE
 VALUE "<project>\hdl\Nokia5110_Driver.vhd,hdl"
 STATE="utd"
-TIME="1573542636"
-SIZE="25445"
+TIME="1573888647"
+SIZE="32807"
 ENDFILE
 VALUE "<project>\hdl\timer.vhd,hdl"
 STATE="utd"
@@ -553,7 +522,7 @@ SIZE="1523"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.log,log"
 STATE="utd"
-TIME="1573074173"
+TIME="1573543060"
 SIZE="407"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -570,43 +539,15 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1573074165"
+TIME="1573543051"
 SIZE="4871"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
 TIME="1573067743"
 SIZE="798"
+PARENT="<project>\component\work\Driver_Container\Driver_Container.cxf"
 PARENT="<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.cxf"
-ENDFILE
-VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
-STATE="utd"
-TIME="1573542956"
-SIZE="68"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-STATE="utd"
-TIME="1573069851"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-STATE="utd"
-TIME="1573069851"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-STATE="utd"
-TIME="1573069851"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
-STATE="utd"
-TIME="1573069851"
-SIZE="1200"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
 ENDFILE
 VALUE "<project>\stimulus\Nokia5110_Driver_tb.vhd,tb_hdl"
 STATE="utd"
@@ -615,33 +556,28 @@ SIZE="5025"
 ENDFILE
 VALUE "<project>\synthesis\Driver_Container.so,so"
 STATE="utd"
-TIME="1573278988"
+TIME="1573885506"
 SIZE="271"
 ENDFILE
 VALUE "<project>\synthesis\Driver_Container.vm,syn_vm"
 STATE="utd"
-TIME="1573278988"
-SIZE="141946"
+TIME="1573888432"
+SIZE="119618"
 ENDFILE
 VALUE "<project>\synthesis\Driver_Container_syn.prj,prj"
 STATE="utd"
-TIME="1573279015"
-SIZE="6628"
+TIME="1573885614"
+SIZE="6367"
 ENDFILE
 VALUE "<project>\synthesis\Driver_Container_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1573278988"
-SIZE="1452"
+TIME="1573885506"
+SIZE="1424"
 ENDFILE
 VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD.so,so"
 STATE="utd"
 TIME="1573074027"
 SIZE="289"
-ENDFILE
-VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD.vm,syn_vm"
-STATE="ood"
-TIME="1573074026"
-SIZE="148000"
 ENDFILE
 VALUE "<project>\synthesis\Nokia5110_Driver_Block_SD_syn.prj,prj"
 STATE="utd"
@@ -659,6 +595,9 @@ ENDLIST
 LIST NewModulesInfo
 LIST "Driver_Container::work"
 FILE "<project>\component\work\Driver_Container\Driver_Container.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSYNTHESIS(<project>\synthesis\Driver_Container.vm,syn_vm)=StateSuccess
@@ -668,6 +607,20 @@ UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
+VALUE "<project>\synthesis\Driver_Container.edn,syn_edn"
+VALUE "<project>\synthesis\Driver_Container.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\Driver_Container.adb,adb"
+VALUE "<project>\designer\impl1\Driver_Container.fdb,fdb"
+VALUE "<project>\designer\impl1\Driver_Container.pdb,pdb"
+VALUE "<project>\designer\impl1\Driver_Container.stp,stp"
+VALUE "<project>\designer\impl1\Driver_Container_fp\Driver_Container.pro,pro"
+VALUE "<project>\synthesis\Driver_Container.vm,syn_vm"
+VALUE "<project>\synthesis\Driver_Container_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -676,15 +629,6 @@ LIST "Nokia5110_Driver_Block_SD::work"
 FILE "<project>\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd,hdl"
 LIST Other_Association
 VALUE "<project>\simulation\subsystem.bfm,sim"
-ENDLIST
-ENDLIST
-LIST "URAM_C0_URAM_C0_0_URAM::work"
-FILE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
-LIST Other_Association
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
 ENDLIST
 ENDLIST
 LIST "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib"
@@ -717,7 +661,7 @@ ENDLIST
 LIST AssociatedStimulus
 ENDLIST
 LIST Other_Association
-LIST Nokia5110_Driver_Block_SD
+LIST Driver_Container
 VALUE "<project>\simulation\subsystem.bfm,sim"
 ENDLIST
 LIST COREABC_C0_COREABC_C0_0_COREABC
@@ -740,11 +684,8 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 ENDLIST
-LIST URAM_C0_URAM_C0_0_URAM
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
+LIST Nokia5110_Driver_Block_SD
+VALUE "<project>\simulation\subsystem.bfm,sim"
 ENDLIST
 ENDLIST
 LIST SimulationOptions
@@ -823,7 +764,7 @@ NAME="ModelSimME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l Delta_Sigma_tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -857,6 +798,20 @@ UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
+VALUE "<project>\synthesis\Driver_Container.edn,syn_edn"
+VALUE "<project>\synthesis\Driver_Container.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\Driver_Container_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\Driver_Container.adb,adb"
+VALUE "<project>\designer\impl1\Driver_Container.fdb,fdb"
+VALUE "<project>\designer\impl1\Driver_Container.pdb,pdb"
+VALUE "<project>\designer\impl1\Driver_Container.stp,stp"
+VALUE "<project>\designer\impl1\Driver_Container_fp\Driver_Container.pro,pro"
+VALUE "<project>\synthesis\Driver_Container.vm,syn_vm"
+VALUE "<project>\synthesis\Driver_Container_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -874,11 +829,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Place and Route:Driver_Container_glb_net_report.xml
+ReportsCurrentItem;Synthesize:Driver_Container_compile_netlist_hier_resources.csv
 StartPage;StartPage;0
 SmartDesign;Nokia5110_Driver_Block_SD;0
 SmartDesign;Driver_Container;0
-ACTIVEVIEW;Nokia5110_Driver_Block_SD
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
@@ -888,7 +843,15 @@ LIST "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FA
 SUBBLOCK "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"
 ENDLIST
 LIST "Driver_Container::work","component\work\Driver_Container\Driver_Container.vhd","TRUE","FALSE"
+SUBBLOCK "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "Nokia5110_Driver_Block_SD::work","component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
@@ -901,17 +864,8 @@ SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C
 ENDLIST
 LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
 ENDLIST
-LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
-SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
-SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
-ENDLIST
 LIST "Nokia5110_Driver_Block_SD::work","component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd","TRUE","FALSE"
-SUBBLOCK "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
-SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
-SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
 ENDLIST
 LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
@@ -924,11 +878,6 @@ ENDLIST
 LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
-ENDLIST
-LIST "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
-SUBBLOCK "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
-ENDLIST
-LIST "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST

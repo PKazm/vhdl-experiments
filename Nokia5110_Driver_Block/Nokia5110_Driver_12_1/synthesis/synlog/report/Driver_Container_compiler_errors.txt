@@ -1,0 +1,2 @@
+@E: CD648 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\component\work\Nokia5110_Driver_Block_SD\Nokia5110_Driver_Block_SD.vhd":101:28:101:28|Expression does not match type std_ulogic
+

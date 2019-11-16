@@ -104,52 +104,13 @@
         <spirit:name>PSLVERR</spirit:name>
         <spirit:direction>out</spirit:direction>
       </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_A_ADDR</spirit:name>
-        <spirit:direction>out</spirit:direction>
-        <spirit:left>8</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_A_DOUT</spirit:name>
-        <spirit:direction>in</spirit:direction>
-        <spirit:left>7</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_B_ADDR</spirit:name>
-        <spirit:direction>out</spirit:direction>
-        <spirit:left>8</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_B_DOUT</spirit:name>
-        <spirit:direction>in</spirit:direction>
-        <spirit:left>7</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_C_BLK</spirit:name>
-        <spirit:direction>out</spirit:direction>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_C_ADDR</spirit:name>
-        <spirit:direction>out</spirit:direction>
-        <spirit:left>8</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>uSRAM_C_DIN</spirit:name>
-        <spirit:direction>out</spirit:direction>
-        <spirit:left>7</spirit:left>
-        <spirit:right>0</spirit:right>
-      </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>
       <spirit:hwParameter spirit:id="g_clk_period" spirit:name="g_clk_period" spirit:prompt="g_clk_period:" spirit:dataType="int" spirit:resolve="user">10</spirit:hwParameter>
       <spirit:hwParameter spirit:id="g_clk_spi_div" spirit:name="g_clk_spi_div" spirit:prompt="g_clk_spi_div:" spirit:dataType="int" spirit:resolve="user">50</spirit:hwParameter>
       <spirit:hwParameter spirit:id="g_frame_size" spirit:name="g_frame_size" spirit:prompt="g_frame_size:" spirit:dataType="int" spirit:resolve="user">8</spirit:hwParameter>
       <spirit:hwParameter spirit:id="g_update_rate" spirit:name="g_update_rate" spirit:prompt="g_update_rate:" spirit:dataType="int" spirit:resolve="user">1</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="g_frame_buffer" spirit:name="g_frame_buffer" spirit:prompt="g_frame_buffer:" spirit:dataType="int" spirit:resolve="user">0</spirit:hwParameter>
     </spirit:hwParameters>
     <spirit:deletedhwParameters>
     </spirit:deletedhwParameters>

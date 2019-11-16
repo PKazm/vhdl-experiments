@@ -24,27 +24,27 @@ Part:			M2S010TQ144STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      161                100 %                
+SLE      163                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Driver_Container:	161 (29.43 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Driver_Container:	163 (29.32 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           274                100 %                
+CFG           300                100 %                
 ARI1          40                 100 %                
-BLACK BOX     21                 100 %                
+BLACK BOX     2                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block Driver_Container:	335 (61.24 % Utilization)
+Total COMBINATIONAL LOGIC in the block Driver_Container:	342 (61.51 % Utilization)
 
 
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-RAM64X18     5                  100 %                
+RAM64X18     9                  100 %                
 =====================================================
-Total MEMORY ELEMENTS in the block Driver_Container:	5 (0.91 % Utilization)
+Total MEMORY ELEMENTS in the block Driver_Container:	9 (1.62 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -52,7 +52,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     4                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block Driver_Container:	4 (0.73 % Utilization)
+Total GLOBAL BUFFERS in the block Driver_Container:	4 (0.72 % Utilization)
 
 
 IO PADS
@@ -60,73 +60,35 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       8                  100 %                
 =================================================
-Total IO PADS in the block Driver_Container:	8 (1.46 % Utilization)
-
--------------------------------------------------------------------------------
-########   Utilization report for  cell:   Nokia5110_Driver_Block_SD   ########
-Instance path:   Driver_Container.Nokia5110_Driver_Block_SD                    
-===============================================================================
-
-SEQUENTIAL ELEMENTS
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-SLE      161                100 %                
-=================================================
-Total SEQUENTIAL ELEMENTS in the block Driver_Container.Nokia5110_Driver_Block_SD:	161 (29.43 % Utilization)
-
-
-COMBINATIONAL LOGIC
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-CFG           274                100 %                
-ARI1          40                 100 %                
-BLACK BOX     21                 100 %                
-======================================================
-Total COMBINATIONAL LOGIC in the block Driver_Container.Nokia5110_Driver_Block_SD:	335 (61.24 % Utilization)
-
-
-MEMORY ELEMENTS
-Name         Total elements     Utilization     Notes
------------------------------------------------------
-RAM64X18     5                  100 %                
-=====================================================
-Total MEMORY ELEMENTS in the block Driver_Container.Nokia5110_Driver_Block_SD:	5 (0.91 % Utilization)
-
-
-GLOBAL BUFFERS
-Name       Total elements     Utilization     Notes
----------------------------------------------------
-GLOBAL     4                  100 %                
-===================================================
-Total GLOBAL BUFFERS in the block Driver_Container.Nokia5110_Driver_Block_SD:	4 (0.73 % Utilization)
+Total IO PADS in the block Driver_Container:	8 (1.44 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   COREABC_C0   ########
-Instance path:   Nokia5110_Driver_Block_SD.COREABC_C0           
+Instance path:   Driver_Container.COREABC_C0                    
 ================================================================
 
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      38                 23.6 %               
+SLE      38                 23.3 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver_Block_SD.COREABC_C0:	38 (6.95 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Driver_Container.COREABC_C0:	38 (6.83 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      118                43.1 %               
+CFG      118                39.3 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.COREABC_C0:	118 (21.57 % Utilization)
+Total COMBINATIONAL LOGIC in the block Driver_Container.COREABC_C0:	118 (21.22 % Utilization)
 
 
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-RAM64X18     1                  20 %                 
+RAM64X18     1                  11.1 %               
 =====================================================
-Total MEMORY ELEMENTS in the block Nokia5110_Driver_Block_SD.COREABC_C0:	1 (0.18 % Utilization)
+Total MEMORY ELEMENTS in the block Driver_Container.COREABC_C0:	1 (0.18 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -134,7 +96,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  25 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block Nokia5110_Driver_Block_SD.COREABC_C0:	1 (0.18 % Utilization)
+Total GLOBAL BUFFERS in the block Driver_Container.COREABC_C0:	1 (0.18 % Utilization)
 
 -------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   COREABC_C0_COREABC_C0_0_COREABC   ########
@@ -144,23 +106,23 @@ Instance path:   COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      38                 23.6 %               
+SLE      38                 23.3 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	38 (6.95 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	38 (6.83 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      118                43.1 %               
+CFG      118                39.3 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	118 (21.57 % Utilization)
+Total COMBINATIONAL LOGIC in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	118 (21.22 % Utilization)
 
 
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-RAM64X18     1                  20 %                 
+RAM64X18     1                  11.1 %               
 =====================================================
 Total MEMORY ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	1 (0.18 % Utilization)
 
@@ -180,9 +142,9 @@ Instance path:   COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUC
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      14                 5.11 %               
+CFG      14                 4.67 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	14 (2.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	14 (2.52 % Utilization)
 
 ---------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   COREABC_C0_COREABC_C0_0_RAMBLOCKS   ########
@@ -192,7 +154,7 @@ Instance path:   COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOC
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      1                  0.3650 %             
+CFG      1                  0.3330 %             
 =================================================
 Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	1 (0.18 % Utilization)
 
@@ -200,7 +162,7 @@ Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-RAM64X18     1                  20 %                 
+RAM64X18     1                  11.1 %               
 =====================================================
 Total MEMORY ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	1 (0.18 % Utilization)
 
@@ -212,21 +174,21 @@ Instance path:   COREABC_C0_COREABC_C0_0_RAMBLOCKS.COREABC_C0_COREABC_C0_0_RAM12
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-RAM64X18     1                  20 %                 
+RAM64X18     1                  11.1 %               
 =====================================================
 Total MEMORY ELEMENTS in the block COREABC_C0_COREABC_C0_0_RAMBLOCKS.COREABC_C0_COREABC_C0_0_RAM128X8:	1 (0.18 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
-Instance path:   Nokia5110_Driver_Block_SD.FCCC_C0           
+Instance path:   Driver_Container.FCCC_C0                    
 =============================================================
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  4.76 %               
+BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.FCCC_C0:	1 (0.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block Driver_Container.FCCC_C0:	1 (0.18 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -234,7 +196,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  25 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block Nokia5110_Driver_Block_SD.FCCC_C0:	1 (0.18 % Utilization)
+Total GLOBAL BUFFERS in the block Driver_Container.FCCC_C0:	1 (0.18 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
@@ -244,7 +206,7 @@ Instance path:   FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  4.76 %               
+BLACK BOX     1                  50 %                 
 ======================================================
 Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.18 % Utilization)
 
@@ -256,6 +218,43 @@ GLOBAL     1                  25 %
 ===================================================
 Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.18 % Utilization)
 
+-------------------------------------------------------------------------------
+########   Utilization report for  cell:   Nokia5110_Driver_Block_SD   ########
+Instance path:   Driver_Container.Nokia5110_Driver_Block_SD                    
+===============================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      125                76.7 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Driver_Container.Nokia5110_Driver_Block_SD:	125 (22.48 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      182                60.7 %               
+ARI1     40                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block Driver_Container.Nokia5110_Driver_Block_SD:	222 (39.93 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     8                  88.9 %               
+=====================================================
+Total MEMORY ELEMENTS in the block Driver_Container.Nokia5110_Driver_Block_SD:	8 (1.44 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  50 %                 
+===================================================
+Total GLOBAL BUFFERS in the block Driver_Container.Nokia5110_Driver_Block_SD:	2 (0.36 % Utilization)
+
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   Nokia5110_Driver   ########
 Instance path:   Nokia5110_Driver_Block_SD.Nokia5110_Driver           
@@ -264,18 +263,26 @@ Instance path:   Nokia5110_Driver_Block_SD.Nokia5110_Driver
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      123                76.4 %               
+SLE      125                76.7 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	123 (22.49 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	125 (22.48 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      152                55.5 %               
+CFG      182                60.7 %               
 ARI1     40                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	192 (35.10 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	222 (39.93 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     8                  88.9 %               
+=====================================================
+Total MEMORY ELEMENTS in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	8 (1.44 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -283,7 +290,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	2 (0.37 % Utilization)
+Total GLOBAL BUFFERS in the block Nokia5110_Driver_Block_SD.Nokia5110_Driver:	2 (0.36 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timerZ0   ########
@@ -293,18 +300,18 @@ Instance path:   Nokia5110_Driver.timerZ0
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      22                 13.7 %               
+SLE      22                 13.5 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.timerZ0:	22 (4.02 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.timerZ0:	22 (3.96 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      19                 6.93 %               
+CFG      19                 6.33 %               
 ARI1     21                 52.5 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ0:	40 (7.31 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ0:	40 (7.19 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   timerZ1   ########
@@ -314,17 +321,17 @@ Instance path:   Nokia5110_Driver.timerZ1
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      7                  4.35 %               
+SLE      7                  4.29 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.timerZ1:	7 (1.28 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block Nokia5110_Driver.timerZ1:	7 (1.26 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      11                 4.01 %               
+CFG      10                 3.33 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ1:	11 (2.01 % Utilization)
+Total COMBINATIONAL LOGIC in the block Nokia5110_Driver.timerZ1:	10 (1.80 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -336,15 +343,15 @@ Total GLOBAL BUFFERS in the block Nokia5110_Driver.timerZ1:	1 (0.18 % Utilizatio
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########
-Instance path:   Nokia5110_Driver_Block_SD.OSC_C0           
+Instance path:   Driver_Container.OSC_C0                    
 ============================================================
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  4.76 %               
+BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.OSC_C0:	1 (0.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block Driver_Container.OSC_C0:	1 (0.18 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
@@ -354,51 +361,9 @@ Instance path:   OSC_C0.OSC_C0_OSC_C0_0_OSC
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  4.76 %               
+BLACK BOX     1                  50 %                 
 ======================================================
 Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.18 % Utilization)
-
--------------------------------------------------------------
-########   Utilization report for  cell:   URAM_C0   ########
-Instance path:   Nokia5110_Driver_Block_SD.URAM_C0           
-=============================================================
-
-COMBINATIONAL LOGIC
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-CFG           4                  1.46 %               
-BLACK BOX     19                 90.5 %               
-======================================================
-Total COMBINATIONAL LOGIC in the block Nokia5110_Driver_Block_SD.URAM_C0:	23 (4.20 % Utilization)
-
-
-MEMORY ELEMENTS
-Name         Total elements     Utilization     Notes
------------------------------------------------------
-RAM64X18     4                  80 %                 
-=====================================================
-Total MEMORY ELEMENTS in the block Nokia5110_Driver_Block_SD.URAM_C0:	4 (0.73 % Utilization)
-
-----------------------------------------------------------------------------
-########   Utilization report for  cell:   URAM_C0_URAM_C0_0_URAM   ########
-Instance path:   URAM_C0.URAM_C0_URAM_C0_0_URAM                             
-============================================================================
-
-COMBINATIONAL LOGIC
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-CFG           4                  1.46 %               
-BLACK BOX     19                 90.5 %               
-======================================================
-Total COMBINATIONAL LOGIC in the block URAM_C0.URAM_C0_URAM_C0_0_URAM:	23 (4.20 % Utilization)
-
-
-MEMORY ELEMENTS
-Name         Total elements     Utilization     Notes
------------------------------------------------------
-RAM64X18     4                  80 %                 
-=====================================================
-Total MEMORY ELEMENTS in the block URAM_C0.URAM_C0_URAM_C0_0_URAM:	4 (0.73 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

@@ -26,7 +26,8 @@ generic (
     g_clk_period : natural := 10;     -- 10 ns = 100Mhz
     g_clk_spi_div : natural := 50;      -- (g_clk_period * g_clk_spi_div) should be > 250ns (4Mhz max SPI clock rate)
     g_frame_size : natural := 8;
-    g_update_rate : natural := 1        -- updates per second, best results below 5 fps
+    g_update_rate : natural := 1;        -- updates per second, best results below 5 fps
+    g_frame_buffer : natural := 0          -- should be boolean but "HDL Core" in Libero breaks
 );
 port (
     CLK : in std_logic;     -- assumed to be 100Mhz
@@ -51,25 +52,41 @@ port (
 	PWDATA : in std_logic_vector(7 downto 0);
 	PREADY : out std_logic;
 	PRDATA : out std_logic_vector(7 downto 0);
-	PSLVERR : out std_logic;
+	PSLVERR : out std_logic
 
 	--INT : out std_logic;
     -- APB connections
 
+    -- use 2 uSRAM blocks as a frame buffer for "vsync"
     -- uSRAM connections
         -- A block is for reading out to APB
-    uSRAM_A_ADDR : out std_logic_vector(8 downto 0);
-    uSRAM_A_DOUT : in std_logic_vector(7 downto 0);
+    --uSRAM_A_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM_A_DOUT : in std_logic_vector(7 downto 0);
 
         -- B block is for reading out to LCD via SPI
-    uSRAM_B_ADDR : out std_logic_vector(8 downto 0);
-    uSRAM_B_DOUT : in std_logic_vector(7 downto 0);
+    --uSRAM_B_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM_B_DOUT : in std_logic_vector(7 downto 0);
 
         -- C block is for writing from APB
-    uSRAM_C_BLK : out std_logic;
-    uSRAM_C_ADDR : out std_logic_vector(8 downto 0);
-    uSRAM_C_DIN : out std_logic_vector(7 downto 0)
+    --uSRAM_C_BLK : out std_logic;
+    --uSRAM_C_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM_C_DIN : out std_logic_vector(7 downto 0);
     -- uSRAM connections
+
+    -- uSRAM2 connections
+        -- A block is for reading out to APB
+    --uSRAM2_A_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM2_A_DOUT : in std_logic_vector(7 downto 0);
+
+        -- B block is for reading out to LCD via SPI
+    --uSRAM2_B_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM2_B_DOUT : in std_logic_vector(7 downto 0);
+
+        -- C block is for writing from APB
+    --uSRAM2_C_BLK : out std_logic;
+    --uSRAM2_C_ADDR : out std_logic_vector(8 downto 0);
+    --uSRAM2_C_DIN : out std_logic_vector(7 downto 0)
+    -- uSRAM2 connections
 );
 end Nokia5110_Driver;
 architecture architecture_Nokia5110_Driver of Nokia5110_Driver is
@@ -133,10 +150,16 @@ architecture architecture_Nokia5110_Driver of Nokia5110_Driver is
     --signal pready_sig : std_logic := '0';
     -- END APB signals
 
+
+    type mem_type is array (503 downto 0) of std_logic_vector(7 downto 0);
+    signal mem : mem_type;
+    signal mem2 : mem_type;
+
     constant disp_X_CON : natural := 84;        -- why use constants? because magic numbers are bad
     constant disp_Y_CON : natural := 6;         -- also debugging to with smaller "screen sizes" can be done by changing these
     constant disp_total_mem_CON : natural := 504;       -- total memory slots used by the display uSRAM
     signal mem_addr_updated : std_logic := '0';
+    --signal frame_toggle : std_logic := '0';     -- 0 = uSRAM, 1 = uSRAM2; use Driver_reg_ctrl(2)
     -- X address is 0 to 83, Y address is 0 to 5
     -- total LCD bytes is X * Y = max 503 = (84 * 6) - 1
     -- BEGIN uSRAM Connection signals
@@ -150,6 +173,19 @@ architecture architecture_Nokia5110_Driver of Nokia5110_Driver is
     signal uSRAM_C_ADDR_sig : std_logic_vector(8 downto 0) := (others => '0');      -- address from APB write
     signal uSRAM_C_DIN_sig : std_logic_vector(7 downto 0) := (others => '0');      -- data write APB write
     -- END uSRAM Connection signals
+    -- BEGIN uSRAM2 Connection signals
+    signal uSRAM2_A_ADDR_sig : std_logic_vector(8 downto 0) := (others => '0');      -- address from APB read
+    signal uSRAM2_A_DOUT_sig : std_logic_vector(7 downto 0) := (others => '0');      -- data to APB read
+
+    signal uSRAM2_B_ADDR_sig : unsigned(8 downto 0) := (others => '0');      -- address from SPI driver write to LCD
+    signal uSRAM2_B_DOUT_sig : std_logic_vector(7 downto 0) := (others => '0');      -- data to SPI driver write to LCD
+
+    signal uSRAM2_C_BLK_sig : std_logic := '0';      -- pulse each time APB write to display memory
+    signal uSRAM2_C_ADDR_sig : std_logic_vector(8 downto 0) := (others => '0');      -- address from APB write
+    signal uSRAM2_C_DIN_sig : std_logic_vector(7 downto 0) := (others => '0');      -- data write APB write
+    -- END uSRAM2 Connection signals
+    signal A_DOUT_sig : std_logic_vector(7 downto 0) := (others => '0');
+    signal B_DOUT_sig : std_logic_vector(7 downto 0) := (others => '0');
     
     -- BEGIN SPI_timer : timer signals
     signal CLK_SPI_sig : std_logic := '0';
@@ -256,7 +292,8 @@ begin
             Driver_reg_ctrl <= "00000011";
         elsif(rising_edge(CLK)) then
             if(PSEL = '1' and PENABLE = '1' and PWRITE = '1' and PADDR = Driver_reg_ctrl_ADDR) then
-                -- 0bXXXXXX & refresh indicator & enable
+                -- 0bXXXX & write both frame buffers & frame toggle & refresh indicator & enable
+                -- Driver_reg_ctrl(3) and Driver_reg_ctrl(2) only function when g_frame_buffer = 1
                 Driver_reg_ctrl <= PWDATA;
             else
                 null;
@@ -380,7 +417,8 @@ begin
                 uSRAM_C_BLK_sig <= '1';
             else
                 uSRAM_C_BLK_sig <= '0';
-                LCD_reg_mem_data <= uSRAM_A_DOUT_sig;
+                --LCD_reg_mem_data <= uSRAM_A_DOUT_sig;
+                LCD_reg_mem_data <= A_DOUT_sig;
             end if;
         end if;
     end process;
@@ -543,7 +581,8 @@ begin
                             elsif(Driver_reg_ctrl(1) = '1' and uSRAM_B_ADDR_sig = 0 and refresh_indicator = '0') then
                                 SPIout_byte <= indicator_byte;
                             else
-                                SPIout_byte <= uSRAM_B_DOUT_sig;
+                                --SPIout_byte <= uSRAM_B_DOUT_sig;
+                                SPIout_byte <= B_DOUT_sig;
                             end if;
                             -- iterate through (x, y) of screen memory
                             if(screen_finished = '0') then
@@ -586,15 +625,113 @@ begin
 
     SPICLK_sig <= CLK_SPI_sig;
 
-    uSRAM_A_ADDR <= uSRAM_A_ADDR_sig;
-    uSRAM_A_DOUT_sig <= uSRAM_A_DOUT;
 
-    uSRAM_B_ADDR <= std_logic_vector(uSRAM_B_ADDR_sig);
-    uSRAM_B_DOUT_sig <= uSRAM_B_DOUT;
+    gen_uSRAM_no_buffer : if(g_frame_buffer = 0) generate
+        process(CLK)
+        begin
+            if(rising_edge(CLK) and uSRAM_C_BLK_sig = '1') then
+                mem(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+            end if;
+        end process;
+        A_DOUT_sig <= mem(to_integer(unsigned(uSRAM_A_ADDR_sig)));
+        B_DOUT_sig <= mem(to_integer(unsigned(uSRAM_B_ADDR_sig)));
+    end generate gen_uSRAM_no_buffer;
+    
+    gen_uSRAM_yes_buffer : if(g_frame_buffer = 1) generate
+        process(CLK, Driver_reg_ctrl(3 downto 2), uSRAM_C_BLK_sig)
+        begin
+            if(rising_edge(CLK)) then
+                --Driver_reg_ctrl(2) = '0', use uSRAM; Driver_reg_ctrl(2) = '1', use uSRAM2
+                if(Driver_reg_ctrl(3) = '1' and Driver_reg_ctrl(2) = '0') then
+                    -- write to all, read from uSRAM2
+                    if(uSRAM_C_BLK_sig = '1') then
+                        mem(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                        mem2(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                    end if;
+                    A_DOUT_sig <= uSRAM2_A_DOUT_sig;
+                    B_DOUT_sig <= uSRAM2_B_DOUT_sig;
+                elsif(Driver_reg_ctrl(3) = '1' and Driver_reg_ctrl(2) = '1') then
+                    -- write to all, read from uSRAM
+                    if(uSRAM_C_BLK_sig = '1') then
+                        mem(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                        mem2(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                    end if;
+                    A_DOUT_sig <= uSRAM_A_DOUT_sig;
+                    B_DOUT_sig <= uSRAM_B_DOUT_sig;
+                elsif(Driver_reg_ctrl(3) = '0' and Driver_reg_ctrl(2) = '0') then
+                    -- write to uSRAM and read from uSRAM2
+                    if(uSRAM_C_BLK_sig = '1') then
+                        mem(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                    end if;
+                    A_DOUT_sig <= uSRAM2_A_DOUT_sig;
+                    B_DOUT_sig <= uSRAM2_B_DOUT_sig;
+                elsif(Driver_reg_ctrl(3) = '0' and Driver_reg_ctrl(2) = '1') then
+                    -- write to uSRAM2 and read from uSRAM
+                    if(uSRAM_C_BLK_sig = '1') then
+                        mem2(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                    end if;
+                    A_DOUT_sig <= uSRAM_A_DOUT_sig;
+                    B_DOUT_sig <= uSRAM_B_DOUT_sig;
+                end if;
+            end if;
+        end process ;
 
-    uSRAM_C_BLK <= uSRAM_C_BLK_sig;
-    uSRAM_C_ADDR <= uSRAM_C_ADDR_sig;
-    uSRAM_C_DIN <= uSRAM_C_DIN_sig;
+        
+        uSRAM_A_DOUT_sig <= mem(to_integer(unsigned(uSRAM_A_ADDR_sig)));
+        uSRAM_B_DOUT_sig <= mem(to_integer(unsigned(uSRAM_B_ADDR_sig)));
+        uSRAM2_A_DOUT_sig <= mem2(to_integer(unsigned(uSRAM_A_ADDR_sig)));
+        uSRAM2_B_DOUT_sig <= mem2(to_integer(unsigned(uSRAM_B_ADDR_sig)));
+    end generate gen_uSRAM_yes_buffer;
+
+    --process(Driver_reg_ctrl(3 downto 2), uSRAM_C_BLK_sig, uSRAM_A_DOUT, uSRAM_B_DOUT)
+    --begin
+    --    --Driver_reg_ctrl(2) = '0', use uSRAM; Driver_reg_ctrl(2) = '1', use uSRAM2
+    --    if(Driver_reg_ctrl(3) = '1' and Driver_reg_ctrl(2) = '0') then
+    --        -- write to all, read from uSRAM
+    --        uSRAM_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM2_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM_A_DOUT_sig <= uSRAM_A_DOUT;
+    --        uSRAM_B_DOUT_sig <= uSRAM_B_DOUT;
+    --    elsif(Driver_reg_ctrl(3) = '1' and Driver_reg_ctrl(2) = '1') then
+    --        -- write to all, read from uSRAM2
+    --        uSRAM_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM2_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM_A_DOUT_sig <= uSRAM_A_DOUT;
+    --        uSRAM_B_DOUT_sig <= uSRAM_B_DOUT;
+    --    elsif(Driver_reg_ctrl(3) = '0' and Driver_reg_ctrl(2) = '0') then
+    --        -- write to uSRAM and read from uSRAM2
+    --        uSRAM_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM_A_DOUT_sig <= uSRAM2_A_DOUT;
+    --        uSRAM_B_DOUT_sig <= uSRAM2_B_DOUT;
+    --    elsif(Driver_reg_ctrl(3) = '0' and Driver_reg_ctrl(2) = '1') then
+    --        -- write to uSRAM2 and read from uSRAM
+    --        uSRAM2_C_BLK <= uSRAM_C_BLK_sig;
+    --        uSRAM_A_DOUT_sig <= uSRAM_A_DOUT;
+    --        uSRAM_B_DOUT_sig <= uSRAM_B_DOUT;
+    --    end if;
+    --end process;
+    --
+    --uSRAM_A_ADDR <= uSRAM_A_ADDR_sig;
+    ----uSRAM_A_DOUT_sig <= uSRAM_A_DOUT when Driver_reg_ctrl(2) = '1';
+    ----
+    --uSRAM_B_ADDR <= std_logic_vector(uSRAM_B_ADDR_sig);
+    ----uSRAM_B_DOUT_sig <= uSRAM_B_DOUT when Driver_reg_ctrl(2) = '0';
+    ----
+    ----uSRAM_C_BLK <= uSRAM_C_BLK_sig when Driver_reg_ctrl(3) = '1' else
+    ----                uSRAM_C_BLK_sig when Driver_reg_ctrl(2) = '1';
+    --uSRAM_C_ADDR <= uSRAM_C_ADDR_sig;
+    --uSRAM_C_DIN <= uSRAM_C_DIN_sig;
+    ----
+    --uSRAM2_A_ADDR <= uSRAM_A_ADDR_sig;
+    ----uSRAM_A_DOUT_sig <= uSRAM2_A_DOUT when Driver_reg_ctrl(2) = '0';
+    ----
+    --uSRAM2_B_ADDR <= std_logic_vector(uSRAM_B_ADDR_sig);
+    ----uSRAM_B_DOUT_sig <= uSRAM2_B_DOUT when Driver_reg_ctrl(2) = '1';
+    ----
+    ----uSRAM2_C_BLK <= uSRAM_C_BLK_sig when Driver_reg_ctrl(3) = '1' else
+    ----                uSRAM_C_BLK_sig when Driver_reg_ctrl(2) = '0';
+    --uSRAM2_C_ADDR <= uSRAM_C_ADDR_sig;
+    --uSRAM2_C_DIN <= uSRAM_C_DIN_sig;
 
     driver_busy <= screen_send;
 

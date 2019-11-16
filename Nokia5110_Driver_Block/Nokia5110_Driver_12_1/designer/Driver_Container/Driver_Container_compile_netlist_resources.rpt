@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
-Date: Sat Nov  9 00:56:33 2019
+Date: Sat Nov 16 02:18:41 2019
 
 Device Selection
 +--------------------------------+----------------+
@@ -37,13 +37,13 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 509  | 12084 | 4.21       |
-| DFF                       | 341  | 12084 | 2.82       |
+| 4LUT                      | 665  | 12084 | 5.50       |
+| DFF                       | 487  | 12084 | 4.03       |
 | I/O Register              | 0    | 252   | 0.00       |
 | User I/O                  | 8    | 84    | 9.52       |
 | -- Single-ended I/O       | 8    | 84    | 9.52       |
 | -- Differential I/O Pairs | 0    | 37    | 0.00       |
-| RAM64x18                  | 5    | 22    | 22.73      |
+| RAM64x18                  | 9    | 22    | 40.91      |
 | RAM1K18                   | 0    | 21    | 0.00       |
 | MACC                      | 0    | 22    | 0.00       |
 | Chip Globals              | 4    | 8     | 50.00      |
@@ -58,11 +58,11 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 329  | 161 |
-| RAM64x18 Interface Logic | 180  | 180 |
+| Fabric Logic             | 341  | 163 |
+| RAM64x18 Interface Logic | 324  | 324 |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 0    | 0   |
-| Total Used               | 509  | 341 |
+| Total Used               | 665  | 487 |
 +--------------------------+------+-----+
 
 Detailed Carry Chains Resource Usage
@@ -106,14 +106,14 @@ Nets assigned to chip global resources
 +--------+---------+---------------------------------------------------------------------------------------------------------------------+
 | Fanout | Type    | Name                                                                                                                |
 +--------+---------+---------------------------------------------------------------------------------------------------------------------+
-| 153    | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/FCCC_C0_0_GL0                                                                   |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1                                            |
+| 167    | INT_NET | Net   : FCCC_C0_0_GL0                                                                                               |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1                                                                        |
 |        |         | Source: NETLIST                                                                                                     |
-| 108    | INT_NET | Net   : Board_J7_c[1]                                                                                               |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI5R5B/U0_RGB1                              |
+| 109    | INT_NET | Net   : Board_J7_c[1]                                                                                               |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF/U0_RGB1                                                          |
 |        |         | Source: NETLIST                                                                                                     |
 | 28     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/rstn_i_i                                                     |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/Driver_reg_ctrl_RNICS6C_0[0]/U0_RGB1                         |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/rstn_i_0_RNI01NC/U0_RGB1                                     |
 |        |         | Source: NETLIST                                                                                                     |
 | 22     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/CLK_SPI_sig                                                  |
 |        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIQ0N4/U0_RGB1 |
@@ -127,54 +127,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+-------------------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                          |
-+--------+---------+-------------------------------------------------------------------------------+
-| 25     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[4]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]   |
-| 23     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start            |
-| 21     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[0]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]   |
-| 20     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[1]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]   |
-| 19     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]           |
-| 17     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send            |
-| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]           |
-| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]    |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]    |
-| 14     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/INSTR_SCMD[0]                             |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_SCMD_Z[0] |
-| 14     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]           |
-+--------+---------+-------------------------------------------------------------------------------+
++--------+---------+----------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                       |
++--------+---------+----------------------------------------------------------------------------+
+| 32     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z       |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start         |
+| 19     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[4]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]                            |
+| 19     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z       |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send         |
+| 17     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[0]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]                            |
+| 17     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]        |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]        |
+| 16     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[1]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]                            |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5] |
++--------+---------+----------------------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+-------------------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                          |
-+--------+---------+-------------------------------------------------------------------------------+
-| 25     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[4]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]   |
-| 23     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start            |
-| 21     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[0]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]   |
-| 20     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[1]          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]   |
-| 19     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]           |
-| 17     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z          |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send            |
-| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]           |
-| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]    |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]    |
-| 14     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/INSTR_SCMD[0]                             |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_SCMD_Z[0] |
-| 14     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]           |
-|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]           |
-+--------+---------+-------------------------------------------------------------------------------+
++--------+---------+----------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                       |
++--------+---------+----------------------------------------------------------------------------+
+| 32     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z       |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start         |
+| 19     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[4]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]                            |
+| 19     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z       |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send         |
+| 17     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[0]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]                            |
+| 17     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]        |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]        |
+| 16     | INT_NET | Net   : COREABC_C0_0_APB3master_PADDR[1]                                   |
+|        |         | Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]                            |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6] |
+| 16     | INT_NET | Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5] |
+|        |         | Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5] |
++--------+---------+----------------------------------------------------------------------------+
 

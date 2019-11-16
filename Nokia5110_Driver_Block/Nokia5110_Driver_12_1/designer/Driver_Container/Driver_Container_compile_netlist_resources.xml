@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Sat Nov  9 00:56:33 2019
+<text>Date: Sat Nov 16 02:18:41 2019
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>509</cell>
+ <cell>665</cell>
  <cell>12084</cell>
- <cell>4.21</cell>
+ <cell>5.50</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>341</cell>
+ <cell>487</cell>
  <cell>12084</cell>
- <cell>2.82</cell>
+ <cell>4.03</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -142,9 +142,9 @@
 </row>
 <row>
  <cell>RAM64x18</cell>
- <cell>5</cell>
+ <cell>9</cell>
  <cell>22</cell>
- <cell>22.73</cell>
+ <cell>40.91</cell>
 </row>
 <row>
  <cell>RAM1K18</cell>
@@ -204,13 +204,13 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>329</cell>
- <cell>161</cell>
+ <cell>341</cell>
+ <cell>163</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
- <cell>180</cell>
- <cell>180</cell>
+ <cell>324</cell>
+ <cell>324</cell>
 </row>
 <row>
  <cell>RAM1K18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>509</cell>
- <cell>341</cell>
+ <cell>665</cell>
+ <cell>487</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -346,14 +346,14 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>153</cell>
+ <cell>167</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/FCCC_C0_0_GL0</cell>
+ <cell>Net   : FCCC_C0_0_GL0</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
+ <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -361,14 +361,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>108</cell>
+ <cell>109</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Board_J7_c[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI5R5B/U0_RGB1</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -383,7 +383,7 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/Driver_reg_ctrl_RNICS6C_0[0]/U0_RGB1</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/rstn_i_0_RNI01NC/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -422,17 +422,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>25</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[4]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</cell>
-</row>
-<row>
- <cell>23</cell>
+ <cell>32</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z</cell>
 </row>
@@ -442,37 +432,17 @@
  <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start</cell>
 </row>
 <row>
- <cell>21</cell>
+ <cell>19</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[0]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</cell>
-</row>
-<row>
- <cell>20</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</cell>
 </row>
 <row>
  <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
-</row>
-<row>
- <cell>17</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z</cell>
 </row>
@@ -482,44 +452,74 @@
  <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send</cell>
 </row>
 <row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</cell>
 </row>
 <row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8]</cell>
 </row>
 <row>
- <cell>14</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/INSTR_SCMD[0]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_SCMD_Z[0]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7]</cell>
 </row>
 <row>
- <cell>14</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -530,17 +530,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>25</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[4]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</cell>
-</row>
-<row>
- <cell>23</cell>
+ <cell>32</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start_Z</cell>
 </row>
@@ -550,37 +540,17 @@
  <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/frame_start</cell>
 </row>
 <row>
- <cell>21</cell>
+ <cell>19</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[0]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</cell>
-</row>
-<row>
- <cell>20</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0_APB3master_PADDR[1]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</cell>
 </row>
 <row>
  <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
-</row>
-<row>
- <cell>17</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send_Z</cell>
 </row>
@@ -590,44 +560,74 @@
  <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/screen_send</cell>
 </row>
 <row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</cell>
+</row>
+<row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/LCD_State[0]</cell>
+</row>
+<row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[1]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</cell>
 </row>
 <row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_CMD[0]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[8]</cell>
 </row>
 <row>
- <cell>14</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/INSTR_SCMD[0]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/COREABC_C0_0/COREABC_C0_0/INSTR_SCMD_Z[0]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[7]</cell>
 </row>
 <row>
- <cell>14</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/init_step[2]</cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[6]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/uSRAM_A_ADDR_sig[5]</cell>
 </row>
 </table>
 </doc>

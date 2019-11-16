@@ -23,8 +23,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>timerZ1|timer_clock_out_sig_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>269.1 MHz</data>
-<data>6.284</data>
+<data>273.5 MHz</data>
+<data>6.344</data>
 </row>
 <row>
 <data>System</data>

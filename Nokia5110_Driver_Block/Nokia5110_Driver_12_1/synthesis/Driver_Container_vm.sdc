@@ -1,8 +1,8 @@
-# Written by Synplify Pro version mapact, Build 2461R. Synopsys Run ID: sid1573278986 
+# Written by Synplify Pro version mapact, Build 2461R. Synopsys Run ID: sid1573888712 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 10.000 -waveform {0.000 5.000} -name {FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock} [get_pins {Nokia5110_Driver_Block_SD_0/FCCC_C0_0/FCCC_C0_0/CCC_INST/GL0}] 
+create_clock -period 10.000 -waveform {0.000 5.000} -name {FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock} [get_pins {FCCC_C0_0/FCCC_C0_0/CCC_INST/GL0}] 
 create_clock -period 10.000 -waveform {0.000 5.000} -name {timerZ1|timer_clock_out_sig_inferred_clock} [get_pins {Nokia5110_Driver_Block_SD_0/Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig/Q}] 
 
 # Virtual Clocks 

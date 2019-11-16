@@ -6,7 +6,7 @@ https://www.digikey.com/product-detail/en/microsemi-corporation/M2S010-MKR-KIT/1
 Project Chronology:
 
 1. Basic_VHDL_Thing
-    * Hardware port validation
+    * Hardware I/O validation
 1. APB3_Practice
     * APB3 AMBA Bus
     * IP Core: I2C

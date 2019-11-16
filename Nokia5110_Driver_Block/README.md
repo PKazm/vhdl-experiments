@@ -4,6 +4,8 @@ This project builds off of the Nokia5110_first project and is intended to create
 
 Nokia5110_Driver.vhd describes the control logic for an SPI master to the LCD, control logic to read/write to hard uSRAM blocks located within the FPGA fabric, and an APB slave interface to connect to the larger system.
 
+This code needs to be cleaned up.
+
 The uSRAM has been changed from catalog cores to inferred uSRAM blocks. These are written in a way that Synplify Pro will infer the HDL to the appropriate number of hard uSRAM blocks. Will this break with new software updates? Who knows. This also allows for the use of generate statements that can enable or disable a frame buffer to eliminate screen tearing as well as a single VHDL file to import to other projects.
 The frame buffer is a duplicated memory block that an external Master can write to. Upon completion of a frame the Master will toggle a bit in the control register that sets future writes to the alternate frame memory and tells the LCD driver to read from the completed frame memroy, this is equivalent to basic Vsync on computers today.
 

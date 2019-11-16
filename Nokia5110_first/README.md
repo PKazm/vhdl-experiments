@@ -1,4 +1,4 @@
-# Nokia5110_basic
+# Nokia5110_first
 
 This project focused on creating a custom VHDL core to drive a Nokia5110 LCD.
 

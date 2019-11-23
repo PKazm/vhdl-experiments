@@ -12,17 +12,20 @@ Project Chronology:
     * IP Core: I2C
     * IP Core: timer
     * VHDL I2C slave
-1. Ultimate LED Controller (builds off APB3_Practice)
+1. Ultimate LED Controller
+    * Builds off APB3_Practice
     * PWM
     * I2C connection to onboard light sensor
 1. Nokia5110_first
     * write to Nokia5110 from RTL memory
     * SPI
-1. Nokia5110_Driver_Block (builds off Nokia5110_first)
+1. Nokia5110_Driver_Block (updated as bugs/features found in future projects)
+    * Builds off Nokia5110_first
     * Synplify Pro Infer uSRAM blocks
     * Generic controlled generated logic
     * LCD frame buffer
-1. Delta_Sigma_first (incorporates Nokia5110_Driver_Block)
+1. Delta_Sigma_first (WIP)
+    * Incorporates Nokia5110_Driver_Block
     * LVDS Analog to pulse bitstream
     * Pulse bitstream to quantized integer numbers
     * Convert integer values to pixel bars for graph display

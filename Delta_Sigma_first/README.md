@@ -5,6 +5,7 @@ This project is very much a work in progress.
 This project is for me to learn how a sigma-delta (delta-sigma) modulator works as well as implement it on an FPGA. The Nokia driver (from Nokia5110_Driver_Block) is also included as a way to view the data and waveforms created by the delta-sigma block.
 
 Delta_Sigma_Converter
+
 LVDS input at 20Mhz is sampled 2048 times. If the input is high (1), a value counter is incremented. If the input is low (0), the value counter is decremented. After 2048 samples, the value counter is stored in a register to be output while the value counter is reset to half its maximum value. This could probably be simplified to simply reset to zero and be 1 bit smaller but I haven't done that yet.
 
 Getting the LVDS input requires the positive input to be connect to the analog signal to be measured (between 0V and 3.3V). The previous value from the LVDS is fed back out of the FPGA through a standard IO pin (0 or 3.3V) and passed through a low pass filter to the negative side input of the LVDS. This LVDS feedback process results in a pulse signal where taking the average duration of high states for a given time will equate to the average percentage of the maximum voltage of the LVDS feedback system.

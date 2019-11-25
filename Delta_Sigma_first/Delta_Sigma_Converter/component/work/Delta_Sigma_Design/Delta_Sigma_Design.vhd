@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Nov 14 20:53:01 2019
+-- Created by SmartDesign Mon Nov 25 01:13:06 2019
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -148,22 +148,6 @@ component SYSRESET
         POWER_ON_RESET_N : out std_logic
         );
 end component;
--- URAM_C0
-component URAM_C0
-    -- Port list
-    port(
-        -- Inputs
-        A_ADDR : in  std_logic_vector(8 downto 0);
-        B_ADDR : in  std_logic_vector(8 downto 0);
-        CLK    : in  std_logic;
-        C_ADDR : in  std_logic_vector(8 downto 0);
-        C_BLK  : in  std_logic;
-        C_DIN  : in  std_logic_vector(7 downto 0);
-        -- Outputs
-        A_DOUT : out std_logic_vector(7 downto 0);
-        B_DOUT : out std_logic_vector(7 downto 0)
-        );
-end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
@@ -194,15 +178,8 @@ signal FCCC_C0_0_GL1_1                                    : std_logic;
 signal FCCC_C0_0_LOCK                                     : std_logic;
 signal INBUF_DIFF_0_Y                                     : std_logic;
 signal Nokia5110_Driver_0_driver_busy                     : std_logic;
-signal Nokia5110_Driver_0_uSRAM_A_ADDR                    : std_logic_vector(8 downto 0);
-signal Nokia5110_Driver_0_uSRAM_B_ADDR                    : std_logic_vector(8 downto 0);
-signal Nokia5110_Driver_0_uSRAM_C_ADDR                    : std_logic_vector(8 downto 0);
-signal Nokia5110_Driver_0_uSRAM_C_BLK                     : std_logic;
-signal Nokia5110_Driver_0_uSRAM_C_DIN                     : std_logic_vector(7 downto 0);
 signal OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal SYSRESET_0_POWER_ON_RESET_N                        : std_logic;
-signal URAM_C0_0_A_DOUT                                   : std_logic_vector(7 downto 0);
-signal URAM_C0_0_B_DOUT                                   : std_logic_vector(7 downto 0);
 signal ADC_feedback_net_1                                 : std_logic;
 signal ADC_feedback_net_2                                 : std_logic;
 signal Board_J7_0_net_0                                   : std_logic_vector(0 to 0);
@@ -234,22 +211,22 @@ signal COREABC_C0_0_APB3master_PWDATA_0_31to8             : std_logic_vector(31 
 signal COREABC_C0_0_APB3master_PWDATA_0_7to0              : std_logic_vector(7 downto 0);
 signal COREABC_C0_0_APB3master_PWDATA_0                   : std_logic_vector(31 downto 0);
 
+signal CoreAPB3_C0_0_APBmslave0_PADDR                     : std_logic_vector(31 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_1_7to0              : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_1                   : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_0_7to0              : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_0                   : std_logic_vector(7 downto 0);
-signal CoreAPB3_C0_0_APBmslave0_PADDR                     : std_logic_vector(31 downto 0);
 
+signal CoreAPB3_C0_0_APBmslave0_PRDATA                    : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0_31to8            : std_logic_vector(31 downto 8);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0_7to0             : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0                  : std_logic_vector(31 downto 0);
-signal CoreAPB3_C0_0_APBmslave0_PRDATA                    : std_logic_vector(7 downto 0);
 
+signal CoreAPB3_C0_0_APBmslave0_PWDATA_0_7to0             : std_logic_vector(7 downto 0);
+signal CoreAPB3_C0_0_APBmslave0_PWDATA_0                  : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PWDATA                    : std_logic_vector(31 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0             : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PWDATA_1                  : std_logic_vector(7 downto 0);
-signal CoreAPB3_C0_0_APBmslave0_PWDATA_0_7to0             : std_logic_vector(7 downto 0);
-signal CoreAPB3_C0_0_APBmslave0_PWDATA_0                  : std_logic_vector(7 downto 0);
 
 signal CoreAPB3_C0_0_APBmslave1_PRDATA_0_31to8            : std_logic_vector(31 downto 8);
 signal CoreAPB3_C0_0_APBmslave1_PRDATA_0_7to0             : std_logic_vector(7 downto 0);
@@ -315,10 +292,10 @@ begin
  CoreAPB3_C0_0_APBmslave0_PRDATA_0_7to0(7 downto 0) <= CoreAPB3_C0_0_APBmslave0_PRDATA(7 downto 0);
  CoreAPB3_C0_0_APBmslave0_PRDATA_0 <= ( CoreAPB3_C0_0_APBmslave0_PRDATA_0_31to8(31 downto 8) & CoreAPB3_C0_0_APBmslave0_PRDATA_0_7to0(7 downto 0) );
 
- CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0(7 downto 0) <= CoreAPB3_C0_0_APBmslave0_PWDATA(7 downto 0);
- CoreAPB3_C0_0_APBmslave0_PWDATA_1 <= ( CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0(7 downto 0) );
  CoreAPB3_C0_0_APBmslave0_PWDATA_0_7to0(7 downto 0) <= CoreAPB3_C0_0_APBmslave0_PWDATA(7 downto 0);
  CoreAPB3_C0_0_APBmslave0_PWDATA_0 <= ( CoreAPB3_C0_0_APBmslave0_PWDATA_0_7to0(7 downto 0) );
+ CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0(7 downto 0) <= CoreAPB3_C0_0_APBmslave0_PWDATA(7 downto 0);
+ CoreAPB3_C0_0_APBmslave0_PWDATA_1 <= ( CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0(7 downto 0) );
 
  CoreAPB3_C0_0_APBmslave1_PRDATA_0_31to8(31 downto 8) <= B"000000000000000000000000";
  CoreAPB3_C0_0_APBmslave1_PRDATA_0_7to0(7 downto 0) <= CoreAPB3_C0_0_APBmslave1_PRDATA(7 downto 0);
@@ -387,7 +364,7 @@ CoreAPB3_C0_0 : CoreAPB3_C0
 Delta_Sigma_Converter_0 : entity work.Delta_Sigma_Converter
     generic map( 
         g_data_bits  => ( 12 ),
-        g_sample_div => ( 256 )
+        g_sample_div => ( 2048 )
         )
     port map( 
         -- Inputs
@@ -429,10 +406,11 @@ INBUF_DIFF_0 : INBUF_DIFF
 -- Nokia5110_Driver_0
 Nokia5110_Driver_0 : entity work.Nokia5110_Driver
     generic map( 
-        g_clk_period  => ( 10 ),
-        g_clk_spi_div => ( 50 ),
-        g_frame_size  => ( 8 ),
-        g_update_rate => ( 1 )
+        g_clk_period   => ( 10 ),
+        g_clk_spi_div  => ( 50 ),
+        g_frame_buffer => ( 1 ),
+        g_frame_size   => ( 8 ),
+        g_update_rate  => ( 1 )
         )
     port map( 
         -- Inputs
@@ -443,8 +421,6 @@ Nokia5110_Driver_0 : entity work.Nokia5110_Driver
         PWRITE       => CoreAPB3_C0_0_APBmslave0_PWRITE,
         PADDR        => CoreAPB3_C0_0_APBmslave0_PADDR_0,
         PWDATA       => CoreAPB3_C0_0_APBmslave0_PWDATA_0,
-        uSRAM_A_DOUT => URAM_C0_0_A_DOUT,
-        uSRAM_B_DOUT => URAM_C0_0_B_DOUT,
         -- Outputs
         driver_busy  => Nokia5110_Driver_0_driver_busy,
         SPIDO        => Board_J7_1,
@@ -454,12 +430,7 @@ Nokia5110_Driver_0 : entity work.Nokia5110_Driver
         RSTout       => Board_J7_3,
         PREADY       => CoreAPB3_C0_0_APBmslave0_PREADY,
         PSLVERR      => CoreAPB3_C0_0_APBmslave0_PSLVERR,
-        uSRAM_C_BLK  => Nokia5110_Driver_0_uSRAM_C_BLK,
-        PRDATA       => CoreAPB3_C0_0_APBmslave0_PRDATA,
-        uSRAM_A_ADDR => Nokia5110_Driver_0_uSRAM_A_ADDR,
-        uSRAM_B_ADDR => Nokia5110_Driver_0_uSRAM_B_ADDR,
-        uSRAM_C_ADDR => Nokia5110_Driver_0_uSRAM_C_ADDR,
-        uSRAM_C_DIN  => Nokia5110_Driver_0_uSRAM_C_DIN 
+        PRDATA       => CoreAPB3_C0_0_APBmslave0_PRDATA 
         );
 -- OSC_C0_0
 OSC_C0_0 : OSC_C0
@@ -474,20 +445,6 @@ SYSRESET_0 : SYSRESET
         DEVRST_N         => DEVRST_N,
         -- Outputs
         POWER_ON_RESET_N => SYSRESET_0_POWER_ON_RESET_N 
-        );
--- URAM_C0_0
-URAM_C0_0 : URAM_C0
-    port map( 
-        -- Inputs
-        C_BLK  => Nokia5110_Driver_0_uSRAM_C_BLK,
-        CLK    => FCCC_C0_0_GL0,
-        C_DIN  => Nokia5110_Driver_0_uSRAM_C_DIN,
-        A_ADDR => Nokia5110_Driver_0_uSRAM_A_ADDR,
-        B_ADDR => Nokia5110_Driver_0_uSRAM_B_ADDR,
-        C_ADDR => Nokia5110_Driver_0_uSRAM_C_ADDR,
-        -- Outputs
-        A_DOUT => URAM_C0_0_A_DOUT,
-        B_DOUT => URAM_C0_0_B_DOUT 
         );
 
 end RTL;

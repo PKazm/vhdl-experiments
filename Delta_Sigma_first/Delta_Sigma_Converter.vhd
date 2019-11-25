@@ -21,6 +21,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+library synplify;
+
 entity Delta_Sigma_Converter is
 generic (
     g_sample_div : natural := 256;
@@ -58,6 +60,11 @@ port (
 );
 end Delta_Sigma_Converter;
 architecture architecture_Delta_Sigma_Converter of Delta_Sigma_Converter is
+
+    attribute syn_radhardlevel : string;
+    attribute syn_radhardlevel of architecture_Delta_Sigma_Converter : architecture is "tmr";
+
+
     -- signal, component etc. declarations
 
     signal CLK_OSample_last : std_logic := '0';
@@ -177,7 +184,7 @@ begin
 			pwm_counter <= 0;
 			pwm_interrupt <= '0';
 			pwm_interrupt_last <= '0';
-			pwm_quantized_counter <= (pwm_quantized_counter'high => '0', others => '1');
+			pwm_quantized_counter <= (pwm_quantized_counter'high => '0', others => '1');        -- This should be reducable by 1 bit
 			pwm_quantized_value <= (others => '0');
         elsif(rising_edge(CLK_OSample)) then
             pwm_interrupt_last <= pwm_interrupt;
@@ -195,6 +202,7 @@ begin
                 pwm_counter <= 0;
                 pwm_interrupt <= '1';
                 pwm_quantized_value <= pwm_quantized_counter;
+                pwm_quantized_counter <= (pwm_quantized_counter'high => '0', others => '1');
             elsif(pwm_counter = 1) then
                 pwm_counter <= pwm_counter + 1;
                 pwm_interrupt <= '0';
@@ -202,22 +210,6 @@ begin
                 pwm_counter <= pwm_counter + 1;
                 pwm_interrupt <= '0';
             end if;
-
-            --pwm_interrupt_last <= pwm_interrupt;
-            --if(pwm_counter = g_sample_div - 1) then
-            --    pwm_counter <= 0;
-            --    pwm_interrupt <= '1';
-            --    pwm_quantized_value <= pwm_quantized_counter;
-            --    pwm_quantized_counter <= (pwm_quantized_counter'high => '0', others => '1');
-            --else
-            --    pwm_counter <= pwm_counter + 1;
-            --    pwm_interrupt <= '0';
-            --    if(analog_FF = '1') then
-            --        pwm_quantized_counter <= pwm_quantized_counter + 1;
-            --    else
-            --        pwm_quantized_counter <= pwm_quantized_counter - 1;
-            --    end if;
-            --end if;
         end if;
     end process;
 

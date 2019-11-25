@@ -17,11 +17,11 @@ Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23
 @N|Running in 64-bit mode
 File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synwork\Delta_Sigma_Design_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 20:53:11 2019
+# Mon Nov 25 01:15:17 2019
 
 ###########################################################]

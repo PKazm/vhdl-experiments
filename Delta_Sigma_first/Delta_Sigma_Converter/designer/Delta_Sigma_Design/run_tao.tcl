@@ -22,13 +22,11 @@ read_vhdl -mode vhdl_2008 -lib COREAPB3_LIB {C:\Users\Phoenix136\Dropbox\FPGA\Mi
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\FCCC_C0\FCCC_C0.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\timer.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\Nokia5110_Driver.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\OSC_C0\OSC_C0.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd}
-read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\URAM_C0\URAM_C0.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\Delta_Sigma_Converter.vhd}
+read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\timer.vhd}
+read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\Nokia5110_Driver.vhd}
 read_vhdl -mode vhdl_2008 {C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\component\work\Delta_Sigma_Design\Delta_Sigma_Design.vhd}
 set_top_level {Delta_Sigma_Design}
 map_netlist

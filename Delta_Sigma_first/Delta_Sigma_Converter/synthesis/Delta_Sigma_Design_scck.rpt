@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Thu Nov 14 20:53:11 2019
+# Written on Mon Nov 25 01:15:17 2019
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\synthesis.fdc"
@@ -35,9 +35,9 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     219  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     263  
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     100  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_2     103  
                                                                                                                                   
 0 -       timerZ1|timer_clock_out_sig_inferred_clock        100.0 MHz     10.000        inferred     Inferred_clkgroup_1     34   
 ==================================================================================================================================
@@ -46,14 +46,14 @@ Level     Clock                                             Frequency     Period
 Clock Load Summary
 ******************
 
-                                                  Clock     Source                                                          Clock Pin                                                 Non-clock Pin                               Non-clock Pin                               
-Clock                                             Load      Pin                                                             Seq Example                                               Seq Example                                 Comb Example                                
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            0         -                                                               -                                                         -                                           -                                           
-                                                                                                                                                                                                                                                                              
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     219       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                           URAM_C0_0.URAM_C0_0.URAM_C0_URAM_C0_0_URAM_R0C0.C_CLK     -                                           FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
-                                                                                                                                                                                                                                                                              
-FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)                           Delta_Sigma_Converter_0.analog_FF.C                       -                                           FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)        
-                                                                                                                                                                                                                                                                              
-timerZ1|timer_clock_out_sig_inferred_clock        34        Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.Q[0](dffe)     Nokia5110_Driver_0.LCD_timer.timer_indic_sig.C            Nokia5110_Driver_0.SPICLK_last_sig.D[0]     Nokia5110_Driver_0.un1_CLK_SPI_sig.I[0](inv)
-==============================================================================================================================================================================================================================================================================
+                                                  Clock     Source                                                          Clock Pin                                          Non-clock Pin                               Non-clock Pin                               
+Clock                                             Load      Pin                                                             Seq Example                                        Seq Example                                 Comb Example                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                                               -                                                  -                                           -                                           
+                                                                                                                                                                                                                                                                       
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     263       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)                           Nokia5110_Driver_0.timer_indicator_last_sig.C      -                                           FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)        
+                                                                                                                                                                                                                                                                       
+FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     103       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)                           Delta_Sigma_Converter_0.analog_FF.C                -                                           FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)        
+                                                                                                                                                                                                                                                                       
+timerZ1|timer_clock_out_sig_inferred_clock        34        Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig.Q[0](dffe)     Nokia5110_Driver_0.LCD_timer.timer_indic_sig.C     Nokia5110_Driver_0.SPICLK_last_sig.D[0]     Nokia5110_Driver_0.un1_CLK_SPI_sig.I[0](inv)
+=======================================================================================================================================================================================================================================================================

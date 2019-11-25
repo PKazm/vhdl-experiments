@@ -7,16 +7,16 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 309 clock pin(s) of sequential element(s)
-0 instances converted, 309 sequential instances remain driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 837 clock pin(s) of sequential element(s)
+0 instances converted, 837 sequential instances remain driven by gated/generated clocks
 
-======================================================================================================================== Gated/Generated Clocks ========================================================================================================================
-Clock Tree ID     Driving Element                                      Drive Element Type     Fanout     Sample Instance                                  Explanation                                                                                                   
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    188        Nokia5110_Driver_0.screen_send                   Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST                         CCC                    99         Delta_Sigma_Converter_0.pwm_counter[7]           Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0003       Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig     SLE                    22         Nokia5110_Driver_0.LCD_timer.timer_indic_sig     No generated or derived clock directive on output of sequential instance                                      
-========================================================================================================================================================================================================================================================================
+=============================================================================================================================== Gated/Generated Clocks ===============================================================================================================================
+Clock Tree ID     Driving Element                                                   Drive Element Type     Fanout     Sample Instance                                   Explanation                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST                                      CCC                    465        Nokia5110_Driver_0.uSRAM_A_ADDR_sig_tmr3[2]       Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST                                      CCC                    306        Delta_Sigma_Converter_0.pwm_counter_tmr3[6]       Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig_voter_SYN_VL     CFG3                   66         Nokia5110_Driver_0.LCD_timer.counter_tmr3[15]     No clocks found on inputs                                                                                     
+======================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

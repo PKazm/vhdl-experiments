@@ -31,7 +31,7 @@
     <body>
         <h1 align="center">Resource Report</h1>
         <p>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</p>
-        <p>Date: Sat Nov  9 03:29:21 2019
+        <p>Date: Mon Nov 25 01:15:29 2019
 </p>
         <h2>Device Selection</h2>
         <table cellpadding="4">
@@ -131,15 +131,15 @@
             </tr>
             <tr>
                 <td>4LUT</td>
-                <td>812</td>
+                <td>1478</td>
                 <td>12084</td>
-                <td>6.72</td>
+                <td>12.23</td>
             </tr>
             <tr>
                 <td>DFF</td>
-                <td>491</td>
+                <td>1169</td>
                 <td>12084</td>
-                <td>4.06</td>
+                <td>9.67</td>
             </tr>
             <tr>
                 <td>I/O Register</td>
@@ -167,9 +167,9 @@
             </tr>
             <tr>
                 <td>RAM64x18</td>
-                <td>6</td>
+                <td>10</td>
                 <td>22</td>
-                <td>27.27</td>
+                <td>45.45</td>
             </tr>
             <tr>
                 <td>RAM1K18</td>
@@ -185,9 +185,9 @@
             </tr>
             <tr>
                 <td>Chip Globals</td>
-                <td>4</td>
+                <td>5</td>
                 <td>8</td>
-                <td>50.00</td>
+                <td>62.50</td>
             </tr>
             <tr>
                 <td>CCC</td>
@@ -229,13 +229,13 @@
             </tr>
             <tr>
                 <td>Fabric Logic</td>
-                <td>596</td>
-                <td>275</td>
+                <td>1118</td>
+                <td>809</td>
             </tr>
             <tr>
                 <td>RAM64x18 Interface Logic</td>
-                <td>216</td>
-                <td>216</td>
+                <td>360</td>
+                <td>360</td>
             </tr>
             <tr>
                 <td>RAM1K18 Interface Logic</td>
@@ -249,8 +249,8 @@
             </tr>
             <tr>
                 <td>Total Used</td>
-                <td>812</td>
-                <td>491</td>
+                <td>1478</td>
+                <td>1169</td>
             </tr>
         </table>
         <h2>Detailed Carry Chains Resource Usage</h2>
@@ -266,14 +266,22 @@
             </tr>
             <tr>
                 <td>7</td>
-                <td>1</td>
+                <td>3</td>
             </tr>
             <tr>
                 <td>8</td>
-                <td>4</td>
+                <td>2</td>
             </tr>
             <tr>
                 <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>12</td>
                 <td>1</td>
             </tr>
             <tr>
@@ -282,7 +290,7 @@
             </tr>
             <tr>
                 <td>Total</td>
-                <td>8</td>
+                <td>10</td>
             </tr>
         </table>
         <h2>I/O Function</h2>
@@ -382,22 +390,7 @@
                 <th>Name</th>
             </tr>
             <tr>
-                <td>255</td>
-                <td>INT_NET</td>
-                <td>Net   : FCCC_C0_0_GL0</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Source: NETLIST</td>
-            </tr>
-            <tr>
-                <td>221</td>
+                <td>668</td>
                 <td>INT_NET</td>
                 <td>Net   : Board_J7_c[3]</td>
             </tr>
@@ -412,14 +405,14 @@
                 <td>Source: NETLIST</td>
             </tr>
             <tr>
-                <td>26</td>
+                <td>465</td>
                 <td>INT_NET</td>
-                <td>Net   : Nokia5110_Driver_0/rstn_i_i</td>
+                <td>Net   : FCCC_C0_0_GL0</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1</td>
+                <td>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</td>
             </tr>
             <tr>
                 <td/>
@@ -427,14 +420,44 @@
                 <td>Source: NETLIST</td>
             </tr>
             <tr>
-                <td>22</td>
+                <td>306</td>
+                <td>INT_NET</td>
+                <td>Net   : FCCC_C0_0_GL1_1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: FCCC_C0_0/FCCC_C0_0/GL1_INST/U0_RGB1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Source: NETLIST</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>INT_NET</td>
+                <td>Net   : Nokia5110_Driver_0/rstn_i_i</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: Nokia5110_Driver_0/Driver_reg_ctrl_voter_SYN_VL_RNIJEEG_0[0]/U0_RGB1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Source: NETLIST</td>
+            </tr>
+            <tr>
+                <td>66</td>
                 <td>INT_NET</td>
                 <td>Net   : Nokia5110_Driver_0/CLK_SPI_sig</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1</td>
+                <td>Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_voter_SYN_VL_RNI9TCD/U0_RGB1</td>
             </tr>
             <tr>
                 <td/>
@@ -458,97 +481,47 @@
                 <th>Name</th>
             </tr>
             <tr>
-                <td>50</td>
-                <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[0]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[1]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[7]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[7]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[6]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[6]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[5]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[5]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/un224_pwm_interrupt_last</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/p_pixel_bar_to_registers.un224_pwm_interrupt_last</td>
-            </tr>
-            <tr>
-                <td>32</td>
+                <td>65</td>
                 <td>INT_NET</td>
                 <td>Net   : Delta_Sigma_Converter_0/un4_pwm_interrupt_last</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last</td>
+                <td>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last_0_a2</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>37</td>
                 <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[4]</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</td>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/un3_readram</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>32</td>
                 <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[1]</td>
+                <td>Net   : COREABC_C0_0_APB3master_PADDR[0]</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[1]</td>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>31</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</td>
+            </tr>
+            <tr>
+                <td>31</td>
                 <td>INT_NET</td>
                 <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</td>
             </tr>
@@ -556,6 +529,56 @@
                 <td/>
                 <td/>
                 <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[4]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[4]</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0_APB3master_PADDR[4]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[16]</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : Nokia5110_Driver_0/frame_start_i</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: Nokia5110_Driver_0/frame_start_1_voter_SYN_VL</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</td>
             </tr>
         </table>
         <h2>High fanout nets (through buffer trees)</h2>
@@ -566,97 +589,47 @@
                 <th>Name</th>
             </tr>
             <tr>
-                <td>50</td>
-                <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[0]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[0]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[1]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[1]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[7]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[7]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[6]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[6]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[5]</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[5]</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td>INT_NET</td>
-                <td>Net   : Delta_Sigma_Converter_0/un224_pwm_interrupt_last</td>
-            </tr>
-            <tr>
-                <td/>
-                <td/>
-                <td>Driver: Delta_Sigma_Converter_0/p_pixel_bar_to_registers.un224_pwm_interrupt_last</td>
-            </tr>
-            <tr>
-                <td>32</td>
+                <td>65</td>
                 <td>INT_NET</td>
                 <td>Net   : Delta_Sigma_Converter_0/un4_pwm_interrupt_last</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last</td>
+                <td>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last_0_a2</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>37</td>
                 <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0_APB3master_PADDR[4]</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/INSTR_ADDR[4]</td>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/un3_readram</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>32</td>
                 <td>INT_NET</td>
-                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[1]</td>
+                <td>Net   : COREABC_C0_0_APB3master_PADDR[0]</td>
             </tr>
             <tr>
                 <td/>
                 <td/>
-                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[1]</td>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</td>
             </tr>
             <tr>
-                <td>25</td>
+                <td>31</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</td>
+            </tr>
+            <tr>
+                <td>31</td>
                 <td>INT_NET</td>
                 <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</td>
             </tr>
@@ -664,6 +637,56 @@
                 <td/>
                 <td/>
                 <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[4]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[4]</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0_APB3master_PADDR[4]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[16]</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : Nokia5110_Driver_0/frame_start_i</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: Nokia5110_Driver_0/frame_start_1_voter_SYN_VL</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>INT_NET</td>
+                <td>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</td>
             </tr>
         </table>
     </body>

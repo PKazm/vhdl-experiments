@@ -22,10 +22,11 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/COMPILE/Delta_Sigma_Design.afl'
+data AFL 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/Delta_Sigma_Design.afl'
 data ADL 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/Delta_Sigma_Design.adl'
-data LOC 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/COMPILE/Delta_Sigma_Design.loc'
-data SEG 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/COMPILE/Delta_Sigma_Design.seg'
+data LOC 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/Delta_Sigma_Design.loc'
+data SEG 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/Delta_Sigma_Design.seg'
+data NMAT_PDC 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/designer/Delta_Sigma_Design/Delta_Sigma_Design.nmatinit.pdc'
 
 data IO_PDC_0 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/constraint/io/Digikey_Smartfusion2_Maker_Kit.pdc'
 data IO_PDC_1 'C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Delta_Sigma_Converter/constraint/io/user1.pdc'

@@ -58,7 +58,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\COREABC\3.7.101\COREABC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="480"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 ENDFILE
@@ -191,7 +191,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573702132"
+TIME="1573846106"
 SIZE="241"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
@@ -225,40 +225,34 @@ END_USE_CONSTRAINT
 USE_FOR_ANY_TOOL="FALSE"
 IS_READONLY="TRUE"
 ENDFILE
-VALUE "<project>\component\Actel\SgCore\URAM\1.0.101\URAM.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573106198"
-SIZE="241"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573779554"
-SIZE="9868"
+TIME="1574660749"
+SIZE="10359"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="11098"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\CoreABC.log,log"
 STATE="utd"
-TIME="1573779553"
-SIZE="1856"
+TIME="1574660748"
+SIZE="1886"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="4820"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\coreparameters_tgi.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="2251"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -266,7 +260,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="1780"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -274,7 +268,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="4393"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -282,7 +276,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="42290"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -290,7 +284,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="16563"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -298,15 +292,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
-SIZE="100563"
+TIME="1574660748"
+SIZE="101311"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="2399"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -314,7 +308,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="11287"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -322,7 +316,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="3379"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -330,7 +324,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="5244"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -338,7 +332,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="1752"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -346,7 +340,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="1745"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -354,7 +348,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="16192"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -362,15 +356,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd,hdl"
 STATE="utd"
-TIME="1573779664"
-SIZE="49005"
+TIME="1574660886"
+SIZE="49003"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
-IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="5434"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -378,7 +371,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="11824"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -386,7 +379,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd,tb_hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="21961"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -396,7 +389,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="23371"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -404,7 +397,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd,hdl"
 STATE="utd"
-TIME="1573779553"
+TIME="1574660748"
 SIZE="21261"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -424,37 +417,37 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Delta_Sigma_Design\Delta_Sigma_Design.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573779558"
-SIZE="4094"
+TIME="1574662387"
+SIZE="4011"
 ENDFILE
 VALUE "<project>\component\work\Delta_Sigma_Design\Delta_Sigma_Design.vhd,hdl"
 STATE="utd"
-TIME="1573779557"
-SIZE="22344"
+TIME="1574662386"
+SIZE="20419"
 PARENT="<project>\component\work\Delta_Sigma_Design\Delta_Sigma_Design.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573702132"
+TIME="1573846106"
 SIZE="10592"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
 STATE="utd"
-TIME="1573702132"
+TIME="1573846106"
 SIZE="3450"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1573702132"
+TIME="1573846106"
 SIZE="705"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1573702132"
+TIME="1573846106"
 SIZE="5700"
 PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
 IS_READONLY="TRUE"
@@ -482,31 +475,6 @@ STATE="utd"
 TIME="1572468257"
 SIZE="896"
 PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573106199"
-SIZE="7290"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0.vhd,hdl"
-STATE="utd"
-TIME="1573106199"
-SIZE="3746"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf,actgen_cxf"
-STATE="utd"
-TIME="1573106198"
-SIZE="1223"
-PARENT="<project>\component\work\URAM_C0\URAM_C0.cxf"
-ENDFILE
-VALUE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
-STATE="utd"
-TIME="1573106198"
-SIZE="23786"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
@@ -542,13 +510,13 @@ SIZE="3524"
 ENDFILE
 VALUE "<project>\hdl\Delta_Sigma_Converter.vhd,hdl"
 STATE="utd"
-TIME="1573770109"
-SIZE="10120"
+TIME="1574662382"
+SIZE="9694"
 ENDFILE
 VALUE "<project>\hdl\Nokia5110_Driver.vhd,hdl"
 STATE="utd"
-TIME="1573544524"
-SIZE="25258"
+TIME="1574662507"
+SIZE="33064"
 ENDFILE
 VALUE "<project>\hdl\PWM_converter.vhd,hdl"
 STATE="utd"
@@ -562,7 +530,7 @@ SIZE="1523"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.log,log"
 STATE="utd"
-TIME="1573772635"
+TIME="1573882798"
 SIZE="407"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -577,74 +545,45 @@ TIME="1572988165"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
-VALUE "<project>\simulation\Delta_Sigma_tb_presynth_simulation.log,log"
-STATE="utd"
-TIME="1573781371"
-SIZE="330438"
-ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1573772627"
-SIZE="4827"
+TIME="1573882786"
+SIZE="4622"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1573779557"
+TIME="1574662386"
 SIZE="842"
 PARENT="<project>\component\work\Delta_Sigma_Design\Delta_Sigma_Design.cxf"
 ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-STATE="utd"
-TIME="1573106197"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-STATE="utd"
-TIME="1573106197"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-STATE="utd"
-TIME="1573106197"
-SIZE="1280"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
-STATE="utd"
-TIME="1573106197"
-SIZE="1200"
-PARENT="<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.cxf"
-ENDFILE
 VALUE "<project>\stimulus\Delta_Sigma_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1573772615"
-SIZE="6539"
+TIME="1574660396"
+SIZE="7051"
 ENDFILE
 VALUE "<project>\synthesis\Delta_Sigma_Design.so,so"
 STATE="utd"
-TIME="1573779687"
+TIME="1573884073"
 SIZE="275"
 ENDFILE
 VALUE "<project>\synthesis\Delta_Sigma_Design.vm,syn_vm"
 STATE="utd"
-TIME="1573779686"
-SIZE="295465"
+TIME="1573884072"
+SIZE="283954"
 ENDFILE
 VALUE "<project>\synthesis\Delta_Sigma_Design_syn.prj,prj"
 STATE="utd"
-TIME="1573779687"
-SIZE="6994"
+TIME="1573884073"
+SIZE="6713"
 ENDFILE
 VALUE "<project>\synthesis\Delta_Sigma_Design_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1573779686"
+TIME="1573884072"
 SIZE="1688"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1573779639"
+TIME="1573807973"
 SIZE="159"
 ENDFILE
 ENDLIST
@@ -671,15 +610,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-ENDLIST
-LIST "URAM_C0_URAM_C0_0_URAM::work"
-FILE "<project>\component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd,hdl"
-LIST Other_Association
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
 ENDLIST
 ENDLIST
 LIST "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib"
@@ -738,18 +668,12 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 ENDLIST
-LIST URAM_C0_URAM_C0_0_URAM
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R0C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R1C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R2C0.mem,sim"
-VALUE "<project>\simulation\URAM_C0_URAM_C0_0_URAM_R3C0.mem,sim"
-ENDLIST
 ENDLIST
 LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=200us
+RunTime=1250us
 Resolution=100ps
 VsimOpt=
 EntityName=Delta_Sigma_tb
@@ -812,8 +736,8 @@ NAME="SynplifyProME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -821,7 +745,7 @@ NAME="ModelSimME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l Delta_Sigma_tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -872,8 +796,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run PROGRAM Action:Delta_Sigma_Design_PROGRAM.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Delta_Sigma_Design;0
+Constraint Manager;Constraint Manager;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Averager::work","hdl\Averager.vhd","FALSE","FALSE"
@@ -892,12 +820,15 @@ LIST "Delta_Sigma_Design::work","component\work\Delta_Sigma_Design\Delta_Sigma_D
 SUBBLOCK "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
 SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
 SUBBLOCK "Delta_Sigma_Converter::work","hdl\Delta_Sigma_Converter.vhd","FALSE","FALSE"
+SUBBLOCK "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
 ENDLIST
 LIST "Delta_Sigma_Converter::work","hdl\Delta_Sigma_Converter.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
@@ -909,10 +840,6 @@ LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
-ENDLIST
-LIST "Nokia5110_Driver::work","hdl\Nokia5110_Driver.vhd","FALSE","FALSE"
-SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
-SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
@@ -927,11 +854,6 @@ ENDLIST
 LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
-ENDLIST
-LIST "URAM_C0::work","component\work\URAM_C0\URAM_C0.vhd","TRUE","FALSE"
-SUBBLOCK "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
-ENDLIST
-LIST "URAM_C0_URAM_C0_0_URAM::work","component\work\URAM_C0\URAM_C0_0\URAM_C0_URAM_C0_0_URAM.vhd","FALSE","FALSE"
 ENDLIST
 LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST

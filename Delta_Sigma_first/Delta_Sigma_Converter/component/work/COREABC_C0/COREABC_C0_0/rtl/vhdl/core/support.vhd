@@ -930,7 +930,7 @@ begin
                        if n>=3 then
                          vscmd(0) := to_logic(s2);
                          --vdata := conv_std_logic_vector( s3,FFW);
-                         vdata := conv_integer_to_flag_vector( s3);
+                        vdata := conv_integer_to_flag_vector(s3);
                        else
                          vdata(0) := '1';
                        end if;

@@ -14,11 +14,11 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>99</data>
+  <data>98</data>
   <report_link name="more"><data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synlog\report\Delta_Sigma_Design_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>70</data>
+  <data>75</data>
   <report_link name="more"><data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\synlog\report\Delta_Sigma_Design_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -29,13 +29,13 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>00h:00m:01s</data>
+  <data>00h:00m:02s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1573782789</data>
+  <data type="timestamp">1574662516</data>
   </info>
 			</job_info>
 </job_run_status>

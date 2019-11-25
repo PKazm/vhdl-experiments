@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Thu Nov 14 20:53:21 2019
+<text>Date: Mon Nov 25 01:15:29 2019
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>899</cell>
+ <cell>1478</cell>
  <cell>12084</cell>
- <cell>7.44</cell>
+ <cell>12.23</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>517</cell>
+ <cell>1169</cell>
  <cell>12084</cell>
- <cell>4.28</cell>
+ <cell>9.67</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -142,9 +142,9 @@
 </row>
 <row>
  <cell>RAM64x18</cell>
- <cell>6</cell>
+ <cell>10</cell>
  <cell>22</cell>
- <cell>27.27</cell>
+ <cell>45.45</cell>
 </row>
 <row>
  <cell>RAM1K18</cell>
@@ -204,13 +204,13 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>683</cell>
- <cell>301</cell>
+ <cell>1118</cell>
+ <cell>809</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
- <cell>216</cell>
- <cell>216</cell>
+ <cell>360</cell>
+ <cell>360</cell>
 </row>
 <row>
  <cell>RAM1K18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>899</cell>
- <cell>517</cell>
+ <cell>1478</cell>
+ <cell>1169</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -237,15 +237,23 @@
  <cell>Used</cell>
 </row>
 <row>
+ <cell>2</cell>
+ <cell>1</cell>
+</row>
+<row>
  <cell>7</cell>
  <cell>3</cell>
 </row>
 <row>
  <cell>8</cell>
- <cell>3</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>10</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>11</cell>
  <cell>1</cell>
 </row>
 <row>
@@ -258,7 +266,7 @@
 </row>
 <row>
  <cell>Total</cell>
- <cell>9</cell>
+ <cell>10</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -358,7 +366,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>243</cell>
+ <cell>668</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Board_J7_c[3]</cell>
 </row>
@@ -373,7 +381,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>188</cell>
+ <cell>465</cell>
  <cell>INT_NET</cell>
  <cell>Net   : FCCC_C0_0_GL0</cell>
 </row>
@@ -388,7 +396,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>99</cell>
+ <cell>306</cell>
  <cell>INT_NET</cell>
  <cell>Net   : FCCC_C0_0_GL1_1</cell>
 </row>
@@ -403,14 +411,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>28</cell>
+ <cell>84</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_0/rstn_i_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_0/rstn_i_0_RNIVLU5/U0_RGB1</cell>
+ <cell>Driver: Nokia5110_Driver_0/Driver_reg_ctrl_voter_SYN_VL_RNIJEEG_0[0]/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -418,14 +426,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>22</cell>
+ <cell>66</cell>
  <cell>INT_NET</cell>
  <cell>Net   : Nokia5110_Driver_0/CLK_SPI_sig</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_inferred_clock_RNIPHR7/U0_RGB1</cell>
+ <cell>Driver: Nokia5110_Driver_0/SPI_timer/timer_clock_out_sig_voter_SYN_VL_RNI9TCD/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -456,20 +464,10 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last</cell>
+ <cell>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last_0_a2</cell>
 </row>
 <row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]</cell>
-</row>
-<row>
- <cell>33</cell>
+ <cell>37</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z</cell>
 </row>
@@ -481,45 +479,15 @@
 <row>
  <cell>32</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[11]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[11]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</cell>
 </row>
 <row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[10]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[10]</cell>
-</row>
-<row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[9]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[9]</cell>
-</row>
-<row>
- <cell>29</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[14]</cell>
-</row>
-<row>
- <cell>27</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
 </row>
@@ -529,24 +497,64 @@
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
 </row>
 <row>
- <cell>25</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 <row>
- <cell>25</cell>
+ <cell>30</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_0_driver_busy</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_0/screen_send</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[4]</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[16]</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/frame_start_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/frame_start_1_voter_SYN_VL</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell>28</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -564,20 +572,10 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last</cell>
+ <cell>Driver: Delta_Sigma_Converter_0/p_pwm_to_pixel_bar.un4_pwm_interrupt_last_0_a2</cell>
 </row>
 <row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]</cell>
-</row>
-<row>
- <cell>33</cell>
+ <cell>37</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0/COREABC_C0_0/un3_readram_Z</cell>
 </row>
@@ -589,45 +587,15 @@
 <row>
  <cell>32</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[11]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[11]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</cell>
 </row>
 <row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[10]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[10]</cell>
-</row>
-<row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : Delta_Sigma_Converter_0/pwm_quantized_value[9]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: Delta_Sigma_Converter_0/pwm_quantized_value[9]</cell>
-</row>
-<row>
- <cell>29</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[14]</cell>
-</row>
-<row>
- <cell>27</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
 </row>
@@ -637,24 +605,64 @@
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
 </row>
 <row>
- <cell>25</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 <row>
- <cell>25</cell>
+ <cell>30</cell>
  <cell>INT_NET</cell>
- <cell>Net   : Nokia5110_Driver_0_driver_busy</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: Nokia5110_Driver_0/screen_send</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[4]</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[16]</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : Nokia5110_Driver_0/frame_start_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: Nokia5110_Driver_0/frame_start_1_voter_SYN_VL</cell>
+</row>
+<row>
+ <cell>29</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell>28</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
 </row>
 </table>
 </doc>

@@ -70,19 +70,20 @@ constant Sym_DSC_pixels0_ADDR : integer := 16;
 constant Sym_DSC_pixels1_ADDR : integer := 17;
 constant Sym_DSC_pixels2_ADDR : integer := 18;
 constant Sym_DSC_pixels3_ADDR : integer := 19;
+constant Sym_LCD_ctrl_ADDR : integer := 0;
 constant Sym_LCD_pixels_data_ADDR : integer := 16;
 constant Sym_LCD_pixels_X_ADDR : integer := 17;
 constant Sym_LCD_pixels_Y_ADDR : integer := 18;
 constant Sym_RAM_pixels : integer := 0;
 constant Sym_RAM_pixels_last : integer := 1;
 constant Sym_RAM_Y_pos : integer := 2;
-constant Label_Shift_Pixels : integer := 4;
-constant Label_save_y_pos : integer := 10;
-constant Label_MAIN : integer := 24;
-constant Label_clear_lcd : integer := 27;
-constant Label_WRT_Y_ADDDR : integer := 37;
-constant Label_WRT_X_ADDR : integer := 39;
-constant Label_Halt_Stuff : integer := 42;
+constant Label_Shift_Pixels : integer := 2;
+constant Label_save_y_pos : integer := 24;
+constant Label_MAIN : integer := 26;
+constant Label_clear_lcd : integer := 32;
+constant Label_WRT_Y_ADDDR : integer := 42;
+constant Label_WRT_X_ADDR : integer := 44;
+constant Label_Halt_Stuff : integer := 47;
 begin
 -- These are the procedure calls to create the instruction sequence
 PROM:
@@ -103,59 +104,70 @@ begin
    case ADDRINT is
       when  0 => INS <= doins( iJUMP, Label_MAIN);
       --   Check if Nokia5110 Driver is currently busy outputting LCD data
-      when  1 => INS <= doins( iIOREAD);
-      when  2 => INS <= doins( iCMP, iDAT8, 1);
-      when  3 => INS <= doins( iRETISR, iIF, iZERO);
+      when  1 => INS <= doins( iRETISR, iIF, iINPUT0);
       -- $Shift_Pixels
-      when  4 => INS <= doins( iRAMREAD, Sym_RAM_Y_pos);
-      when  5 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_X_ADDR);
-      when  6 => INS <= doins( iINC);
-      when  7 => INS <= doins( iCMP, iDAT, 84);
-      when  8 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_save_y_pos);
-      when  9 => INS <= doins( iLOAD, iDAT8, 0);
+      when  2 => INS <= doins( iRAMREAD, Sym_RAM_Y_pos);
+      when  3 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_X_ADDR);
+      when  4 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 1);
+      when  5 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels0_ADDR);
+      when  6 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
+      when  7 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 2);
+      when  8 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels1_ADDR);
+      when  9 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
+      when 10 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 3);
+      when 11 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels2_ADDR);
+      when 12 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
+      when 13 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 4);
+      when 14 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels3_ADDR);
+      when 15 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
+      when 16 => INS <= doins( iRAMREAD, Sym_RAM_Y_pos);
+      when 17 => INS <= doins( iINC);
+      when 18 => INS <= doins( iCMP, iDAT, 84);
+      when 19 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_save_y_pos);
+      --   change LCD frame buffer to write to
+      when 20 => INS <= doins( iAPBREAD, 0, Sym_LCD_ctrl_ADDR);
+      when 21 => INS <= doins( iXOR, iDAT8, 2#00000100#);
+      when 22 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_ctrl_ADDR);
+      when 23 => INS <= doins( iLOAD, iDAT8, 0);
       -- $save_y_pos
-      when 10 => INS <= doins( iRAMWRT, Sym_RAM_Y_pos, iACC);
-      when 11 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 1);
-      when 12 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels0_ADDR);
-      when 13 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
-      when 14 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 2);
-      when 15 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels1_ADDR);
-      when 16 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
-      when 17 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 3);
-      when 18 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels2_ADDR);
-      when 19 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
-      when 20 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 4);
-      when 21 => INS <= doins( iAPBREAD, 1, Sym_DSC_pixels3_ADDR);
-      when 22 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_data_ADDR);
-      when 23 => INS <= doins( iRETISR);
+      when 24 => INS <= doins( iRAMWRT, Sym_RAM_Y_pos, iACC);
+      when 25 => INS <= doins( iRETISR);
       -- $MAIN
       --  CALL Shift_Pixels
-      when 24 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_X_ADDR, 0);
-      when 25 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 0);
-      when 26 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_data_ADDR, 16#0F#);
+      --   set LCD to write to both frame buffers
+      when 26 => INS <= doins( iAPBREAD, 0, Sym_LCD_ctrl_ADDR);
+      when 27 => INS <= doins( iOR, iDAT8, 2#00001000#);
+      when 28 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_ctrl_ADDR);
+      when 29 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_X_ADDR, 0);
+      when 30 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_Y_ADDR, 0);
+      when 31 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_data_ADDR, 16#0F#);
       -- $clear_lcd
-      when 27 => INS <= doins( iAPBREAD, 0, Sym_LCD_pixels_X_ADDR);
-      when 28 => INS <= doins( iINC);
-      when 29 => INS <= doins( iCMP, iDAT8, 84);
-      when 30 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_WRT_X_ADDR);
-      when 31 => INS <= doins( iAPBREAD, 0, Sym_LCD_pixels_Y_ADDR);
-      when 32 => INS <= doins( iINC);
-      when 33 => INS <= doins( iCMP, iDAT8, 6);
-      when 34 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_WRT_Y_ADDDR);
-      when 35 => INS <= doins( iLOAD, iDAT8, 0);
-      when 36 => INS <= doins( iJUMP, Label_Halt_Stuff);
+      when 32 => INS <= doins( iAPBREAD, 0, Sym_LCD_pixels_X_ADDR);
+      when 33 => INS <= doins( iINC);
+      when 34 => INS <= doins( iCMP, iDAT8, 84);
+      when 35 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_WRT_X_ADDR);
+      when 36 => INS <= doins( iAPBREAD, 0, Sym_LCD_pixels_Y_ADDR);
+      when 37 => INS <= doins( iINC);
+      when 38 => INS <= doins( iCMP, iDAT8, 6);
+      when 39 => INS <= doins( iJUMP, iIFNOT, iZERO, Label_WRT_Y_ADDDR);
+      when 40 => INS <= doins( iLOAD, iDAT8, 0);
+      when 41 => INS <= doins( iJUMP, Label_Halt_Stuff);
       -- $WRT_Y_ADDDR
-      when 37 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_Y_ADDR);
-      when 38 => INS <= doins( iLOAD, iDAT8, 0);
+      when 42 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_Y_ADDR);
+      when 43 => INS <= doins( iLOAD, iDAT8, 0);
       -- $WRT_X_ADDR
       --   writes 0 if = 84, or writes source + 1
-      when 39 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_X_ADDR);
-      when 40 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_data_ADDR, 0);
-      when 41 => INS <= doins( iJUMP, Label_clear_lcd);
+      when 44 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_pixels_X_ADDR);
+      when 45 => INS <= doins( iAPBWRT, iDAT8, 0, Sym_LCD_pixels_data_ADDR, 0);
+      when 46 => INS <= doins( iJUMP, Label_clear_lcd);
       -- $Halt_Stuff
-      when 42 => INS <= doins( iRAMWRT, Sym_RAM_Y_pos, iDAT, 0);
-      when 43 => INS <= doins( iAPBWRT, iDAT8, 1, Sym_DSC_ctrl_ADDR, 2#00000001#);
-      when 44 => INS <= doins( iHALT);
+      --   set LCD stop writing to both frame buffers
+      when 47 => INS <= doins( iAPBREAD, 0, Sym_LCD_ctrl_ADDR);
+      when 48 => INS <= doins( iAND, iDAT8, 2#11110111#);
+      when 49 => INS <= doins( iAPBWRT, iACC, 0, Sym_LCD_ctrl_ADDR);
+      when 50 => INS <= doins( iRAMWRT, Sym_RAM_Y_pos, iDAT, 0);
+      when 51 => INS <= doins( iAPBWRT, iDAT8, 1, Sym_DSC_ctrl_ADDR, 2#00000001#);
+      when 52 => INS <= doins( iHALT);
       when others => INS <= ( others => '-');
    end case;
    ---------------------------------------------------------------------------------------------

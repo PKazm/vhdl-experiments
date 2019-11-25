@@ -1,3 +1,3 @@
-CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Nokia5110_Driver_0.screen_send@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Delta_Sigma_Converter_0.pwm_counter[7]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
-CKID0003:@|S:Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig@|E:Nokia5110_Driver_0.LCD_timer.timer_indic_sig@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Nokia5110_Driver_0.uSRAM_A_ADDR_sig_tmr3[2]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Delta_Sigma_Converter_0.pwm_counter_tmr3[6]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
+CKID0003:@|S:Nokia5110_Driver_0.SPI_timer.timer_clock_out_sig_voter_SYN_VL@|E:Nokia5110_Driver_0.LCD_timer.counter_tmr3[15]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 

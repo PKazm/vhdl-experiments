@@ -48,17 +48,15 @@ vcom -2008 -explicit  -work COREAPB3_LIB "${PROJECT_DIR}/component/Actel/DirectC
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/FCCC_C0/FCCC_C0.vhd"
-vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/timer.vhd"
-vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/Nokia5110_Driver.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/OSC_C0/OSC_C0.vhd"
-vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/URAM_C0/URAM_C0_0/URAM_C0_URAM_C0_0_URAM.vhd"
-vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/URAM_C0/URAM_C0.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/Delta_Sigma_Converter.vhd"
+vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/timer.vhd"
+vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/Nokia5110_Driver.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/Delta_Sigma_Design/Delta_Sigma_Design.vhd"
 vcom -2008 -explicit  -work COREABC_LIB "${PROJECT_DIR}/component/work/COREABC_C0/COREABC_C0_0/coreparameters_tgi.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/stimulus/Delta_Sigma_tb.vhd"
 
 vsim -L SmartFusion2 -L presynth -L COREABC_LIB -L COREAPB3_LIB  -t 100ps presynth.Delta_Sigma_tb
 add wave /Delta_Sigma_tb/*
-run 200us
+run 1250us

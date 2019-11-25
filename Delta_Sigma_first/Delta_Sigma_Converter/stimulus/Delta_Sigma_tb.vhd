@@ -38,6 +38,7 @@ architecture behavioral of Delta_Sigma_tb is
 
     signal PCLK : std_logic := '0';
     signal CLK_OSample : std_logic := '0';
+    signal APB_PADDR : std_logic_vector(7 downto 0) := (others => '0');
     signal APB_PSEL : std_logic := '0';
     signal APB_PENABLE : std_logic := '0';
     signal APB_PWDATA : std_logic_vector(7 downto 0) := (others => '0');
@@ -57,6 +58,9 @@ architecture behavioral of Delta_Sigma_tb is
     signal DSC_data1_pixels_reg : std_logic_vector(7 downto 0) := (others => '0');
     signal DSC_data2_pixels_reg : std_logic_vector(7 downto 0) := (others => '0');
     signal DSC_data3_pixels_reg : std_logic_vector(7 downto 0) := (others => '0');
+
+    signal driver_busy : std_logic := '0';
+    signal Driver_reg_ctrl : std_logic_vector(7 downto 0) := (others => '0');
 
     component Delta_Sigma_Design
         -- ports
@@ -125,6 +129,7 @@ begin
     begin
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/PCLK", "PCLK", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/CLK_OSample", "CLK_OSample", 1, -1);
+        init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/PADDR", "APB_PADDR", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/PSEL", "APB_PSEL", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/PENABLE", "APB_PENABLE", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/PWDATA", "APB_PWDATA", 1, -1);
@@ -144,6 +149,8 @@ begin
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/DSC_data1_pixels_reg", "DSC_data1_pixels_reg", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/DSC_data2_pixels_reg", "DSC_data2_pixels_reg", 1, -1);
         init_signal_spy("Delta_Sigma_Design_0/Delta_Sigma_Converter_0/DSC_data3_pixels_reg", "DSC_data3_pixels_reg", 1, -1);
+        init_signal_spy("Delta_Sigma_Design_0/Nokia5110_Driver_0/Driver_reg_ctrl", "Driver_reg_ctrl", 1, -1);
+        init_signal_spy("Delta_Sigma_Design_0/Nokia5110_Driver_0/driver_busy", "driver_busy", 1, -1);
         wait;
     end process;
 

@@ -12,6 +12,7 @@ Project Chronology:
     * IP Core: I2C
     * IP Core: timer
     * VHDL I2C slave
+    * most projects after this also incorporate APB busses with better slave implementations.
 1. Ultimate LED Controller
     * Builds off APB3_Practice
     * PWM

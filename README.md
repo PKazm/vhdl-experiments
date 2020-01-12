@@ -30,3 +30,6 @@ Project Chronology:
     * Pulse bitstream to quantized integer numbers
     * Convert integer values to pixel bars for graph display
     * Writing pixel data to Nokia5110 LCD with frame buffer
+1. LITEON_I2C_Optical_Sensor_Driver (WIP)
+    * Intended to be a generic I2C master I will use in future projects
+    * Incorporates a simple instruction queue to perform complete I2C transactions without calling out to a bus master

@@ -1,0 +1,16 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[5] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[6] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[7] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":151:8:151:9|Found counter in view:work.I2C_Core(architecture_i2c_core) instance i2c_clk_cnt[15:0] 
+@N: MF179 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":157:19:157:44|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un5_i2c_clk_cnt (in view: work.I2C_Core(architecture_i2c_core))
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_331 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_332 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

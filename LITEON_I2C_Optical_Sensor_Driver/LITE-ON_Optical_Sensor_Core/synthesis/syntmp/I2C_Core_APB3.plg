@@ -1,0 +1,11 @@
+@P:  Worst Slack : 4.499
+@P:  I2C_Core_APB3|PCLK - Estimated Frequency : 181.8 MHz
+@P:  I2C_Core_APB3|PCLK - Requested Frequency : 100.0 MHz
+@P:  I2C_Core_APB3|PCLK - Estimated Period : 5.501
+@P:  I2C_Core_APB3|PCLK - Requested Period : 10.000
+@P:  I2C_Core_APB3|PCLK - Slack : 4.499
+@P: I2C_Core_APB3 Part : m2s010tq144std
+@P: I2C_Core_APB3 Register bits  : 123 
+@P: I2C_Core_APB3 DSP Blocks  : 0
+@P: I2C_Core_APB3 I/O primitives : 38
+@P:  CPU Time : 0h:00m:01s

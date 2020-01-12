@@ -1,0 +1,2 @@
+@E: CD870 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":186:38:186:50|Index into null range vector
+

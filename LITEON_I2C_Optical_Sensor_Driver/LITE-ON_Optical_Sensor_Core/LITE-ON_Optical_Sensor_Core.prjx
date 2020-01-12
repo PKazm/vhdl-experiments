@@ -1,0 +1,384 @@
+KEY LIBERO "12.600"
+KEY CAPTURE "12.600.0.14"
+KEY DEFAULT_IMPORT_LOC "D:\Appsnotes\2010\User_Logic_to_MSS\design_files\User_Logic_MSS_DF_old\APB_master_fabric\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_N"
+KEY VendorTechnology_Package "tq144"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "I2C_Core_APB3::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1578376637"
+SIZE="437"
+ENDFILE
+VALUE "<project>\component\work\Optical_Sensor_Block\Optical_Sensor_Block.cxf,actgen_cxf"
+STATE="utd"
+TIME="1576650588"
+SIZE="636"
+ENDFILE
+VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
+STATE="utd"
+TIME="1576650577"
+SIZE="3604"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core.ide_des,ide_des"
+STATE="utd"
+TIME="1578376538"
+SIZE="230"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core_APB3.ide_des,ide_des"
+STATE="utd"
+TIME="1578694531"
+SIZE="235"
+ENDFILE
+VALUE "<project>\designer\impl1\Optical_Sensor_Block.ide_des,ide_des"
+STATE="utd"
+TIME="1576733786"
+SIZE="242"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core.vhd,hdl"
+STATE="utd"
+TIME="1578802725"
+SIZE="18560"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
+STATE="utd"
+TIME="1578814371"
+SIZE="16657"
+ENDFILE
+VALUE "<project>\hdl\LITEON_Optical_Sensor_Core.vhd,hdl"
+STATE="utd"
+TIME="1576811465"
+SIZE="1549"
+ENDFILE
+VALUE "<project>\hdl\timer.vhd,hdl"
+STATE="utd"
+TIME="1576740940"
+SIZE="2522"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1578802347"
+SIZE="776"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1578802347"
+SIZE="233"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1578719968"
+SIZE="8764"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1578433632"
+SIZE="7984"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core.so,so"
+STATE="utd"
+TIME="1578474099"
+SIZE="261"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core.vm,syn_vm"
+STATE="ood"
+TIME="1578474098"
+SIZE="52206"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_APB3.so,so"
+STATE="utd"
+TIME="1578712365"
+SIZE="271"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_APB3.vm,syn_vm"
+STATE="ood"
+TIME="1578712364"
+SIZE="492247"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_APB3_syn.prj,prj"
+STATE="utd"
+TIME="1578712365"
+SIZE="2243"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_APB3_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1578712364"
+SIZE="898"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_syn.prj,prj"
+STATE="utd"
+TIME="1578474110"
+SIZE="1829"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1578474098"
+SIZE="893"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1578814213"
+SIZE="159"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "I2C_Core::work"
+FILE "<project>\hdl\I2C_Core.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "I2C_Core_APB3::work"
+FILE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST I2C_Core_APB3
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+ENDLIST
+LIST I2C_Core
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=.1ms
+Resolution=1fs
+VsimOpt=
+EntityName=I2C_Core_APB3_tb
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=TRUE
+LibraryPath=C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="SynplifyProME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSimME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l testbench_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Designer\binfp\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="IdentifyDebugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "I2C_Core::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "I2C_Core_APB3::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:I2C_Core_APB3_compile_netlist_resources.xml
+StartPage;StartPage;0
+HDL;hdl\I2C_Core_APB3.vhd;0
+ACTIVEVIEW;hdl\I2C_Core_APB3.vhd
+ENDLIST
+LIST ModuleSubBlockList
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+ENDLIST
+LIST "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Optical_Sensor_Block::work","component\work\Optical_Sensor_Block\Optical_Sensor_Block.cxf","TRUE","FALSE"
+ENDLIST
+LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3_tb::work","stimulus\I2C_Core_APB3_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_tb::work","stimulus\I2C_Core_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

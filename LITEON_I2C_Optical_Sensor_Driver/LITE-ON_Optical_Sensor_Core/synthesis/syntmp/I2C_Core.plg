@@ -1,0 +1,11 @@
+@P:  Worst Slack : 4.109
+@P:  I2C_Core|PCLK - Estimated Frequency : 169.7 MHz
+@P:  I2C_Core|PCLK - Requested Frequency : 100.0 MHz
+@P:  I2C_Core|PCLK - Estimated Period : 5.891
+@P:  I2C_Core|PCLK - Requested Period : 10.000
+@P:  I2C_Core|PCLK - Slack : 4.109
+@P: I2C_Core Part : m2s010tq144std
+@P: I2C_Core Register bits  : 71 
+@P: I2C_Core DSP Blocks  : 0
+@P: I2C_Core I/O primitives : 71
+@P:  CPU Time : 0h:00m:01s

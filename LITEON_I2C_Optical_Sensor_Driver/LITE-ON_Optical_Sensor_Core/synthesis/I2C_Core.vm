@@ -1,0 +1,2459 @@
+//
+// Written by Synplify Pro 
+// Product Version "N-2018.03M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact, Build 2461R"
+// Wed Jan  8 04:01:38 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd "
+// file 10 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\nlconst.dat "
+// file 11 "\c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\designer\i2c_core\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module I2C_Core (
+  PCLK,
+  RSTn,
+  reg_update,
+  ctrl_in,
+  ctrl_out,
+  data_in,
+  data_out,
+  clk_div_in,
+  clk_div_out,
+  interrupt,
+  SDAI,
+  SDAO,
+  SDAE,
+  SCLI,
+  SCLO,
+  SCLE
+)
+;
+input PCLK ;
+input RSTn ;
+input reg_update ;
+input [7:0] ctrl_in ;
+output [7:0] ctrl_out ;
+input [7:0] data_in ;
+output [7:0] data_out ;
+input [15:0] clk_div_in ;
+output [15:0] clk_div_out ;
+output interrupt ;
+input SDAI ;
+output SDAO ;
+output SDAE ;
+input SCLI ;
+output SCLO ;
+output SCLE ;
+wire PCLK ;
+wire RSTn ;
+wire reg_update ;
+wire interrupt ;
+wire SDAI ;
+wire SDAO ;
+wire SDAE ;
+wire SCLI ;
+wire SCLO ;
+wire SCLE ;
+wire [1:0] SDAI_sig_v;
+wire [1:0] SCLI_sig_v;
+wire [15:0] i2c_clk_cnt;
+wire [2:0] \p_i2c_data_state_machine.bit_counter_5 ;
+wire [1:0] \p_i2c_data_state_machine.i2c_counter_7 ;
+wire [5:0] i2c_state_cur;
+wire [7:0] ctrl_out_c;
+wire [1:0] i2c_counter;
+wire [2:0] bit_counter;
+wire [4:0] i2c_state_cur_ns;
+wire [7:0] \p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp ;
+wire [4:0] ctrl_in_c;
+wire [7:0] data_in_c;
+wire [15:0] clk_div_in_c;
+wire [7:0] data_out_c;
+wire [15:0] clk_div_out_c;
+wire [0:0] \p_i2c_data_state_machine.i2c_data_7 ;
+wire [1:1] \p_update_reg_ctrl.i2c_reg_ctrl_9 ;
+wire [14:0] i2c_clk_cnt_cry;
+wire [15:0] i2c_clk_cnt_s;
+wire [3:3] i2c_state_cur_ns_i_1;
+wire [0:0] i2c_state_cur_ns_0_0;
+wire [0:0] i2c_state_cur_ns_0_1;
+wire [5:5] i2c_state_cur_i_0;
+wire [14:14] i2c_clk_cnt_RNIAOLC8_Y;
+wire [15:15] i2c_clk_cnt_RNO_FCO;
+wire [15:15] i2c_clk_cnt_RNO_Y;
+wire [13:13] i2c_clk_cnt_RNI0IGO7_Y;
+wire [12:12] i2c_clk_cnt_RNINCB47_Y;
+wire [11:11] i2c_clk_cnt_RNIF86G6_Y;
+wire [10:10] i2c_clk_cnt_RNI851S5_Y;
+wire [9:9] i2c_clk_cnt_RNI23S75_Y;
+wire [8:8] i2c_clk_cnt_RNI4HEO4_Y;
+wire [7:7] i2c_clk_cnt_RNI70194_Y;
+wire [6:6] i2c_clk_cnt_RNIBGJP3_Y;
+wire [5:5] i2c_clk_cnt_RNIG16A3_Y;
+wire [4:4] i2c_clk_cnt_RNIMJOQ2_Y;
+wire [3:3] i2c_clk_cnt_RNIT6BB2_Y;
+wire [2:2] i2c_clk_cnt_RNI5RTR1_Y;
+wire [1:1] i2c_clk_cnt_RNIEGGC1_Y;
+wire [0:0] i2c_clk_cnt_RNIO63T_Y;
+wire un1_i2c_counter_0_sqmuxa_1_Z ;
+wire un1_i2c_reg_ctrl_1_Z ;
+wire state_started_Z ;
+wire VCC ;
+wire GND ;
+wire i2c_counter_pulse_Z ;
+wire op_finished_RNIBSOP_Z ;
+wire \p_i2c_busy_monitor.un27_sdai_sig_v_Z  ;
+wire i2c_ack_sig_1_sqmuxa_Z ;
+wire i2c_ack_sig_Z ;
+wire N_6 ;
+wire N_7 ;
+wire N_8 ;
+wire N_9 ;
+wire N_10 ;
+wire N_11 ;
+wire op_finished_Z ;
+wire \p_i2c_data_state_machine.un10_i2c_counter_pulse_Z  ;
+wire SCLO_sig_0_sqmuxa_Z ;
+wire i2c_data_1_sqmuxa_1_Z ;
+wire SCLE_sig_0_sqmuxa_Z ;
+wire SDAE_sig_0_sqmuxa_Z ;
+wire SDAO_sig_0_sqmuxa_Z ;
+wire SDAO_sig_0_sqmuxa_2_Z ;
+wire SDAO_sig_1_sqmuxa_Z ;
+wire op_finished_1_sqmuxa_1_Z ;
+wire op_finished_1_sqmuxa_2_Z ;
+wire i2c_reg_ctrl_2_sqmuxa_1 ;
+wire op_finished_1_sqmuxa_Z ;
+wire i2c_reg_ctrl_1_sqmuxa_1 ;
+wire N_167_i_0 ;
+wire N_122 ;
+wire N_103_mux ;
+wire N_195 ;
+wire CO0_0 ;
+wire N_181 ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire reg_update_c ;
+wire SDAI_c ;
+wire SCLI_c ;
+wire interrupt_c ;
+wire SDAO_c ;
+wire SDAE_c ;
+wire SCLO_c ;
+wire SCLE_c ;
+wire N_46 ;
+wire N_169 ;
+wire SCLO_sig_2_sqmuxa_Z ;
+wire N_19_0 ;
+wire N_80 ;
+wire N_120 ;
+wire N_121 ;
+wire \p_i2c_data_state_machine.un5_sdae_sig  ;
+wire SDAO_sig_0_sqmuxa_3_Z ;
+wire un1_state_started3_Z ;
+wire i2c_data_0_sqmuxa_Z ;
+wire N_36_0 ;
+wire un1_i2c_state_cur_13_1_tz ;
+wire SCLO_sig_1_0_129_i_4_Z ;
+wire un1_i2c_state_cur_13_1_0_Z ;
+wire m33_1 ;
+wire m33_2 ;
+wire un1_SCLE_sig_1_sqmuxa_i_0 ;
+wire i2c_counter_pulse_2_sqmuxa_i_Z ;
+wire N_118_mux_i ;
+wire N_96_i ;
+wire N_279_i ;
+wire \p_i2c_data_state_machine.SDAE_sig_5_iv_i_Z  ;
+wire N_114_mux_i ;
+wire un1_i2c_state_cur_13_i ;
+wire N_165_i ;
+wire N_162_i ;
+wire N_51_i ;
+wire un1_i2c_state_cur_8_i ;
+wire N_55_i ;
+wire N_59_i ;
+wire N_63_i ;
+wire N_67_i ;
+wire N_71_i ;
+wire N_75_i ;
+wire N_219_i ;
+wire N_119_mux_i ;
+wire N_105_mux_i ;
+wire N_95_i ;
+wire i2c_clk_cnt_cry_cy ;
+wire N_51_i_1_1 ;
+wire N_55_i_1_1 ;
+wire N_59_i_1_1 ;
+wire N_63_i_1_1 ;
+wire N_67_i_1_1 ;
+wire N_71_i_1_1 ;
+wire N_75_i_1_1 ;
+wire SCLO_sig_1_0_129_i_4_1_Z ;
+wire m88_1_1 ;
+wire m83_1_1 ;
+wire m93_1_1 ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1_Y  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_S  ;
+wire \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_Y  ;
+wire PCLK_ibuf_Z ;
+wire RSTn_ibuf_Z ;
+  CLKINT RSTn_ibuf_RNICUT3 (
+	.Y(RSTn_c),
+	.A(RSTn_ibuf_Z)
+);
+  CLKINT PCLK_ibuf_RNIFTKA (
+	.Y(PCLK_c),
+	.A(PCLK_ibuf_Z)
+);
+  CFG1 \i2c_state_cur_RNIKH3B[5]  (
+	.A(i2c_state_cur[5]),
+	.Y(i2c_state_cur_i_0[5])
+);
+defparam \i2c_state_cur_RNIKH3B[5] .INIT=2'h1;
+// @9:109
+  SLE \i2c_reg_ctrl[0]  (
+	.Q(ctrl_out_c[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(ctrl_in_c[0]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_reg_ctrl[1]  (
+	.Q(ctrl_out_c[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_update_reg_ctrl.i2c_reg_ctrl_9 [1]),
+	.EN(N_95_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_reg_ctrl[2]  (
+	.Q(ctrl_out_c[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(ctrl_in_c[2]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_reg_ctrl[3]  (
+	.Q(ctrl_out_c[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(ctrl_in_c[3]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_reg_ctrl[4]  (
+	.Q(ctrl_out_c[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(ctrl_in_c[4]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:140
+  SLE \SDAI_sig_v[0]  (
+	.Q(SDAI_sig_v[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(SDAI_c),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:140
+  SLE \SDAI_sig_v[1]  (
+	.Q(SDAI_sig_v[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(SDAI_sig_v[0]),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \bit_counter[0]  (
+	.Q(bit_counter[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.bit_counter_5 [0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \bit_counter[1]  (
+	.Q(bit_counter[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.bit_counter_5 [1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \bit_counter[2]  (
+	.Q(bit_counter[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.bit_counter_5 [2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_counter[0]  (
+	.Q(i2c_counter[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.i2c_counter_7 [0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_counter[1]  (
+	.Q(i2c_counter[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.i2c_counter_7 [1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[11]  (
+	.Q(clk_div_out_c[11]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[11]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[12]  (
+	.Q(clk_div_out_c[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[12]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[13]  (
+	.Q(clk_div_out_c[13]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[13]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[14]  (
+	.Q(clk_div_out_c[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[14]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[15]  (
+	.Q(clk_div_out_c[15]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[15]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_reg_ctrl[5]  (
+	.Q(ctrl_out_c[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_105_mux_i),
+	.EN(N_119_mux_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_reg_ctrl[6]  (
+	.Q(interrupt_c),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_219_i),
+	.EN(N_119_mux_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[0]  (
+	.Q(data_out_c[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.i2c_data_7 [0]),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[1]  (
+	.Q(data_out_c[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_75_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[2]  (
+	.Q(data_out_c[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_71_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[3]  (
+	.Q(data_out_c[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_67_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[4]  (
+	.Q(data_out_c[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_63_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[5]  (
+	.Q(data_out_c[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_59_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[6]  (
+	.Q(data_out_c[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_55_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE \i2c_data[7]  (
+	.Q(data_out_c[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_51_i),
+	.EN(un1_i2c_state_cur_8_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:140
+  SLE \SCLI_sig_v[0]  (
+	.Q(SCLI_sig_v[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(SCLI_c),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:140
+  SLE \SCLI_sig_v[1]  (
+	.Q(SCLI_sig_v[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(SCLI_sig_v[0]),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[0]  (
+	.Q(clk_div_out_c[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[0]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[1]  (
+	.Q(clk_div_out_c[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[1]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[2]  (
+	.Q(clk_div_out_c[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[2]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[3]  (
+	.Q(clk_div_out_c[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[3]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[4]  (
+	.Q(clk_div_out_c[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[4]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[5]  (
+	.Q(clk_div_out_c[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[5]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[6]  (
+	.Q(clk_div_out_c[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[6]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[7]  (
+	.Q(clk_div_out_c[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[7]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[8]  (
+	.Q(clk_div_out_c[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[8]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[9]  (
+	.Q(clk_div_out_c[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[9]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:109
+  SLE \i2c_clk_div[10]  (
+	.Q(clk_div_out_c[10]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(clk_div_in_c[10]),
+	.EN(reg_update_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:140
+  SLE \i2c_reg_ctrl[7]  (
+	.Q(ctrl_out_c[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_sig_v[1]),
+	.EN(\p_i2c_busy_monitor.un27_sdai_sig_v_Z ),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE state_started (
+	.Q(state_started_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.EN(i2c_state_cur_i_0[5]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[4]  (
+	.Q(i2c_state_cur[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[3]  (
+	.Q(i2c_state_cur[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[2]  (
+	.Q(i2c_state_cur[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_162_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[1]  (
+	.Q(i2c_state_cur[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[0]  (
+	.Q(i2c_state_cur[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_165_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE SDAO_sig (
+	.Q(SDAO_c),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_114_mux_i),
+	.EN(un1_i2c_state_cur_13_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE SDAE_sig (
+	.Q(SDAE_c),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(\p_i2c_data_state_machine.SDAE_sig_5_iv_i_Z ),
+	.EN(un1_SCLE_sig_1_sqmuxa_i_0),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE SCLO_sig (
+	.Q(SCLO_c),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_279_i),
+	.EN(un1_i2c_counter_0_sqmuxa_1_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE op_finished (
+	.Q(op_finished_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_118_mux_i),
+	.EN(N_96_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE i2c_counter_pulse (
+	.Q(i2c_counter_pulse_Z),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(un1_i2c_reg_ctrl_1_Z),
+	.EN(i2c_counter_pulse_2_sqmuxa_i_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:192
+  SLE SCLE_sig (
+	.Q(SCLE_c),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_i_0[5]),
+	.EN(un1_SCLE_sig_1_sqmuxa_i_0),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE i2c_ack_sig (
+	.Q(i2c_ack_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_c),
+	.EN(i2c_ack_sig_1_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:177
+  SLE \i2c_state_cur[5]  (
+	.Q(i2c_state_cur[5]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[0]  (
+	.Q(i2c_clk_cnt[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[1]  (
+	.Q(i2c_clk_cnt[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[2]  (
+	.Q(i2c_clk_cnt[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[3]  (
+	.Q(i2c_clk_cnt[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[4]  (
+	.Q(i2c_clk_cnt[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[5]  (
+	.Q(i2c_clk_cnt[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[6]  (
+	.Q(i2c_clk_cnt[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[7]  (
+	.Q(i2c_clk_cnt[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[8]  (
+	.Q(i2c_clk_cnt[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[9]  (
+	.Q(i2c_clk_cnt[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[10]  (
+	.Q(i2c_clk_cnt[10]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[11]  (
+	.Q(i2c_clk_cnt[11]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[12]  (
+	.Q(i2c_clk_cnt[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[13]  (
+	.Q(i2c_clk_cnt[13]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[14]  (
+	.Q(i2c_clk_cnt[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[14]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:151
+  SLE \i2c_clk_cnt[15]  (
+	.Q(i2c_clk_cnt[15]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[15]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:26
+  INBUF PCLK_ibuf (
+	.Y(PCLK_ibuf_Z),
+	.PAD(PCLK)
+);
+// @9:27
+  INBUF RSTn_ibuf (
+	.Y(RSTn_ibuf_Z),
+	.PAD(RSTn)
+);
+// @9:30
+  INBUF reg_update_ibuf (
+	.Y(reg_update_c),
+	.PAD(reg_update)
+);
+// @9:31
+  INBUF \ctrl_in_ibuf[0]  (
+	.Y(ctrl_in_c[0]),
+	.PAD(ctrl_in[0])
+);
+// @9:31
+  INBUF \ctrl_in_ibuf[1]  (
+	.Y(ctrl_in_c[1]),
+	.PAD(ctrl_in[1])
+);
+// @9:31
+  INBUF \ctrl_in_ibuf[2]  (
+	.Y(ctrl_in_c[2]),
+	.PAD(ctrl_in[2])
+);
+// @9:31
+  INBUF \ctrl_in_ibuf[3]  (
+	.Y(ctrl_in_c[3]),
+	.PAD(ctrl_in[3])
+);
+// @9:31
+  INBUF \ctrl_in_ibuf[4]  (
+	.Y(ctrl_in_c[4]),
+	.PAD(ctrl_in[4])
+);
+// @9:33
+  INBUF \data_in_ibuf[0]  (
+	.Y(data_in_c[0]),
+	.PAD(data_in[0])
+);
+// @9:33
+  INBUF \data_in_ibuf[1]  (
+	.Y(data_in_c[1]),
+	.PAD(data_in[1])
+);
+// @9:33
+  INBUF \data_in_ibuf[2]  (
+	.Y(data_in_c[2]),
+	.PAD(data_in[2])
+);
+// @9:33
+  INBUF \data_in_ibuf[3]  (
+	.Y(data_in_c[3]),
+	.PAD(data_in[3])
+);
+// @9:33
+  INBUF \data_in_ibuf[4]  (
+	.Y(data_in_c[4]),
+	.PAD(data_in[4])
+);
+// @9:33
+  INBUF \data_in_ibuf[5]  (
+	.Y(data_in_c[5]),
+	.PAD(data_in[5])
+);
+// @9:33
+  INBUF \data_in_ibuf[6]  (
+	.Y(data_in_c[6]),
+	.PAD(data_in[6])
+);
+// @9:33
+  INBUF \data_in_ibuf[7]  (
+	.Y(data_in_c[7]),
+	.PAD(data_in[7])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[0]  (
+	.Y(clk_div_in_c[0]),
+	.PAD(clk_div_in[0])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[1]  (
+	.Y(clk_div_in_c[1]),
+	.PAD(clk_div_in[1])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[2]  (
+	.Y(clk_div_in_c[2]),
+	.PAD(clk_div_in[2])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[3]  (
+	.Y(clk_div_in_c[3]),
+	.PAD(clk_div_in[3])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[4]  (
+	.Y(clk_div_in_c[4]),
+	.PAD(clk_div_in[4])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[5]  (
+	.Y(clk_div_in_c[5]),
+	.PAD(clk_div_in[5])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[6]  (
+	.Y(clk_div_in_c[6]),
+	.PAD(clk_div_in[6])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[7]  (
+	.Y(clk_div_in_c[7]),
+	.PAD(clk_div_in[7])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[8]  (
+	.Y(clk_div_in_c[8]),
+	.PAD(clk_div_in[8])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[9]  (
+	.Y(clk_div_in_c[9]),
+	.PAD(clk_div_in[9])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[10]  (
+	.Y(clk_div_in_c[10]),
+	.PAD(clk_div_in[10])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[11]  (
+	.Y(clk_div_in_c[11]),
+	.PAD(clk_div_in[11])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[12]  (
+	.Y(clk_div_in_c[12]),
+	.PAD(clk_div_in[12])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[13]  (
+	.Y(clk_div_in_c[13]),
+	.PAD(clk_div_in[13])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[14]  (
+	.Y(clk_div_in_c[14]),
+	.PAD(clk_div_in[14])
+);
+// @9:35
+  INBUF \clk_div_in_ibuf[15]  (
+	.Y(clk_div_in_c[15]),
+	.PAD(clk_div_in[15])
+);
+// @9:42
+  INBUF SDAI_ibuf (
+	.Y(SDAI_c),
+	.PAD(SDAI)
+);
+// @9:46
+  INBUF SCLI_ibuf (
+	.Y(SCLI_c),
+	.PAD(SCLI)
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[0]  (
+	.PAD(ctrl_out[0]),
+	.D(ctrl_out_c[0])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[1]  (
+	.PAD(ctrl_out[1]),
+	.D(ctrl_out_c[1])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[2]  (
+	.PAD(ctrl_out[2]),
+	.D(ctrl_out_c[2])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[3]  (
+	.PAD(ctrl_out[3]),
+	.D(ctrl_out_c[3])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[4]  (
+	.PAD(ctrl_out[4]),
+	.D(ctrl_out_c[4])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[5]  (
+	.PAD(ctrl_out[5]),
+	.D(ctrl_out_c[5])
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[6]  (
+	.PAD(ctrl_out[6]),
+	.D(interrupt_c)
+);
+// @9:32
+  OUTBUF \ctrl_out_obuf[7]  (
+	.PAD(ctrl_out[7]),
+	.D(ctrl_out_c[7])
+);
+// @9:34
+  OUTBUF \data_out_obuf[0]  (
+	.PAD(data_out[0]),
+	.D(data_out_c[0])
+);
+// @9:34
+  OUTBUF \data_out_obuf[1]  (
+	.PAD(data_out[1]),
+	.D(data_out_c[1])
+);
+// @9:34
+  OUTBUF \data_out_obuf[2]  (
+	.PAD(data_out[2]),
+	.D(data_out_c[2])
+);
+// @9:34
+  OUTBUF \data_out_obuf[3]  (
+	.PAD(data_out[3]),
+	.D(data_out_c[3])
+);
+// @9:34
+  OUTBUF \data_out_obuf[4]  (
+	.PAD(data_out[4]),
+	.D(data_out_c[4])
+);
+// @9:34
+  OUTBUF \data_out_obuf[5]  (
+	.PAD(data_out[5]),
+	.D(data_out_c[5])
+);
+// @9:34
+  OUTBUF \data_out_obuf[6]  (
+	.PAD(data_out[6]),
+	.D(data_out_c[6])
+);
+// @9:34
+  OUTBUF \data_out_obuf[7]  (
+	.PAD(data_out[7]),
+	.D(data_out_c[7])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[0]  (
+	.PAD(clk_div_out[0]),
+	.D(clk_div_out_c[0])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[1]  (
+	.PAD(clk_div_out[1]),
+	.D(clk_div_out_c[1])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[2]  (
+	.PAD(clk_div_out[2]),
+	.D(clk_div_out_c[2])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[3]  (
+	.PAD(clk_div_out[3]),
+	.D(clk_div_out_c[3])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[4]  (
+	.PAD(clk_div_out[4]),
+	.D(clk_div_out_c[4])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[5]  (
+	.PAD(clk_div_out[5]),
+	.D(clk_div_out_c[5])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[6]  (
+	.PAD(clk_div_out[6]),
+	.D(clk_div_out_c[6])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[7]  (
+	.PAD(clk_div_out[7]),
+	.D(clk_div_out_c[7])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[8]  (
+	.PAD(clk_div_out[8]),
+	.D(clk_div_out_c[8])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[9]  (
+	.PAD(clk_div_out[9]),
+	.D(clk_div_out_c[9])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[10]  (
+	.PAD(clk_div_out[10]),
+	.D(clk_div_out_c[10])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[11]  (
+	.PAD(clk_div_out[11]),
+	.D(clk_div_out_c[11])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[12]  (
+	.PAD(clk_div_out[12]),
+	.D(clk_div_out_c[12])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[13]  (
+	.PAD(clk_div_out[13]),
+	.D(clk_div_out_c[13])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[14]  (
+	.PAD(clk_div_out[14]),
+	.D(clk_div_out_c[14])
+);
+// @9:36
+  OUTBUF \clk_div_out_obuf[15]  (
+	.PAD(clk_div_out[15]),
+	.D(clk_div_out_c[15])
+);
+// @9:39
+  OUTBUF interrupt_obuf (
+	.PAD(interrupt),
+	.D(interrupt_c)
+);
+// @9:43
+  OUTBUF SDAO_obuf (
+	.PAD(SDAO),
+	.D(SDAO_c)
+);
+// @9:44
+  OUTBUF SDAE_obuf (
+	.PAD(SDAE),
+	.D(SDAE_c)
+);
+// @9:47
+  OUTBUF SCLO_obuf (
+	.PAD(SCLO),
+	.D(SCLO_c)
+);
+// @9:48
+  OUTBUF SCLE_obuf (
+	.PAD(SCLE),
+	.D(SCLE_c)
+);
+// @9:156
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD  (
+	.FCO(i2c_clk_cnt_cry_cy),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_Y ),
+	.B(ctrl_out_c[5]),
+	.C(interrupt_c),
+	.D(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [7]),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD .INIT=20'h4E000;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIO63T[0]  (
+	.FCO(i2c_clk_cnt_cry[0]),
+	.S(i2c_clk_cnt_s[0]),
+	.Y(i2c_clk_cnt_RNIO63T_Y[0]),
+	.B(i2c_clk_cnt[0]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry_cy)
+);
+defparam \i2c_clk_cnt_RNIO63T[0] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIEGGC1[1]  (
+	.FCO(i2c_clk_cnt_cry[1]),
+	.S(i2c_clk_cnt_s[1]),
+	.Y(i2c_clk_cnt_RNIEGGC1_Y[1]),
+	.B(i2c_clk_cnt[1]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[0])
+);
+defparam \i2c_clk_cnt_RNIEGGC1[1] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI5RTR1[2]  (
+	.FCO(i2c_clk_cnt_cry[2]),
+	.S(i2c_clk_cnt_s[2]),
+	.Y(i2c_clk_cnt_RNI5RTR1_Y[2]),
+	.B(i2c_clk_cnt[2]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[1])
+);
+defparam \i2c_clk_cnt_RNI5RTR1[2] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIT6BB2[3]  (
+	.FCO(i2c_clk_cnt_cry[3]),
+	.S(i2c_clk_cnt_s[3]),
+	.Y(i2c_clk_cnt_RNIT6BB2_Y[3]),
+	.B(i2c_clk_cnt[3]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[2])
+);
+defparam \i2c_clk_cnt_RNIT6BB2[3] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIMJOQ2[4]  (
+	.FCO(i2c_clk_cnt_cry[4]),
+	.S(i2c_clk_cnt_s[4]),
+	.Y(i2c_clk_cnt_RNIMJOQ2_Y[4]),
+	.B(i2c_clk_cnt[4]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[3])
+);
+defparam \i2c_clk_cnt_RNIMJOQ2[4] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIG16A3[5]  (
+	.FCO(i2c_clk_cnt_cry[5]),
+	.S(i2c_clk_cnt_s[5]),
+	.Y(i2c_clk_cnt_RNIG16A3_Y[5]),
+	.B(i2c_clk_cnt[5]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[4])
+);
+defparam \i2c_clk_cnt_RNIG16A3[5] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIBGJP3[6]  (
+	.FCO(i2c_clk_cnt_cry[6]),
+	.S(i2c_clk_cnt_s[6]),
+	.Y(i2c_clk_cnt_RNIBGJP3_Y[6]),
+	.B(i2c_clk_cnt[6]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[5])
+);
+defparam \i2c_clk_cnt_RNIBGJP3[6] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI70194[7]  (
+	.FCO(i2c_clk_cnt_cry[7]),
+	.S(i2c_clk_cnt_s[7]),
+	.Y(i2c_clk_cnt_RNI70194_Y[7]),
+	.B(i2c_clk_cnt[7]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[6])
+);
+defparam \i2c_clk_cnt_RNI70194[7] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI4HEO4[8]  (
+	.FCO(i2c_clk_cnt_cry[8]),
+	.S(i2c_clk_cnt_s[8]),
+	.Y(i2c_clk_cnt_RNI4HEO4_Y[8]),
+	.B(i2c_clk_cnt[8]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[7])
+);
+defparam \i2c_clk_cnt_RNI4HEO4[8] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI23S75[9]  (
+	.FCO(i2c_clk_cnt_cry[9]),
+	.S(i2c_clk_cnt_s[9]),
+	.Y(i2c_clk_cnt_RNI23S75_Y[9]),
+	.B(i2c_clk_cnt[9]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[8])
+);
+defparam \i2c_clk_cnt_RNI23S75[9] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI851S5[10]  (
+	.FCO(i2c_clk_cnt_cry[10]),
+	.S(i2c_clk_cnt_s[10]),
+	.Y(i2c_clk_cnt_RNI851S5_Y[10]),
+	.B(i2c_clk_cnt[10]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[9])
+);
+defparam \i2c_clk_cnt_RNI851S5[10] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIF86G6[11]  (
+	.FCO(i2c_clk_cnt_cry[11]),
+	.S(i2c_clk_cnt_s[11]),
+	.Y(i2c_clk_cnt_RNIF86G6_Y[11]),
+	.B(i2c_clk_cnt[11]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[10])
+);
+defparam \i2c_clk_cnt_RNIF86G6[11] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNINCB47[12]  (
+	.FCO(i2c_clk_cnt_cry[12]),
+	.S(i2c_clk_cnt_s[12]),
+	.Y(i2c_clk_cnt_RNINCB47_Y[12]),
+	.B(i2c_clk_cnt[12]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[11])
+);
+defparam \i2c_clk_cnt_RNINCB47[12] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNI0IGO7[13]  (
+	.FCO(i2c_clk_cnt_cry[13]),
+	.S(i2c_clk_cnt_s[13]),
+	.Y(i2c_clk_cnt_RNI0IGO7_Y[13]),
+	.B(i2c_clk_cnt[13]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[12])
+);
+defparam \i2c_clk_cnt_RNI0IGO7[13] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNO[15]  (
+	.FCO(i2c_clk_cnt_RNO_FCO[15]),
+	.S(i2c_clk_cnt_s[15]),
+	.Y(i2c_clk_cnt_RNO_Y[15]),
+	.B(i2c_clk_cnt[15]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[14])
+);
+defparam \i2c_clk_cnt_RNO[15] .INIT=20'h42200;
+// @9:156
+  ARI1 \i2c_clk_cnt_RNIAOLC8[14]  (
+	.FCO(i2c_clk_cnt_cry[14]),
+	.S(i2c_clk_cnt_s[14]),
+	.Y(i2c_clk_cnt_RNIAOLC8_Y[14]),
+	.B(i2c_clk_cnt[14]),
+	.C(un1_i2c_reg_ctrl_1_Z),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[13])
+);
+defparam \i2c_clk_cnt_RNIAOLC8[14] .INIT=20'h42200;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [0]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1_Y ),
+	.B(clk_div_out_c[2]),
+	.C(clk_div_out_c[3]),
+	.D(i2c_clk_cnt[0]),
+	.A(i2c_clk_cnt[1]),
+	.FCI(GND)
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_1 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [1]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9_Y ),
+	.B(clk_div_out_c[4]),
+	.C(clk_div_out_c[5]),
+	.D(i2c_clk_cnt[2]),
+	.A(i2c_clk_cnt[3]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [0])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_9 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [2]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15_Y ),
+	.B(clk_div_out_c[6]),
+	.C(clk_div_out_c[7]),
+	.D(i2c_clk_cnt[4]),
+	.A(i2c_clk_cnt[5]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [1])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_15 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [3]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27_Y ),
+	.B(clk_div_out_c[8]),
+	.C(clk_div_out_c[9]),
+	.D(i2c_clk_cnt[6]),
+	.A(i2c_clk_cnt[7]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [2])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_27 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [4]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45_Y ),
+	.B(clk_div_out_c[10]),
+	.C(clk_div_out_c[11]),
+	.D(i2c_clk_cnt[8]),
+	.A(i2c_clk_cnt[9]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [3])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_45 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [5]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33_Y ),
+	.B(clk_div_out_c[12]),
+	.C(clk_div_out_c[13]),
+	.D(i2c_clk_cnt[10]),
+	.A(i2c_clk_cnt[11]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [4])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_33 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [6]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39_Y ),
+	.B(clk_div_out_c[14]),
+	.C(clk_div_out_c[15]),
+	.D(i2c_clk_cnt[12]),
+	.A(i2c_clk_cnt[13]),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [5])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_39 .INIT=20'h68421;
+// @9:157
+  ARI1 \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21  (
+	.FCO(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [7]),
+	.S(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_S ),
+	.Y(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_Y ),
+	.B(i2c_clk_cnt[14]),
+	.C(i2c_clk_cnt[15]),
+	.D(GND),
+	.A(VCC),
+	.FCI(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [6])
+);
+defparam \p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21 .INIT=20'h61100;
+// @9:350
+  CFG4 SCLO_sig_2_sqmuxa (
+	.A(ctrl_out_c[3]),
+	.B(i2c_state_cur[0]),
+	.C(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.D(ctrl_out_c[4]),
+	.Y(SCLO_sig_2_sqmuxa_Z)
+);
+defparam SCLO_sig_2_sqmuxa.INIT=16'h8CCC;
+// @9:151
+  CFG4 i2c_counter_pulse_2_sqmuxa_i (
+	.A(interrupt_c),
+	.B(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [7]),
+	.C(state_started_Z),
+	.D(ctrl_out_c[5]),
+	.Y(i2c_counter_pulse_2_sqmuxa_i_Z)
+);
+defparam i2c_counter_pulse_2_sqmuxa_i.INIT=16'hF3F7;
+// @9:292
+  CFG4 op_finished_1_sqmuxa_2 (
+	.A(i2c_counter[1]),
+	.B(i2c_state_cur[1]),
+	.C(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.D(i2c_counter[0]),
+	.Y(op_finished_1_sqmuxa_2_Z)
+);
+defparam op_finished_1_sqmuxa_2.INIT=16'h8000;
+  CFG4 \i2c_state_cur_RNO[4]  (
+	.A(m93_1_1),
+	.B(N_80),
+	.C(i2c_state_cur[4]),
+	.D(N_122),
+	.Y(i2c_state_cur_ns[1])
+);
+defparam \i2c_state_cur_RNO[4] .INIT=16'hCAA0;
+  CFG4 \i2c_state_cur_RNO_0[4]  (
+	.A(N_169),
+	.B(N_167_i_0),
+	.C(ctrl_out_c[4]),
+	.D(N_122),
+	.Y(m93_1_1)
+);
+defparam \i2c_state_cur_RNO_0[4] .INIT=16'h0533;
+  CFG4 \i2c_state_cur_RNO[1]  (
+	.A(m83_1_1),
+	.B(N_80),
+	.C(i2c_state_cur[1]),
+	.D(N_120),
+	.Y(i2c_state_cur_ns[4])
+);
+defparam \i2c_state_cur_RNO[1] .INIT=16'hCAA0;
+  CFG4 \i2c_state_cur_RNO_0[1]  (
+	.A(N_169),
+	.B(N_167_i_0),
+	.C(ctrl_out_c[4]),
+	.D(N_120),
+	.Y(m83_1_1)
+);
+defparam \i2c_state_cur_RNO_0[1] .INIT=16'h0533;
+  CFG4 \i2c_state_cur_RNO[3]  (
+	.A(m88_1_1),
+	.B(N_80),
+	.C(i2c_state_cur[3]),
+	.D(N_121),
+	.Y(i2c_state_cur_ns[2])
+);
+defparam \i2c_state_cur_RNO[3] .INIT=16'hCAA0;
+  CFG4 \i2c_state_cur_RNO_0[3]  (
+	.A(N_169),
+	.B(N_167_i_0),
+	.C(ctrl_out_c[4]),
+	.D(N_121),
+	.Y(m88_1_1)
+);
+defparam \i2c_state_cur_RNO_0[3] .INIT=16'h0533;
+// @9:192
+  CFG4 SCLO_sig_1_0_129_i_4 (
+	.A(SCLO_sig_1_0_129_i_4_1_Z),
+	.B(op_finished_1_sqmuxa_Z),
+	.C(i2c_counter[1]),
+	.D(i2c_counter[0]),
+	.Y(SCLO_sig_1_0_129_i_4_Z)
+);
+defparam SCLO_sig_1_0_129_i_4.INIT=16'hDCCD;
+// @9:192
+  CFG4 SCLO_sig_1_0_129_i_4_1 (
+	.A(i2c_state_cur[3]),
+	.B(i2c_state_cur[2]),
+	.C(i2c_state_cur[0]),
+	.D(i2c_counter[0]),
+	.Y(SCLO_sig_1_0_129_i_4_1_Z)
+);
+defparam SCLO_sig_1_0_129_i_4_1.INIT=16'h0305;
+// @9:192
+  CFG3 \i2c_data_RNO[1]  (
+	.A(data_out_c[0]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_75_i_1_1),
+	.Y(N_75_i)
+);
+defparam \i2c_data_RNO[1] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[1]  (
+	.A(data_in_c[1]),
+	.B(data_out_c[1]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_75_i_1_1)
+);
+defparam \i2c_data_RNO_0[1] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[2]  (
+	.A(data_out_c[1]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_71_i_1_1),
+	.Y(N_71_i)
+);
+defparam \i2c_data_RNO[2] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[2]  (
+	.A(data_in_c[2]),
+	.B(data_out_c[2]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_71_i_1_1)
+);
+defparam \i2c_data_RNO_0[2] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[3]  (
+	.A(data_out_c[2]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_67_i_1_1),
+	.Y(N_67_i)
+);
+defparam \i2c_data_RNO[3] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[3]  (
+	.A(data_in_c[3]),
+	.B(data_out_c[3]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_67_i_1_1)
+);
+defparam \i2c_data_RNO_0[3] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[4]  (
+	.A(data_out_c[3]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_63_i_1_1),
+	.Y(N_63_i)
+);
+defparam \i2c_data_RNO[4] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[4]  (
+	.A(data_in_c[4]),
+	.B(data_out_c[4]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_63_i_1_1)
+);
+defparam \i2c_data_RNO_0[4] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[5]  (
+	.A(data_out_c[4]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_59_i_1_1),
+	.Y(N_59_i)
+);
+defparam \i2c_data_RNO[5] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[5]  (
+	.A(data_in_c[5]),
+	.B(data_out_c[5]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_59_i_1_1)
+);
+defparam \i2c_data_RNO_0[5] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[6]  (
+	.A(data_out_c[5]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_55_i_1_1),
+	.Y(N_55_i)
+);
+defparam \i2c_data_RNO[6] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[6]  (
+	.A(data_in_c[6]),
+	.B(data_out_c[6]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_55_i_1_1)
+);
+defparam \i2c_data_RNO_0[6] .INIT=8'h35;
+// @9:192
+  CFG3 \i2c_data_RNO[7]  (
+	.A(data_out_c[6]),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(N_51_i_1_1),
+	.Y(N_51_i)
+);
+defparam \i2c_data_RNO[7] .INIT=8'h8B;
+// @9:192
+  CFG3 \i2c_data_RNO_0[7]  (
+	.A(data_in_c[7]),
+	.B(data_out_c[7]),
+	.C(i2c_data_1_sqmuxa_1_Z),
+	.Y(N_51_i_1_1)
+);
+defparam \i2c_data_RNO_0[7] .INIT=8'h35;
+  CFG2 SDAO_sig_RNO_1 (
+	.A(SDAO_sig_0_sqmuxa_2_Z),
+	.B(SDAO_sig_0_sqmuxa_Z),
+	.Y(m33_2)
+);
+defparam SDAO_sig_RNO_1.INIT=4'h1;
+// @9:177
+  CFG2 \i2c_state_cur_ns_0_o3_0_0[0]  (
+	.A(i2c_state_cur[1]),
+	.B(i2c_state_cur[4]),
+	.Y(un1_i2c_state_cur_13_1_tz)
+);
+defparam \i2c_state_cur_ns_0_o3_0_0[0] .INIT=4'hE;
+  CFG2 \i2c_reg_ctrl_RNILMEA[3]  (
+	.A(ctrl_out_c[3]),
+	.B(ctrl_out_c[4]),
+	.Y(\p_i2c_data_state_machine.un5_sdae_sig )
+);
+defparam \i2c_reg_ctrl_RNILMEA[3] .INIT=4'h4;
+// @9:320
+  CFG2 un1_state_started3 (
+	.A(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.B(i2c_counter[1]),
+	.Y(un1_state_started3_Z)
+);
+defparam un1_state_started3.INIT=4'hD;
+// @9:231
+  CFG2 \p_i2c_data_state_machine.un10_i2c_counter_pulse  (
+	.A(state_started_Z),
+	.B(i2c_counter_pulse_Z),
+	.Y(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z )
+);
+defparam \p_i2c_data_state_machine.un10_i2c_counter_pulse .INIT=4'h4;
+// @9:109
+  CFG2 \p_update_reg_ctrl.i2c_reg_ctrl_9[1]  (
+	.A(ctrl_in_c[1]),
+	.B(reg_update_c),
+	.Y(\p_update_reg_ctrl.i2c_reg_ctrl_9 [1])
+);
+defparam \p_update_reg_ctrl.i2c_reg_ctrl_9[1] .INIT=4'h8;
+// @9:177
+  CFG2 \i2c_state_cur_ns_i_a3_1[3]  (
+	.A(i2c_state_cur[5]),
+	.B(i2c_state_cur[2]),
+	.Y(N_195)
+);
+defparam \i2c_state_cur_ns_i_a3_1[3] .INIT=4'h1;
+  CFG3 \i2c_reg_ctrl_RNI76IL_1[3]  (
+	.A(ctrl_out_c[2]),
+	.B(i2c_state_cur[5]),
+	.C(ctrl_out_c[3]),
+	.Y(N_122)
+);
+defparam \i2c_reg_ctrl_RNI76IL_1[3] .INIT=8'h08;
+  CFG4 op_finished_RNIBSOP (
+	.A(ctrl_out_c[1]),
+	.B(op_finished_Z),
+	.C(i2c_state_cur[5]),
+	.D(ctrl_out_c[0]),
+	.Y(op_finished_RNIBSOP_Z)
+);
+defparam op_finished_RNIBSOP.INIT=16'h2000;
+// @9:350
+  CFG3 SDAE_sig_0_sqmuxa (
+	.A(ctrl_out_c[2]),
+	.B(\p_i2c_data_state_machine.un5_sdae_sig ),
+	.C(i2c_state_cur[0]),
+	.Y(SDAE_sig_0_sqmuxa_Z)
+);
+defparam SDAE_sig_0_sqmuxa.INIT=8'h40;
+// @9:231
+  CFG3 i2c_data_0_sqmuxa (
+	.A(i2c_counter[0]),
+	.B(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.C(i2c_counter[1]),
+	.Y(i2c_data_0_sqmuxa_Z)
+);
+defparam i2c_data_0_sqmuxa.INIT=8'h04;
+  CFG3 \i2c_reg_ctrl_RNI76IL_0[3]  (
+	.A(ctrl_out_c[2]),
+	.B(i2c_state_cur[5]),
+	.C(ctrl_out_c[3]),
+	.Y(N_121)
+);
+defparam \i2c_reg_ctrl_RNI76IL_0[3] .INIT=8'h40;
+  CFG3 \i2c_reg_ctrl_RNI76IL[3]  (
+	.A(ctrl_out_c[2]),
+	.B(i2c_state_cur[5]),
+	.C(ctrl_out_c[3]),
+	.Y(N_120)
+);
+defparam \i2c_reg_ctrl_RNI76IL[3] .INIT=8'h80;
+  CFG3 op_finished_1_sqmuxa_RNI3Q7E (
+	.A(op_finished_1_sqmuxa_2_Z),
+	.B(op_finished_1_sqmuxa_1_Z),
+	.C(op_finished_1_sqmuxa_Z),
+	.Y(N_19_0)
+);
+defparam op_finished_1_sqmuxa_RNI3Q7E.INIT=8'h01;
+// @9:194
+  CFG3 SCLE_sig_0_sqmuxa (
+	.A(i2c_state_cur[5]),
+	.B(ctrl_out_c[5]),
+	.C(interrupt_c),
+	.Y(SCLE_sig_0_sqmuxa_Z)
+);
+defparam SCLE_sig_0_sqmuxa.INIT=8'h02;
+// @9:156
+  CFG3 un1_i2c_reg_ctrl_1 (
+	.A(ctrl_out_c[5]),
+	.B(interrupt_c),
+	.C(\p_i2c_clock_gen.un5_i2c_clk_cnt_0_data_tmp [7]),
+	.Y(un1_i2c_reg_ctrl_1_Z)
+);
+defparam un1_i2c_reg_ctrl_1.INIT=8'h1F;
+// @9:177
+  CFG3 \i2c_state_cur_ns_0_o3[0]  (
+	.A(op_finished_Z),
+	.B(ctrl_out_c[1]),
+	.C(ctrl_out_c[0]),
+	.Y(N_169)
+);
+defparam \i2c_state_cur_ns_0_o3[0] .INIT=8'hBF;
+  CFG3 \p_i2c_data_state_machine.un10_i2c_counter_pulse_RNIRO2U  (
+	.A(i2c_counter[0]),
+	.B(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.C(i2c_counter[1]),
+	.Y(N_167_i_0)
+);
+defparam \p_i2c_data_state_machine.un10_i2c_counter_pulse_RNIRO2U .INIT=8'h80;
+// @9:335
+  CFG3 SCLO_sig_0_sqmuxa (
+	.A(i2c_state_cur[2]),
+	.B(i2c_counter[1]),
+	.C(i2c_counter[0]),
+	.Y(SCLO_sig_0_sqmuxa_Z)
+);
+defparam SCLO_sig_0_sqmuxa.INIT=8'h02;
+// @9:320
+  CFG3 i2c_data_1_sqmuxa_1 (
+	.A(i2c_state_cur[2]),
+	.B(i2c_counter[1]),
+	.C(i2c_counter[0]),
+	.Y(i2c_data_1_sqmuxa_1_Z)
+);
+defparam i2c_data_1_sqmuxa_1.INIT=8'h20;
+// @9:302
+  CFG3 SDAO_sig_1_sqmuxa (
+	.A(i2c_state_cur[1]),
+	.B(i2c_counter[1]),
+	.C(i2c_counter[0]),
+	.Y(SDAO_sig_1_sqmuxa_Z)
+);
+defparam SDAO_sig_1_sqmuxa.INIT=8'h20;
+// @9:302
+  CFG3 SDAO_sig_0_sqmuxa_2 (
+	.A(i2c_state_cur[1]),
+	.B(i2c_counter[1]),
+	.C(i2c_counter[0]),
+	.Y(SDAO_sig_0_sqmuxa_2_Z)
+);
+defparam SDAO_sig_0_sqmuxa_2.INIT=8'h02;
+// @9:244
+  CFG3 SDAO_sig_0_sqmuxa (
+	.A(i2c_state_cur[4]),
+	.B(i2c_counter[1]),
+	.C(i2c_counter[0]),
+	.Y(SDAO_sig_0_sqmuxa_Z)
+);
+defparam SDAO_sig_0_sqmuxa.INIT=8'h02;
+// @9:192
+  CFG2 \i2c_reg_ctrl_RNO[6]  (
+	.A(i2c_state_cur[5]),
+	.B(i2c_state_cur[3]),
+	.Y(N_219_i)
+);
+defparam \i2c_reg_ctrl_RNO[6] .INIT=4'h1;
+// @9:109
+  CFG2 \i2c_reg_ctrl_RNO[1]  (
+	.A(op_finished_Z),
+	.B(reg_update_c),
+	.Y(N_95_i)
+);
+defparam \i2c_reg_ctrl_RNO[1] .INIT=4'hE;
+  CFG4 \i2c_data_RNO[0]  (
+	.A(i2c_data_1_sqmuxa_1_Z),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(data_in_c[0]),
+	.D(SDAI_c),
+	.Y(\p_i2c_data_state_machine.i2c_data_7 [0])
+);
+defparam \i2c_data_RNO[0] .INIT=16'h3210;
+// @9:177
+  CFG4 \i2c_state_cur_ns_0_0[0]  (
+	.A(ctrl_out_c[2]),
+	.B(i2c_state_cur[5]),
+	.C(ctrl_out_c[4]),
+	.D(ctrl_out_c[3]),
+	.Y(i2c_state_cur_ns_0_0[0])
+);
+defparam \i2c_state_cur_ns_0_0[0] .INIT=16'hC004;
+  CFG4 SDAO_sig_RNO_2 (
+	.A(i2c_state_cur[2]),
+	.B(i2c_state_cur[0]),
+	.C(data_out_c[7]),
+	.D(SDAO_sig_1_sqmuxa_Z),
+	.Y(m33_1)
+);
+defparam SDAO_sig_RNO_2.INIT=16'h0013;
+// @9:350
+  CFG4 un1_i2c_state_cur_13_1_0 (
+	.A(i2c_state_cur[5]),
+	.B(i2c_state_cur[3]),
+	.C(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.D(un1_i2c_state_cur_13_1_tz),
+	.Y(un1_i2c_state_cur_13_1_0_Z)
+);
+defparam un1_i2c_state_cur_13_1_0.INIT=16'hAFAE;
+// @9:177
+  CFG4 \i2c_state_cur_ns_i_1[3]  (
+	.A(i2c_state_cur[5]),
+	.B(N_195),
+	.C(ctrl_out_c[4]),
+	.D(ctrl_out_c[3]),
+	.Y(i2c_state_cur_ns_i_1[3])
+);
+defparam \i2c_state_cur_ns_i_1[3] .INIT=16'hEECE;
+// @9:142
+  CFG4 \p_i2c_busy_monitor.un27_sdai_sig_v  (
+	.A(SDAI_sig_v[1]),
+	.B(SCLI_sig_v[1]),
+	.C(SCLI_sig_v[0]),
+	.D(SDAI_sig_v[0]),
+	.Y(\p_i2c_busy_monitor.un27_sdai_sig_v_Z )
+);
+defparam \p_i2c_busy_monitor.un27_sdai_sig_v .INIT=16'h4080;
+  CFG4 \bit_counter_RNI5P39[2]  (
+	.A(bit_counter[0]),
+	.B(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.C(bit_counter[2]),
+	.D(bit_counter[1]),
+	.Y(N_103_mux)
+);
+defparam \bit_counter_RNI5P39[2] .INIT=16'h2000;
+// @9:350
+  CFG4 i2c_ack_sig_1_sqmuxa (
+	.A(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.B(SDAE_sig_0_sqmuxa_Z),
+	.C(i2c_counter[1]),
+	.D(i2c_counter[0]),
+	.Y(i2c_ack_sig_1_sqmuxa_Z)
+);
+defparam i2c_ack_sig_1_sqmuxa.INIT=16'h0800;
+// @9:177
+  CFG2 \i2c_state_cur_ns_0_a3_0[0]  (
+	.A(N_169),
+	.B(i2c_state_cur[5]),
+	.Y(N_181)
+);
+defparam \i2c_state_cur_ns_0_a3_0[0] .INIT=4'h8;
+// @9:263
+  CFG2 op_finished_1_sqmuxa_1 (
+	.A(N_167_i_0),
+	.B(i2c_state_cur[3]),
+	.Y(op_finished_1_sqmuxa_1_Z)
+);
+defparam op_finished_1_sqmuxa_1.INIT=4'h8;
+// @9:234
+  CFG2 op_finished_1_sqmuxa (
+	.A(N_167_i_0),
+	.B(i2c_state_cur[4]),
+	.Y(op_finished_1_sqmuxa_Z)
+);
+defparam op_finished_1_sqmuxa.INIT=4'h8;
+// @9:192
+  CFG3 \i2c_reg_ctrl_RNO[5]  (
+	.A(i2c_reg_ctrl_1_sqmuxa_1),
+	.B(i2c_ack_sig_Z),
+	.C(i2c_state_cur[5]),
+	.Y(N_105_mux_i)
+);
+defparam \i2c_reg_ctrl_RNO[5] .INIT=8'hF8;
+  CFG3 \p_i2c_data_state_machine.SDAE_sig_5_iv_i_RNO  (
+	.A(ctrl_out_c[2]),
+	.B(\p_i2c_data_state_machine.un5_sdae_sig ),
+	.C(i2c_state_cur[2]),
+	.Y(N_46)
+);
+defparam \p_i2c_data_state_machine.SDAE_sig_5_iv_i_RNO .INIT=8'h4F;
+// @9:177
+  CFG4 \i2c_state_cur_ns_0_1[0]  (
+	.A(un1_i2c_state_cur_13_1_tz),
+	.B(i2c_state_cur[3]),
+	.C(N_167_i_0),
+	.D(i2c_state_cur_ns_0_0[0]),
+	.Y(i2c_state_cur_ns_0_1[0])
+);
+defparam \i2c_state_cur_ns_0_1[0] .INIT=16'hFFE0;
+  CFG3 \i2c_reg_ctrl_RNIGFH81[3]  (
+	.A(ctrl_out_c[4]),
+	.B(ctrl_out_c[3]),
+	.C(N_167_i_0),
+	.Y(N_36_0)
+);
+defparam \i2c_reg_ctrl_RNIGFH81[3] .INIT=8'h20;
+// @9:352
+  CFG4 SDAO_sig_0_sqmuxa_3 (
+	.A(i2c_state_cur[0]),
+	.B(ctrl_out_c[2]),
+	.C(\p_i2c_data_state_machine.un5_sdae_sig ),
+	.D(i2c_data_0_sqmuxa_Z),
+	.Y(SDAO_sig_0_sqmuxa_3_Z)
+);
+defparam SDAO_sig_0_sqmuxa_3.INIT=16'h2AAA;
+// @9:192
+  CFG4 un1_SCLE_sig_1_sqmuxa (
+	.A(interrupt_c),
+	.B(ctrl_out_c[5]),
+	.C(SCLO_sig_2_sqmuxa_Z),
+	.D(i2c_state_cur[5]),
+	.Y(un1_SCLE_sig_1_sqmuxa_i_0)
+);
+defparam un1_SCLE_sig_1_sqmuxa.INIT=16'h010F;
+// @9:350
+  CFG4 un1_i2c_counter_0_sqmuxa_1 (
+	.A(i2c_state_cur[5]),
+	.B(i2c_state_cur[0]),
+	.C(\p_i2c_data_state_machine.un5_sdae_sig ),
+	.D(\p_i2c_data_state_machine.un10_i2c_counter_pulse_Z ),
+	.Y(un1_i2c_counter_0_sqmuxa_1_Z)
+);
+defparam un1_i2c_counter_0_sqmuxa_1.INIT=16'hD100;
+// @9:338
+  CFG3 \bit_counter_RNIUKRC1[0]  (
+	.A(bit_counter[0]),
+	.B(N_195),
+	.C(N_167_i_0),
+	.Y(CO0_0)
+);
+defparam \bit_counter_RNIUKRC1[0] .INIT=8'h20;
+// @9:192
+  CFG4 un1_state_started3_RNI73931 (
+	.A(i2c_state_cur[2]),
+	.B(reg_update_c),
+	.C(un1_state_started3_Z),
+	.D(i2c_state_cur[5]),
+	.Y(un1_i2c_state_cur_8_i)
+);
+defparam un1_state_started3_RNI73931.INIT=16'h4C0A;
+  CFG3 \i2c_state_cur_ns_0_o3_RNILK791[0]  (
+	.A(ctrl_out_c[4]),
+	.B(N_169),
+	.C(N_167_i_0),
+	.Y(N_80)
+);
+defparam \i2c_state_cur_ns_0_o3_RNILK791[0] .INIT=8'h1F;
+// @9:192
+  CFG4 \p_i2c_data_state_machine.bit_counter_5[0]  (
+	.A(N_195),
+	.B(N_167_i_0),
+	.C(bit_counter[0]),
+	.D(i2c_state_cur[5]),
+	.Y(\p_i2c_data_state_machine.bit_counter_5 [0])
+);
+defparam \p_i2c_data_state_machine.bit_counter_5[0] .INIT=16'h00B4;
+// @9:192
+  CFG3 \p_i2c_data_state_machine.SDAE_sig_5_iv_i  (
+	.A(N_46),
+	.B(SDAE_sig_0_sqmuxa_Z),
+	.C(SCLE_sig_0_sqmuxa_Z),
+	.Y(\p_i2c_data_state_machine.SDAE_sig_5_iv_i_Z )
+);
+defparam \p_i2c_data_state_machine.SDAE_sig_5_iv_i .INIT=8'h02;
+// @9:177
+  CFG4 \i2c_state_cur_ns_0[0]  (
+	.A(i2c_state_cur_ns_0_1[0]),
+	.B(N_36_0),
+	.C(i2c_state_cur[0]),
+	.D(N_181),
+	.Y(i2c_state_cur_ns[0])
+);
+defparam \i2c_state_cur_ns_0[0] .INIT=16'hFFEA;
+  CFG3 \i2c_reg_ctrl_RNIO5SO1_0[2]  (
+	.A(i2c_state_cur[0]),
+	.B(ctrl_out_c[2]),
+	.C(N_36_0),
+	.Y(i2c_reg_ctrl_1_sqmuxa_1)
+);
+defparam \i2c_reg_ctrl_RNIO5SO1_0[2] .INIT=8'h20;
+  CFG3 \i2c_reg_ctrl_RNIO5SO1[2]  (
+	.A(i2c_state_cur[0]),
+	.B(ctrl_out_c[2]),
+	.C(N_36_0),
+	.Y(i2c_reg_ctrl_2_sqmuxa_1)
+);
+defparam \i2c_reg_ctrl_RNIO5SO1[2] .INIT=8'h80;
+// @9:350
+  CFG3 \p_i2c_data_state_machine.i2c_counter_7[0]  (
+	.A(op_finished_RNIBSOP_Z),
+	.B(un1_i2c_counter_0_sqmuxa_1_Z),
+	.C(i2c_counter[0]),
+	.Y(\p_i2c_data_state_machine.i2c_counter_7 [0])
+);
+defparam \p_i2c_data_state_machine.i2c_counter_7[0] .INIT=8'h14;
+// @9:192
+  CFG3 \p_i2c_data_state_machine.bit_counter_5[1]  (
+	.A(bit_counter[1]),
+	.B(i2c_state_cur[5]),
+	.C(CO0_0),
+	.Y(\p_i2c_data_state_machine.bit_counter_5 [1])
+);
+defparam \p_i2c_data_state_machine.bit_counter_5[1] .INIT=8'h12;
+// @9:192
+  CFG4 SDAO_sig_RNO_0 (
+	.A(un1_i2c_state_cur_13_1_0_Z),
+	.B(i2c_state_cur[2]),
+	.C(SDAO_sig_0_sqmuxa_3_Z),
+	.D(i2c_data_0_sqmuxa_Z),
+	.Y(un1_i2c_state_cur_13_i)
+);
+defparam SDAO_sig_RNO_0.INIT=16'h0501;
+// @9:192
+  CFG4 SDAO_sig_RNO (
+	.A(m33_2),
+	.B(m33_1),
+	.C(op_finished_1_sqmuxa_1_Z),
+	.D(op_finished_1_sqmuxa_2_Z),
+	.Y(N_114_mux_i)
+);
+defparam SDAO_sig_RNO.INIT=16'hFFF7;
+// @9:192
+  CFG4 \i2c_reg_ctrl_RNIU1PP4[2]  (
+	.A(op_finished_RNIBSOP_Z),
+	.B(N_19_0),
+	.C(i2c_reg_ctrl_2_sqmuxa_1),
+	.D(i2c_reg_ctrl_1_sqmuxa_1),
+	.Y(N_119_mux_i)
+);
+defparam \i2c_reg_ctrl_RNIU1PP4[2] .INIT=16'hFFFB;
+// @9:177
+  CFG4 \i2c_state_cur_RNO[0]  (
+	.A(i2c_state_cur[2]),
+	.B(i2c_state_cur[0]),
+	.C(N_103_mux),
+	.D(N_36_0),
+	.Y(N_165_i)
+);
+defparam \i2c_state_cur_RNO[0] .INIT=16'h20EC;
+// @9:350
+  CFG4 \p_i2c_data_state_machine.i2c_counter_7[1]  (
+	.A(op_finished_RNIBSOP_Z),
+	.B(un1_i2c_counter_0_sqmuxa_1_Z),
+	.C(i2c_counter[1]),
+	.D(i2c_counter[0]),
+	.Y(\p_i2c_data_state_machine.i2c_counter_7 [1])
+);
+defparam \p_i2c_data_state_machine.i2c_counter_7[1] .INIT=16'h1450;
+// @9:192
+  CFG4 \p_i2c_data_state_machine.bit_counter_5[2]  (
+	.A(bit_counter[2]),
+	.B(bit_counter[1]),
+	.C(i2c_state_cur[5]),
+	.D(CO0_0),
+	.Y(\p_i2c_data_state_machine.bit_counter_5 [2])
+);
+defparam \p_i2c_data_state_machine.bit_counter_5[2] .INIT=16'h060A;
+// @9:192
+  CFG3 op_finished_RNO (
+	.A(i2c_state_cur[0]),
+	.B(N_36_0),
+	.C(N_19_0),
+	.Y(N_118_mux_i)
+);
+defparam op_finished_RNO.INIT=8'h8F;
+// @9:192
+  CFG4 SCLO_sig_RNO (
+	.A(SDAO_sig_0_sqmuxa_2_Z),
+	.B(SCLO_sig_0_sqmuxa_Z),
+	.C(op_finished_1_sqmuxa_2_Z),
+	.D(SCLO_sig_1_0_129_i_4_Z),
+	.Y(N_279_i)
+);
+defparam SCLO_sig_RNO.INIT=16'h0001;
+// @9:177
+  CFG4 \i2c_state_cur_RNO[2]  (
+	.A(i2c_state_cur[5]),
+	.B(N_103_mux),
+	.C(i2c_state_cur_ns_i_1[3]),
+	.D(N_181),
+	.Y(N_162_i)
+);
+defparam \i2c_state_cur_RNO[2] .INIT=16'h000B;
+// @9:192
+  CFG4 op_finished_RNO_0 (
+	.A(i2c_state_cur[5]),
+	.B(i2c_state_cur[0]),
+	.C(N_19_0),
+	.D(N_36_0),
+	.Y(N_96_i)
+);
+defparam op_finished_RNO_0.INIT=16'hEFAF;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* I2C_Core */
+

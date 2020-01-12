@@ -1,0 +1,146 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Wed Jan  8 04:01:36 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "I2C_Core"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\designer\I2C_Core\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting          Ending            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------
+I2C_Core|PCLK     I2C_Core|PCLK     |     10.000           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:RSTn
+p:SCLE
+p:SCLI
+p:SCLO
+p:SDAE
+p:SDAI
+p:SDAO
+p:clk_div_in[0]
+p:clk_div_in[1]
+p:clk_div_in[2]
+p:clk_div_in[3]
+p:clk_div_in[4]
+p:clk_div_in[5]
+p:clk_div_in[6]
+p:clk_div_in[7]
+p:clk_div_in[8]
+p:clk_div_in[9]
+p:clk_div_in[10]
+p:clk_div_in[11]
+p:clk_div_in[12]
+p:clk_div_in[13]
+p:clk_div_in[14]
+p:clk_div_in[15]
+p:clk_div_out[0]
+p:clk_div_out[1]
+p:clk_div_out[2]
+p:clk_div_out[3]
+p:clk_div_out[4]
+p:clk_div_out[5]
+p:clk_div_out[6]
+p:clk_div_out[7]
+p:clk_div_out[8]
+p:clk_div_out[9]
+p:clk_div_out[10]
+p:clk_div_out[11]
+p:clk_div_out[12]
+p:clk_div_out[13]
+p:clk_div_out[14]
+p:clk_div_out[15]
+p:ctrl_in[0]
+p:ctrl_in[1]
+p:ctrl_in[2]
+p:ctrl_in[3]
+p:ctrl_in[4]
+p:ctrl_in[5]
+p:ctrl_in[6]
+p:ctrl_in[7]
+p:ctrl_out[0]
+p:ctrl_out[1]
+p:ctrl_out[2]
+p:ctrl_out[3]
+p:ctrl_out[4]
+p:ctrl_out[5]
+p:ctrl_out[6]
+p:ctrl_out[7]
+p:data_in[0]
+p:data_in[1]
+p:data_in[2]
+p:data_in[3]
+p:data_in[4]
+p:data_in[5]
+p:data_in[6]
+p:data_in[7]
+p:data_out[0]
+p:data_out[1]
+p:data_out[2]
+p:data_out[3]
+p:data_out[4]
+p:data_out[5]
+p:data_out[6]
+p:data_out[7]
+p:interrupt
+p:reg_update
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

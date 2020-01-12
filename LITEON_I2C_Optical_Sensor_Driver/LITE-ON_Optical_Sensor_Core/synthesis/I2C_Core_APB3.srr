@@ -1,0 +1,638 @@
+#Build: Synplify Pro (R) N-2018.03M-SP1-1, Build 209R, Oct 23 2018
+#install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: PHOENIX136DESKY
+
+# Sun Jan 12 02:30:24 2020
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":24:7:24:19|Top entity is set to I2C_Core_APB3.
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd changed - recompiling
+VHDL syntax check successful!
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":24:7:24:19|Synthesizing work.i2c_core_apb3.architecture_i2c_core_apb3.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":94:11:94:19|Signal paddr_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":95:11:95:18|Signal psel_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":96:11:96:21|Signal penable_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":97:11:97:20|Signal pwrite_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":98:11:98:20|Signal pwdata_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":99:11:99:20|Signal pready_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":101:11:101:21|Signal pslverr_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":24:7:24:14|Synthesizing work.i2c_core.architecture_i2c_core.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":55:20:55:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000".
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":57:27:57:28|Using onehot encoding for type i2c_status_states. For example, enumeration none is mapped to "1000000000".
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":329:32:329:39|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":333:32:333:39|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":336:32:336:39|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":359:36:359:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":362:36:362:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":366:36:366:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":369:36:369:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":388:36:388:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":391:36:391:43|Removing redundant assignment.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":394:36:394:43|Removing redundant assignment.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":58:11:58:24|Signal i2c_status_cur is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":59:11:59:25|Signal i2c_status_last is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":61:11:61:21|Signal clk_i2c_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":63:11:63:35|Signal clk_i2c_write_readnot_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":64:11:64:27|Signal clk_i2c_write_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":65:11:65:26|Signal clk_i2c_read_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":89:11:89:20|Signal sclo_sig_v is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for work.i2c_core.architecture_i2c_core
+Running optimization stage 1 on I2C_Core .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":177:8:177:9|Pruning unused register i2c_shift_reg_2(7 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Removing unused bit 2 of SCLI_sig_v_2(2 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Removing unused bit 2 of SDAI_sig_v_2(2 downto 0). Either assign all bits or reduce the width of the signal.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Feedback mux created for signal SDAI_sig_v[1:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Feedback mux created for signal SCLI_sig_v[1:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Post processing for work.i2c_core_apb3.architecture_i2c_core_apb3
+Running optimization stage 1 on I2C_Core_APB3 .......
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":210:8:210:9|Optimizing register bit sequence_cnt(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":210:8:210:9|Pruning unused register sequence_cnt(0). Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on I2C_Core .......
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":177:8:177:9|Trying to extract state machine for register i2c_state_cur.
+Extracted state machine for register i2c_state_cur
+State machine has 6 reachable states with original encodings of:
+   000001
+   000010
+   000100
+   001000
+   010000
+   100000
+@W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":31:4:31:10|Input port bits 7 to 5 of ctrl_in(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Running optimization stage 2 on I2C_Core_APB3 .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd":210:8:210:9|Pruning unused register seq_toggle. Make sure that there are no unused intermediate registers.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jan 12 02:30:24 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jan 12 02:30:24 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jan 12 02:30:25 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core_APB3_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jan 12 02:30:26 2020
+
+###########################################################]
+Premap Report
+
+# Sun Jan 12 02:30:26 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\designer\I2C_Core_APB3\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\I2C_Core_APB3_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\I2C_Core_APB3_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+syn_allowed_resources : blockrams=21  set on top level netlist I2C_Core_APB3
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+Clock Summary
+******************
+
+          Start                  Requested     Requested     Clock        Clock                   Clock
+Level     Clock                  Frequency     Period        Type         Group                   Load 
+-------------------------------------------------------------------------------------------------------
+0 -       I2C_Core_APB3|PCLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     126  
+=======================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                       Clock     Source         Clock Pin               Non-clock Pin     Non-clock Pin
+Clock                  Load      Pin            Seq Example             Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------
+I2C_Core_APB3|PCLK     126       PCLK(port)     trigger_auto_last.C     -                 -            
+=======================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":192:12:192:15|Found inferred clock I2C_Core_APB3|PCLK which controls 126 sequential elements including I2C_Core_0.SDAO_sig. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\I2C_Core_APB3.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Encoding state machine i2c_state_cur[0:5] (in view: work.I2C_Core(architecture_i2c_core))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jan 12 02:30:27 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Sun Jan 12 02:30:27 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[5] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[6] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core_apb3.vhd":210:8:210:9|Removing sequential instance ctrl_in[7] (in view: work.I2C_Core_APB3(architecture_i2c_core_apb3)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine i2c_state_cur[0:5] (in view: work.I2C_Core(architecture_i2c_core))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":151:8:151:9|Found counter in view:work.I2C_Core(architecture_i2c_core) instance i2c_clk_cnt[15:0] 
+@N: MF179 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":157:19:157:44|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un5_i2c_clk_cnt (in view: work.I2C_Core(architecture_i2c_core))
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 138MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 138MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     2.27ns		 229 /       123
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_331 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_332 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 123 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   123        clk_div_in[0]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 142MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core_APB3_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 142MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+@W: MT420 |Found inferred clock I2C_Core_APB3|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Jan 12 02:30:29 2020
+#
+
+
+Top view:               I2C_Core_APB3
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\designer\I2C_Core_APB3\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 4.499
+
+                       Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock         Frequency     Frequency     Period        Period        Slack     Type         Group              
+-------------------------------------------------------------------------------------------------------------------------
+I2C_Core_APB3|PCLK     100.0 MHz     181.8 MHz     10.000        5.501         4.499     inferred     Inferred_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                  |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------
+Starting            Ending              |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------
+I2C_Core_APB3|PCLK  I2C_Core_APB3|PCLK  |  10.000      4.499  |  No paths    -      |  No paths    -      |  No paths    -    
+==============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: I2C_Core_APB3|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                      Arrival          
+Instance                         Reference              Type     Pin     Net                   Time        Slack
+                                 Clock                                                                          
+----------------------------------------------------------------------------------------------------------------
+I2C_Core_0.state_started         I2C_Core_APB3|PCLK     SLE      Q       state_started         0.108       4.499
+I2C_Core_0.i2c_counter_pulse     I2C_Core_APB3|PCLK     SLE      Q       i2c_counter_pulse     0.087       4.704
+I2C_Core_0.i2c_counter[1]        I2C_Core_APB3|PCLK     SLE      Q       i2c_counter[1]        0.087       5.026
+I2C_Core_0.i2c_counter[0]        I2C_Core_APB3|PCLK     SLE      Q       i2c_counter[0]        0.087       5.151
+I2C_Core_0.i2c_reg_ctrl[0]       I2C_Core_APB3|PCLK     SLE      Q       ctrl_out[0]           0.108       5.257
+auto_ctrl[1]                     I2C_Core_APB3|PCLK     SLE      Q       auto_ctrl[1]          0.108       5.322
+I2C_Core_0.i2c_clk_div[2]        I2C_Core_APB3|PCLK     SLE      Q       clk_div_out[2]        0.108       5.323
+I2C_Core_0.i2c_clk_div[4]        I2C_Core_APB3|PCLK     SLE      Q       clk_div_out[4]        0.108       5.337
+I2C_Core_0.i2c_clk_div[6]        I2C_Core_APB3|PCLK     SLE      Q       clk_div_out[6]        0.108       5.352
+I2C_Core_0.i2c_clk_div[8]        I2C_Core_APB3|PCLK     SLE      Q       clk_div_out[8]        0.108       5.367
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                               Starting                                                                     Required          
+Instance                       Reference              Type     Pin     Net                                  Time         Slack
+                               Clock                                                                                          
+------------------------------------------------------------------------------------------------------------------------------
+I2C_Core_0.SDAO_sig            I2C_Core_APB3|PCLK     SLE      D       SDAO_sig_13_iv_i                     9.745        4.499
+I2C_Core_0.op_finished         I2C_Core_APB3|PCLK     SLE      EN      un1_i2c_state_cur_14_0_0_0           9.662        4.681
+I2C_Core_0.i2c_reg_ctrl[5]     I2C_Core_APB3|PCLK     SLE      EN      un1_i2c_counter_0_sqmuxa_2_0_1       9.662        4.891
+I2C_Core_0.i2c_reg_ctrl[6]     I2C_Core_APB3|PCLK     SLE      EN      un1_i2c_counter_0_sqmuxa_2_0_1       9.662        4.891
+I2C_Core_0.op_finished         I2C_Core_APB3|PCLK     SLE      D       un1_i2c_state_cur_14_0_0_o2_0_o3     9.745        5.097
+clk_div_in[0]                  I2C_Core_APB3|PCLK     SLE      EN      un1_reg_update_0_sqmuxa_0_0_0        9.662        5.257
+clk_div_in[1]                  I2C_Core_APB3|PCLK     SLE      EN      un1_reg_update_0_sqmuxa_0_0_0        9.662        5.257
+clk_div_in[2]                  I2C_Core_APB3|PCLK     SLE      EN      un1_reg_update_0_sqmuxa_0_0_0        9.662        5.257
+clk_div_in[3]                  I2C_Core_APB3|PCLK     SLE      EN      un1_reg_update_0_sqmuxa_0_0_0        9.662        5.257
+clk_div_in[4]                  I2C_Core_APB3|PCLK     SLE      EN      un1_reg_update_0_sqmuxa_0_0_0        9.662        5.257
+==============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      5.245
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     4.499
+
+    Number of logic level(s):                6
+    Starting point:                          I2C_Core_0.state_started / Q
+    Ending point:                            I2C_Core_0.SDAO_sig / D
+    The start point is clocked by            I2C_Core_APB3|PCLK [rising] on pin CLK
+    The end   point is clocked by            I2C_Core_APB3|PCLK [rising] on pin CLK
+
+Instance / Net                                                           Pin      Pin               Arrival     No. of    
+Name                                                            Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------
+I2C_Core_0.state_started                                        SLE      Q        Out     0.108     0.108       -         
+state_started                                                   Net      -        -       0.497     -           2         
+I2C_Core_0.p_i2c_data_state_machine\.un10_i2c_counter_pulse     CFG2     A        In      -         0.605       -         
+I2C_Core_0.p_i2c_data_state_machine\.un10_i2c_counter_pulse     CFG2     Y        Out     0.100     0.705       -         
+un10_i2c_counter_pulse                                          Net      -        -       1.127     -           14        
+I2C_Core_0.i2c_state_cur_ns_0_0_0_0_o2[4]                       CFG3     B        In      -         1.832       -         
+I2C_Core_0.i2c_state_cur_ns_0_0_0_0_o2[4]                       CFG3     Y        Out     0.143     1.976       -         
+N_175                                                           Net      -        -       1.058     -           10        
+I2C_Core_0.op_finished_1_sqmuxa_1_0_a2_0_a3                     CFG2     A        In      -         3.033       -         
+I2C_Core_0.op_finished_1_sqmuxa_1_0_a2_0_a3                     CFG2     Y        Out     0.100     3.133       -         
+op_finished_1_sqmuxa_1                                          Net      -        -       0.815     -           4         
+I2C_Core_0.un1_SCLO_sig_0_sqmuxa_1_i_0_a3_0_2                   CFG4     D        In      -         3.948       -         
+I2C_Core_0.un1_SCLO_sig_0_sqmuxa_1_i_0_a3_0_2                   CFG4     Y        Out     0.326     4.274       -         
+un1_SCLO_sig_0_sqmuxa_1_i_0_a3_0_2                              Net      -        -       0.248     -           1         
+I2C_Core_0.p_i2c_data_state_machine\.SDAO_sig_13_iv_i_RNO       CFG4     B        In      -         4.523       -         
+I2C_Core_0.p_i2c_data_state_machine\.SDAO_sig_13_iv_i_RNO       CFG4     Y        Out     0.148     4.671       -         
+N_24_i                                                          Net      -        -       0.248     -           1         
+I2C_Core_0.p_i2c_data_state_machine\.SDAO_sig_13_iv_i           CFG3     A        In      -         4.920       -         
+I2C_Core_0.p_i2c_data_state_machine\.SDAO_sig_13_iv_i           CFG3     Y        Out     0.077     4.997       -         
+SDAO_sig_13_iv_i                                                Net      -        -       0.248     -           1         
+I2C_Core_0.SDAO_sig                                             SLE      D        In      -         5.245       -         
+==========================================================================================================================
+Total path delay (propagation time + setup) of 5.501 is 1.259(22.9%) logic and 4.242(77.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+---------------------------------------
+Resource Usage Report for I2C_Core_APB3 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           1 use
+CFG2           32 uses
+CFG3           31 uses
+CFG4           131 uses
+
+Carry cells:
+ARI1            25 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            123 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 38
+I/O primitives: 38
+INBUF          24 uses
+OUTBUF         14 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    220
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  123 + 0 + 0 + 0 = 123;
+Total number of LUTs after P&R:  220 + 0 + 0 + 0 = 220;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 28MB peak: 142MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sun Jan 12 02:30:29 2020
+
+###########################################################]

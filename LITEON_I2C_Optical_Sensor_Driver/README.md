@@ -1,0 +1,7 @@
+# LITEON I2C Driver
+
+WIP
+
+This project is an excuse to build my own I2C master that has the capability of performing I2C transactions on its own. There is also the capability of building interfaces for different busses such as Wishbone or AXI without having to rewrite the logic that handles the SDA and SCL lines. As it is I use APB3 the most and have therefore written the initial version to use that.
+
+There were some perhaps fundamental oversights I encountered while building this. The most common was forgetting to plan for a way to operate 1 state on a clock that was faster than the clock that ran the signal. For instance, the interrupt set by the I2C_Core to signal it has completed a command and is waiting for the next one takes 2 clock cycles to be cleared. The first clock is writing to the control register, and the second clock is the logic to read the register value and clear the interrupt. This caused my I2C instruction sequence to send 2 or 3 instructions (I went through varying degrees of delay during my troubleshooting) before the interrupt cleared. While I have the system working now I would like to redo some things as I believe I don't think I have a consistant solution among the various state machines within this design.

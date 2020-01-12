@@ -1,0 +1,16 @@
+
+fsm_encoding {917781771} onehot
+
+fsm_state_encoding {917781771} idle {000001}
+
+fsm_state_encoding {917781771} start {000010}
+
+fsm_state_encoding {917781771} stop {000100}
+
+fsm_state_encoding {917781771} data {001000}
+
+fsm_state_encoding {917781771} rstart {010000}
+
+fsm_state_encoding {917781771} ack {100000}
+
+fsm_registers {917781771} {i2c_state_cur[0]}  {i2c_state_cur[1]}  {i2c_state_cur[2]}  {i2c_state_cur[3]}  {i2c_state_cur[4]}  {i2c_state_cur[5]} 

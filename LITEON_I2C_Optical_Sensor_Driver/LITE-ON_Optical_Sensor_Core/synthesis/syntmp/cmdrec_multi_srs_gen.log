@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.I2C_Core_APB3  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core_APB3_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core_APB3_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synlog\I2C_Core_APB3_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.I2C_Core_APB3 -multisrs ..\synwork\I2C_Core_APB3_comp.srs -osyn ..\synwork\I2C_Core_APB3_mult.srs -log ..\synlog\I2C_Core_APB3_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\I2C_Core_APB3_comp.srs|io:i|time:1578814224|size:13440|exec:0|csum:EF765758CD3B60B9B62B2A0E8B8C4FD8
+file:..\synwork\I2C_Core_APB3_mult.srs|io:o|time:1578814226|size:6668|exec:0|csum:
+file:..\synlog\I2C_Core_APB3_multi_srs_gen.srr|io:o|time:1578814226|size:1221|exec:0|csum:
+file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

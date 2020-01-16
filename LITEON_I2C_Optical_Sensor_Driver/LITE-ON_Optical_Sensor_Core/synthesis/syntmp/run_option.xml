@@ -3,15 +3,15 @@
   Synopsys, Inc.
   Version N-2018.03M-SP1-1
   Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\syntmp\run_option.xml
-  Written on Sun Jan 12 02:30:24 2020
+  Written on Thu Jan 16 02:04:56 2020
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
-     <option name="project_name" display_name="Project Name">I2C_Core_APB3_syn</option>
+     <option name="project_name" display_name="Project Name">Optical_Sensor_Block_syn</option>
      <option name="device_name" display_name="Device Name">synthesis: Microsemi SmartFusion2 : M2S010</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module">work.I2C_Core_APB3</option>
+     <option name="top_module" display_name="Top Module">work.Optical_Sensor_Block</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">10000</option>

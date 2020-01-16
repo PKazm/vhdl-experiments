@@ -1,0 +1,148 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Top entity is set to I2C_Core2.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Synthesizing work.i2c_core2.architecture_i2c_core2.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":61:20:61:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000000000000000000".
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 1 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 2 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 3 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 4 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 5 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 6 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 7 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":80:11:80:22|Bit 8 of signal i2c_read_reg is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":83:11:83:21|Signal op_finished is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":90:11:90:18|Signal sdae_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":93:11:93:18|Signal scle_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":107:11:107:18|Signal i2c_data is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for work.i2c_core2.architecture_i2c_core2
+Running optimization stage 1 on I2C_Core2 .......
+@W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":132:8:132:9|Removing unused bit 0 of SCL_filt_2(2 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":132:8:132:9|Removing unused bit 0 of SDA_filt_3(2 downto 0). Either assign all bits or reduce the width of the signal.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":226:8:226:9|Feedback mux created for signal status_sig[1:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":237:12:237:13|Feedback mux created for signal i2c_read_reg[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":170:8:170:9|All reachable assignments to i2c_bus_busy_sig are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":142:12:142:13|Feedback mux created for signal SDAI_sig_history[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL251 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":132:8:132:9|All reachable assignments to SDA_filt(2 downto 1) assign 1, register removed by optimization
+@N: CL189 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":142:12:142:13|Register bit SDAI_sig_history(0) is always 0.
+Running optimization stage 2 on I2C_Core2 .......
+@W: CL138 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":237:12:237:13|Removing register 'i2c_read_reg' because it is only assigned 0 or its original value.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":226:8:226:9|Trying to extract state machine for register status_sig.
+Extracted state machine for register status_sig
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":226:8:226:9|Trying to extract state machine for register i2c_state_cur.
+Extracted state machine for register i2c_state_cur
+State machine has 17 reachable states with original encodings of:
+   000000000000000000001
+   000000000000000000010
+   000000000000000000100
+   000000000000000001000
+   000000000000000010000
+   000000000000000100000
+   000000000000001000000
+   000000000000010000000
+   000000000000100000000
+   000000000001000000000
+   000000000010000000000
+   000000000100000000000
+   000000001000000000000
+   000000010000000000000
+   000000100000000000000
+   000001000000000000000
+   000010000000000000000
+@W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":42:4:42:13|Input port bits 1 to 0 of clk_div_in(15 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL157 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":224:31:224:37|Output data_out has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":48:4:48:7|Input SDAI is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":52:4:52:7|Input SCLI is unused.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 14 03:24:34 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\layer0.srs changed - recompiling
+@N: NF107 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Selected library: work cell: I2C_Core2 view architecture_i2c_core2 as top level
+@N: NF107 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Selected library: work cell: I2C_Core2 view architecture_i2c_core2 as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 14 03:24:34 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jan 14 03:24:34 2020
+
+###########################################################]

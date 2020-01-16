@@ -49,14 +49,182 @@ R11
 !i113 1
 R12
 R13
-Ei2c_core_apb3
-Z14 w1578802336
+Ei2c_core2
+Z14 w1579152282
 R2
 R3
 R4
 R0
-Z15 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd
-Z16 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd
+Z15 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2.vhd
+Z16 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2.vhd
+l0
+L24
+VFGkRBY_KFSn0:XRd]XkDQ0
+!s100 N927J_fhAF[DBzW[jNfcY2
+R7
+33
+Z17 !s110 1579152924
+!i10b 1
+Z18 !s108 1579152923.000000
+Z19 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2.vhd|
+Z20 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_i2c_core2
+R2
+R3
+R4
+DEx4 work 9 i2c_core2 0 22 FGkRBY_KFSn0:XRd]XkDQ0
+l110
+L60
+V@A:5L_D0_G34_[b0kdeC91
+!s100 G:O<^M;?0]Q6_S>[0:VHG2
+R7
+33
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ei2c_core2_apb3
+Z21 w1579152766
+R2
+R3
+R4
+R0
+Z22 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2_APB3.vhd
+Z23 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2_APB3.vhd
+l0
+L24
+VJZaZ=@X0miG`]M5ES9i623
+!s100 [0Ul9LmZQ<S=eS`2PPjfl1
+R7
+33
+R17
+!i10b 1
+Z24 !s108 1579152924.000000
+Z25 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2_APB3.vhd|
+Z26 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2_APB3.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_i2c_core2_apb3
+R2
+R3
+R4
+DEx4 work 14 i2c_core2_apb3 0 22 JZaZ=@X0miG`]M5ES9i623
+l163
+L59
+V[UG5gXioROUQWN8:^PV?S2
+!s100 em9bE?n[M^N^m6zSUOan>1
+R7
+33
+R17
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Ei2c_core2_apb3_tb
+Z27 w1579152910
+Z28 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+R2
+R3
+R4
+R0
+Z29 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_APB3_tb.vhd
+Z30 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_APB3_tb.vhd
+l0
+L36
+V0dAMZ0CQ>Pe7?2b980cMg3
+!s100 f:T[4d<e5PmdC7J3Li_YS2
+R7
+33
+R17
+!i10b 1
+R24
+Z31 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_APB3_tb.vhd|
+Z32 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_APB3_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R28
+R2
+R3
+R4
+Z33 DEx4 work 17 i2c_core2_apb3_tb 0 22 0dAMZ0CQ>Pe7?2b980cMg3
+l160
+L39
+V@9AIIdG@W<PjL<L1^cmW92
+!s100 J2gjVETP]:WXNn3W^^[ze0
+R7
+33
+R17
+!i10b 1
+R24
+R31
+R32
+!i113 1
+R12
+R13
+Ei2c_core2_tb
+Z34 w1579145734
+R28
+R2
+R3
+R4
+R0
+Z35 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_tb.vhd
+Z36 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_tb.vhd
+l0
+L36
+V5iIc;1PlkIM:jPML@FZP[2
+!s100 ;K1RWL`]:6OCmlgg2oT<N0
+R7
+33
+Z37 !s110 1579145749
+!i10b 1
+Z38 !s108 1579145749.000000
+Z39 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_tb.vhd|
+Z40 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core2_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R28
+R2
+R3
+R4
+DEx4 work 12 i2c_core2_tb 0 22 5iIc;1PlkIM:jPML@FZP[2
+l124
+L39
+Vf8OQ@[_DF6DX]Y8QVOL9L1
+!s100 8@BNilh?lGaUdNdTeRlXe3
+R7
+33
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R12
+R13
+Ei2c_core_apb3
+Z41 w1578802336
+R2
+R3
+R4
+R0
+Z42 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd
+Z43 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd
 l0
 L24
 V>@eNF2CS0Y]GJQdUNR6;`2
@@ -66,8 +234,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd|
-Z18 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd|
+Z44 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd|
+Z45 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd|
 !i113 1
 R12
 R13
@@ -85,20 +253,20 @@ R7
 R8
 !i10b 1
 R9
-R17
-R18
+R44
+R45
 !i113 1
 R12
 R13
 Ei2c_core_apb3_tb
-Z19 w1578719968
-Z20 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+Z46 w1578719968
+R28
 R2
 R3
 R4
 R0
-Z21 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd
-Z22 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd
+Z47 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd
+Z48 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd
 l0
 L36
 VW7:09>ZFXDTS?ol]Ekjm;1
@@ -108,40 +276,40 @@ R7
 R8
 !i10b 1
 R9
-Z23 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd|
-Z24 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd|
+Z49 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd|
+Z50 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_APB3_tb.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R20
+R28
 R2
 R3
 R4
-Z25 DEx4 work 16 i2c_core_apb3_tb 0 22 W7:09>ZFXDTS?ol]Ekjm;1
+DEx4 work 16 i2c_core_apb3_tb 0 22 W7:09>ZFXDTS?ol]Ekjm;1
 l110
 L39
-Z26 VkUIK@BM_SgJal1^1JGBPg3
-Z27 !s100 5HF^jEznV_fal7Jn?ZUTT2
+VkUIK@BM_SgJal1^1JGBPg3
+!s100 5HF^jEznV_fal7Jn?ZUTT2
 R7
 33
 R8
 !i10b 1
 R9
-R23
-R24
+R49
+R50
 !i113 1
 R12
 R13
 Ei2c_core_tb
-Z28 w1578433632
-R20
+Z51 w1578433632
+R28
 R2
 R3
 R4
 R0
-Z29 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd
-Z30 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd
+Z52 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd
+Z53 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd
 l0
 L36
 V_O`4NP[Y]?6QG9J9[9BIH2
@@ -150,14 +318,14 @@ R7
 33
 !s110 1578474162
 !i10b 1
-Z31 !s108 1578474162.000000
-Z32 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd|
-Z33 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd|
+Z54 !s108 1578474162.000000
+Z55 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd|
+Z56 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/stimulus/I2C_Core_tb.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R20
+R28
 R2
 R3
 R4
@@ -170,9 +338,9 @@ R7
 33
 !s110 1578474163
 !i10b 1
-R31
-R32
-R33
+R54
+R55
+R56
 !i113 1
 R12
 R13

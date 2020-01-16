@@ -16,19 +16,22 @@ Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd (2020-01-12 02:30:03, 2020-01-12 02:30:19)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd (2020-01-16 02:04:21, 2020-01-16 02:04:53)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 2
+Modules that may have changed as a result of file changes: 3
 MID:  lib.cell.view
-0        work.i2c_core.architecture_i2c_core may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd (2020-01-12 02:30:03, 2020-01-12 02:30:19) <-- (may instantiate this module)
-2        work.i2c_core_apb3.architecture_i2c_core_apb3 may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core_APB3.vhd (2020-01-12 02:30:03, 2020-01-12 02:30:19) <-- (architecture and entity definition)
+4        work.i2c_core2.architecture_i2c_core2 may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd (2020-01-16 02:04:21, 2020-01-16 02:04:53) <-- (may instantiate this module)
+8        work.i2c_core2_apb3.architecture_i2c_core2_apb3 may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd (2020-01-16 02:04:21, 2020-01-16 02:04:53) <-- (may instantiate this module)
+6        work.optical_sensor_block.rtl may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd (2020-01-16 02:04:21, 2020-01-16 02:04:53) <-- (architecture and entity definition)
 
 *******************************************************************
-Unmodified files: 11
+Unmodified files: 13
 FID:  path (timestamp)
+13       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
 0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
 1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\location.map (2018-12-21 01:52:16)
 2        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\numeric.vhd (2018-12-21 01:52:16)
@@ -39,7 +42,8 @@ FID:  path (timestamp)
 7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
 8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
 9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
-10       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd (2020-01-11 23:18:45)
+12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd (2020-01-16 00:24:42)
+15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd (2020-01-16 02:02:11)
 
 *******************************************************************
 Unchanged modules: 0

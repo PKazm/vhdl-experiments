@@ -205,7 +205,8 @@ begin
     -- BEGIN Register Write logic
 
     p_i2c_passthrough_reg : process(PCLK, RSTn)
-        variable selected_seq_reg : std_logic_vector(9 downto 0) := (others => '0');
+        variable selected_seq_reg_var : std_logic_vector(9 downto 0) := (others => '0');
+        variable sequence_cnt_var : 
     begin
         if(RSTn = '0') then
             ctrl_in <= "00000000";
@@ -251,27 +252,30 @@ begin
                     -- I2C_core is idle and sequence count is at the start
                     -- I2C_core is waiting and sequence count is not at the start
                     report "SEQUENCE DOING A THING: " & to_string(sequence_cnt);
-                    selected_seq_reg := i2c_auto_regs(sequence_cnt);
+                    selected_seq_reg_var := i2c_auto_regs(sequence_cnt);
                     seq_toggle <= '1';
-                    if(selected_seq_reg(9) = '1') then
-                        -- data write/read
-                        data_in <= selected_seq_reg(7 downto 0);
-                        ctrl_in <= "000" & selected_seq_reg(9) & '0' & selected_seq_reg(8) & "1" & ctrl_out(0);
-                        clk_div_in <= clk_div_out;
-                        reg_update <= '1';
-                    elsif(selected_seq_reg(8) = '1') then
-                        -- i2c START, STOP, etc.
-                        data_in <= data_out;
-                        ctrl_in <= "000" & '0' & selected_seq_reg(1 downto 0) & "1" & ctrl_out(0);
-                        clk_div_in <= clk_div_out;
-                        reg_update <= '1';
-                    end if;
 
-                    if(sequence_cnt = g_auto_reg_max - 1) then
-                        seq_finished <= '1';
-                    else
-                        sequence_cnt <= sequence_cnt + 1;
-                    end if;
+
+
+                        if(selected_seq_reg_var(9) = '1') then
+                            -- data write/read
+                            data_in <= selected_seq_reg_var(7 downto 0);
+                            ctrl_in <= "000" & selected_seq_reg_var(9) & '0' & selected_seq_reg_var(8) & "1" & ctrl_out(0);
+                            clk_div_in <= clk_div_out;
+                            reg_update <= '1';
+                        elsif(selected_seq_reg_var(8) = '1') then
+                            -- i2c START, STOP, etc.
+                            data_in <= data_out;
+                            ctrl_in <= "000" & '0' & selected_seq_reg_var(1 downto 0) & "1" & ctrl_out(0);
+                            clk_div_in <= clk_div_out;
+                            reg_update <= '1';
+                        end if;
+
+                        if(sequence_cnt = g_auto_reg_max - 1) then
+                            seq_finished <= '1';
+                        else
+                            sequence_cnt <= sequence_cnt + 1;
+                        end if;
                 else
                     reg_update <= '0';
                     if(ctrl_out(6) = '0') then
@@ -310,31 +314,31 @@ begin
                 i2c_auto_regs(I) <= "00" & X"00";
             end loop;
             -- default to light sensor I'm using
-            --i2c_auto_regs(0) <= "01" & "00000001";  -- start
-            --i2c_auto_regs(1) <= "10" & "01010010";  -- optical sensor address + write
-            --i2c_auto_regs(2) <= "10" & X"88";  -- optical sensor register address
-            --i2c_auto_regs(3) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(4) <= "10" & "01010011";  -- optical sensor address + read
-            --i2c_auto_regs(5) <= "11" & X"00";  -- sensor data
-            --i2c_auto_regs(6) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(7) <= "10" & "01010010";  -- optical sensor address + write
-            --i2c_auto_regs(8) <= "10" & X"89";  -- optical sensor register address
-            --i2c_auto_regs(9) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(10) <= "10" & "01010011";  -- optical sensor address + read
-            --i2c_auto_regs(11) <= "11" & X"00";  -- sensor data
-            --i2c_auto_regs(12) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(13) <= "10" & "01010010";  -- optical sensor address + write
-            --i2c_auto_regs(14) <= "10" & X"8A";  -- optical sensor register address
-            --i2c_auto_regs(15) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(16) <= "10" & "01010011";  -- optical sensor address + read
-            --i2c_auto_regs(17) <= "11" & X"00";  -- sensor data
-            --i2c_auto_regs(18) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(19) <= "10" & "01010010";  -- optical sensor address + write
-            --i2c_auto_regs(20) <= "10" & X"8B";  -- optical sensor register address
-            --i2c_auto_regs(21) <= "01" & "00000011";  -- repeated start
-            --i2c_auto_regs(22) <= "10" & "01010011";  -- optical sensor address + read
-            --i2c_auto_regs(23) <= "11" & X"00";  -- sensor data
-            --i2c_auto_regs(24) <= "01" & "00000010";  -- stop
+            i2c_auto_regs(0) <= "01" & "00000001";  -- start
+            i2c_auto_regs(1) <= "10" & "01010010";  -- optical sensor address + write
+            i2c_auto_regs(2) <= "10" & X"88";  -- optical sensor register address
+            i2c_auto_regs(3) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(4) <= "10" & "01010011";  -- optical sensor address + read
+            i2c_auto_regs(5) <= "11" & X"00";  -- sensor data
+            i2c_auto_regs(6) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(7) <= "10" & "01010010";  -- optical sensor address + write
+            i2c_auto_regs(8) <= "10" & X"89";  -- optical sensor register address
+            i2c_auto_regs(9) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(10) <= "10" & "01010011";  -- optical sensor address + read
+            i2c_auto_regs(11) <= "11" & X"00";  -- sensor data
+            i2c_auto_regs(12) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(13) <= "10" & "01010010";  -- optical sensor address + write
+            i2c_auto_regs(14) <= "10" & X"8A";  -- optical sensor register address
+            i2c_auto_regs(15) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(16) <= "10" & "01010011";  -- optical sensor address + read
+            i2c_auto_regs(17) <= "11" & X"00";  -- sensor data
+            i2c_auto_regs(18) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(19) <= "10" & "01010010";  -- optical sensor address + write
+            i2c_auto_regs(20) <= "10" & X"8B";  -- optical sensor register address
+            i2c_auto_regs(21) <= "01" & "00000011";  -- repeated start
+            i2c_auto_regs(22) <= "10" & "01010011";  -- optical sensor address + read
+            i2c_auto_regs(23) <= "11" & X"00";  -- sensor data
+            i2c_auto_regs(24) <= "01" & "00000010";  -- stop
             -- default to light sensor I'm using
             
         elsif(rising_edge(PCLK)) then
@@ -365,7 +369,7 @@ begin
     end process;
 
     --p_run_sequence : process(PCLK, RSTn)
-    --    variable selected_seq_reg : std_logic_vector(9 downto 0) := (others => '0');
+    --    variable selected_seq_reg_var : std_logic_vector(9 downto 0) := (others => '0');
     --begin
     --    if(RSTn = '0') then
     --        seq_finished <= '0';
@@ -381,17 +385,17 @@ begin
     --                -- I2C_core is idle and sequence count is at the start
     --                -- I2C_core is waiting and sequence count is not at the start
 --
-    --                selected_seq_reg := i2c_auto_regs(sequence_cnt);
-    --                if(selected_seq_reg(9) = '1') then
+    --                selected_seq_reg_var := i2c_auto_regs(sequence_cnt);
+    --                if(selected_seq_reg_var(9) = '1') then
     --                    -- data write/read
-    --                    data_in <= selected_seq_reg(7 downto 0);
-    --                    ctrl_in <= "000" & selected_seq_reg(9) & '0' & selected_seq_reg(8) & "1" & ctrl_out(0);
+    --                    data_in <= selected_seq_reg_var(7 downto 0);
+    --                    ctrl_in <= "000" & selected_seq_reg_var(9) & '0' & selected_seq_reg_var(8) & "1" & ctrl_out(0);
     --                    clk_div_in <= clk_div_out;
     --                    reg_update <= '1';
-    --                elsif(selected_seq_reg(8) = '1') then
+    --                elsif(selected_seq_reg_var(8) = '1') then
     --                    -- i2c START, STOP, etc.
     --                    data_in <= data_out;
-    --                    ctrl_in <= "000" & '0' & selected_seq_reg(1 downto 0) & "1" & ctrl_out(0);
+    --                    ctrl_in <= "000" & '0' & selected_seq_reg_var(1 downto 0) & "1" & ctrl_out(0);
     --                    clk_div_in <= clk_div_out;
     --                    reg_update <= '1';
     --                end if;

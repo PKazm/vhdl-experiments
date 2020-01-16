@@ -423,8 +423,5 @@ begin
     -- internal/external signal assignements
 
 
-    interrupt <= i2c_reg_ctrl(6); -- redundant much?
-
-
    -- architecture body
 end architecture_I2C_Core;

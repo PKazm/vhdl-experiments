@@ -1,0 +1,9 @@
+{signal: [
+   {name: 'clk',			wave: 'P.............'},
+   {name: 'seq_en',			wave: 'lh............'},
+   {name: 'seq_cnt',		wave: '=.......=.....', data:[0, 1, 2, 3, 4]},
+   {name: 'i2c_start',		wave: 'l.h.....lh....'},
+   {name: 'i2c int',		wave: 'l......h..l...'},
+   {name: 'i2c_status',		wave: '=..=...=..=..=', data:["00", "01", "10", "01", "00"]},
+   {name: '00 or int',		wave: 'h..l...h..l..h'}
+]}

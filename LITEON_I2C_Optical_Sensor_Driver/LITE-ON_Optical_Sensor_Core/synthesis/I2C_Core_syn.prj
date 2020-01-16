@@ -1,24 +1,28 @@
-#add_file options
-add_file -vhdl "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core.vhd"
+#--  Synopsys, Inc.
+#--  Version N-2018.03M-SP1-1
+#--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\I2C_Core_syn.prj
+#--  Written on Tue Jan 14 03:25:35 2020
+
+
+#project files
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core.vhd"
 add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/designer/I2C_Core/synthesis.fdc"
 
 
 
-#project files
-
-
 #implementation: "synthesis"
 impl -add synthesis -type fpga
-
-set_option -vhdl2008 1
 
 #device options
 set_option -technology SmartFusion2
 set_option -part M2S010
 set_option -package TQ144
 set_option -speed_grade STD
+set_option -part_companion ""
+
 #compilation/mapping options
 set_option -use_fsm_explorer 0
+set_option -top_module "work.I2C_Core"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -26,8 +30,6 @@ set_option -distributed_compile 0
 # mapper_without_write_options
 set_option -frequency 100.000
 set_option -srs_instrumentation 1
-
-set_option -top_module work.I2C_Core
 
 # mapper_options
 set_option -write_verilog 0
@@ -44,6 +46,7 @@ set_option -async_globalthreshold 12
 set_option -globalthreshold 5000
 set_option -low_power_ram_decomp 0
 set_option -seqshift_to_uram 0
+set_option -disable_io_insertion 0
 set_option -opcond COMTC
 set_option -retiming 0
 set_option -report_path 4000
@@ -51,6 +54,7 @@ set_option -update_models_cp 0
 set_option -preserve_registers 0
 set_option -disable_ramindex 0
 set_option -microsemi_enhanced_flow 1
+
 # NFilter
 set_option -no_sequential_opt 0
 
@@ -65,6 +69,8 @@ set_option -resource_sharing 1
 set_option -auto_infer_blackbox 0
 
 # Compiler Options
+set_option -vhdl2008 1
+
 #automatic place and route (vendor) options
 set_option -write_apr_constraint 1
 

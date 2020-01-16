@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Optical_Sensor_Block</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>No Top Level Ports</message>
+    <detail>You must create at least one port for a valid design</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Optical_Sensor_Block/instances/Optical_Sensor_Block</crossprobe>
+  </drc>
+</drcreport>

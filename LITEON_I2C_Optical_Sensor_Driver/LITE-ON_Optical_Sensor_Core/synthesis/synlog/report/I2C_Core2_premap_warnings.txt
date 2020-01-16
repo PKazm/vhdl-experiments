@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":226:8:226:9|Found inferred clock I2C_Core2|PCLK which controls 45 sequential elements including i2c_state_cur[0:16]. This clock has no specified timing constraint which may adversely impact design performance. 

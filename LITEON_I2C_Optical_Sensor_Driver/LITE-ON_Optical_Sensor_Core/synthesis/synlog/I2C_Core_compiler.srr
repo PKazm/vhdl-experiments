@@ -33,9 +33,9 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 
 @N|Running in 64-bit mode
 @N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":24:7:24:14|Top entity is set to I2C_Core.
-File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd changed - recompiling
+Options changed - recompiling
 VHDL syntax check successful!
-File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd changed - recompiling
+Options changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":24:7:24:14|Synthesizing work.i2c_core.architecture_i2c_core.
 @N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":55:20:55:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000".
@@ -59,6 +59,7 @@ File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":89:11:89:20|Signal sclo_sig_v is undriven. Either assign the signal a value or remove the signal declaration.
 Post processing for work.i2c_core.architecture_i2c_core
 Running optimization stage 1 on I2C_Core .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":39:4:39:12|Signal interrupt is floating; a simulation mismatch is possible.
 @W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":177:8:177:9|Pruning unused register i2c_shift_reg_2(7 downto 0). Make sure that there are no unused intermediate registers.
 @W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Removing unused bit 2 of SCLI_sig_v_2(2 downto 0). Either assign all bits or reduce the width of the signal.
 @W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core.vhd":140:12:140:13|Removing unused bit 2 of SDAI_sig_v_2(2 downto 0). Either assign all bits or reduce the width of the signal.
@@ -86,7 +87,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jan  8 04:01:34 2020
+# Tue Jan 14 03:25:30 2020
 
 ###########################################################]
 
@@ -113,7 +114,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jan  8 04:01:34 2020
+# Tue Jan 14 03:25:30 2020
 
 ###########################################################]
 @END
@@ -123,6 +124,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jan  8 04:01:34 2020
+# Tue Jan 14 03:25:30 2020
 
 ###########################################################]

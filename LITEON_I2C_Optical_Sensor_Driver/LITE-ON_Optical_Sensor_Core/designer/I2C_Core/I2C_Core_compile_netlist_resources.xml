@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Wed Jan  8 04:01:43 2020
+<text>Date: Tue Jan 14 03:25:40 2020
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,9 +106,9 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>115</cell>
+ <cell>117</cell>
  <cell>12084</cell>
- <cell>0.95</cell>
+ <cell>0.97</cell>
 </row>
 <row>
  <cell>DFF</cell>
@@ -204,7 +204,7 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>115</cell>
+ <cell>117</cell>
  <cell>71</cell>
 </row>
 <row>
@@ -224,7 +224,7 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>115</cell>
+ <cell>117</cell>
  <cell>71</cell>
 </row>
 </table>
@@ -404,37 +404,7 @@
  <cell>Driver: i2c_state_cur[5]</cell>
 </row>
 <row>
- <cell>17</cell>
- <cell>INT_NET</cell>
- <cell>Net   : un1_i2c_reg_ctrl_1_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: un1_i2c_reg_ctrl_1</cell>
-</row>
-<row>
- <cell>13</cell>
- <cell>INT_NET</cell>
- <cell>Net   : i2c_counter[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: i2c_counter[0]</cell>
-</row>
-<row>
- <cell>12</cell>
- <cell>INT_NET</cell>
- <cell>Net   : i2c_state_cur[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: i2c_state_cur[0]</cell>
-</row>
-<row>
- <cell>12</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
  <cell>Net   : i2c_counter[1]</cell>
 </row>
@@ -444,27 +414,27 @@
  <cell>Driver: i2c_counter[1]</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : ctrl_out_c[4]</cell>
+ <cell>Net   : i2c_counter[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: i2c_reg_ctrl[4]</cell>
+ <cell>Driver: i2c_counter[0]</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : ctrl_out_c[2]</cell>
+ <cell>Net   : p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_Y</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: i2c_reg_ctrl[2]</cell>
+ <cell>Driver: p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>15</cell>
  <cell>INT_NET</cell>
  <cell>Net   : p_i2c_data_state_machine.un10_i2c_counter_pulse_Z</cell>
 </row>
@@ -474,14 +444,44 @@
  <cell>Driver: p_i2c_data_state_machine.un10_i2c_counter_pulse</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : N_167_i_0</cell>
+ <cell>Net   : i2c_state_cur[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: i2c_state_cur[0]</cell>
+</row>
+<row>
+ <cell>13</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : bit_counter_1_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: p_i2c_data_state_machine.un10_i2c_counter_pulse_RNIRO2U</cell>
+</row>
+<row>
+ <cell>12</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : N_38</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: p_i2c_data_state_machine.un5_sdae_sig_0_o2</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : i2c_state_cur[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: i2c_state_cur[2]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -512,37 +512,7 @@
  <cell>Driver: i2c_state_cur[5]</cell>
 </row>
 <row>
- <cell>17</cell>
- <cell>INT_NET</cell>
- <cell>Net   : un1_i2c_reg_ctrl_1_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: un1_i2c_reg_ctrl_1</cell>
-</row>
-<row>
- <cell>13</cell>
- <cell>INT_NET</cell>
- <cell>Net   : i2c_counter[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: i2c_counter[0]</cell>
-</row>
-<row>
- <cell>12</cell>
- <cell>INT_NET</cell>
- <cell>Net   : i2c_state_cur[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: i2c_state_cur[0]</cell>
-</row>
-<row>
- <cell>12</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
  <cell>Net   : i2c_counter[1]</cell>
 </row>
@@ -552,27 +522,27 @@
  <cell>Driver: i2c_counter[1]</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : ctrl_out_c[4]</cell>
+ <cell>Net   : i2c_counter[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: i2c_reg_ctrl[4]</cell>
+ <cell>Driver: i2c_counter[0]</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : ctrl_out_c[2]</cell>
+ <cell>Net   : p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD_Y</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: i2c_reg_ctrl[2]</cell>
+ <cell>Driver: p_i2c_clock_gen.un5_i2c_clk_cnt_0_I_21_RNI3ULD</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>15</cell>
  <cell>INT_NET</cell>
  <cell>Net   : p_i2c_data_state_machine.un10_i2c_counter_pulse_Z</cell>
 </row>
@@ -582,14 +552,44 @@
  <cell>Driver: p_i2c_data_state_machine.un10_i2c_counter_pulse</cell>
 </row>
 <row>
- <cell>10</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : N_167_i_0</cell>
+ <cell>Net   : i2c_state_cur[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: i2c_state_cur[0]</cell>
+</row>
+<row>
+ <cell>13</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : bit_counter_1_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: p_i2c_data_state_machine.un10_i2c_counter_pulse_RNIRO2U</cell>
+</row>
+<row>
+ <cell>12</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : N_38</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: p_i2c_data_state_machine.un5_sdae_sig_0_o2</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : i2c_state_cur[2]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: i2c_state_cur[2]</cell>
 </row>
 </table>
 </doc>

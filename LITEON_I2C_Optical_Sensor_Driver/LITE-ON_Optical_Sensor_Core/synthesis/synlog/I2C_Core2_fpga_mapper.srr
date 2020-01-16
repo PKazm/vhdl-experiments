@@ -1,0 +1,434 @@
+# Tue Jan 14 03:24:36 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_1 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[7] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_2 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[6] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_3 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[5] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_4 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[4] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_5 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[3] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_6 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[2] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_7 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[1] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_8 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[0] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Encoding state machine i2c_state_cur[0:16] (in view: work.I2C_Core2(architecture_i2c_core2))
+original code -> new code
+   000000000000000000001 -> 00000000000000001
+   000000000000000000010 -> 00000000000000010
+   000000000000000000100 -> 00000000000000100
+   000000000000000001000 -> 00000000000001000
+   000000000000000010000 -> 00000000000010000
+   000000000000000100000 -> 00000000000100000
+   000000000000001000000 -> 00000000001000000
+   000000000000010000000 -> 00000000010000000
+   000000000000100000000 -> 00000000100000000
+   000000000001000000000 -> 00000001000000000
+   000000000010000000000 -> 00000010000000000
+   000000000100000000000 -> 00000100000000000
+   000000001000000000000 -> 00001000000000000
+   000000010000000000000 -> 00010000000000000
+   000000100000000000000 -> 00100000000000000
+   000001000000000000000 -> 01000000000000000
+   000010000000000000000 -> 10000000000000000
+Encoding state machine status_sig[0:2] (in view: work.I2C_Core2(architecture_i2c_core2))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":197:8:197:9|Found counter in view:work.I2C_Core2(architecture_i2c_core2) instance i2c_clk_cnt[15:0] 
+@N: MF179 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":208:19:208:44|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un5_i2c_clk_cnt (in view: work.I2C_Core2(architecture_i2c_core2))
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     4.41ns		  83 /        44
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_288 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_289 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 44 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   44         status_sig[0]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 135MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core2_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 135MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 135MB)
+
+@W: MT420 |Found inferred clock I2C_Core2|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Jan 14 03:24:38 2020
+#
+
+
+Top view:               I2C_Core2
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\designer\I2C_Core2\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 5.697
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------
+I2C_Core2|PCLK     100.0 MHz     232.4 MHz     10.000        4.303         5.697     inferred     Inferred_clkgroup_0
+=====================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------
+Starting        Ending          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------
+I2C_Core2|PCLK  I2C_Core2|PCLK  |  10.000      5.697  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: I2C_Core2|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                Arrival          
+Instance            Reference          Type     Pin     Net                 Time        Slack
+                    Clock                                                                    
+---------------------------------------------------------------------------------------------
+i2c_clk_cnt[0]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[0]      0.108       5.697
+i2c_clk_cnt[2]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[2]      0.108       5.711
+i2c_clk_cnt[4]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[4]      0.108       5.726
+i2c_clk_cnt[6]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[6]      0.108       5.740
+i2c_clk_cnt[8]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[8]      0.108       5.755
+i2c_clk_cnt[10]     I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[10]     0.108       5.769
+i2c_clk_cnt[12]     I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[12]     0.108       5.784
+i2c_clk_cnt[1]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[1]      0.108       6.067
+i2c_clk_cnt[3]      I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[3]      0.108       6.082
+i2c_clk_cnt[15]     I2C_Core2|PCLK     SLE      Q       i2c_clk_cnt[15]     0.087       6.086
+=============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                  Required          
+Instance            Reference          Type     Pin     Net                   Time         Slack
+                    Clock                                                                       
+------------------------------------------------------------------------------------------------
+i2c_clk_cnt[15]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[15]     9.745        5.697
+i2c_clk_cnt[14]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[14]     9.745        5.713
+i2c_clk_cnt[13]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[13]     9.745        5.729
+i2c_clk_cnt[12]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[12]     9.745        5.745
+i2c_clk_cnt[11]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[11]     9.745        5.762
+i2c_clk_cnt[10]     I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[10]     9.745        5.778
+i2c_clk_cnt[9]      I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[9]      9.745        5.794
+i2c_clk_cnt[8]      I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[8]      9.745        5.811
+i2c_clk_cnt[7]      I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[7]      9.745        5.827
+i2c_clk_cnt[6]      I2C_Core2|PCLK     SLE      D       i2c_clk_cnt_s[6]      9.745        5.843
+================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      4.048
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     5.697
+
+    Number of logic level(s):                24
+    Starting point:                          i2c_clk_cnt[0] / Q
+    Ending point:                            i2c_clk_cnt[15] / D
+    The start point is clocked by            I2C_Core2|PCLK [rising] on pin CLK
+    The end   point is clocked by            I2C_Core2|PCLK [rising] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                               Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_clk_cnt[0]                                     SLE      Q        Out     0.108     0.108       -         
+i2c_clk_cnt[0]                                     Net      -        -       0.497     -           2         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_1             ARI1     D        In      -         0.605       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_1             ARI1     FCO      Out     0.505     1.111       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[0]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_9             ARI1     FCI      In      -         1.111       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_9             ARI1     FCO      Out     0.015     1.125       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[1]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_15            ARI1     FCI      In      -         1.125       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_15            ARI1     FCO      Out     0.015     1.140       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[2]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_27            ARI1     FCI      In      -         1.140       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_27            ARI1     FCO      Out     0.015     1.154       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[3]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_45            ARI1     FCI      In      -         1.154       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_45            ARI1     FCO      Out     0.015     1.169       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[4]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_33            ARI1     FCI      In      -         1.169       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_33            ARI1     FCO      Out     0.015     1.183       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[5]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_39            ARI1     FCI      In      -         1.183       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_39            ARI1     FCO      Out     0.015     1.198       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[6]     Net      -        -       0.000     -           1         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_21            ARI1     FCI      In      -         1.198       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_I_21            ARI1     FCO      Out     0.015     1.213       -         
+p_i2c_clock_gen\.un5_i2c_clk_cnt_0_data_tmp[7]     Net      -        -       0.815     -           4         
+un1_status_sig_3                                   CFG3     A        In      -         2.027       -         
+un1_status_sig_3                                   CFG3     Y        Out     0.100     2.128       -         
+un1_status_sig_3                                   Net      -        -       1.144     -           16        
+i2c_clk_cnt_RNI04LE[1]                             ARI1     C        In      -         3.272       -         
+i2c_clk_cnt_RNI04LE[1]                             ARI1     FCO      Out     0.243     3.515       -         
+i2c_clk_cnt_cry[1]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIGMDK[2]                             ARI1     FCI      In      -         3.515       -         
+i2c_clk_cnt_RNIGMDK[2]                             ARI1     FCO      Out     0.016     3.531       -         
+i2c_clk_cnt_cry[2]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNI1A6Q[3]                             ARI1     FCI      In      -         3.531       -         
+i2c_clk_cnt_RNI1A6Q[3]                             ARI1     FCO      Out     0.016     3.547       -         
+i2c_clk_cnt_cry[3]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIJUUV[4]                             ARI1     FCI      In      -         3.547       -         
+i2c_clk_cnt_RNIJUUV[4]                             ARI1     FCO      Out     0.016     3.564       -         
+i2c_clk_cnt_cry[4]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNI6KN51[5]                            ARI1     FCI      In      -         3.564       -         
+i2c_clk_cnt_RNI6KN51[5]                            ARI1     FCO      Out     0.016     3.580       -         
+i2c_clk_cnt_cry[5]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIQAGB1[6]                            ARI1     FCI      In      -         3.580       -         
+i2c_clk_cnt_RNIQAGB1[6]                            ARI1     FCO      Out     0.016     3.596       -         
+i2c_clk_cnt_cry[6]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIF29H1[7]                            ARI1     FCI      In      -         3.596       -         
+i2c_clk_cnt_RNIF29H1[7]                            ARI1     FCO      Out     0.016     3.613       -         
+i2c_clk_cnt_cry[7]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNI5R1N1[8]                            ARI1     FCI      In      -         3.613       -         
+i2c_clk_cnt_RNI5R1N1[8]                            ARI1     FCO      Out     0.016     3.629       -         
+i2c_clk_cnt_cry[8]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNISKQS1[9]                            ARI1     FCI      In      -         3.629       -         
+i2c_clk_cnt_RNISKQS1[9]                            ARI1     FCO      Out     0.016     3.645       -         
+i2c_clk_cnt_cry[9]                                 Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIRUA72[10]                           ARI1     FCI      In      -         3.645       -         
+i2c_clk_cnt_RNIRUA72[10]                           ARI1     FCO      Out     0.016     3.662       -         
+i2c_clk_cnt_cry[10]                                Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIR9RH2[11]                           ARI1     FCI      In      -         3.662       -         
+i2c_clk_cnt_RNIR9RH2[11]                           ARI1     FCO      Out     0.016     3.678       -         
+i2c_clk_cnt_cry[11]                                Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNISLBS2[12]                           ARI1     FCI      In      -         3.678       -         
+i2c_clk_cnt_RNISLBS2[12]                           ARI1     FCO      Out     0.016     3.694       -         
+i2c_clk_cnt_cry[12]                                Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNIU2S63[13]                           ARI1     FCI      In      -         3.694       -         
+i2c_clk_cnt_RNIU2S63[13]                           ARI1     FCO      Out     0.016     3.710       -         
+i2c_clk_cnt_cry[13]                                Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNI1HCH3[14]                           ARI1     FCI      In      -         3.710       -         
+i2c_clk_cnt_RNI1HCH3[14]                           ARI1     FCO      Out     0.016     3.727       -         
+i2c_clk_cnt_cry[14]                                Net      -        -       0.000     -           1         
+i2c_clk_cnt_RNO[15]                                ARI1     FCI      In      -         3.727       -         
+i2c_clk_cnt_RNO[15]                                ARI1     S        Out     0.073     3.800       -         
+i2c_clk_cnt_s[15]                                  Net      -        -       0.248     -           1         
+i2c_clk_cnt[15]                                    SLE      D        In      -         4.048       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 4.303 is 1.600(37.2%) logic and 2.704(62.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 135MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 135MB)
+
+---------------------------------------
+Resource Usage Report for I2C_Core2 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           2 uses
+CFG2           9 uses
+CFG3           12 uses
+CFG4           29 uses
+
+Carry cells:
+ARI1            25 uses - used for arithmetic functions
+ARI1            5 uses - used for Wide-Mux implementation
+Total ARI1      30 uses
+
+
+Sequential Cells: 
+SLE            44 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 48
+I/O primitives: 44
+INBUF          28 uses
+OUTBUF         8 uses
+TRIBUFF        8 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    82
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  44 + 0 + 0 + 0 = 44;
+Total number of LUTs after P&R:  82 + 0 + 0 + 0 = 82;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 135MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Jan 14 03:24:39 2020
+
+###########################################################]

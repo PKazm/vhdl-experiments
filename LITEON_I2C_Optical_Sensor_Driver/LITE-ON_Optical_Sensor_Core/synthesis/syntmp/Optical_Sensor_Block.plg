@@ -1,0 +1,12 @@
+@P:  Worst Slack : 1.691
+@P:  Optical_Sensor_Block|PCLK - Estimated Frequency : 120.4 MHz
+@P:  Optical_Sensor_Block|PCLK - Requested Frequency : 100.0 MHz
+@P:  Optical_Sensor_Block|PCLK - Estimated Period : 8.309
+@P:  Optical_Sensor_Block|PCLK - Requested Period : 10.000
+@P:  Optical_Sensor_Block|PCLK - Slack : 1.691
+@P: Optical_Sensor_Block Part : m2s010tq144std
+@P: Optical_Sensor_Block Register bits  : 236 
+@P: Optical_Sensor_Block DSP Blocks  : 0
+@P: Optical_Sensor_Block I/O primitives : 38
+@P: Optical_Sensor_Block RAM64x18 :  2
+@P:  CPU Time : 0h:00m:08s

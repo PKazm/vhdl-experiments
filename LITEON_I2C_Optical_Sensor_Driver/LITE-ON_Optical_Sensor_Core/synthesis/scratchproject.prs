@@ -3,9 +3,10 @@
 #--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\scratchproject.prs
 
 #project files
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core_APB3.vhd"
-add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/designer/I2C_Core_APB3/synthesis.fdc"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/hdl/I2C_Core2_APB3.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/component/work/Optical_Sensor_Block/Optical_Sensor_Block.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/designer/Optical_Sensor_Block/synthesis.fdc"
 
 
 
@@ -21,7 +22,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "work.I2C_Core_APB3"
+set_option -top_module "work.Optical_Sensor_Block"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -74,5 +75,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/synthesis/I2C_Core_APB3.vm"
+project -result_file "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/LITE-ON_Optical_Sensor_Core/synthesis/Optical_Sensor_Block.vm"
 impl -active "synthesis"

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about resource utilization per module to be displayed in the summary report.
+*******************************************************************************************-->
+<modules>
+<column_headers>
+<data>Module name</data>
+<data>SLE</data>
+<data>CFG</data>
+<data>ARI1</data>
+<data>BUFFER</data>
+<data>MACC</data>
+<data>RAM1K18</data>
+<data>RAM64X18</data>
+<data>GLOBAL</data>
+<data>IO</data>
+</column_headers>
+<module>
+<data>I2C_Core2_APB3</data>
+<data>427</data>
+<data>767</data>
+<data>415</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+<data>2</data>
+<data>38</data>
+<module>
+<data>I2C_Core2</data>
+<data>58</data>
+<data>766</data>
+<data>415</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+<data>0</data>
+</module>
+</module>
+</modules>

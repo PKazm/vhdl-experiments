@@ -5,8 +5,8 @@ Cell usage:
 CLKINT          2 uses
 CFG1           1 use
 CFG2           12 uses
-CFG3           40 uses
-CFG4           36 uses
+CFG3           37 uses
+CFG4           41 uses
 
 Carry cells:
 ARI1            25 uses - used for arithmetic functions
@@ -25,7 +25,7 @@ OUTBUF         37 uses
 
 Global Clock Buffers: 2
 
-Total LUTs:    114
+Total LUTs:    116
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -34,5 +34,5 @@ RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
 Total number of SLEs after P&R:  71 + 0 + 0 + 0 = 71;
-Total number of LUTs after P&R:  114 + 0 + 0 + 0 = 114;
+Total number of LUTs after P&R:  116 + 0 + 0 + 0 = 116;
 

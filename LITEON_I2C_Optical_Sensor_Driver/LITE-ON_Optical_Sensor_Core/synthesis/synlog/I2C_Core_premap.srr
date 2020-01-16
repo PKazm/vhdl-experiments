@@ -1,4 +1,4 @@
-# Wed Jan  8 04:01:36 2020
+# Tue Jan 14 03:25:32 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -67,7 +67,7 @@ Clock             Load      Pin            Seq Example             Seq Example  
 I2C_Core|PCLK     71        PCLK(port)     i2c_clk_div[15:0].C     -                 -            
 ==================================================================================================
 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":192:12:192:15|Found inferred clock I2C_Core|PCLK which controls 71 sequential elements including i2c_reg_ctrl[6:5]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core.vhd":192:12:192:15|Found inferred clock I2C_Core|PCLK which controls 71 sequential elements including SDAO_sig. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
@@ -96,6 +96,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jan  8 04:01:36 2020
+# Tue Jan 14 03:25:32 2020
 
 ###########################################################]

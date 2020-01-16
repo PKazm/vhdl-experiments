@@ -26,16 +26,16 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      71                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_Core:	71 (27.31 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_Core:	71 (27.10 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      89                 100 %                
+CFG      91                 100 %                
 ARI1     25                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_Core:	114 (43.85 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_Core:	116 (44.27 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -43,7 +43,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block I2C_Core:	2 (0.77 % Utilization)
+Total GLOBAL BUFFERS in the block I2C_Core:	2 (0.76 % Utilization)
 
 
 IO PADS
@@ -51,7 +51,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       71                 100 %                
 =================================================
-Total IO PADS in the block I2C_Core:	71 (27.31 % Utilization)
+Total IO PADS in the block I2C_Core:	71 (27.10 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

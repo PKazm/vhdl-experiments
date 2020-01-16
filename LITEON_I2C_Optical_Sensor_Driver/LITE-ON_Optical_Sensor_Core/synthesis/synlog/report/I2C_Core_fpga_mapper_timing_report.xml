@@ -17,7 +17,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>I2C_Core|PCLK</data>
 <data>100.0 MHz</data>
-<data>169.7 MHz</data>
-<data>4.109</data>
+<data>175.2 MHz</data>
+<data>4.292</data>
 </row>
 </report_table>

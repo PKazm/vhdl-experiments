@@ -1,0 +1,17 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd":17:7:17:26|Top entity is set to Optical_Sensor_Block.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd":17:7:17:26|Synthesizing work.optical_sensor_block.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd":24:7:24:20|Synthesizing work.i2c_core2_apb3.architecture_i2c_core2_apb3.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Synthesizing work.i2c_core2.architecture_i2c_core2.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":63:20:63:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000000000000000000".
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":296:28:296:41|OTHERS clause is not synthesized.
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd":441:43:441:54|Found RAM i2c_seq_regs, depth=64, width=2
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd":441:43:441:54|Found RAM i2c_seq_regs, depth=64, width=8
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd":269:42:269:53|Found RAM i2c_seq_regs, depth=64, width=2
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2_APB3.vhd":269:42:269:53|Found RAM i2c_seq_regs, depth=64, width=8
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":230:8:230:9|Trying to extract state machine for register status_sig.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":230:8:230:9|Trying to extract state machine for register i2c_state_cur.
+@N|Running in 64-bit mode
+

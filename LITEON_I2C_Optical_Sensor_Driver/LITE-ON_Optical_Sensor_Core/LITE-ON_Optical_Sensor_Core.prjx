@@ -36,7 +36,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VHDL"
 KEY Vendor "Actel"
-KEY ActiveRoot "I2C_Core_APB3::work"
+KEY ActiveRoot "Optical_Sensor_Block::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -49,8 +49,15 @@ SIZE="437"
 ENDFILE
 VALUE "<project>\component\work\Optical_Sensor_Block\Optical_Sensor_Block.cxf,actgen_cxf"
 STATE="utd"
-TIME="1576650588"
-SIZE="636"
+TIME="1579158293"
+SIZE="5330"
+ENDFILE
+VALUE "<project>\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd,hdl"
+STATE="utd"
+TIME="1579158293"
+SIZE="4892"
+PARENT="<project>\component\work\Optical_Sensor_Block\Optical_Sensor_Block.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
 STATE="utd"
@@ -61,6 +68,16 @@ VALUE "<project>\designer\impl1\I2C_Core.ide_des,ide_des"
 STATE="utd"
 TIME="1578376538"
 SIZE="230"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core2.ide_des,ide_des"
+STATE="utd"
+TIME="1578990493"
+SIZE="346"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.ide_des,ide_des"
+STATE="utd"
+TIME="1579155984"
+SIZE="356"
 ENDFILE
 VALUE "<project>\designer\impl1\I2C_Core_APB3.ide_des,ide_des"
 STATE="utd"
@@ -74,13 +91,23 @@ SIZE="242"
 ENDFILE
 VALUE "<project>\hdl\I2C_Core.vhd,hdl"
 STATE="utd"
-TIME="1578802725"
-SIZE="18560"
+TIME="1578864687"
+SIZE="18502"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core2.vhd,hdl"
+STATE="utd"
+TIME="1579152282"
+SIZE="16485"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core2_APB3.vhd,hdl"
+STATE="utd"
+TIME="1579158131"
+SIZE="20506"
 ENDFILE
 VALUE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
 STATE="utd"
-TIME="1578814371"
-SIZE="16657"
+TIME="1578888515"
+SIZE="16787"
 ENDFILE
 VALUE "<project>\hdl\LITEON_Optical_Sensor_Core.vhd,hdl"
 STATE="utd"
@@ -92,15 +119,35 @@ STATE="utd"
 TIME="1576740940"
 SIZE="2522"
 ENDFILE
+VALUE "<project>\simulation\I2C_Core2_APB3_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1579152975"
+SIZE="20491"
+ENDFILE
+VALUE "<project>\simulation\I2C_Core2_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1579145790"
+SIZE="5270"
+ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1578802347"
-SIZE="776"
+TIME="1579152915"
+SIZE="781"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1578802347"
+TIME="1579152915"
 SIZE="233"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core2_APB3_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1579152910"
+SIZE="19204"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core2_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1579145734"
+SIZE="9412"
 ENDFILE
 VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
 STATE="utd"
@@ -114,53 +161,141 @@ SIZE="7984"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core.so,so"
 STATE="utd"
-TIME="1578474099"
+TIME="1578990335"
 SIZE="261"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core.vm,syn_vm"
 STATE="ood"
-TIME="1578474098"
-SIZE="52206"
+TIME="1578990334"
+SIZE="52964"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2.so,so"
+STATE="utd"
+TIME="1578990278"
+SIZE="263"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2.vm,syn_vm"
+STATE="ood"
+TIME="1578990278"
+SIZE="39982"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_APB3.so,so"
+STATE="utd"
+TIME="1579147304"
+SIZE="273"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_APB3.vm,syn_vm"
+STATE="ood"
+TIME="1579147303"
+SIZE="492250"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_APB3_syn.prj,prj"
+STATE="utd"
+TIME="1579147304"
+SIZE="2249"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_APB3_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1579147303"
+SIZE="899"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_syn.prj,prj"
+STATE="utd"
+TIME="1578990516"
+SIZE="1837"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core2_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1578990278"
+SIZE="894"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_APB3.so,so"
 STATE="utd"
-TIME="1578712365"
+TIME="1578814229"
 SIZE="271"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_APB3.vm,syn_vm"
 STATE="ood"
-TIME="1578712364"
-SIZE="492247"
+TIME="1578814228"
+SIZE="91549"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_APB3_syn.prj,prj"
 STATE="utd"
-TIME="1578712365"
-SIZE="2243"
+TIME="1578814322"
+SIZE="1955"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_APB3_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1578712364"
+TIME="1578814229"
 SIZE="898"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_syn.prj,prj"
 STATE="utd"
-TIME="1578474110"
-SIZE="1829"
+TIME="1578990335"
+SIZE="2102"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1578474098"
+TIME="1578990334"
 SIZE="893"
+ENDFILE
+VALUE "<project>\synthesis\Optical_Sensor_Block.so,so"
+STATE="utd"
+TIME="1579055755"
+SIZE="285"
+ENDFILE
+VALUE "<project>\synthesis\Optical_Sensor_Block.vm,syn_vm"
+STATE="utd"
+TIME="1579055754"
+SIZE="102351"
+ENDFILE
+VALUE "<project>\synthesis\Optical_Sensor_Block_syn.prj,prj"
+STATE="utd"
+TIME="1579055755"
+SIZE="2427"
+ENDFILE
+VALUE "<project>\synthesis\Optical_Sensor_Block_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1579055754"
+SIZE="1256"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1578814213"
+TIME="1578990139"
 SIZE="159"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "I2C_Core2_APB3::work"
+FILE "<project>\hdl\I2C_Core2_APB3.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\Optical_Sensor_Block.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core2_APB3.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core2_APB3.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3_fp\I2C_Core2_APB3.pro,pro"
+VALUE "<project>\synthesis\Optical_Sensor_Block_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 LIST "I2C_Core::work"
 FILE "<project>\hdl\I2C_Core.vhd,hdl"
 LIST AssociatedStimulus
@@ -179,10 +314,10 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
-LIST "I2C_Core_APB3::work"
-FILE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
+LIST "I2C_Core2::work"
+FILE "<project>\hdl\I2C_Core2.vhd,hdl"
 LIST AssociatedStimulus
-VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+VALUE "<project>\stimulus\I2C_Core2_tb.vhd,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
@@ -197,10 +332,25 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
+LIST "Optical_Sensor_Block::work"
+FILE "<project>\component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Optical_Sensor_Block.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
-LIST I2C_Core_APB3
-VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+LIST I2C_Core2
+VALUE "<project>\stimulus\I2C_Core2_tb.vhd,tb_hdl"
 ENDLIST
 LIST I2C_Core
 VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
@@ -212,10 +362,10 @@ LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=.1ms
+RunTime=.5ms
 Resolution=1fs
 VsimOpt=
-EntityName=I2C_Core_APB3_tb
+EntityName=I2C_Core2_APB3_tb
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -275,8 +425,8 @@ NAME="SynplifyProME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -309,6 +459,31 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "I2C_Core2_APB3::work"
+LIST Impl1
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\Optical_Sensor_Block.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core2_APB3.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core2_APB3.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core2_APB3_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core2_APB3_fp\I2C_Core2_APB3.pro,pro"
+VALUE "<project>\synthesis\Optical_Sensor_Block_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "I2C_Core::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -321,9 +496,21 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "I2C_Core_APB3::work"
+LIST "I2C_Core2::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "Optical_Sensor_Block::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Optical_Sensor_Block.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -347,25 +534,40 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Synthesize:I2C_Core_APB3_compile_netlist_resources.xml
+ReportsCurrentItem;Synthesize:Optical_Sensor_Block_compile_netlist_hier_resources.csv
 StartPage;StartPage;0
-HDL;hdl\I2C_Core_APB3.vhd;0
-ACTIVEVIEW;hdl\I2C_Core_APB3.vhd
+SmartDesign;Optical_Sensor_Block;0
+HDL;hdl\I2C_Core2_APB3.vhd;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 ENDLIST
+LIST "I2C_Core2_APB3::work","hdl\I2C_Core2_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core2::work","hdl\I2C_Core2.vhd","FALSE","FALSE"
+ENDLIST
 LIST "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
 ENDLIST
-LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
-SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+LIST "I2C_Core2::work","hdl\I2C_Core2.vhd","FALSE","FALSE"
 ENDLIST
-LIST "Optical_Sensor_Block::work","component\work\Optical_Sensor_Block\Optical_Sensor_Block.cxf","TRUE","FALSE"
+LIST "Optical_Sensor_Block::work","component\work\Optical_Sensor_Block\Optical_Sensor_Block.vhd","TRUE","FALSE"
+SUBBLOCK "I2C_Core2_APB3::work","hdl\I2C_Core2_APB3.vhd","FALSE","FALSE"
 ENDLIST
 LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
+LIST "I2C_Core2_APB3::work","hdl\I2C_Core2_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core2::work","hdl\I2C_Core2.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core2_APB3_tb::work","stimulus\I2C_Core2_APB3_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core2_APB3::work","hdl\I2C_Core2_APB3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core2_tb::work","stimulus\I2C_Core2_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core2::work","hdl\I2C_Core2.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3::work","","FALSE","FALSE"
+ENDLIST
 LIST "I2C_Core_APB3_tb::work","stimulus\I2C_Core_APB3_tb.vhd","FALSE","TRUE"
-SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core_APB3::work","","FALSE","FALSE"
 ENDLIST
 LIST "I2C_Core_tb::work","stimulus\I2C_Core_tb.vhd","FALSE","TRUE"
 SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"

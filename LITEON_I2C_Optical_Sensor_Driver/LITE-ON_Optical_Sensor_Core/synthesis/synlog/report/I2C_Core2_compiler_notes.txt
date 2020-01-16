@@ -1,0 +1,15 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Top entity is set to I2C_Core2.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Synthesizing work.i2c_core2.architecture_i2c_core2.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":61:20:61:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000000000000000000".
+@N: CL189 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":142:12:142:13|Register bit SDAI_sig_history(0) is always 0.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":226:8:226:9|Trying to extract state machine for register status_sig.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":226:8:226:9|Trying to extract state machine for register i2c_state_cur.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":48:4:48:7|Input SDAI is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":52:4:52:7|Input SCLI is unused.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Selected library: work cell: I2C_Core2 view architecture_i2c_core2 as top level
+@N: NF107 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":24:7:24:15|Selected library: work cell: I2C_Core2 view architecture_i2c_core2 as top level
+

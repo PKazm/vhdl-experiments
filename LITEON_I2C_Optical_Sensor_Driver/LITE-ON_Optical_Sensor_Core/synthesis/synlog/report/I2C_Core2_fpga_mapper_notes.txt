@@ -1,0 +1,21 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_1 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[7] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_2 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[6] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_3 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[5] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_4 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[4] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_5 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[3] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_6 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[2] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_7 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[1] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO111 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":224:31:224:37|Tristate driver data_out_8 (in view: work.I2C_Core2(architecture_i2c_core2)) on net data_out[0] (in view: work.I2C_Core2(architecture_i2c_core2)) has its enable tied to GND.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":197:8:197:9|Found counter in view:work.I2C_Core2(architecture_i2c_core2) instance i2c_clk_cnt[15:0] 
+@N: MF179 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":208:19:208:44|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un5_i2c_clk_cnt (in view: work.I2C_Core2(architecture_i2c_core2))
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_288 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_289 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

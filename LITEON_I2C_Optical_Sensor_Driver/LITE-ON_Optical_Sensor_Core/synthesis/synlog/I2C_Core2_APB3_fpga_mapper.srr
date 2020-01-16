@@ -1,0 +1,476 @@
+# Wed Jan 15 23:01:37 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SCLI_sig_history[1:0] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SCL_filt[2:0] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Boundary register SCL_filt[2:0] (in view: work.I2C_Core2(architecture_i2c_core2)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2_apb3.vhd":427:8:427:9|User-specified initial value defined for instance sequence_cnt[4:0] is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2_apb3.vhd":427:8:427:9|Found counter in view:work.I2C_Core2_APB3(architecture_i2c_core2_apb3) instance sequence_cnt[4:0] 
+Encoding state machine i2c_state_cur[0:16] (in view: work.I2C_Core2(architecture_i2c_core2))
+original code -> new code
+   000000000000000000001 -> 00000000000000001
+   000000000000000000010 -> 00000000000000010
+   000000000000000000100 -> 00000000000000100
+   000000000000000001000 -> 00000000000001000
+   000000000000000010000 -> 00000000000010000
+   000000000000000100000 -> 00000000000100000
+   000000000000001000000 -> 00000000001000000
+   000000000000010000000 -> 00000000010000000
+   000000000000100000000 -> 00000000100000000
+   000000000001000000000 -> 00000001000000000
+   000000000010000000000 -> 00000010000000000
+   000000000100000000000 -> 00000100000000000
+   000000001000000000000 -> 00001000000000000
+   000000010000000000000 -> 00010000000000000
+   000000100000000000000 -> 00100000000000000
+   000001000000000000000 -> 01000000000000000
+   000010000000000000000 -> 10000000000000000
+Encoding state machine status_sig[0:3] (in view: work.I2C_Core2(architecture_i2c_core2))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":230:8:230:9|There are no possible illegal states for state machine status_sig[0:3] (in view: work.I2C_Core2(architecture_i2c_core2)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":201:8:201:9|Found counter in view:work.I2C_Core2(architecture_i2c_core2) instance i2c_clk_cnt[15:0] 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SDAI_sig_history[1] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: MF179 :|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un9_i2c_clk_cnt (in view: work.I2C_Core2(architecture_i2c_core2))
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 155MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 155MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 155MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 155MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 155MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 155MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 155MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 155MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 148MB peak: 155MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:04s		     1.31ns		1431 /       422
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_213 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_214 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 149MB peak: 155MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 149MB peak: 155MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 422 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 5 clock pin(s) of sequential element(s)
+0 instances converted, 5 sequential instances remain driven by gated/generated clocks
+
+===================================== Non-Gated/Non-Generated Clocks ======================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                    
+-----------------------------------------------------------------------------------------------------------
+@K:CKID0003       PCLK                port                   422        p_reg_instr_seq\.i2c_seq_regs_11[0]
+===========================================================================================================
+=============================================================== Gated/Generated Clocks ================================================================
+Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance                        Explanation              
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       I2C_Core2_0.un1_seq_enable_1       CFG2                   4          I2C_Core2_0.un9_i2c_instruct_0_set     No clocks found on inputs
+@K:CKID0002       I2C_Core2_0.un1_i2c_reg_ctrl_1     CFG2                   1          un9_i2c_instruct_rs                    No clocks found on inputs
+=======================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 119MB peak: 155MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\synthesis\synwork\I2C_Core2_APB3_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 147MB peak: 155MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 147MB peak: 155MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 147MB peak: 155MB)
+
+@W: MT420 |Found inferred clock I2C_Core2_APB3|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 15 23:01:44 2020
+#
+
+
+Top view:               I2C_Core2_APB3
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\designer\I2C_Core2_APB3\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.342
+
+                        Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock          Frequency     Frequency     Period        Period        Slack     Type         Group              
+--------------------------------------------------------------------------------------------------------------------------
+I2C_Core2_APB3|PCLK     100.0 MHz     130.6 MHz     10.000        7.658         2.342     inferred     Inferred_clkgroup_0
+System                  100.0 MHz     256.3 MHz     10.000        3.902         6.098     system       system_clkgroup    
+==========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------
+Starting             Ending               |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------
+System               I2C_Core2_APB3|PCLK  |  10.000      6.098  |  No paths    -      |  No paths    -      |  No paths    -    
+I2C_Core2_APB3|PCLK  System               |  10.000      5.079  |  No paths    -      |  No paths    -      |  No paths    -    
+I2C_Core2_APB3|PCLK  I2C_Core2_APB3|PCLK  |  10.000      2.342  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: I2C_Core2_APB3|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                         Arrival          
+Instance                                Reference               Type     Pin     Net                                     Time        Slack
+                                        Clock                                                                                             
+------------------------------------------------------------------------------------------------------------------------------------------
+sequence_cnt[3]                         I2C_Core2_APB3|PCLK     SLE      Q       sequence_cnt[3]                         0.108       2.342
+sequence_cnt[4]                         I2C_Core2_APB3|PCLK     SLE      Q       sequence_cnt[4]                         0.108       2.874
+p_reg_instr_seq\.i2c_seq_regs_19[8]     I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_19[8]     0.108       3.853
+sequence_cnt[2]                         I2C_Core2_APB3|PCLK     SLE      Q       sequence_cnt[2]                         0.108       3.882
+sequence_cnt[1]                         I2C_Core2_APB3|PCLK     SLE      Q       sequence_cnt[1]                         0.108       3.927
+p_reg_instr_seq\.i2c_seq_regs_23[8]     I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_23[8]     0.108       3.927
+p_reg_instr_seq\.i2c_seq_regs_3[8]      I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_3[8]      0.108       3.953
+p_reg_instr_seq\.i2c_seq_regs_17[8]     I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_17[8]     0.108       3.966
+p_reg_instr_seq\.i2c_seq_regs_7[8]      I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_7[8]      0.108       4.028
+p_reg_instr_seq\.i2c_seq_regs_21[8]     I2C_Core2_APB3|PCLK     SLE      Q       p_reg_instr_seq\.i2c_seq_regs_21[8]     0.108       4.030
+==========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                       Starting                                                                      Required          
+Instance                               Reference               Type     Pin     Net                                  Time         Slack
+                                       Clock                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+p_reg_instr_seq\.i2c_seq_regs_0[0]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[1]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[2]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[3]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[4]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[5]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[6]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_0[7]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_1[0]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+p_reg_instr_seq\.i2c_seq_regs_1[1]     I2C_Core2_APB3|PCLK     SLE      EN      p_reg_instr_seq\.un10_seq_enable     9.662        2.342
+=======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.338
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.662
+
+    - Propagation time:                      7.321
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.342
+
+    Number of logic level(s):                6
+    Starting point:                          sequence_cnt[3] / Q
+    Ending point:                            p_reg_instr_seq\.i2c_seq_regs_0[0] / EN
+    The start point is clocked by            I2C_Core2_APB3|PCLK [rising] on pin CLK
+    The end   point is clocked by            I2C_Core2_APB3|PCLK [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                      Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+sequence_cnt[3]                                           SLE      Q        Out     0.108     0.108       -         
+sequence_cnt[3]                                           Net      -        -       2.170     -           104       
+I2C_Core2_0.un5_seq_enable_25_1_0_wmux[8]                 ARI1     B        In      -         2.278       -         
+I2C_Core2_0.un5_seq_enable_25_1_0_wmux[8]                 ARI1     Y        Out     0.165     2.442       -         
+un5_seq_enable_25_1_0_y0[8]                               Net      -        -       0.248     -           1         
+I2C_Core2_0.un5_seq_enable_25_1_0_wmux_0[8]               ARI1     A        In      -         2.691       -         
+I2C_Core2_0.un5_seq_enable_25_1_0_wmux_0[8]               ARI1     Y        Out     0.100     2.791       -         
+N_1422                                                    Net      -        -       0.497     -           2         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO_1     CFG3     C        In      -         3.288       -         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO_1     CFG3     Y        Out     0.223     3.511       -         
+p_m5_1_0                                                  Net      -        -       0.248     -           1         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO_0     CFG3     C        In      -         3.760       -         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO_0     CFG3     Y        Out     0.203     3.963       -         
+un10_seq_enable_32_RNO_0                                  Net      -        -       0.248     -           1         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO       CFG3     C        In      -         4.211       -         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32_RNO       CFG3     Y        Out     0.203     4.414       -         
+un10_seq_enable_32_RNO                                    Net      -        -       0.248     -           1         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32           CFG4     B        In      -         4.663       -         
+I2C_Core2_0.p_reg_instr_seq\.un10_seq_enable_32           CFG4     Y        Out     0.143     4.806       -         
+un10_seq_enable                                           Net      -        -       2.515     -           256       
+p_reg_instr_seq\.i2c_seq_regs_0[0]                        SLE      EN       In      -         7.321       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 7.658 is 1.483(19.4%) logic and 6.175(80.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                  Arrival          
+Instance                               Reference     Type     Pin     Net                        Time        Slack
+                                       Clock                                                                      
+------------------------------------------------------------------------------------------------------------------
+i2c_instruct[1]                        System        SLE      Q       i2c_instruct[1]            0.108       6.098
+i2c_instruct[2]                        System        SLE      Q       i2c_instruct[2]            0.087       6.144
+un9_i2c_instruct_rs                    System        SLE      Q       un9_i2c_instruct_rs        0.108       7.009
+I2C_Core2_0.un9_i2c_instruct_0_set     System        SLE      Q       un9_i2c_instruct_0_set     0.108       7.054
+i2c_instruct[0]                        System        SLE      Q       i2c_instructrs[0]          0.108       7.131
+==================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                  Starting                                               Required          
+Instance                          Reference     Type     Pin     Net                     Time         Slack
+                                  Clock                                                                    
+-----------------------------------------------------------------------------------------------------------
+I2C_Core2_0.status_sig[1]         System        SLE      D       status_sig_ns[1]        9.745        6.098
+I2C_Core2_0.status_sig[0]         System        SLE      D       N_13_i                  9.745        6.139
+I2C_Core2_0.bit_counter[0]        System        SLE      D       N_177_i                 9.745        6.435
+I2C_Core2_0.did_ack               System        SLE      D       did_ack_4               9.745        6.672
+I2C_Core2_0.bit_counter[1]        System        SLE      D       bit_counter_7[1]        9.745        6.809
+I2C_Core2_0.SDAO_sig              System        SLE      D       SDAO_sig_5_iv_i         9.745        6.913
+I2C_Core2_0.i2c_state_cur[16]     System        SLE      D       i2c_state_cur_ns[0]     9.745        6.932
+I2C_Core2_0.i2c_state_cur[7]      System        SLE      D       N_153_i                 9.745        6.970
+I2C_Core2_0.i2c_state_cur[15]     System        SLE      D       N_137_i                 9.745        6.970
+I2C_Core2_0.i2c_state_cur[11]     System        SLE      D       N_145_i                 9.745        7.190
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      3.647
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 6.098
+
+    Number of logic level(s):                4
+    Starting point:                          i2c_instruct[1] / Q
+    Ending point:                            I2C_Core2_0.status_sig[1] / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            I2C_Core2_APB3|PCLK [rising] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                        Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+i2c_instruct[1]                             SLE      Q        Out     0.108     0.108       -         
+i2c_instruct[1]                             Net      -        -       0.936     -           7         
+I2C_Core2_0.bit_to_SDA_0_sqmuxa_i_o3        CFG2     A        In      -         1.044       -         
+I2C_Core2_0.bit_to_SDA_0_sqmuxa_i_o3        CFG2     Y        Out     0.087     1.132       -         
+N_181                                       Net      -        -       0.855     -           5         
+I2C_Core2_0.i2c_state_cur_0_sqmuxa_0_a3     CFG4     D        In      -         1.987       -         
+I2C_Core2_0.i2c_state_cur_0_sqmuxa_0_a3     CFG4     Y        Out     0.317     2.304       -         
+i2c_state_cur_0_sqmuxa                      Net      -        -       0.497     -           2         
+I2C_Core2_0.status_sig_ns_1_0_.m17          CFG4     D        In      -         2.801       -         
+I2C_Core2_0.status_sig_ns_1_0_.m17          CFG4     Y        Out     0.271     3.072       -         
+N_18                                        Net      -        -       0.248     -           1         
+I2C_Core2_0.status_sig_ns_1_0_.m18          CFG3     A        In      -         3.321       -         
+I2C_Core2_0.status_sig_ns_1_0_.m18          CFG3     Y        Out     0.077     3.398       -         
+status_sig_ns[1]                            Net      -        -       0.248     -           1         
+I2C_Core2_0.status_sig[1]                   SLE      D        In      -         3.647       -         
+======================================================================================================
+Total path delay (propagation time + setup) of 3.902 is 1.117(28.6%) logic and 2.785(71.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 148MB peak: 155MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 148MB peak: 155MB)
+
+---------------------------------------
+Resource Usage Report for I2C_Core2_APB3 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           3 uses
+CFG2           41 uses
+CFG3           70 uses
+CFG4           653 uses
+
+Carry cells:
+ARI1            39 uses - used for arithmetic functions
+ARI1            376 uses - used for Wide-Mux implementation
+Total ARI1      415 uses
+
+
+Sequential Cells: 
+SLE            427 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 39
+I/O primitives: 38
+INBUF          23 uses
+OUTBUF         15 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    1182
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  427 + 0 + 0 + 0 = 427;
+Total number of LUTs after P&R:  1182 + 0 + 0 + 0 = 1182;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 30MB peak: 155MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+# Wed Jan 15 23:01:44 2020
+
+###########################################################]

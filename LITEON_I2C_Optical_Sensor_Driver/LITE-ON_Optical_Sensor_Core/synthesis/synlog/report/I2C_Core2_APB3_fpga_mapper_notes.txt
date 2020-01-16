@@ -1,0 +1,18 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SCLI_sig_history[1:0] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SCL_filt[2:0] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2_apb3.vhd":427:8:427:9|Found counter in view:work.I2C_Core2_APB3(architecture_i2c_core2_apb3) instance sequence_cnt[4:0] 
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":230:8:230:9|There are no possible illegal states for state machine status_sig[0:3] (in view: work.I2C_Core2(architecture_i2c_core2)); safe FSM implementation is not required.
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":201:8:201:9|Found counter in view:work.I2C_Core2(architecture_i2c_core2) instance i2c_clk_cnt[15:0] 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2.vhd":131:8:131:9|Removing sequential instance SDAI_sig_history[1] (in view: work.I2C_Core2(architecture_i2c_core2)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: MF179 :|Found 16 by 16 bit equality operator ('==') p_i2c_clock_gen\.un9_i2c_clk_cnt (in view: work.I2C_Core2(architecture_i2c_core2))
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_213 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_214 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

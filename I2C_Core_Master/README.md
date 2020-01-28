@@ -19,6 +19,7 @@ The current features are consistent with Single Master capability and can be see
 | General Call Address | No | O | O |
 | Software Reset | No | O | O |
 | START byte | No | n/a | O |
+
 M = mandatory, O = optional, n/a = not applicable
 
 ## Instruction RAM

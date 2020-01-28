@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="I2C_state_machine" version="4">
+  <OBJECT>
+    <ID name="I2C_state_machine" mc="Standard.Project" uid="97fd78c6-3ff3-43d7-8b3c-8e8d142cf9fe"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[I2C_state_machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="i2c_state_machine" mc="Standard.Package" uid="8dfe93fe-6b3a-4d17-a7bb-a983678e9320"/>
+        <COMPID name="Block Diagrams" mc="Standard.Package" uid="49ba98d9-3d60-4fb9-bb22-776c2c9c938b"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="I2C_state_machine" mc="Infrastructure.DiagramSet" uid="af0ce73c-f2a2-4c4c-ada4-029888b30ba3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

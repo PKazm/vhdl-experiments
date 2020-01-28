@@ -1,0 +1,1441 @@
+KEY LIBERO "12.600"
+KEY CAPTURE "12.600.0.14"
+KEY DEFAULT_IMPORT_LOC "D:\Appsnotes\2010\User_Logic_to_MSS\design_files\User_Logic_MSS_DF_old\APB_master_fabric\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_N"
+KEY VendorTechnology_Package "tq144"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "I2C_LITEON_Op_Sens_test_sd::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST LIBRARIES
+COREABC_LIB
+COREAPB3_LIB
+CORETIMER_LIB
+ENDLIST
+LIST LIBRARY_COREABC_LIB
+ALIAS=COREABC_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_COREAPB3_LIB
+ALIAS=COREAPB3_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_CORETIMER_LIB
+ALIAS=CORETIMER_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\COREABC\3.7.101\COREABC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580163453"
+SIZE="480"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580160184"
+SIZE="3259"
+PARENT="<project>\component\work\CoreAPB3_C0\CoreAPB3_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
+STATE="utd"
+TIME="1580160184"
+SIZE="2012"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+STATE="utd"
+TIME="1572988165"
+SIZE="912"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="4009"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="9540"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="2074"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="12455"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="82848"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="45675"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="12780"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="23829"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd,hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="6172"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd,hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="78851"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd,hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="5757"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd,hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="9523"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1572988165"
+SIZE="28895"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580077548"
+SIZE="2673"
+PARENT="<project>\component\work\CoreTimer_C0\CoreTimer_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\bfmtovec_compile.do,do"
+STATE="utd"
+TIME="1573780533"
+SIZE="922"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\wave.do,do"
+STATE="utd"
+TIME="1573780533"
+SIZE="2220"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="4008"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="9539"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="4006"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="82846"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="45674"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="12779"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="23828"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd,hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="19422"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer_pkg.vhd,hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="1142"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1573780533"
+SIZE="7369"
+LIBRARY="CORETIMER_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580159856"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580077461"
+SIZE="682"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd,hdl"
+STATE="utd"
+TIME="1573066799"
+SIZE="2164"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.vhd,hdl"
+STATE="utd"
+TIME="1573066799"
+SIZE="2108"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580163454"
+SIZE="13727"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="11127"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\CoreABC.log,log"
+STATE="utd"
+TIME="1580163453"
+SIZE="1655"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580163453"
+SIZE="4820"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\coreparameters_tgi.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="2252"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="1780"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="4393"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="42290"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="16563"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="105987"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="2399"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="11287"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="3379"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="5244"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="1752"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="1745"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="16192"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="48934"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="5434"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="11824"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd,tb_hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="21961"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="23371"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd,hdl"
+STATE="utd"
+TIME="1580163453"
+SIZE="21261"
+LIBRARY="COREABC_LIB"
+PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreAPB3_C0\CoreAPB3_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580160185"
+SIZE="11847"
+ENDFILE
+VALUE "<project>\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd,hdl"
+STATE="utd"
+TIME="1580160184"
+SIZE="13417"
+PARENT="<project>\component\work\CoreAPB3_C0\CoreAPB3_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\CoreTimer_C0\CoreTimer_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580077548"
+SIZE="3838"
+ENDFILE
+VALUE "<project>\component\work\CoreTimer_C0\CoreTimer_C0.vhd,hdl"
+STATE="utd"
+TIME="1580077548"
+SIZE="3724"
+PARENT="<project>\component\work\CoreTimer_C0\CoreTimer_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580159856"
+SIZE="10592"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
+STATE="utd"
+TIME="1580159856"
+SIZE="3443"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580159855"
+SIZE="705"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
+STATE="utd"
+TIME="1580159855"
+SIZE="5700"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580163045"
+SIZE="5315"
+ENDFILE
+VALUE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd,hdl"
+STATE="utd"
+TIME="1580163045"
+SIZE="4872"
+PARENT="<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580163471"
+SIZE="3950"
+ENDFILE
+VALUE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd,hdl"
+STATE="utd"
+TIME="1580163470"
+SIZE="23233"
+PARENT="<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580077461"
+SIZE="2913"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.vhd,hdl"
+STATE="utd"
+TIME="1580077461"
+SIZE="3429"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1580077461"
+SIZE="460"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd,hdl"
+STATE="utd"
+TIME="1580077461"
+SIZE="896"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc,io_pdc"
+STATE="utd"
+TIME="1580096786"
+SIZE="2433"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.ide_des,ide_des"
+STATE="utd"
+TIME="1580162976"
+SIZE="220"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_Instruction_RAM.ide_des,ide_des"
+STATE="utd"
+TIME="1579994184"
+SIZE="222"
+ENDFILE
+VALUE "<project>\designer\impl1\I2C_LITEON_Op_Sens_test_sd.ide_des,ide_des"
+STATE="utd"
+TIME="1580096366"
+SIZE="456"
+ENDFILE
+VALUE "<project>\designer\impl1\timer.ide_des,ide_des"
+STATE="utd"
+TIME="1579762348"
+SIZE="208"
+ENDFILE
+VALUE "<project>\hdl\Fake_Light_Sensor.vhd,hdl"
+STATE="utd"
+TIME="1580099783"
+SIZE="13821"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core.vhd,hdl"
+STATE="utd"
+TIME="1580020168"
+SIZE="19060"
+ENDFILE
+VALUE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
+STATE="utd"
+TIME="1580163027"
+SIZE="14322"
+ENDFILE
+VALUE "<project>\hdl\I2C_Instruction_RAM.vhd,hdl"
+STATE="utd"
+TIME="1580152852"
+SIZE="17094"
+ENDFILE
+VALUE "<project>\hdl\I2C_Pull_Up.vhd,hdl"
+STATE="utd"
+TIME="1580100761"
+SIZE="1179"
+ENDFILE
+VALUE "<project>\hdl\LED_controller.vhd,hdl"
+STATE="utd"
+TIME="1580160082"
+SIZE="12597"
+ENDFILE
+VALUE "<project>\hdl\LITEON_Optical_Sensor_Core.vhd,hdl"
+STATE="utd"
+TIME="1579567342"
+SIZE="1549"
+ENDFILE
+VALUE "<project>\hdl\timer.vhd,hdl"
+STATE="utd"
+TIME="1579567342"
+SIZE="2522"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.log,log"
+STATE="utd"
+TIME="1580101063"
+SIZE="418"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+STATE="utd"
+TIME="1572988165"
+SIZE="1229"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+STATE="utd"
+TIME="1572988165"
+SIZE="8016"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\I2C_Core_APB3_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1580092518"
+SIZE="16987"
+ENDFILE
+VALUE "<project>\simulation\I2C_Instruction_RAM_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1580077402"
+SIZE="11150"
+ENDFILE
+VALUE "<project>\simulation\I2C_LITEON_Op_Sens_test_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1580152872"
+SIZE="166912"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1580101055"
+SIZE="5476"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1580163470"
+SIZE="867"
+PARENT="<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf"
+ENDFILE
+VALUE "<project>\simulation\user_tb.bfm,sim"
+STATE="utd"
+TIME="1573780533"
+SIZE="4701"
+PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1580091691"
+SIZE="17748"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1579570133"
+SIZE="9755"
+ENDFILE
+VALUE "<project>\stimulus\I2C_Instruction_RAM_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1580077319"
+SIZE="20292"
+ENDFILE
+VALUE "<project>\stimulus\I2C_LITEON_Op_Sens_test_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1580155545"
+SIZE="7462"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_Block_sd.so,so"
+STATE="utd"
+TIME="1580162987"
+SIZE="260"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm"
+STATE="utd"
+TIME="1580162986"
+SIZE="119255"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_Block_sd_syn.prj,prj"
+STATE="utd"
+TIME="1580162987"
+SIZE="2426"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_Block_sd_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1580162986"
+SIZE="902"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Instruction_RAM.so,so"
+STATE="utd"
+TIME="1580020725"
+SIZE="264"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Instruction_RAM.vm,syn_vm"
+STATE="ood"
+TIME="1580020725"
+SIZE="102860"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Instruction_RAM_syn.prj,prj"
+STATE="utd"
+TIME="1580023830"
+SIZE="1922"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Instruction_RAM_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1580020725"
+SIZE="904"
+ENDFILE
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.so,so"
+STATE="utd"
+TIME="1580097968"
+SIZE="278"
+ENDFILE
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
+STATE="utd"
+TIME="1580097967"
+SIZE="377392"
+ENDFILE
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_syn.prj,prj"
+STATE="utd"
+TIME="1580097968"
+SIZE="6899"
+ENDFILE
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1580097967"
+SIZE="1384"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "I2C_Instruction_RAM::work"
+FILE "<project>\hdl\I2C_Instruction_RAM.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_Instruction_RAM_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "I2C_Core::work"
+FILE "<project>\hdl\I2C_Core.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "I2C_Core_Block_sd::work"
+FILE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd_fp\I2C_Core_Block_sd.pro,pro"
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "I2C_LITEON_Op_Sens_test_sd::work"
+FILE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_LITEON_Op_Sens_test_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib"
+FILE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::coreapb3_lib"
+FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+ENDLIST
+LIST "CoreTimer::coretimer_lib"
+FILE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\user_tb.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\bfmtovec_compile.do,do"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\wave.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST I2C_LITEON_Op_Sens_test_sd
+VALUE "<project>\stimulus\I2C_LITEON_Op_Sens_test_tb.vhd,tb_hdl"
+ENDLIST
+LIST CoreTimer
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
+ENDLIST
+LIST I2C_Instruction_RAM
+VALUE "<project>\stimulus\I2C_Instruction_RAM_tb.vhd,tb_hdl"
+ENDLIST
+LIST I2C_Core
+VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+LIST I2C_LITEON_Op_Sens_test_sd
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST COREABC_C0_COREABC_C0_0_COREABC
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
+VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd,tb_hdl"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST CoreTimer
+VALUE "<project>\simulation\user_tb.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\bfmtovec_compile.do,do"
+VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\mti\wave.do,do"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1ms
+Resolution=100ps
+VsimOpt=
+EntityName=I2C_LITEON_Op_Sens_test_tb
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=TRUE
+LibraryPath=C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=FALSE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="SynplifyProME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSimME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l I2C_LITEON_Op_Sens_test_tb_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Designer\binfp\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="IdentifyDebugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v12.1\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "I2C_Instruction_RAM::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "I2C_Core::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "I2C_Core_Block_sd::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core_Block_sd_fp\I2C_Core_Block_sd.pro,pro"
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "I2C_LITEON_Op_Sens_test_sd::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreTimer::coretimer_lib"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:I2C_LITEON_Op_Sens_test_sd_compile_netlist_hier_resources.csv
+StartPage;StartPage;0
+SmartDesign;I2C_LITEON_Op_Sens_test_sd;0
+Constraint Manager;Constraint Manager;0
+HDL;constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc;0
+SmartDesign;I2C_Core_Block_sd;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd","FALSE","FALSE"
+ENDLIST
+LIST "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
+SUBBLOCK "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "CoreTimer_C0::work","component\work\CoreTimer_C0\CoreTimer_C0.vhd","TRUE","FALSE"
+SUBBLOCK "CoreTimer::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Fake_Light_Sensor::work","hdl\Fake_Light_Sensor.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_Block_sd::work","component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd","TRUE","FALSE"
+SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd","TRUE","FALSE"
+SUBBLOCK "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
+SUBBLOCK "CoreTimer_C0::work","component\work\CoreTimer_C0\CoreTimer_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "LED_Controller::work","hdl\LED_controller.vhd","FALSE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Pull_Up::work","hdl\I2C_Pull_Up.vhd","FALSE","FALSE"
+ENDLIST
+LIST "LED_Controller::work","hdl\LED_controller.vhd","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_APB3_tb::work","stimulus\I2C_Core_APB3_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Core_tb::work","stimulus\I2C_Core_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Instruction_RAM_tb::work","stimulus\I2C_Instruction_RAM_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_LITEON_Op_Sens_test_tb::work","stimulus\I2C_LITEON_Op_Sens_test_tb.vhd","FALSE","TRUE"
+SUBBLOCK "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd","TRUE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_ACMTABLE::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_components::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_ACMTABLE::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_INSTRUCTNVM::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_INSTRUCTRAM::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_DEBUGBLK::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_INSTRUCTIONS::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_RAMBLOCKS::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_ACMTABLE::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_coreparameters_tgi::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\coreparameters_tgi.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_INSTRUCTNVM::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_INSTRUCTRAM::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_IRAM512X9::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_IRAM512X9::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_misc::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_RAM128X8::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_RAM256X16::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_RAM256X8::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_support::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_textio::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_textio_test::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_DEBUGBLK::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_INSTRUCTIONS::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_RAMBLOCKS::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_RAM128X8::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_RAM256X16::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_RAM256X8::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_testsupport::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd","FALSE","TRUE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_ACMTABLE::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+ENDLIST
+LIST "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+ENDLIST
+LIST "TESTBENCH::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_COREABC::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd","FALSE","FALSE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+SUBBLOCK "COREABC_C0_COREABC_C0_0_APBModel::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd","FALSE","TRUE"
+ENDLIST
+LIST "components::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd","FALSE","FALSE"
+ENDLIST
+LIST "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"
+SUBBLOCK "COREAPB3_MUXPTOB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd","FALSE","FALSE"
+SUBBLOCK "coreapb3_iaddr_reg::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd","FALSE","FALSE"
+ENDLIST
+LIST "coreapb3_iaddr_reg::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREAPB3_MUXPTOB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "bfm_misc::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\misc.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfM_packAGE::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_package.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfm_textio::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfm_textio_test::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd","FALSE","TRUE"
+ENDLIST
+LIST "coreparameters::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFM_apb::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd","FALSE","TRUE"
+SUBBLOCK "BFMA1i1lI::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd","FALSE","TRUE"
+SUBBLOCK "bFM_maiN::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFM_apbSLAve::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd","FALSE","TRUE"
+SUBBLOCK "BFM_apBSLaveeXT::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFM_apBSLaveeXT::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bFM_maiN::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1i1lI::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd","FALSE","TRUE"
+ENDLIST
+LIST "testbench::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"
+SUBBLOCK "BFM_apb::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd","FALSE","TRUE"
+SUBBLOCK "BFM_apbSLAve::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd","FALSE","TRUE"
+ENDLIST
+LIST "CoreTimer::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "coretimer_pkg::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer_pkg.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Bfm_aPB2apb::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apbtoapb.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfm_misc::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\misc.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfM_packAGE::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_package.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfm_textio::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bfm_textio_test::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\textio.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1i1lI::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd","FALSE","TRUE"
+ENDLIST
+LIST "BFM_apb::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd","FALSE","TRUE"
+SUBBLOCK "BFMA1i1lI::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd","FALSE","TRUE"
+SUBBLOCK "bFM_maiN::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd","FALSE","TRUE"
+ENDLIST
+LIST "bFM_maiN::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd","FALSE","TRUE"
+ENDLIST
+LIST "testbench::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd","FALSE","TRUE"
+SUBBLOCK "CoreTimer::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd","FALSE","FALSE"
+SUBBLOCK "BFM_apb::coretimer_lib","component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_apb.vhd","FALSE","TRUE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

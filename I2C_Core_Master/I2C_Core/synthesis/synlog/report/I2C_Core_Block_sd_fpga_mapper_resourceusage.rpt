@@ -1,0 +1,40 @@
+Resource Usage Report for I2C_Core_Block_sd 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           4 uses
+CFG2           36 uses
+CFG3           74 uses
+CFG4           93 uses
+
+Carry cells:
+ARI1            69 uses - used for arithmetic functions
+ARI1            26 uses - used for Wide-Mux implementation
+Total ARI1      95 uses
+
+
+Sequential Cells: 
+SLE            133 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 39
+I/O primitives: 39
+INBUF          24 uses
+OUTBUF         15 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    302
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 36; LUTs = 36;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  133 + 36 + 0 + 0 = 169;
+Total number of LUTs after P&R:  302 + 36 + 0 + 0 = 338;
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="I2C_state_machine" version="4">
+  <OBJECT>
+    <ID name="I2C_state_machine" mc="Infrastructure.DiagramSet" uid="af0ce73c-f2a2-4c4c-ada4-029888b30ba3"/>
+    <PID name="I2C_state_machine" mc="Standard.Project" uid="97fd78c6-3ff3-43d7-8b3c-8e8d142cf9fe"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[I2C_state_machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

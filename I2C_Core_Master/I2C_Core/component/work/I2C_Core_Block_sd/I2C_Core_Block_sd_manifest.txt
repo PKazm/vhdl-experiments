@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Mon Jan 27 17:10:45 2020
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core
+Component :  I2C_Core_Block_sd
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_Core_Block_sd/I2C_Core_Block_sd.vhd
+

@@ -1,0 +1,16 @@
+Project Name: I2C_Core
+Location: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core
+Description: 
+Preferred HDL Type: VHDL
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S010-TQ144
+Family         : SmartFusion2
+Die            : M2S010
+Package        : 144 TQ
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM

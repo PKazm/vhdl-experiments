@@ -1,0 +1,131 @@
+# Mon Jan 27 17:11:45 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Core_Block_sd\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+syn_allowed_resources : blockrams=21  set on top level netlist I2C_Core_Block_sd
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+Clock Summary
+******************
+
+          Start                      Requested     Requested     Clock        Clock                   Clock
+Level     Clock                      Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------------
+0 -       System                     100.0 MHz     10.000        system       system_clkgroup         6    
+                                                                                                           
+0 -       I2C_Core_Block_sd|PCLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     171  
+===========================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                           Clock     Source         Clock Pin                                 Non-clock Pin     Non-clock Pin
+Clock                      Load      Pin            Seq Example                               Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------------
+System                     6         -              I2C_Core_APB3_0.i2c_adr_to_mem[5:0].C     -                 -            
+                                                                                                                             
+I2C_Core_Block_sd|PCLK     171       PCLK(port)     I2C_Core_APB3_0.trigger_seq_last.C        -                 -            
+=============================================================================================================================
+
+@W: MT532 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core_apb3.vhd":396:19:396:20|Found signal identified as System clock which controls 6 sequential elements including I2C_Core_APB3_0.i2c_adr_to_mem[5:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core.vhd":242:8:242:9|Found inferred clock I2C_Core_Block_sd|PCLK which controls 171 sequential elements including I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.i2c_clk_cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Encoding state machine i2c_state_cur[0:16] (in view: work.I2C_Core(architecture_i2c_core))
+original code -> new code
+   000000000000000000001 -> 00000000000000001
+   000000000000000000010 -> 00000000000000010
+   000000000000000000100 -> 00000000000000100
+   000000000000000001000 -> 00000000000001000
+   000000000000000010000 -> 00000000000010000
+   000000000000000100000 -> 00000000000100000
+   000000000000001000000 -> 00000000001000000
+   000000000000010000000 -> 00000000010000000
+   000000000000100000000 -> 00000000100000000
+   000000000001000000000 -> 00000001000000000
+   000000000010000000000 -> 00000010000000000
+   000000000100000000000 -> 00000100000000000
+   000000001000000000000 -> 00001000000000000
+   000000010000000000000 -> 00010000000000000
+   000000100000000000000 -> 00100000000000000
+   000001000000000000000 -> 01000000000000000
+   000010000000000000000 -> 10000000000000000
+Encoding state machine status_sig[0:3] (in view: work.I2C_Core(architecture_i2c_core))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core.vhd":287:8:287:9|There are no possible illegal states for state machine status_sig[0:3] (in view: work.I2C_Core(architecture_i2c_core)); safe FSM implementation is not required.
+Encoding state machine seq_state_cur[0:3] (in view: work.I2C_Instruction_RAM(architecture_i2c_instruction_ram))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_instruction_ram.vhd":331:8:331:9|There are no possible illegal states for state machine seq_state_cur[0:3] (in view: work.I2C_Instruction_RAM(architecture_i2c_instruction_ram)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jan 27 17:11:45 2020
+
+###########################################################]

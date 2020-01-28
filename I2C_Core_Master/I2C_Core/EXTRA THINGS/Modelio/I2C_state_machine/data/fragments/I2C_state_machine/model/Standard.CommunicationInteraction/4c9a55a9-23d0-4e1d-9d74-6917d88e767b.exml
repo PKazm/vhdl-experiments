@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Communication Interaction" version="4">
+  <OBJECT>
+    <ID name="Communication Interaction" mc="Standard.CommunicationInteraction" uid="4c9a55a9-23d0-4e1d-9d74-6917d88e767b"/>
+    <PID name="Block Diagrams" mc="Standard.Package" uid="49ba98d9-3d60-4fb9-bb22-776c2c9c938b"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Communication Interaction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Standard.Collaboration" uid="e767065a-c926-482d-9f5c-d9c3a798f85a"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Communication Interaction Communication diagram" mc="Standard.CommunicationDiagram" uid="c8367fe0-6b6a-4b3c-942b-5a043e31f870"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

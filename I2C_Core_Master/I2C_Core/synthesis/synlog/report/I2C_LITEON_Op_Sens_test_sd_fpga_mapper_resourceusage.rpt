@@ -1,0 +1,45 @@
+Resource Usage Report for I2C_LITEON_Op_Sens_test_sd 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+AND4            1 use
+CCC             1 use
+CLKINT          3 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG1           18 uses
+CFG2           153 uses
+CFG3           235 uses
+CFG4           498 uses
+
+Carry cells:
+ARI1            205 uses - used for arithmetic functions
+ARI1            30 uses - used for Wide-Mux implementation
+Total ARI1      235 uses
+
+
+Sequential Cells: 
+SLE            413 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 17
+I/O primitives: 16
+BIBUF          2 uses
+INBUF          2 uses
+OUTBUF         12 uses
+
+
+Global Clock Buffers: 3
+
+Total LUTs:    1139
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 180; LUTs = 180;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  413 + 180 + 0 + 0 = 593;
+Total number of LUTs after P&R:  1139 + 180 + 0 + 0 = 1319;
+

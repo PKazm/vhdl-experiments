@@ -1,0 +1,17 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":24:7:24:25|Top entity is set to I2C_Instruction_RAM.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":24:7:24:25|Synthesizing work.i2c_instruction_ram.architecture_i2c_instruction_ram.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":100:20:100:21|Using sequential encoding for type seq_states.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":403:24:403:37|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":417:16:417:29|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":24:7:24:14|Synthesizing work.i2c_core.architecture_i2c_core.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":63:20:63:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000000000000000000".
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":77:11:77:22|Found RAM i2c_seq_regs, depth=64, width=10
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":77:11:77:22|Found RAM i2c_seq_regs, depth=64, width=10
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":287:8:287:9|Trying to extract state machine for register status_sig.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":287:8:287:9|Trying to extract state machine for register i2c_state_cur.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":330:8:330:9|Trying to extract state machine for register seq_state_cur.
+@N|Running in 64-bit mode
+

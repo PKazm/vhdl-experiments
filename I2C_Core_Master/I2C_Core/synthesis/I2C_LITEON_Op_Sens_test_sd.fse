@@ -1,0 +1,74 @@
+
+fsm_encoding {3286928691} sequential
+
+fsm_state_encoding {3286928691} cycle0 {00}
+
+fsm_state_encoding {3286928691} cycle1 {01}
+
+fsm_state_encoding {3286928691} cycle2 {10}
+
+fsm_state_encoding {3286928691} cycle3 {11}
+
+fsm_registers {3286928691} {ICYCLE[1]}  {ICYCLE[0]} 
+
+fsm_encoding {4233183314} sequential
+
+fsm_state_encoding {4233183314} idle {00}
+
+fsm_state_encoding {4233183314} next_instr {01}
+
+fsm_state_encoding {4233183314} do_instr {10}
+
+fsm_state_encoding {4233183314} read_i2c {11}
+
+fsm_registers {4233183314} {seq_state_cur[1]}  {seq_state_cur[0]} 
+
+fsm_encoding {2428782873} onehot
+
+fsm_state_encoding {2428782873} idle {00000000000000001}
+
+fsm_state_encoding {2428782873} start0 {00000000000000010}
+
+fsm_state_encoding {2428782873} start1 {00000000000000100}
+
+fsm_state_encoding {2428782873} start2 {00000000000001000}
+
+fsm_state_encoding {2428782873} start3 {00000000000010000}
+
+fsm_state_encoding {2428782873} stop0 {00000000000100000}
+
+fsm_state_encoding {2428782873} stop1 {00000000001000000}
+
+fsm_state_encoding {2428782873} stop2 {00000000010000000}
+
+fsm_state_encoding {2428782873} stop3 {00000000100000000}
+
+fsm_state_encoding {2428782873} rstart0 {00000001000000000}
+
+fsm_state_encoding {2428782873} rstart1 {00000010000000000}
+
+fsm_state_encoding {2428782873} rstart2 {00000100000000000}
+
+fsm_state_encoding {2428782873} rstart3 {00001000000000000}
+
+fsm_state_encoding {2428782873} data0 {00010000000000000}
+
+fsm_state_encoding {2428782873} data1 {00100000000000000}
+
+fsm_state_encoding {2428782873} data2 {01000000000000000}
+
+fsm_state_encoding {2428782873} data3 {10000000000000000}
+
+fsm_registers {2428782873} {i2c_state_cur[0]}  {i2c_state_cur[1]}  {i2c_state_cur[2]}  {i2c_state_cur[3]}  {i2c_state_cur[4]}  {i2c_state_cur[5]}  {i2c_state_cur[6]}  {i2c_state_cur[7]}  {i2c_state_cur[8]}  {i2c_state_cur[9]}  {i2c_state_cur[10]}  {i2c_state_cur[11]}  {i2c_state_cur[12]}  {i2c_state_cur[13]}  {i2c_state_cur[14]}  {i2c_state_cur[15]}  {i2c_state_cur[16]} 
+
+fsm_encoding {2428782872} sequential
+
+fsm_state_encoding {2428782872} 00 {00}
+
+fsm_state_encoding {2428782872} 01 {01}
+
+fsm_state_encoding {2428782872} 10 {10}
+
+fsm_state_encoding {2428782872} 11 {11}
+
+fsm_registers {2428782872} {status_sig[1]}  {status_sig[0]} 

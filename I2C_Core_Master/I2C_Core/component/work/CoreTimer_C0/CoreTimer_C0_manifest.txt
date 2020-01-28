@@ -1,0 +1,13 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Sun Jan 26 17:25:48 2020
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core
+Component :  CoreTimer_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vhdl/core/coretimer.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vhdl/core/coretimer_pkg.vhd
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd
+

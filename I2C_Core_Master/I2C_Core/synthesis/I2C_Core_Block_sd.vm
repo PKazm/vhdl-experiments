@@ -1,0 +1,5471 @@
+//
+// Written by Synplify Pro 
+// Product Version "N-2018.03M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact, Build 2461R"
+// Mon Jan 27 17:11:48 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core.vhd "
+// file 10 "\c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_instruction_ram.vhd "
+// file 11 "\c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core_apb3.vhd "
+// file 12 "\c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\component\work\i2c_core_block_sd\i2c_core_block_sd.vhd "
+// file 13 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\generic\smartfusion2.vhd "
+// file 14 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\nlconst.dat "
+// file 15 "\c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\designer\i2c_core_block_sd\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module I2C_Core (
+  i2c_reg_ctrl_4,
+  i2c_reg_ctrl_0,
+  status_sig_d_0,
+  uSRAM_B_DOUT_sig,
+  i2c_reg_datI,
+  i2c_reg_clk,
+  i2c_status_out_0,
+  i2c_data_out,
+  i2c_instruct_m_0,
+  i2c_instruct_sig_iv_0_0,
+  i2c_instruct_sig_0,
+  i2c_instruct_i_m_0_0_0,
+  uSRAM_B_DOUT_sig_i_m_0,
+  N_491_2,
+  i2c_run,
+  i2c_initiate_sig,
+  i2c_int,
+  SDAI_c,
+  SCLI_c,
+  PCLK_c,
+  RSTn_c,
+  SDAO_sig_i,
+  SCLO_sig_i
+)
+;
+input i2c_reg_ctrl_4 ;
+input i2c_reg_ctrl_0 ;
+input status_sig_d_0 ;
+input [7:0] uSRAM_B_DOUT_sig ;
+input [7:0] i2c_reg_datI ;
+input [15:1] i2c_reg_clk ;
+output i2c_status_out_0 ;
+output [7:0] i2c_data_out ;
+input i2c_instruct_m_0 ;
+input i2c_instruct_sig_iv_0_0 ;
+input i2c_instruct_sig_0 ;
+input i2c_instruct_i_m_0_0_0 ;
+input uSRAM_B_DOUT_sig_i_m_0 ;
+output N_491_2 ;
+input i2c_run ;
+input i2c_initiate_sig ;
+output i2c_int ;
+input SDAI_c ;
+input SCLI_c ;
+input PCLK_c ;
+input RSTn_c ;
+output SDAO_sig_i ;
+output SCLO_sig_i ;
+wire i2c_reg_ctrl_4 ;
+wire i2c_reg_ctrl_0 ;
+wire status_sig_d_0 ;
+wire i2c_status_out_0 ;
+wire i2c_instruct_m_0 ;
+wire i2c_instruct_sig_iv_0_0 ;
+wire i2c_instruct_sig_0 ;
+wire i2c_instruct_i_m_0_0_0 ;
+wire uSRAM_B_DOUT_sig_i_m_0 ;
+wire N_491_2 ;
+wire i2c_run ;
+wire i2c_initiate_sig ;
+wire i2c_int ;
+wire SDAI_c ;
+wire SCLI_c ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire SDAO_sig_i ;
+wire SCLO_sig_i ;
+wire [2:0] i2c_instr_reg_2_RNO;
+wire [2:0] SDA_filt;
+wire [1:0] SCLI_sig_history;
+wire [0:0] SCLI_sig_history_5;
+wire [1:0] SDAI_sig_history;
+wire [0:0] SDAI_sig_history_6;
+wire [2:0] bit_counter;
+wire [1:1] bit_counter_7;
+wire [2:0] SCL_filt;
+wire [2:0] i2c_instr_reg;
+wire [0:0] i2c_read_reg;
+wire [0:0] i2c_read_reg_5;
+wire [16:0] i2c_state_cur;
+wire [1:1] status_sig_ns;
+wire [0:0] status_sig_ns_i_a4_1_0;
+wire [13:0] i2c_state_cur_ns;
+wire [15:0] i2c_clk_cnt;
+wire [15:0] i2c_clk_cnt_s;
+wire [14:1] un20_i2c_bus_ready_cnt_a_4;
+wire [13:1] un14_i2c_clk_cnt_a_4;
+wire [7:0] un20_i2c_bus_ready_cnt_0_data_tmp;
+wire [7:0] un14_i2c_clk_cnt_0_data_tmp;
+wire [14:0] i2c_clk_cnt_cry;
+wire [14:0] i2c_clk_cnt_cry_Y;
+wire [15:15] i2c_clk_cnt_s_FCO;
+wire [15:15] i2c_clk_cnt_s_Y;
+wire [0:0] i2c_state_cur_ns_1_1;
+wire [13:0] i2c_state_cur_ns_0;
+wire [0:0] bit_counter_7_i_m2_1_1;
+wire [0:0] status_sig_ns_i_a3_1;
+wire [0:0] status_sig_ns_i_a4_0;
+wire [0:0] status_sig_ns_i_a3_0_0;
+wire [0:0] status_sig_ns_i_a4_0_1_0;
+wire [1:1] status_sig_ns_0_0;
+wire [1:1] i2c_state_cur_ns_i_0;
+wire [1:1] bit_counter_7_0;
+wire [5:5] i2c_state_cur_ns_i_o2_0;
+wire un8_i2c_bus_ready_cnt ;
+wire un1_i2c_clk_cnt_1_sqmuxa_i_Z ;
+wire SCL_mismatch_Z ;
+wire i2c_clk_cnte ;
+wire SCLO_sig_Z ;
+wire SDAO_sig_Z ;
+wire state_handshake_Z ;
+wire state_handshake_i_0 ;
+wire i2c_bus_ready_Z ;
+wire i2c_bus_ready_i ;
+wire un40_i2c_state_cur ;
+wire GND ;
+wire VCC ;
+wire i2c_read_reg_299 ;
+wire N_188_i ;
+wire N_191_i ;
+wire un1_i2c_instr_reg_0_sqmuxa_Z ;
+wire N_186_i ;
+wire i2c_bus_busy_sig_Z ;
+wire un48_sdai_sig_history ;
+wire i2c_clk_pulse_Z ;
+wire un1_status_sig_2_Z ;
+wire N_5 ;
+wire i2c_bus_ready_0_sqmuxa ;
+wire i2c_bus_ready_1_sqmuxa_1_i_Z ;
+wire SDAO_sig_6_iv_i ;
+wire N_183_i ;
+wire did_ack_Z ;
+wire did_ack_4 ;
+wire N_243 ;
+wire un1_state_handshake_0_sqmuxa_0_Z ;
+wire i2c_bus_ready_cnt_Z ;
+wire i2c_bus_ready_cnt_0_sqmuxa_i_Z ;
+wire N_485_i ;
+wire N_149_i ;
+wire N_155_i ;
+wire N_163_i ;
+wire N_147_i ;
+wire initiate_last_Z ;
+wire SCL_mismatch_1 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_0 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_0_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_0_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_1 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_1_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_2 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_2_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_3 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_3_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_4 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_4_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_5 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_5_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_6 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_6_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_7 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_7_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_8 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_8_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_9 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_9_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_10 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_10_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_11 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_11_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_12 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_12_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_13 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_13_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_14 ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_14_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_0 ;
+wire un14_i2c_clk_cnt_a_4_cry_0_S ;
+wire un14_i2c_clk_cnt_a_4_cry_0_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_1 ;
+wire un14_i2c_clk_cnt_a_4_cry_1_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_2 ;
+wire un14_i2c_clk_cnt_a_4_cry_2_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_3 ;
+wire un14_i2c_clk_cnt_a_4_cry_3_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_4 ;
+wire un14_i2c_clk_cnt_a_4_cry_4_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_5 ;
+wire un14_i2c_clk_cnt_a_4_cry_5_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_6 ;
+wire un14_i2c_clk_cnt_a_4_cry_6_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_7 ;
+wire un14_i2c_clk_cnt_a_4_cry_7_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_8 ;
+wire un14_i2c_clk_cnt_a_4_cry_8_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_9 ;
+wire un14_i2c_clk_cnt_a_4_cry_9_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_10 ;
+wire un14_i2c_clk_cnt_a_4_cry_10_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_11 ;
+wire un14_i2c_clk_cnt_a_4_cry_11_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_12 ;
+wire un14_i2c_clk_cnt_a_4_cry_12_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_13 ;
+wire un14_i2c_clk_cnt_a_4_cry_13_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16_Y ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07_S ;
+wire un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41_S ;
+wire un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2_S ;
+wire un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_4_RNI8P914_S ;
+wire un14_i2c_clk_cnt_a_4_cry_4_RNI8P914_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5_S ;
+wire un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6_S ;
+wire un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7_S ;
+wire un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8_S ;
+wire un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8_Y ;
+wire un14_i2c_clk_cnt_a_4_cry_13_RNIN8669_S ;
+wire un14_i2c_clk_cnt_a_4_cry_13_RNIN8669_Y ;
+wire i2c_clk_cnt_s_41_FCO ;
+wire i2c_clk_cnt_s_41_S ;
+wire i2c_clk_cnt_s_41_Y ;
+wire un15_bit_to_sda_7_1_0_co1_3 ;
+wire un15_bit_to_sda_7_1_0_wmux_8_S ;
+wire un15_bit_to_sda ;
+wire un15_bit_to_sda_7_1_0_y3 ;
+wire un15_bit_to_sda_7_1_0_y1 ;
+wire un15_bit_to_sda_7_1_0_y0_3 ;
+wire un15_bit_to_sda_7_1_0_co0_3 ;
+wire un15_bit_to_sda_7_1_0_wmux_7_S ;
+wire un15_bit_to_sda_7_1_0_y5 ;
+wire un15_bit_to_sda_7_1_0_y7 ;
+wire un15_bit_to_sda_7_1_0_co1_2 ;
+wire un15_bit_to_sda_7_1_0_wmux_6_S ;
+wire un15_bit_to_sda_7_1_0_y0_2 ;
+wire un15_bit_to_sda_7_1_0_co0_2 ;
+wire un15_bit_to_sda_7_1_0_wmux_5_S ;
+wire un15_bit_to_sda_7_1_0_co1_1 ;
+wire un15_bit_to_sda_7_1_0_wmux_4_S ;
+wire un15_bit_to_sda_7_1_0_y0_1 ;
+wire un15_bit_to_sda_7_1_0_co0_1 ;
+wire un15_bit_to_sda_7_1_0_wmux_3_S ;
+wire un15_bit_to_sda_7_1_0_co1_0 ;
+wire un15_bit_to_sda_7_1_0_wmux_2_S ;
+wire un15_bit_to_sda_7_1_0_y0_0 ;
+wire un15_bit_to_sda_7_1_0_co0_0 ;
+wire un15_bit_to_sda_7_1_0_wmux_1_S ;
+wire un15_bit_to_sda_7_1_0_co1 ;
+wire un15_bit_to_sda_7_1_0_wmux_0_S ;
+wire un15_bit_to_sda_7_1_0_y0 ;
+wire un15_bit_to_sda_7_1_0_co0 ;
+wire un15_bit_to_sda_7_1_0_wmux_S ;
+wire N_411 ;
+wire un13_i2c_clk_pulse ;
+wire N_229 ;
+wire N_203_i ;
+wire N_204_li ;
+wire N_226 ;
+wire un2_bit_to_sda_i ;
+wire N_242_i ;
+wire un15_bit_to_sda_i_m_0 ;
+wire un1_i2c_instr_reg_0_sqmuxa_0_Z ;
+wire un1_i2c_bus_ready_cnt_i_a2_0_0_Z ;
+wire N_303_i ;
+wire N_257_i ;
+wire un34_sdai_sig_history_1 ;
+wire un1_i2c_state_cur_11_0_a3_0_2 ;
+wire N_223 ;
+wire N_493 ;
+wire N_258_i ;
+wire N_496 ;
+wire N_305 ;
+wire N_200_i ;
+wire N_209 ;
+wire N_266 ;
+wire N_261 ;
+wire N_255_1 ;
+wire status_sig_1_sqmuxa_i_a2_0_Z ;
+wire N_491 ;
+wire N_202 ;
+wire N_198 ;
+wire N_201 ;
+wire N_309 ;
+wire N_308 ;
+wire N_307 ;
+wire N_306 ;
+wire N_23 ;
+wire N_22 ;
+wire N_21 ;
+wire N_20 ;
+wire N_19 ;
+wire N_18 ;
+wire N_17 ;
+wire N_16 ;
+wire N_15 ;
+wire N_14 ;
+wire N_13 ;
+wire N_12 ;
+wire N_11 ;
+wire N_10 ;
+wire N_9 ;
+wire N_8 ;
+wire N_7 ;
+// @10:173
+  CFG3 SCL_mismatch_RNI55GC (
+	.A(un8_i2c_bus_ready_cnt),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(SCL_mismatch_Z),
+	.Y(i2c_clk_cnte)
+);
+defparam SCL_mismatch_RNI55GC.INIT=8'hBF;
+  CFG1 SCLO_sig_RNIPUP8 (
+	.A(SCLO_sig_Z),
+	.Y(SCLO_sig_i)
+);
+defparam SCLO_sig_RNIPUP8.INIT=2'h1;
+  CFG1 SDAO_sig_RNIFDPB (
+	.A(SDAO_sig_Z),
+	.Y(SDAO_sig_i)
+);
+defparam SDAO_sig_RNIFDPB.INIT=2'h1;
+  CFG1 state_handshake_RNO (
+	.A(state_handshake_Z),
+	.Y(state_handshake_i_0)
+);
+defparam state_handshake_RNO.INIT=2'h1;
+  CFG1 i2c_bus_ready_cnt_RNO (
+	.A(i2c_bus_ready_Z),
+	.Y(i2c_bus_ready_i)
+);
+defparam i2c_bus_ready_cnt_RNO.INIT=2'h1;
+// @10:173
+  CFG3 \i2c_instr_reg_2_RNO[2]  (
+	.A(uSRAM_B_DOUT_sig_i_m_0),
+	.B(i2c_instruct_i_m_0_0_0),
+	.C(un40_i2c_state_cur),
+	.Y(i2c_instr_reg_2_RNO[2])
+);
+defparam \i2c_instr_reg_2_RNO[2] .INIT=8'h10;
+// @10:173
+  CFG2 \i2c_instr_reg_2_RNO[1]  (
+	.A(i2c_instruct_sig_0),
+	.B(un40_i2c_state_cur),
+	.Y(i2c_instr_reg_2_RNO[1])
+);
+defparam \i2c_instr_reg_2_RNO[1] .INIT=4'h8;
+// @10:173
+  CFG3 \i2c_instr_reg_2_RNO[0]  (
+	.A(i2c_instruct_sig_iv_0_0),
+	.B(i2c_instruct_m_0),
+	.C(un40_i2c_state_cur),
+	.Y(i2c_instr_reg_2_RNO[0])
+);
+defparam \i2c_instr_reg_2_RNO[0] .INIT=8'hE0;
+// @9:136
+  SLE \SDA_filt[1]  (
+	.Q(SDA_filt[1]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDA_filt[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SDA_filt[2]  (
+	.Q(SDA_filt[2]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDA_filt[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[5]  (
+	.Q(i2c_data_out[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[3]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[6]  (
+	.Q(i2c_data_out[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[4]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[7]  (
+	.Q(i2c_data_out[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[5]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[8]  (
+	.Q(i2c_data_out[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[6]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SCLI_sig_history[0]  (
+	.Q(SCLI_sig_history[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCLI_sig_history_5[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SCLI_sig_history[1]  (
+	.Q(SCLI_sig_history[1]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCLI_sig_history[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SDAI_sig_history[0]  (
+	.Q(SDAI_sig_history[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_sig_history_6[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SDAI_sig_history[1]  (
+	.Q(SDAI_sig_history[1]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_sig_history[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \bit_counter[0]  (
+	.Q(bit_counter[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_188_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \bit_counter[1]  (
+	.Q(bit_counter[1]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(bit_counter_7[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \bit_counter[2]  (
+	.Q(bit_counter[2]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_191_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SCL_filt[0]  (
+	.Q(SCL_filt[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCLI_c),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SCL_filt[1]  (
+	.Q(SCL_filt[1]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCL_filt[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SCL_filt[2]  (
+	.Q(SCL_filt[2]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCL_filt[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:136
+  SLE \SDA_filt[0]  (
+	.Q(SDA_filt[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_c),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:173
+  SLE \i2c_instr_reg_2[0]  (
+	.Q(i2c_instr_reg[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(i2c_instr_reg_2_RNO[0]),
+	.EN(un1_i2c_instr_reg_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:173
+  SLE \i2c_instr_reg_2[1]  (
+	.Q(i2c_instr_reg[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(i2c_instr_reg_2_RNO[1]),
+	.EN(un1_i2c_instr_reg_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:173
+  SLE \i2c_instr_reg_2[2]  (
+	.Q(i2c_instr_reg[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(i2c_instr_reg_2_RNO[2]),
+	.EN(un1_i2c_instr_reg_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[0]  (
+	.Q(i2c_read_reg[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_read_reg_5[0]),
+	.EN(N_186_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[1]  (
+	.Q(i2c_data_out[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_read_reg[0]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[2]  (
+	.Q(i2c_data_out[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[0]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[3]  (
+	.Q(i2c_data_out[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[1]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_read_reg[4]  (
+	.Q(i2c_data_out[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_data_out[2]),
+	.EN(i2c_read_reg_299),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:179
+  SLE i2c_bus_busy_sig (
+	.Q(i2c_bus_busy_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAI_sig_history[1]),
+	.EN(un48_sdai_sig_history),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE i2c_clk_pulse (
+	.Q(i2c_clk_pulse_Z),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(un1_status_sig_2_Z),
+	.EN(N_5),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE i2c_bus_ready (
+	.Q(i2c_bus_ready_Z),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_bus_ready_0_sqmuxa),
+	.EN(i2c_bus_ready_1_sqmuxa_1_i_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE SDAO_sig (
+	.Q(SDAO_sig_Z),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SDAO_sig_6_iv_i),
+	.EN(N_183_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE did_ack (
+	.Q(did_ack_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(did_ack_4),
+	.EN(i2c_state_cur[16]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE SCLO_sig (
+	.Q(SCLO_sig_Z),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_243),
+	.EN(N_183_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE state_handshake (
+	.Q(state_handshake_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(state_handshake_i_0),
+	.EN(un1_state_handshake_0_sqmuxa_0_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:179
+  SLE i2c_bus_ready_cnt (
+	.Q(i2c_bus_ready_cnt_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_bus_ready_i),
+	.EN(i2c_bus_ready_cnt_0_sqmuxa_i_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \status_sig[0]  (
+	.Q(i2c_status_out_0),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_485_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \status_sig[1]  (
+	.Q(i2c_int),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(status_sig_ns[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[14]  (
+	.Q(i2c_state_cur[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_149_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[13]  (
+	.Q(i2c_state_cur[13]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[14]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[12]  (
+	.Q(i2c_state_cur[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[13]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[11]  (
+	.Q(i2c_state_cur[11]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_155_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[10]  (
+	.Q(i2c_state_cur[10]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[11]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[9]  (
+	.Q(i2c_state_cur[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[10]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[8]  (
+	.Q(i2c_state_cur[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[9]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[7]  (
+	.Q(i2c_state_cur[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_163_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[6]  (
+	.Q(i2c_state_cur[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[7]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[5]  (
+	.Q(i2c_state_cur[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[6]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[4]  (
+	.Q(i2c_state_cur[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[5]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[3]  (
+	.Q(i2c_state_cur[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[2]  (
+	.Q(i2c_state_cur[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[3]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[1]  (
+	.Q(i2c_state_cur[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[2]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[0]  (
+	.Q(i2c_state_cur[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur[1]),
+	.EN(status_sig_ns_i_a4_1_0[0]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[16]  (
+	.Q(i2c_state_cur[16]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_state_cur_ns[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE \i2c_state_cur[15]  (
+	.Q(i2c_state_cur[15]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(N_147_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:287
+  SLE initiate_last (
+	.Q(initiate_last_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_initiate_sig),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:226
+  SLE SCL_mismatch (
+	.Q(SCL_mismatch_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(SCL_mismatch_1),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[0]  (
+	.Q(i2c_clk_cnt[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[0]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[1]  (
+	.Q(i2c_clk_cnt[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[1]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[2]  (
+	.Q(i2c_clk_cnt[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[2]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[3]  (
+	.Q(i2c_clk_cnt[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[3]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[4]  (
+	.Q(i2c_clk_cnt[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[4]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[5]  (
+	.Q(i2c_clk_cnt[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[5]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[6]  (
+	.Q(i2c_clk_cnt[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[6]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[7]  (
+	.Q(i2c_clk_cnt[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[7]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[8]  (
+	.Q(i2c_clk_cnt[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[8]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[9]  (
+	.Q(i2c_clk_cnt[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[9]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[10]  (
+	.Q(i2c_clk_cnt[10]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[10]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[11]  (
+	.Q(i2c_clk_cnt[11]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[11]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[12]  (
+	.Q(i2c_clk_cnt[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[12]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[13]  (
+	.Q(i2c_clk_cnt[13]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[13]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[14]  (
+	.Q(i2c_clk_cnt[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[14]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:242
+  SLE \i2c_clk_cnt[15]  (
+	.Q(i2c_clk_cnt[15]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_clk_cnt_s[15]),
+	.EN(i2c_clk_cnte),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_0  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_0),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_0_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_0_Y),
+	.B(i2c_reg_clk[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(GND)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_0 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_1  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_1),
+	.S(un20_i2c_bus_ready_cnt_a_4[1]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_1_Y),
+	.B(i2c_reg_clk[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_0)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_1 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_2  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_2),
+	.S(un20_i2c_bus_ready_cnt_a_4[2]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_2_Y),
+	.B(i2c_reg_clk[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_1)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_2 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_3  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_3),
+	.S(un20_i2c_bus_ready_cnt_a_4[3]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_3_Y),
+	.B(i2c_reg_clk[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_2)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_3 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_4  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_4),
+	.S(un20_i2c_bus_ready_cnt_a_4[4]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_4_Y),
+	.B(i2c_reg_clk[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_3)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_4 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_5  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_5),
+	.S(un20_i2c_bus_ready_cnt_a_4[5]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_5_Y),
+	.B(i2c_reg_clk[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_4)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_5 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_6  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_6),
+	.S(un20_i2c_bus_ready_cnt_a_4[6]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_6_Y),
+	.B(i2c_reg_clk[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_5)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_6 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_7  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_7),
+	.S(un20_i2c_bus_ready_cnt_a_4[7]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_7_Y),
+	.B(i2c_reg_clk[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_6)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_7 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_8  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_8),
+	.S(un20_i2c_bus_ready_cnt_a_4[8]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_8_Y),
+	.B(i2c_reg_clk[9]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_7)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_8 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_9  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_9),
+	.S(un20_i2c_bus_ready_cnt_a_4[9]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_9_Y),
+	.B(i2c_reg_clk[10]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_8)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_9 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_10  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_10),
+	.S(un20_i2c_bus_ready_cnt_a_4[10]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_10_Y),
+	.B(i2c_reg_clk[11]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_9)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_10 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_11  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_11),
+	.S(un20_i2c_bus_ready_cnt_a_4[11]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_11_Y),
+	.B(i2c_reg_clk[12]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_10)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_11 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_12  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_12),
+	.S(un20_i2c_bus_ready_cnt_a_4[12]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_12_Y),
+	.B(i2c_reg_clk[13]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_11)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_12 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_13  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_13),
+	.S(un20_i2c_bus_ready_cnt_a_4[13]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_13_Y),
+	.B(i2c_reg_clk[14]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_12)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_13 .INIT=20'h65500;
+// @9:258
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_14  (
+	.FCO(un20_i2c_bus_ready_cnt_a_4_cry_14),
+	.S(un20_i2c_bus_ready_cnt_a_4[14]),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_14_Y),
+	.B(i2c_reg_clk[15]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un20_i2c_bus_ready_cnt_a_4_cry_13)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_14 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_0  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_0),
+	.S(un14_i2c_clk_cnt_a_4_cry_0_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_0_Y),
+	.B(i2c_reg_clk[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(GND)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_0 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_1  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_1),
+	.S(un14_i2c_clk_cnt_a_4[1]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_1_Y),
+	.B(i2c_reg_clk[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_0)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_1 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_2  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_2),
+	.S(un14_i2c_clk_cnt_a_4[2]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_2_Y),
+	.B(i2c_reg_clk[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_1)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_2 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_3  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_3),
+	.S(un14_i2c_clk_cnt_a_4[3]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_3_Y),
+	.B(i2c_reg_clk[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_2)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_3 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_4  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_4),
+	.S(un14_i2c_clk_cnt_a_4[4]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_4_Y),
+	.B(i2c_reg_clk[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_3)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_4 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_5  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_5),
+	.S(un14_i2c_clk_cnt_a_4[5]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_5_Y),
+	.B(i2c_reg_clk[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_4)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_5 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_6  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_6),
+	.S(un14_i2c_clk_cnt_a_4[6]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_6_Y),
+	.B(i2c_reg_clk[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_5)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_6 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_7  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_7),
+	.S(un14_i2c_clk_cnt_a_4[7]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_7_Y),
+	.B(i2c_reg_clk[9]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_6)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_7 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_8  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_8),
+	.S(un14_i2c_clk_cnt_a_4[8]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_8_Y),
+	.B(i2c_reg_clk[10]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_7)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_8 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_9  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_9),
+	.S(un14_i2c_clk_cnt_a_4[9]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_9_Y),
+	.B(i2c_reg_clk[11]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_8)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_9 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_10  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_10),
+	.S(un14_i2c_clk_cnt_a_4[10]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_10_Y),
+	.B(i2c_reg_clk[12]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_9)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_10 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_11  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_11),
+	.S(un14_i2c_clk_cnt_a_4[11]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_11_Y),
+	.B(i2c_reg_clk[13]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_10)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_11 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_12  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_12),
+	.S(un14_i2c_clk_cnt_a_4[12]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_12_Y),
+	.B(i2c_reg_clk[14]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_11)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_12 .INIT=20'h65500;
+// @9:266
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_13  (
+	.FCO(un14_i2c_clk_cnt_a_4_cry_13),
+	.S(un14_i2c_clk_cnt_a_4[13]),
+	.Y(un14_i2c_clk_cnt_a_4_cry_13_Y),
+	.B(i2c_reg_clk[15]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_a_4_cry_12)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_13 .INIT=20'h65500;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[0]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ_Y),
+	.B(i2c_clk_cnt[0]),
+	.C(i2c_clk_cnt[1]),
+	.D(un20_i2c_bus_ready_cnt_a_4[1]),
+	.A(i2c_reg_clk[1]),
+	.FCI(GND)
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_1_RNIGNHQ .INIT=20'h64182;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[1]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1_Y),
+	.B(i2c_clk_cnt[2]),
+	.C(i2c_clk_cnt[3]),
+	.D(un20_i2c_bus_ready_cnt_a_4[2]),
+	.A(un20_i2c_bus_ready_cnt_a_4[3]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[0])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_2_RNIQUMK1 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[2]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2_Y),
+	.B(i2c_clk_cnt[4]),
+	.C(i2c_clk_cnt[5]),
+	.D(un20_i2c_bus_ready_cnt_a_4[4]),
+	.A(un20_i2c_bus_ready_cnt_a_4[5]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[1])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_4_RNICASE2 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[3]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193_Y),
+	.B(i2c_clk_cnt[6]),
+	.C(i2c_clk_cnt[7]),
+	.D(un20_i2c_bus_ready_cnt_a_4[6]),
+	.A(un20_i2c_bus_ready_cnt_a_4[7]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[2])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_6_RNI6Q193 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[4]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734_Y),
+	.B(i2c_clk_cnt[8]),
+	.C(i2c_clk_cnt[9]),
+	.D(un20_i2c_bus_ready_cnt_a_4[8]),
+	.A(un20_i2c_bus_ready_cnt_a_4[9]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[3])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_8_RNI8E734 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[5]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25_Y),
+	.B(i2c_clk_cnt[10]),
+	.C(i2c_clk_cnt[11]),
+	.D(un20_i2c_bus_ready_cnt_a_4[10]),
+	.A(un20_i2c_bus_ready_cnt_a_4[11]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[4])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_10_RNIE3E25 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[6]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16_Y),
+	.B(i2c_clk_cnt[12]),
+	.C(i2c_clk_cnt[13]),
+	.D(un20_i2c_bus_ready_cnt_a_4[12]),
+	.A(un20_i2c_bus_ready_cnt_a_4[13]),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[5])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_12_RNISSK16 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07  (
+	.FCO(un20_i2c_bus_ready_cnt_0_data_tmp[7]),
+	.S(un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07_S),
+	.Y(un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07_Y),
+	.B(un20_i2c_bus_ready_cnt_a_4[14]),
+	.C(i2c_clk_cnt[15]),
+	.D(i2c_clk_cnt[14]),
+	.A(un20_i2c_bus_ready_cnt_a_4_cry_14),
+	.FCI(un20_i2c_bus_ready_cnt_0_data_tmp[6])
+);
+defparam \p_i2c_clock_gen.un20_i2c_bus_ready_cnt_a_4_cry_14_RNIHQR07 .INIT=20'h62184;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[0]),
+	.S(un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41_Y),
+	.B(i2c_clk_cnt[0]),
+	.C(i2c_clk_cnt[1]),
+	.D(un14_i2c_clk_cnt_a_4[1]),
+	.A(i2c_reg_clk[2]),
+	.FCI(GND)
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_1_RNIGEK41 .INIT=20'h64182;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[1]),
+	.S(un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2_Y),
+	.B(i2c_clk_cnt[2]),
+	.C(i2c_clk_cnt[3]),
+	.D(un14_i2c_clk_cnt_a_4[2]),
+	.A(un14_i2c_clk_cnt_a_4[3]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[0])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_2_RNIO1VI2 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_4_RNI8P914  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[2]),
+	.S(un14_i2c_clk_cnt_a_4_cry_4_RNI8P914_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_4_RNI8P914_Y),
+	.B(i2c_clk_cnt[4]),
+	.C(i2c_clk_cnt[5]),
+	.D(un14_i2c_clk_cnt_a_4[4]),
+	.A(un14_i2c_clk_cnt_a_4[5]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[1])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_4_RNI8P914 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[3]),
+	.S(un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5_Y),
+	.B(i2c_clk_cnt[6]),
+	.C(i2c_clk_cnt[7]),
+	.D(un14_i2c_clk_cnt_a_4[6]),
+	.A(un14_i2c_clk_cnt_a_4[7]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[2])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_6_RNI0LKF5 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[4]),
+	.S(un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6_Y),
+	.B(i2c_clk_cnt[8]),
+	.C(i2c_clk_cnt[9]),
+	.D(un14_i2c_clk_cnt_a_4[8]),
+	.A(un14_i2c_clk_cnt_a_4[9]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[3])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_8_RNI0LVT6 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[5]),
+	.S(un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7_Y),
+	.B(i2c_clk_cnt[10]),
+	.C(i2c_clk_cnt[11]),
+	.D(un14_i2c_clk_cnt_a_4[10]),
+	.A(un14_i2c_clk_cnt_a_4[11]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[4])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_10_RNI4KNM7 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[6]),
+	.S(un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8_Y),
+	.B(i2c_clk_cnt[12]),
+	.C(i2c_clk_cnt[13]),
+	.D(un14_i2c_clk_cnt_a_4[12]),
+	.A(un14_i2c_clk_cnt_a_4[13]),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[5])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_12_RNIGNFF8 .INIT=20'h68421;
+// @10:173
+  ARI1 \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_13_RNIN8669  (
+	.FCO(un14_i2c_clk_cnt_0_data_tmp[7]),
+	.S(un14_i2c_clk_cnt_a_4_cry_13_RNIN8669_S),
+	.Y(un14_i2c_clk_cnt_a_4_cry_13_RNIN8669_Y),
+	.B(i2c_clk_cnt[14]),
+	.C(i2c_clk_cnt[15]),
+	.D(un14_i2c_clk_cnt_a_4_cry_13),
+	.A(VCC),
+	.FCI(un14_i2c_clk_cnt_0_data_tmp[6])
+);
+defparam \p_i2c_clock_gen.un14_i2c_clk_cnt_a_4_cry_13_RNIN8669 .INIT=20'h61800;
+// @9:242
+  ARI1 i2c_clk_cnt_s_41 (
+	.FCO(i2c_clk_cnt_s_41_FCO),
+	.S(i2c_clk_cnt_s_41_S),
+	.Y(i2c_clk_cnt_s_41_Y),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam i2c_clk_cnt_s_41.INIT=20'h4AA00;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[0]  (
+	.FCO(i2c_clk_cnt_cry[0]),
+	.S(i2c_clk_cnt_s[0]),
+	.Y(i2c_clk_cnt_cry_Y[0]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[0]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_s_41_FCO)
+);
+defparam \i2c_clk_cnt_cry[0] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[1]  (
+	.FCO(i2c_clk_cnt_cry[1]),
+	.S(i2c_clk_cnt_s[1]),
+	.Y(i2c_clk_cnt_cry_Y[1]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[1]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[0])
+);
+defparam \i2c_clk_cnt_cry[1] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[2]  (
+	.FCO(i2c_clk_cnt_cry[2]),
+	.S(i2c_clk_cnt_s[2]),
+	.Y(i2c_clk_cnt_cry_Y[2]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[2]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[1])
+);
+defparam \i2c_clk_cnt_cry[2] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[3]  (
+	.FCO(i2c_clk_cnt_cry[3]),
+	.S(i2c_clk_cnt_s[3]),
+	.Y(i2c_clk_cnt_cry_Y[3]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[3]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[2])
+);
+defparam \i2c_clk_cnt_cry[3] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[4]  (
+	.FCO(i2c_clk_cnt_cry[4]),
+	.S(i2c_clk_cnt_s[4]),
+	.Y(i2c_clk_cnt_cry_Y[4]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[4]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[3])
+);
+defparam \i2c_clk_cnt_cry[4] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[5]  (
+	.FCO(i2c_clk_cnt_cry[5]),
+	.S(i2c_clk_cnt_s[5]),
+	.Y(i2c_clk_cnt_cry_Y[5]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[5]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[4])
+);
+defparam \i2c_clk_cnt_cry[5] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[6]  (
+	.FCO(i2c_clk_cnt_cry[6]),
+	.S(i2c_clk_cnt_s[6]),
+	.Y(i2c_clk_cnt_cry_Y[6]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[6]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[5])
+);
+defparam \i2c_clk_cnt_cry[6] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[7]  (
+	.FCO(i2c_clk_cnt_cry[7]),
+	.S(i2c_clk_cnt_s[7]),
+	.Y(i2c_clk_cnt_cry_Y[7]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[7]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[6])
+);
+defparam \i2c_clk_cnt_cry[7] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[8]  (
+	.FCO(i2c_clk_cnt_cry[8]),
+	.S(i2c_clk_cnt_s[8]),
+	.Y(i2c_clk_cnt_cry_Y[8]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[8]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[7])
+);
+defparam \i2c_clk_cnt_cry[8] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[9]  (
+	.FCO(i2c_clk_cnt_cry[9]),
+	.S(i2c_clk_cnt_s[9]),
+	.Y(i2c_clk_cnt_cry_Y[9]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[9]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[8])
+);
+defparam \i2c_clk_cnt_cry[9] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[10]  (
+	.FCO(i2c_clk_cnt_cry[10]),
+	.S(i2c_clk_cnt_s[10]),
+	.Y(i2c_clk_cnt_cry_Y[10]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[10]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[9])
+);
+defparam \i2c_clk_cnt_cry[10] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[11]  (
+	.FCO(i2c_clk_cnt_cry[11]),
+	.S(i2c_clk_cnt_s[11]),
+	.Y(i2c_clk_cnt_cry_Y[11]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[11]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[10])
+);
+defparam \i2c_clk_cnt_cry[11] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[12]  (
+	.FCO(i2c_clk_cnt_cry[12]),
+	.S(i2c_clk_cnt_s[12]),
+	.Y(i2c_clk_cnt_cry_Y[12]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[12]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[11])
+);
+defparam \i2c_clk_cnt_cry[12] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[13]  (
+	.FCO(i2c_clk_cnt_cry[13]),
+	.S(i2c_clk_cnt_s[13]),
+	.Y(i2c_clk_cnt_cry_Y[13]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[13]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[12])
+);
+defparam \i2c_clk_cnt_cry[13] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_s[15]  (
+	.FCO(i2c_clk_cnt_s_FCO[15]),
+	.S(i2c_clk_cnt_s[15]),
+	.Y(i2c_clk_cnt_s_Y[15]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[15]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[14])
+);
+defparam \i2c_clk_cnt_s[15] .INIT=20'h48800;
+// @9:242
+  ARI1 \i2c_clk_cnt_cry[14]  (
+	.FCO(i2c_clk_cnt_cry[14]),
+	.S(i2c_clk_cnt_s[14]),
+	.Y(i2c_clk_cnt_cry_Y[14]),
+	.B(un1_i2c_clk_cnt_1_sqmuxa_i_Z),
+	.C(i2c_clk_cnt[14]),
+	.D(GND),
+	.A(VCC),
+	.FCI(i2c_clk_cnt_cry[13])
+);
+defparam \i2c_clk_cnt_cry[14] .INIT=20'h48800;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_8 (
+	.FCO(un15_bit_to_sda_7_1_0_co1_3),
+	.S(un15_bit_to_sda_7_1_0_wmux_8_S),
+	.Y(un15_bit_to_sda),
+	.B(un15_bit_to_sda_7_1_0_y3),
+	.C(un15_bit_to_sda_7_1_0_y1),
+	.D(bit_counter[2]),
+	.A(un15_bit_to_sda_7_1_0_y0_3),
+	.FCI(un15_bit_to_sda_7_1_0_co0_3)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_8.INIT=20'h0FA0C;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_7 (
+	.FCO(un15_bit_to_sda_7_1_0_co0_3),
+	.S(un15_bit_to_sda_7_1_0_wmux_7_S),
+	.Y(un15_bit_to_sda_7_1_0_y0_3),
+	.B(un15_bit_to_sda_7_1_0_y5),
+	.C(bit_counter[0]),
+	.D(bit_counter[2]),
+	.A(un15_bit_to_sda_7_1_0_y7),
+	.FCI(un15_bit_to_sda_7_1_0_co1_2)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_7.INIT=20'h0EC2C;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_6 (
+	.FCO(un15_bit_to_sda_7_1_0_co1_2),
+	.S(un15_bit_to_sda_7_1_0_wmux_6_S),
+	.Y(un15_bit_to_sda_7_1_0_y7),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[7]),
+	.D(uSRAM_B_DOUT_sig[7]),
+	.A(un15_bit_to_sda_7_1_0_y0_2),
+	.FCI(un15_bit_to_sda_7_1_0_co0_2)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_6.INIT=20'h0F588;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_5 (
+	.FCO(un15_bit_to_sda_7_1_0_co0_2),
+	.S(un15_bit_to_sda_7_1_0_wmux_5_S),
+	.Y(un15_bit_to_sda_7_1_0_y0_2),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[5]),
+	.D(uSRAM_B_DOUT_sig[5]),
+	.A(i2c_reg_ctrl_4),
+	.FCI(un15_bit_to_sda_7_1_0_co1_1)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_5.INIT=20'h0FA44;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_4 (
+	.FCO(un15_bit_to_sda_7_1_0_co1_1),
+	.S(un15_bit_to_sda_7_1_0_wmux_4_S),
+	.Y(un15_bit_to_sda_7_1_0_y5),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[6]),
+	.D(uSRAM_B_DOUT_sig[6]),
+	.A(un15_bit_to_sda_7_1_0_y0_1),
+	.FCI(un15_bit_to_sda_7_1_0_co0_1)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_4.INIT=20'h0F588;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_3 (
+	.FCO(un15_bit_to_sda_7_1_0_co0_1),
+	.S(un15_bit_to_sda_7_1_0_wmux_3_S),
+	.Y(un15_bit_to_sda_7_1_0_y0_1),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[4]),
+	.D(uSRAM_B_DOUT_sig[4]),
+	.A(i2c_reg_ctrl_4),
+	.FCI(un15_bit_to_sda_7_1_0_co1_0)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_3.INIT=20'h0FA44;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_2 (
+	.FCO(un15_bit_to_sda_7_1_0_co1_0),
+	.S(un15_bit_to_sda_7_1_0_wmux_2_S),
+	.Y(un15_bit_to_sda_7_1_0_y3),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[3]),
+	.D(uSRAM_B_DOUT_sig[3]),
+	.A(un15_bit_to_sda_7_1_0_y0_0),
+	.FCI(un15_bit_to_sda_7_1_0_co0_0)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_2.INIT=20'h0F588;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_1 (
+	.FCO(un15_bit_to_sda_7_1_0_co0_0),
+	.S(un15_bit_to_sda_7_1_0_wmux_1_S),
+	.Y(un15_bit_to_sda_7_1_0_y0_0),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[1]),
+	.D(uSRAM_B_DOUT_sig[1]),
+	.A(i2c_reg_ctrl_4),
+	.FCI(un15_bit_to_sda_7_1_0_co1)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_1.INIT=20'h0FA44;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux_0 (
+	.FCO(un15_bit_to_sda_7_1_0_co1),
+	.S(un15_bit_to_sda_7_1_0_wmux_0_S),
+	.Y(un15_bit_to_sda_7_1_0_y1),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[2]),
+	.D(uSRAM_B_DOUT_sig[2]),
+	.A(un15_bit_to_sda_7_1_0_y0),
+	.FCI(un15_bit_to_sda_7_1_0_co0)
+);
+defparam un15_bit_to_sda_7_1_0_wmux_0.INIT=20'h0F588;
+// @9:455
+  ARI1 un15_bit_to_sda_7_1_0_wmux (
+	.FCO(un15_bit_to_sda_7_1_0_co0),
+	.S(un15_bit_to_sda_7_1_0_wmux_S),
+	.Y(un15_bit_to_sda_7_1_0_y0),
+	.B(bit_counter[1]),
+	.C(i2c_reg_datI[0]),
+	.D(uSRAM_B_DOUT_sig[0]),
+	.A(i2c_reg_ctrl_4),
+	.FCI(VCC)
+);
+defparam un15_bit_to_sda_7_1_0_wmux.INIT=20'h0FA44;
+// @9:251
+  CFG4 un1_status_sig24_1_i_i3_i (
+	.A(state_handshake_Z),
+	.B(i2c_clk_pulse_Z),
+	.C(status_sig_d_0),
+	.D(i2c_state_cur[16]),
+	.Y(N_411)
+);
+defparam un1_status_sig24_1_i_i3_i.INIT=16'hF044;
+// @9:365
+  CFG3 \p_i2c_data_state_machine.un13_i2c_clk_pulse_0_a2_0_a3  (
+	.A(i2c_clk_pulse_Z),
+	.B(state_handshake_Z),
+	.C(i2c_state_cur[16]),
+	.Y(un13_i2c_clk_pulse)
+);
+defparam \p_i2c_data_state_machine.un13_i2c_clk_pulse_0_a2_0_a3 .INIT=8'h02;
+// @9:190
+  CFG4 \p_i2c_busy_monitor.un48_sdai_sig_history  (
+	.A(SCLI_sig_history[1]),
+	.B(SDAI_sig_history[1]),
+	.C(SCLI_sig_history[0]),
+	.D(SDAI_sig_history[0]),
+	.Y(un48_sdai_sig_history)
+);
+defparam \p_i2c_busy_monitor.un48_sdai_sig_history .INIT=16'h2080;
+// @9:329
+  CFG4 \p_i2c_data_state_machine.un40_i2c_state_cur  (
+	.A(i2c_reg_ctrl_0),
+	.B(i2c_reg_ctrl_4),
+	.C(initiate_last_Z),
+	.D(i2c_run),
+	.Y(un40_i2c_state_cur)
+);
+defparam \p_i2c_data_state_machine.un40_i2c_state_cur .INIT=16'h0E02;
+// @9:287
+  CFG4 \i2c_state_cur_ns_o2[0]  (
+	.A(i2c_state_cur[8]),
+	.B(i2c_state_cur[4]),
+	.C(i2c_state_cur[12]),
+	.D(i2c_state_cur[0]),
+	.Y(N_229)
+);
+defparam \i2c_state_cur_ns_o2[0] .INIT=16'hFFFE;
+// @9:287
+  CFG4 \i2c_state_cur_ns_1[0]  (
+	.A(N_491_2),
+	.B(i2c_state_cur_ns_1_1[0]),
+	.C(N_203_i),
+	.D(i2c_state_cur_ns_0[0]),
+	.Y(i2c_state_cur_ns[0])
+);
+defparam \i2c_state_cur_ns_1[0] .INIT=16'hFF31;
+// @9:287
+  CFG4 \i2c_state_cur_ns_1_1[0]  (
+	.A(i2c_state_cur[16]),
+	.B(N_491_2),
+	.C(i2c_instr_reg[2]),
+	.D(i2c_instr_reg[1]),
+	.Y(i2c_state_cur_ns_1_1[0])
+);
+defparam \i2c_state_cur_ns_1_1[0] .INIT=16'h5575;
+// @9:300
+  CFG4 \p_i2c_data_state_machine.bit_counter_7_i_m2[0]  (
+	.A(bit_counter_7_i_m2_1_1[0]),
+	.B(N_204_li),
+	.C(bit_counter[0]),
+	.D(N_491_2),
+	.Y(N_226)
+);
+defparam \p_i2c_data_state_machine.bit_counter_7_i_m2[0] .INIT=16'hF53A;
+// @9:300
+  CFG4 \p_i2c_data_state_machine.bit_counter_7_i_m2_1_1[0]  (
+	.A(N_491_2),
+	.B(un40_i2c_state_cur),
+	.C(i2c_instr_reg[2]),
+	.D(i2c_instr_reg[1]),
+	.Y(bit_counter_7_i_m2_1_1[0])
+);
+defparam \p_i2c_data_state_machine.bit_counter_7_i_m2_1_1[0] .INIT=16'h2272;
+// @9:300
+  CFG2 \p_i2c_data_state_machine.SDAO_sig_6_iv_i_RNO  (
+	.A(un2_bit_to_sda_i),
+	.B(N_242_i),
+	.Y(un15_bit_to_sda_i_m_0)
+);
+defparam \p_i2c_data_state_machine.SDAO_sig_6_iv_i_RNO .INIT=4'h2;
+// @9:287
+  CFG2 un1_i2c_instr_reg_0_sqmuxa_0 (
+	.A(i2c_state_cur[16]),
+	.B(RSTn_c),
+	.Y(un1_i2c_instr_reg_0_sqmuxa_0_Z)
+);
+defparam un1_i2c_instr_reg_0_sqmuxa_0.INIT=4'h8;
+// @9:251
+  CFG2 un1_i2c_bus_ready_cnt_i_a2_0_0 (
+	.A(state_handshake_Z),
+	.B(SCL_mismatch_Z),
+	.Y(un1_i2c_bus_ready_cnt_i_a2_0_0_Z)
+);
+defparam un1_i2c_bus_ready_cnt_i_a2_0_0.INIT=4'h2;
+// @9:287
+  CFG2 \status_sig_ns_i_a3_1[0]  (
+	.A(i2c_clk_pulse_Z),
+	.B(i2c_instr_reg[0]),
+	.Y(status_sig_ns_i_a3_1[0])
+);
+defparam \status_sig_ns_i_a3_1[0] .INIT=4'h2;
+// @9:287
+  CFG2 \status_sig_ns_i_a4_1_0[0]  (
+	.A(state_handshake_Z),
+	.B(i2c_clk_pulse_Z),
+	.Y(status_sig_ns_i_a4_1_0[0])
+);
+defparam \status_sig_ns_i_a4_1_0[0] .INIT=4'h4;
+// @9:256
+  CFG2 \p_i2c_clock_gen.un8_i2c_bus_ready_cnt  (
+	.A(i2c_bus_ready_Z),
+	.B(i2c_bus_ready_cnt_Z),
+	.Y(un8_i2c_bus_ready_cnt)
+);
+defparam \p_i2c_clock_gen.un8_i2c_bus_ready_cnt .INIT=4'h4;
+// @9:368
+  CFG2 un1_i2c_state_cur_1_i_a2 (
+	.A(i2c_state_cur[7]),
+	.B(i2c_state_cur[6]),
+	.Y(N_303_i)
+);
+defparam un1_i2c_state_cur_1_i_a2.INIT=4'h1;
+// @9:368
+  CFG2 un1_i2c_state_cur_11_0_a3 (
+	.A(i2c_bus_ready_Z),
+	.B(i2c_state_cur[15]),
+	.Y(N_257_i)
+);
+defparam un1_i2c_state_cur_11_0_a3.INIT=4'h8;
+// @9:287
+  CFG2 \status_sig_ns_0_a4_0_3[1]  (
+	.A(i2c_int),
+	.B(i2c_status_out_0),
+	.Y(N_491_2)
+);
+defparam \status_sig_ns_0_a4_0_3[1] .INIT=4'hB;
+// @9:229
+  CFG2 un1_SCLI_sig_history (
+	.A(SCLI_sig_history[0]),
+	.B(SCLO_sig_Z),
+	.Y(SCL_mismatch_1)
+);
+defparam un1_SCLI_sig_history.INIT=4'h6;
+// @9:300
+  CFG2 \p_i2c_data_state_machine.i2c_read_reg_5[0]  (
+	.A(i2c_state_cur[3]),
+	.B(SDAI_sig_history[0]),
+	.Y(i2c_read_reg_5[0])
+);
+defparam \p_i2c_data_state_machine.i2c_read_reg_5[0] .INIT=4'h4;
+// @9:185
+  CFG2 \p_i2c_busy_monitor.un34_sdai_sig_history_1  (
+	.A(SCLI_sig_history[0]),
+	.B(SCLI_sig_history[1]),
+	.Y(un34_sdai_sig_history_1)
+);
+defparam \p_i2c_busy_monitor.un34_sdai_sig_history_1 .INIT=4'h8;
+// @9:287
+  CFG2 \status_sig_ns_i_a4_0[0]  (
+	.A(N_491_2),
+	.B(i2c_state_cur[16]),
+	.Y(status_sig_ns_i_a4_0[0])
+);
+defparam \status_sig_ns_i_a4_0[0] .INIT=4'h4;
+// @9:287
+  CFG4 \status_sig_ns_i_a3_0_0_0[0]  (
+	.A(i2c_instr_reg[2]),
+	.B(i2c_instr_reg[1]),
+	.C(i2c_read_reg[0]),
+	.D(i2c_instr_reg[0]),
+	.Y(status_sig_ns_i_a3_0_0[0])
+);
+defparam \status_sig_ns_i_a3_0_0_0[0] .INIT=16'h2202;
+// @9:368
+  CFG4 un1_i2c_state_cur_11_0_a3_0_3 (
+	.A(i2c_state_cur[2]),
+	.B(i2c_state_cur[15]),
+	.C(i2c_state_cur[3]),
+	.D(i2c_state_cur[16]),
+	.Y(un1_i2c_state_cur_11_0_a3_0_2)
+);
+defparam un1_i2c_state_cur_11_0_a3_0_3.INIT=16'h0001;
+// @9:455
+  CFG4 un2_bit_to_sda (
+	.A(i2c_instr_reg[0]),
+	.B(did_ack_Z),
+	.C(i2c_instr_reg[2]),
+	.D(i2c_instr_reg[1]),
+	.Y(un2_bit_to_sda_i)
+);
+defparam un2_bit_to_sda.INIT=16'h0010;
+// @9:368
+  CFG4 un1_i2c_state_cur_6_i_a3 (
+	.A(i2c_state_cur[0]),
+	.B(i2c_state_cur[3]),
+	.C(i2c_state_cur[1]),
+	.D(i2c_state_cur[2]),
+	.Y(N_242_i)
+);
+defparam un1_i2c_state_cur_6_i_a3.INIT=16'h0001;
+// @9:368
+  CFG3 un1_i2c_state_cur_7_0_o2 (
+	.A(i2c_state_cur[12]),
+	.B(i2c_state_cur[4]),
+	.C(i2c_state_cur[0]),
+	.Y(N_223)
+);
+defparam un1_i2c_state_cur_7_0_o2.INIT=8'hFE;
+// @9:251
+  CFG2 un1_status_sig_2 (
+	.A(un14_i2c_clk_cnt_0_data_tmp[7]),
+	.B(status_sig_d_0),
+	.Y(un1_status_sig_2_Z)
+);
+defparam un1_status_sig_2.INIT=4'hD;
+// @9:287
+  CFG2 i2c_read_reg_299_0 (
+	.A(status_sig_ns_i_a4_1_0[0]),
+	.B(i2c_state_cur[3]),
+	.Y(i2c_read_reg_299)
+);
+defparam i2c_read_reg_299_0.INIT=4'h8;
+// @9:287
+  CFG4 \status_sig_ns_i_a4_1[0]  (
+	.A(i2c_state_cur[4]),
+	.B(i2c_state_cur[12]),
+	.C(status_sig_ns_i_a4_1_0[0]),
+	.D(i2c_state_cur[16]),
+	.Y(N_493)
+);
+defparam \status_sig_ns_i_a4_1[0] .INIT=16'h00E0;
+// @9:258
+  CFG3 i2c_bus_ready_0_sqmuxa_0_a2 (
+	.A(un20_i2c_bus_ready_cnt_0_data_tmp[7]),
+	.B(un8_i2c_bus_ready_cnt),
+	.C(status_sig_d_0),
+	.Y(i2c_bus_ready_0_sqmuxa)
+);
+defparam i2c_bus_ready_0_sqmuxa_0_a2.INIT=8'h04;
+// @9:368
+  CFG4 un1_i2c_state_cur_7_0_a3 (
+	.A(i2c_state_cur[11]),
+	.B(i2c_state_cur[7]),
+	.C(i2c_state_cur[3]),
+	.D(N_223),
+	.Y(N_243)
+);
+defparam un1_i2c_state_cur_7_0_a3.INIT=16'h0001;
+// @9:368
+  CFG4 un1_i2c_state_cur_11_0_a3_0 (
+	.A(N_303_i),
+	.B(un1_i2c_state_cur_11_0_a3_0_2),
+	.C(i2c_state_cur[1]),
+	.D(i2c_state_cur[0]),
+	.Y(N_258_i)
+);
+defparam un1_i2c_state_cur_11_0_a3_0.INIT=16'h0008;
+// @9:287
+  CFG4 \status_sig_ns_i_a3[0]  (
+	.A(i2c_instr_reg[1]),
+	.B(status_sig_ns_i_a3_1[0]),
+	.C(state_handshake_Z),
+	.D(i2c_instr_reg[2]),
+	.Y(N_496)
+);
+defparam \status_sig_ns_i_a3[0] .INIT=16'h0008;
+// @9:287
+  CFG4 \status_sig_ns_0_a4_0_2[1]  (
+	.A(i2c_state_cur[16]),
+	.B(N_491_2),
+	.C(i2c_instr_reg[2]),
+	.D(i2c_instr_reg[1]),
+	.Y(N_204_li)
+);
+defparam \status_sig_ns_0_a4_0_2[1] .INIT=16'h0020;
+// @9:251
+  CFG3 un1_state_handshake_0_sqmuxa_0 (
+	.A(un13_i2c_clk_pulse),
+	.B(i2c_clk_pulse_Z),
+	.C(state_handshake_Z),
+	.Y(un1_state_handshake_0_sqmuxa_0_Z)
+);
+defparam un1_state_handshake_0_sqmuxa_0.INIT=8'hBA;
+// @9:300
+  CFG4 \p_i2c_data_state_machine.bit_counter_7_i_a2[0]  (
+	.A(bit_counter[2]),
+	.B(bit_counter[0]),
+	.C(bit_counter[1]),
+	.D(N_491_2),
+	.Y(N_305)
+);
+defparam \p_i2c_data_state_machine.bit_counter_7_i_a2[0] .INIT=16'h0001;
+// @9:305
+  CFG4 \p_i2c_data_state_machine.un10_i2c_state_cur_0_o2  (
+	.A(bit_counter[2]),
+	.B(did_ack_Z),
+	.C(bit_counter[1]),
+	.D(bit_counter[0]),
+	.Y(N_200_i)
+);
+defparam \p_i2c_data_state_machine.un10_i2c_state_cur_0_o2 .INIT=16'hFFFB;
+// @9:154
+  CFG3 \p_i2c_line_filters.SDAI_sig_history_6_f0[0]  (
+	.A(SDA_filt[2]),
+	.B(SDA_filt[1]),
+	.C(SDAI_sig_history[0]),
+	.Y(SDAI_sig_history_6[0])
+);
+defparam \p_i2c_line_filters.SDAI_sig_history_6_f0[0] .INIT=8'hE8;
+// @9:163
+  CFG3 \p_i2c_line_filters.SCLI_sig_history_5_f0[0]  (
+	.A(SCL_filt[2]),
+	.B(SCL_filt[1]),
+	.C(SCLI_sig_history[0]),
+	.Y(SCLI_sig_history_5[0])
+);
+defparam \p_i2c_line_filters.SCLI_sig_history_5_f0[0] .INIT=8'hE8;
+// @9:287
+  CFG3 \i2c_read_reg_RNO[0]  (
+	.A(i2c_state_cur[2]),
+	.B(i2c_state_cur[3]),
+	.C(status_sig_ns_i_a4_1_0[0]),
+	.Y(N_186_i)
+);
+defparam \i2c_read_reg_RNO[0] .INIT=8'hE0;
+// @9:251
+  CFG4 un1_i2c_clk_cnt_1_sqmuxa_i (
+	.A(un20_i2c_bus_ready_cnt_0_data_tmp[7]),
+	.B(un14_i2c_clk_cnt_0_data_tmp[7]),
+	.C(un8_i2c_bus_ready_cnt),
+	.D(status_sig_d_0),
+	.Y(un1_i2c_clk_cnt_1_sqmuxa_i_Z)
+);
+defparam un1_i2c_clk_cnt_1_sqmuxa_i.INIT=16'h00AC;
+// @9:287
+  CFG3 \status_sig_ns_i_a4_0_1_0[0]  (
+	.A(i2c_status_out_0),
+	.B(i2c_state_cur[16]),
+	.C(N_493),
+	.Y(status_sig_ns_i_a4_0_1_0[0])
+);
+defparam \status_sig_ns_i_a4_0_1_0[0] .INIT=8'hF1;
+// @9:251
+  CFG4 un1_i2c_bus_ready_cnt_i_0 (
+	.A(status_sig_d_0),
+	.B(un14_i2c_clk_cnt_0_data_tmp[7]),
+	.C(un1_i2c_bus_ready_cnt_i_a2_0_0_Z),
+	.D(un8_i2c_bus_ready_cnt),
+	.Y(N_5)
+);
+defparam un1_i2c_bus_ready_cnt_i_0.INIT=16'hAAFB;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_m2[1]  (
+	.A(i2c_state_cur[15]),
+	.B(i2c_state_cur[16]),
+	.C(un40_i2c_state_cur),
+	.Y(N_209)
+);
+defparam \i2c_state_cur_ns_i_m2[1] .INIT=8'hE2;
+// @9:300
+  CFG3 \p_i2c_data_state_machine.bit_counter_7_i_a3_0[2]  (
+	.A(bit_counter[1]),
+	.B(N_204_li),
+	.C(bit_counter[0]),
+	.Y(N_266)
+);
+defparam \p_i2c_data_state_machine.bit_counter_7_i_a3_0[2] .INIT=8'h04;
+// @9:301
+  CFG3 \p_i2c_data_state_machine.did_ack_4_0_a3_0  (
+	.A(i2c_instr_reg[2]),
+	.B(i2c_instr_reg[1]),
+	.C(N_305),
+	.Y(N_261)
+);
+defparam \p_i2c_data_state_machine.did_ack_4_0_a3_0 .INIT=8'h20;
+// @9:179
+  CFG4 i2c_bus_ready_cnt_0_sqmuxa_i (
+	.A(SDAI_sig_history[0]),
+	.B(SDAI_sig_history[1]),
+	.C(un34_sdai_sig_history_1),
+	.D(i2c_bus_ready_Z),
+	.Y(i2c_bus_ready_cnt_0_sqmuxa_i_Z)
+);
+defparam i2c_bus_ready_cnt_0_sqmuxa_i.INIT=16'hFF20;
+// @9:287
+  CFG4 un1_i2c_instr_reg_0_sqmuxa (
+	.A(status_sig_d_0),
+	.B(un1_i2c_instr_reg_0_sqmuxa_0_Z),
+	.C(un40_i2c_state_cur),
+	.D(N_491_2),
+	.Y(un1_i2c_instr_reg_0_sqmuxa_Z)
+);
+defparam un1_i2c_instr_reg_0_sqmuxa.INIT=16'hC800;
+// @9:287
+  CFG3 \i2c_state_cur_ns_a3_0_1[13]  (
+	.A(N_491_2),
+	.B(un40_i2c_state_cur),
+	.C(i2c_state_cur[16]),
+	.Y(N_255_1)
+);
+defparam \i2c_state_cur_ns_a3_0_1[13] .INIT=8'h80;
+// @9:287
+  CFG4 \i2c_state_cur_RNO[14]  (
+	.A(i2c_bus_ready_Z),
+	.B(status_sig_ns_i_a4_1_0[0]),
+	.C(i2c_state_cur[14]),
+	.D(i2c_state_cur[15]),
+	.Y(N_149_i)
+);
+defparam \i2c_state_cur_RNO[14] .INIT=16'hA830;
+// @9:287
+  CFG4 \p_i2c_data_state_machine.SDAO_sig_6_iv_i  (
+	.A(N_258_i),
+	.B(un15_bit_to_sda),
+	.C(N_257_i),
+	.D(un15_bit_to_sda_i_m_0),
+	.Y(SDAO_sig_6_iv_i)
+);
+defparam \p_i2c_data_state_machine.SDAO_sig_6_iv_i .INIT=16'h0405;
+// @9:287
+  CFG3 \status_sig_ns_0_0[1]  (
+	.A(N_204_li),
+	.B(N_200_i),
+	.C(N_493),
+	.Y(status_sig_ns_0_0[1])
+);
+defparam \status_sig_ns_0_0[1] .INIT=8'hF2;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_0[1]  (
+	.A(un13_i2c_clk_pulse),
+	.B(N_209),
+	.C(i2c_bus_ready_Z),
+	.Y(i2c_state_cur_ns_i_0[1])
+);
+defparam \i2c_state_cur_ns_i_0[1] .INIT=8'hB3;
+// @9:287
+  CFG4 \i2c_state_cur_ns_0[13]  (
+	.A(i2c_state_cur[3]),
+	.B(status_sig_ns_i_a4_1_0[0]),
+	.C(N_200_i),
+	.D(N_204_li),
+	.Y(i2c_state_cur_ns_0[13])
+);
+defparam \i2c_state_cur_ns_0[13] .INIT=16'hF222;
+// @9:334
+  CFG4 status_sig_1_sqmuxa_i_a2_0 (
+	.A(uSRAM_B_DOUT_sig_i_m_0),
+	.B(i2c_instruct_sig_iv_0_0),
+	.C(i2c_instruct_m_0),
+	.D(i2c_instruct_i_m_0_0_0),
+	.Y(status_sig_1_sqmuxa_i_a2_0_Z)
+);
+defparam status_sig_1_sqmuxa_i_a2_0.INIT=16'h0302;
+// @9:287
+  CFG4 \status_sig_ns_i_a4[0]  (
+	.A(N_200_i),
+	.B(status_sig_ns_i_a4_0[0]),
+	.C(status_sig_ns_i_a3_0_0[0]),
+	.D(N_496),
+	.Y(N_491)
+);
+defparam \status_sig_ns_i_a4[0] .INIT=16'hCC40;
+// @9:287
+  CFG4 \i2c_state_cur_ns_0[0]  (
+	.A(N_229),
+	.B(status_sig_ns_i_a4_1_0[0]),
+	.C(N_200_i),
+	.D(N_204_li),
+	.Y(i2c_state_cur_ns_0[0])
+);
+defparam \i2c_state_cur_ns_0[0] .INIT=16'h8F88;
+// @9:300
+  CFG3 \p_i2c_data_state_machine.bit_counter_7_0[1]  (
+	.A(bit_counter[1]),
+	.B(N_204_li),
+	.C(bit_counter[0]),
+	.Y(bit_counter_7_0[1])
+);
+defparam \p_i2c_data_state_machine.bit_counter_7_0[1] .INIT=8'hA2;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_o2_0[5]  (
+	.A(i2c_state_cur[16]),
+	.B(un40_i2c_state_cur),
+	.C(i2c_instruct_sig_0),
+	.Y(N_202)
+);
+defparam \i2c_state_cur_ns_i_o2_0[5] .INIT=8'h7F;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_o2_1[9]  (
+	.A(i2c_instruct_i_m_0_0_0),
+	.B(N_491_2),
+	.C(uSRAM_B_DOUT_sig_i_m_0),
+	.Y(N_198)
+);
+defparam \i2c_state_cur_ns_i_o2_1[9] .INIT=8'h37;
+// @9:287
+  CFG3 un1_status_sig24_1_i_i3_i_RNIC1AC (
+	.A(i2c_state_cur[15]),
+	.B(i2c_bus_ready_Z),
+	.C(N_411),
+	.Y(N_183_i)
+);
+defparam un1_status_sig24_1_i_i3_i_RNIC1AC.INIT=8'hD0;
+// @9:242
+  CFG2 i2c_bus_ready_1_sqmuxa_1_i (
+	.A(i2c_bus_ready_0_sqmuxa),
+	.B(i2c_bus_busy_sig_Z),
+	.Y(i2c_bus_ready_1_sqmuxa_1_i_Z)
+);
+defparam i2c_bus_ready_1_sqmuxa_1_i.INIT=4'hE;
+// @9:301
+  CFG4 \p_i2c_data_state_machine.did_ack_4_0  (
+	.A(un40_i2c_state_cur),
+	.B(N_261),
+	.C(did_ack_Z),
+	.D(N_491_2),
+	.Y(did_ack_4)
+);
+defparam \p_i2c_data_state_machine.did_ack_4_0 .INIT=16'hDCFC;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_o2_0_0[5]  (
+	.A(i2c_instruct_sig_iv_0_0),
+	.B(i2c_instruct_m_0),
+	.C(N_198),
+	.Y(i2c_state_cur_ns_i_o2_0[5])
+);
+defparam \i2c_state_cur_ns_i_o2_0_0[5] .INIT=8'hFE;
+// @9:287
+  CFG4 \status_sig_ns_0[1]  (
+	.A(i2c_int),
+	.B(i2c_state_cur[16]),
+	.C(status_sig_ns_0_0[1]),
+	.D(N_203_i),
+	.Y(status_sig_ns[1])
+);
+defparam \status_sig_ns_0[1] .INIT=16'hFAF2;
+// @9:287
+  CFG3 \i2c_state_cur_ns_i_o2_0[9]  (
+	.A(i2c_instruct_sig_iv_0_0),
+	.B(i2c_instruct_m_0),
+	.C(N_198),
+	.Y(N_201)
+);
+defparam \i2c_state_cur_ns_i_o2_0[9] .INIT=8'hF1;
+// @9:287
+  CFG4 \i2c_state_cur_ns[13]  (
+	.A(i2c_instruct_i_m_0_0_0),
+	.B(uSRAM_B_DOUT_sig_i_m_0),
+	.C(i2c_state_cur_ns_0[13]),
+	.D(N_255_1),
+	.Y(i2c_state_cur_ns[13])
+);
+defparam \i2c_state_cur_ns[13] .INIT=16'hF1F0;
+// @9:300
+  CFG4 \p_i2c_data_state_machine.bit_counter_7[1]  (
+	.A(bit_counter[2]),
+	.B(N_255_1),
+	.C(bit_counter_7_0[1]),
+	.D(N_266),
+	.Y(bit_counter_7[1])
+);
+defparam \p_i2c_data_state_machine.bit_counter_7[1] .INIT=16'hFEFC;
+// @9:334
+  CFG3 status_sig_1_sqmuxa_i_o3 (
+	.A(status_sig_1_sqmuxa_i_a2_0_Z),
+	.B(un40_i2c_state_cur),
+	.C(i2c_instruct_sig_0),
+	.Y(N_203_i)
+);
+defparam status_sig_1_sqmuxa_i_o3.INIT=8'h3B;
+// @9:287
+  CFG4 \bit_counter_RNO[0]  (
+	.A(i2c_state_cur[16]),
+	.B(bit_counter[0]),
+	.C(N_226),
+	.D(N_305),
+	.Y(N_188_i)
+);
+defparam \bit_counter_RNO[0] .INIT=16'h00E0;
+// @9:287
+  CFG3 \bit_counter_RNO[2]  (
+	.A(N_266),
+	.B(bit_counter[2]),
+	.C(N_255_1),
+	.Y(N_191_i)
+);
+defparam \bit_counter_RNO[2] .INIT=8'h54;
+// @9:287
+  CFG4 \status_sig_RNO[0]  (
+	.A(i2c_status_out_0),
+	.B(N_491),
+	.C(status_sig_ns_i_a4_0_1_0[0]),
+	.D(N_203_i),
+	.Y(N_485_i)
+);
+defparam \status_sig_RNO[0] .INIT=16'h0203;
+// @9:287
+  CFG4 \i2c_state_cur_RNO[15]  (
+	.A(i2c_instruct_sig_0),
+	.B(i2c_state_cur[16]),
+	.C(N_201),
+	.D(i2c_state_cur_ns_i_0[1]),
+	.Y(N_147_i)
+);
+defparam \i2c_state_cur_RNO[15] .INIT=16'h0037;
+// @9:287
+  CFG4 \i2c_state_cur_RNO[7]  (
+	.A(un13_i2c_clk_pulse),
+	.B(i2c_state_cur[7]),
+	.C(N_201),
+	.D(N_202),
+	.Y(N_163_i)
+);
+defparam \i2c_state_cur_RNO[7] .INIT=16'h4445;
+// @9:287
+  CFG4 \i2c_state_cur_RNO[11]  (
+	.A(i2c_state_cur[11]),
+	.B(un13_i2c_clk_pulse),
+	.C(N_202),
+	.D(i2c_state_cur_ns_i_o2_0[5]),
+	.Y(N_155_i)
+);
+defparam \i2c_state_cur_RNO[11] .INIT=16'h2223;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* I2C_Core */
+
+module I2C_Instruction_RAM (
+  i2c_reg_clk,
+  i2c_reg_datI,
+  i2c_reg_ctrl,
+  PADDR_c_0,
+  i2c_status_out_0,
+  i2c_data_out,
+  PWDATA_c,
+  i2c_adr_to_mem,
+  uSRAM_A_DOUT_sig,
+  i2c_seq_count,
+  SCLO_sig_i,
+  SDAO_sig_i,
+  SCLI_c,
+  SDAI_c,
+  PREADY_c,
+  i2c_bus_active,
+  i2c_int,
+  i2c_mem_done,
+  i2c_seq_finished,
+  PCLK_c,
+  RSTn_c
+)
+;
+input [15:1] i2c_reg_clk ;
+input [7:0] i2c_reg_datI ;
+input [4:0] i2c_reg_ctrl ;
+input PADDR_c_0 ;
+output i2c_status_out_0 ;
+output [7:0] i2c_data_out ;
+input [7:0] PWDATA_c ;
+input [5:0] i2c_adr_to_mem ;
+output [9:0] uSRAM_A_DOUT_sig ;
+output [5:0] i2c_seq_count ;
+output SCLO_sig_i ;
+output SDAO_sig_i ;
+input SCLI_c ;
+input SDAI_c ;
+input PREADY_c ;
+input i2c_bus_active ;
+output i2c_int ;
+output i2c_mem_done ;
+output i2c_seq_finished ;
+input PCLK_c ;
+input RSTn_c ;
+wire PADDR_c_0 ;
+wire i2c_status_out_0 ;
+wire SCLO_sig_i ;
+wire SDAO_sig_i ;
+wire SCLI_c ;
+wire SDAI_c ;
+wire PREADY_c ;
+wire i2c_bus_active ;
+wire i2c_int ;
+wire i2c_mem_done ;
+wire i2c_seq_finished ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire [5:0] sequence_cnt_6;
+wire [1:0] mem_delay_cnt;
+wire [0:0] mem_delay_cnt_5;
+wire [1:1] mem_delay_cnt_5_iv_i;
+wire [3:3] seq_state_cur_d;
+wire [1:0] seq_state_cur;
+wire [1:0] seq_state_cur_ns;
+wire [0:0] sequence_cnt_RNI9CH71_S;
+wire [0:0] sequence_cnt_RNI9CH71_Y;
+wire [1:1] sequence_cnt_RNII7AG1_S;
+wire [1:1] sequence_cnt_RNII7AG1_Y;
+wire [2:2] sequence_cnt_RNIS33P1_S;
+wire [2:2] sequence_cnt_RNIS33P1_Y;
+wire [3:3] sequence_cnt_RNI71S12_S;
+wire [3:3] sequence_cnt_RNI71S12_Y;
+wire [5:5] sequence_cnt_6_RNO_FCO;
+wire [5:5] sequence_cnt_6_RNO_S;
+wire [5:5] sequence_cnt_6_RNO_Y;
+wire [4:4] sequence_cnt_RNIJVKA2_S;
+wire [4:4] sequence_cnt_RNIJVKA2_Y;
+wire [9:0] uSRAM_B_DOUT_sig;
+wire [5:0] uSRAM_C_ADDR_sig;
+wire [7:0] data_bits_to_mem;
+wire [1:0] instr_bits_to_mem;
+wire [1:1] i2c_instruct_m_0_1;
+wire [1:1] i2c_instruct_sig;
+wire [7:0] data_bits_to_mem_3_1_0;
+wire [1:0] instr_bits_to_mem_3_1_0;
+wire [3:3] status_sig_d;
+wire [1:1] seq_state_cur_ns_0_a5_1_1;
+wire [2:2] uSRAM_B_DOUT_sig_i_m;
+wire [0:0] i2c_instruct_sig_iv_0;
+wire [2:2] i2c_instruct_i_m_0_0;
+wire [0:0] i2c_instruct_m;
+wire [1:1] seq_state_cur_ns_0_0;
+wire VCC ;
+wire GND ;
+wire seq_last_instr_Z ;
+wire seq_last_instr_4_iv_i ;
+wire i2c_write_d_Z ;
+wire un1_seq_state_cur_4_Z ;
+wire un1_seq_finished_sig_1_sqmuxa_Z ;
+wire mem_done_2 ;
+wire i2c_run_Z ;
+wire N_73_i ;
+wire mem_done_sig_Z ;
+wire un1_mem_done_sig6_i ;
+wire seq_write_Z ;
+wire seq_write_0_sqmuxa ;
+wire un1_sequence_cnt_cry_0_cy ;
+wire sequence_cnt_0_sqmuxa_1_RNI1IOU_S ;
+wire sequence_cnt_0_sqmuxa_1_RNI1IOU_Y ;
+wire sequence_cnt_0_sqmuxa_1_Z ;
+wire N_491_2 ;
+wire un1_sequence_cnt_cry_0 ;
+wire un1_sequence_cnt_cry_1 ;
+wire un1_sequence_cnt_cry_2 ;
+wire un1_sequence_cnt_cry_3 ;
+wire un1_sequence_cnt_cry_4 ;
+wire un1_rstn ;
+wire write_data_Z ;
+wire from_bus_Z ;
+wire i2c_write_d_1_sqmuxa_i_0_Z ;
+wire mem_done_sig_0_sqmuxa_Z ;
+wire mem_done_sig_1_sqmuxa_Z ;
+wire seq_state_cur_3_sqmuxa_0_a3_Z ;
+wire i2c_initiate_sig_Z ;
+wire un5_seq_enable_3 ;
+wire N_152 ;
+wire uSRAM_C_BLK_sig_Z ;
+wire seq_finished_sig_1_sqmuxa_1_1_Z ;
+wire N_145 ;
+wire CO0 ;
+wire N_147 ;
+wire un5_seq_enable ;
+wire N_148 ;
+wire N_16 ;
+wire N_15 ;
+wire N_14 ;
+wire N_13 ;
+wire NC0 ;
+wire NC1 ;
+wire NC2 ;
+wire NC3 ;
+wire NC4 ;
+wire NC5 ;
+wire NC6 ;
+wire NC7 ;
+wire NC8 ;
+wire NC9 ;
+wire NC10 ;
+wire NC11 ;
+wire NC12 ;
+wire NC13 ;
+wire NC14 ;
+wire NC15 ;
+wire NC16 ;
+// @10:331
+  SLE \sequence_cnt[0]  (
+	.Q(i2c_seq_count[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \sequence_cnt[1]  (
+	.Q(i2c_seq_count[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \sequence_cnt[2]  (
+	.Q(i2c_seq_count[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \sequence_cnt[3]  (
+	.Q(i2c_seq_count[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \sequence_cnt[4]  (
+	.Q(i2c_seq_count[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \sequence_cnt[5]  (
+	.Q(i2c_seq_count[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(sequence_cnt_6[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:272
+  SLE \mem_delay_cnt[0]  (
+	.Q(mem_delay_cnt[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(mem_delay_cnt_5[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:272
+  SLE \mem_delay_cnt[1]  (
+	.Q(mem_delay_cnt[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(mem_delay_cnt_5_iv_i[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE seq_last_instr (
+	.Q(seq_last_instr_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(seq_last_instr_4_iv_i),
+	.EN(seq_state_cur_d[3]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE i2c_write_d (
+	.Q(i2c_write_d_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(un1_seq_state_cur_4_Z),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE seq_finished_sig (
+	.Q(i2c_seq_finished),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(i2c_reg_ctrl[4]),
+	.EN(un1_seq_finished_sig_1_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:272
+  SLE mem_done (
+	.Q(i2c_mem_done),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(mem_done_2),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE i2c_run (
+	.Q(i2c_run_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(seq_state_cur[1]),
+	.EN(N_73_i),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \seq_state_cur[0]  (
+	.Q(seq_state_cur[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(seq_state_cur_ns[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE \seq_state_cur[1]  (
+	.Q(seq_state_cur[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(seq_state_cur_ns[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:272
+  SLE mem_done_sig (
+	.Q(mem_done_sig_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(un1_mem_done_sig6_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:331
+  SLE seq_write (
+	.Q(seq_write_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(seq_write_0_sqmuxa),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:365
+  ARI1 sequence_cnt_0_sqmuxa_1_RNI1IOU (
+	.FCO(un1_sequence_cnt_cry_0_cy),
+	.S(sequence_cnt_0_sqmuxa_1_RNI1IOU_S),
+	.Y(sequence_cnt_0_sqmuxa_1_RNI1IOU_Y),
+	.B(seq_last_instr_Z),
+	.C(seq_state_cur[0]),
+	.D(sequence_cnt_0_sqmuxa_1_Z),
+	.A(N_491_2),
+	.FCI(VCC)
+);
+defparam sequence_cnt_0_sqmuxa_1_RNI1IOU.INIT=20'h44000;
+// @10:365
+  ARI1 \sequence_cnt_RNI9CH71[0]  (
+	.FCO(un1_sequence_cnt_cry_0),
+	.S(sequence_cnt_RNI9CH71_S[0]),
+	.Y(sequence_cnt_RNI9CH71_Y[0]),
+	.B(i2c_seq_count[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_0_cy)
+);
+defparam \sequence_cnt_RNI9CH71[0] .INIT=20'h4AA00;
+// @10:365
+  ARI1 \sequence_cnt_RNII7AG1[1]  (
+	.FCO(un1_sequence_cnt_cry_1),
+	.S(sequence_cnt_RNII7AG1_S[1]),
+	.Y(sequence_cnt_RNII7AG1_Y[1]),
+	.B(i2c_seq_count[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_0)
+);
+defparam \sequence_cnt_RNII7AG1[1] .INIT=20'h4AA00;
+// @10:365
+  ARI1 \sequence_cnt_RNIS33P1[2]  (
+	.FCO(un1_sequence_cnt_cry_2),
+	.S(sequence_cnt_RNIS33P1_S[2]),
+	.Y(sequence_cnt_RNIS33P1_Y[2]),
+	.B(i2c_seq_count[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_1)
+);
+defparam \sequence_cnt_RNIS33P1[2] .INIT=20'h4AA00;
+// @10:365
+  ARI1 \sequence_cnt_RNI71S12[3]  (
+	.FCO(un1_sequence_cnt_cry_3),
+	.S(sequence_cnt_RNI71S12_S[3]),
+	.Y(sequence_cnt_RNI71S12_Y[3]),
+	.B(i2c_seq_count[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_2)
+);
+defparam \sequence_cnt_RNI71S12[3] .INIT=20'h4AA00;
+// @10:365
+  ARI1 \p_sequence_run.sequence_cnt_6_RNO[5]  (
+	.FCO(sequence_cnt_6_RNO_FCO[5]),
+	.S(sequence_cnt_6_RNO_S[5]),
+	.Y(sequence_cnt_6_RNO_Y[5]),
+	.B(i2c_seq_count[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_4)
+);
+defparam \p_sequence_run.sequence_cnt_6_RNO[5] .INIT=20'h4AA00;
+// @10:365
+  ARI1 \sequence_cnt_RNIJVKA2[4]  (
+	.FCO(un1_sequence_cnt_cry_4),
+	.S(sequence_cnt_RNIJVKA2_S[4]),
+	.Y(sequence_cnt_RNIJVKA2_Y[4]),
+	.B(i2c_seq_count[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un1_sequence_cnt_cry_3)
+);
+defparam \sequence_cnt_RNIJVKA2[4] .INIT=20'h4AA00;
+// @10:77
+  RAM64x18 i2c_seq_regs_1_i2c_seq_regs_1_0_0 (
+	.A_DOUT({NC7, NC6, NC5, NC4, NC3, NC2, NC1, NC0, uSRAM_A_DOUT_sig[9:0]}),
+	.B_DOUT({NC15, NC14, NC13, NC12, NC11, NC10, NC9, NC8, uSRAM_B_DOUT_sig[9:0]}),
+	.BUSY(NC16),
+	.A_ADDR_CLK(VCC),
+	.A_DOUT_CLK(PCLK_c),
+	.A_ADDR_SRST_N(VCC),
+	.A_DOUT_SRST_N(VCC),
+	.A_ADDR_ARST_N(VCC),
+	.A_DOUT_ARST_N(RSTn_c),
+	.A_ADDR_EN(VCC),
+	.A_DOUT_EN(VCC),
+	.A_BLK({VCC, VCC}),
+	.A_ADDR({i2c_adr_to_mem[5:0], GND, GND, GND, GND}),
+	.B_ADDR_CLK(VCC),
+	.B_DOUT_CLK(PCLK_c),
+	.B_ADDR_SRST_N(VCC),
+	.B_DOUT_SRST_N(VCC),
+	.B_ADDR_ARST_N(VCC),
+	.B_DOUT_ARST_N(RSTn_c),
+	.B_ADDR_EN(VCC),
+	.B_DOUT_EN(VCC),
+	.B_BLK({VCC, VCC}),
+	.B_ADDR({i2c_seq_count[5:0], GND, GND, GND, GND}),
+	.C_CLK(PCLK_c),
+	.C_ADDR({uSRAM_C_ADDR_sig[5:0], GND, GND, GND, GND}),
+	.C_DIN({GND, GND, GND, GND, GND, GND, GND, GND, instr_bits_to_mem[1:0], data_bits_to_mem[7:0]}),
+	.C_WEN(un1_rstn),
+	.C_BLK({VCC, VCC}),
+	.A_EN(VCC),
+	.A_ADDR_LAT(VCC),
+	.A_DOUT_LAT(GND),
+	.A_WIDTH({VCC, GND, GND}),
+	.B_EN(VCC),
+	.B_ADDR_LAT(VCC),
+	.B_DOUT_LAT(GND),
+	.B_WIDTH({VCC, GND, GND}),
+	.C_EN(VCC),
+	.C_WIDTH({VCC, GND, GND}),
+	.SII_LOCK(GND)
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0.RAMINDEX="i2c_seq_regs_1[9:0]%64%10%SPEED%0%0";
+// @10:213
+  CFG4 i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNI9DJO (
+	.A(i2c_reg_ctrl[2]),
+	.B(uSRAM_B_DOUT_sig[9]),
+	.C(i2c_reg_ctrl[4]),
+	.D(i2c_instruct_m_0_1[1]),
+	.Y(i2c_instruct_sig[1])
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNI9DJO.INIT=16'h0A3A;
+// @10:213
+  CFG3 i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNIPN6A (
+	.A(uSRAM_B_DOUT_sig[8]),
+	.B(uSRAM_B_DOUT_sig[1]),
+	.C(i2c_reg_ctrl[2]),
+	.Y(i2c_instruct_m_0_1[1])
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNIPN6A.INIT=8'h27;
+// @10:315
+  CFG4 \data_bits_to_mem_3[3]  (
+	.A(data_bits_to_mem_3_1_0[3]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[3]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[3])
+);
+defparam \data_bits_to_mem_3[3] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[3]  (
+	.A(PWDATA_c[3]),
+	.B(i2c_data_out[3]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[3])
+);
+defparam \data_bits_to_mem_3_1_0[3] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[5]  (
+	.A(data_bits_to_mem_3_1_0[5]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[5]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[5])
+);
+defparam \data_bits_to_mem_3[5] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[5]  (
+	.A(PWDATA_c[5]),
+	.B(i2c_data_out[5]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[5])
+);
+defparam \data_bits_to_mem_3_1_0[5] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[0]  (
+	.A(data_bits_to_mem_3_1_0[0]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[0]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[0])
+);
+defparam \data_bits_to_mem_3[0] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[0]  (
+	.A(PWDATA_c[0]),
+	.B(i2c_data_out[0]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[0])
+);
+defparam \data_bits_to_mem_3_1_0[0] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[2]  (
+	.A(data_bits_to_mem_3_1_0[2]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[2]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[2])
+);
+defparam \data_bits_to_mem_3[2] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[2]  (
+	.A(PWDATA_c[2]),
+	.B(i2c_data_out[2]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[2])
+);
+defparam \data_bits_to_mem_3_1_0[2] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[4]  (
+	.A(data_bits_to_mem_3_1_0[4]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[4]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[4])
+);
+defparam \data_bits_to_mem_3[4] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[4]  (
+	.A(PWDATA_c[4]),
+	.B(i2c_data_out[4]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[4])
+);
+defparam \data_bits_to_mem_3_1_0[4] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[7]  (
+	.A(data_bits_to_mem_3_1_0[7]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[7]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[7])
+);
+defparam \data_bits_to_mem_3[7] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[7]  (
+	.A(PWDATA_c[7]),
+	.B(i2c_data_out[7]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[7])
+);
+defparam \data_bits_to_mem_3_1_0[7] .INIT=8'h53;
+// @10:315
+  CFG4 \data_bits_to_mem_3[6]  (
+	.A(data_bits_to_mem_3_1_0[6]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[6]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[6])
+);
+defparam \data_bits_to_mem_3[6] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[6]  (
+	.A(PWDATA_c[6]),
+	.B(i2c_data_out[6]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[6])
+);
+defparam \data_bits_to_mem_3_1_0[6] .INIT=8'h53;
+// @10:305
+  CFG4 \instr_bits_to_mem_3[0]  (
+	.A(instr_bits_to_mem_3_1_0[0]),
+	.B(write_data_Z),
+	.C(PWDATA_c[0]),
+	.D(from_bus_Z),
+	.Y(instr_bits_to_mem[0])
+);
+defparam \instr_bits_to_mem_3[0] .INIT=16'h7444;
+// @10:305
+  CFG3 \instr_bits_to_mem_3_1_0[0]  (
+	.A(uSRAM_B_DOUT_sig[8]),
+	.B(from_bus_Z),
+	.C(uSRAM_A_DOUT_sig[8]),
+	.Y(instr_bits_to_mem_3_1_0[0])
+);
+defparam \instr_bits_to_mem_3_1_0[0] .INIT=8'h1D;
+// @10:305
+  CFG4 \instr_bits_to_mem_3[1]  (
+	.A(instr_bits_to_mem_3_1_0[1]),
+	.B(write_data_Z),
+	.C(PWDATA_c[1]),
+	.D(from_bus_Z),
+	.Y(instr_bits_to_mem[1])
+);
+defparam \instr_bits_to_mem_3[1] .INIT=16'h7444;
+// @10:305
+  CFG3 \instr_bits_to_mem_3_1_0[1]  (
+	.A(uSRAM_B_DOUT_sig[9]),
+	.B(from_bus_Z),
+	.C(uSRAM_A_DOUT_sig[9]),
+	.Y(instr_bits_to_mem_3_1_0[1])
+);
+defparam \instr_bits_to_mem_3_1_0[1] .INIT=8'h1D;
+// @10:315
+  CFG4 \data_bits_to_mem_3[1]  (
+	.A(data_bits_to_mem_3_1_0[1]),
+	.B(write_data_Z),
+	.C(uSRAM_A_DOUT_sig[1]),
+	.D(from_bus_Z),
+	.Y(data_bits_to_mem[1])
+);
+defparam \data_bits_to_mem_3[1] .INIT=16'h7444;
+// @10:315
+  CFG3 \data_bits_to_mem_3_1_0[1]  (
+	.A(PWDATA_c[1]),
+	.B(i2c_data_out[1]),
+	.C(from_bus_Z),
+	.Y(data_bits_to_mem_3_1_0[1])
+);
+defparam \data_bits_to_mem_3_1_0[1] .INIT=8'h53;
+// @10:331
+  CFG2 i2c_write_d_1_sqmuxa_i_0 (
+	.A(uSRAM_B_DOUT_sig[8]),
+	.B(uSRAM_B_DOUT_sig[9]),
+	.Y(i2c_write_d_1_sqmuxa_i_0_Z)
+);
+defparam i2c_write_d_1_sqmuxa_i_0.INIT=4'h7;
+// @10:425
+  CFG2 un19_i2c_ready (
+	.A(i2c_int),
+	.B(i2c_status_out_0),
+	.Y(status_sig_d[3])
+);
+defparam un19_i2c_ready.INIT=4'h1;
+// @10:296
+  CFG2 from_bus (
+	.A(i2c_reg_ctrl[4]),
+	.B(i2c_bus_active),
+	.Y(from_bus_Z)
+);
+defparam from_bus.INIT=4'h4;
+// @10:331
+  CFG2 seq_state_cur_s0_0_a2 (
+	.A(seq_state_cur[1]),
+	.B(seq_state_cur[0]),
+	.Y(seq_state_cur_d[3])
+);
+defparam seq_state_cur_s0_0_a2.INIT=4'h1;
+// @10:278
+  CFG2 mem_done_sig_0_sqmuxa (
+	.A(mem_done_sig_Z),
+	.B(mem_delay_cnt[1]),
+	.Y(mem_done_sig_0_sqmuxa_Z)
+);
+defparam mem_done_sig_0_sqmuxa.INIT=4'h4;
+// @10:278
+  CFG2 mem_done_sig_1_sqmuxa (
+	.A(mem_done_sig_Z),
+	.B(mem_delay_cnt[1]),
+	.Y(mem_done_sig_1_sqmuxa_Z)
+);
+defparam mem_done_sig_1_sqmuxa.INIT=4'h1;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[5]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_6_RNO_S[5]),
+	.Y(sequence_cnt_6[5])
+);
+defparam \p_sequence_run.sequence_cnt_6[5] .INIT=4'h4;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[4]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_RNIJVKA2_S[4]),
+	.Y(sequence_cnt_6[4])
+);
+defparam \p_sequence_run.sequence_cnt_6[4] .INIT=4'h4;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[3]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_RNI71S12_S[3]),
+	.Y(sequence_cnt_6[3])
+);
+defparam \p_sequence_run.sequence_cnt_6[3] .INIT=4'h4;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[2]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_RNIS33P1_S[2]),
+	.Y(sequence_cnt_6[2])
+);
+defparam \p_sequence_run.sequence_cnt_6[2] .INIT=4'h4;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[1]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_RNII7AG1_S[1]),
+	.Y(sequence_cnt_6[1])
+);
+defparam \p_sequence_run.sequence_cnt_6[1] .INIT=4'h4;
+// @10:340
+  CFG2 \p_sequence_run.sequence_cnt_6[0]  (
+	.A(seq_state_cur_3_sqmuxa_0_a3_Z),
+	.B(sequence_cnt_RNI9CH71_S[0]),
+	.Y(sequence_cnt_6[0])
+);
+defparam \p_sequence_run.sequence_cnt_6[0] .INIT=4'h4;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[1]  (
+	.A(i2c_seq_count[1]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[1]),
+	.Y(uSRAM_C_ADDR_sig[1])
+);
+defparam \uSRAM_C_ADDR_sig[1] .INIT=8'hB8;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[3]  (
+	.A(i2c_seq_count[3]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[3]),
+	.Y(uSRAM_C_ADDR_sig[3])
+);
+defparam \uSRAM_C_ADDR_sig[3] .INIT=8'hB8;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[4]  (
+	.A(i2c_seq_count[4]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[4]),
+	.Y(uSRAM_C_ADDR_sig[4])
+);
+defparam \uSRAM_C_ADDR_sig[4] .INIT=8'hB8;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[2]  (
+	.A(i2c_seq_count[2]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[2]),
+	.Y(uSRAM_C_ADDR_sig[2])
+);
+defparam \uSRAM_C_ADDR_sig[2] .INIT=8'hB8;
+// @10:298
+  CFG3 write_data (
+	.A(PADDR_c_0),
+	.B(i2c_write_d_Z),
+	.C(from_bus_Z),
+	.Y(write_data_Z)
+);
+defparam write_data.INIT=8'h5C;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[0]  (
+	.A(i2c_seq_count[0]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[0]),
+	.Y(uSRAM_C_ADDR_sig[0])
+);
+defparam \uSRAM_C_ADDR_sig[0] .INIT=8'hB8;
+// @10:322
+  CFG3 \uSRAM_C_ADDR_sig[5]  (
+	.A(i2c_seq_count[5]),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_adr_to_mem[5]),
+	.Y(uSRAM_C_ADDR_sig[5])
+);
+defparam \uSRAM_C_ADDR_sig[5] .INIT=8'hB8;
+// @10:212
+  CFG3 i2c_initiate_sig (
+	.A(i2c_reg_ctrl[4]),
+	.B(i2c_run_Z),
+	.C(i2c_reg_ctrl[0]),
+	.Y(i2c_initiate_sig_Z)
+);
+defparam i2c_initiate_sig.INIT=8'hD8;
+// @10:331
+  CFG3 \seq_state_cur_ns_0_a5_1_1[1]  (
+	.A(seq_state_cur[1]),
+	.B(i2c_reg_ctrl[4]),
+	.C(seq_last_instr_Z),
+	.Y(seq_state_cur_ns_0_a5_1_1[1])
+);
+defparam \seq_state_cur_ns_0_a5_1_1[1] .INIT=8'h04;
+// @10:365
+  CFG3 sequence_cnt_0_sqmuxa_1 (
+	.A(i2c_status_out_0),
+	.B(i2c_int),
+	.C(seq_state_cur[1]),
+	.Y(sequence_cnt_0_sqmuxa_1_Z)
+);
+defparam sequence_cnt_0_sqmuxa_1.INIT=8'h07;
+// @10:348
+  CFG4 \p_sequence_run.un5_seq_enable_3  (
+	.A(i2c_seq_count[5]),
+	.B(i2c_seq_count[4]),
+	.C(i2c_seq_count[1]),
+	.D(i2c_seq_count[0]),
+	.Y(un5_seq_enable_3)
+);
+defparam \p_sequence_run.un5_seq_enable_3 .INIT=16'h8000;
+// @10:407
+  CFG3 seq_write_0_sqmuxa_0_a3 (
+	.A(seq_state_cur[0]),
+	.B(seq_state_cur[1]),
+	.C(N_491_2),
+	.Y(seq_write_0_sqmuxa)
+);
+defparam seq_write_0_sqmuxa_0_a3.INIT=8'h80;
+// @10:331
+  CFG3 \seq_state_cur_ns_0_a2_0[0]  (
+	.A(uSRAM_B_DOUT_sig[8]),
+	.B(N_491_2),
+	.C(uSRAM_B_DOUT_sig[9]),
+	.Y(N_152)
+);
+defparam \seq_state_cur_ns_0_a2_0[0] .INIT=8'h20;
+// @10:272
+  CFG3 \p_write_C_port.un1_rstn  (
+	.A(uSRAM_C_BLK_sig_Z),
+	.B(RSTn_c),
+	.C(mem_done_sig_0_sqmuxa_Z),
+	.Y(un1_rstn)
+);
+defparam \p_write_C_port.un1_rstn .INIT=8'h80;
+// @10:346
+  CFG3 seq_finished_sig_1_sqmuxa_1_1 (
+	.A(i2c_reg_ctrl[4]),
+	.B(N_491_2),
+	.C(seq_last_instr_Z),
+	.Y(seq_finished_sig_1_sqmuxa_1_1_Z)
+);
+defparam seq_finished_sig_1_sqmuxa_1_1.INIT=8'h80;
+// @10:213
+  CFG4 i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNI737C (
+	.A(uSRAM_B_DOUT_sig[9]),
+	.B(uSRAM_B_DOUT_sig[2]),
+	.C(i2c_reg_ctrl[4]),
+	.D(uSRAM_B_DOUT_sig[8]),
+	.Y(uSRAM_B_DOUT_sig_i_m[2])
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNI737C.INIT=16'h1000;
+// @10:213
+  CFG4 \i2c_instruct_sig_iv_0[0]  (
+	.A(uSRAM_B_DOUT_sig[9]),
+	.B(uSRAM_B_DOUT_sig[0]),
+	.C(i2c_reg_ctrl[4]),
+	.D(uSRAM_B_DOUT_sig[8]),
+	.Y(i2c_instruct_sig_iv_0[0])
+);
+defparam \i2c_instruct_sig_iv_0[0] .INIT=16'hE000;
+// @10:331
+  CFG4 \seq_state_cur_ns_0_o2_0[0]  (
+	.A(seq_state_cur[0]),
+	.B(uSRAM_B_DOUT_sig[9]),
+	.C(uSRAM_B_DOUT_sig[8]),
+	.D(N_491_2),
+	.Y(N_145)
+);
+defparam \seq_state_cur_ns_0_o2_0[0] .INIT=16'hABFF;
+// @10:425
+  CFG2 seq_state_cur_3_sqmuxa_0_a3 (
+	.A(seq_state_cur_d[3]),
+	.B(i2c_reg_ctrl[4]),
+	.Y(seq_state_cur_3_sqmuxa_0_a3_Z)
+);
+defparam seq_state_cur_3_sqmuxa_0_a3.INIT=4'h2;
+// @10:276
+  CFG3 \p_write_C_port.mem_done_2_f0  (
+	.A(uSRAM_C_BLK_sig_Z),
+	.B(i2c_mem_done),
+	.C(mem_done_sig_Z),
+	.Y(mem_done_2)
+);
+defparam \p_write_C_port.mem_done_2_f0 .INIT=8'hA8;
+// @10:282
+  CFG2 \p_write_C_port.mem_delay_cnt_5_iv_i_RNO[1]  (
+	.A(mem_done_sig_1_sqmuxa_Z),
+	.B(mem_delay_cnt[0]),
+	.Y(CO0)
+);
+defparam \p_write_C_port.mem_delay_cnt_5_iv_i_RNO[1] .INIT=4'h8;
+// @10:213
+  CFG4 i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNITVCG (
+	.A(i2c_reg_ctrl[3]),
+	.B(uSRAM_B_DOUT_sig[9]),
+	.C(uSRAM_B_DOUT_sig[8]),
+	.D(i2c_reg_ctrl[4]),
+	.Y(i2c_instruct_i_m_0_0[2])
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNITVCG.INIT=16'h0155;
+// @10:331
+  CFG3 \seq_state_cur_ns_0_a5[0]  (
+	.A(seq_state_cur[1]),
+	.B(N_145),
+	.C(seq_last_instr_Z),
+	.Y(N_147)
+);
+defparam \seq_state_cur_ns_0_a5[0] .INIT=8'h08;
+// @10:348
+  CFG3 \p_sequence_run.un5_seq_enable  (
+	.A(i2c_seq_count[3]),
+	.B(i2c_seq_count[2]),
+	.C(un5_seq_enable_3),
+	.Y(un5_seq_enable)
+);
+defparam \p_sequence_run.un5_seq_enable .INIT=8'h80;
+// @10:213
+  CFG4 i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNIRTCG (
+	.A(i2c_reg_ctrl[1]),
+	.B(uSRAM_B_DOUT_sig[9]),
+	.C(uSRAM_B_DOUT_sig[8]),
+	.D(i2c_reg_ctrl[4]),
+	.Y(i2c_instruct_m[0])
+);
+defparam i2c_seq_regs_1_i2c_seq_regs_1_0_0_RNIRTCG.INIT=16'h02AA;
+// @10:272
+  CFG2 mem_done_sig_RNO (
+	.A(uSRAM_C_BLK_sig_Z),
+	.B(mem_done_sig_1_sqmuxa_Z),
+	.Y(un1_mem_done_sig6_i)
+);
+defparam mem_done_sig_RNO.INIT=4'h2;
+// @10:331
+  CFG4 \seq_state_cur_ns_0_0[1]  (
+	.A(seq_state_cur[0]),
+	.B(seq_state_cur[1]),
+	.C(seq_state_cur_ns_0_a5_1_1[1]),
+	.D(N_491_2),
+	.Y(seq_state_cur_ns_0_0[1])
+);
+defparam \seq_state_cur_ns_0_0[1] .INIT=16'h5088;
+// @10:276
+  CFG4 \mem_delay_cnt_RNO[0]  (
+	.A(mem_delay_cnt[0]),
+	.B(mem_done_sig_1_sqmuxa_Z),
+	.C(mem_done_sig_0_sqmuxa_Z),
+	.D(uSRAM_C_BLK_sig_Z),
+	.Y(mem_delay_cnt_5[0])
+);
+defparam \mem_delay_cnt_RNO[0] .INIT=16'h0600;
+// @10:331
+  CFG4 un1_seq_finished_sig_1_sqmuxa (
+	.A(seq_state_cur_d[3]),
+	.B(seq_finished_sig_1_sqmuxa_1_1_Z),
+	.C(RSTn_c),
+	.D(i2c_reg_ctrl[4]),
+	.Y(un1_seq_finished_sig_1_sqmuxa_Z)
+);
+defparam un1_seq_finished_sig_1_sqmuxa.INIT=16'h80A0;
+// @10:331
+  CFG4 \seq_state_cur_ns_0_a5_0[0]  (
+	.A(seq_state_cur[1]),
+	.B(N_152),
+	.C(mem_done_sig_Z),
+	.D(seq_state_cur[0]),
+	.Y(N_148)
+);
+defparam \seq_state_cur_ns_0_a5_0[0] .INIT=16'h8A88;
+// @10:331
+  CFG4 un1_seq_state_cur_4 (
+	.A(i2c_write_d_Z),
+	.B(seq_state_cur[0]),
+	.C(i2c_write_d_1_sqmuxa_i_0_Z),
+	.D(seq_state_cur_d[3]),
+	.Y(un1_seq_state_cur_4_Z)
+);
+defparam un1_seq_state_cur_4.INIT=16'h00AB;
+// @10:324
+  CFG3 uSRAM_C_BLK_sig (
+	.A(seq_write_Z),
+	.B(i2c_bus_active),
+	.C(PREADY_c),
+	.Y(uSRAM_C_BLK_sig_Z)
+);
+defparam uSRAM_C_BLK_sig.INIT=8'hAE;
+// @10:331
+  CFG4 i2c_run_RNO (
+	.A(seq_state_cur[1]),
+	.B(seq_state_cur[0]),
+	.C(uSRAM_B_DOUT_sig[8]),
+	.D(uSRAM_B_DOUT_sig[9]),
+	.Y(N_73_i)
+);
+defparam i2c_run_RNO.INIT=16'h3331;
+// @10:331
+  CFG4 \p_sequence_run.seq_last_instr_4_iv_i  (
+	.A(un5_seq_enable),
+	.B(N_491_2),
+	.C(seq_last_instr_Z),
+	.D(i2c_reg_ctrl[4]),
+	.Y(seq_last_instr_4_iv_i)
+);
+defparam \p_sequence_run.seq_last_instr_4_iv_i .INIT=16'hF800;
+// @10:331
+  CFG4 \seq_state_cur_ns_0[0]  (
+	.A(N_491_2),
+	.B(seq_state_cur[0]),
+	.C(N_147),
+	.D(N_148),
+	.Y(seq_state_cur_ns[0])
+);
+defparam \seq_state_cur_ns_0[0] .INIT=16'hFFF4;
+// @10:331
+  CFG4 \seq_state_cur_ns_0[1]  (
+	.A(seq_state_cur[1]),
+	.B(seq_state_cur_ns_0_0[1]),
+	.C(N_145),
+	.D(N_148),
+	.Y(seq_state_cur_ns[1])
+);
+defparam \seq_state_cur_ns_0[1] .INIT=16'hFFCE;
+// @10:272
+  CFG4 \p_write_C_port.mem_delay_cnt_5_iv_i[1]  (
+	.A(CO0),
+	.B(uSRAM_C_BLK_sig_Z),
+	.C(mem_delay_cnt[1]),
+	.D(mem_done_sig_0_sqmuxa_Z),
+	.Y(mem_delay_cnt_5_iv_i[1])
+);
+defparam \p_write_C_port.mem_delay_cnt_5_iv_i[1] .INIT=16'hCC48;
+// @10:173
+  I2C_Core I2C_Core_0 (
+	.i2c_reg_ctrl_4(i2c_reg_ctrl[4]),
+	.i2c_reg_ctrl_0(i2c_reg_ctrl[0]),
+	.status_sig_d_0(status_sig_d[3]),
+	.uSRAM_B_DOUT_sig(uSRAM_B_DOUT_sig[7:0]),
+	.i2c_reg_datI(i2c_reg_datI[7:0]),
+	.i2c_reg_clk(i2c_reg_clk[15:1]),
+	.i2c_status_out_0(i2c_status_out_0),
+	.i2c_data_out(i2c_data_out[7:0]),
+	.i2c_instruct_m_0(i2c_instruct_m[0]),
+	.i2c_instruct_sig_iv_0_0(i2c_instruct_sig_iv_0[0]),
+	.i2c_instruct_sig_0(i2c_instruct_sig[1]),
+	.i2c_instruct_i_m_0_0_0(i2c_instruct_i_m_0_0[2]),
+	.uSRAM_B_DOUT_sig_i_m_0(uSRAM_B_DOUT_sig_i_m[2]),
+	.N_491_2(N_491_2),
+	.i2c_run(i2c_run_Z),
+	.i2c_initiate_sig(i2c_initiate_sig_Z),
+	.i2c_int(i2c_int),
+	.SDAI_c(SDAI_c),
+	.SCLI_c(SCLI_c),
+	.PCLK_c(PCLK_c),
+	.RSTn_c(RSTn_c),
+	.SDAO_sig_i(SDAO_sig_i),
+	.SCLO_sig_i(SCLO_sig_i)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* I2C_Instruction_RAM */
+
+module I2C_Core_APB3 (
+  PADDR_c,
+  PWDATA_c,
+  PRDATA_c,
+  SDAI_c,
+  SCLI_c,
+  SDAO_sig_i,
+  SCLO_sig_i,
+  INT_c,
+  PREADY_c,
+  PWRITE_c,
+  PSEL_c,
+  PENABLE_c,
+  trigger_seq_c,
+  PCLK_c,
+  RSTn_c
+)
+;
+input [7:0] PADDR_c ;
+input [7:0] PWDATA_c ;
+output [7:0] PRDATA_c ;
+input SDAI_c ;
+input SCLI_c ;
+output SDAO_sig_i ;
+output SCLO_sig_i ;
+output INT_c ;
+output PREADY_c ;
+input PWRITE_c ;
+input PSEL_c ;
+input PENABLE_c ;
+input trigger_seq_c ;
+input PCLK_c ;
+input RSTn_c ;
+wire SDAI_c ;
+wire SCLI_c ;
+wire SDAO_sig_i ;
+wire SCLO_sig_i ;
+wire INT_c ;
+wire PREADY_c ;
+wire PWRITE_c ;
+wire PSEL_c ;
+wire PENABLE_c ;
+wire trigger_seq_c ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire [7:0] PRDATA_sig_14;
+wire [7:0] i2c_reg_datI;
+wire [4:0] i2c_reg_ctrl;
+wire [0:0] i2c_reg_ctrl_8;
+wire [4:4] i2c_reg_ctrl_5;
+wire [15:0] i2c_reg_clk;
+wire [1:1] i2c_status_out_last;
+wire [5:0] i2c_adr_to_mem;
+wire [7:0] PRDATA_sig_14_4_1_0_co1;
+wire [7:0] PRDATA_sig_14_4_1_wmux_0_S;
+wire [7:0] i2c_data_out;
+wire [7:0] PRDATA_sig_14_4_1_0_y0;
+wire [7:0] PRDATA_sig_14_4_1_0_co0;
+wire [7:0] PRDATA_sig_14_4_1_0_wmux_S;
+wire [1:0] PRDATA_sig_14_3_1;
+wire [0:0] i2c_status_out;
+wire [9:0] uSRAM_A_DOUT_sig;
+wire [4:2] PRDATA_sig_14_5_1_Z_Z;
+wire [5:0] i2c_seq_count;
+wire [4:0] i2c_reg_ctrl_2;
+wire VCC ;
+wire GND ;
+wire un31_psel ;
+wire un5_psel ;
+wire i2c_reg_clk_10 ;
+wire i2c_reg_clk_18 ;
+wire i2c_bus_active_Z ;
+wire un48_psel ;
+wire i2c_int ;
+wire trigger_seq_last_Z ;
+wire un2_i2c_adr_to_mem_Z ;
+wire N_94 ;
+wire N_93 ;
+wire N_98 ;
+wire N_96 ;
+wire N_99 ;
+wire N_95 ;
+wire N_97 ;
+wire N_92 ;
+wire un8_pwrite_i_0 ;
+wire PRDATA_sig_7_sqmuxa_Z ;
+wire un1_prdata_sig42_i_0 ;
+wire PRDATA_sig_14_5_9_Z ;
+wire PRDATA_sig_14_5_5_Z ;
+wire PRDATA_sig_14_5_1_Z ;
+wire PRDATA_sig_14_sn_N_6 ;
+wire N_82 ;
+wire N_83 ;
+wire N_103 ;
+wire N_104 ;
+wire N_105 ;
+wire PRDATA_sig_14_sn_N_5 ;
+wire un1_i2c_reg_clk7_3_Z ;
+wire un1_i2c_reg_clk7_2_Z ;
+wire un31_psel_4 ;
+wire un8_pwrite_0 ;
+wire un3_psel ;
+wire i2c_mem_done ;
+wire i2c_seq_finished ;
+wire N_88 ;
+wire N_89 ;
+wire N_87 ;
+wire un1_i2c_reg_clk7_0_Z ;
+wire PRDATA_sig_14_sn_N_11_mux ;
+wire un14_pwrite_tz_Z ;
+wire N_102 ;
+wire N_101 ;
+wire un31_psel_5 ;
+// @11:229
+  SLE \PRDATA_sig[2]  (
+	.Q(PRDATA_c[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[3]  (
+	.Q(PRDATA_c[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[4]  (
+	.Q(PRDATA_c[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[5]  (
+	.Q(PRDATA_c[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[6]  (
+	.Q(PRDATA_c[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[7]  (
+	.Q(PRDATA_c[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[5]  (
+	.Q(i2c_reg_datI[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[5]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[6]  (
+	.Q(i2c_reg_datI[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[6]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[7]  (
+	.Q(i2c_reg_datI[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[7]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_reg_ctrl[0]  (
+	.Q(i2c_reg_ctrl[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_reg_ctrl_8[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_reg_ctrl[1]  (
+	.Q(i2c_reg_ctrl[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[1]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_reg_ctrl[2]  (
+	.Q(i2c_reg_ctrl[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[2]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_reg_ctrl[3]  (
+	.Q(i2c_reg_ctrl[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[3]),
+	.EN(un5_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_reg_ctrl[4]  (
+	.Q(i2c_reg_ctrl[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(i2c_reg_ctrl_5[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[0]  (
+	.Q(PRDATA_c[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:229
+  SLE \PRDATA_sig[1]  (
+	.Q(PRDATA_c[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PRDATA_sig_14[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[6]  (
+	.Q(i2c_reg_clk[6]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[6]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[7]  (
+	.Q(i2c_reg_clk[7]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[7]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[8]  (
+	.Q(i2c_reg_clk[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[0]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[9]  (
+	.Q(i2c_reg_clk[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[1]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[10]  (
+	.Q(i2c_reg_clk[10]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[2]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[11]  (
+	.Q(i2c_reg_clk[11]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[3]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[12]  (
+	.Q(i2c_reg_clk[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[4]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[13]  (
+	.Q(i2c_reg_clk[13]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[5]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[14]  (
+	.Q(i2c_reg_clk[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[6]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[15]  (
+	.Q(i2c_reg_clk[15]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[7]),
+	.EN(i2c_reg_clk_18),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[0]  (
+	.Q(i2c_reg_datI[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[0]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[1]  (
+	.Q(i2c_reg_datI[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[1]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[2]  (
+	.Q(i2c_reg_datI[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[2]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[3]  (
+	.Q(i2c_reg_datI[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[3]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:353
+  SLE \i2c_reg_datI[4]  (
+	.Q(i2c_reg_datI[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[4]),
+	.EN(un31_psel),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[0]  (
+	.Q(i2c_reg_clk[0]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[0]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[1]  (
+	.Q(i2c_reg_clk[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[1]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[2]  (
+	.Q(i2c_reg_clk[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[2]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[3]  (
+	.Q(i2c_reg_clk[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[3]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[4]  (
+	.Q(i2c_reg_clk[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[4]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:331
+  SLE \i2c_reg_clk[5]  (
+	.Q(i2c_reg_clk[5]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(PWDATA_c[5]),
+	.EN(i2c_reg_clk_10),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:383
+  SLE i2c_bus_active (
+	.Q(i2c_bus_active_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(un48_psel),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE \i2c_status_out_last[1]  (
+	.Q(i2c_status_out_last[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(PCLK_c),
+	.D(i2c_int),
+	.EN(RSTn_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:280
+  SLE trigger_seq_last (
+	.Q(trigger_seq_last_Z),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(trigger_seq_c),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[1]  (
+	.Q(i2c_adr_to_mem[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[1]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[2]  (
+	.Q(i2c_adr_to_mem[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[2]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[3]  (
+	.Q(i2c_adr_to_mem[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[3]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[4]  (
+	.Q(i2c_adr_to_mem[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[4]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[5]  (
+	.Q(i2c_adr_to_mem[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[5]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:396
+  SLE \i2c_adr_to_mem[0]  (
+	.Q(i2c_adr_to_mem[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(un2_i2c_adr_to_mem_Z),
+	.D(PADDR_c[0]),
+	.EN(VCC),
+	.LAT(VCC),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[2]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[2]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[2]),
+	.Y(N_94),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[2]),
+	.D(i2c_data_out[2]),
+	.A(PRDATA_sig_14_4_1_0_y0[2]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[2])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[2] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[2]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[2]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[2]),
+	.Y(PRDATA_sig_14_4_1_0_y0[2]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[2]),
+	.D(i2c_reg_clk[10]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[2] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[1]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[1]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[1]),
+	.Y(N_93),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[1]),
+	.D(i2c_data_out[1]),
+	.A(PRDATA_sig_14_4_1_0_y0[1]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[1])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[1] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[1]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[1]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[1]),
+	.Y(PRDATA_sig_14_4_1_0_y0[1]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[1]),
+	.D(i2c_reg_clk[9]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[1] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[6]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[6]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[6]),
+	.Y(N_98),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[6]),
+	.D(i2c_data_out[6]),
+	.A(PRDATA_sig_14_4_1_0_y0[6]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[6])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[6] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[6]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[6]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[6]),
+	.Y(PRDATA_sig_14_4_1_0_y0[6]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[6]),
+	.D(i2c_reg_clk[14]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[6] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[4]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[4]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[4]),
+	.Y(N_96),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[4]),
+	.D(i2c_data_out[4]),
+	.A(PRDATA_sig_14_4_1_0_y0[4]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[4])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[4] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[4]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[4]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[4]),
+	.Y(PRDATA_sig_14_4_1_0_y0[4]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[4]),
+	.D(i2c_reg_clk[12]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[4] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[7]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[7]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[7]),
+	.Y(N_99),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[7]),
+	.D(i2c_data_out[7]),
+	.A(PRDATA_sig_14_4_1_0_y0[7]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[7])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[7] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[7]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[7]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[7]),
+	.Y(PRDATA_sig_14_4_1_0_y0[7]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[7]),
+	.D(i2c_reg_clk[15]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[7] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[3]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[3]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[3]),
+	.Y(N_95),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[3]),
+	.D(i2c_data_out[3]),
+	.A(PRDATA_sig_14_4_1_0_y0[3]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[3])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[3] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[3]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[3]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[3]),
+	.Y(PRDATA_sig_14_4_1_0_y0[3]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[3]),
+	.D(i2c_reg_clk[11]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[3] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[5]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[5]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[5]),
+	.Y(N_97),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[5]),
+	.D(i2c_data_out[5]),
+	.A(PRDATA_sig_14_4_1_0_y0[5]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[5])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[5] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[5]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[5]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[5]),
+	.Y(PRDATA_sig_14_4_1_0_y0[5]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[5]),
+	.D(i2c_reg_clk[13]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[5] .INIT=20'h0FA44;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_wmux_0[0]  (
+	.FCO(PRDATA_sig_14_4_1_0_co1[0]),
+	.S(PRDATA_sig_14_4_1_wmux_0_S[0]),
+	.Y(N_92),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_datI[0]),
+	.D(i2c_data_out[0]),
+	.A(PRDATA_sig_14_4_1_0_y0[0]),
+	.FCI(PRDATA_sig_14_4_1_0_co0[0])
+);
+defparam \PRDATA_sig_14_4_1_wmux_0[0] .INIT=20'h0F588;
+// @11:232
+  ARI1 \PRDATA_sig_14_4_1_0_wmux[0]  (
+	.FCO(PRDATA_sig_14_4_1_0_co0[0]),
+	.S(PRDATA_sig_14_4_1_0_wmux_S[0]),
+	.Y(PRDATA_sig_14_4_1_0_y0[0]),
+	.B(PADDR_c[2]),
+	.C(i2c_reg_clk[0]),
+	.D(i2c_reg_clk[8]),
+	.A(PADDR_c[0]),
+	.FCI(VCC)
+);
+defparam \PRDATA_sig_14_4_1_0_wmux[0] .INIT=20'h0FA44;
+// @11:232
+  CFG4 PRDATA_sig_14_5_9 (
+	.A(un8_pwrite_i_0),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(i2c_reg_ctrl[4]),
+	.D(un1_prdata_sig42_i_0),
+	.Y(PRDATA_sig_14_5_9_Z)
+);
+defparam PRDATA_sig_14_5_9.INIT=16'h0020;
+// @11:232
+  CFG4 PRDATA_sig_14_5_5 (
+	.A(un8_pwrite_i_0),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(i2c_reg_ctrl[3]),
+	.D(un1_prdata_sig42_i_0),
+	.Y(PRDATA_sig_14_5_5_Z)
+);
+defparam PRDATA_sig_14_5_5.INIT=16'h0020;
+// @11:232
+  CFG4 PRDATA_sig_14_5_1 (
+	.A(un8_pwrite_i_0),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(i2c_reg_ctrl[2]),
+	.D(un1_prdata_sig42_i_0),
+	.Y(PRDATA_sig_14_5_1_Z)
+);
+defparam PRDATA_sig_14_5_1.INIT=16'h0020;
+// @11:232
+  CFG3 PRDATA_sig_14_sn_m5 (
+	.A(un1_prdata_sig42_i_0),
+	.B(un8_pwrite_i_0),
+	.C(PRDATA_sig_7_sqmuxa_Z),
+	.Y(PRDATA_sig_14_sn_N_6)
+);
+defparam PRDATA_sig_14_sn_m5.INIT=8'h0E;
+// @11:386
+  CFG4 \p_RAM_write.un48_psel  (
+	.A(PENABLE_c),
+	.B(PSEL_c),
+	.C(PWRITE_c),
+	.D(PREADY_c),
+	.Y(un48_psel)
+);
+defparam \p_RAM_write.un48_psel .INIT=16'h0080;
+// @11:284
+  CFG4 \p_reg_ctrl.un5_psel  (
+	.A(PENABLE_c),
+	.B(PSEL_c),
+	.C(PWRITE_c),
+	.D(un8_pwrite_i_0),
+	.Y(un5_psel)
+);
+defparam \p_reg_ctrl.un5_psel .INIT=16'h8000;
+// @11:232
+  CFG3 \PRDATA_sig_14_3[0]  (
+	.A(PRDATA_sig_14_3_1[0]),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(i2c_status_out[0]),
+	.Y(N_82)
+);
+defparam \PRDATA_sig_14_3[0] .INIT=8'h74;
+// @11:232
+  CFG3 \PRDATA_sig_14_3_1[0]  (
+	.A(PADDR_c[6]),
+	.B(uSRAM_A_DOUT_sig[8]),
+	.C(uSRAM_A_DOUT_sig[0]),
+	.Y(PRDATA_sig_14_3_1[0])
+);
+defparam \PRDATA_sig_14_3_1[0] .INIT=8'h27;
+// @11:232
+  CFG3 \PRDATA_sig_14_3[1]  (
+	.A(PRDATA_sig_14_3_1[1]),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(i2c_int),
+	.Y(N_83)
+);
+defparam \PRDATA_sig_14_3[1] .INIT=8'h74;
+// @11:232
+  CFG3 \PRDATA_sig_14_3_1[1]  (
+	.A(PADDR_c[6]),
+	.B(uSRAM_A_DOUT_sig[9]),
+	.C(uSRAM_A_DOUT_sig[1]),
+	.Y(PRDATA_sig_14_3_1[1])
+);
+defparam \PRDATA_sig_14_3_1[1] .INIT=8'h27;
+// @11:232
+  CFG4 \PRDATA_sig_14_5[2]  (
+	.A(PRDATA_sig_14_5_1_Z),
+	.B(PRDATA_sig_14_5_1_Z_Z[2]),
+	.C(PADDR_c[6]),
+	.D(PRDATA_sig_7_sqmuxa_Z),
+	.Y(N_103)
+);
+defparam \PRDATA_sig_14_5[2] .INIT=16'hABEE;
+// @11:232
+  CFG4 \PRDATA_sig_14_5_1[2]  (
+	.A(uSRAM_A_DOUT_sig[2]),
+	.B(i2c_seq_count[0]),
+	.C(PRDATA_sig_14_sn_N_6),
+	.D(PRDATA_sig_7_sqmuxa_Z),
+	.Y(PRDATA_sig_14_5_1_Z_Z[2])
+);
+defparam \PRDATA_sig_14_5_1[2] .INIT=16'h550C;
+// @11:232
+  CFG4 \PRDATA_sig_14_5[3]  (
+	.A(PRDATA_sig_14_5_5_Z),
+	.B(PRDATA_sig_14_5_1_Z_Z[3]),
+	.C(PRDATA_sig_7_sqmuxa_Z),
+	.D(i2c_seq_count[1]),
+	.Y(N_104)
+);
+defparam \PRDATA_sig_14_5[3] .INIT=16'hEEEA;
+// @11:232
+  CFG4 \PRDATA_sig_14_5_1[3]  (
+	.A(PADDR_c[6]),
+	.B(PRDATA_sig_14_sn_N_6),
+	.C(PRDATA_sig_7_sqmuxa_Z),
+	.D(uSRAM_A_DOUT_sig[3]),
+	.Y(PRDATA_sig_14_5_1_Z_Z[3])
+);
+defparam \PRDATA_sig_14_5_1[3] .INIT=16'h5303;
+// @11:232
+  CFG4 \PRDATA_sig_14_5[4]  (
+	.A(PRDATA_sig_14_5_1_Z_Z[4]),
+	.B(PRDATA_sig_14_5_9_Z),
+	.C(PADDR_c[6]),
+	.D(PRDATA_sig_7_sqmuxa_Z),
+	.Y(N_105)
+);
+defparam \PRDATA_sig_14_5[4] .INIT=16'hCDEE;
+// @11:232
+  CFG4 \PRDATA_sig_14_5_1[4]  (
+	.A(uSRAM_A_DOUT_sig[4]),
+	.B(i2c_seq_count[2]),
+	.C(PRDATA_sig_14_sn_N_6),
+	.D(PRDATA_sig_7_sqmuxa_Z),
+	.Y(PRDATA_sig_14_5_1_Z_Z[4])
+);
+defparam \PRDATA_sig_14_5_1[4] .INIT=16'h550C;
+// @11:396
+  CFG2 un2_i2c_adr_to_mem (
+	.A(PADDR_c[7]),
+	.B(PSEL_c),
+	.Y(un2_i2c_adr_to_mem_Z)
+);
+defparam un2_i2c_adr_to_mem.INIT=4'h8;
+// @11:232
+  CFG2 PRDATA_sig_14_sn_m4 (
+	.A(un1_prdata_sig42_i_0),
+	.B(un8_pwrite_i_0),
+	.Y(PRDATA_sig_14_sn_N_5)
+);
+defparam PRDATA_sig_14_sn_m4.INIT=4'h1;
+// @11:334
+  CFG2 un1_i2c_reg_clk7_3 (
+	.A(PADDR_c[6]),
+	.B(PADDR_c[7]),
+	.Y(un1_i2c_reg_clk7_3_Z)
+);
+defparam un1_i2c_reg_clk7_3.INIT=4'hE;
+// @11:334
+  CFG2 un1_i2c_reg_clk7_2 (
+	.A(PADDR_c[4]),
+	.B(PADDR_c[5]),
+	.Y(un1_i2c_reg_clk7_2_Z)
+);
+defparam un1_i2c_reg_clk7_2.INIT=4'hE;
+// @11:356
+  CFG3 \p_reg_data_in.un31_psel_4  (
+	.A(PADDR_c[6]),
+	.B(PADDR_c[5]),
+	.C(PADDR_c[2]),
+	.Y(un31_psel_4)
+);
+defparam \p_reg_data_in.un31_psel_4 .INIT=8'h10;
+// @11:235
+  CFG3 un8_pwrite_0_0 (
+	.A(PADDR_c[3]),
+	.B(PADDR_c[1]),
+	.C(PADDR_c[0]),
+	.Y(un8_pwrite_0)
+);
+defparam un8_pwrite_0_0.INIT=8'h01;
+// @11:284
+  CFG3 \p_reg_ctrl.un3_psel  (
+	.A(PWRITE_c),
+	.B(PSEL_c),
+	.C(PENABLE_c),
+	.Y(un3_psel)
+);
+defparam \p_reg_ctrl.un3_psel .INIT=8'h80;
+// @11:269
+  CFG3 PREADY (
+	.A(PWRITE_c),
+	.B(PADDR_c[7]),
+	.C(i2c_mem_done),
+	.Y(PREADY_c)
+);
+defparam PREADY.INIT=8'hF7;
+// @11:325
+  CFG3 INT (
+	.A(i2c_seq_finished),
+	.B(i2c_reg_ctrl[4]),
+	.C(i2c_int),
+	.Y(INT_c)
+);
+defparam INT.INIT=8'hBA;
+// @11:247
+  CFG3 PRDATA_sig_7_sqmuxa (
+	.A(PWRITE_c),
+	.B(PSEL_c),
+	.C(PADDR_c[7]),
+	.Y(PRDATA_sig_7_sqmuxa_Z)
+);
+defparam PRDATA_sig_7_sqmuxa.INIT=8'h40;
+// @11:232
+  CFG4 \PRDATA_sig_14_3[6]  (
+	.A(PRDATA_sig_7_sqmuxa_Z),
+	.B(PADDR_c[6]),
+	.C(i2c_seq_count[4]),
+	.D(uSRAM_A_DOUT_sig[6]),
+	.Y(N_88)
+);
+defparam \PRDATA_sig_14_3[6] .INIT=16'h7250;
+// @11:232
+  CFG4 \PRDATA_sig_14_3[7]  (
+	.A(PRDATA_sig_7_sqmuxa_Z),
+	.B(PADDR_c[6]),
+	.C(i2c_seq_count[5]),
+	.D(uSRAM_A_DOUT_sig[7]),
+	.Y(N_89)
+);
+defparam \PRDATA_sig_14_3[7] .INIT=16'h7250;
+// @11:232
+  CFG4 \PRDATA_sig_14_3[5]  (
+	.A(PRDATA_sig_7_sqmuxa_Z),
+	.B(PADDR_c[6]),
+	.C(i2c_seq_count[3]),
+	.D(uSRAM_A_DOUT_sig[5]),
+	.Y(N_87)
+);
+defparam \PRDATA_sig_14_3[5] .INIT=16'h7250;
+// @11:334
+  CFG4 un1_i2c_reg_clk7_0 (
+	.A(PADDR_c[3]),
+	.B(un1_i2c_reg_clk7_3_Z),
+	.C(un1_i2c_reg_clk7_2_Z),
+	.D(PADDR_c[2]),
+	.Y(un1_i2c_reg_clk7_0_Z)
+);
+defparam un1_i2c_reg_clk7_0.INIT=16'hFFFE;
+// @11:232
+  CFG4 PRDATA_sig_14_sn_m8 (
+	.A(PRDATA_sig_14_sn_N_5),
+	.B(PRDATA_sig_7_sqmuxa_Z),
+	.C(PADDR_c[2]),
+	.D(PADDR_c[1]),
+	.Y(PRDATA_sig_14_sn_N_11_mux)
+);
+defparam PRDATA_sig_14_sn_m8.INIT=16'h2220;
+// @11:245
+  CFG4 un14_pwrite_tz (
+	.A(PADDR_c[3]),
+	.B(un1_i2c_reg_clk7_2_Z),
+	.C(PADDR_c[2]),
+	.D(PADDR_c[1]),
+	.Y(un14_pwrite_tz_Z)
+);
+defparam un14_pwrite_tz.INIT=16'h0111;
+// @11:232
+  CFG4 \PRDATA_sig_14_5[1]  (
+	.A(un1_prdata_sig42_i_0),
+	.B(PRDATA_sig_14_sn_N_6),
+	.C(i2c_reg_ctrl[1]),
+	.D(N_83),
+	.Y(N_102)
+);
+defparam \PRDATA_sig_14_5[1] .INIT=16'h7340;
+// @11:232
+  CFG4 \PRDATA_sig_14_5[0]  (
+	.A(un1_prdata_sig42_i_0),
+	.B(PRDATA_sig_14_sn_N_6),
+	.C(i2c_reg_ctrl[0]),
+	.D(N_82),
+	.Y(N_101)
+);
+defparam \PRDATA_sig_14_5[0] .INIT=16'h7340;
+// @11:356
+  CFG4 \p_reg_data_in.un31_psel_5  (
+	.A(PADDR_c[7]),
+	.B(un3_psel),
+	.C(PADDR_c[1]),
+	.D(PADDR_c[0]),
+	.Y(un31_psel_5)
+);
+defparam \p_reg_data_in.un31_psel_5 .INIT=16'h0004;
+// @11:235
+  CFG4 un8_pwrite (
+	.A(un8_pwrite_0),
+	.B(un1_i2c_reg_clk7_3_Z),
+	.C(un1_i2c_reg_clk7_2_Z),
+	.D(PADDR_c[2]),
+	.Y(un8_pwrite_i_0)
+);
+defparam un8_pwrite.INIT=16'h0002;
+// @11:284
+  CFG3 \i2c_reg_ctrl_2[0]  (
+	.A(PWDATA_c[0]),
+	.B(un5_psel),
+	.C(i2c_reg_ctrl[0]),
+	.Y(i2c_reg_ctrl_2[0])
+);
+defparam \i2c_reg_ctrl_2[0] .INIT=8'hB8;
+// @11:284
+  CFG3 \i2c_reg_ctrl_2[4]  (
+	.A(PWDATA_c[4]),
+	.B(un5_psel),
+	.C(i2c_reg_ctrl[4]),
+	.Y(i2c_reg_ctrl_2[4])
+);
+defparam \i2c_reg_ctrl_2[4] .INIT=8'hB8;
+// @11:356
+  CFG4 \p_reg_data_in.un31_psel  (
+	.A(PADDR_c[4]),
+	.B(PADDR_c[3]),
+	.C(un31_psel_5),
+	.D(un31_psel_4),
+	.Y(un31_psel)
+);
+defparam \p_reg_data_in.un31_psel .INIT=16'h1000;
+// @11:232
+  CFG4 un1_prdata_sig42 (
+	.A(PWRITE_c),
+	.B(PSEL_c),
+	.C(PADDR_c[6]),
+	.D(un14_pwrite_tz_Z),
+	.Y(un1_prdata_sig42_i_0)
+);
+defparam un1_prdata_sig42.INIT=16'hFBFF;
+// @11:232
+  CFG3 \PRDATA_sig_14[1]  (
+	.A(N_102),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_93),
+	.Y(PRDATA_sig_14[1])
+);
+defparam \PRDATA_sig_14[1] .INIT=8'hE2;
+// @11:331
+  CFG4 i2c_reg_clk_18_0 (
+	.A(un1_i2c_reg_clk7_0_Z),
+	.B(un3_psel),
+	.C(PADDR_c[1]),
+	.D(PADDR_c[0]),
+	.Y(i2c_reg_clk_18)
+);
+defparam i2c_reg_clk_18_0.INIT=16'h4000;
+// @11:331
+  CFG4 i2c_reg_clk_10_0 (
+	.A(un1_i2c_reg_clk7_0_Z),
+	.B(un3_psel),
+	.C(PADDR_c[1]),
+	.D(PADDR_c[0]),
+	.Y(i2c_reg_clk_10)
+);
+defparam i2c_reg_clk_10_0.INIT=16'h0040;
+// @11:232
+  CFG4 \PRDATA_sig_14[6]  (
+	.A(PRDATA_sig_14_sn_N_6),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_98),
+	.D(N_88),
+	.Y(PRDATA_sig_14[6])
+);
+defparam \PRDATA_sig_14[6] .INIT=16'hD1C0;
+// @11:232
+  CFG4 \PRDATA_sig_14[7]  (
+	.A(PRDATA_sig_14_sn_N_6),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_99),
+	.D(N_89),
+	.Y(PRDATA_sig_14[7])
+);
+defparam \PRDATA_sig_14[7] .INIT=16'hD1C0;
+// @11:232
+  CFG4 \PRDATA_sig_14[5]  (
+	.A(PRDATA_sig_14_sn_N_6),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_97),
+	.D(N_87),
+	.Y(PRDATA_sig_14[5])
+);
+defparam \PRDATA_sig_14[5] .INIT=16'hD1C0;
+// @11:232
+  CFG3 \PRDATA_sig_14[0]  (
+	.A(N_101),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_92),
+	.Y(PRDATA_sig_14[0])
+);
+defparam \PRDATA_sig_14[0] .INIT=8'hE2;
+// @11:232
+  CFG3 \PRDATA_sig_14[4]  (
+	.A(N_105),
+	.B(PRDATA_sig_14_sn_N_11_mux),
+	.C(N_96),
+	.Y(PRDATA_sig_14[4])
+);
+defparam \PRDATA_sig_14[4] .INIT=8'hE2;
+// @11:299
+  CFG3 \p_reg_ctrl.i2c_reg_ctrl_8[0]  (
+	.A(i2c_reg_ctrl_2[0]),
+	.B(i2c_status_out_last[1]),
+	.C(i2c_int),
+	.Y(i2c_reg_ctrl_8[0])
+);
+defparam \p_reg_ctrl.i2c_reg_ctrl_8[0] .INIT=8'h8A;
+// @11:232
+  CFG3 \PRDATA_sig_14[2]  (
+	.A(PRDATA_sig_14_sn_N_11_mux),
+	.B(N_103),
+	.C(N_94),
+	.Y(PRDATA_sig_14[2])
+);
+defparam \PRDATA_sig_14[2] .INIT=8'hE4;
+// @11:295
+  CFG3 \p_reg_ctrl.i2c_reg_ctrl_5[4]  (
+	.A(trigger_seq_c),
+	.B(trigger_seq_last_Z),
+	.C(i2c_reg_ctrl_2[4]),
+	.Y(i2c_reg_ctrl_5[4])
+);
+defparam \p_reg_ctrl.i2c_reg_ctrl_5[4] .INIT=8'hF2;
+// @11:232
+  CFG3 \PRDATA_sig_14[3]  (
+	.A(PRDATA_sig_14_sn_N_11_mux),
+	.B(N_104),
+	.C(N_95),
+	.Y(PRDATA_sig_14[3])
+);
+defparam \PRDATA_sig_14[3] .INIT=8'hE4;
+// @11:171
+  I2C_Instruction_RAM I2C_Instruction_RAM_0 (
+	.i2c_reg_clk(i2c_reg_clk[15:1]),
+	.i2c_reg_datI(i2c_reg_datI[7:0]),
+	.i2c_reg_ctrl(i2c_reg_ctrl[4:0]),
+	.PADDR_c_0(PADDR_c[6]),
+	.i2c_status_out_0(i2c_status_out[0]),
+	.i2c_data_out(i2c_data_out[7:0]),
+	.PWDATA_c(PWDATA_c[7:0]),
+	.i2c_adr_to_mem(i2c_adr_to_mem[5:0]),
+	.uSRAM_A_DOUT_sig(uSRAM_A_DOUT_sig[9:0]),
+	.i2c_seq_count(i2c_seq_count[5:0]),
+	.SCLO_sig_i(SCLO_sig_i),
+	.SDAO_sig_i(SDAO_sig_i),
+	.SCLI_c(SCLI_c),
+	.SDAI_c(SDAI_c),
+	.PREADY_c(PREADY_c),
+	.i2c_bus_active(i2c_bus_active_Z),
+	.i2c_int(i2c_int),
+	.i2c_mem_done(i2c_mem_done),
+	.i2c_seq_finished(i2c_seq_finished),
+	.PCLK_c(PCLK_c),
+	.RSTn_c(RSTn_c)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* I2C_Core_APB3 */
+
+module I2C_Core_Block_sd (
+  PADDR,
+  PCLK,
+  PENABLE,
+  PSEL,
+  PWDATA,
+  PWRITE,
+  RSTn,
+  SCLI,
+  SDAI,
+  trigger_seq,
+  INT,
+  PRDATA,
+  PREADY,
+  PSLVERR,
+  SCLE,
+  SCLO,
+  SDAE,
+  SDAO
+)
+;
+input [7:0] PADDR ;
+input PCLK ;
+input PENABLE ;
+input PSEL ;
+input [7:0] PWDATA ;
+input PWRITE ;
+input RSTn ;
+input SCLI ;
+input SDAI ;
+input trigger_seq ;
+output INT ;
+output [7:0] PRDATA ;
+output PREADY ;
+output PSLVERR ;
+output SCLE ;
+output SCLO ;
+output SDAE ;
+output SDAO ;
+wire PCLK ;
+wire PENABLE ;
+wire PSEL ;
+wire PWRITE ;
+wire RSTn ;
+wire SCLI ;
+wire SDAI ;
+wire trigger_seq ;
+wire INT ;
+wire PREADY ;
+wire PSLVERR ;
+wire SCLE ;
+wire SCLO ;
+wire SDAE ;
+wire SDAO ;
+wire [7:0] PADDR_c;
+wire [7:0] PWDATA_c;
+wire [7:0] PRDATA_c;
+wire GND ;
+wire VCC ;
+wire PCLK_c ;
+wire PENABLE_c ;
+wire PSEL_c ;
+wire PWRITE_c ;
+wire RSTn_c ;
+wire SCLI_c ;
+wire SDAI_c ;
+wire trigger_seq_c ;
+wire INT_c ;
+wire PREADY_c ;
+wire \I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SDAO_sig_i  ;
+wire \I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SCLO_sig_i  ;
+wire PCLK_ibuf_Z ;
+wire RSTn_ibuf_Z ;
+  CLKINT RSTn_ibuf_RNICUT3 (
+	.Y(RSTn_c),
+	.A(RSTn_ibuf_Z)
+);
+  CLKINT PCLK_ibuf_RNIFTKA (
+	.Y(PCLK_c),
+	.A(PCLK_ibuf_Z)
+);
+// @12:21
+  INBUF \PADDR_ibuf[0]  (
+	.Y(PADDR_c[0]),
+	.PAD(PADDR[0])
+);
+// @12:21
+  INBUF \PADDR_ibuf[1]  (
+	.Y(PADDR_c[1]),
+	.PAD(PADDR[1])
+);
+// @12:21
+  INBUF \PADDR_ibuf[2]  (
+	.Y(PADDR_c[2]),
+	.PAD(PADDR[2])
+);
+// @12:21
+  INBUF \PADDR_ibuf[3]  (
+	.Y(PADDR_c[3]),
+	.PAD(PADDR[3])
+);
+// @12:21
+  INBUF \PADDR_ibuf[4]  (
+	.Y(PADDR_c[4]),
+	.PAD(PADDR[4])
+);
+// @12:21
+  INBUF \PADDR_ibuf[5]  (
+	.Y(PADDR_c[5]),
+	.PAD(PADDR[5])
+);
+// @12:21
+  INBUF \PADDR_ibuf[6]  (
+	.Y(PADDR_c[6]),
+	.PAD(PADDR[6])
+);
+// @12:21
+  INBUF \PADDR_ibuf[7]  (
+	.Y(PADDR_c[7]),
+	.PAD(PADDR[7])
+);
+// @12:22
+  INBUF PCLK_ibuf (
+	.Y(PCLK_ibuf_Z),
+	.PAD(PCLK)
+);
+// @12:23
+  INBUF PENABLE_ibuf (
+	.Y(PENABLE_c),
+	.PAD(PENABLE)
+);
+// @12:24
+  INBUF PSEL_ibuf (
+	.Y(PSEL_c),
+	.PAD(PSEL)
+);
+// @12:25
+  INBUF \PWDATA_ibuf[0]  (
+	.Y(PWDATA_c[0]),
+	.PAD(PWDATA[0])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[1]  (
+	.Y(PWDATA_c[1]),
+	.PAD(PWDATA[1])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[2]  (
+	.Y(PWDATA_c[2]),
+	.PAD(PWDATA[2])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[3]  (
+	.Y(PWDATA_c[3]),
+	.PAD(PWDATA[3])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[4]  (
+	.Y(PWDATA_c[4]),
+	.PAD(PWDATA[4])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[5]  (
+	.Y(PWDATA_c[5]),
+	.PAD(PWDATA[5])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[6]  (
+	.Y(PWDATA_c[6]),
+	.PAD(PWDATA[6])
+);
+// @12:25
+  INBUF \PWDATA_ibuf[7]  (
+	.Y(PWDATA_c[7]),
+	.PAD(PWDATA[7])
+);
+// @12:26
+  INBUF PWRITE_ibuf (
+	.Y(PWRITE_c),
+	.PAD(PWRITE)
+);
+// @12:27
+  INBUF RSTn_ibuf (
+	.Y(RSTn_ibuf_Z),
+	.PAD(RSTn)
+);
+// @12:28
+  INBUF SCLI_ibuf (
+	.Y(SCLI_c),
+	.PAD(SCLI)
+);
+// @12:29
+  INBUF SDAI_ibuf (
+	.Y(SDAI_c),
+	.PAD(SDAI)
+);
+// @12:30
+  INBUF trigger_seq_ibuf (
+	.Y(trigger_seq_c),
+	.PAD(trigger_seq)
+);
+// @12:32
+  OUTBUF INT_obuf (
+	.PAD(INT),
+	.D(INT_c)
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[0]  (
+	.PAD(PRDATA[0]),
+	.D(PRDATA_c[0])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[1]  (
+	.PAD(PRDATA[1]),
+	.D(PRDATA_c[1])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[2]  (
+	.PAD(PRDATA[2]),
+	.D(PRDATA_c[2])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[3]  (
+	.PAD(PRDATA[3]),
+	.D(PRDATA_c[3])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[4]  (
+	.PAD(PRDATA[4]),
+	.D(PRDATA_c[4])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[5]  (
+	.PAD(PRDATA[5]),
+	.D(PRDATA_c[5])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[6]  (
+	.PAD(PRDATA[6]),
+	.D(PRDATA_c[6])
+);
+// @12:33
+  OUTBUF \PRDATA_obuf[7]  (
+	.PAD(PRDATA[7]),
+	.D(PRDATA_c[7])
+);
+// @12:34
+  OUTBUF PREADY_obuf (
+	.PAD(PREADY),
+	.D(PREADY_c)
+);
+// @12:35
+  OUTBUF PSLVERR_obuf (
+	.PAD(PSLVERR),
+	.D(GND)
+);
+// @12:36
+  OUTBUF SCLE_obuf (
+	.PAD(SCLE),
+	.D(\I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SCLO_sig_i )
+);
+// @12:37
+  OUTBUF SCLO_obuf (
+	.PAD(SCLO),
+	.D(GND)
+);
+// @12:38
+  OUTBUF SDAE_obuf (
+	.PAD(SDAE),
+	.D(\I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SDAO_sig_i )
+);
+// @12:39
+  OUTBUF SDAO_obuf (
+	.PAD(SDAO),
+	.D(GND)
+);
+// @12:95
+  I2C_Core_APB3 I2C_Core_APB3_0 (
+	.PADDR_c(PADDR_c[7:0]),
+	.PWDATA_c(PWDATA_c[7:0]),
+	.PRDATA_c(PRDATA_c[7:0]),
+	.SDAI_c(SDAI_c),
+	.SCLI_c(SCLI_c),
+	.SDAO_sig_i(\I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SDAO_sig_i ),
+	.SCLO_sig_i(\I2C_Core_APB3_0.I2C_Instruction_RAM_0.I2C_Core_0.SCLO_sig_i ),
+	.INT_c(INT_c),
+	.PREADY_c(PREADY_c),
+	.PWRITE_c(PWRITE_c),
+	.PSEL_c(PSEL_c),
+	.PENABLE_c(PENABLE_c),
+	.trigger_seq_c(trigger_seq_c),
+	.PCLK_c(PCLK_c),
+	.RSTn_c(RSTn_c)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* I2C_Core_Block_sd */
+

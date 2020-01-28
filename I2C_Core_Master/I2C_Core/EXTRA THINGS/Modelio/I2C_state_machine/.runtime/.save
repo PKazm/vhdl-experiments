@@ -1,0 +1,4 @@
+#Thu Jan 23 19:05:31 EST 2020
+org.modelio.diagram.editor.OpenedDiagrams2='Communication Interaction Communication diagram' {c8367fe0-6b6a-4b3c-942b-5a043e31f870} Standard.CommunicationDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Instruction_Sequence State Machine diagram' {61319312-3ed9-42cb-942c-505ed0810491} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='I2C_SDA_Ctrl State Machine diagram' {865abb88-d485-475b-a6c5-b9949aa56bc6} Standard.StateMachineDiagram

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="i2c_state_machine" version="4">
+  <OBJECT>
+    <ID name="i2c_state_machine" mc="Standard.Package" uid="8dfe93fe-6b3a-4d17-a7bb-a983678e9320"/>
+    <PID name="I2C_state_machine" mc="Standard.Project" uid="97fd78c6-3ff3-43d7-8b3c-8e8d142cf9fe"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[i2c_state_machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Instruction_Sequence" mc="Standard.StateMachine" uid="fd567c23-2ac6-42b8-a837-5e2751b3da75"/>
+        <COMPID name="I2C_SDA_Ctrl" mc="Standard.StateMachine" uid="2461e2d9-eb0e-401c-aacb-5d2f104de241"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

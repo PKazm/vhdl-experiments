@@ -1,2 +1,0 @@
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\lite-on_optical_sensor_core\hdl\i2c_core2_apb3.vhd":427:8:427:9|User-specified initial value defined for instance sequence_cnt[4:0] is being ignored due to limitations in architecture. 
-@W: MT420 |Found inferred clock I2C_Core2_APB3|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.

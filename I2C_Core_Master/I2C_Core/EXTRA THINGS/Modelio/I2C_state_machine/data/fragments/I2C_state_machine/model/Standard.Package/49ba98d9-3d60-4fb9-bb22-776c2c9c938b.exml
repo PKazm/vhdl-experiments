@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Block Diagrams" version="4">
+  <OBJECT>
+    <ID name="Block Diagrams" mc="Standard.Package" uid="49ba98d9-3d60-4fb9-bb22-776c2c9c938b"/>
+    <PID name="I2C_state_machine" mc="Standard.Project" uid="97fd78c6-3ff3-43d7-8b3c-8e8d142cf9fe"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Block Diagrams]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Communication Interaction" mc="Standard.CommunicationInteraction" uid="4c9a55a9-23d0-4e1d-9d74-6917d88e767b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

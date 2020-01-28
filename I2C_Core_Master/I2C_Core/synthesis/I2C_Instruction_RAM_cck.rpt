@@ -1,0 +1,154 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Sun Jan 26 01:38:42 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "I2C_Instruction_RAM"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Instruction_RAM\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                     Ending                       |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I2C_Instruction_RAM|PCLK     I2C_Instruction_RAM|PCLK     |     10.000           |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:RSTn
+p:SCLE
+p:SCLI
+p:SCLO
+p:SDAE
+p:SDAI
+p:SDAO
+p:adr_to_mem[0]
+p:adr_to_mem[1]
+p:adr_to_mem[2]
+p:adr_to_mem[3]
+p:adr_to_mem[4]
+p:adr_to_mem[5]
+p:bus_active
+p:bus_rw_instr
+p:bus_w_en
+p:data_to_mem[0]
+p:data_to_mem[1]
+p:data_to_mem[2]
+p:data_to_mem[3]
+p:data_to_mem[4]
+p:data_to_mem[5]
+p:data_to_mem[6]
+p:data_to_mem[7]
+p:i2c_bus_busy
+p:i2c_clk_div_in[0]
+p:i2c_clk_div_in[1]
+p:i2c_clk_div_in[2]
+p:i2c_clk_div_in[3]
+p:i2c_clk_div_in[4]
+p:i2c_clk_div_in[5]
+p:i2c_clk_div_in[6]
+p:i2c_clk_div_in[7]
+p:i2c_clk_div_in[8]
+p:i2c_clk_div_in[9]
+p:i2c_clk_div_in[10]
+p:i2c_clk_div_in[11]
+p:i2c_clk_div_in[12]
+p:i2c_clk_div_in[13]
+p:i2c_clk_div_in[14]
+p:i2c_clk_div_in[15]
+p:i2c_data_in[0]
+p:i2c_data_in[1]
+p:i2c_data_in[2]
+p:i2c_data_in[3]
+p:i2c_data_in[4]
+p:i2c_data_in[5]
+p:i2c_data_in[6]
+p:i2c_data_in[7]
+p:i2c_data_out[0]
+p:i2c_data_out[1]
+p:i2c_data_out[2]
+p:i2c_data_out[3]
+p:i2c_data_out[4]
+p:i2c_data_out[5]
+p:i2c_data_out[6]
+p:i2c_data_out[7]
+p:i2c_initiate
+p:i2c_instruct[0]
+p:i2c_instruct[1]
+p:i2c_instruct[2]
+p:i2c_int
+p:i2c_status_out[0]
+p:i2c_status_out[1]
+p:mem_done
+p:mem_to_bus[0]
+p:mem_to_bus[1]
+p:mem_to_bus[2]
+p:mem_to_bus[3]
+p:mem_to_bus[4]
+p:mem_to_bus[5]
+p:mem_to_bus[6]
+p:mem_to_bus[7]
+p:seq_count[0]
+p:seq_count[1]
+p:seq_count[2]
+p:seq_count[3]
+p:seq_count[4]
+p:seq_count[5]
+p:seq_enable
+p:seq_finished
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

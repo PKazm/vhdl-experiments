@@ -1,0 +1,20 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,uSRAM 1K,PLLs and CCCs,Chip Globals,RCOSC_50MHZ
+COREABC_C0_0/COREABC_C0_0/Primitives,311,43,0,0,0,0,0,1,0
+COREABC_C0_0/COREABC_C0_0/URAM.UR/Primitives,19,1,0,0,0,0,0,0,0
+COREABC_C0_0/COREABC_C0_0/URAM.UR/UG4.UR16.ram_r0c0/Primitives,0,0,36,36,0,1,0,0,0
+COREABC_C0_0/COREABC_C0_0/URAM.UR/UG4.UR16.ram_r0c1/Primitives,0,0,36,36,0,1,0,0,0
+COREABC_C0_0/COREABC_C0_0/URAM.UR/UG4.UR16.ram_r1c0/Primitives,0,0,36,36,0,1,0,0,0
+COREABC_C0_0/COREABC_C0_0/URAM.UR/UG4.UR16.ram_r1c1/Primitives,0,0,36,36,0,1,0,0,0
+COREABC_C0_0/COREABC_C0_0/UROM.UROM/Primitives,184,26,0,0,0,0,0,0,0
+CoreAPB3_C0_0/CoreAPB3_C0_0/Primitives,1,0,0,0,0,0,0,0,0
+CoreAPB3_C0_0/CoreAPB3_C0_0/u_mux_p_to_b3/Primitives,1,0,0,0,0,0,0,0,0
+CoreTimer_C0_0/CoreTimer_C0_0/Primitives,106,70,0,0,0,0,0,0,0
+FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,0,0,0,1,2,0
+I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/Primitives,159,70,0,0,0,0,0,0,0
+I2C_Core_APB3_0/I2C_Instruction_RAM_0/Primitives,72,16,36,36,0,1,0,0,0
+I2C_Core_APB3_0/Primitives,112,45,0,0,0,0,0,0,0
+LED_Controller_0/Primitives,146,123,0,0,0,0,0,0,0
+LED_Controller_0/timer_Comp/Primitives,32,19,0,0,0,0,0,0,0
+OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,0,0,0,0,1
+Primitives/Primitives,4,0,0,0,16,0,0,0,0

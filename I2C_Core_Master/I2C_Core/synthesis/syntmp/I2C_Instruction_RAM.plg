@@ -1,0 +1,12 @@
+@P:  Worst Slack : 3.848
+@P:  I2C_Instruction_RAM|PCLK - Estimated Frequency : 162.5 MHz
+@P:  I2C_Instruction_RAM|PCLK - Requested Frequency : 100.0 MHz
+@P:  I2C_Instruction_RAM|PCLK - Estimated Period : 6.152
+@P:  I2C_Instruction_RAM|PCLK - Requested Period : 10.000
+@P:  I2C_Instruction_RAM|PCLK - Slack : 3.848
+@P: I2C_Instruction_RAM Part : m2s010tq144std
+@P: I2C_Instruction_RAM Register bits  : 85 
+@P: I2C_Instruction_RAM DSP Blocks  : 0
+@P: I2C_Instruction_RAM I/O primitives : 81
+@P: I2C_Instruction_RAM RAM64x18 :  1
+@P:  CPU Time : 0h:00m:02s

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Instruction_Sequence" version="4">
+  <OBJECT>
+    <ID name="Instruction_Sequence" mc="Standard.StateMachine" uid="fd567c23-2ac6-42b8-a837-5e2751b3da75"/>
+    <PID name="i2c_state_machine" mc="Standard.Package" uid="8dfe93fe-6b3a-4d17-a7bb-a983678e9320"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Instruction_Sequence]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="98e5b8ea-1bf5-4c8d-b2c6-1669a9e2d9c0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="adab5527-583e-419e-82bf-f44acf6e5fa3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Determine Sequence Entry" mc="Standard.State" uid="73d5f314-682e-4251-be63-266bec93e284"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Determine Sequence Entry]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Choice" mc="Standard.ChoicePseudoState" uid="5e9b0a2f-c8c0-419b-a2d5-1aac6b371986"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Choice]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="State" mc="Standard.State" uid="37edc274-a5bb-474a-a698-ee8ff423fc61"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Instruction_Sequence State Machine diagram" mc="Standard.StateMachineDiagram" uid="61319312-3ed9-42cb-942c-505ed0810491"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

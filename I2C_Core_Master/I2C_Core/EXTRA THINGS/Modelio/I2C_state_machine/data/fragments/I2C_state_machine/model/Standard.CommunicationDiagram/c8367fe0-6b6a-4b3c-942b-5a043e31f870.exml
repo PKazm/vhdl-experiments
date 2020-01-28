@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Communication Interaction Communication diagram" version="4">
+  <OBJECT>
+    <ID name="Communication Interaction Communication diagram" mc="Standard.CommunicationDiagram" uid="c8367fe0-6b6a-4b3c-942b-5a043e31f870"/>
+    <PID name="Communication Interaction" mc="Standard.CommunicationInteraction" uid="4c9a55a9-23d0-4e1d-9d74-6917d88e767b"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">3</ATT>
+      <ATT name="UiData"><![CDATA[eJztU9FO2zAU/RXL73UDKYVJoQgaVFUEigqbtCd0E98WM8euHBeav5/dtKPp1iiT0LaHPcW6zjn3nOtzo4tVLskrmkJodU6PWEDJxSCapC+YWSK4K1FiywWeU23mLNccpdCMC5gbyBlyYbVhmc7zpRIZWMfCUGKOyhb18hYyyoe75bgqU5LDizZPP5QEdBDdG71AY0uiIHcCJJR6aWOw4O6+gFziRplaSkm7g6i7BfwEfbClRFrzddzkq/D/ewMGWYVtoW8IRQYc+bbZ9cpOcdayy52j2CAJrmycjp3G9dEfbiskCdlqz2i3stRk3qAEi9xp2ZvbrS+RV1/xIwLFwXD2q+ch2VnYP51h0Omnfej00jDrfOodp50TCHohhkezs9Og+QkkFPZG6TeVQIpyT8mDNULN6aDWm4yVRQPZ+ly/2Uww6q5JGs1riWPl0AtdCI890LkF1fBZSG7QMySi8CPffA4iEqG+Fe1/v5rHBt6cnARKNPW4ho1ruN04XuELJj2D27Ua4Z/Zsd9D/RvhFPxALOIRSy6/Xk+fri6HN6Pp5PNd/DFJabG3u2/3nqKdTPT+Z+KvZuJxcv/RYTh49R3tnK62]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAIAAAAmdTLBAAAAGElEQVR4nGP4TxlgGNU/qn9U/6j+EaofAB8cJiE1IQRUAAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="Name"><![CDATA[Communication Interaction Communication diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="d30e1157-9533-4308-a966-306b87b458f4"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

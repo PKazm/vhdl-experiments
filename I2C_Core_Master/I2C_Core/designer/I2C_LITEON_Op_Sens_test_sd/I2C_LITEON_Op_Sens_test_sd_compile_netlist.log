@@ -1,0 +1,30 @@
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_LITEON_Op_Sens_test_sd.vm(8722): WARNING: net 'N_1794' does not have a driver (VDB-1002)
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_LITEON_Op_Sens_test_sd.vm(18305): WARNING: net 'N_1795' does not have a driver (VDB-1002)
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_LITEON_Op_Sens_test_sd.vm(18306): WARNING: net 'N_1796' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       3 
+      Globals that cannot be demoted:      2 
+      Globals considered for demotion:     1 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    380    0      0      'FCCC_C0_0/FCCC_C0_0/GL0_INST' 
+    39     0      0      'FCCC_C0_0/FCCC_C0_0/GL1_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    0      344    9      'COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF' 
+
+Info: Demotion information: 
+      Disconnected 9 data pins from global 'COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

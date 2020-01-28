@@ -1,0 +1,145 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S010TQ144STD (Microsemi)
+
+---------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   I2C_Core_Block_sd   ########
+=================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      133                100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_Block_sd:	133 (27.42 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      207                100 %                
+ARI1     95                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Core_Block_sd:	302 (62.27 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block I2C_Core_Block_sd:	1 (0.21 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block I2C_Core_Block_sd:	2 (0.41 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       39                 100 %                
+=================================================
+Total IO PADS in the block I2C_Core_Block_sd:	39 (8.04 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   I2C_Core_APB3   ########
+Instance path:   I2C_Core_Block_sd.I2C_Core_APB3                   
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      133                100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_Block_sd.I2C_Core_APB3:	133 (27.42 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      207                100 %                
+ARI1     95                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Core_Block_sd.I2C_Core_APB3:	302 (62.27 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block I2C_Core_Block_sd.I2C_Core_APB3:	1 (0.21 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   I2C_Instruction_RAM   ########
+Instance path:   I2C_Core_APB3.I2C_Instruction_RAM                       
+=========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      87                 65.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	87 (17.94 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      155                74.9 %               
+ARI1     79                 83.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Core_APB3.I2C_Instruction_RAM:	234 (48.25 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	1 (0.21 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   I2C_Core   ########
+Instance path:   I2C_Instruction_RAM.I2C_Core                 
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      70                 52.6 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Instruction_RAM.I2C_Core:	70 (14.43 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      84                 40.6 %               
+ARI1     72                 75.8 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Instruction_RAM.I2C_Core:	156 (32.16 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

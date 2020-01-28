@@ -1,0 +1,11 @@
+{signal: [
+   {name: 'clk',			wave: 'P........'},
+   {name: 'APB_W',			wave: 'l.1...0..'},
+   {name: 'APB_rdy',		wave: 'h..0.1...'},
+   {name: 'uSRAM_r_adr',	wave: 'l..1.....'},
+   {name: 'uSRAM_r_dat',	wave: 'l..1.....'},
+   {name: 'uSRAM_r_dat_FF',	wave: 'l...1....'},
+   {name: 'uSRAM_w_adr',	wave: 'l..1.....'},
+   {name: 'uSRAM_w_dat',	wave: 'l..x1....'},
+   {name: 'uSRAM_w_blk',	wave: 'l...hl...'},
+]}

@@ -1,0 +1,360 @@
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd":17:7:17:32|Synthesizing work.i2c_liteon_op_sens_test_sd.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":434:10:434:14|Synthesizing smartfusion2.bibuf.syn_black_box.
+Post processing for smartfusion2.bibuf.syn_black_box
+Running optimization stage 1 on BIBUF .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
+Post processing for smartfusion2.sysreset.syn_black_box
+Running optimization stage 1 on SYSRESET .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0.vhd":17:7:17:12|Synthesizing work.osc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":8:7:8:25|Synthesizing work.osc_c0_osc_c0_0_osc.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+Post processing for work.rcosc_25_50mhz.def_arch
+Running optimization stage 1 on RCOSC_25_50MHZ .......
+Post processing for work.osc_c0_osc_c0_0_osc.def_arch
+Running optimization stage 1 on OSC_C0_OSC_C0_0_OSC .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":16:10:16:19|Signal XTLOSC_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":15:10:15:19|Signal XTLOSC_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":14:10:14:23|Signal RCOSC_1MHZ_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":13:10:13:23|Signal RCOSC_1MHZ_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":12:10:12:27|Signal RCOSC_25_50MHZ_O2F is floating; a simulation mismatch is possible.
+Post processing for work.osc_c0.rtl
+Running optimization stage 1 on OSC_C0 .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":24:7:24:20|Synthesizing work.led_controller.architecture_led_controller.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":112:24:112:25|Using sequential encoding for type state_machine_apb.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":148:31:148:37|Signal pclk100 in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":148:40:148:46|Signal presetn in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":148:23:148:29|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":166:19:166:25|Referenced variable int_reg is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":162:19:162:27|Referenced variable ch1_0_reg is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":160:19:160:27|Referenced variable ch0_1_reg is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":152:5:152:10|Referenced variable pwrite is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":158:19:158:27|Referenced variable ch0_0_reg is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":156:19:156:26|Referenced variable ctrl_reg is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":152:22:152:25|Referenced variable psel is not in sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":154:8:154:12|Referenced variable paddr is not in sensitivity list.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":88:8:88:18|Signal test_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":113:8:113:14|Signal apb_fsm is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":116:8:116:17|Signal pready_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":120:8:120:23|Signal internal_int_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":121:8:121:21|Signal fabric_int_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":126:8:126:24|Signal timer_signal_last is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+Post processing for work.timer.architecture_timer
+Running optimization stage 1 on timer .......
+Post processing for work.led_controller.architecture_led_controller
+Running optimization stage 1 on LED_Controller .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":36:1:36:7|Signal RST_out is floating; a simulation mismatch is possible.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":320:2:320:3|Pruning unused register toggle_2. Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":353:2:353:3|Feedback mux created for signal CH1_Value[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":353:2:353:3|Feedback mux created for signal CH0_Value[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":293:2:293:3|Feedback mux created for signal timer_interrupt_last. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":24:7:24:19|Synthesizing work.i2c_core_apb3.architecture_i2c_core_apb3.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":82:11:82:20|Signal seq_toggle is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":112:11:112:19|Signal paddr_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":113:11:113:18|Signal psel_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":114:11:114:21|Signal penable_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":115:11:115:20|Signal pwrite_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":116:11:116:20|Signal pwdata_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":117:11:117:20|Signal pready_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":119:11:119:21|Signal pslverr_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":24:7:24:25|Synthesizing work.i2c_instruction_ram.architecture_i2c_instruction_ram.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":100:20:100:21|Using sequential encoding for type seq_states.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":404:24:404:37|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":418:16:418:29|OTHERS clause is not synthesized.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":102:11:102:27|Signal seq_instr_timeout is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":113:11:113:25|Signal usram_delay_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":24:7:24:14|Synthesizing work.i2c_core.architecture_i2c_core.
+@N: CD231 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":63:20:63:21|Using onehot encoding for type i2c_states. For example, enumeration idle is mapped to "100000000000000000000".
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":84:11:84:21|Signal op_finished is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":91:11:91:18|Signal sdae_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":94:11:94:18|Signal scle_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":111:11:111:18|Signal i2c_data is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for work.i2c_core.architecture_i2c_core
+Running optimization stage 1 on I2C_Core .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":211:8:211:9|Pruning unused register SDA_mismatch_2. Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":287:8:287:9|Feedback mux created for signal i2c_instr_reg[2:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Post processing for work.i2c_instruction_ram.architecture_i2c_instruction_ram
+Running optimization stage 1 on I2C_Instruction_RAM .......
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":77:11:77:22|Found RAM i2c_seq_regs, depth=25, width=10
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":77:11:77:22|Found RAM i2c_seq_regs, depth=25, width=10
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":331:8:331:9|Feedback mux created for signal seq_finished_sig. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":331:8:331:9|Feedback mux created for signal i2c_write_d. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":272:8:272:9|Feedback mux created for signal mem_done. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Post processing for work.i2c_core_apb3.architecture_i2c_core_apb3
+Running optimization stage 1 on I2C_Core_APB3 .......
+@W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Removing unused bit 0 of i2c_status_out_last_2(1 downto 0). Either assign all bits or reduce the width of the signal.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Feedback mux created for signal i2c_status_out_last[1:1]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Optimizing register bit i2c_reg_ctrl(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Optimizing register bit i2c_reg_ctrl(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Optimizing register bit i2c_reg_ctrl(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Pruning register bits 7 to 5 of i2c_reg_ctrl(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\FCCC_C0\FCCC_C0.vhd":17:7:17:13|Synthesizing work.fccc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c0_fccc_c0_0_fccc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
+Post processing for smartfusion2.ccc.syn_black_box
+Running optimization stage 1 on CCC .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+Post processing for smartfusion2.clkint.syn_black_box
+Running optimization stage 1 on CLKINT .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+Post processing for smartfusion2.gnd.syn_black_box
+Running optimization stage 1 on GND .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+Post processing for smartfusion2.vcc.syn_black_box
+Running optimization stage 1 on VCC .......
+Post processing for work.fccc_c0_fccc_c0_0_fccc.def_arch
+Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
+Post processing for work.fccc_c0.rtl
+Running optimization stage 1 on FCCC_C0 .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\CoreTimer_C0\CoreTimer_C0.vhd":19:7:19:18|Synthesizing work.coretimer_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":29:7:29:15|Synthesizing coretimer_lib.coretimer.synth.
+@N: CD364 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":323:24:323:28|Removing redundant assignment.
+Post processing for coretimer_lib.coretimer.synth
+Running optimization stage 1 on CoreTimer .......
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(16) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(17) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(18) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(19) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(20) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(21) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(22) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(23) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(24) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(25) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(26) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(27) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(29) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(30) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Optimizing register bit iPRDATA(31) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":457:8:457:9|Pruning register bits 31 to 16 of iPRDATA(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Post processing for work.coretimer_c0.rtl
+Running optimization stage 1 on CoreTimer_C0 .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd":20:7:20:17|Synthesizing work.coreapb3_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":34:7:34:14|Synthesizing coreapb3_lib.coreapb3.coreapb3_arch.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":665:16:665:29|OTHERS clause is not synthesized.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":1438:29:1438:38|Signal infill_upr in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":616:7:616:15|Signal ia_prdata is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
+Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
+Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
+Post processing for coreapb3_lib.coreapb3.coreapb3_arch
+Running optimization stage 1 on CoreAPB3 .......
+Post processing for work.coreapb3_c0.rtl
+Running optimization stage 1 on CoreAPB3_C0 .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0.vhd":20:7:20:16|Synthesizing work.coreabc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":58:7:58:37|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":223:13:223:14|Using sequential encoding for type ticycle.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":613:8:613:18|Signal accumulator in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":613:20:613:27|Signal accum_in in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":665:4:665:18|OTHERS clause is not synthesized.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":631:66:631:72|Signal product in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":727:33:727:37|Signal io_in in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":776:8:776:14|Signal use_acm in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":776:28:776:34|Signal acmdata in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:8:795:11|Signal mux1 in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:18:795:28|Signal accumulator in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:30:795:39|Signal instr_data in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":822:8:822:19|Signal dataout_zreg in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1001:27:1001:40|OTHERS clause is not synthesized.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1073:19:1073:28|Signal instr_scmd in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1073:30:1073:38|Signal zregister in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":173:7:173:21|Signal dataout_zreg_zr is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":215:7:215:12|Signal debug1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":216:7:216:12|Signal debug2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":217:7:217:21|Signal debugblk_resetn is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd":31:7:31:42|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl.
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_INSTRUCTIONS .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":33:7:33:39|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":52:7:52:9|Signal wdx is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":53:7:53:9|Signal rdx is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":54:7:54:9|Signal wdy is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":55:7:55:9|Signal rdy is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":64:7:64:14|Signal wen_r0c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":65:7:65:14|Signal wen_r0c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":68:7:68:14|Signal wen_r1c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":69:7:69:14|Signal wen_r1c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":73:7:73:13|Signal rd_r0c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":74:7:74:13|Signal rd_r0c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":77:7:77:13|Signal rd_r1c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":78:7:78:13|Signal rd_r1c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":23:7:23:38|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":629:10:629:17|Synthesizing smartfusion2.ram64x18.syn_black_box.
+Post processing for smartfusion2.ram64x18.syn_black_box
+Running optimization stage 1 on RAM64x18 .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_RAM128X8 .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_RAMBLOCKS .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_COREABC .......
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 0 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 1 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 2 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 3 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 4 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 5 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 6 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 7 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 8 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 9 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 10 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 11 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 12 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 13 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 14 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 15 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Pruning unused register GETINST_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Pruning unused register ZREGISTER_3(0). Make sure that there are no unused intermediate registers.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(4) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(5) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(6) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(7) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@N: CL189 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Register bit INSTR_SLOT(2) is always 0.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Pruning register bit 2 of INSTR_SLOT(2 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Post processing for work.coreabc_c0.rtl
+Running optimization stage 1 on COREABC_C0 .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":285:10:285:13|Synthesizing smartfusion2.and4.syn_black_box.
+Post processing for smartfusion2.and4.syn_black_box
+Running optimization stage 1 on AND4 .......
+Post processing for work.i2c_liteon_op_sens_test_sd.rtl
+Running optimization stage 1 on I2C_LITEON_Op_Sens_test_sd .......
+Running optimization stage 2 on AND4 .......
+Running optimization stage 2 on RAM64x18 .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_RAM128X8 .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_RAMBLOCKS .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_INSTRUCTIONS .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_COREABC .......
+@W: CL177 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Sharing sequential element INSTR_MUXC. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Trying to extract state machine for register ICYCLE.
+Extracted state machine for register ICYCLE
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":109:9:109:17|Input PSLVERR_M is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":120:9:120:18|Input INITDATVAL is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":121:9:121:16|Input INITDONE is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":122:9:122:16|Input INITADDR is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":123:9:123:16|Input INITDATA is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":126:9:126:14|Input PSEL_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":127:9:127:17|Input PENABLE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":128:9:128:16|Input PWRITE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":129:9:129:15|Input PADDR_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":130:9:130:16|Input PWDATA_S is unused.
+Running optimization stage 2 on COREABC_C0 .......
+Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
+Running optimization stage 2 on CoreAPB3 .......
+@W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":78:0:78:4|Input port bits 31 to 12 of paddr(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":75:0:75:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":76:0:76:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":77:0:77:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":110:0:110:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":111:0:111:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":112:0:112:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":113:0:113:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":114:0:114:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":115:0:115:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":116:0:116:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":117:0:117:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":118:0:118:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":119:0:119:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":120:0:120:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":121:0:121:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":122:0:122:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":127:0:127:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":128:0:128:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":129:0:129:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":130:0:130:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":131:0:131:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":132:0:132:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":133:0:133:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":134:0:134:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":135:0:135:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":136:0:136:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":137:0:137:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":138:0:138:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":139:0:139:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":144:0:144:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":145:0:145:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":146:0:146:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":147:0:147:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":148:0:148:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":149:0:149:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":150:0:150:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":151:0:151:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":152:0:152:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":153:0:153:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":154:0:154:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":155:0:155:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":156:0:156:9|Input PSLVERRS15 is unused.
+Running optimization stage 2 on CoreAPB3_C0 .......
+Running optimization stage 2 on CoreTimer .......
+@W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":42:8:42:13|Input port bits 31 to 16 of pwdata(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Running optimization stage 2 on CoreTimer_C0 .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on CLKINT .......
+Running optimization stage 2 on CCC .......
+Running optimization stage 2 on FCCC_C0_FCCC_C0_0_FCCC .......
+Running optimization stage 2 on FCCC_C0 .......
+Running optimization stage 2 on I2C_Core .......
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":287:8:287:9|Trying to extract state machine for register status_sig.
+Extracted state machine for register status_sig
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":287:8:287:9|Trying to extract state machine for register i2c_state_cur.
+Extracted state machine for register i2c_state_cur
+State machine has 17 reachable states with original encodings of:
+   000000000000000000001
+   000000000000000000010
+   000000000000000000100
+   000000000000000001000
+   000000000000000010000
+   000000000000000100000
+   000000000000001000000
+   000000000000010000000
+   000000000000100000000
+   000000000001000000000
+   000000000010000000000
+   000000000100000000000
+   000000001000000000000
+   000000010000000000000
+   000000100000000000000
+   000001000000000000000
+   000010000000000000000
+@W: CL247 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":35:4:35:13|Input port bit 0 of clk_div_in(15 downto 0) is unused 
+Running optimization stage 2 on I2C_Instruction_RAM .......
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":331:8:331:9|Trying to extract state machine for register seq_state_cur.
+Extracted state machine for register seq_state_cur
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL247 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":33:4:33:13|Input port bit 5 of adr_to_mem(5 downto 0) is unused 
+Running optimization stage 2 on I2C_Core_APB3 .......
+Running optimization stage 2 on timer .......
+Running optimization stage 2 on LED_Controller .......
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":330:2:330:3|Optimizing register bit Blink_Count(19) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":330:2:330:3|Pruning register bit 19 of Blink_Count(19 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":55:1:55:10|Input port bits 7 to 1 of fabric_int(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":39:1:39:13|Input I2C_Sniff_SDA is unused.
+Running optimization stage 2 on RCOSC_25_50MHZ .......
+Running optimization stage 2 on OSC_C0_OSC_C0_0_OSC .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+Running optimization stage 2 on OSC_C0 .......
+Running optimization stage 2 on SYSRESET .......
+Running optimization stage 2 on BIBUF .......
+Running optimization stage 2 on I2C_LITEON_Op_Sens_test_sd .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\layer0.rt.csv
+

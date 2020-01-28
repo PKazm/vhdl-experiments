@@ -1,2 +1,0 @@
-@E: CD341 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\LITE-ON_Optical_Sensor_Core\hdl\I2C_Core2.vhd":201:15:201:37|Slice is out of range
-

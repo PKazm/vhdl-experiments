@@ -1,0 +1,146 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 46
+FID:  path (timestamp)
+12       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
+0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
+1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\location.map (2018-12-21 01:52:16)
+2        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\numeric.vhd (2018-12-21 01:52:16)
+3        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std.vhd (2018-12-21 01:52:16)
+4        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd (2018-12-21 01:52:16)
+5        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 01:52:16)
+6        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 01:52:16)
+7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
+8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
+9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
+13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd (2019-11-05 16:09:25)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd (2019-11-05 16:09:25)
+15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd (2019-11-05 16:09:25)
+16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd (2019-11-05 16:09:25)
+17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd (2019-11-14 20:15:33)
+18       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer_pkg.vhd (2019-11-14 20:15:33)
+19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-11-06 13:59:59)
+20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0.vhd (2020-01-27 17:17:33)
+21       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd (2020-01-27 17:17:33)
+22       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd (2020-01-27 17:17:33)
+23       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd (2020-01-27 17:17:33)
+24       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd (2020-01-27 17:17:33)
+25       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd (2020-01-27 17:17:33)
+26       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd (2020-01-27 17:17:33)
+27       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd (2020-01-27 17:17:33)
+28       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd (2020-01-27 17:17:33)
+29       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd (2020-01-27 17:17:33)
+30       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd (2020-01-27 17:17:33)
+31       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd (2020-01-27 17:17:33)
+32       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd (2020-01-27 17:17:33)
+33       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd (2020-01-27 17:17:33)
+34       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd (2020-01-27 17:17:33)
+35       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd (2020-01-27 17:17:33)
+36       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\CoreAPB3_C0\CoreAPB3_C0.vhd (2020-01-27 16:23:04)
+37       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\CoreTimer_C0\CoreTimer_C0.vhd (2020-01-26 17:25:48)
+38       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\FCCC_C0\FCCC_C0.vhd (2020-01-27 16:17:36)
+39       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2020-01-27 16:17:35)
+40       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd (2020-01-27 17:17:50)
+41       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0.vhd (2020-01-26 17:24:21)
+42       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2020-01-26 17:24:21)
+10       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd (2020-01-26 01:29:28)
+43       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd (2020-01-27 17:10:27)
+11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd (2020-01-27 14:20:52)
+44       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd (2020-01-27 16:21:22)
+47       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\timer.vhd (2020-01-20 19:42:22)
+
+*******************************************************************
+Unchanged modules: 70
+MID:  lib.cell.view
+4        coreabc_lib.coreabc_c0_coreabc_c0_0_acmtable.rtl
+5        coreabc_lib.coreabc_c0_coreabc_c0_0_acmtable.vhdl
+6        coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl
+7        coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.vhdl
+8        coreabc_lib.coreabc_c0_coreabc_c0_0_debugblk.rtl
+9        coreabc_lib.coreabc_c0_coreabc_c0_0_debugblk.vhdl
+10       coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl
+11       coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.vhdl
+12       coreabc_lib.coreabc_c0_coreabc_c0_0_instructnvm.bb
+13       coreabc_lib.coreabc_c0_coreabc_c0_0_instructnvm.vhdl
+14       coreabc_lib.coreabc_c0_coreabc_c0_0_instructram.rtl
+15       coreabc_lib.coreabc_c0_coreabc_c0_0_instructram.vhdl
+16       coreabc_lib.coreabc_c0_coreabc_c0_0_iram512x9.rtl
+17       coreabc_lib.coreabc_c0_coreabc_c0_0_iram512x9.vhdl
+18       coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl
+19       coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.vhdl
+20       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x16.rtl
+21       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x16.vhdl
+22       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x8.rtl
+23       coreabc_lib.coreabc_c0_coreabc_c0_0_ram256x8.vhdl
+24       coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl
+25       coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.vhdl
+26       coreabc_lib.coreabc_c0_coreabc_c0_0_textio_test.tb
+27       coreabc_lib.coreabc_c0_coreabc_c0_0_textio_test.vhdl
+28       coreapb3_lib.coreapb3.coreapb3_arch
+29       coreapb3_lib.coreapb3.vhdl
+30       coreapb3_lib.coreapb3_iaddr_reg.rtl
+31       coreapb3_lib.coreapb3_iaddr_reg.vhdl
+32       coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
+33       coreapb3_lib.coreapb3_muxptob3.vhdl
+34       coretimer_lib.coretimer.synth
+35       coretimer_lib.coretimer.vhdl
+36       work.coreabc_c0.rtl
+37       work.coreabc_c0.vhdl
+38       work.coreapb3_c0.rtl
+39       work.coreapb3_c0.vhdl
+40       work.coretimer_c0.rtl
+41       work.coretimer_c0.vhdl
+42       work.fccc_c0.rtl
+43       work.fccc_c0.vhdl
+44       work.fccc_c0_fccc_c0_0_fccc.def_arch
+45       work.fccc_c0_fccc_c0_0_fccc.vhdl
+0        work.i2c_core.architecture_i2c_core
+1        work.i2c_core.vhdl
+46       work.i2c_core_apb3.architecture_i2c_core_apb3
+47       work.i2c_core_apb3.vhdl
+2        work.i2c_instruction_ram.architecture_i2c_instruction_ram
+3        work.i2c_instruction_ram.vhdl
+48       work.i2c_liteon_op_sens_test_sd.rtl
+49       work.i2c_liteon_op_sens_test_sd.vhdl
+50       work.led_controller.architecture_led_controller
+51       work.led_controller.vhdl
+52       work.osc_c0.rtl
+53       work.osc_c0.vhdl
+54       work.osc_c0_osc_c0_0_osc.def_arch
+55       work.osc_c0_osc_c0_0_osc.vhdl
+56       work.rcosc_1mhz.def_arch
+57       work.rcosc_1mhz.vhdl
+58       work.rcosc_1mhz_fab.def_arch
+59       work.rcosc_1mhz_fab.vhdl
+60       work.rcosc_25_50mhz.def_arch
+61       work.rcosc_25_50mhz.vhdl
+62       work.rcosc_25_50mhz_fab.def_arch
+63       work.rcosc_25_50mhz_fab.vhdl
+72       work.timer.architecture_timer
+73       work.timer.vhdl
+64       work.xtlosc.def_arch
+65       work.xtlosc.vhdl
+66       work.xtlosc_fab.def_arch
+67       work.xtlosc_fab.vhdl

@@ -34,3 +34,7 @@ Project Chronology:
 1. [I2C Master (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/I2C_Core_Master)
     * Intended to be a generic I2C master I will use in future projects
     * Incorporates a simple instruction queue to perform complete I2C transactions without calling out to a bus master
+1. **On The Menu**
+    * CVBS (Composite Video) to Nokia5110
+         * This project will include an real Sigma-Delta ADC with a real filter
+         * Resolution downscaling from NTSC 720x480 down to the Nokia5110's 84x48

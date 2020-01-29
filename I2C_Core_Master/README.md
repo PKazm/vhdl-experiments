@@ -34,7 +34,7 @@ There is a configurable Instruction RAM which can store up to 64 I2C instruction
 | 11 | Read Operation |
 
 Special Operations are: START, STOP, and Repeated START.
-These are stored in the LSB of the accompanying Data bits of each RAM location and are a subset of the same values that would be written to the I2C control register.
+These are stored in the LSB of the accompanying Data bits of each RAM location and are a subset of the same values that would be written directly to the I2C control register in manual control.
 
 | Bits | Operation |
 | :---: | --- |

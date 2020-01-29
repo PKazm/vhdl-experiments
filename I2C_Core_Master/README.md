@@ -52,6 +52,9 @@ The I2C Master can be controlled on a per operation level by writing to the cont
 
 ## Resources Used
 Results of I2C synthesis from within my test project for a Smartfusion2 M2S010:
+
 4LUT: 343, DFF: 131, uSRAM: 1
+
 Standalone synthesis timing estimate:
+
 172Mhz

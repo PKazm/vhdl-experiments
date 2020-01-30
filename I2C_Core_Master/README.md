@@ -34,7 +34,7 @@ There is a configurable Instruction RAM which can store up to 64 I2C instruction
 | 11 | Read Operation |
 
 Special Operations are: START, STOP, and Repeated START.
-These are stored in the LSB of the accompanying Data bits of each RAM location and are a subset of the same values that would be written to the I2C control register.
+These are stored in the LSB of the accompanying Data bits of each RAM location and are a subset of the same values that would be written directly to the I2C control register in manual control.
 
 | Bits | Operation |
 | :---: | --- |
@@ -52,6 +52,9 @@ The I2C Master can be controlled on a per operation level by writing to the cont
 
 ## Resources Used
 Results of I2C synthesis from within my test project for a Smartfusion2 M2S010:
+
 4LUT: 343, DFF: 131, uSRAM: 1
+
 Standalone synthesis timing estimate:
+
 172Mhz

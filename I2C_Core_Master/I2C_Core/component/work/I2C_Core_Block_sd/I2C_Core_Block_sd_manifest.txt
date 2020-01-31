@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
 
-Date      :  Mon Jan 27 17:10:45 2020
+Date      :  Thu Jan 30 15:56:21 2020
 Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core
 Component :  I2C_Core_Block_sd
 Family    :  SmartFusion2

@@ -3,42 +3,11 @@
 #--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\scratchproject.prs
 
 #project files
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/support.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/acmtable.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructnvm_bb.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/iram512x9_rtl.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructram.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/misc.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/textio.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/debugblk.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/instructions.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram128x8_smartfusion2.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram256x16_rtl.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ram256x8_rtl.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/ramblocks.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/coreabc.vhd"
-add_file -vhdl -lib COREABC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/components.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd"
-add_file -vhdl -lib CORETIMER_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vhdl/core/coretimer_pkg.vhd"
-add_file -vhdl -lib CORETIMER_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vhdl/core/coretimer.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/timer.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd"
-add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/designer/I2C_LITEON_Op_Sens_test_sd/synthesis.fdc"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_Core_Block_sd/I2C_Core_Block_sd.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/designer/I2C_Core_Block_sd/synthesis.fdc"
 
 
 
@@ -54,7 +23,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "work.I2C_LITEON_Op_Sens_test_sd"
+set_option -top_module "work.I2C_Core_Block_sd"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -107,5 +76,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_LITEON_Op_Sens_test_sd.vm"
+project -result_file "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_Core_Block_sd.vm"
 impl -active "synthesis"

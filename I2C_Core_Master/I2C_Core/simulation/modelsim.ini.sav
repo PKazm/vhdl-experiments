@@ -2,11 +2,11 @@
 others = $MODEL_TECH/../modelsim.ini
 SmartFusion2 = C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2
 presynth = presynth
-syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.1\Designer/lib/actel/syncad_vhdl_lib
-
 COREABC_LIB = COREABC_LIB
 COREAPB3_LIB = COREAPB3_LIB
 CORETIMER_LIB = CORETIMER_LIB
+syncad_vhdl_lib = C:\Microsemi\Libero_SoC_v12.1\Designer/lib/actel/syncad_vhdl_lib
+
 [vcom]
 VHDL93 = 1
 

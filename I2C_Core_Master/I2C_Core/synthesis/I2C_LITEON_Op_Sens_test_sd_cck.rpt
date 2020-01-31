@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Mon Jan 27 17:27:56 2020
+# Written on Fri Jan 31 00:18:32 2020
 
 ##### DESIGN INFO #######################################################
 
@@ -38,8 +38,7 @@ Clock Relationships
 Starting                                          Ending                                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                            System                                            |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     10.000                           
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     System                                            |     No paths         |     No paths         |     10.000           |     No paths                         
+System                                            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
 FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
 FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         

@@ -3,15 +3,15 @@
   Synopsys, Inc.
   Version N-2018.03M-SP1-1
   Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\syntmp\run_option.xml
-  Written on Mon Jan 27 17:27:54 2020
+  Written on Fri Jan 31 00:22:18 2020
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
-     <option name="project_name" display_name="Project Name">I2C_LITEON_Op_Sens_test_sd_syn</option>
+     <option name="project_name" display_name="Project Name">I2C_Core_Block_sd_syn</option>
      <option name="device_name" display_name="Device Name">synthesis: Microsemi SmartFusion2 : M2S010</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module">work.I2C_LITEON_Op_Sens_test_sd</option>
+     <option name="top_module" display_name="Top Module">work.I2C_Core_Block_sd</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">10000</option>

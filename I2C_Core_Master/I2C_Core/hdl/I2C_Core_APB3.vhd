@@ -83,9 +83,9 @@ architecture architecture_I2C_Core_APB3 of I2C_Core_APB3 is
 
     -- I2C_instruction_RAM connection signals
     signal i2c_adr_to_mem : std_logic_vector(5 downto 0);
-    signal i2c_data_to_mem : std_logic_vector(7 downto 0);
-    signal i2c_bus_active : std_logic;
-    signal i2c_bus_rw_instr : std_logic;
+    signal i2c_bus_to_mem : std_logic_vector(7 downto 0);
+    signal i2c_bus_op_req : std_logic;
+    signal i2c_mem_instr_sel : std_logic;
     signal i2c_bus_w_en : std_logic;
     signal i2c_mem_to_bus : std_logic_vector(7 downto 0);
     signal i2c_mem_done : std_logic;
@@ -129,18 +129,26 @@ architecture architecture_I2C_Core_APB3 of I2C_Core_APB3 is
             PCLK : in std_logic;
             RSTn : in std_logic;
 
+            -- RAM control signals
             adr_to_mem : in std_logic_vector(5 downto 0);
-            data_to_mem : in std_logic_vector(7 downto 0);
-            bus_active : in std_logic;
-            bus_rw_instr : in std_logic;
+            mem_instr_sel : in std_logic;
             bus_w_en : in std_logic;
-
-            mem_to_bus : out std_logic_vector(7 downto 0);
+            bus_op_req : in std_logic;
+            
             mem_done : out std_logic;
+            -- RAM control signals
+            -- RAM write signals
+            bus_to_mem : in std_logic_vector(7 downto 0);
+            -- RAM write signals
+            -- RAM read signals
+            mem_to_bus : out std_logic_vector(7 downto 0);
+            -- RAM read signals
 
+            -- sequence control signals
             seq_enable : in std_logic;
             seq_finished : out std_logic;
-            seq_count : out std_logic_vector(5 downto 0);
+            seq_cnt_out : out std_logic_vector(5 downto 0);
+            -- sequence control signals
 
 
             -- i2c signals passthrough
@@ -179,9 +187,9 @@ begin
             RSTn => RSTn,
 
             adr_to_mem => i2c_adr_to_mem,
-            data_to_mem => i2c_data_to_mem,
-            bus_active => i2c_bus_active,
-            bus_rw_instr => i2c_bus_rw_instr,
+            bus_to_mem => i2c_bus_to_mem,
+            bus_op_req => i2c_bus_op_req,
+            mem_instr_sel => i2c_mem_instr_sel,
             bus_w_en => i2c_bus_w_en,
 
             mem_to_bus => i2c_mem_to_bus,
@@ -189,7 +197,7 @@ begin
 
             seq_enable => i2c_seq_enable,
             seq_finished => i2c_seq_finished,
-            seq_count => i2c_seq_count,
+            seq_cnt_out => i2c_seq_count,
 
 
             -- i2c signals passthrough
@@ -248,15 +256,7 @@ begin
                             PRDATA_sig <= (others => '0');
                     end case;
                 elsif(PADDR(7) = '1') then
-                    -- RAM has a delay due to loading the output flipflops
-                    -- APB order is PADDR > PSEL > PENABLE.
-                    -- This 3 clock sequence should be long enought to load the FF
-                    -- if not, add delay to PREADY from here (or handshake in I2C_Instruction_RAM)
-                    if(PADDR(6) = '0') then
-                        PRDATA_sig <= i2c_mem_to_bus(7 downto 0);
-                    else
-                        PRDATA_sig <= "000000" & i2c_mem_to_bus(1 downto 0);
-                    end if;
+                    PRDATA_sig <= i2c_mem_to_bus(7 downto 0);
                 end if;
             else
                 PRDATA_sig <= (others => '0');
@@ -266,7 +266,7 @@ begin
 
     -- BEGIN APB Return wires
     PRDATA <= PRDATA_sig;
-    PREADY <= i2c_mem_done when PADDR(7) = '1' and PWRITE = '1' else '1'; --PREADY_sig;
+    PREADY <= i2c_mem_done when PADDR(7) = '1' else '1'; --PREADY_sig;
     PSLVERR <= '0';
     -- END APB Return wires
 
@@ -386,17 +386,18 @@ begin
             if(PSEL = '1' and PENABLE = '1' and PWRITE = '1' and PADDR(7) = '1' and PREADY = '0') then
                 -- PWDATA and PADDR are always being read by the instruction_RAM
                 -- this sets when they get acted upon
-                i2c_bus_active <= '1';
+                --i2c_bus_w_en <= '1';
             else
-                i2c_bus_active <= '0';
+                --i2c_bus_w_en <= '0';
             end if;
         end if;
     end process;
 
-    i2c_adr_to_mem <= PADDR(5 downto 0) when PADDR(7) = '1' and PSEL = '1' else i2c_adr_to_mem;
-    i2c_data_to_mem <= PWDATA;
-    i2c_bus_rw_instr <= PADDR(6);
-    i2c_bus_w_en <= not PREADY and i2c_bus_active;
+    i2c_adr_to_mem <= PADDR(5 downto 0) when PADDR(7) = '1' and PSEL = '1' else (others => '0');
+    i2c_bus_to_mem <= PWDATA;
+    i2c_mem_instr_sel <= PADDR(6) when PSEL = '1' else '0';
+    i2c_bus_w_en <= PSEL and PWRITE and PADDR(7);
+    i2c_bus_op_req <= PADDR(7) and PENABLE;
 
     -- END Register Write logic
     --=========================================================================

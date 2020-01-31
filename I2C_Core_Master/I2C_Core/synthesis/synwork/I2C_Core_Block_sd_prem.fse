@@ -49,14 +49,14 @@ fsm_state_encoding {928782871} 11 {11}
 
 fsm_registers {928782871} {status_sig[1]}  {status_sig[0]} 
 
-fsm_encoding {1033183313} sequential
+fsm_encoding {10340123403} sequential
 
-fsm_state_encoding {1033183313} idle {00}
+fsm_state_encoding {10340123403} idle {00}
 
-fsm_state_encoding {1033183313} next_instr {01}
+fsm_state_encoding {10340123403} next_instr {01}
 
-fsm_state_encoding {1033183313} do_instr {10}
+fsm_state_encoding {10340123403} do_instr {10}
 
-fsm_state_encoding {1033183313} read_i2c {11}
+fsm_state_encoding {10340123403} read_i2c {11}
 
-fsm_registers {1033183313} {seq_state_cur[1]}  {seq_state_cur[0]} 
+fsm_registers {10340123403} {seq_state_cur[1]}  {seq_state_cur[0]} 

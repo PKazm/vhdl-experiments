@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/simulation
 Ecoreabc_c0
-Z1 w1580155954
+Z1 w1580444870
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx11 coreabc_lib 34 coreabc_c0_coreabc_c0_0_components 0 22 nR?>R4L6jQf8?3e@=K5WO0
@@ -24,9 +24,9 @@ V2C=E40:L?i6W81WFS3kSe2
 !s100 ;G8o<GRRVNf7IN`_nOJ;K1
 Z9 OW;C;10.7c;67
 33
-Z10 !s110 1580155975
+Z10 !s110 1580445914
 !i10b 1
-Z11 !s108 1580155975.000000
+Z11 !s108 1580445914.000000
 Z12 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0.vhd|
 Z13 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/COREABC_C0/COREABC_C0.vhd|
 !i113 1
@@ -41,8 +41,8 @@ R6
 DEx4 work 10 coreabc_c0 0 22 2C=E40:L?i6W81WFS3kSe2
 l152
 L45
-V>8YizDFaBLUlj[>g6m_=D2
-!s100 I>DdFDJd;EKQ^=Q`i5mj33
+V6QY[nf[X9?bEO;oFmJQSC3
+!s100 b_M<@IkBoDYZNDIAk?@[l2
 R9
 33
 R10
@@ -54,7 +54,7 @@ R13
 R14
 R15
 Ecoreapb3_c0
-Z16 w1580077531
+Z16 w1580160184
 Z17 DPx12 coreapb3_lib 10 components 0 22 6XQdn^E]^IOnRfgRRBHVY3
 R5
 R6
@@ -63,55 +63,55 @@ Z18 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3
 Z19 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd
 l0
 L20
-VggeS2z4ogHP9@d[QXg63Z0
-!s100 >FC6=M6M9h0m;=;KK;3D21
+VjdaNJ2nFW5gNBkISBW1a30
+!s100 b^`B6fOO]g3Ln5dfEak=T2
 R9
 33
-R10
+Z20 !s110 1580445915
 !i10b 1
-R11
-Z20 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
-Z21 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
+Z21 !s108 1580445915.000000
+Z22 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
+Z23 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreAPB3_C0/CoreAPB3_C0.vhd|
 !i113 1
 R14
 R15
 Artl
-Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 DEx12 coreapb3_lib 8 coreapb3 0 22 amPF_`f[kKjGCGOV?Yh_K3
 R17
 R5
 R6
-DEx4 work 11 coreapb3_c0 0 22 ggeS2z4ogHP9@d[QXg63Z0
-l99
-L50
-VRkQeFkMcOjfFOF=728OlP2
-!s100 42dg^WbVP0WAX4J_P`B4:3
+DEx4 work 11 coreapb3_c0 0 22 jdaNJ2nFW5gNBkISBW1a30
+l104
+L54
+VCJ>0T3W]mmLS[nA0>DVd?0
+!s100 k0fdE1=GoKJlC:o9R6B5i1
 R9
 33
-R10
-!i10b 1
-R11
 R20
+!i10b 1
 R21
+R22
+R23
 !i113 1
 R14
 R15
 Ecoretimer_c0
-Z23 w1580077548
+Z25 w1580077548
 R5
 R6
 R0
-Z24 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd
-Z25 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd
+Z26 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd
+Z27 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd
 l0
 L19
 V6G>KE4^@de_YYA2`iTQm83
 !s100 LPEjd88oELcld_?z]TE992
 R9
 33
-Z26 !s110 1580155976
+R20
 !i10b 1
-Z27 !s108 1580155976.000000
+R21
 Z28 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd|
 Z29 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/CoreTimer_C0/CoreTimer_C0.vhd|
 !i113 1
@@ -127,9 +127,9 @@ V6n7eT<aP:KK8CK9?k80oe1
 !s100 EnG:7>IdC@n97@Uf;K^X>3
 R9
 33
-R26
+R20
 !i10b 1
-R27
+R21
 R28
 R29
 !i113 1
@@ -137,7 +137,7 @@ R14
 R15
 Efake_light_sensor
 Z30 w1580099783
-R22
+R24
 R5
 R6
 R0
@@ -149,16 +149,16 @@ VNiH[h:25TlM<;_1CNl^C_2
 !s100 O[H@`e]1jkbdaNb<WRl]L1
 R9
 33
-R26
+Z33 !s110 1580445916
 !i10b 1
-R27
-Z33 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/Fake_Light_Sensor.vhd|
-Z34 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/Fake_Light_Sensor.vhd|
+Z34 !s108 1580445916.000000
+Z35 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/Fake_Light_Sensor.vhd|
+Z36 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/Fake_Light_Sensor.vhd|
 !i113 1
 R14
 R15
 Aarchitecture_fake_light_sensor
-R22
+R24
 R5
 R6
 DEx4 work 17 fake_light_sensor 0 22 NiH[h:25TlM<;_1CNl^C_2
@@ -168,32 +168,32 @@ V0?Yc@RToDDjZ7J_W8?;Pc0
 !s100 d?Jg7RljZJkXLUSoSYUPM1
 R9
 33
-R26
-!i10b 1
-R27
 R33
+!i10b 1
 R34
+R35
+R36
 !i113 1
 R14
 R15
 Efccc_c0
-Z35 w1580095509
+Z37 w1580159856
 R5
 R6
 R0
-Z36 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd
-Z37 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd
+Z38 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd
+Z39 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd
 l0
 L17
 VbOb=_W`5ioUfeN=gTcN@[2
 !s100 o_L9aRQQQAW@5VM@15AMb1
 R9
 33
-R26
+R33
 !i10b 1
-R27
-Z38 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd|
-Z39 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd|
+R21
+Z40 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd|
+Z41 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0.vhd|
 !i113 1
 R14
 R15
@@ -207,80 +207,80 @@ V<nQ4FO[]dbk?iDNX3eoiG1
 !s100 kB`MbAGz[7dbA>9L]hddd1
 R9
 33
-R26
+R33
 !i10b 1
-R27
-R38
-R39
+R21
+R40
+R41
 !i113 1
 R14
 R15
 Efccc_c0_fccc_c0_0_fccc
-R35
+Z42 w1580159855
 R5
 R6
 R0
-Z40 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
-Z41 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z43 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z44 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
 l0
 L8
 V<<en;mm[Fb_NZ50F0fbY01
 !s100 <fX8]63S5^Pbcf`ho0i>_0
 R9
 33
-R26
+R20
 !i10b 1
-R27
-Z42 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
-Z43 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+R21
+Z45 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+Z46 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
 !i113 1
 R14
 R15
 Adef_arch
 DEx12 smartfusion2 6 XTLOSC 0 22 Dg1SIo80bB@j0V0VzS_@n1
-Z44 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+Z47 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
 DEx12 smartfusion2 10 RCOSC_1MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
 R5
 R6
 DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 <<en;mm[Fb_NZ50F0fbY01
 l95
 L18
-V^81SjhPcafSga@I[7QmVK2
-!s100 gm4Q^]=^[QA1cW4mgQ>C[3
+Vi<P520gW6Ye>od;Y^E1an3
+!s100 D^08ISj15lP:[`0Rjboa81
 R9
 33
-R26
+R20
 !i10b 1
-R27
-R42
-R43
+R21
+R45
+R46
 !i113 1
 R14
 R15
 Ei2c_core
-Z45 w1580020168
-R22
+Z48 w1580020168
+R24
 R5
 R6
 R0
-Z46 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd
-Z47 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd
+Z49 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd
+Z50 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd
 l0
 L24
 VHdg8bKg:k5I0foI4H;0`e2
 !s100 aCi3X_JNP]AVFV;5<a:Fa1
 R9
 33
-Z48 !s110 1580155977
+Z51 !s110 1580445917
 !i10b 1
-Z49 !s108 1580155977.000000
-Z50 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd|
-Z51 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd|
+Z52 !s108 1580445917.000000
+Z53 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd|
+Z54 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core.vhd|
 !i113 1
 R14
 R15
 Aarchitecture_i2c_core
-R22
+R24
 R5
 R6
 DEx4 work 8 i2c_core 0 22 Hdg8bKg:k5I0foI4H;0`e2
@@ -290,124 +290,124 @@ Vk=cTgRJHh@KahQX=T1:K=1
 !s100 LRVQQhFT5Pk=:f`;aHgPL3
 R9
 33
-R48
-!i10b 1
-R49
-R50
 R51
+!i10b 1
+R52
+R53
+R54
 !i113 1
 R14
 R15
 Ei2c_core_apb3
-Z52 w1580100287
-R22
+Z55 w1580445889
+R24
 R5
 R6
 R0
-Z53 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd
-Z54 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd
+Z56 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd
+Z57 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd
 l0
 L24
-Vkbh]2f`8`N53BLC3Z?ZTd2
-!s100 T4[i[o^^=Z@[BJ<B4RgJU0
+V9`N6oFFJa;neB:`;^oFf=1
+!s100 5Td]jN8NW<V>e<[kT86Pg1
 R9
 33
-R48
+R51
 !i10b 1
-R49
-Z55 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd|
-Z56 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd|
+R52
+Z58 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd|
+Z59 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Core_APB3.vhd|
 !i113 1
 R14
 R15
 Aarchitecture_i2c_core_apb3
-R22
+R24
 R5
 R6
-Z57 DEx4 work 13 i2c_core_apb3 0 22 kbh]2f`8`N53BLC3Z?ZTd2
-l169
+Z60 DEx4 work 13 i2c_core_apb3 0 22 9`N6oFFJa;neB:`;^oFf=1
+l177
 L62
-VH9586V3zMGgn]E;6cOElo3
-!s100 mcJ4hlMTRX?^UMi[^5`>j1
+VgIM3QR1;5i]5NMOzH4^S[1
+!s100 d<>k7<bVK99m@`OJIa2@_0
 R9
 33
-R48
+R51
 !i10b 1
-R49
-R55
-R56
+R52
+R58
+R59
 !i113 1
 R14
 R15
 Ei2c_core_apb3_tb
-Z58 w1580091691
-Z59 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
-R22
+Z61 w1580420722
+Z62 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+R24
 R5
 R6
 R0
-Z60 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd
-Z61 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd
+Z63 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd
+Z64 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd
 l0
 L36
 VW7:09>ZFXDTS?ol]Ekjm;1
 !s100 =X5ZK;6<JZ5aS<hPGU60E0
 R9
 33
-Z62 !s110 1580091801
+Z65 !s110 1580420747
 !i10b 1
-Z63 !s108 1580091801.000000
-Z64 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd|
-Z65 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd|
+Z66 !s108 1580420747.000000
+Z67 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd|
+Z68 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_APB3_tb.vhd|
 !i113 1
 R14
 R15
 Abehavioral
-R59
-R22
+R62
+R24
 R5
 R6
 DEx4 work 16 i2c_core_apb3_tb 0 22 W7:09>ZFXDTS?ol]Ekjm;1
-l156
+l154
 L39
-Vz6hTL^^DEcF`C`;;LSc7E1
-!s100 4Mi6`[Z<V_LoRIE0=<;`:3
+Vi96Z7MWTVUo@BZn?D4G;41
+!s100 OQYFPWc^NP:207R=NW7aQ1
 R9
 33
-R62
-!i10b 1
-R63
-R64
 R65
+!i10b 1
+R66
+R67
+R68
 !i113 1
 R14
 R15
 Ei2c_core_tb
-Z66 w1579570133
-R59
-R22
+Z69 w1579570133
+R62
+R24
 R5
 R6
 R0
-Z67 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd
-Z68 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd
+Z70 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd
+Z71 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd
 l0
 L36
 V_O`4NP[Y]?6QG9J9[9BIH2
 !s100 8`475AG56]8BLD9QW_eB@3
 R9
 33
-Z69 !s110 1580003181
+Z72 !s110 1580003181
 !i10b 1
-Z70 !s108 1580003181.000000
-Z71 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd|
-Z72 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd|
+Z73 !s108 1580003181.000000
+Z74 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd|
+Z75 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Core_tb.vhd|
 !i113 1
 R14
 R15
 Abehavioral
-R59
-R22
+R62
+R24
 R5
 R6
 DEx4 work 11 i2c_core_tb 0 22 _O`4NP[Y]?6QG9J9[9BIH2
@@ -417,202 +417,203 @@ V`C7aM0kdSk:M>>7N94SO10
 !s100 JJDdK;f0O19d^LS[nFb7H1
 R9
 33
-R69
-!i10b 1
-R70
-R71
 R72
+!i10b 1
+R73
+R74
+R75
 !i113 1
 R14
 R15
 Ei2c_instruction_ram
-Z73 w1580152852
-R22
+Z76 w1580432994
+R24
 R5
 R6
 R0
-Z74 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd
-Z75 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd
+Z77 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd
+Z78 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd
 l0
 L24
-Vd@g@n=dgA=FT1bQID:bB93
-!s100 YT3`i>jR31W`?n5in2A<c1
+VznBT>[2e2<Pgn^UX7UPGh0
+!s100 Ee<Vd?T;A_07^AVSBJ[L01
 R9
 33
-R48
+R51
 !i10b 1
-R49
-Z76 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd|
-Z77 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd|
+R52
+Z79 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd|
+Z80 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Instruction_RAM.vhd|
 !i113 1
 R14
 R15
 Aarchitecture_i2c_instruction_ram
-R22
+R24
 R5
 R6
-DEx4 work 19 i2c_instruction_ram 0 22 d@g@n=dgA=FT1bQID:bB93
-l171
-L73
-VZcI1[`iU^8:zakQk;]G;C0
-!s100 P[HORi68215<_30=7HIan1
+DEx4 work 19 i2c_instruction_ram 0 22 znBT>[2e2<Pgn^UX7UPGh0
+l182
+L81
+V630:5jO6Y3D0E6c7_a?8W1
+!s100 =R`<[X>34=9LY;:[lSzYQ2
 R9
 33
-R48
+R51
 !i10b 1
-R49
-R76
-R77
+R52
+R79
+R80
 !i113 1
 R14
 R15
 Ei2c_instruction_ram_tb
-Z78 w1580077319
-R59
-R22
+Z81 w1580420311
+R62
+R24
 R5
 R6
 R0
-Z79 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd
-Z80 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd
+Z82 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd
+Z83 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd
 l0
 L36
 V_fOM^A]cd6kK5hOJTeU]73
 !s100 E:?@Hjn_D8UYfLgCZ?i5B0
 R9
 33
-Z81 !s110 1580077338
+!s110 1580424052
 !i10b 1
-Z82 !s108 1580077338.000000
-Z83 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd|
-Z84 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd|
+Z84 !s108 1580424052.000000
+Z85 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd|
+Z86 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_Instruction_RAM_tb.vhd|
 !i113 1
 R14
 R15
 Abehavioral
-R59
-R22
+R62
+R24
 R5
 R6
 DEx4 work 22 i2c_instruction_ram_tb 0 22 _fOM^A]cd6kK5hOJTeU]73
 l162
 L39
-V?0Aec[VCgY<i7gB=CSha31
-!s100 M7dTXCnfFX1]HI5eB[@PW0
+VhYQh7aW`HQk;m;zdN7O3G0
+!s100 io6mGdXnom;m5<C6TheNf0
 R9
 33
-R81
+!s110 1580424053
 !i10b 1
-R82
-R83
 R84
+R85
+R86
 !i113 1
 R14
 R15
 Ei2c_liteon_op_sens_test_sd
-Z85 w1580155203
+Z87 w1580435123
 R5
 R6
 R0
-Z86 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd
-Z87 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd
+Z88 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd
+Z89 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd
 l0
 L17
 VUUFN4:A@MJTIXaB1G[XKz3
 !s100 aOB3O:H@`Bh4RmJ>Xbd<>1
 R9
 33
-R48
+R51
 !i10b 1
-R49
-Z88 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd|
-Z89 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd|
+R52
+Z90 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd|
+Z91 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/I2C_LITEON_Op_Sens_test_sd/I2C_LITEON_Op_Sens_test_sd.vhd|
 !i113 1
 R14
 R15
 Artl
-R22
-R57
-R44
+Z92 DEx4 work 14 led_controller 0 22 P]>c<0:59]E?9]^1]Ll2X2
+R24
+R60
+R47
 DEx12 smartfusion2 14 RCOSC_25_50MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
 R5
 R6
 DEx4 work 26 i2c_liteon_op_sens_test_sd 0 22 UUFN4:A@MJTIXaB1G[XKz3
-l291
+l302
 L37
-V[hF`lF326=NPHQ>LdjFll2
-!s100 aRSz@5G^2F<4@f7A8>f8Y0
+V@9H@e=f[ThPh??hRT34a80
+!s100 nC[n=WmW>NC=LTjOToBKY2
 R9
 33
-R48
+R51
 !i10b 1
-R49
-R88
-R89
+R52
+R90
+R91
 !i113 1
 R14
 R15
 Ei2c_liteon_op_sens_test_tb
-Z90 w1580155545
-R59
-R22
+Z93 w1580435091
+R62
+R24
 R5
 R6
 R0
-Z91 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd
-Z92 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd
+Z94 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd
+Z95 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd
 l0
 L27
 VX5[:_:ZLQVzV:72@KVj2i0
 !s100 YMGG__=G1?m<c=MLEec;R2
 R9
 33
-R48
+R51
 !i10b 1
-R49
-Z93 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd|
-Z94 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd|
+R52
+Z96 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd|
+Z97 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/stimulus/I2C_LITEON_Op_Sens_test_tb.vhd|
 !i113 1
 R14
 R15
 Abehavioral
-R59
-R22
+R62
+R24
 R5
 R6
-Z95 DEx4 work 26 i2c_liteon_op_sens_test_tb 0 22 X5[:_:ZLQVzV:72@KVj2i0
-l101
+Z98 DEx4 work 26 i2c_liteon_op_sens_test_tb 0 22 X5[:_:ZLQVzV:72@KVj2i0
+l117
 L30
-Z96 V:[Pe2DKYUVJ:I_e1jI86K3
-Z97 !s100 5>4^^z=Hbd2ZcFe39H]l[0
+Z99 V@lZ[E@6Eff90C[@`eS^W@0
+Z100 !s100 z>_N<zEAZ`5=l@13NeCOQ0
 R9
 33
-R48
+R51
 !i10b 1
-R49
-R93
-R94
+R52
+R96
+R97
 !i113 1
 R14
 R15
 Ei2c_pull_up
-Z98 w1580100761
+Z101 w1580100761
 R5
 R6
 R0
-Z99 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd
-Z100 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd
+Z102 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd
+Z103 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd
 l0
 L23
 V[:iG><YQCh5P@IRUDhl]`2
 !s100 kUUL0bRDFdbCBf6@5kGDO1
 R9
 33
-R26
+R33
 !i10b 1
-R27
-Z101 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd|
-Z102 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd|
+R34
+Z104 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd|
+Z105 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/I2C_Pull_Up.vhd|
 !i113 1
 R14
 R15
@@ -626,73 +627,73 @@ V7AKIzfo]:dI7]O:B4G4LU2
 !s100 ]Yb;HTHMe747:F>UMTMM`3
 R9
 33
-R26
+R33
 !i10b 1
-R27
-R101
-R102
+R34
+R104
+R105
 !i113 1
 R14
 R15
 Eled_controller
-Z103 w1580096855
-R22
+Z106 w1580425294
+R24
 R5
 R6
 R0
-Z104 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd
-Z105 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd
+Z107 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd
+Z108 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd
 l0
 L24
-Vk?gbYTVPKE16ea]_>;cD;3
-!s100 j4TLn85eZcb<YXnM]4g3b3
+VP]>c<0:59]E?9]^1]Ll2X2
+!s100 la5T3bgOF2il:^lQge1=A1
 R9
 33
-R26
+R33
 !i10b 1
-R27
-Z106 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd|
-Z107 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd|
+R34
+Z109 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd|
+Z110 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/LED_controller.vhd|
 !i113 1
 R14
 R15
 Aarchitecture_led_controller
-R22
+R24
 R5
 R6
-DEx4 work 14 led_controller 0 22 k?gbYTVPKE16ea]_>;cD;3
-l50
-L43
-VAdH8b35]TZk65g>>1<LE>3
-!s100 C@><:bzT;JD9[zKJl;j<=3
+R92
+l143
+L72
+V@EC[mIVzW63<i7ZKQC^mc0
+!s100 Z4CN8GS]]JG@o88c6WIU<3
 R9
 33
-R26
+R33
 !i10b 1
-R27
-R106
-R107
+R34
+R109
+R110
 !i113 1
 R14
 R15
 Eosc_c0
-Z108 w1580077461
+Z111 w1580077461
 R5
 R6
 R0
-Z109 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd
-Z110 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd
+Z112 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd
+Z113 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd
 l0
 L17
 V;9f:oAhA_Yn;NSNQG<[f:1
 !s100 Yf_ZSillhlhcFGRD9njA;0
 R9
 33
-R48
+R51
 !i10b 1
-R49
-Z111 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd|
-Z112 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd|
+R34
+Z114 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd|
+Z115 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0.vhd|
 !i113 1
 R14
 R15
@@ -706,32 +707,32 @@ VOFnD7z[I]8W[K[i4ZoEST1
 !s100 Yebk`f[LaoaULcj[lFUSL0
 R9
 33
-R48
+R51
 !i10b 1
-R49
-R111
-R112
+R34
+R114
+R115
 !i113 1
 R14
 R15
 Eosc_c0_osc_c0_0_osc
-R108
+R111
 R5
 R6
 R0
-Z113 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
-Z114 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z116 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z117 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
 l0
 L8
 V=RTjS>oH[4=XjoXn^`jZ13
 !s100 ImDYGYTfEB_O;]h:c4C>f1
 R9
 33
-R48
+R33
 !i10b 1
-R27
-Z115 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
-Z116 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+R34
+Z118 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+Z119 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
 !i113 1
 R14
 R15
@@ -745,11 +746,52 @@ V1oa1O8Mi7^mOUoQz_9K461
 !s100 li@AIJ9Yl0<2d:3ki;e^Y2
 R9
 33
-R48
+R33
 !i10b 1
-R27
-R115
-R116
+R34
+R118
+R119
+!i113 1
+R14
+R15
+Etimer
+Z120 w1579567342
+R24
+R5
+R6
+R0
+Z121 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/timer.vhd
+Z122 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/timer.vhd
+l0
+L6
+VB3DOdMXQn]CEB:3<az@3G1
+!s100 FL;V];9M^olV]ajK35P`k3
+R9
+33
+R33
+!i10b 1
+R34
+Z123 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/timer.vhd|
+Z124 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/hdl/timer.vhd|
+!i113 1
+R14
+R15
+Aarchitecture_timer
+R24
+R5
+R6
+DEx4 work 5 timer 0 22 B3DOdMXQn]CEB:3<az@3G1
+l27
+L19
+Vb;CbQ32:4LVYL_RQ0eQbH2
+!s100 @fl:0iLHZS_bWY7Nf]YA^1
+R9
+33
+R33
+!i10b 1
+R34
+R123
+R124
 !i113 1
 R14
 R15

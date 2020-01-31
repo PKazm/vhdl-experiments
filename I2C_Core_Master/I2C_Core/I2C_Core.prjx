@@ -64,7 +64,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\COREABC\3.7.101\COREABC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="480"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 ENDFILE
@@ -335,32 +335,32 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1580163454"
-SIZE="13727"
+TIME="1580444872"
+SIZE="13629"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="11127"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\CoreABC.log,log"
 STATE="utd"
-TIME="1580163453"
-SIZE="1655"
+TIME="1580444870"
+SIZE="1643"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="4820"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\coreparameters_tgi.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="2252"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -368,7 +368,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="1780"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -376,7 +376,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="4393"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -384,7 +384,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="42290"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -392,7 +392,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\debugblk.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="16563"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -400,15 +400,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
-SIZE="105987"
+TIME="1580444870"
+SIZE="105588"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructnvm_bb.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="2399"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -416,7 +416,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructram.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="11287"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -424,7 +424,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\iram512x9_rtl.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="3379"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -432,7 +432,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="5244"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -440,7 +440,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x16_rtl.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="1752"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -448,7 +448,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram256x8_rtl.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="1745"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -456,7 +456,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="16192"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -464,7 +464,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\support.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="48934"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -472,7 +472,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="5434"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -480,7 +480,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\misc.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="11824"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -488,7 +488,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testbench.vhd,tb_hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="21961"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -498,7 +498,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="23371"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -506,7 +506,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\textio.vhd,hdl"
 STATE="utd"
-TIME="1580163453"
+TIME="1580444870"
 SIZE="21261"
 LIBRARY="COREABC_LIB"
 PARENT="<project>\component\work\COREABC_C0\COREABC_C0_0\COREABC_C0_COREABC_C0_0_COREABC.cxf"
@@ -563,24 +563,24 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.cxf,actgen_cxf"
 STATE="utd"
-TIME="1580163045"
+TIME="1580417781"
 SIZE="5315"
 ENDFILE
 VALUE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd,hdl"
 STATE="utd"
-TIME="1580163045"
+TIME="1580417781"
 SIZE="4872"
 PARENT="<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf,actgen_cxf"
 STATE="utd"
-TIME="1580163471"
+TIME="1580446062"
 SIZE="3950"
 ENDFILE
 VALUE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd,hdl"
 STATE="utd"
-TIME="1580163470"
+TIME="1580446061"
 SIZE="23233"
 PARENT="<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf"
 IS_READONLY="TRUE"
@@ -615,6 +615,11 @@ STATE="utd"
 TIME="1580096786"
 SIZE="2433"
 ENDFILE
+VALUE "<project>\designer\impl1\I2C_Core_APB3.ide_des,ide_des"
+STATE="utd"
+TIME="1580371970"
+SIZE="216"
+ENDFILE
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd.ide_des,ide_des"
 STATE="utd"
 TIME="1580162976"
@@ -647,13 +652,13 @@ SIZE="19060"
 ENDFILE
 VALUE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
 STATE="utd"
-TIME="1580163027"
-SIZE="14322"
+TIME="1580445889"
+SIZE="14176"
 ENDFILE
 VALUE "<project>\hdl\I2C_Instruction_RAM.vhd,hdl"
 STATE="utd"
-TIME="1580152852"
-SIZE="17094"
+TIME="1580432994"
+SIZE="18810"
 ENDFILE
 VALUE "<project>\hdl\I2C_Pull_Up.vhd,hdl"
 STATE="utd"
@@ -662,8 +667,8 @@ SIZE="1179"
 ENDFILE
 VALUE "<project>\hdl\LED_controller.vhd,hdl"
 STATE="utd"
-TIME="1580160082"
-SIZE="12597"
+TIME="1580425294"
+SIZE="12687"
 ENDFILE
 VALUE "<project>\hdl\LITEON_Optical_Sensor_Core.vhd,hdl"
 STATE="utd"
@@ -677,8 +682,8 @@ SIZE="2522"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.log,log"
 STATE="utd"
-TIME="1580101063"
-SIZE="418"
+TIME="1580371898"
+SIZE="407"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -692,11 +697,6 @@ TIME="1572988165"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
-VALUE "<project>\simulation\I2C_Core_APB3_tb_presynth_simulation.log,log"
-STATE="utd"
-TIME="1580092518"
-SIZE="16987"
-ENDFILE
 VALUE "<project>\simulation\I2C_Instruction_RAM_tb_presynth_simulation.log,log"
 STATE="utd"
 TIME="1580077402"
@@ -704,17 +704,17 @@ SIZE="11150"
 ENDFILE
 VALUE "<project>\simulation\I2C_LITEON_Op_Sens_test_tb_presynth_simulation.log,log"
 STATE="utd"
-TIME="1580152872"
-SIZE="166912"
+TIME="1580445898"
+SIZE="429715"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1580101055"
-SIZE="5476"
+TIME="1580371979"
+SIZE="2422"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1580163470"
+TIME="1580446061"
 SIZE="867"
 PARENT="<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf"
 ENDFILE
@@ -726,8 +726,8 @@ PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
 ENDFILE
 VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1580091691"
-SIZE="17748"
+TIME="1580420722"
+SIZE="19823"
 ENDFILE
 VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
 STATE="utd"
@@ -736,32 +736,37 @@ SIZE="9755"
 ENDFILE
 VALUE "<project>\stimulus\I2C_Instruction_RAM_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1580077319"
-SIZE="20292"
+TIME="1580420311"
+SIZE="20897"
 ENDFILE
 VALUE "<project>\stimulus\I2C_LITEON_Op_Sens_test_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1580155545"
-SIZE="7462"
+TIME="1580435091"
+SIZE="9636"
+ENDFILE
+VALUE "<project>\synthesis\I2C_Core_APB3_syn.prj,prj"
+STATE="utd"
+TIME="1580421072"
+SIZE="2279"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_Block_sd.so,so"
 STATE="utd"
-TIME="1580162987"
+TIME="1580371482"
 SIZE="260"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm"
-STATE="utd"
-TIME="1580162986"
-SIZE="119255"
+STATE="ood"
+TIME="1580371482"
+SIZE="87381"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_Block_sd_syn.prj,prj"
 STATE="utd"
-TIME="1580162987"
-SIZE="2426"
+TIME="1580371493"
+SIZE="2129"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Core_Block_sd_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1580162986"
+TIME="1580371482"
 SIZE="902"
 ENDFILE
 VALUE "<project>\synthesis\I2C_Instruction_RAM.so,so"
@@ -786,28 +791,65 @@ SIZE="904"
 ENDFILE
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.so,so"
 STATE="utd"
-TIME="1580097968"
+TIME="1580371851"
 SIZE="278"
 ENDFILE
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
-STATE="utd"
-TIME="1580097967"
-SIZE="377392"
+STATE="ood"
+TIME="1580371850"
+SIZE="416073"
 ENDFILE
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_syn.prj,prj"
 STATE="utd"
-TIME="1580097968"
-SIZE="6899"
+TIME="1580371851"
+SIZE="6989"
 ENDFILE
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1580097967"
+TIME="1580371850"
 SIZE="1384"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1580371748"
+SIZE="159"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "I2C_Core_APB3::work"
+FILE "<project>\hdl\I2C_Core_APB3.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\I2C_Core_APB3.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core_APB3.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core_APB3_fp\I2C_Core_APB3.pro,pro"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core_Block_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 LIST "I2C_Instruction_RAM::work"
 FILE "<project>\hdl\I2C_Instruction_RAM.vhd,hdl"
 LIST AssociatedStimulus
@@ -848,15 +890,12 @@ LIST "I2C_Core_Block_sd::work"
 FILE "<project>\component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd,hdl"
 LIST ProjectState5.1
 LIST Impl1
-ideSYNTHESIS(<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm)=StateSuccess
-ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
-VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
 VALUE "<project>\synthesis\I2C_Core_Block_sd.edn,syn_edn"
 VALUE "<project>\synthesis\I2C_Core_Block_sd.vhd,syn_hdl"
 VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.edn,palace_edn"
@@ -869,23 +908,20 @@ VALUE "<project>\designer\impl1\I2C_Core_Block_sd.fdb,fdb"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd.pdb,pdb"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd.stp,stp"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd_fp\I2C_Core_Block_sd.pro,pro"
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
 LIST "I2C_LITEON_Op_Sens_test_sd::work"
-FILE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd,hdl"
-LIST Other_Association
-VALUE "<project>\simulation\subsystem.bfm,sim"
-ENDLIST
+FILE "<project>\component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf,actgen_cxf"
 LIST AssociatedStimulus
 VALUE "<project>\stimulus\I2C_LITEON_Op_Sens_test_tb.vhd,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -975,6 +1011,9 @@ VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\test\testbench.vhd,tb_hdl"
 ENDLIST
+LIST I2C_Core_APB3
+VALUE "<project>\stimulus\I2C_Core_APB3_tb.vhd,tb_hdl"
+ENDLIST
 LIST I2C_Instruction_RAM
 VALUE "<project>\stimulus\I2C_Instruction_RAM_tb.vhd,tb_hdl"
 ENDLIST
@@ -983,9 +1022,6 @@ VALUE "<project>\stimulus\I2C_Core_tb.vhd,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
-LIST I2C_LITEON_Op_Sens_test_sd
-VALUE "<project>\simulation\subsystem.bfm,sim"
-ENDLIST
 LIST COREABC_C0_COREABC_C0_0_COREABC
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\testsupport.vhd,tb_hdl"
 VALUE "<project>\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\test\apbmodel.vhd,tb_hdl"
@@ -1024,7 +1060,7 @@ LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=1ms
+RunTime=.77ms
 Resolution=100ps
 VsimOpt=
 EntityName=I2C_LITEON_Op_Sens_test_tb
@@ -1087,8 +1123,8 @@ NAME="SynplifyProME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1121,6 +1157,32 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "I2C_Core_APB3::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\I2C_Core_APB3.edn,syn_edn"
+VALUE "<project>\synthesis\I2C_Core_APB3.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\I2C_Core_APB3_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.adb,adb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.fdb,fdb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.pdb,pdb"
+VALUE "<project>\designer\impl1\I2C_Core_APB3.stp,stp"
+VALUE "<project>\designer\impl1\I2C_Core_APB3_fp\I2C_Core_APB3.pro,pro"
+VALUE "<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm"
+VALUE "<project>\synthesis\I2C_Core_Block_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "I2C_Instruction_RAM::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -1147,15 +1209,12 @@ ENDLIST
 ENDLIST
 LIST "I2C_Core_Block_sd::work"
 LIST Impl1
-ideSYNTHESIS(<project>\synthesis\I2C_Core_Block_sd.vm,syn_vm)=StateSuccess
-ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
-VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
 VALUE "<project>\synthesis\I2C_Core_Block_sd.edn,syn_edn"
 VALUE "<project>\synthesis\I2C_Core_Block_sd.vhd,syn_hdl"
 VALUE "<project>\phy_synthesis\I2C_Core_Block_sd_palace.edn,palace_edn"
@@ -1168,6 +1227,7 @@ VALUE "<project>\designer\impl1\I2C_Core_Block_sd.fdb,fdb"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd.pdb,pdb"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd.stp,stp"
 VALUE "<project>\designer\impl1\I2C_Core_Block_sd_fp\I2C_Core_Block_sd.pro,pro"
+VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm"
 VALUE "<project>\synthesis\I2C_LITEON_Op_Sens_test_sd_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
@@ -1175,7 +1235,6 @@ ENDLIST
 LIST "I2C_LITEON_Op_Sens_test_sd::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
-ideSYNTHESIS(<project>\synthesis\I2C_LITEON_Op_Sens_test_sd.vm,syn_vm)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1211,13 +1270,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Synthesize:I2C_LITEON_Op_Sens_test_sd_compile_netlist_hier_resources.csv
+ReportsCurrentItem;Run PROGRAM Action:I2C_LITEON_Op_Sens_test_sd_PROGRAM.log
 StartPage;StartPage;0
 SmartDesign;I2C_LITEON_Op_Sens_test_sd;0
-Constraint Manager;Constraint Manager;0
-HDL;constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc;0
 SmartDesign;I2C_Core_Block_sd;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;I2C_LITEON_Op_Sens_test_sd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
@@ -1239,6 +1296,12 @@ LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","
 ENDLIST
 LIST "timer::work","hdl\timer.vhd","FALSE","FALSE"
 ENDLIST
+LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
 LIST "Fake_Light_Sensor::work","hdl\Fake_Light_Sensor.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
@@ -1248,23 +1311,17 @@ LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FC
 ENDLIST
 LIST "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
 ENDLIST
-LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
-SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
-ENDLIST
 LIST "I2C_Core_Block_sd::work","component\work\I2C_Core_Block_sd\I2C_Core_Block_sd.vhd","TRUE","FALSE"
 SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
 ENDLIST
-LIST "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
-SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
-ENDLIST
-LIST "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd","TRUE","FALSE"
+LIST "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf","TRUE","FALSE"
 SUBBLOCK "COREABC_C0::work","component\work\COREABC_C0\COREABC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "CoreAPB3_C0::work","component\work\CoreAPB3_C0\CoreAPB3_C0.vhd","TRUE","FALSE"
 SUBBLOCK "CoreTimer_C0::work","component\work\CoreTimer_C0\CoreTimer_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "LED_Controller::work","hdl\LED_controller.vhd","FALSE","FALSE"
 SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "LED_Controller::work","hdl\LED_controller.vhd","FALSE","FALSE"
 ENDLIST
 LIST "I2C_Pull_Up::work","hdl\I2C_Pull_Up.vhd","FALSE","FALSE"
 ENDLIST
@@ -1287,17 +1344,23 @@ LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","
 ENDLIST
 LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
 ENDLIST
+LIST "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+ENDLIST
 LIST "I2C_Core_APB3_tb::work","stimulus\I2C_Core_APB3_tb.vhd","FALSE","TRUE"
 SUBBLOCK "I2C_Core_APB3::work","hdl\I2C_Core_APB3.vhd","FALSE","FALSE"
 ENDLIST
 LIST "I2C_Core_tb::work","stimulus\I2C_Core_tb.vhd","FALSE","TRUE"
 SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
 ENDLIST
+LIST "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
+SUBBLOCK "I2C_Core::work","hdl\I2C_Core.vhd","FALSE","FALSE"
+ENDLIST
 LIST "I2C_Instruction_RAM_tb::work","stimulus\I2C_Instruction_RAM_tb.vhd","FALSE","TRUE"
 SUBBLOCK "I2C_Instruction_RAM::work","hdl\I2C_Instruction_RAM.vhd","FALSE","FALSE"
 ENDLIST
 LIST "I2C_LITEON_Op_Sens_test_tb::work","stimulus\I2C_LITEON_Op_Sens_test_tb.vhd","FALSE","TRUE"
-SUBBLOCK "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.vhd","TRUE","FALSE"
+SUBBLOCK "I2C_LITEON_Op_Sens_test_sd::work","component\work\I2C_LITEON_Op_Sens_test_sd\I2C_LITEON_Op_Sens_test_sd.cxf","TRUE","FALSE"
 ENDLIST
 LIST "COREABC_C0_COREABC_C0_0_ACMTABLE::coreabc_lib","component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\acmtable.vhd","FALSE","FALSE"
 ENDLIST

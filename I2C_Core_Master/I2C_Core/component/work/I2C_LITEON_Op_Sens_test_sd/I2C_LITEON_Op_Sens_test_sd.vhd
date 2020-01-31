@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Mon Jan 27 17:17:50 2020
+-- Created by SmartDesign Thu Jan 30 23:47:41 2020
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -227,32 +227,32 @@ signal D_IN_POST_INV1_0                                   : std_logic;
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
-signal COREABC_C0_0_APB3master_PADDR                      : std_logic_vector(19 downto 0);
 signal COREABC_C0_0_APB3master_PADDR_0_31to20             : std_logic_vector(31 downto 20);
 signal COREABC_C0_0_APB3master_PADDR_0_19to0              : std_logic_vector(19 downto 0);
 signal COREABC_C0_0_APB3master_PADDR_0                    : std_logic_vector(31 downto 0);
+signal COREABC_C0_0_APB3master_PADDR                      : std_logic_vector(19 downto 0);
 
+signal COREABC_C0_0_APB3master_PRDATA                     : std_logic_vector(31 downto 0);
 signal COREABC_C0_0_APB3master_PRDATA_0_15to0             : std_logic_vector(15 downto 0);
 signal COREABC_C0_0_APB3master_PRDATA_0                   : std_logic_vector(15 downto 0);
-signal COREABC_C0_0_APB3master_PRDATA                     : std_logic_vector(31 downto 0);
 
-signal COREABC_C0_0_APB3master_PWDATA                     : std_logic_vector(15 downto 0);
 signal COREABC_C0_0_APB3master_PWDATA_0_31to16            : std_logic_vector(31 downto 16);
 signal COREABC_C0_0_APB3master_PWDATA_0_15to0             : std_logic_vector(15 downto 0);
 signal COREABC_C0_0_APB3master_PWDATA_0                   : std_logic_vector(31 downto 0);
+signal COREABC_C0_0_APB3master_PWDATA                     : std_logic_vector(15 downto 0);
 
+signal CoreAPB3_C0_0_APBmslave0_PADDR                     : std_logic_vector(31 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_1_4to2              : std_logic_vector(4 downto 2);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_1                   : std_logic_vector(4 downto 2);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_0_7to0              : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_0                   : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_2_7to0              : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PADDR_2                   : std_logic_vector(7 downto 0);
-signal CoreAPB3_C0_0_APBmslave0_PADDR                     : std_logic_vector(31 downto 0);
 
-signal CoreAPB3_C0_0_APBmslave0_PRDATA                    : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0_31to8            : std_logic_vector(31 downto 8);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0_7to0             : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PRDATA_0                  : std_logic_vector(31 downto 0);
+signal CoreAPB3_C0_0_APBmslave0_PRDATA                    : std_logic_vector(7 downto 0);
 
 signal CoreAPB3_C0_0_APBmslave0_PWDATA                    : std_logic_vector(31 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PWDATA_0_7to0             : std_logic_vector(7 downto 0);
@@ -260,10 +260,10 @@ signal CoreAPB3_C0_0_APBmslave0_PWDATA_0                  : std_logic_vector(7 d
 signal CoreAPB3_C0_0_APBmslave0_PWDATA_1_7to0             : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave0_PWDATA_1                  : std_logic_vector(7 downto 0);
 
-signal CoreAPB3_C0_0_APBmslave2_PRDATA                    : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave2_PRDATA_0_31to8            : std_logic_vector(31 downto 8);
 signal CoreAPB3_C0_0_APBmslave2_PRDATA_0_7to0             : std_logic_vector(7 downto 0);
 signal CoreAPB3_C0_0_APBmslave2_PRDATA_0                  : std_logic_vector(31 downto 0);
+signal CoreAPB3_C0_0_APBmslave2_PRDATA                    : std_logic_vector(7 downto 0);
 
 
 begin
@@ -393,31 +393,31 @@ COREABC_C0_0 : COREABC_C0
 CoreAPB3_C0_0 : CoreAPB3_C0
     port map( 
         -- Inputs
-        PADDR     => COREABC_C0_0_APB3master_PADDR_0,
         PSEL      => COREABC_C0_0_APB3master_PSELx,
         PENABLE   => COREABC_C0_0_APB3master_PENABLE,
         PWRITE    => COREABC_C0_0_APB3master_PWRITE,
-        PWDATA    => COREABC_C0_0_APB3master_PWDATA_0,
-        PRDATAS0  => CoreAPB3_C0_0_APBmslave0_PRDATA_0,
         PREADYS0  => CoreAPB3_C0_0_APBmslave0_PREADY,
         PSLVERRS0 => CoreAPB3_C0_0_APBmslave0_PSLVERR,
-        PRDATAS1  => CoreAPB3_C0_0_APBmslave1_PRDATA,
         PREADYS1  => VCC_net, -- tied to '1' from definition
         PSLVERRS1 => GND_net, -- tied to '0' from definition
-        PRDATAS2  => CoreAPB3_C0_0_APBmslave2_PRDATA_0,
         PREADYS2  => CoreAPB3_C0_0_APBmslave2_PREADY,
         PSLVERRS2 => CoreAPB3_C0_0_APBmslave2_PSLVERR,
+        PADDR     => COREABC_C0_0_APB3master_PADDR_0,
+        PWDATA    => COREABC_C0_0_APB3master_PWDATA_0,
+        PRDATAS0  => CoreAPB3_C0_0_APBmslave0_PRDATA_0,
+        PRDATAS1  => CoreAPB3_C0_0_APBmslave1_PRDATA,
+        PRDATAS2  => CoreAPB3_C0_0_APBmslave2_PRDATA_0,
         -- Outputs
-        PRDATA    => COREABC_C0_0_APB3master_PRDATA,
         PREADY    => COREABC_C0_0_APB3master_PREADY,
         PSLVERR   => COREABC_C0_0_APB3master_PSLVERR,
-        PADDRS    => CoreAPB3_C0_0_APBmslave0_PADDR,
         PSELS0    => CoreAPB3_C0_0_APBmslave0_PSELx,
         PENABLES  => CoreAPB3_C0_0_APBmslave0_PENABLE,
         PWRITES   => CoreAPB3_C0_0_APBmslave0_PWRITE,
-        PWDATAS   => CoreAPB3_C0_0_APBmslave0_PWDATA,
         PSELS1    => CoreAPB3_C0_0_APBmslave1_PSELx,
-        PSELS2    => CoreAPB3_C0_0_APBmslave2_PSELx 
+        PSELS2    => CoreAPB3_C0_0_APBmslave2_PSELx,
+        PRDATA    => COREABC_C0_0_APB3master_PRDATA,
+        PADDRS    => CoreAPB3_C0_0_APBmslave0_PADDR,
+        PWDATAS   => CoreAPB3_C0_0_APBmslave0_PWDATA 
         );
 -- CoreTimer_C0_0
 CoreTimer_C0_0 : CoreTimer_C0
@@ -481,26 +481,26 @@ LED_Controller_0 : entity work.LED_Controller
         PRESETN       => COREABC_C0_0_PRESETN,
         I2C_Sniff_SCL => Board_J10_net_0,
         I2C_Sniff_SDA => Board_J11_net_0,
-        PADDR         => CoreAPB3_C0_0_APBmslave0_PADDR_2,
         PSEL          => CoreAPB3_C0_0_APBmslave2_PSELx,
         PENABLE       => CoreAPB3_C0_0_APBmslave0_PENABLE,
         PWRITE        => CoreAPB3_C0_0_APBmslave0_PWRITE,
+        PADDR         => CoreAPB3_C0_0_APBmslave0_PADDR_2,
         PWDATA        => CoreAPB3_C0_0_APBmslave0_PWDATA_1,
         Fabric_Int    => Fabric_Int_const_net_0,
         Board_Buttons => Board_Buttons_const_net_0,
         -- Outputs
         RST_out       => OPEN,
         PREADY        => CoreAPB3_C0_0_APBmslave2_PREADY,
-        PRDATA        => CoreAPB3_C0_0_APBmslave2_PRDATA,
         PSLVERR       => CoreAPB3_C0_0_APBmslave2_PSLVERR,
         INT           => OPEN,
-        Board_LEDs    => Board_LEDs_net_0,
-        Board_MOD1    => OPEN,
-        Board_J7      => OPEN,
         Board_J8      => OPEN,
         Board_J9      => OPEN,
         Board_J10     => OPEN,
-        Board_J11     => OPEN 
+        Board_J11     => OPEN,
+        PRDATA        => CoreAPB3_C0_0_APBmslave2_PRDATA,
+        Board_LEDs    => Board_LEDs_net_0,
+        Board_MOD1    => OPEN,
+        Board_J7      => OPEN 
         );
 -- OSC_C0_0
 OSC_C0_0 : OSC_C0

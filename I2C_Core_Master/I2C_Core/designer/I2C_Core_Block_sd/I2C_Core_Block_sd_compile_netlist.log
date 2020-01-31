@@ -1,3 +1,4 @@
+C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/I2C_Core/synthesis/I2C_Core_Block_sd.vm(4066): WARNING: net 'N_418' does not have a driver (VDB-1002)
 
 ===============================================================================.
 
@@ -10,11 +11,11 @@ Info: Global design data:
 Info: List of globals considered for demotion: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    130    0      0      'PCLK_ibuf_RNIFTKA' 
-    0      121    7      'RSTn_ibuf_RNICUT3' 
+    125    0      0      'PCLK_ibuf_RNIFTKA' 
+    0      119    4      'RSTn_ibuf_RNICUT3' 
 
 Info: Demotion information: 
-      Disconnected 7 data pins from global 'RSTn_ibuf_RNICUT3'. 
+      Disconnected 4 data pins from global 'RSTn_ibuf_RNICUT3'. 
 Info: CMPG4-302: Added 0 row global instances.
 Info: CMPG4-303: Deleted 0 global instances.
 

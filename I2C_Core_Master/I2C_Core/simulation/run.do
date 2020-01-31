@@ -60,6 +60,7 @@ vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/FCCC_C0/FCCC
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/FCCC_C0/FCCC_C0.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/Fake_Light_Sensor.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/I2C_Pull_Up.vhd"
+vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/timer.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/hdl/LED_controller.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
 vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/component/work/OSC_C0/OSC_C0.vhd"
@@ -72,4 +73,4 @@ vcom -2008 -explicit  -work presynth "${PROJECT_DIR}/stimulus/I2C_LITEON_Op_Sens
 
 vsim -L SmartFusion2 -L presynth -L COREABC_LIB -L COREAPB3_LIB -L CORETIMER_LIB  -t 100ps presynth.I2C_LITEON_Op_Sens_test_tb
 add wave /I2C_LITEON_Op_Sens_test_tb/*
-run 1ms
+run .77ms

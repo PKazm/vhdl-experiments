@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.I2C_LITEON_Op_Sens_test_sd  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_LITEON_Op_Sens_test_sd_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_LITEON_Op_Sens_test_sd_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synlog\I2C_LITEON_Op_Sens_test_sd_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.I2C_LITEON_Op_Sens_test_sd -multisrs ..\synwork\I2C_LITEON_Op_Sens_test_sd_comp.srs -osyn ..\synwork\I2C_LITEON_Op_Sens_test_sd_mult.srs -log ..\synlog\I2C_LITEON_Op_Sens_test_sd_multi_srs_gen.srr
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.I2C_Core_Block_sd  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_Core_Block_sd_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_Core_Block_sd_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synlog\I2C_Core_Block_sd_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.I2C_Core_Block_sd -multisrs ..\synwork\I2C_Core_Block_sd_comp.srs -osyn ..\synwork\I2C_Core_Block_sd_mult.srs -log ..\synlog\I2C_Core_Block_sd_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\I2C_LITEON_Op_Sens_test_sd_comp.srs|io:i|time:1580163485|size:75825|exec:0|csum:65A88D0D740869CE81EBABEB60803F83
-file:..\synwork\I2C_LITEON_Op_Sens_test_sd_mult.srs|io:o|time:1580163487|size:9359|exec:0|csum:
-file:..\synlog\I2C_LITEON_Op_Sens_test_sd_multi_srs_gen.srr|io:o|time:1580163487|size:1196|exec:0|csum:
+file:..\synwork\I2C_Core_Block_sd_comp.srs|io:i|time:1580447971|size:21615|exec:0|csum:E6999A744786705E3CE6CD3C47996F8C
+file:..\synwork\I2C_Core_Block_sd_mult.srs|io:o|time:1580447972|size:2973|exec:0|csum:
+file:..\synlog\I2C_Core_Block_sd_multi_srs_gen.srr|io:o|time:1580447972|size:1187|exec:0|csum:
 file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

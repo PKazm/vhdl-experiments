@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>16</data>
+<data>17</data>
 <report_link name="more">
 <data>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synlog\report\I2C_Core_Block_sd_fpga_mapper_notes.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:02s</data>
+<data>0h:00m:03s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:02s</data>
+<data>0h:00m:04s</data>
 </info>
 <info name="Peak Memory">
 <data>144MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1580163108</data>
+<data type="timestamp">1580448144</data>
 </info>
 </job_info>
 </job_run_status>

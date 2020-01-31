@@ -29,13 +29,15 @@ end I2C_LITEON_Op_Sens_test_tb;
 
 architecture behavioral of I2C_LITEON_Op_Sens_test_tb is
 
-    constant SYSCLK_PERIOD : time := 50 ns; -- 100MHZ
+    constant SYSCLK_PERIOD : time := 10 ns; -- 100MHZ
 
     signal SYSCLK : std_logic := '0';
     signal NSYSRESET : std_logic := '0';
 
     constant INSTR_SEQ_SIZE_CONST : natural := 25;
     constant FILT_LENGTH_CONST : natural := 3;
+
+    signal PCLK : std_logic := '0';
 
     -- i2c port signals
     signal Board_Buttons : std_logic_vector(1 downto 0) := (others => '0');
@@ -60,22 +62,36 @@ architecture behavioral of I2C_LITEON_Op_Sens_test_tb is
     signal ia_INT_spy : std_logic;
     -- i2c APB spies
     -- i2c Instruction RAM spies
-    type reg_seq_type is array(INSTR_SEQ_SIZE_CONST - 1 downto 0) of std_logic_vector(9 downto 0);
+    type reg_seq_type is array((INSTR_SEQ_SIZE_CONST * 2) - 1 downto 0) of std_logic_vector(7 downto 0);
     signal ir_i2c_seq_regs_spy : reg_seq_type;
-    signal ir_uSRAM_A_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal ir_uSRAM_A_DOUT_sig_spy : std_logic_vector(9 downto 0);
-    signal ir_uSRAM_B_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal ir_uSRAM_B_DOUT_sig_spy : std_logic_vector(9 downto 0);
-    signal ir_uSRAM_C_BLK_sig_spy : std_logic;
-    signal ir_uSRAM_C_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal ir_uSRAM_C_DIN_sig_spy : std_logic_vector(9 downto 0);
-    signal ir_from_bus_spy : std_logic;
-    signal ir_write_data_spy : std_logic;
+    type seq_states is(idle, next_instr, do_instr, read_i2c);
+    signal ir_seq_state_cur_spy : seq_states;
+    signal ir_uSRAM_A_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal ir_uSRAM_A_DOUT_sig_spy : std_logic_vector(7 downto 0);
+    signal ir_uSRAM_B_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal ir_uSRAM_B_DOUT_sig_spy : std_logic_vector(7 downto 0);
+    signal ir_uSRAM_C_WEN_sig_spy : std_logic;
+    signal ir_uSRAM_C_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal ir_uSRAM_C_DIN_sig_spy : std_logic_vector(7 downto 0);
+    signal ir_seq_selected_spy : std_logic;
+    signal ir_mem_instr_sel_spy : std_logic;
+    signal ir_mem_delay_cnt_spy : unsigned(1 downto 0);
+    signal ir_write_en_spy : std_logic;
+    signal ir_mem_op_req_spy : std_logic;
     signal ir_seq_finished_sig_spy : std_logic;
     -- i2c Instruction RAM spies
     -- i2c Core spies
     signal i_status_sig_spy : std_logic_vector(1 downto 0);
+    signal i_data_in_spy : std_logic_vector(7 downto 0);
+    signal i_i2c_data_read_spy : std_logic_vector(7 downto 0);
     -- i2c Core spies
+
+    -- LED control spies
+    signal led_CH0_0_reg_spy : std_logic_vector(7 downto 0);
+    signal led_CH0_1_reg_spy : std_logic_vector(7 downto 0);
+    signal led_CH1_0_reg_spy : std_logic_vector(7 downto 0);
+    signal led_CH1_1_reg_spy : std_logic_vector(7 downto 0);
+    -- LED control spies
 
     component I2C_LITEON_Op_Sens_test_sd
         -- ports
@@ -140,6 +156,7 @@ begin
 
     spy_process : process
     begin
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/FCCC_C0_0/GL0", "PCLK", 1, -1);
 
         -- i2c APB spies
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/PADDR", "ia_PADDR_spy", 1, -1);
@@ -155,21 +172,34 @@ begin
         
         -- i2c RAM spies
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/i2c_seq_regs", "ir_i2c_seq_regs_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_state_cur", "ir_seq_state_cur_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_A_ADDR_sig", "ir_uSRAM_A_ADDR_sig_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_A_DOUT_sig", "ir_uSRAM_A_DOUT_sig_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_B_ADDR_sig", "ir_uSRAM_B_ADDR_sig_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_B_DOUT_sig", "ir_uSRAM_B_DOUT_sig_spy", 1, -1);
-        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_C_BLK_sig", "ir_uSRAM_C_BLK_sig_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_C_WEN_sig", "ir_uSRAM_C_WEN_sig_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_C_ADDR_sig", "ir_uSRAM_C_ADDR_sig_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/uSRAM_C_DIN_sig", "ir_uSRAM_C_DIN_sig_spy", 1, -1);
-        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/from_bus", "ir_from_bus_spy", 1, -1);
-        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/write_data", "ir_write_data_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_selected", "ir_seq_selected_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/mem_instr_sel", "ir_mem_instr_sel_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/mem_delay_cnt", "ir_mem_delay_cnt_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/write_en", "ir_write_en_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/mem_op_req", "ir_mem_op_req_spy", 1, -1);
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_finished_sig", "ir_seq_finished_sig_spy", 1, -1);
         -- i2c RAM spies
 
         -- i2c core spies
         init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/status_sig", "i_status_sig_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/data_in", "i_data_in_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_data_read", "i_i2c_data_read_spy", 1, -1);
         -- i2c core spies
+
+        -- led ctrl spies
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/LED_Controller_0/CH0_0_reg", "led_CH0_0_reg_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/LED_Controller_0/CH0_1_reg", "led_CH0_1_reg_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/LED_Controller_0/CH1_0_reg", "led_CH1_0_reg_spy", 1, -1);
+        init_signal_spy("I2C_LITEON_Op_Sens_test_sd_0/LED_Controller_0/CH1_1_reg", "led_CH1_1_reg_spy", 1, -1);
+        -- led ctrl spies
 
         wait;
     end process;

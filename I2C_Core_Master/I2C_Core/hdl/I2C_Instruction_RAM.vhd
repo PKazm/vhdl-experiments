@@ -30,23 +30,31 @@ port (
     PCLK : in std_logic;
     RSTn : in std_logic;
 
+
+    -- RAM control signals
     adr_to_mem : in std_logic_vector(5 downto 0);
-    data_to_mem : in std_logic_vector(7 downto 0);
-    bus_active : in std_logic;
-    bus_rw_instr : in std_logic;
+    mem_instr_sel : in std_logic;
     bus_w_en : in std_logic;
-
-    mem_to_bus : out std_logic_vector(7 downto 0);
+    bus_op_req : in std_logic;
+    
     mem_done : out std_logic;
+    -- RAM control signals
+    -- RAM write signals
+    bus_to_mem : in std_logic_vector(7 downto 0);
+    -- RAM write signals
+    -- RAM read signals
+    mem_to_bus : out std_logic_vector(7 downto 0);
+    -- RAM read signals
 
+    -- sequence control signals
     seq_enable : in std_logic;      -- held high until seq_finished = '1'.
     seq_finished : out std_logic;   -- this is basically the sequence interrupt
-    -- seq_count can either align with the extra bits from I2C status (8 - 2 = 6)
+    -- seq_cnt_out can either align with the extra bits from I2C status (8 - 2 = 6)
     -- essentially a limit so all status bits are in 1 "register" length
     -- or 
     -- match the address range or match the reg_max generic
-    seq_count : out std_logic_vector(5 downto 0);
-
+    seq_cnt_out : out std_logic_vector(5 downto 0);
+    -- sequence control signals
 
     -- i2c signals passthrough
     i2c_initiate : in std_logic;
@@ -73,25 +81,27 @@ end I2C_Instruction_RAM;
 architecture architecture_I2C_Instruction_RAM of I2C_Instruction_RAM is
 
     -- seq RAM
-    type reg_seq_type is array(g_auto_reg_max - 1 downto 0) of std_logic_vector(9 downto 0);
+    type reg_seq_type is array((g_auto_reg_max * 2) - 1 downto 0) of std_logic_vector(7 downto 0);
     signal i2c_seq_regs : reg_seq_type;
 
 
-    -- A reads to the APB bus
-    signal uSRAM_A_ADDR_sig : std_logic_vector(5 downto 0);
-    signal uSRAM_A_DOUT_sig : std_logic_vector(9 downto 0);
-    -- B reads to the sequence logic
-    signal uSRAM_B_ADDR_sig : std_logic_vector(5 downto 0);
-    signal uSRAM_B_DOUT_sig : std_logic_vector(9 downto 0);
+    -- A accesses instruction locations
+    signal uSRAM_A_ADDR_sig : std_logic_vector(6 downto 0);
+    signal uSRAM_A_DOUT_sig : std_logic_vector(7 downto 0);
+    signal ram_instr_out : std_logic_vector(7 downto 0);
+    -- B accesses data locations
+    signal uSRAM_B_ADDR_sig : std_logic_vector(6 downto 0);
+    signal uSRAM_B_DOUT_sig : std_logic_vector(7 downto 0);
+    signal ram_data_out : std_logic_vector(7 downto 0);
     -- C writes from the APB bus and the sequence logic
-    signal uSRAM_C_BLK_sig : std_logic;
-    signal uSRAM_C_ADDR_sig : std_logic_vector(5 downto 0);
-    signal uSRAM_C_DIN_sig : std_logic_vector(9 downto 0);
+    signal uSRAM_C_WEN_sig : std_logic;
+    signal uSRAM_C_ADDR_sig : std_logic_vector(6 downto 0);
+    signal uSRAM_C_DIN_sig : std_logic_vector(7 downto 0);
 
-    signal from_bus : std_logic;
-    signal write_data : std_logic;
-    signal instr_bits_to_mem : std_logic_vector(1 downto 0);
-    signal data_bits_to_mem : std_logic_vector(7 downto 0);
+    signal ram_addr_selected : std_logic_vector(5 downto 0);
+    signal C_w_instr : std_logic;
+    signal write_en : std_logic;
+    signal mem_op_req : std_logic;
     signal mem_delay_cnt : unsigned(1 downto 0);
     signal mem_done_sig : std_logic;
     -- seq RAM
@@ -102,13 +112,14 @@ architecture architecture_I2C_Instruction_RAM of I2C_Instruction_RAM is
     signal seq_instr_timeout : natural range 0 to 3 := 3;   -- limits the number of times an instruction can repeat: "watchdog"
     signal sequence_cnt : natural range 0 to g_auto_reg_max - 1 := 0;
 
-    signal seq_instr : std_logic_vector(1 downto 0);
+    signal seq_instr : std_logic_vector(2 downto 0);
     signal seq_data : std_logic_vector(7 downto 0);
     signal i2c_ready : std_logic;
     signal i2c_run : std_logic;
     signal i2c_write_d : std_logic;
     signal seq_write : std_logic;
     signal seq_last_instr : std_logic;
+    signal seq_selected : std_logic;
     signal seq_finished_sig : std_logic;
     signal uSRAM_delay_sig : unsigned(0 downto 0);
     -- seq control signals
@@ -207,23 +218,6 @@ begin
             -- I2C connections
         );
 
-    -- passthrough I2C control signals
-        -- signals from the bus to I2C
-        i2c_initiate_sig <= i2c_run when seq_enable = '1' else i2c_initiate;
-        i2c_instruct_sig <= seq_data(2 downto 0) when seq_enable = '1' and seq_instr = "01" else
-                                            "100" when seq_enable = '1' and seq_instr = "10" else
-                                            "101" when seq_enable = '1' and seq_instr = "11" else
-                                    i2c_instruct;
-        i2c_clk_div_in_sig <= i2c_clk_div_in;
-        i2c_data_in_sig <= seq_data when seq_enable = '1' else i2c_data_in;
-        
-        -- signals from I2C to the bus
-        i2c_bus_busy <= i2c_bus_busy_sig;
-        i2c_int <= i2c_int_sig;
-        i2c_status_out <= i2c_status_out_sig;
-        i2c_data_out <= i2c_data_out_sig;
-    -- passthrough I2C control signals
-
     -- passthrough I2C bus connections
     i2c_SDAI_sig <= SDAI;
     SDAO <= i2c_SDAO_sig;
@@ -233,201 +227,235 @@ begin
     SCLE <= i2c_SCLE_sig;
     -- passthrough I2C bus connections
 
-    --=========================================================================
+    g_no_instr_ram : if(g_auto_reg_max = 0) generate
+        -- passthrough I2C control signals
+            -- signals from the bus to I2C
+            i2c_initiate_sig <= i2c_initiate;
+            i2c_instruct_sig <= i2c_instruct;
+            i2c_clk_div_in_sig <= i2c_clk_div_in;
+            i2c_data_in_sig <= i2c_data_in;
+            
+            -- signals from I2C to the bus
+            i2c_bus_busy <= i2c_bus_busy_sig;
+            i2c_int <= i2c_int_sig;
+            i2c_status_out <= i2c_status_out_sig;
+            i2c_data_out <= i2c_data_out_sig;
+        -- passthrough I2C control signals
 
-    -- A port is used by the APB interface to return values from memory
-    p_read_A_port : process(PCLK, RSTn)
-    begin
-        if(RSTn = '0') then
-            uSRAM_A_DOUT_sig <= (others => '0');
-        elsif(rising_edge(PCLK)) then
-            uSRAM_A_DOUT_sig <= i2c_seq_regs(to_integer(unsigned(uSRAM_A_ADDR_sig)));
-        end if;
-    end process;
+        mem_to_bus <= (others => '0');
+        mem_done <= '1';
 
-    uSRAM_A_ADDR_sig <= adr_to_mem;
-    mem_to_bus <= "000000" & uSRAM_A_DOUT_sig(9 downto 8) when bus_rw_instr = '1' else uSRAM_A_DOUT_sig(7 downto 0);
+        seq_finished <= '0';
+        seq_cnt_out <= (others => '0');
+    end generate g_no_instr_ram;
 
-    --=========================================================================
-    
-    -- B port is used by the instruction sequence
-    p_read_B_port : process(PCLK, RSTn)
-    begin
-        if(RSTn = '0') then
-            uSRAM_B_DOUT_sig <= (others => '0');
-        elsif(rising_edge(PCLK)) then
-            uSRAM_B_DOUT_sig <= i2c_seq_regs(to_integer(unsigned(uSRAM_B_ADDR_sig)));
-        end if;
-    end process;
+    g_yes_instr_ram : if(g_auto_reg_max > 0) generate
+        -- passthrough I2C control signals
+            -- signals from the bus to I2C
+            i2c_initiate_sig <= i2c_run when seq_selected = '1' else i2c_initiate;
+            i2c_instruct_sig <= ram_instr_out(2 downto 0) when seq_selected = '1'  else i2c_instruct;
+            i2c_clk_div_in_sig <= i2c_clk_div_in;
+            i2c_data_in_sig <= ram_data_out when seq_selected = '1' else i2c_data_in;
+            
+            -- signals from I2C to the bus
+            i2c_bus_busy <= i2c_bus_busy_sig;
+            i2c_int <= i2c_int_sig;
+            i2c_status_out <= i2c_status_out_sig;
+            i2c_data_out <= i2c_data_out_sig;
+        -- passthrough I2C control signals
 
-    uSRAM_B_ADDR_sig <= std_logic_vector(to_unsigned(sequence_cnt, uSRAM_B_ADDR_sig'length));
+        --=========================================================================
+        -- A port is used to read the instruction portion of a RAM location
+        -- B port is used to read the data portion of a RAM location
+        p_ram_stuff : process(PCLK, RSTn)
+        begin
+            if(RSTn = '0') then
+                ram_data_out <= (others => '0');
+                ram_instr_out <= (others => '0');
 
-    --=========================================================================
+                mem_delay_cnt <= (others => '0');
+            elsif(rising_edge(PCLK)) then
+                ram_data_out <= uSRAM_B_DOUT_sig;
+                ram_instr_out <= uSRAM_A_DOUT_sig;
 
-    -- C port writes from APB + A or I2C + B
-    -- APB writes can be to either instruction or data
-    -- sequence readback can only be data
-    p_write_C_port : process(PCLK, RSTn)
-    begin
-        if(RSTn = '0') then
-            mem_done_sig <= '0';
-            mem_delay_cnt <= (others => '0');
-        elsif(rising_edge(PCLK)) then
-            if(uSRAM_C_BLK_sig = '1') then
-                if(mem_done_sig = '0') then
+                if(uSRAM_C_WEN_sig = '1') then
+                    case C_w_instr is
+                        when '0' =>
+                            -- write data
+                            i2c_seq_regs(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
+                        when '1' =>
+                            -- write instruction
+                            i2c_seq_regs(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= "00000" & uSRAM_C_DIN_sig(2 downto 0);
+                        when others =>
+                            -- C_w_instr is boolean, how did you get here?
+                            null;
+                    end case;
+                end if;
+
+                if(mem_op_req = '1' and mem_done_sig = '0') then
                     if(mem_delay_cnt = "10") then
-                        i2c_seq_regs(to_integer(unsigned(uSRAM_C_ADDR_sig))) <= uSRAM_C_DIN_sig;
-                        mem_done_sig <= '1';
+                        null;
+                        -- write enable would be here but its set by combinational logic below.
                     else
                         mem_delay_cnt <= mem_delay_cnt + 1;
                     end if;
-                else
-                    mem_done <= '1';
+                elsif(mem_op_req = '0') then
+                    mem_delay_cnt <= (others => '0');
                 end if;
-            else
-                mem_done_sig <= '0';
-                mem_done <= '0';
-                mem_delay_cnt <= (others => '0');
             end if;
-        end if;
+        end process;
 
-    end process;
+        -- intermediate signal assignements
+        seq_selected <= seq_enable and not seq_finished_sig;
+        ram_addr_selected <= std_logic_vector(to_unsigned(sequence_cnt, ram_addr_selected'length))
+                                    when seq_selected = '1' else adr_to_mem;
+        mem_op_req <= seq_write when seq_selected = '1' else bus_op_req;
+        C_w_instr <= '0' when seq_selected = '1' else mem_instr_sel;
+        -- intermediate signal assignements
 
-    from_bus <= bus_active and not seq_enable;
-    -- I had the register be 1 = instr, 0 = data, but wrote the flags the other way, here is the changeover
-    write_data <= not bus_rw_instr when from_bus = '1' else i2c_write_d;
+        uSRAM_A_ADDR_sig <= ram_addr_selected & '1';
+        uSRAM_A_DOUT_sig <= i2c_seq_regs(to_integer(unsigned(uSRAM_A_ADDR_sig)));
+        uSRAM_B_ADDR_sig <= ram_addr_selected & '0';
+        uSRAM_B_DOUT_sig <= i2c_seq_regs(to_integer(unsigned(uSRAM_B_ADDR_sig)));
 
-    -- instr from port A when write_data = 1 and from_bus = 1
-    -- instr from APB when write_data = 0 and from_bus = 1
-    --
-    -- instr from port B when write_data = 1 and from_bus = 0
-    -- 0 when write_data = 0 and from_bus = 0 (reset reg value)
-    instr_bits_to_mem <= uSRAM_A_DOUT_sig(9 downto 8) when write_data = '1' and from_bus = '1' else
-                            data_to_mem(1 downto 0) when write_data = '0' and from_bus = '1' else
-                        uSRAM_B_DOUT_sig(9 downto 8) when write_data = '1' and from_bus = '0' else
-                                                "00" when write_data = '0' and from_bus = '0';
+        uSRAM_C_ADDR_sig <= ram_addr_selected & C_w_instr;
 
-    -- data from APB when write_data = 1 and from_bus = 1
-    -- data from port A when write_data = 0 and from_bus = 1
-    --
-    -- data from I2C when write_data = 1 and from_bus = 0
-    -- 0 when write_data = 0 and from_bus = 0 (reset reg value)
-    data_bits_to_mem <=         data_to_mem when write_data = '1' and from_bus = '1' else
-                uSRAM_A_DOUT_sig(7 downto 0) when write_data = '0' and from_bus = '1' else
-                            i2c_data_out_sig when write_data = '1' and from_bus = '0' else
-                                        X"00" when write_data = '0' and from_bus = '0';
+        uSRAM_C_DIN_sig <= i2c_data_out_sig when seq_selected = '1' else bus_to_mem;
 
-    uSRAM_C_DIN_sig <= instr_bits_to_mem & data_bits_to_mem;
+        -- assuming ADDR and DATA are stable upon mem_op_req rising to 1
+        -- this should give an immediate pulse which gets set low on the first clock rise
+        -- gotta save that time so I can be idle longer.
+        write_en <= seq_write when seq_selected = '1' else bus_w_en;
+        uSRAM_C_WEN_sig <= write_en and mem_op_req and not mem_delay_cnt(0) and not mem_delay_cnt(1);
 
-    uSRAM_C_ADDR_sig <= std_logic_vector(to_unsigned(sequence_cnt, uSRAM_B_ADDR_sig'length)) when seq_enable = '1' else adr_to_mem;
+        mem_done_sig <= mem_delay_cnt(1);
+        mem_done <= mem_done_sig;
+        mem_to_bus <= ram_instr_out when mem_instr_sel = '1' else ram_data_out;
 
-    uSRAM_C_BLK_sig <= seq_write or bus_w_en;
+        --=========================================================================
+        
+        p_sequence_run : process(PCLK, RSTn)
+        begin
 
-    --=========================================================================
-    
-    p_sequence_run : process(PCLK, RSTn)
-    begin
-
-        if(RSTn = '0') then
-            seq_state_cur <= idle;
-            sequence_cnt <= 0;
-            i2c_run <= '0';
-            seq_write <= '0';
-            seq_last_instr <= '0';
-        elsif(rising_edge(PCLK)) then
-            
-            seq_write <= '0';
-            case seq_state_cur is
-                when idle =>
-                    i2c_run <= '0';
-                    i2c_write_d <= '0';
-                    if(seq_enable = '1') then
+            if(RSTn = '0') then
+                seq_state_cur <= idle;
+                sequence_cnt <= 0;
+                i2c_run <= '0';
+                seq_write <= '0';
+                seq_last_instr <= '0';
+            elsif(rising_edge(PCLK)) then
+                
+                seq_write <= '0';
+                case seq_state_cur is
+                    when idle =>
+                        i2c_run <= '0';
+                        i2c_write_d <= '0';
+                        if(seq_enable = '1') then
+                            if(i2c_ready = '1') then
+                                if(seq_last_instr = '0') then
+                                    seq_state_cur <= do_instr;
+                                    if(sequence_cnt = g_auto_reg_max - 1) then
+                                        -- this instruction will run but the next will not
+                                        seq_last_instr <= '1';
+                                    end if;
+                                else
+                                    seq_finished_sig <= '1';
+                                end if;
+                            end if;
+                        else
+                            -- seq_enable = 0, either finished or canceled by APB write
+                            sequence_cnt <= 0;
+                            seq_finished_sig <= '0';
+                            seq_last_instr <= '0';
+                        end if;
+                    when next_instr =>
+                        -- increment sequence_cnt
+                        -- (update address -> retrieve mem data) -> store in output FF
                         if(i2c_ready = '1') then
-                            if(seq_last_instr = '0') then
-                                seq_state_cur <= do_instr;
-                                if(sequence_cnt = g_auto_reg_max - 1) then
-                                    -- this instruction will run but the next will not
-                                    seq_last_instr <= '1';
-                                end if;
-                            else
-                                seq_finished_sig <= '1';
+                            if(i2c_status_out_sig /= "11" and seq_last_instr = '0') then
+                                -- status "11" indicates Ack error, redo data transaction
+                                sequence_cnt <= sequence_cnt + 1;
                             end if;
-                        end if;
-                    else
-                        -- seq_enable = 0, either finished or canceled by APB write
-                        sequence_cnt <= 0;
-                        seq_finished_sig <= '0';
-                        seq_last_instr <= '0';
-                    end if;
-                when next_instr =>
-                    -- increment sequence_cnt
-                    -- (update address -> retrieve mem data) -> store in output FF
-                    if(i2c_ready = '1') then
-                        if(i2c_status_out_sig /= "11" and seq_last_instr = '0') then
-                            -- status "11" indicates Ack error, redo data transaction
-                            sequence_cnt <= sequence_cnt + 1;
-                        end if;
-                        seq_state_cur <= idle;
-                    end if;
-                when do_instr =>
-                    case seq_instr is
-                        when "00" =>    -- instruction "00" indicates No Operation
-                            if(seq_last_instr = '1') then
-                                seq_state_cur <= idle;
-                            else
-                                seq_state_cur <= next_instr;
-                            end if;
-                        when "01" =>  -- "01" indicates I2C Op
-                            if(i2c_ready = '0') then
-                                if(seq_last_instr = '1') then
-                                    seq_state_cur <= idle;
-                                else
-                                    seq_state_cur <= next_instr;
-                                end if;
-                            end if;
-                            i2c_run <= '1';
-                        when "10" =>  -- "10" indicate write
-                            if(i2c_ready = '0') then
-                                if(seq_last_instr = '1') then
-                                    seq_state_cur <= idle;
-                                else
-                                    seq_state_cur <= next_instr;
-                                end if;
-                            end if;
-                            i2c_run <= '1';
-                        when "11" =>    -- instruction "11" indicates Read, read from I2C on Op completion
-                            if(i2c_ready = '0') then
-                                seq_state_cur <= read_i2c;
-                            end if;
-                            i2c_write_d <= '1';
-                            i2c_run <= '1';
-                        when others =>
                             seq_state_cur <= idle;
-                    end case;
-                when read_i2c =>
-                    if(i2c_ready = '1') then
-                        seq_write <= '1';
-                        if(mem_done_sig = '1') then
-                            if(seq_last_instr = '1') then
+                        end if;
+                    when do_instr =>
+                        case seq_instr is
+                            when "000" =>    -- instruction "00" indicates No Operation
+                                if(seq_last_instr = '1') then
+                                    seq_state_cur <= idle;
+                                else
+                                    seq_state_cur <= next_instr;
+                                end if;
+                            when "001" =>  -- "01" indicates I2C Op
+                                if(i2c_ready = '0') then
+                                    if(seq_last_instr = '1') then
+                                        seq_state_cur <= idle;
+                                    else
+                                        seq_state_cur <= next_instr;
+                                    end if;
+                                end if;
+                                i2c_run <= '1';
+                            when "010" =>  -- "01" indicates I2C Op
+                                if(i2c_ready = '0') then
+                                    if(seq_last_instr = '1') then
+                                        seq_state_cur <= idle;
+                                    else
+                                        seq_state_cur <= next_instr;
+                                    end if;
+                                end if;
+                                i2c_run <= '1';
+                            when "011" =>  -- "01" indicates I2C Op
+                                if(i2c_ready = '0') then
+                                    if(seq_last_instr = '1') then
+                                        seq_state_cur <= idle;
+                                    else
+                                        seq_state_cur <= next_instr;
+                                    end if;
+                                end if;
+                                i2c_run <= '1';
+                            when "100" =>  -- "10" indicate write
+                                if(i2c_ready = '0') then
+                                    if(seq_last_instr = '1') then
+                                        seq_state_cur <= idle;
+                                    else
+                                        seq_state_cur <= next_instr;
+                                    end if;
+                                end if;
+                                i2c_run <= '1';
+                            when "101" =>    -- instruction "11" indicates Read, read from I2C on Op completion
+                                if(i2c_ready = '0') then
+                                    seq_state_cur <= read_i2c;
+                                end if;
+                                i2c_write_d <= '1';
+                                i2c_run <= '1';
+                            when others =>
                                 seq_state_cur <= idle;
-                            else
-                                seq_state_cur <= next_instr;
+                        end case;
+                    when read_i2c =>
+                        if(i2c_ready = '1') then
+                            seq_write <= '1';
+                            if(mem_done_sig = '1') then
+                                if(seq_last_instr = '1') then
+                                    seq_state_cur <= idle;
+                                else
+                                    seq_state_cur <= next_instr;
+                                end if;
                             end if;
                         end if;
-                    end if;
-                when others =>
-                    -- how did you get here?
-                    seq_state_cur <= idle;
-            end case;
-        end if;
-    end process;
+                    when others =>
+                        -- how did you get here?
+                        seq_state_cur <= idle;
+                end case;
+            end if;
+        end process;
 
-    i2c_ready <= '1' when i2c_status_out_sig = "00" or i2c_int = '1' else '0';
-    seq_instr <= uSRAM_B_DOUT_sig(9 downto 8);  -- reg from p_read_B_port
-    seq_data <= uSRAM_B_DOUT_sig(7 downto 0);   -- reg from p_read_B_port
+        i2c_ready <= '1' when i2c_status_out_sig = "00" or i2c_int = '1' else '0';
+        seq_instr <= ram_instr_out(2 downto 0);
+        seq_data <= ram_data_out;
 
-    seq_finished <= seq_finished_sig;
-    seq_count <= std_logic_vector(to_unsigned(sequence_cnt, seq_count'length));
+        seq_finished <= seq_finished_sig;
+        seq_cnt_out <= std_logic_vector(to_unsigned(sequence_cnt, seq_cnt_out'length));
+    end generate g_yes_instr_ram;
 
     --=========================================================================
 

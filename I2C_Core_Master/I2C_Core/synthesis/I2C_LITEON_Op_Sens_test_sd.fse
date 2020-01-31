@@ -11,17 +11,17 @@ fsm_state_encoding {3286928691} cycle3 {11}
 
 fsm_registers {3286928691} {ICYCLE[1]}  {ICYCLE[0]} 
 
-fsm_encoding {4233183314} sequential
+fsm_encoding {42340123404} sequential
 
-fsm_state_encoding {4233183314} idle {00}
+fsm_state_encoding {42340123404} idle {00}
 
-fsm_state_encoding {4233183314} next_instr {01}
+fsm_state_encoding {42340123404} next_instr {01}
 
-fsm_state_encoding {4233183314} do_instr {10}
+fsm_state_encoding {42340123404} do_instr {10}
 
-fsm_state_encoding {4233183314} read_i2c {11}
+fsm_state_encoding {42340123404} read_i2c {11}
 
-fsm_registers {4233183314} {seq_state_cur[1]}  {seq_state_cur[0]} 
+fsm_registers {42340123404} {seq_state_cur[1]}  {seq_state_cur[0]} 
 
 fsm_encoding {2428782873} onehot
 

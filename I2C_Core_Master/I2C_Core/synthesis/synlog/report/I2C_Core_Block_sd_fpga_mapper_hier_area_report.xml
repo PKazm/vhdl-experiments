@@ -18,9 +18,9 @@ The file contains the information about resource utilization per module to be di
 </column_headers>
 <module>
 <data>I2C_Core_Block_sd</data>
-<data>133</data>
+<data>122</data>
 <data>207</data>
-<data>95</data>
+<data>77</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -29,9 +29,9 @@ The file contains the information about resource utilization per module to be di
 <data>39</data>
 <module>
 <data>I2C_Core_APB3</data>
-<data>133</data>
+<data>122</data>
 <data>207</data>
-<data>95</data>
+<data>77</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -40,9 +40,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <module>
 <data>I2C_Instruction_RAM</data>
-<data>87</data>
-<data>155</data>
-<data>79</data>
+<data>83</data>
+<data>165</data>
+<data>69</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -52,8 +52,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>I2C_Core</data>
 <data>70</data>
-<data>84</data>
-<data>72</data>
+<data>124</data>
+<data>69</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>

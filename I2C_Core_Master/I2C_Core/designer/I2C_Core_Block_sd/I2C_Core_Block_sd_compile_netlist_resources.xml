@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Mon Jan 27 17:11:56 2020
+<text>Date: Fri Jan 31 00:22:31 2020
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>342</cell>
+ <cell>324</cell>
  <cell>12084</cell>
- <cell>2.83</cell>
+ <cell>2.68</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>169</cell>
+ <cell>158</cell>
  <cell>12084</cell>
- <cell>1.40</cell>
+ <cell>1.31</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>306</cell>
- <cell>133</cell>
+ <cell>288</cell>
+ <cell>122</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>342</cell>
- <cell>169</cell>
+ <cell>324</cell>
+ <cell>158</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -241,16 +241,8 @@
  <cell>8</cell>
 </row>
 <row>
- <cell>7</cell>
- <cell>1</cell>
-</row>
-<row>
  <cell>9</cell>
  <cell>2</cell>
-</row>
-<row>
- <cell>10</cell>
- <cell>1</cell>
 </row>
 <row>
  <cell>15</cell>
@@ -258,15 +250,11 @@
 </row>
 <row>
  <cell>16</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>17</cell>
- <cell>1</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>Total</cell>
- <cell>15</cell>
+ <cell>13</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -358,7 +346,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>130</cell>
+ <cell>125</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PCLK_c</cell>
 </row>
@@ -373,7 +361,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>121</cell>
+ <cell>119</cell>
  <cell>INT_NET</cell>
  <cell>Net   : RSTn_c</cell>
 </row>
@@ -404,17 +392,17 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>27</cell>
+ <cell>28</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/i2c_reg_ctrl[4]</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/N_71</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/i2c_reg_ctrl[4]</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_selected_0_o2</cell>
 </row>
 <row>
- <cell>22</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PADDR_c[2]</cell>
 </row>
@@ -424,19 +412,9 @@
  <cell>Driver: PADDR_ibuf[2]</cell>
 </row>
 <row>
- <cell>21</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/from_bus_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/from_bus</cell>
-</row>
-<row>
- <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/N_491_2</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/un27_i2c_ready</cell>
 </row>
 <row>
  <cell></cell>
@@ -444,14 +422,14 @@
  <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/status_sig_ns_0_a4_0_3[1]</cell>
 </row>
 <row>
- <cell>18</cell>
+ <cell>19</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_i_Z</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_i</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
 </row>
 <row>
  <cell>17</cell>
@@ -464,24 +442,24 @@
  <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/status_sig_ns_i_a4_1_0[0]</cell>
 </row>
 <row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa</cell>
+</row>
+<row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa_Z</cell>
+ <cell>Net   : I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa</cell>
-</row>
-<row>
- <cell>16</cell>
- <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
+ <cell>Driver: I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa_0_a2</cell>
 </row>
 <row>
  <cell>16</cell>
@@ -491,17 +469,27 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/SCL_mismatch_RNI55GC</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_RNIHMGUH</cell>
 </row>
 <row>
- <cell>13</cell>
+ <cell>15</cell>
  <cell>INT_NET</cell>
- <cell>Net   : PADDR_c[0]</cell>
+ <cell>Net   : PSEL_c</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: PADDR_ibuf[0]</cell>
+ <cell>Driver: PSEL_ibuf</cell>
+</row>
+<row>
+ <cell>15</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_state_cur[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_state_cur[0]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -512,17 +500,17 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>27</cell>
+ <cell>28</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/i2c_reg_ctrl[4]</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/N_71</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/i2c_reg_ctrl[4]</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_selected_0_o2</cell>
 </row>
 <row>
- <cell>22</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PADDR_c[2]</cell>
 </row>
@@ -532,19 +520,9 @@
  <cell>Driver: PADDR_ibuf[2]</cell>
 </row>
 <row>
- <cell>21</cell>
+ <cell>24</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/from_bus_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/from_bus</cell>
-</row>
-<row>
- <cell>19</cell>
- <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/N_491_2</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/un27_i2c_ready</cell>
 </row>
 <row>
  <cell></cell>
@@ -552,14 +530,14 @@
  <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/status_sig_ns_0_a4_0_3[1]</cell>
 </row>
 <row>
- <cell>18</cell>
+ <cell>19</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_i_Z</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_i</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
 </row>
 <row>
  <cell>17</cell>
@@ -572,24 +550,24 @@
  <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/status_sig_ns_i_a4_1_0[0]</cell>
 </row>
 <row>
+ <cell>17</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa</cell>
+</row>
+<row>
  <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa_Z</cell>
+ <cell>Net   : I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa</cell>
-</row>
-<row>
- <cell>16</cell>
- <cell>INT_NET</cell>
- <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/i2c_state_cur[16]</cell>
+ <cell>Driver: I2C_Core_APB3_0/PRDATA_sig_7_sqmuxa_0_a2</cell>
 </row>
 <row>
  <cell>16</cell>
@@ -599,17 +577,27 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/SCL_mismatch_RNI55GC</cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/un1_i2c_clk_cnt_1_sqmuxa_RNIHMGUH</cell>
 </row>
 <row>
- <cell>13</cell>
+ <cell>15</cell>
  <cell>INT_NET</cell>
- <cell>Net   : PADDR_c[0]</cell>
+ <cell>Net   : PSEL_c</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: PADDR_ibuf[0]</cell>
+ <cell>Driver: PSEL_ibuf</cell>
+</row>
+<row>
+ <cell>15</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_state_cur[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: I2C_Core_APB3_0/I2C_Instruction_RAM_0/seq_state_cur[0]</cell>
 </row>
 </table>
 </doc>

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Mon Jan 27 17:10:45 2020
+-- Created by SmartDesign Thu Jan 30 15:56:21 2020
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -63,10 +63,10 @@ signal SCLE_net_1              : std_logic;
 signal SDAE_net_1              : std_logic;
 signal SDAO_net_1              : std_logic;
 signal INT_net_1               : std_logic;
-signal APB_Slave_PRDATA_net_0  : std_logic_vector(7 downto 0);
 signal APB_Slave_PREADY_net_0  : std_logic;
 signal APB_Slave_PSLVERR_net_0 : std_logic;
 signal SCLO_net_1              : std_logic;
+signal APB_Slave_PRDATA_net_0  : std_logic_vector(7 downto 0);
 
 begin
 ----------------------------------------------------------------------
@@ -80,44 +80,44 @@ begin
  SDAO                    <= SDAO_net_1;
  INT_net_1               <= INT_net_0;
  INT                     <= INT_net_1;
- APB_Slave_PRDATA_net_0  <= APB_Slave_PRDATA;
- PRDATA(7 downto 0)      <= APB_Slave_PRDATA_net_0;
  APB_Slave_PREADY_net_0  <= APB_Slave_PREADY;
  PREADY                  <= APB_Slave_PREADY_net_0;
  APB_Slave_PSLVERR_net_0 <= APB_Slave_PSLVERR;
  PSLVERR                 <= APB_Slave_PSLVERR_net_0;
  SCLO_net_1              <= SCLO_net_0;
  SCLO                    <= SCLO_net_1;
+ APB_Slave_PRDATA_net_0  <= APB_Slave_PRDATA;
+ PRDATA(7 downto 0)      <= APB_Slave_PRDATA_net_0;
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
 -- I2C_Core_APB3_0
 I2C_Core_APB3_0 : entity work.I2C_Core_APB3
     generic map( 
-        g_auto_reg_max  => ( 64 ),
+        g_auto_reg_max  => ( 32 ),
         g_filter_length => ( 3 )
         )
     port map( 
         -- Inputs
         PCLK        => PCLK,
         RSTn        => RSTn,
-        PADDR       => PADDR,
         PSEL        => PSEL,
         PENABLE     => PENABLE,
         PWRITE      => PWRITE,
-        PWDATA      => PWDATA,
         SDAI        => SDAI,
         SCLI        => SCLI,
         trigger_seq => trigger_seq,
+        PADDR       => PADDR,
+        PWDATA      => PWDATA,
         -- Outputs
         PREADY      => APB_Slave_PREADY,
-        PRDATA      => APB_Slave_PRDATA,
         PSLVERR     => APB_Slave_PSLVERR,
         INT         => INT_net_0,
         SDAO        => SDAO_net_0,
         SDAE        => SDAE_net_0,
         SCLO        => SCLO_net_0,
-        SCLE        => SCLE_net_0 
+        SCLE        => SCLE_net_0,
+        PRDATA      => APB_Slave_PRDATA 
         );
 
 end RTL;

@@ -16,10 +16,10 @@ APBREAD, APBWRT, APBWRT ACC, APBWRT DAT, CMP, DEF, HALT, IOWRT, IOWRT ACC, JUMP,
 
 Constraints
 
-   Maximum value of APB data written directly is 48828 so 'Data Bus Width' >= 16.
+   Maximum value of APB data written directly is 10000 so 'Data Bus Width' >= 14.
    Maximum APB slot used is 2 so 'Number of APB Slots' >= 3.
    Maximum APB address used 216 so 'APB Slot Size' >= 256 locations
-   Maximum program counter is 112 so 'Maximum Number of Instructions' >= 128.
+   Maximum program counter is 106 so 'Maximum Number of Instructions' >= 128.
    Z register not used so 'Z Register size' may be set to disabled.
    'INPUTn' not used so 'Number of I/O Flags' >= 0.
    'IOWRT 0' used so 'Number of I/O Outputs' >= 0.
@@ -37,19 +37,19 @@ Instruction Store Details
 
 Labels
 
-Address 40:$I2C_reads
-Address 55:$I2C_SEQ_INT_CLR
-Address 57:$MAIN
+Address 34:$I2C_reads
+Address 49:$I2C_SEQ_INT_CLR
+Address 51:$MAIN
 
 ---------------------------------------------
 
 Symbols
 
-Line 109:RAM_ADR_I2C_SEQ_CNT=0x0
-Line 110:RAM_ADR_I2C_CH0_0=0x1
-Line 111:RAM_ADR_I2C_CH0_1=0x2
-Line 112:RAM_ADR_I2C_CH1_0=0x3
-Line 113:RAM_ADR_I2C_CH1_1=0x4
-Line 114:RAM_ADR_init_done=0x10
+Line 107:RAM_ADR_I2C_SEQ_CNT=0x0
+Line 108:RAM_ADR_I2C_CH0_0=0x1
+Line 109:RAM_ADR_I2C_CH0_1=0x2
+Line 110:RAM_ADR_I2C_CH1_0=0x3
+Line 111:RAM_ADR_I2C_CH1_1=0x4
+Line 112:RAM_ADR_init_done=0x10
 
 ---------------------------------------------

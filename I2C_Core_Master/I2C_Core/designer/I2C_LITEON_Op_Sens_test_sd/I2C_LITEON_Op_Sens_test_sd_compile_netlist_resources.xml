@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</text>
-<text>Date: Mon Jan 27 17:28:25 2020
+<text>Date: Fri Jan 31 00:18:54 2020
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>1327</cell>
+ <cell>1348</cell>
  <cell>12084</cell>
- <cell>10.98</cell>
+ <cell>11.16</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>593</cell>
+ <cell>583</cell>
  <cell>12084</cell>
- <cell>4.91</cell>
+ <cell>4.82</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>1147</cell>
- <cell>413</cell>
+ <cell>1168</cell>
+ <cell>403</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>1327</cell>
- <cell>593</cell>
+ <cell>1348</cell>
+ <cell>583</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -238,19 +238,23 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>10</cell>
+ <cell>9</cell>
 </row>
 <row>
  <cell>8</cell>
- <cell>2</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>9</cell>
- <cell>4</cell>
+ <cell>5</cell>
 </row>
 <row>
  <cell>10</cell>
  <cell>2</cell>
+</row>
+<row>
+ <cell>14</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>15</cell>
@@ -258,7 +262,7 @@
 </row>
 <row>
  <cell>16</cell>
- <cell>5</cell>
+ <cell>4</cell>
 </row>
 <row>
  <cell>17</cell>
@@ -274,7 +278,7 @@
 </row>
 <row>
  <cell>Total</cell>
- <cell>27</cell>
+ <cell>26</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -366,22 +370,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>380</cell>
- <cell>INT_NET</cell>
- <cell>Net   : FCCC_C0_0_GL0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Source: NETLIST</cell>
-</row>
-<row>
- <cell>344</cell>
+ <cell>375</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0_PRESETN</cell>
 </row>
@@ -389,6 +378,21 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/RSTSYNC2_RNI49BF/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>375</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : FCCC_C0_0_GL0</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -427,7 +431,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>49</cell>
+ <cell>52</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0_APB3master_PADDR[2]</cell>
 </row>
@@ -437,34 +441,64 @@
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</cell>
 </row>
 <row>
- <cell>36</cell>
+ <cell>43</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/N_101_1</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/N_73</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/STKPTR_2_sqmuxa_0_a2_1_0</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg_RNI19T7_0[0]</cell>
 </row>
 <row>
- <cell>34</cell>
+ <cell>41</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[3]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell>40</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+</row>
+<row>
+ <cell>38</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/ADDR7_q</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/URAM.UR/ADDR7_q</cell>
+</row>
+<row>
+ <cell>37</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
+</row>
+<row>
+ <cell>35</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
 </row>
 <row>
  <cell>32</cell>
@@ -479,52 +513,22 @@
 <row>
  <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]</cell>
 </row>
 <row>
- <cell>30</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[1]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[1]</cell>
-</row>
-<row>
- <cell>28</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[9]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[7]</cell>
-</row>
-<row>
- <cell>28</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
-</row>
-<row>
- <cell>27</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -535,7 +539,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>49</cell>
+ <cell>52</cell>
  <cell>INT_NET</cell>
  <cell>Net   : COREABC_C0_0_APB3master_PADDR[2]</cell>
 </row>
@@ -545,34 +549,64 @@
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[12]</cell>
 </row>
 <row>
- <cell>36</cell>
+ <cell>43</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/N_101_1</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/N_73</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/STKPTR_2_sqmuxa_0_a2_1_0</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg_RNI19T7_0[0]</cell>
 </row>
 <row>
- <cell>34</cell>
+ <cell>41</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[3]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
+</row>
+<row>
+ <cell>40</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+</row>
+<row>
+ <cell>38</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/ADDR7_q</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/URAM.UR/ADDR7_q</cell>
+</row>
+<row>
+ <cell>37</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[0]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
+</row>
+<row>
+ <cell>35</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[2]</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[5]</cell>
 </row>
 <row>
  <cell>32</cell>
@@ -587,52 +621,22 @@
 <row>
  <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0.COREABC_C0_0.INSTR_SCMD[1]</cell>
+ <cell>Net   : COREABC_C0_0_APB3master_PADDR[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[4]</cell>
+ <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[10]</cell>
 </row>
 <row>
- <cell>30</cell>
+ <cell>31</cell>
  <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[1]</cell>
+ <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR_Z[1]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[1]</cell>
-</row>
-<row>
- <cell>28</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0_APB3master_PADDR[9]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/UROM.UROM/INS_0_dreg[7]</cell>
-</row>
-<row>
- <cell>28</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[3]</cell>
-</row>
-<row>
- <cell>27</cell>
- <cell>INT_NET</cell>
- <cell>Net   : COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: COREABC_C0_0/COREABC_C0_0/SMADDR[0]</cell>
 </row>
 </table>
 </doc>

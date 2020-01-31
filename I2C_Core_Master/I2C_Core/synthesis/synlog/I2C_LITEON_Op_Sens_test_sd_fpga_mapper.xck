@@ -1,3 +1,2 @@
 CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:LED_Controller_0.Bright_Count[15]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
 CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:LED_Controller_0.Blink_Count[18]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
-CKID0003:@|S:I2C_Core_APB3_0.N_128_i@|E:I2C_Core_APB3_0.i2c_adr_to_mem[0]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 

@@ -7,15 +7,14 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 424 clock pin(s) of sequential element(s)
-0 instances converted, 424 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 414 clock pin(s) of sequential element(s)
+0 instances converted, 414 sequential instances remain driven by gated/generated clocks
 
 ======================================================================================================== Gated/Generated Clocks =========================================================================================================
 Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                       Explanation                                                                                                   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    380        LED_Controller_0.Bright_Count[15]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    375        LED_Controller_0.Bright_Count[15]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
 @K:CKID0002       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    39         LED_Controller_0.Blink_Count[18]      Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0003       I2C_Core_APB3_0.N_128_i          CFG4                   5          I2C_Core_APB3_0.i2c_adr_to_mem[0]     No clocks found on inputs                                                                                     
 =========================================================================================================================================================================================================================================
 
 

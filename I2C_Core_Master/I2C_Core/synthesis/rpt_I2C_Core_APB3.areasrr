@@ -1,0 +1,116 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S010TQ144STD (Microsemi)
+
+-----------------------------------------------------------------------------
+########   Utilization report for  Top level view:   I2C_Core_APB3   ########
+=============================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      124                100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_APB3:	124 (27.68 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      204                100 %                
+ARI1     72                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Core_APB3:	276 (61.61 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block I2C_Core_APB3:	1 (0.22 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block I2C_Core_APB3:	2 (0.45 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       39                 100 %                
+=================================================
+Total IO PADS in the block I2C_Core_APB3:	39 (8.71 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   I2C_Instruction_RAM   ########
+Instance path:   I2C_Core_APB3.I2C_Instruction_RAM                       
+=========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      84                 67.7 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	84 (18.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      204                100 %                
+ARI1     72                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Core_APB3.I2C_Instruction_RAM:	276 (61.61 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	1 (0.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   I2C_Core   ########
+Instance path:   I2C_Instruction_RAM.I2C_Core                 
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      70                 56.5 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block I2C_Instruction_RAM.I2C_Core:	70 (15.63 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      159                77.9 %               
+ARI1     65                 90.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block I2C_Instruction_RAM.I2C_Core:	224 (50.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

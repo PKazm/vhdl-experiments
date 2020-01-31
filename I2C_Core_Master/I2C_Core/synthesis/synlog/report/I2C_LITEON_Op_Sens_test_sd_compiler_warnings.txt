@@ -20,7 +20,6 @@
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":120:8:120:23|Signal internal_int_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":121:8:121:21|Signal fabric_int_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":126:8:126:24|Signal timer_signal_last is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":36:1:36:7|Signal RST_out is floating; a simulation mismatch is possible.
 @W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":320:2:320:3|Pruning unused register toggle_2. Make sure that there are no unused intermediate registers.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":82:11:82:20|Signal seq_toggle is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":112:11:112:19|Signal paddr_sig is undriven. Either assign the signal a value or remove the signal declaration.
@@ -30,13 +29,14 @@
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":116:11:116:20|Signal pwdata_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":117:11:117:20|Signal pready_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":119:11:119:21|Signal pslverr_sig is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":102:11:102:27|Signal seq_instr_timeout is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":113:11:113:25|Signal usram_delay_sig is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":112:11:112:27|Signal seq_instr_timeout is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":124:11:124:25|Signal usram_delay_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":84:11:84:21|Signal op_finished is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":91:11:91:18|Signal sdae_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":94:11:94:18|Signal scle_sig is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":111:11:111:18|Signal i2c_data is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":211:8:211:9|Pruning unused register SDA_mismatch_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":340:12:340:13|Pruning unused register i2c_write_d_3. Make sure that there are no unused intermediate registers.
 @W: CL265 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Removing unused bit 0 of i2c_status_out_last_2(1 downto 0). Either assign all bits or reduce the width of the signal.
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Optimizing register bit i2c_reg_ctrl(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core_APB3.vhd":280:8:280:9|Optimizing register bit i2c_reg_ctrl(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -116,7 +116,7 @@
 @W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":78:0:78:4|Input port bits 31 to 12 of paddr(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vhdl\core\coretimer.vhd":42:8:42:13|Input port bits 31 to 16 of pwdata(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @W: CL247 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Core.vhd":35:4:35:13|Input port bit 0 of clk_div_in(15 downto 0) is unused 
-@W: CL247 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":33:4:33:13|Input port bit 5 of adr_to_mem(5 downto 0) is unused 
+@W: CL247 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":35:4:35:13|Input port bit 5 of adr_to_mem(5 downto 0) is unused 
 @W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":330:2:330:3|Optimizing register bit Blink_Count(19) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":330:2:330:3|Pruning register bit 19 of Blink_Count(19 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL246 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\LED_controller.vhd":55:1:55:10|Input port bits 7 to 1 of fabric_int(7 downto 0) are unused. Assign logic for all port bits or change the input port size.

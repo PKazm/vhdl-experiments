@@ -1,6 +1,6 @@
 Detailed Resource Usage
 Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,uSRAM 1K,Chip Globals
-I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/Primitives,160,70,0,0,0,0,0
-I2C_Core_APB3_0/I2C_Instruction_RAM_0/Primitives,78,17,36,36,0,1,0
-I2C_Core_APB3_0/Primitives,68,46,0,0,0,0,0
+I2C_Core_APB3_0/I2C_Instruction_RAM_0/I2C_Core_0/Primitives,197,70,0,0,0,0,0
+I2C_Core_APB3_0/I2C_Instruction_RAM_0/Primitives,41,13,36,36,0,1,0
+I2C_Core_APB3_0/Primitives,50,39,0,0,0,0,0
 Primitives/Primitives,0,0,0,0,39,0,2

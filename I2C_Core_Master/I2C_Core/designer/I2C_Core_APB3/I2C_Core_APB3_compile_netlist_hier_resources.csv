@@ -1,0 +1,5 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,uSRAM 1K,Chip Globals
+I2C_Instruction_RAM_0/I2C_Core_0/Primitives,228,70,0,0,0,0,0
+I2C_Instruction_RAM_0/Primitives,52,14,36,36,0,1,0
+Primitives/Primitives,0,40,0,0,39,0,2

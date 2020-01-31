@@ -2,10 +2,10 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synplify.exe
 Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
 Hostname:    PHOENIX136DESKY
-Date:        Mon Jan 27 17:11:12 2020
+Date:        Thu Jan 30 17:21:14 2020
 Version:     N-2018.03M-SP1-1
 
-Arguments:   -product synplify_pro I2C_Core_Block_sd_syn.tcl
+Arguments:   -product synplify_pro I2C_LITEON_Op_Sens_test_sd_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -16,104 +16,6 @@ License Option: actel_oem
 
 
 auto_infer_blackbox is not supported in current product.
-TCL script complete: "I2C_Core_Block_sd_syn.tcl"
-log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd.srr"
-Running: synthesis in foreground
-
-Running I2C_Core_Block_sd_syn|synthesis
-
-Running Flow: compile (Compile) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:23 2020
-
-Running Flow: compile_flow (Compile Process) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:23 2020
-
-Running: compiler (Compile Input) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:23 2020
-
-compiler completed
-# Mon Jan 27 17:11:24 2020
-
-Return Code: 0
-Run Time:00h:00m:01s
-
-Running: multi_srs_gen (Multi-srs Generator) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:24 2020
-Up-To-Date: multi_srs_gen. No run necessary
-Complete: Compile Process on I2C_Core_Block_sd_syn|synthesis
-
-Running: premap (Premap) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:24 2020
-
-premap completed with warnings
-# Mon Jan 27 17:11:25 2020
-
-Return Code: 1
-Run Time:00h:00m:01s
-Complete: Compile on I2C_Core_Block_sd_syn|synthesis
-
-Running Flow: map (Map) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:25 2020
-
-Running: fpga_mapper (Map & Optimize) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:25 2020
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_Core_Block_sd_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd.srm
-
-fpga_mapper completed with warnings
-# Mon Jan 27 17:11:29 2020
-
-Return Code: 1
-Run Time:00h:00m:04s
-Complete: Map on I2C_Core_Block_sd_syn|synthesis
-Complete: Logic Synthesis on I2C_Core_Block_sd_syn|synthesis
-0log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd.srr"
-Running: synthesis in foreground
-
-Running I2C_Core_Block_sd_syn|synthesis
-
-Running Flow: compile (Compile) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:44 2020
-
-Running Flow: compile_flow (Compile Process) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:44 2020
-
-Running: compiler (Compile Input) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:44 2020
-
-compiler completed
-# Mon Jan 27 17:11:44 2020
-
-Return Code: 0
-Run Time:00h:00m:00s
-
-Running: multi_srs_gen (Multi-srs Generator) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:44 2020
-Up-To-Date: multi_srs_gen. No run necessary
-Complete: Compile Process on I2C_Core_Block_sd_syn|synthesis
-
-Running: premap (Premap) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:45 2020
-
-premap completed with warnings
-# Mon Jan 27 17:11:46 2020
-
-Return Code: 1
-Run Time:00h:00m:01s
-Complete: Compile on I2C_Core_Block_sd_syn|synthesis
-
-Running Flow: map (Map) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:46 2020
-
-Running: fpga_mapper (Map & Optimize) on I2C_Core_Block_sd_syn|synthesis
-# Mon Jan 27 17:11:46 2020
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\synwork\I2C_Core_Block_sd_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\synthesis\I2C_Core_Block_sd.srm
-
-fpga_mapper completed with warnings
-# Mon Jan 27 17:11:49 2020
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Map on I2C_Core_Block_sd_syn|synthesis
-Complete: Logic Synthesis on I2C_Core_Block_sd_syn|synthesis
-0exit status=0
+TCL script complete: "I2C_LITEON_Op_Sens_test_sd_syn.tcl"
+exit status=0
 License checkin: synplifypro_actel

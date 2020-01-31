@@ -353,6 +353,8 @@ begin
 		if(PRESETN = '0') then
 			Bright_Count <= (others => '0');
 			PWMs <= (others => '1');
+			CH0_Value <= (others => '0');
+			CH1_Value <= (others => '0');
 		elsif(rising_edge(PCLK100)) then
 			-- Bright_Count simply overflows to accomodate Raw Light Sensor Data
 			Bright_Count <= Bright_Count + 1;
@@ -422,6 +424,7 @@ begin
 	-- END outputs directly to board pins
 
 	INT <= '0' when to_integer(unsigned(INT_reg)) = 0 else '1';
+	RST_out <= PRESETN;
 
    ---- architecture body
 end architecture_LED_Controller;

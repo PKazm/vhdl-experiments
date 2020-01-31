@@ -47,9 +47,9 @@ architecture behavioral of I2C_Instruction_RAM_tb is
     constant FILT_LENGTH_CONST : natural := 3;
 
     signal adr_to_mem : std_logic_vector(5 downto 0);
-    signal data_to_mem : std_logic_vector(7 downto 0);
-    signal bus_active : std_logic;
-    signal bus_rw_instr : std_logic;
+    signal bus_to_mem : std_logic_vector(7 downto 0);
+    signal bus_op_req : std_logic;
+    signal mem_instr_sel : std_logic;
     signal bus_w_en : std_logic;
     signal seq_enable : std_logic;
     signal i2c_initiate : std_logic;
@@ -59,6 +59,7 @@ architecture behavioral of I2C_Instruction_RAM_tb is
     signal mem_to_bus : std_logic_vector(7 downto 0);
     signal mem_done : std_logic;
     signal seq_finished : std_logic;
+    signal seq_cnt_out : std_logic_vector(5 downto 0);
     signal i2c_bus_busy : std_logic;
     signal i2c_int : std_logic;
     signal i2c_status_out : std_logic_vector(1 downto 0);
@@ -98,21 +99,19 @@ architecture behavioral of I2C_Instruction_RAM_tb is
     -- i2c core spies
 
     -- i2c RAM spies
-    type reg_seq_type is array(INSTR_SEQ_SIZE_CONST - 1 downto 0) of std_logic_vector(9 downto 0);
+    type reg_seq_type is array((INSTR_SEQ_SIZE_CONST * 2) - 1 downto 0) of std_logic_vector(7 downto 0);
     signal i2c_seq_regs_spy : reg_seq_type;
 
     signal i2c_initiate_sig_spy : std_logic;
-    signal uSRAM_A_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal uSRAM_A_DOUT_sig_spy : std_logic_vector(9 downto 0);
-    signal uSRAM_B_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal uSRAM_B_DOUT_sig_spy : std_logic_vector(9 downto 0);
-    signal uSRAM_C_BLK_sig_spy : std_logic;
-    signal uSRAM_C_ADDR_sig_spy : std_logic_vector(5 downto 0);
-    signal uSRAM_C_DIN_sig_spy : std_logic_vector(9 downto 0);
-    signal from_bus_spy : std_logic;
-    signal write_data_spy : std_logic;
-    signal instr_bits_to_mem_spy : std_logic_vector(1 downto 0);
-    signal data_bits_to_mem_spy : std_logic_vector(7 downto 0);
+    signal uSRAM_A_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal uSRAM_A_DOUT_sig_spy : std_logic_vector(7 downto 0);
+    signal uSRAM_B_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal uSRAM_B_DOUT_sig_spy : std_logic_vector(7 downto 0);
+    signal uSRAM_C_WEN_sig_spy : std_logic;
+    signal uSRAM_C_ADDR_sig_spy : std_logic_vector(6 downto 0);
+    signal uSRAM_C_DIN_sig_spy : std_logic_vector(7 downto 0);
+    signal seq_selected_spy : std_logic;
+    signal write_en_spy : std_logic;
     signal mem_delay_cnt_spy : unsigned (1 downto 0);
     type seq_states is(idle, next_instr, do_instr, read_i2c);
     signal seq_state_cur_spy : seq_states;
@@ -129,10 +128,10 @@ architecture behavioral of I2C_Instruction_RAM_tb is
             PCLK : in std_logic;
             RSTn : in std_logic;
             adr_to_mem : in std_logic_vector(5 downto 0);
-            data_to_mem : in std_logic_vector(7 downto 0);
-            bus_active : in std_logic;
-            bus_rw_instr : in std_logic;
+            bus_to_mem : in std_logic_vector(7 downto 0);
+            mem_instr_sel : in std_logic;
             bus_w_en : in std_logic;
+            bus_op_req : in std_logic;
             seq_enable : in std_logic;
             i2c_initiate : in std_logic;
             i2c_instruct : in std_logic_vector(2 downto 0);
@@ -145,6 +144,7 @@ architecture behavioral of I2C_Instruction_RAM_tb is
             mem_to_bus : out std_logic_vector(7 downto 0);
             mem_done : out std_logic;
             seq_finished : out std_logic;
+            seq_cnt_out : out std_logic_vector(5 downto 0);
             i2c_bus_busy : out std_logic;
             i2c_int : out std_logic;
             i2c_status_out : out std_logic_vector(1 downto 0);
@@ -190,9 +190,9 @@ begin
             PCLK => SYSCLK,
             RSTn => NSYSRESET,
             adr_to_mem => adr_to_mem,
-            data_to_mem => data_to_mem,
-            bus_active => bus_active,
-            bus_rw_instr => bus_rw_instr,
+            bus_to_mem => bus_to_mem,
+            bus_op_req => bus_op_req,
+            mem_instr_sel => mem_instr_sel,
             bus_w_en => bus_w_en,
             seq_enable => seq_enable,
             i2c_initiate => i2c_initiate,
@@ -206,6 +206,7 @@ begin
             mem_to_bus => mem_to_bus,
             mem_done => mem_done,
             seq_finished => seq_finished,
+            seq_cnt_out => seq_cnt_out,
             i2c_bus_busy => i2c_bus_busy,
             i2c_int => i2c_int,
             i2c_status_out => i2c_status_out,
@@ -228,13 +229,11 @@ begin
         init_signal_spy("I2C_Instruction_RAM_0/uSRAM_A_DOUT_sig", "uSRAM_A_DOUT_sig_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/uSRAM_B_ADDR_sig", "uSRAM_B_ADDR_sig_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/uSRAM_B_DOUT_sig", "uSRAM_B_DOUT_sig_spy", 1, -1);
-        init_signal_spy("I2C_Instruction_RAM_0/uSRAM_C_BLK_sig", "uSRAM_C_BLK_sig_spy", 1, -1);
+        init_signal_spy("I2C_Instruction_RAM_0/uSRAM_C_WEN_sig", "uSRAM_C_WEN_sig_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/uSRAM_C_ADDR_sig", "uSRAM_C_ADDR_sig_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/uSRAM_C_DIN_sig", "uSRAM_C_DIN_sig_spy", 1, -1);
-        init_signal_spy("I2C_Instruction_RAM_0/from_bus", "from_bus_spy", 1, -1);
-        init_signal_spy("I2C_Instruction_RAM_0/write_data", "write_data_spy", 1, -1);
-        init_signal_spy("I2C_Instruction_RAM_0/instr_bits_to_mem", "instr_bits_to_mem_spy", 1, -1);
-        init_signal_spy("I2C_Instruction_RAM_0/data_bits_to_mem", "data_bits_to_mem_spy", 1, -1);
+        init_signal_spy("I2C_Instruction_RAM_0/seq_selected", "seq_selected_spy", 1, -1);
+        init_signal_spy("I2C_Instruction_RAM_0/write_en", "write_en_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/mem_delay_cnt", "mem_delay_cnt_spy", 1, -1);
         init_signal_spy("I2C_Instruction_RAM_0/seq_state_cur", "seq_state_cur_spy", 1, -1);
         
@@ -262,15 +261,17 @@ begin
     SDA_slave <= '0' when i_did_ack_spy = '1' and i_i2c_instr_reg_spy = "100" else '1';
 
     THE_STUFF : process
-		variable seq_reg : std_logic_vector(9 downto 0);
+		variable seq_reg : std_logic_vector(10 downto 0);
+        variable address_intermediate : std_logic_vector(5 downto 0) := (others => '0');
+        variable readback_reg : std_logic_vector(10 downto 0) := (others => '0');
     begin
 
         SCL_slave <= '1';
 
         adr_to_mem <= (others => '0');
-        data_to_mem <= (others => '0');
-        bus_active <= '0';
-        bus_rw_instr <= '0';
+        bus_to_mem <= (others => '0');
+        bus_op_req <= '0';
+        mem_instr_sel <= '0';
         bus_w_en <= '0';
 
         seq_enable <= '0';
@@ -284,67 +285,67 @@ begin
         --=========================================================================
 
 
-        bus_active <= '1';
+        bus_op_req <= '1';
         -- write to all RAM locations via the input signals
         for i in 0 to INSTR_SEQ_SIZE_CONST - 1 loop
             case i is
-                when 0 => seq_reg := "01" & "00000001";  -- start
-                when 1 => seq_reg := "10" & "01010010";  -- optical sensor address + write
-                when 2 => seq_reg := "10" & X"88";  -- optical sensor register address
-                when 3 => seq_reg := "01" & "00000011";  -- repeated start
-                when 4 => seq_reg := "10" & "01010011";  -- optical sensor address + read
-                when 5 => seq_reg := "11" & X"00";  -- sensor data
-                when 6 => seq_reg := "01" & "00000011";  -- repeated start
-                when 7 => seq_reg := "10" & "01010010";  -- optical sensor address + write
-                when 8 => seq_reg := "10" & X"89";  -- optical sensor register address
-                when 9 => seq_reg := "01" & "00000011";  -- repeated start
-                when 10 => seq_reg := "10" & "01010011";  -- optical sensor address + read
-                when 11 => seq_reg := "11" & X"00";  -- sensor data
-                when 12 => seq_reg := "01" & "00000011";  -- repeated start
-                when 13 => seq_reg := "10" & "01010010";  -- optical sensor address + write
-                when 14 => seq_reg := "10" & X"8A";  -- optical sensor register address
-                when 15 => seq_reg := "01" & "00000011";  -- repeated start
-                when 16 => seq_reg := "10" & "01010011";  -- optical sensor address + read
-                when 17 => seq_reg := "11" & X"00";  -- sensor data
-                when 18 => seq_reg := "01" & "00000011";  -- repeated start
-                when 19 => seq_reg := "10" & "01010010";  -- optical sensor address + write
-                when 20 => seq_reg := "10" & X"8B";  -- optical sensor register address
-                when 21 => seq_reg := "01" & "00000011";  -- repeated start
-                when 22 => seq_reg := "10" & "01010011";  -- optical sensor address + read
-                when 23 => seq_reg := "11" & X"00";  -- sensor data
-                when 24 => seq_reg := "01" & "00000010";  -- stop
-                when 30 => seq_reg := "01" & "00000001";    -- start
-                when 63 => seq_reg := "01" & "00000010";    -- stop
-                when others => seq_reg := "00" & X"00";
+                when 0 => seq_reg := "001" & "00000001";  -- start
+                when 1 => seq_reg := "100" & "01010010";  -- optical sensor address + write
+                when 2 => seq_reg := "100" & X"88";  -- optical sensor register address
+                when 3 => seq_reg := "011" & "00000011";  -- repeated start
+                when 4 => seq_reg := "100" & "01010011";  -- optical sensor address + read
+                when 5 => seq_reg := "101" & X"00";  -- sensor data
+                when 6 => seq_reg := "011" & "00000011";  -- repeated start
+                when 7 => seq_reg := "100" & "01010010";  -- optical sensor address + write
+                when 8 => seq_reg := "100" & X"89";  -- optical sensor register address
+                when 9 => seq_reg := "011" & "00000011";  -- repeated start
+                when 10 => seq_reg := "100" & "01010011";  -- optical sensor address + read
+                when 11 => seq_reg := "101" & X"00";  -- sensor data
+                when 12 => seq_reg := "011" & "00000011";  -- repeated start
+                when 13 => seq_reg := "100" & "01010010";  -- optical sensor address + write
+                when 14 => seq_reg := "100" & X"8A";  -- optical sensor register address
+                when 15 => seq_reg := "011" & "00000011";  -- repeated start
+                when 16 => seq_reg := "100" & "01010011";  -- optical sensor address + read
+                when 17 => seq_reg := "101" & X"00";  -- sensor data
+                when 18 => seq_reg := "011" & "00000011";  -- repeated start
+                when 19 => seq_reg := "100" & "01010010";  -- optical sensor address + write
+                when 20 => seq_reg := "100" & X"8B";  -- optical sensor register address
+                when 21 => seq_reg := "011" & "00000011";  -- repeated start
+                when 22 => seq_reg := "100" & "01010011";  -- optical sensor address + read
+                when 23 => seq_reg := "101" & X"00";  -- sensor data
+                when 24 => seq_reg := "010" & "00000010";  -- stop
+                when 30 => seq_reg := "001" & "00000001";    -- start
+                when 63 => seq_reg := "010" & "00000010";    -- stop
+                when others => seq_reg := "000" & X"00";
             end case;
 
 
             --==================================================================
             -- write data of seq_reg to RAM
             adr_to_mem <= std_logic_vector(to_unsigned(i, adr_to_mem'length));
-            data_to_mem <= seq_reg(7 downto 0);
-            bus_rw_instr <= '0';
-            --bus_w_en <= '0';
-
+            bus_to_mem <= seq_reg(7 downto 0);
+            mem_instr_sel <= '0';
             bus_w_en <= '1';
+
+            bus_op_req <= '1';
 
             wait for ( SYSCLK_PERIOD * 1);
             if(mem_done /= '1') then
                 wait until (mem_done = '1');
             end if;
 
-            bus_w_en <= '0';
+            bus_op_req <= '0';
             wait for ( SYSCLK_PERIOD * 1);
 
             --==================================================================
             -- write instruction of seq_reg to RAM
 
             adr_to_mem <= std_logic_vector(to_unsigned(i, adr_to_mem'length));
-            data_to_mem <= "000000" & seq_reg(9 downto 8);
-            bus_rw_instr <= '1';
-            --bus_w_en <= '0';
-
+            bus_to_mem <= "00000" & seq_reg(10 downto 8);
+            mem_instr_sel <= '1';
             bus_w_en <= '1';
+
+            bus_op_req <= '1';
 
             wait for ( SYSCLK_PERIOD * 1);
             if(mem_done /= '1') then
@@ -352,20 +353,22 @@ begin
             end if;
 
 
-            bus_w_en <= '0';
+            bus_op_req <= '0';
             wait for ( SYSCLK_PERIOD * 1);
 
-            assert (seq_reg = i2c_seq_regs_spy(i)) report "RAM write mismatch loc : " &
+            address_intermediate := std_logic_vector(to_unsigned(i, address_intermediate'length));
+            readback_reg := i2c_seq_regs_spy(to_integer(unsigned(address_intermediate & '1')))(2 downto 0) & i2c_seq_regs_spy(to_integer(unsigned(address_intermediate & '0')));
+            assert (seq_reg = readback_reg) report "RAM write mismatch loc : " &
                                                             integer'image(i) & " - " &
                                                             to_string(seq_reg) & " /= " &
-                                                            to_string(i2c_seq_regs_spy(i));
+                                                            to_string(readback_reg);
 
         end loop;
 
         adr_to_mem <= (others => '0');
-        data_to_mem <= (others => '0');
-        bus_active <= '0';
-        bus_rw_instr <= '0';
+        bus_to_mem <= (others => '0');
+        bus_op_req <= '0';
+        mem_instr_sel <= '0';
         bus_w_en <= '0';
 
         seq_enable <= '0';
@@ -389,9 +392,9 @@ begin
         seq_enable <= '0';
 
         adr_to_mem <= (others => '0');
-        data_to_mem <= (others => '0');
-        bus_active <= '0';
-        bus_rw_instr <= '0';
+        bus_to_mem <= (others => '0');
+        bus_op_req <= '0';
+        mem_instr_sel <= '0';
         bus_w_en <= '0';
 
         seq_enable <= '0';
@@ -456,7 +459,8 @@ begin
         --=========================================================================
         -- read I2C RAM registers
 
-        bus_active <= '1';
+        bus_w_en <= '0';
+        --bus_op_req <= '1';
 
         for i in 0 to INSTR_SEQ_SIZE_CONST - 1 loop
 
@@ -464,7 +468,7 @@ begin
             --==================================================================
             -- read data of RAM to seq_reg
             adr_to_mem <= std_logic_vector(to_unsigned(i, adr_to_mem'length));
-            bus_rw_instr <= '0';
+            mem_instr_sel <= '0';
 
             wait for ( SYSCLK_PERIOD * 2);
             --if(mem_done /= '1') then
@@ -479,27 +483,29 @@ begin
             
 
             adr_to_mem <= std_logic_vector(to_unsigned(i, adr_to_mem'length));
-            bus_rw_instr <= '1';
+            mem_instr_sel <= '1';
 
             wait for ( SYSCLK_PERIOD * 2);
             --if(mem_done /= '1') then
             --    wait until (mem_done = '1');
             --end if;
-            seq_reg(9 downto 8) := mem_to_bus(1 downto 0);
+            seq_reg(10 downto 8) := mem_to_bus(2 downto 0);
             
             wait for ( SYSCLK_PERIOD * 1);
 
-            assert (seq_reg = i2c_seq_regs_spy(i)) report "RAM read mismatch loc : " &
+            address_intermediate := std_logic_vector(to_unsigned(i, address_intermediate'length));
+            readback_reg := i2c_seq_regs_spy(to_integer(unsigned(address_intermediate & '1')))(2 downto 0) & i2c_seq_regs_spy(to_integer(unsigned(address_intermediate & '0')));
+            assert (seq_reg = readback_reg) report "RAM write mismatch loc : " &
                                                             integer'image(i) & " - " &
                                                             to_string(seq_reg) & " /= " &
-                                                            to_string(i2c_seq_regs_spy(i));
+                                                            to_string(readback_reg);
 
         end loop;
 
         adr_to_mem <= (others => '0');
-        data_to_mem <= (others => '0');
-        bus_active <= '0';
-        bus_rw_instr <= '0';
+        bus_to_mem <= (others => '0');
+        bus_op_req <= '0';
+        mem_instr_sel <= '0';
         bus_w_en <= '0';
 
         seq_enable <= '0';
@@ -509,7 +515,7 @@ begin
 
         report "RAM read complete";
 
-        bus_active <= '0';
+        bus_op_req <= '0';
 
         wait;
     end process;

@@ -24,26 +24,18 @@ M = mandatory, O = optional, n/a = not applicable
 
 ## Instruction RAM
 
-There is a configurable Instruction RAM which can store up to 64 I2C instructions (START, STOP, DATA, etc.). This limit is due the available address bits being 6 for the RAM location. This RAM is inferred to a uSRAM block by Synplify Pro and initialized to unknown values (classic BRAM). Each RAM location consists of 10 bits where [9:8] store the instruction and [7:0] store the data. When an instruction sequence is started the I2C Master will iterate through each RAM location and perform the instruction found there in accordance with the table below.
+There is a configurable Instruction RAM which can store up to 64 I2C instructions (START, STOP, DATA, etc.). This limit is due the available address bits being 6 for the RAM location. This RAM is inferred to a uSRAM block by Synplify Pro and initialized to unknown values (classic BRAM). Each address as accessed via APB consists of 2 BRAM locations each 8 bits wide. RAM locations ending in '0' hold the data portion of the address while RAM locations ending in '1' hold the instruction portion. When an instruction sequence is started the I2C Master will iterate through each RAM location and perform the instruction found there in accordance with the table below.
 
 | Bits | Function |
 | :---: | --- |
-| 00 | No Operation |
-| 01 | Special Operation |
-| 10 | Write Operation |
-| 11 | Read Operation |
-
-Special Operations are: START, STOP, and Repeated START.
-These are stored in the LSB of the accompanying Data bits of each RAM location and are a subset of the same values that would be written directly to the I2C control register in manual control.
-
-| Bits | Operation |
-| :---: | --- |
 | 000 | No Operation |
-| 001 | START |
-| 010 | STOP |
-| 011 | Repeated START |
+| 001 | START Operation |
+| 010 | STOP Operation |
+| 011 | Repeated START Operation |
+| 100 | Write Operation |
+| 101 | Read Operation |
 
-If a read operation is performed the returning data will be stored in the Data bits of the current location such that "11" & DATA8 will be stored in the RAM location at the end of the I2C operation. These can be read by the Bus when the sequence has completed.
+If a read operation is performed the data read from the SDA line will be stored in the Data location associated with the read instruction at the end of the I2C operation. These values (and all RAM locations) can be read by the Bus when the sequence has completed.
 
 ## Interrupt Based Manual Control
 
@@ -53,8 +45,8 @@ The I2C Master can be controlled on a per operation level by writing to the cont
 ## Resources Used
 Results of I2C synthesis from within my test project for a Smartfusion2 M2S010:
 
-4LUT: 343, DFF: 131, uSRAM: 1
+4LUT: 290, DFF: 122, uSRAM: 1
 
 Standalone synthesis timing estimate:
 
-172Mhz
+159Mhz

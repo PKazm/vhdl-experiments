@@ -24,19 +24,19 @@ Part:			M2S010TQ144STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      413                100 %                
+SLE      403                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd:	413 (25.37 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd:	403 (24.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           904                100 %                
-ARI1          235                100 %                
+CFG           928                100 %                
+ARI1          232                100 %                
 BLACK BOX     4                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd:	1143 (70.21 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd:	1164 (71.02 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -70,18 +70,18 @@ Instance path:   I2C_LITEON_Op_Sens_test_sd.COREABC_C0
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      70                 16.9 %               
+SLE      69                 17.1 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	70 (4.30 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	69 (4.21 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      462                51.1 %               
-ARI1     52                 22.1 %               
+CFG      528                56.9 %               
+ARI1     49                 21.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	514 (31.57 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	577 (35.20 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -89,7 +89,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     4                  80 %                 
 =====================================================
-Total MEMORY ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	4 (0.25 % Utilization)
+Total MEMORY ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.COREABC_C0:	4 (0.24 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -107,18 +107,18 @@ Instance path:   COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      70                 16.9 %               
+SLE      69                 17.1 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	70 (4.30 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	69 (4.21 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      462                51.1 %               
-ARI1     52                 22.1 %               
+CFG      528                56.9 %               
+ARI1     49                 21.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	514 (31.57 % Utilization)
+Total COMBINATIONAL LOGIC in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	577 (35.20 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -126,7 +126,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     4                  80 %                 
 =====================================================
-Total MEMORY ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	4 (0.25 % Utilization)
+Total MEMORY ELEMENTS in the block COREABC_C0.COREABC_C0_COREABC_C0_0_COREABC:	4 (0.24 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -144,17 +144,17 @@ Instance path:   COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUC
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      26                 6.3 %                
+SLE      25                 6.2 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	26 (1.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	25 (1.53 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      184                20.4 %               
+CFG      193                20.8 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	184 (11.30 % Utilization)
+Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_INSTRUCTIONS:	193 (11.78 % Utilization)
 
 ---------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   COREABC_C0_COREABC_C0_0_RAMBLOCKS   ########
@@ -164,7 +164,7 @@ Instance path:   COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOC
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      1                  0.2420 %             
+SLE      1                  0.2480 %             
 =================================================
 Total SEQUENTIAL ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	1 (0.06 % Utilization)
 
@@ -172,9 +172,9 @@ Total SEQUENTIAL ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      19                 2.1 %                
+CFG      22                 2.37 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	19 (1.17 % Utilization)
+Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	22 (1.34 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -182,7 +182,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     4                  80 %                 
 =====================================================
-Total MEMORY ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	4 (0.25 % Utilization)
+Total MEMORY ELEMENTS in the block COREABC_C0_COREABC_C0_0_COREABC.COREABC_C0_COREABC_C0_0_RAMBLOCKS:	4 (0.24 % Utilization)
 
 --------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   COREABC_C0_COREABC_C0_0_RAM128X8   ########
@@ -200,6 +200,14 @@ Total MEMORY ELEMENTS in the block COREABC_C0_COREABC_C0_0_RAMBLOCKS.COREABC_C0_
 ########   Utilization report for  cell:   COREABC_C0_COREABC_C0_0_RAM128X8_0   ########
 Instance path:   COREABC_C0_COREABC_C0_0_RAMBLOCKS.COREABC_C0_COREABC_C0_0_RAM128X8_0   
 ========================================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      8                  0.8620 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block COREABC_C0_COREABC_C0_0_RAMBLOCKS.COREABC_C0_COREABC_C0_0_RAM128X8_0:	8 (0.49 % Utilization)
+
 
 MEMORY ELEMENTS
 Name         Total elements     Utilization     Notes
@@ -240,9 +248,9 @@ Instance path:   I2C_LITEON_Op_Sens_test_sd.CoreAPB3_C0
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      2                  0.2210 %             
+CFG      26                 2.8 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.CoreAPB3_C0:	2 (0.12 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.CoreAPB3_C0:	26 (1.59 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   CoreAPB3   ########
@@ -252,9 +260,9 @@ Instance path:   CoreAPB3_C0.CoreAPB3
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      2                  0.2210 %             
+CFG      26                 2.8 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreAPB3_C0.CoreAPB3:	2 (0.12 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreAPB3_C0.CoreAPB3:	26 (1.59 % Utilization)
 
 -----------------------------------------------------------------------
 ########   Utilization report for  cell:   COREAPB3_MUXPTOB3   ########
@@ -264,9 +272,9 @@ Instance path:   CoreAPB3.COREAPB3_MUXPTOB3
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      1                  0.1110 %             
+CFG      23                 2.48 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	1 (0.06 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	23 (1.40 % Utilization)
 
 ------------------------------------------------------------------
 ########   Utilization report for  cell:   CoreTimer_C0   ########
@@ -276,18 +284,18 @@ Instance path:   I2C_LITEON_Op_Sens_test_sd.CoreTimer_C0
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      70                 16.9 %               
+SLE      70                 17.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.CoreTimer_C0:	70 (4.30 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.CoreTimer_C0:	70 (4.27 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      79                 8.74 %               
-ARI1     27                 11.5 %               
+CFG      80                 8.62 %               
+ARI1     27                 11.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.CoreTimer_C0:	106 (6.51 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.CoreTimer_C0:	107 (6.53 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   CoreTimer   ########
@@ -297,18 +305,18 @@ Instance path:   CoreTimer_C0.CoreTimer
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      70                 16.9 %               
+SLE      70                 17.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block CoreTimer_C0.CoreTimer:	70 (4.30 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block CoreTimer_C0.CoreTimer:	70 (4.27 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      79                 8.74 %               
-ARI1     27                 11.5 %               
+CFG      80                 8.62 %               
+ARI1     27                 11.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreTimer_C0.CoreTimer:	106 (6.51 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreTimer_C0.CoreTimer:	107 (6.53 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
@@ -358,18 +366,18 @@ Instance path:   I2C_LITEON_Op_Sens_test_sd.I2C_Core_APB3
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      131                31.7 %               
+SLE      122                30.3 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.I2C_Core_APB3:	131 (8.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.I2C_Core_APB3:	122 (7.44 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      252                27.9 %               
-ARI1     87                 37 %                 
+CFG      170                18.3 %               
+ARI1     87                 37.5 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.I2C_Core_APB3:	339 (20.82 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.I2C_Core_APB3:	257 (15.68 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -387,18 +395,18 @@ Instance path:   I2C_Core_APB3.I2C_Instruction_RAM
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      86                 20.8 %               
+SLE      83                 20.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	86 (5.28 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_Core_APB3.I2C_Instruction_RAM:	83 (5.06 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      156                17.3 %               
-ARI1     71                 30.2 %               
+CFG      120                12.9 %               
+ARI1     71                 30.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_Core_APB3.I2C_Instruction_RAM:	227 (13.94 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_Core_APB3.I2C_Instruction_RAM:	191 (11.65 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -416,18 +424,18 @@ Instance path:   I2C_Instruction_RAM.I2C_Core
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      70                 16.9 %               
+SLE      70                 17.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_Instruction_RAM.I2C_Core:	70 (4.30 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_Instruction_RAM.I2C_Core:	70 (4.27 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      84                 9.29 %               
-ARI1     71                 30.2 %               
+CFG      86                 9.27 %               
+ARI1     71                 30.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_Instruction_RAM.I2C_Core:	155 (9.52 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_Instruction_RAM.I2C_Core:	157 (9.58 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   LED_Controller   ########
@@ -437,18 +445,18 @@ Instance path:   I2C_LITEON_Op_Sens_test_sd.LED_Controller
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      142                34.4 %               
+SLE      142                35.2 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.LED_Controller:	142 (8.72 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block I2C_LITEON_Op_Sens_test_sd.LED_Controller:	142 (8.66 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      107                11.8 %               
-ARI1     69                 29.4 %               
+CFG      122                13.1 %               
+ARI1     69                 29.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.LED_Controller:	176 (10.81 % Utilization)
+Total COMBINATIONAL LOGIC in the block I2C_LITEON_Op_Sens_test_sd.LED_Controller:	191 (11.65 % Utilization)
 
 -----------------------------------------------------------
 ########   Utilization report for  cell:   timer   ########
@@ -458,18 +466,18 @@ Instance path:   LED_Controller.timer
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      19                 4.6 %                
+SLE      19                 4.71 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block LED_Controller.timer:	19 (1.17 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block LED_Controller.timer:	19 (1.16 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      14                 1.55 %               
-ARI1     18                 7.66 %               
+CFG      14                 1.51 %               
+ARI1     18                 7.76 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block LED_Controller.timer:	32 (1.97 % Utilization)
+Total COMBINATIONAL LOGIC in the block LED_Controller.timer:	32 (1.95 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########

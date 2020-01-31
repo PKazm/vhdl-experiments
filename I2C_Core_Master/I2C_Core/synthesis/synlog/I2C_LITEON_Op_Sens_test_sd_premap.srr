@@ -1,4 +1,4 @@
-# Mon Jan 27 17:27:55 2020
+# Fri Jan 31 00:18:31 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -55,9 +55,9 @@ Clock Summary
           Start                                             Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                             Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------------------
-0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         6    
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     429  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     417  
                                                                                                                                   
 0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     39   
 ==================================================================================================================================
@@ -70,15 +70,14 @@ Clock Load Summary
                                                   Clock     Source                                    Clock Pin                                   Non-clock Pin     Non-clock Pin                       
 Clock                                             Load      Pin                                       Seq Example                                 Seq Example       Comb Example                        
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            6         -                                         I2C_Core_APB3_0.i2c_adr_to_mem[5:0].C       -                 -                                   
+System                                            0         -                                         -                                           -                 -                                   
                                                                                                                                                                                                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     429       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LED_Controller_0.timer_interrupt_last.C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     417       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LED_Controller_0.timer_interrupt_last.C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
                                                                                                                                                                                                         
 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     39        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     LED_Controller_0.Blink_Clock.C              -                 FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)
 ========================================================================================================================================================================================================
 
-@W: MT532 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core_apb3.vhd":396:19:396:20|Found signal identified as System clock which controls 6 sequential elements including I2C_Core_APB3_0.i2c_adr_to_mem[5:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":103:4:103:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 429 sequential elements including COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR16\.ram_r0c0.U_RAM64x18. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":103:4:103:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 417 sequential elements including COREABC_C0_0.COREABC_C0_0.URAM\.UR.UG4\.UR16\.ram_r0c0.U_RAM64x18. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\timer.vhd":47:12:47:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock which controls 39 sequential elements including LED_Controller_0.timer_Comp.counter[17:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
@@ -126,20 +125,20 @@ original code -> new code
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_instruction_ram.vhd":331:8:331:9|There are no possible illegal states for state machine seq_state_cur[0:3] (in view: work.I2C_Instruction_RAM(architecture_i2c_instruction_ram)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_instruction_ram.vhd":340:12:340:13|There are no possible illegal states for state machine seq_state_cur[0:3] (in view: work.I2C_Instruction_RAM(architecture_i2c_instruction_ram)); safe FSM implementation is not required.
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 52MB peak: 139MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 52MB peak: 139MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jan 27 17:27:56 2020
+# Fri Jan 31 00:18:33 2020
 
 ###########################################################]

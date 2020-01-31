@@ -71,9 +71,9 @@ constant Sym_RAM_ADR_I2C_CH0_1 : integer := 2;
 constant Sym_RAM_ADR_I2C_CH1_0 : integer := 3;
 constant Sym_RAM_ADR_I2C_CH1_1 : integer := 4;
 constant Sym_RAM_ADR_init_done : integer := 16;
-constant Label_I2C_reads : integer := 40;
-constant Label_I2C_SEQ_INT_CLR : integer := 55;
-constant Label_MAIN : integer := 57;
+constant Label_I2C_reads : integer := 34;
+constant Label_I2C_SEQ_INT_CLR : integer := 49;
+constant Label_MAIN : integer := 51;
 begin
 -- These are the procedure calls to create the instruction sequence
 PROM:
@@ -99,180 +99,181 @@ begin
       when  2 => INS <= doins( iRAMREAD, Sym_RAM_ADR_init_done);
       when  3 => INS <= doins( iCMP, iDAT8, 1);
       when  4 => INS <= doins( iJUMP, iIF, iZERO, Label_I2C_reads);
+      --   i2c start
+      --  APBWRT DAT8 0 0xC0 | 0 0x01
+      --  APBWRT DAT8 0 0x80 | 0 0x00
+      --   light sensor addr + W
+      --  APBWRT DAT8 0 0xC0 | 1 0x04
+      --  APBWRT DAT8 0 0x80 | 1 0x52
       --  
-      when  5 => INS <= doins( iAPBWRT, iDAT8, 0, 193, 16#02#);
-      when  6 => INS <= doins( iAPBWRT, iDAT8, 0, 129, 16#52#);
+      when  5 => INS <= doins( iAPBWRT, iDAT8, 0, 194, 16#04#);
+      when  6 => INS <= doins( iAPBWRT, iDAT8, 0, 130, 16#88#);
       --  
-      when  7 => INS <= doins( iAPBWRT, iDAT8, 0, 194, 16#02#);
-      when  8 => INS <= doins( iAPBWRT, iDAT8, 0, 130, 16#88#);
+      when  7 => INS <= doins( iAPBWRT, iDAT8, 0, 195, 16#03#);
       --  
-      when  9 => INS <= doins( iAPBWRT, iDAT8, 0, 195, 16#01#);
-      when 10 => INS <= doins( iAPBWRT, iDAT8, 0, 131, 16#03#);
+      when  8 => INS <= doins( iAPBWRT, iDAT8, 0, 196, 16#04#);
+      when  9 => INS <= doins( iAPBWRT, iDAT8, 0, 132, 16#53#);
       --  
-      when 11 => INS <= doins( iAPBWRT, iDAT8, 0, 196, 16#02#);
-      when 12 => INS <= doins( iAPBWRT, iDAT8, 0, 132, 16#53#);
+      when 10 => INS <= doins( iAPBWRT, iDAT8, 0, 197, 16#05#);
+      when 11 => INS <= doins( iAPBWRT, iDAT8, 0, 133, 2#00000000#);
       --  
-      when 13 => INS <= doins( iAPBWRT, iDAT8, 0, 197, 16#03#);
-      when 14 => INS <= doins( iAPBWRT, iDAT8, 0, 133, 2#00000000#);
+      when 12 => INS <= doins( iAPBWRT, iDAT8, 0, 198, 16#03#);
       --  
-      when 15 => INS <= doins( iAPBWRT, iDAT8, 0, 198, 16#01#);
-      when 16 => INS <= doins( iAPBWRT, iDAT8, 0, 134, 16#03#);
+      when 13 => INS <= doins( iAPBWRT, iDAT8, 0, 199, 16#04#);
+      when 14 => INS <= doins( iAPBWRT, iDAT8, 0, 135, 16#52#);
       --  
-      when 17 => INS <= doins( iAPBWRT, iDAT8, 0, 199, 16#02#);
-      when 18 => INS <= doins( iAPBWRT, iDAT8, 0, 135, 16#52#);
-      --   i2c NOP
-      when 19 => INS <= doins( iAPBWRT, iDAT8, 0, 200, 16#02#);
-      --   i2c NOP
-      when 20 => INS <= doins( iAPBWRT, iDAT8, 0, 201, 16#01#);
-      --   i2c NOP
-      when 21 => INS <= doins( iAPBWRT, iDAT8, 0, 202, 16#02#);
-      --   i2c NOP
-      when 22 => INS <= doins( iAPBWRT, iDAT8, 0, 203, 16#03#);
-      --   i2c NOP
-      when 23 => INS <= doins( iAPBWRT, iDAT8, 0, 204, 16#01#);
-      --   i2c NOP
-      when 24 => INS <= doins( iAPBWRT, iDAT8, 0, 205, 16#02#);
-      --   i2c NOP
-      when 25 => INS <= doins( iAPBWRT, iDAT8, 0, 206, 16#02#);
-      --   i2c NOP
-      when 26 => INS <= doins( iAPBWRT, iDAT8, 0, 207, 16#01#);
-      --   i2c NOP
-      when 27 => INS <= doins( iAPBWRT, iDAT8, 0, 208, 16#02#);
-      --   i2c NOP
-      when 28 => INS <= doins( iAPBWRT, iDAT8, 0, 209, 16#03#);
-      --   i2c NOP
-      when 29 => INS <= doins( iAPBWRT, iDAT8, 0, 210, 16#01#);
-      --   i2c NOP
-      when 30 => INS <= doins( iAPBWRT, iDAT8, 0, 211, 16#02#);
-      --   i2c NOP
-      when 31 => INS <= doins( iAPBWRT, iDAT8, 0, 212, 16#02#);
-      --   i2c NOP
-      when 32 => INS <= doins( iAPBWRT, iDAT8, 0, 213, 16#01#);
-      --   i2c NOP
-      when 33 => INS <= doins( iAPBWRT, iDAT8, 0, 214, 16#02#);
-      --   i2c NOP
-      when 34 => INS <= doins( iAPBWRT, iDAT8, 0, 215, 16#03#);
-      --   i2c stop
-      when 35 => INS <= doins( iAPBWRT, iDAT8, 0, 216, 16#01#);
-      when 36 => INS <= doins( iAPBWRT, iDAT8, 0, 152, 2#00000010#);
-      when 37 => INS <= doins( iRAMWRT, Sym_RAM_ADR_init_done, iDAT8, 1);
+      when 15 => INS <= doins( iAPBWRT, iDAT8, 0, 200, 16#04#);
+      --  
+      when 16 => INS <= doins( iAPBWRT, iDAT8, 0, 201, 16#03#);
+      --  
+      when 17 => INS <= doins( iAPBWRT, iDAT8, 0, 202, 16#04#);
+      --  
+      when 18 => INS <= doins( iAPBWRT, iDAT8, 0, 203, 16#05#);
+      --  
+      when 19 => INS <= doins( iAPBWRT, iDAT8, 0, 204, 16#03#);
+      --  
+      when 20 => INS <= doins( iAPBWRT, iDAT8, 0, 205, 16#04#);
+      --  
+      when 21 => INS <= doins( iAPBWRT, iDAT8, 0, 206, 16#04#);
+      --  
+      when 22 => INS <= doins( iAPBWRT, iDAT8, 0, 207, 16#03#);
+      --  
+      when 23 => INS <= doins( iAPBWRT, iDAT8, 0, 208, 16#04#);
+      --  
+      when 24 => INS <= doins( iAPBWRT, iDAT8, 0, 209, 16#05#);
+      --  
+      when 25 => INS <= doins( iAPBWRT, iDAT8, 0, 210, 16#03#);
+      --  
+      when 26 => INS <= doins( iAPBWRT, iDAT8, 0, 211, 16#04#);
+      --  
+      when 27 => INS <= doins( iAPBWRT, iDAT8, 0, 212, 16#04#);
+      --  
+      when 28 => INS <= doins( iAPBWRT, iDAT8, 0, 213, 16#03#);
+      --  
+      when 29 => INS <= doins( iAPBWRT, iDAT8, 0, 214, 16#04#);
+      --  
+      when 30 => INS <= doins( iAPBWRT, iDAT8, 0, 215, 16#05#);
+      when 31 => INS <= doins( iRAMWRT, Sym_RAM_ADR_init_done, iDAT8, 1);
       --   start timer
-      when 38 => INS <= doins( iAPBWRT, iDAT, 1, 16#08#, 2#011#);
-      when 39 => INS <= doins( iJUMP, Label_I2C_SEQ_INT_CLR);
+      when 32 => INS <= doins( iAPBWRT, iDAT, 1, 16#08#, 2#011#);
+      when 33 => INS <= doins( iJUMP, Label_I2C_SEQ_INT_CLR);
       -- $I2C_reads
       --   I2C 0x88 - CH1_0
-      when 40 => INS <= doins( iAPBREAD, 0, 133);
-      when 41 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH1_0, iACC);
-      when 42 => INS <= doins( iAPBWRT, iACC, 2, 16#03#);
+      when 34 => INS <= doins( iAPBREAD, 0, 133);
+      when 35 => INS <= doins( iAPBWRT, iACC, 2, 16#03#);
+      when 36 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH1_0, iACC);
       --   I2C 0x89 - CH1_1
-      when 43 => INS <= doins( iAPBREAD, 0, 139);
-      when 44 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH1_1, iACC);
-      when 45 => INS <= doins( iAPBWRT, iACC, 2, 16#04#);
+      when 37 => INS <= doins( iAPBREAD, 0, 139);
+      when 38 => INS <= doins( iAPBWRT, iACC, 2, 16#04#);
+      when 39 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH1_1, iACC);
       --   I2C 0x8A - CH0_0
-      when 46 => INS <= doins( iAPBREAD, 0, 145);
-      when 47 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH0_0, iACC);
-      when 48 => INS <= doins( iAPBWRT, iACC, 2, 16#001#);
+      when 40 => INS <= doins( iAPBREAD, 0, 145);
+      when 41 => INS <= doins( iAPBWRT, iACC, 2, 16#001#);
+      when 42 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH0_0, iACC);
       --   I2C 0x8B - CH0_1
-      when 49 => INS <= doins( iAPBREAD, 0, 151);
-      when 50 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH0_1, iACC);
-      when 51 => INS <= doins( iAPBWRT, iACC, 2, 16#02#);
-      when 52 => INS <= doins( iAPBWRT, iDAT8, 2, 16#00#, 1);
+      when 43 => INS <= doins( iAPBREAD, 0, 151);
+      when 44 => INS <= doins( iAPBWRT, iACC, 2, 16#02#);
+      when 45 => INS <= doins( iRAMWRT, Sym_RAM_ADR_I2C_CH0_1, iACC);
+      when 46 => INS <= doins( iAPBWRT, iDAT8, 2, 16#00#, 1);
       --   generate LED pwm value (16 to 8 bit)
-      when 53 => INS <= doins( iRAMREAD, Sym_RAM_ADR_I2C_CH0_1);
-      when 54 => INS <= doins( iIOWRT, iACC);
+      when 47 => INS <= doins( iRAMREAD, Sym_RAM_ADR_I2C_CH0_1);
+      when 48 => INS <= doins( iIOWRT, iACC);
       -- $I2C_SEQ_INT_CLR
       --   clear timer int
-      when 55 => INS <= doins( iAPBWRT, iDAT, 1, 16#10#, 1);
-      when 56 => INS <= doins( iRETISR);
+      when 49 => INS <= doins( iAPBWRT, iDAT, 1, 16#10#, 1);
+      when 50 => INS <= doins( iRETISR);
       -- $MAIN
-      when 57 => INS <= doins( iRAMWRT, Sym_RAM_ADR_init_done, iDAT8, 0);
-      when 58 => INS <= doins( iAPBWRT, iDAT8, 0, 16#02#, 16#FF#);
-      --  APBWRT DAT8 0 0x03 0x03    // for 100 Mhz
+      when 51 => INS <= doins( iRAMWRT, Sym_RAM_ADR_init_done, iDAT8, 0);
+      --   clk_div of 0x00FF at PCLK:100Mhz gives 392.2kHz
+      --   clk_div of 0x03FF at PCLK:100Mhz gives 97.75kHz
+      when 52 => INS <= doins( iAPBWRT, iDAT8, 0, 16#02#, 16#FF#);
+      --  APBWRT DAT8 0 0x03 0x03
       --   i2c start
-      when 59 => INS <= doins( iAPBWRT, iDAT8, 0, 192, 16#01#);
-      when 60 => INS <= doins( iAPBWRT, iDAT8, 0, 128, 2#00000001#);
+      when 53 => INS <= doins( iAPBWRT, iDAT8, 0, 192, 16#01#);
+      when 54 => INS <= doins( iAPBWRT, iDAT8, 0, 128, 16#00#);
       --   light sensor addr + W
-      when 61 => INS <= doins( iAPBWRT, iDAT8, 0, 193, 16#02#);
-      when 62 => INS <= doins( iAPBWRT, iDAT8, 0, 129, 16#52#);
+      when 55 => INS <= doins( iAPBWRT, iDAT8, 0, 193, 16#04#);
+      when 56 => INS <= doins( iAPBWRT, iDAT8, 0, 129, 16#52#);
       --   light sensor reg addr - ctrl
-      when 63 => INS <= doins( iAPBWRT, iDAT8, 0, 194, 16#02#);
-      when 64 => INS <= doins( iAPBWRT, iDAT8, 0, 130, 16#80#);
+      when 57 => INS <= doins( iAPBWRT, iDAT8, 0, 194, 16#04#);
+      when 58 => INS <= doins( iAPBWRT, iDAT8, 0, 130, 16#80#);
       --   light sensor reg data - ALS_Gain[4:2]; SW_Reset[1]; ALS_Mode[0]
-      when 65 => INS <= doins( iAPBWRT, iDAT8, 0, 195, 16#02#);
-      when 66 => INS <= doins( iAPBWRT, iDAT8, 0, 131, 2#00011101#);
+      when 59 => INS <= doins( iAPBWRT, iDAT8, 0, 195, 16#04#);
+      when 60 => INS <= doins( iAPBWRT, iDAT8, 0, 131, 2#00011101#);
       --   i2c rstart
-      when 67 => INS <= doins( iAPBWRT, iDAT8, 0, 196, 16#01#);
-      when 68 => INS <= doins( iAPBWRT, iDAT8, 0, 132, 2#00000011#);
+      when 61 => INS <= doins( iAPBWRT, iDAT8, 0, 196, 16#03#);
+      when 62 => INS <= doins( iAPBWRT, iDAT8, 0, 132, 16#00#);
       --   light sensor addr + W
-      when 69 => INS <= doins( iAPBWRT, iDAT8, 0, 197, 16#02#);
-      when 70 => INS <= doins( iAPBWRT, iDAT8, 0, 133, 16#52#);
+      when 63 => INS <= doins( iAPBWRT, iDAT8, 0, 197, 16#4#);
+      when 64 => INS <= doins( iAPBWRT, iDAT8, 0, 133, 16#52#);
       --   light sensor reg addr - meas_rate
-      when 71 => INS <= doins( iAPBWRT, iDAT8, 0, 198, 16#02#);
-      when 72 => INS <= doins( iAPBWRT, iDAT8, 0, 134, 16#85#);
+      when 65 => INS <= doins( iAPBWRT, iDAT8, 0, 198, 16#04#);
+      when 66 => INS <= doins( iAPBWRT, iDAT8, 0, 134, 16#85#);
       --   light sensor reg data - ALS_intgr_time[5:3]; ALS_meas_time[2:0]
-      when 73 => INS <= doins( iAPBWRT, iDAT8, 0, 199, 16#02#);
-      when 74 => INS <= doins( iAPBWRT, iDAT8, 0, 135, 2#00000011#);
+      when 67 => INS <= doins( iAPBWRT, iDAT8, 0, 199, 16#04#);
+      when 68 => INS <= doins( iAPBWRT, iDAT8, 0, 135, 2#00001001#);
       --   i2c NOP
-      when 75 => INS <= doins( iAPBWRT, iDAT8, 0, 200, 16#00#);
-      when 76 => INS <= doins( iAPBWRT, iDAT8, 0, 136, 16#89#);
+      when 69 => INS <= doins( iAPBWRT, iDAT8, 0, 200, 16#00#);
+      when 70 => INS <= doins( iAPBWRT, iDAT8, 0, 136, 16#89#);
       --   i2c NOP
-      when 77 => INS <= doins( iAPBWRT, iDAT8, 0, 201, 16#00#);
-      when 78 => INS <= doins( iAPBWRT, iDAT8, 0, 137, 16#03#);
+      when 71 => INS <= doins( iAPBWRT, iDAT8, 0, 201, 16#00#);
+      when 72 => INS <= doins( iAPBWRT, iDAT8, 0, 137, 16#00#);
       --   i2c NOP
-      when 79 => INS <= doins( iAPBWRT, iDAT8, 0, 202, 16#00#);
-      when 80 => INS <= doins( iAPBWRT, iDAT8, 0, 138, 16#53#);
+      when 73 => INS <= doins( iAPBWRT, iDAT8, 0, 202, 16#00#);
+      when 74 => INS <= doins( iAPBWRT, iDAT8, 0, 138, 16#53#);
       --   i2c NOP
-      when 81 => INS <= doins( iAPBWRT, iDAT8, 0, 203, 16#00#);
-      when 82 => INS <= doins( iAPBWRT, iDAT8, 0, 139, 2#00000000#);
+      when 75 => INS <= doins( iAPBWRT, iDAT8, 0, 203, 16#00#);
+      when 76 => INS <= doins( iAPBWRT, iDAT8, 0, 139, 2#00000000#);
       --   i2c NOP
-      when 83 => INS <= doins( iAPBWRT, iDAT8, 0, 204, 16#00#);
-      when 84 => INS <= doins( iAPBWRT, iDAT8, 0, 140, 03);
+      when 77 => INS <= doins( iAPBWRT, iDAT8, 0, 204, 16#00#);
+      when 78 => INS <= doins( iAPBWRT, iDAT8, 0, 140, 16#00#);
       --   i2c NOP
-      when 85 => INS <= doins( iAPBWRT, iDAT8, 0, 205, 16#00#);
-      when 86 => INS <= doins( iAPBWRT, iDAT8, 0, 141, 16#52#);
+      when 79 => INS <= doins( iAPBWRT, iDAT8, 0, 205, 16#00#);
+      when 80 => INS <= doins( iAPBWRT, iDAT8, 0, 141, 16#52#);
       --   i2c NOP
-      when 87 => INS <= doins( iAPBWRT, iDAT8, 0, 206, 16#00#);
-      when 88 => INS <= doins( iAPBWRT, iDAT8, 0, 142, 16#8A#);
+      when 81 => INS <= doins( iAPBWRT, iDAT8, 0, 206, 16#00#);
+      when 82 => INS <= doins( iAPBWRT, iDAT8, 0, 142, 16#8A#);
       --   i2c NOP
-      when 89 => INS <= doins( iAPBWRT, iDAT8, 0, 207, 16#00#);
-      when 90 => INS <= doins( iAPBWRT, iDAT8, 0, 143, 16#03#);
+      when 83 => INS <= doins( iAPBWRT, iDAT8, 0, 207, 16#00#);
+      when 84 => INS <= doins( iAPBWRT, iDAT8, 0, 143, 16#00#);
       --   i2c NOP
-      when 91 => INS <= doins( iAPBWRT, iDAT8, 0, 208, 16#00#);
-      when 92 => INS <= doins( iAPBWRT, iDAT8, 0, 144, 16#53#);
+      when 85 => INS <= doins( iAPBWRT, iDAT8, 0, 208, 16#00#);
+      when 86 => INS <= doins( iAPBWRT, iDAT8, 0, 144, 16#53#);
       --   i2c NOP
-      when 93 => INS <= doins( iAPBWRT, iDAT8, 0, 209, 16#00#);
-      when 94 => INS <= doins( iAPBWRT, iDAT8, 0, 145, 2#00000000#);
+      when 87 => INS <= doins( iAPBWRT, iDAT8, 0, 209, 16#00#);
+      when 88 => INS <= doins( iAPBWRT, iDAT8, 0, 145, 2#00000000#);
       --   i2c NOP
-      when 95 => INS <= doins( iAPBWRT, iDAT8, 0, 210, 16#00#);
-      when 96 => INS <= doins( iAPBWRT, iDAT8, 0, 146, 16#03#);
+      when 89 => INS <= doins( iAPBWRT, iDAT8, 0, 210, 16#00#);
+      when 90 => INS <= doins( iAPBWRT, iDAT8, 0, 146, 16#00#);
       --   i2c NOP
-      when 97 => INS <= doins( iAPBWRT, iDAT8, 0, 211, 16#00#);
-      when 98 => INS <= doins( iAPBWRT, iDAT8, 0, 147, 16#52#);
+      when 91 => INS <= doins( iAPBWRT, iDAT8, 0, 211, 16#00#);
+      when 92 => INS <= doins( iAPBWRT, iDAT8, 0, 147, 16#52#);
       --   i2c NOP
-      when 99 => INS <= doins( iAPBWRT, iDAT8, 0, 212, 16#00#);
-      when 100 => INS <= doins( iAPBWRT, iDAT8, 0, 148, 16#8B#);
+      when 93 => INS <= doins( iAPBWRT, iDAT8, 0, 212, 16#00#);
+      when 94 => INS <= doins( iAPBWRT, iDAT8, 0, 148, 16#8B#);
       --   i2c NOP
-      when 101 => INS <= doins( iAPBWRT, iDAT8, 0, 213, 16#00#);
-      when 102 => INS <= doins( iAPBWRT, iDAT8, 0, 149, 16#03#);
+      when 95 => INS <= doins( iAPBWRT, iDAT8, 0, 213, 16#00#);
+      when 96 => INS <= doins( iAPBWRT, iDAT8, 0, 149, 16#00#);
       --   i2c NOP
-      when 103 => INS <= doins( iAPBWRT, iDAT8, 0, 214, 16#00#);
-      when 104 => INS <= doins( iAPBWRT, iDAT8, 0, 150, 16#53#);
+      when 97 => INS <= doins( iAPBWRT, iDAT8, 0, 214, 16#00#);
+      when 98 => INS <= doins( iAPBWRT, iDAT8, 0, 150, 16#53#);
       --   i2c NOP
-      when 105 => INS <= doins( iAPBWRT, iDAT8, 0, 215, 16#00#);
-      when 106 => INS <= doins( iAPBWRT, iDAT8, 0, 151, 2#00000000#);
+      when 99 => INS <= doins( iAPBWRT, iDAT8, 0, 215, 16#00#);
+      when 100 => INS <= doins( iAPBWRT, iDAT8, 0, 151, 2#00000000#);
       --   i2c stop
-      when 107 => INS <= doins( iAPBWRT, iDAT8, 0, 216, 16#01#);
-      when 108 => INS <= doins( iAPBWRT, iDAT8, 0, 152, 2#00000010#);
+      when 101 => INS <= doins( iAPBWRT, iDAT8, 0, 216, 16#02#);
+      when 102 => INS <= doins( iAPBWRT, iDAT8, 0, 152, 16#00#);
       --   INIT TIMER
       --   TimerLoad
       --   977 for 20Mhz for 50ms
       --   4883 for 100Mhz for 50 ms
-      when 109 => INS <= doins( iAPBWRT, iDAT, 1, 16#00#, 48828);
+      --   19531 for 100Mhz for 200 ms
+      when 103 => INS <= doins( iAPBWRT, iDAT, 1, 16#00#, 10000);
       --   TimerPrescale
-      when 110 => INS <= doins( iAPBWRT, iDAT, 1, 16#0C#, 16#0009#);
+      when 104 => INS <= doins( iAPBWRT, iDAT, 1, 16#0C#, 16#0009#);
       --   start I2C sequence
-      when 111 => INS <= doins( iAPBWRT, iDAT8, 0, 16#00#, 2#00010000#);
-      when 112 => INS <= doins( iHALT);
+      when 105 => INS <= doins( iAPBWRT, iDAT8, 0, 16#00#, 2#00010001#);
+      when 106 => INS <= doins( iHALT);
       when others => INS <= ( others => '-');
    end case;
    ---------------------------------------------------------------------------------------------

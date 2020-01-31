@@ -13,7 +13,7 @@ Hostname: PHOENIX136DESKY
 
 Implementation : synthesis
 
-# Written on Mon Jan 27 17:27:55 2020
+# Written on Fri Jan 31 00:18:32 2020
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_LITEON_Op_Sens_test_sd\synthesis.fdc"
@@ -33,9 +33,9 @@ Clock Summary
           Start                                             Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                             Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------------------------------
-0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         6    
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     429  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     417  
                                                                                                                                   
 0 -       FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     39   
 ==================================================================================================================================
@@ -47,9 +47,9 @@ Clock Load Summary
                                                   Clock     Source                                    Clock Pin                                   Non-clock Pin     Non-clock Pin                       
 Clock                                             Load      Pin                                       Seq Example                                 Seq Example       Comb Example                        
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            6         -                                         I2C_Core_APB3_0.i2c_adr_to_mem[5:0].C       -                 -                                   
+System                                            0         -                                         -                                           -                 -                                   
                                                                                                                                                                                                         
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     429       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LED_Controller_0.timer_interrupt_last.C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     417       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LED_Controller_0.timer_interrupt_last.C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
                                                                                                                                                                                                         
 FCCC_C0_FCCC_C0_0_FCCC|GL1_net_inferred_clock     39        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL1(CCC)     LED_Controller_0.Blink_Clock.C              -                 FCCC_C0_0.FCCC_C0_0.GL1_INST.I(BUFG)
 ========================================================================================================================================================================================================

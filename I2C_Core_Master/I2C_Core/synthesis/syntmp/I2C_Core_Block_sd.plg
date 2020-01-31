@@ -1,17 +1,12 @@
-@P:  Worst Slack : 4.213
-@P:  I2C_Core_Block_sd|PCLK - Estimated Frequency : 172.8 MHz
+@P:  Worst Slack : 3.715
+@P:  I2C_Core_Block_sd|PCLK - Estimated Frequency : 159.1 MHz
 @P:  I2C_Core_Block_sd|PCLK - Requested Frequency : 100.0 MHz
-@P:  I2C_Core_Block_sd|PCLK - Estimated Period : 5.787
+@P:  I2C_Core_Block_sd|PCLK - Estimated Period : 6.285
 @P:  I2C_Core_Block_sd|PCLK - Requested Period : 10.000
-@P:  I2C_Core_Block_sd|PCLK - Slack : 4.213
-@P:  System - Estimated Frequency : 414.9 MHz
-@P:  System - Requested Frequency : 100.0 MHz
-@P:  System - Estimated Period : 2.410
-@P:  System - Requested Period : 10.000
-@P:  System - Slack : 7.590
+@P:  I2C_Core_Block_sd|PCLK - Slack : 3.715
 @P: I2C_Core_Block_sd Part : m2s010tq144std
-@P: I2C_Core_Block_sd Register bits  : 133 
+@P: I2C_Core_Block_sd Register bits  : 122 
 @P: I2C_Core_Block_sd DSP Blocks  : 0
 @P: I2C_Core_Block_sd I/O primitives : 39
 @P: I2C_Core_Block_sd RAM64x18 :  1
-@P:  CPU Time : 0h:00m:02s
+@P:  CPU Time : 0h:00m:03s

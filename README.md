@@ -25,7 +25,7 @@ Project Chronology:
     * Synplify Pro Infer uSRAM blocks
     * Generic controlled generated logic
     * LCD frame buffer
-1. [Delta_Sigma_first (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/Delta_Sigma_first)
+1. [Delta_Sigma_first](https://github.com/PKazm/vhdl-experiments/tree/master/Delta_Sigma_first)
     * Incorporates Nokia5110_Driver_Block
     * LVDS Analog to pulse bitstream
     * Pulse bitstream to quantized integer numbers
@@ -34,6 +34,12 @@ Project Chronology:
 1. [I2C Master (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/I2C_Core_Master)
     * Intended to be a generic I2C master I will use in future projects
     * Incorporates a simple instruction queue to perform complete I2C transactions without calling out to a bus master
+1. [FFT Core (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/FFT_Core)
+    * I need an FFT core, I want to understand FFTs, so I am writing my own FFT
+    * Uses uSRAM to store complex numbers
+    * Uses DSP/Math blocks in both normal mode and DOTP mode
+    * Operates on 9bit signed numbers
+    * 9bit signed twiddle factors with a post multiplication division to prevent overflow
 1. **On The Menu**
     * CVBS (Composite Video) to Nokia5110
          * This project will include an real Sigma-Delta ADC with a real filter

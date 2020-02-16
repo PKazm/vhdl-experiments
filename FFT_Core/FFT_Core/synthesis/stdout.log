@@ -1,0 +1,22 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+Hostname:    PHOENIX136DESKY
+Date:        Sat Feb 15 19:37:58 2020
+Version:     N-2018.03M-SP1-1
+
+Arguments:   -product synplify_pro Twiddle_table_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+"automatic_compile_point" is unrecognized option for current device
+Implementation not found: synthesis
+TCL script complete: "Twiddle_table_syn.tcl"
+exit status=0
+License checkin: synplifypro_actel

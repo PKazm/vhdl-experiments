@@ -16,9 +16,9 @@ The current features are consistent with Single Master capability and can be see
 | Clock Stretching | **Yes** | O | O |
 | 7-bit slave address | **Yes** | M | M |
 | 10-bit slave address | **Yes** | O | O |
-| General Call Address | No | O | O |
-| Software Reset | No | O | O |
-| START byte | No | n/a | O |
+| General Call Address | **Yes** | O | O |
+| Software Reset | **Yes** | O | O |
+| START byte | **Yes** | n/a | O |
 
 M = mandatory, O = optional, n/a = not applicable
 
@@ -43,9 +43,9 @@ The I2C Master can be controlled on a per operation level by writing to the cont
 
 
 ## Resources Used
-Results of I2C synthesis from within my test project for a Smartfusion2 M2S010:
+Results of I2C with 64 instruction locations synthesis from within my test project for a Smartfusion2 M2S010:
 
-4LUT: 290, DFF: 122, uSRAM: 1
+4LUT: 302, DFF: 123, uSRAM: 1
 
 Standalone synthesis timing estimate:
 

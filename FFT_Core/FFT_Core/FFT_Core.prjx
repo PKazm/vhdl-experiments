@@ -36,38 +36,433 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VHDL"
 KEY Vendor "Actel"
-KEY ActiveRoot "FFT::work"
+KEY ActiveRoot "Complex_Mult_test_sd::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014068"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\HARD_MULT\1.0.100\HARD_MULT.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581973983"
+SIZE="246"
+PARENT="<project>\component\work\HARD_MULT_C0\HARD_MULT_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\HARD_MULT_ADDSUB\1.0.100\HARD_MULT_ADDSUB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581986819"
+SIZE="253"
+PARENT="<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014057"
+SIZE="682"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd,hdl"
+STATE="utd"
+TIME="1573066799"
+SIZE="2164"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.vhd,hdl"
+STATE="utd"
+TIME="1573066799"
+SIZE="2108"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582062235"
+SIZE="2515"
+ENDFILE
+VALUE "<project>\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd,hdl"
+STATE="utd"
+TIME="1582062235"
+SIZE="7069"
+PARENT="<project>\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014068"
+SIZE="10451"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.vhd,hdl"
+STATE="utd"
+TIME="1582014068"
+SIZE="3205"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014068"
+SIZE="705"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd,hdl"
+STATE="utd"
+TIME="1582014068"
+SIZE="5573"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581986819"
+SIZE="4477"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd,hdl"
+STATE="utd"
+TIME="1581986819"
+SIZE="3990"
+PARENT="<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581986819"
+SIZE="538"
+PARENT="<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd,hdl"
+STATE="utd"
+TIME="1581986819"
+SIZE="11253"
+PARENT="<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_C0\HARD_MULT_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581973984"
+SIZE="3534"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_C0\HARD_MULT_C0.vhd,hdl"
+STATE="utd"
+TIME="1581973983"
+SIZE="3602"
+PARENT="<project>\component\work\HARD_MULT_C0\HARD_MULT_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.cxf,actgen_cxf"
+STATE="utd"
+TIME="1581973983"
+SIZE="496"
+PARENT="<project>\component\work\HARD_MULT_C0\HARD_MULT_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd,hdl"
+STATE="utd"
+TIME="1581973983"
+SIZE="11224"
+PARENT="<project>\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014057"
+SIZE="2913"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.vhd,hdl"
+STATE="utd"
+TIME="1582014057"
+SIZE="3429"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582014057"
+SIZE="460"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd,hdl"
+STATE="utd"
+TIME="1582014057"
+SIZE="896"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582061659"
+SIZE="2568"
+ENDFILE
+VALUE "<project>\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd,hdl"
+STATE="utd"
+TIME="1582061659"
+SIZE="6271"
+PARENT="<project>\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.ide_des,ide_des"
+STATE="utd"
+TIME="1582009467"
+SIZE="219"
+ENDFILE
 VALUE "<project>\designer\impl1\FFT.ide_des,ide_des"
 STATE="utd"
 TIME="1581661044"
 SIZE="206"
 ENDFILE
+VALUE "<project>\designer\impl1\Twiddle_table.ide_des,ide_des"
+STATE="utd"
+TIME="1581973550"
+SIZE="216"
+ENDFILE
+VALUE "<project>\hdl\bit_extender_8_to_35.vhd,hdl"
+STATE="utd"
+TIME="1581993528"
+SIZE="1097"
+ENDFILE
+VALUE "<project>\hdl\Butterfly_HW_DSP.vhd,hdl"
+STATE="utd"
+TIME="1582061799"
+SIZE="10202"
+ENDFILE
 VALUE "<project>\hdl\FFT.vhd,hdl"
 STATE="utd"
-TIME="1581545594"
-SIZE="4751"
+TIME="1582081548"
+SIZE="13858"
+ENDFILE
+VALUE "<project>\hdl\LFSR_Fib_Gen.vhd,hdl"
+STATE="utd"
+TIME="1582015675"
+SIZE="1473"
 ENDFILE
 VALUE "<project>\hdl\Twiddle_table.vhd,hdl"
 STATE="utd"
-TIME="1581811569"
-SIZE="5932"
+TIME="1582060597"
+SIZE="2491876"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1582016151"
+SIZE="852"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1582016151"
+SIZE="233"
+ENDFILE
+VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1582016147"
+SIZE="7499"
 ENDFILE
 VALUE "<project>\stimulus\FFT_tb.vhd,tb_hdl"
 STATE="utd"
 TIME="1581545606"
 SIZE="4977"
 ENDFILE
+VALUE "<project>\synthesis\Butterfly_HW_DSP.so,so"
+STATE="utd"
+TIME="1582016169"
+SIZE="258"
+ENDFILE
+VALUE "<project>\synthesis\Butterfly_HW_DSP.vm,syn_vm"
+STATE="ood"
+TIME="1582016168"
+SIZE="101761"
+ENDFILE
+VALUE "<project>\synthesis\Butterfly_HW_DSP_syn.prj,prj"
+STATE="utd"
+TIME="1582016184"
+SIZE="1915"
+ENDFILE
+VALUE "<project>\synthesis\Butterfly_HW_DSP_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1582016168"
+SIZE="901"
+ENDFILE
+VALUE "<project>\synthesis\Complex_Mult_test_sd.so,so"
+STATE="utd"
+TIME="1581997562"
+SIZE="266"
+ENDFILE
+VALUE "<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm"
+STATE="utd"
+TIME="1582062488"
+SIZE="13650"
+ENDFILE
+VALUE "<project>\synthesis\Complex_Mult_test_sd_syn.prj,prj"
+STATE="utd"
+TIME="1582000354"
+SIZE="2653"
+ENDFILE
+VALUE "<project>\synthesis\Complex_Mult_test_sd_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1581997562"
+SIZE="798"
+ENDFILE
+VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0.so,so"
+STATE="utd"
+TIME="1582013598"
+SIZE="264"
+ENDFILE
+VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0.vm,syn_vm"
+STATE="ood"
+TIME="1582013597"
+SIZE="15003"
+ENDFILE
+VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0_syn.prj,prj"
+STATE="utd"
+TIME="1582013598"
+SIZE="2331"
+ENDFILE
+VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1582013597"
+SIZE="798"
+ENDFILE
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.so,so"
+STATE="utd"
+TIME="1582015878"
+SIZE="276"
+ENDFILE
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm"
+STATE="utd"
+TIME="1582055497"
+SIZE="104968"
+ENDFILE
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_syn.prj,prj"
+STATE="utd"
+TIME="1582016009"
+SIZE="2756"
+ENDFILE
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1582015877"
+SIZE="952"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "Complex_Mult_test_sd::work"
+FILE "<project>\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd_1.vm,syn_vm)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "Butterfly_HW_DSP::work"
+FILE "<project>\hdl\Butterfly_HW_DSP.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\Butterfly_HW_DSP.edn,syn_edn"
+VALUE "<project>\synthesis\Butterfly_HW_DSP.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.adb,adb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.fdb,fdb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.pdb,pdb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.stp,stp"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP_fp\Butterfly_HW_DSP.pro,pro"
+VALUE "<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\Complex_Mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "HARD_MULT_ADDSUB_C0::work"
+FILE "<project>\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "vhdl_complex_mult_test_sd::work"
+FILE "<project>\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Butterfly_HW_DSP.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\HARD_MULT_ADDSUB_C0.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.edn,syn_edn"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.adb,adb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.fdb,fdb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.pdb,pdb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.stp,stp"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd_fp\vhdl_complex_mult_test_sd.pro,pro"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST Butterfly_HW_DSP
+VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
+ENDLIST
+LIST HARD_MULT_ADDSUB_C0
+VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -78,7 +473,7 @@ Type=max
 RunTime=1000ns
 Resolution=1fs
 VsimOpt=
-EntityName=testbench
+EntityName=Butterfly_HW_DSP_tb
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -97,8 +492,8 @@ Precision=100
 PrecisionBase=ps
 ENDLIST
 LIST ModelSimLibPath
-UseCustomPath=FALSE
-LibraryPath=
+UseCustomPath=TRUE
+LibraryPath=C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled\vlog\SmartFusion2
 ENDLIST
 LIST GlobalFlowOptions
 GenerateHDLAfterSynthesis=FALSE
@@ -138,8 +533,8 @@ NAME="SynplifyProME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -147,7 +542,7 @@ NAME="ModelSimME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l I2C_LITEON_Op_Sens_test_tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -172,6 +567,85 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "Complex_Mult_test_sd::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd_1.vm,syn_vm)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "Butterfly_HW_DSP::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\Butterfly_HW_DSP.edn,syn_edn"
+VALUE "<project>\synthesis\Butterfly_HW_DSP.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\Butterfly_HW_DSP_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.adb,adb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.fdb,fdb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.pdb,pdb"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP.stp,stp"
+VALUE "<project>\designer\impl1\Butterfly_HW_DSP_fp\Butterfly_HW_DSP.pro,pro"
+VALUE "<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\Complex_Mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "HARD_MULT_ADDSUB_C0::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "vhdl_complex_mult_test_sd::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\Butterfly_HW_DSP.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\HARD_MULT_ADDSUB_C0.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.edn,syn_edn"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\vhdl_complex_mult_test_sd_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.adb,adb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.fdb,fdb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.pdb,pdb"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd.stp,stp"
+VALUE "<project>\designer\impl1\vhdl_complex_mult_test_sd_fp\vhdl_complex_mult_test_sd.pro,pro"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -185,14 +659,80 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:Complex_Mult_test_sd_compile_netlist_hier_resources.csv
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;Complex_Mult_test_sd;0
+SmartDesign;vhdl_complex_mult_test_sd;0
+ACTIVEVIEW;vhdl_complex_mult_test_sd
 ENDLIST
 LIST ModuleSubBlockList
-LIST "FFT::work","hdl\FFT.vhd","FALSE","FALSE"
+LIST "bit_extender_8_to_35::work","hdl\bit_extender_8_to_35.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Complex_Mult_test_sd::work","component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd","TRUE","FALSE"
+SUBBLOCK "HARD_MULT_ADDSUB_C0::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd","TRUE","FALSE"
+SUBBLOCK "HARD_MULT_C0::work","component\work\HARD_MULT_C0\HARD_MULT_C0.vhd","TRUE","FALSE"
+SUBBLOCK "bit_extender_8_to_35::work","hdl\bit_extender_8_to_35.vhd","FALSE","FALSE"
+SUBBLOCK "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Butterfly_HW_DSP::work","hdl\Butterfly_HW_DSP.vhd","FALSE","FALSE"
+SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
+ENDLIST
+LIST "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "HARD_MULT_ADDSUB_C0::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd","TRUE","FALSE"
+SUBBLOCK "HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd","FALSE","FALSE"
+ENDLIST
+LIST "HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd","FALSE","FALSE"
+ENDLIST
+LIST "HARD_MULT_C0::work","component\work\HARD_MULT_C0\HARD_MULT_C0.vhd","TRUE","FALSE"
+SUBBLOCK "HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT::work","component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd","FALSE","FALSE"
+ENDLIST
+LIST "HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT::work","component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "vhdl_complex_mult_test_sd::work","component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
+SUBBLOCK "Butterfly_HW_DSP::work","hdl\Butterfly_HW_DSP.vhd","FALSE","FALSE"
+SUBBLOCK "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Butterfly_HW_DSP::work","hdl\Butterfly_HW_DSP.vhd","FALSE","FALSE"
+SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Butterfly_HW_DSP_tb::work","stimulus\Butterfly_HW_DSP_tb.vhd","FALSE","TRUE"
+SUBBLOCK "Butterfly_HW_DSP::work","hdl\Butterfly_HW_DSP.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FFT::work","","FALSE","FALSE"
 ENDLIST
 LIST "FFT_tb::work","stimulus\FFT_tb.vhd","FALSE","TRUE"
-SUBBLOCK "FFT::work","hdl\FFT.vhd","FALSE","FALSE"
+SUBBLOCK "FFT::work","","FALSE","FALSE"
+ENDLIST
+LIST "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

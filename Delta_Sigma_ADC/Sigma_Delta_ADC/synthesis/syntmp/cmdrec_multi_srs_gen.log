@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.FFT  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\FFT_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\FFT_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synlog\FFT_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.FFT -multisrs ..\synwork\FFT_comp.srs -osyn ..\synwork\FFT_mult.srs -log ..\synlog\FFT_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\FFT_comp.srs|io:i|time:1581214104|size:2370|exec:0|csum:3F9F809F331823E5A65E1AF718EDAFC1
+file:..\synwork\FFT_mult.srs|io:o|time:1581214105|size:2002|exec:0|csum:
+file:..\synlog\FFT_multi_srs_gen.srr|io:o|time:1581214105|size:1187|exec:0|csum:
+file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

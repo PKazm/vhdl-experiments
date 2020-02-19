@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+
+Date      :  Tue Feb 18 16:43:55 2020
+Project   :  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core
+Component :  Complex_Mult_test_sd
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/Complex_Mult_test_sd/Complex_Mult_test_sd.vhd
+

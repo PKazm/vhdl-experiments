@@ -1,0 +1,17 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":129:33:129:42|Found ROM Twiddle_Table_0.sin_twid_1[7:0] (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) with 128 words by 8 bits.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":127:33:127:44|Found ROM Twiddle_Table_0.cos_twid_1[8:0] (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) with 128 words by 9 bits.
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_108 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_109 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

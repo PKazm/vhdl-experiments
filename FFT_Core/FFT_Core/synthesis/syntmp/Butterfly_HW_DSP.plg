@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.884
+@P:  Butterfly_HW_DSP|PCLK - Estimated Frequency : 91.9 MHz
+@P:  Butterfly_HW_DSP|PCLK - Requested Frequency : 100.0 MHz
+@P:  Butterfly_HW_DSP|PCLK - Estimated Period : 10.884
+@P:  Butterfly_HW_DSP|PCLK - Requested Period : 10.000
+@P:  Butterfly_HW_DSP|PCLK - Slack : -0.884
+@P: Butterfly_HW_DSP Part : m2s010tq144std
+@P: Butterfly_HW_DSP Register bits  : 70 
+@P: Butterfly_HW_DSP DSP Blocks  : 2
+@P: Butterfly_HW_DSP I/O primitives : 81
+@P:  CPU Time : 0h:00m:02s

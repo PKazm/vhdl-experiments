@@ -9,7 +9,7 @@ t2 = 0:1:N/2 - 1;
 carrier_amp = 3;
 sample1 = carrier_amp*sin(2*pi*3*t/N);
 sample2 = (1/2)*sin(2*pi*50*(t/N));
-noise_multi = .2;
+noise_multi = .1;
 noise = noise_multi*randn(size(t));
 
 signal = sample1+sample2+noise;
@@ -132,8 +132,8 @@ end
 #==============================================================================
 # quantized FFT
 
-twiddle_cos_quant = int32(round((twiddle_cosine) * 2^(data_width)));
-twiddle_sin_quant = int32(round((twiddle_sine) * 2^(data_width)));
+twiddle_cos_quant = int32(round((twiddle_cosine) * (2^(data_width)-1)));
+twiddle_sin_quant = int32(round((twiddle_sine) * (2^(data_width)-1)));
 
 subplot(2,4,4);
 title('twiddle complex int9');
@@ -146,9 +146,10 @@ axis([-a_limit a_limit -a_limit a_limit]);
 grid on;
 hold off;
 
-real_output_quant = int32(round((real_samples/carrier_amp)*2^data_width));
-imag_output_quant = int32(round(imaginary_samples*2^data_width));
+real_output_quant = int32(round((real_samples/carrier_amp)*(2^data_width-1)));
+imag_output_quant = int32(round(imaginary_samples*(2^data_width-1)));
 
+diary on;
 for stage = 1:sample_exp
     DFT_cnt = N/(2^stage);
     # iterate through each sub-DFT
@@ -166,25 +167,42 @@ for stage = 1:sample_exp
             index_other = index_ref + 2^(stage - 1);
             twiddle_index = (butterfly - 1) * twiddle_index_step + 1;
             
-            output = ['ref: ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),', other: ',num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),', twiddle: ',num2str(complex(twiddle_cos_quant(twiddle_index), twiddle_sin_quant(twiddle_index)))];
+            output = ['quant: i_ref ', num2str(index_ref), ', o_ref ', num2str(index_other), ', t_index ', num2str(twiddle_index)];
             disp(output);
+            #output = ['ref: ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),', other: ',num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),', twiddle: ',num2str(complex(twiddle_cos_quant(twiddle_index), twiddle_sin_quant(twiddle_index)))];
+            #disp(output);
             # calc intermediate product of sample 2 and twiddle factor
-            real_temp = floor((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index))/(2^data_width)) + floor((imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index))/(2^data_width));
-            imag_temp = floor((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index))/(2^data_width)) - floor((real_output_quant(index_other) * twiddle_sin_quant(twiddle_index))/(2^data_width));
+            real_temp = floor(((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) + (imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^data_width));
+            imag_temp = floor(((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) - (real_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^data_width));
+
+            output = [num2str(real_temp),' = ',num2str(real_output_quant(index_other)),' * ',num2str(twiddle_cos_quant(twiddle_index)),' + ',num2str(imag_output_quant(index_other)),' * ',num2str(twiddle_sin_quant(twiddle_index))];
+            disp(output);
+            output = [num2str(imag_temp),' = ',num2str(imag_output_quant(index_other)),' * ',num2str(twiddle_cos_quant(twiddle_index)),' - ',num2str(real_output_quant(index_other)),' * ',num2str(twiddle_sin_quant(twiddle_index))];
+            disp(output);
 
             # calc final sum of sample 2
-            real_output_quant(index_other) = real_output_quant(index_ref) - real_temp;
-            imag_output_quant(index_other) = imag_output_quant(index_ref) - imag_temp;
+            real_output_quant(index_other) = floor((real_output_quant(index_ref) - real_temp)/2);
+            imag_output_quant(index_other) = floor((imag_output_quant(index_ref) - imag_temp)/2);
+
+            output = [num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' - ',num2str(complex(real_temp, imag_temp))];
+            disp(output);
             
             # calc final sum of sample 1
-            real_output_quant(index_ref) = real_output_quant(index_ref) + real_temp;
-            imag_output_quant(index_ref) = imag_output_quant(index_ref) + imag_temp;
-            
-            output = ['quant: i_ref ', num2str(index_ref), ', o_ref ', num2str(index_other), ', t_index ', num2str(twiddle_index),' = ', num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))), '; ', num2str(complex(real_output_quant(index_other), imag_output_quant(index_other)))];
+            real_temp2 = floor((real_output_quant(index_ref) + real_temp)/2);
+            imag_temp2 = floor((imag_output_quant(index_ref) + imag_temp)/2);
+
+            output = [num2str(complex(real_temp2, imag_temp2)),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' + ',num2str(complex(real_temp, imag_temp))];
             disp(output);
+
+            real_output_quant(index_ref) = real_temp2;
+            imag_output_quant(index_ref) = imag_temp2;
+            
+            #output = ['quant: i_ref ', num2str(index_ref), ', o_ref ', num2str(index_other), ', t_index ', num2str(twiddle_index),' = ', num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))), '; ', num2str(complex(real_output_quant(index_other), imag_output_quant(index_other)))];
+            #disp(output);
         end
     end
 end
+diary off;
 
 # END quantized FFT
 #==============================================================================
@@ -195,7 +213,7 @@ myP1 = myP2(1:N/2+1);
 myP1 = myP1 .* freq_multi;
 
 complex_synth_quant = complex(real_output_quant, imag_output_quant);
-myP2_quant = uint32(hypot(real_output_quant, imag_output_quant)/(8*N));
+myP2_quant = uint32(hypot(real_output_quant, imag_output_quant));#/(data_width));
 myP1_quant = myP2_quant(1:N/2+1);
 myP1_quant = myP1_quant .* freq_multi;
 

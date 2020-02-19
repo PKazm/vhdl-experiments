@@ -1,0 +1,475 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/simulation
+Eaveraging_filter
+Z1 w1580263377
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z5 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Averaging_Filter.vhd
+Z6 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Averaging_Filter.vhd
+l0
+L24
+V6<]U8P@_7UH5bIUTikn8G0
+!s100 TzaN6h]3V8Bf`PUlSI;`=0
+Z7 OW;C;10.7c;67
+33
+Z8 !s110 1580774610
+!i10b 1
+Z9 !s108 1580774610.000000
+Z10 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Averaging_Filter.vhd|
+Z11 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Averaging_Filter.vhd|
+!i113 1
+Z12 o-2008 -explicit -work presynth -O0
+Z13 tCvgOpt 0
+Aarchitecture_averaging_filter
+R2
+R3
+R4
+DEx4 work 16 averaging_filter 0 22 6<]U8P@_7UH5bIUTikn8G0
+l58
+L42
+V2_C<ff[ZCLiNi9jXbihKE3
+!s100 l9V]lW^zkO]_D@`RD=ZVK2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eaveraging_filter_tb
+Z14 w1580263428
+Z15 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+Z16 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R2
+R3
+R4
+R0
+Z17 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Averaging_Filter_tb.vhd
+Z18 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Averaging_Filter_tb.vhd
+l0
+L37
+Vnkf@aR0a06PAO=I8GI4Hj2
+!s100 j4hFKUVGFMmW]4NW<NR]63
+R7
+33
+Z19 !s110 1580774611
+!i10b 1
+Z20 !s108 1580774611.000000
+Z21 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Averaging_Filter_tb.vhd|
+Z22 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Averaging_Filter_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R15
+R16
+R2
+R3
+R4
+DEx4 work 19 averaging_filter_tb 0 22 nkf@aR0a06PAO=I8GI4Hj2
+l92
+L40
+V=DYiD<Ih9KhVWZUQDLFIL1
+!s100 h9_dc0idG2i4n0lz^W^o13
+R7
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Efft
+Z23 w1581376640
+R2
+R3
+R4
+R0
+Z24 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/FFT.vhd
+Z25 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/FFT.vhd
+l0
+L24
+VQWN4:d^HKS_=hI=Q>MShU0
+!s100 27c15SfQ2Z:^Wi;3T3V2:2
+R7
+33
+Z26 !s110 1581378294
+!i10b 1
+Z27 !s108 1581378294.000000
+Z28 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/FFT.vhd|
+Z29 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/FFT.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_fft
+R2
+R3
+R4
+DEx4 work 3 fft 0 22 QWN4:d^HKS_=hI=Q>MShU0
+l80
+L41
+V3lgF[_kkOe_GSWa1E91C31
+!s100 =TQi01bbaEFgEB4X7_Hc33
+R7
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R12
+R13
+Efft_tb
+Z30 w1581229099
+R15
+R16
+R2
+R3
+R4
+R0
+Z31 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/FFT_tb.vhd
+Z32 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/FFT_tb.vhd
+l0
+L37
+V8NXeNAn:n0NXf@YYSH8V73
+!s100 9[NeeX6C<DSS0A2;Df_c[1
+R7
+33
+Z33 !s110 1581378295
+!i10b 1
+Z34 !s108 1581378295.000000
+Z35 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/FFT_tb.vhd|
+Z36 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/FFT_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R15
+R16
+R2
+R3
+R4
+Z37 DEx4 work 6 fft_tb 0 22 8NXeNAn:n0NXf@YYSH8V73
+l93
+L40
+Z38 VW<`>k[zjT<0WEY8;Ij11Z0
+Z39 !s100 Hz6m95N=FQl2zAg;;BiQ=3
+R7
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R12
+R13
+Emedian_filter
+Z40 w1576124729
+R2
+R3
+R4
+R0
+Z41 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Median_Filter.vhd
+Z42 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Median_Filter.vhd
+l0
+L24
+ViFAfd1z_T>ZmT4h7f`lOd3
+!s100 oPOKBJ=VHFSEfEjP7EYE33
+R7
+33
+Z43 !s110 1576130144
+!i10b 1
+Z44 !s108 1576130144.000000
+Z45 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Median_Filter.vhd|
+Z46 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Median_Filter.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_median_filter
+R2
+R3
+R4
+DEx4 work 13 median_filter 0 22 iFAfd1z_T>ZmT4h7f`lOd3
+l57
+L41
+VaQ^KN_K`KM_HTfnXAfIOM3
+!s100 AT2l9UjA2@>CE2boE5<dO1
+R7
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
+Emedian_filter_tb
+Z47 w1576130129
+R15
+R16
+R2
+R3
+R4
+R0
+Z48 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Median_Filter_tb.vhd
+Z49 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Median_Filter_tb.vhd
+l0
+L37
+V4S58[68:cO7YAiB47nYcX1
+!s100 @38[;A2bWA[fWUW>Hfacg3
+R7
+33
+Z50 !s110 1576130145
+!i10b 1
+Z51 !s108 1576130145.000000
+Z52 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Median_Filter_tb.vhd|
+Z53 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Median_Filter_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R15
+R16
+R2
+R3
+R4
+DEx4 work 16 median_filter_tb 0 22 4S58[68:cO7YAiB47nYcX1
+l92
+L40
+VnojoP>3ogbieE@1SS[MAI3
+!s100 <PW`GG?4fUbhQ]cDPHk6]2
+R7
+33
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R12
+R13
+Epixelbar_creator
+Z54 w1580777831
+R2
+R3
+R4
+R0
+Z55 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Pixelbar_Creator.vhd
+Z56 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Pixelbar_Creator.vhd
+l0
+L24
+V`C>FF`GO:enZzDAe`_C[73
+!s100 aX4`[0b;7UXN7VKebU09F1
+R7
+33
+Z57 !s110 1580777932
+!i10b 1
+Z58 !s108 1580777931.000000
+Z59 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Pixelbar_Creator.vhd|
+Z60 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Pixelbar_Creator.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_pixelbar_creator
+R2
+R3
+R4
+DEx4 work 16 pixelbar_creator 0 22 `C>FF`GO:enZzDAe`_C[73
+l76
+L54
+VEFZA;L`LCIiK]BX>WJkl:2
+!s100 996>^ek:7cJU6NQb]kGX_3
+R7
+33
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R12
+R13
+Epixelbar_creator_tb
+Z61 w1580777908
+R2
+R3
+R4
+R0
+Z62 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Pixelbar_Creator_tb.vhd
+Z63 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Pixelbar_Creator_tb.vhd
+l0
+L33
+V]<Z[eDlj]R9Q]NISf]<dE2
+!s100 `FBWVNEjoY4X8?03gmhz:3
+R7
+33
+Z64 !s110 1580777933
+!i10b 1
+Z65 !s108 1580777933.000000
+Z66 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Pixelbar_Creator_tb.vhd|
+Z67 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Pixelbar_Creator_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 19 pixelbar_creator_tb 0 22 ]<Z[eDlj]R9Q]NISf]<dE2
+l89
+L36
+VZfhlX8QSXZdNd[oOOm2CO1
+!s100 h5NZL^`E2kCdG6l8Ddb@S3
+R7
+33
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R12
+R13
+Esigma_delta_adc_tb
+Z68 w1580774403
+R15
+R2
+R3
+R4
+R0
+Z69 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Sigma_Delta_ADC_tb.vhd
+Z70 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Sigma_Delta_ADC_tb.vhd
+l0
+L36
+V7mXOeEJAL4h3b]7=lWR`N0
+!s100 j1@ZUZ?kPKN8OPPG[CSCI2
+R7
+33
+Z71 !s110 1580774419
+!i10b 1
+Z72 !s108 1580774419.000000
+Z73 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Sigma_Delta_ADC_tb.vhd|
+Z74 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/Sigma_Delta_ADC_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R15
+R2
+R3
+R4
+DEx4 work 18 sigma_delta_adc_tb 0 22 7mXOeEJAL4h3b]7=lWR`N0
+l88
+L39
+VaQK3dKziP[kE2LDWEK;P^2
+!s100 j=_48?EEXWZoMHT`M;5]i0
+R7
+33
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 1
+R12
+R13
+Esigma_delta_lvds_adc
+Z75 w1580772124
+R2
+R3
+R4
+R0
+Z76 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Sigma_Delta_LVDS_ADC.vhd
+Z77 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Sigma_Delta_LVDS_ADC.vhd
+l0
+L24
+VLh`n`_Jd@deG1j<7n`]n00
+!s100 ddP3h>1Z1W[>ED65XVWki0
+R7
+33
+Z78 !s110 1580774418
+!i10b 1
+Z79 !s108 1580774418.000000
+Z80 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Sigma_Delta_LVDS_ADC.vhd|
+Z81 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/Sigma_Delta_LVDS_ADC.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_sigma_delta_lvds_adc
+R2
+R3
+R4
+DEx4 work 20 sigma_delta_lvds_adc 0 22 Lh`n`_Jd@deG1j<7n`]n00
+l74
+L43
+VozBX3EF_=Ci1QS69EKl993
+!s100 PPza>A`4>HPT^M21hC4Ij1
+R7
+33
+R78
+!i10b 1
+R79
+R80
+R81
+!i113 1
+R12
+R13
+Etimer
+Z82 w1575846465
+R2
+R3
+R4
+R0
+Z83 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/timer.vhd
+Z84 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/timer.vhd
+l0
+L6
+VB3DOdMXQn]CEB:3<az@3G1
+!s100 FL;V];9M^olV]ajK35P`k3
+R7
+33
+Z85 !s110 1580774417
+!i10b 1
+Z86 !s108 1580774417.000000
+Z87 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/timer.vhd|
+Z88 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/timer.vhd|
+!i113 1
+R12
+R13
+Aarchitecture_timer
+R2
+R3
+R4
+DEx4 work 5 timer 0 22 B3DOdMXQn]CEB:3<az@3G1
+l27
+L19
+Vb;CbQ32:4LVYL_RQ0eQbH2
+!s100 @fl:0iLHZS_bWY7Nf]YA^1
+R7
+33
+R85
+!i10b 1
+R86
+R87
+R88
+!i113 1
+R12
+R13

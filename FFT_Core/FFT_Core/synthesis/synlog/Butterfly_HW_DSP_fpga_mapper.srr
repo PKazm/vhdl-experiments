@@ -1,0 +1,571 @@
+# Tue Feb 18 03:56:06 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Boundary register NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Boundary register NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Boundary register NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Removing sequential instance NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":147:82:147:82|Boundary register NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":129:33:129:42|Found ROM Twiddle_Table_0.sin_twid_1[7:0] (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) with 128 words by 8 bits.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":127:33:127:44|Found ROM Twiddle_Table_0.cos_twid_1[8:0] (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) with 128 words by 9 bits.
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     2.56ns		 334 /        70
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_108 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_109 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 74 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks =============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance  
+-----------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   74         imag_b_out_sig[0]
+=========================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 140MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\Butterfly_HW_DSP_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 140MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 140MB)
+
+@W: MT420 |Found inferred clock Butterfly_HW_DSP|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Feb 18 03:56:08 2020
+#
+
+
+Top view:               Butterfly_HW_DSP
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\Butterfly_HW_DSP\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.884
+
+                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack      Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------
+Butterfly_HW_DSP|PCLK     100.0 MHz     91.9 MHz      10.000        10.884        -0.884     inferred     Inferred_clkgroup_0
+=============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------
+Butterfly_HW_DSP|PCLK  Butterfly_HW_DSP|PCLK  |  10.000      -0.884  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Butterfly_HW_DSP|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                                              Arrival           
+Instance                             Reference                 Type     Pin       Net                      Time        Slack 
+                                     Clock                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------
+twiddle_index_sig[2]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[2]     0.108       -0.884
+twiddle_index_sig[1]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[1]     0.087       -0.856
+twiddle_index_sig[0]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[0]     0.108       -0.719
+twiddle_index_sig[4]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[4]     0.108       0.254 
+twiddle_index_sig[3]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[3]     0.108       0.290 
+twiddle_index_sig[5]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[5]     0.108       1.882 
+twiddle_index_sig[6]                 Butterfly_HW_DSP|PCLK     SLE      Q         twiddle_index_sig[6]     0.108       2.134 
+un2_temp_imag_var_muladd_0[17:0]     Butterfly_HW_DSP|PCLK     MACC     P[26]     P[26]                    8.331       4.910 
+un2_temp_imag_var_muladd_0[17:0]     Butterfly_HW_DSP|PCLK     MACC     P[9]      P[9]                     8.331       5.009 
+un2_temp_imag_var_muladd_0[17:0]     Butterfly_HW_DSP|PCLK     MACC     P[10]     P[10]                    8.331       5.024 
+=============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                                  Required           
+Instance              Reference                 Type     Pin     Net                            Time         Slack 
+                      Clock                                                                                        
+-------------------------------------------------------------------------------------------------------------------
+imag_a_out_sig[8]     Butterfly_HW_DSP|PCLK     SLE      D       imag_a_out_var_1[9]            9.745        -0.884
+imag_b_out_sig[8]     Butterfly_HW_DSP|PCLK     SLE      D       un4_imag_b_out_var_s_9_S       9.745        -0.884
+imag_a_out_sig[7]     Butterfly_HW_DSP|PCLK     SLE      D       imag_a_out_var_1[8]            9.745        -0.823
+imag_b_out_sig[7]     Butterfly_HW_DSP|PCLK     SLE      D       un4_imag_b_out_var_cry_8_S     9.745        -0.823
+imag_a_out_sig[6]     Butterfly_HW_DSP|PCLK     SLE      D       imag_a_out_var_1[7]            9.745        -0.363
+imag_b_out_sig[6]     Butterfly_HW_DSP|PCLK     SLE      D       un4_imag_b_out_var_cry_7_S     9.745        -0.363
+imag_a_out_sig[5]     Butterfly_HW_DSP|PCLK     SLE      D       imag_a_out_var_1[6]            9.745        -0.348
+imag_b_out_sig[5]     Butterfly_HW_DSP|PCLK     SLE      D       un4_imag_b_out_var_cry_6_S     9.745        -0.348
+imag_a_out_sig[4]     Butterfly_HW_DSP|PCLK     SLE      D       imag_a_out_var_1[5]            9.745        -0.334
+imag_b_out_sig[4]     Butterfly_HW_DSP|PCLK     SLE      D       un4_imag_b_out_var_cry_5_S     9.745        -0.334
+===================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      10.629
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.884
+
+    Number of logic level(s):                9
+    Starting point:                          twiddle_index_sig[2] / Q
+    Ending point:                            imag_a_out_sig[8] / D
+    The start point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+    The end   point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+twiddle_index_sig[2]                            SLE      Q         Out     0.108     0.108       -         
+twiddle_index_sig[2]                            Net      -         -       1.454     -           48        
+Twiddle_Table_0.cos_twid_1_8_0_.m2              CFG2     B         In      -         1.562       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m2              CFG2     Y         Out     0.148     1.711       -         
+m2                                              Net      -         -       1.058     -           10        
+Twiddle_Table_0.cos_twid_1_8_0_.m11             CFG3     C         In      -         2.769       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m11             CFG3     Y         Out     0.226     2.994       -         
+m11                                             Net      -         -       0.497     -           2         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i_1        CFG3     B         In      -         3.491       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i_1        CFG3     Y         Out     0.148     3.640       -         
+N_17_i_1                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     C         In      -         3.888       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     Y         Out     0.226     4.114       -         
+N_17_i_0                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     D         In      -         4.362       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     Y         Out     0.288     4.650       -         
+m31_1                                           Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     D         In      -         4.899       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     Y         Out     0.326     5.225       -         
+N_32_i                                          Net      -         -       0.598     -           2         
+un2_temp_imag_var_muladd_0[17:0]                MACC     B[9]      In      -         5.823       -         
+un2_temp_imag_var_muladd_0[17:0]                MACC     P[26]     Out     2.508     8.331       -         
+P[26]                                           Net      -         -       0.497     -           2         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     C         In      -         8.828       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     S         Out     0.369     9.197       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18_S     Net      -         -       0.815     -           4         
+imag_a_out_var_1_s_9                            ARI1     C         In      -         10.011      -         
+imag_a_out_var_1_s_9                            ARI1     S         Out     0.369     10.380      -         
+imag_a_out_var_1[9]                             Net      -         -       0.248     -           1         
+imag_a_out_sig[8]                               SLE      D         In      -         10.629      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 10.884 is 4.972(45.7%) logic and 5.912(54.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      10.629
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.884
+
+    Number of logic level(s):                9
+    Starting point:                          twiddle_index_sig[2] / Q
+    Ending point:                            imag_b_out_sig[8] / D
+    The start point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+    The end   point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+twiddle_index_sig[2]                            SLE      Q         Out     0.108     0.108       -         
+twiddle_index_sig[2]                            Net      -         -       1.454     -           48        
+Twiddle_Table_0.cos_twid_1_8_0_.m2              CFG2     B         In      -         1.562       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m2              CFG2     Y         Out     0.148     1.711       -         
+m2                                              Net      -         -       1.058     -           10        
+Twiddle_Table_0.cos_twid_1_8_0_.m11             CFG3     C         In      -         2.769       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m11             CFG3     Y         Out     0.226     2.994       -         
+m11                                             Net      -         -       0.497     -           2         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i_1        CFG3     B         In      -         3.491       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i_1        CFG3     Y         Out     0.148     3.640       -         
+N_17_i_1                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     C         In      -         3.888       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     Y         Out     0.226     4.114       -         
+N_17_i_0                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     D         In      -         4.362       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     Y         Out     0.288     4.650       -         
+m31_1                                           Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     D         In      -         4.899       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     Y         Out     0.326     5.225       -         
+N_32_i                                          Net      -         -       0.598     -           2         
+un2_temp_imag_var_muladd_0[17:0]                MACC     B[9]      In      -         5.823       -         
+un2_temp_imag_var_muladd_0[17:0]                MACC     P[26]     Out     2.508     8.331       -         
+P[26]                                           Net      -         -       0.497     -           2         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     C         In      -         8.828       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     S         Out     0.369     9.197       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18_S     Net      -         -       0.815     -           4         
+un4_imag_b_out_var_s_9                          ARI1     C         In      -         10.011      -         
+un4_imag_b_out_var_s_9                          ARI1     S         Out     0.369     10.380      -         
+un4_imag_b_out_var_s_9_S                        Net      -         -       0.248     -           1         
+imag_b_out_sig[8]                               SLE      D         In      -         10.629      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 10.884 is 4.972(45.7%) logic and 5.912(54.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      10.625
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.880
+
+    Number of logic level(s):                8
+    Starting point:                          twiddle_index_sig[2] / Q
+    Ending point:                            imag_a_out_sig[8] / D
+    The start point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+    The end   point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+twiddle_index_sig[2]                            SLE      Q         Out     0.108     0.108       -         
+twiddle_index_sig[2]                            Net      -         -       1.454     -           48        
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     B         In      -         1.562       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     Y         Out     0.148     1.711       -         
+m4                                              Net      -         -       1.127     -           14        
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     C         In      -         2.838       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     Y         Out     0.226     3.063       -         
+m14                                             Net      -         -       0.745     -           3         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     D         In      -         3.809       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     Y         Out     0.317     4.126       -         
+N_17_i_0                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     D         In      -         4.375       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     Y         Out     0.271     4.646       -         
+m31_1                                           Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     D         In      -         4.894       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     Y         Out     0.326     5.221       -         
+N_32_i                                          Net      -         -       0.598     -           2         
+un2_temp_imag_var_muladd_0[17:0]                MACC     B[9]      In      -         5.819       -         
+un2_temp_imag_var_muladd_0[17:0]                MACC     P[26]     Out     2.508     8.327       -         
+P[26]                                           Net      -         -       0.497     -           2         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     C         In      -         8.824       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     S         Out     0.369     9.193       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18_S     Net      -         -       0.815     -           4         
+imag_a_out_var_1_s_9                            ARI1     C         In      -         10.007      -         
+imag_a_out_var_1_s_9                            ARI1     S         Out     0.369     10.376      -         
+imag_a_out_var_1[9]                             Net      -         -       0.248     -           1         
+imag_a_out_sig[8]                               SLE      D         In      -         10.625      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 10.880 is 4.899(45.0%) logic and 5.981(55.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      10.625
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.880
+
+    Number of logic level(s):                8
+    Starting point:                          twiddle_index_sig[2] / Q
+    Ending point:                            imag_b_out_sig[8] / D
+    The start point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+    The end   point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+twiddle_index_sig[2]                            SLE      Q         Out     0.108     0.108       -         
+twiddle_index_sig[2]                            Net      -         -       1.454     -           48        
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     B         In      -         1.562       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     Y         Out     0.148     1.711       -         
+m4                                              Net      -         -       1.127     -           14        
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     C         In      -         2.838       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     Y         Out     0.226     3.063       -         
+m14                                             Net      -         -       0.745     -           3         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     D         In      -         3.809       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     Y         Out     0.317     4.126       -         
+N_17_i_0                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     D         In      -         4.375       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     Y         Out     0.271     4.646       -         
+m31_1                                           Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     D         In      -         4.894       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     Y         Out     0.326     5.221       -         
+N_32_i                                          Net      -         -       0.598     -           2         
+un2_temp_imag_var_muladd_0[17:0]                MACC     B[9]      In      -         5.819       -         
+un2_temp_imag_var_muladd_0[17:0]                MACC     P[26]     Out     2.508     8.327       -         
+P[26]                                           Net      -         -       0.497     -           2         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     C         In      -         8.824       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     S         Out     0.369     9.193       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18_S     Net      -         -       0.815     -           4         
+un4_imag_b_out_var_s_9                          ARI1     C         In      -         10.007      -         
+un4_imag_b_out_var_s_9                          ARI1     S         Out     0.369     10.376      -         
+un4_imag_b_out_var_s_9_S                        Net      -         -       0.248     -           1         
+imag_b_out_sig[8]                               SLE      D         In      -         10.625      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 10.880 is 4.899(45.0%) logic and 5.981(55.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      10.600
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.855
+
+    Number of logic level(s):                8
+    Starting point:                          twiddle_index_sig[1] / Q
+    Ending point:                            imag_a_out_sig[8] / D
+    The start point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+    The end   point is clocked by            Butterfly_HW_DSP|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin       Pin               Arrival     No. of    
+Name                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+twiddle_index_sig[1]                            SLE      Q         Out     0.087     0.087       -         
+twiddle_index_sig[1]                            Net      -         -       1.476     -           50        
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     A         In      -         1.563       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m4              CFG2     Y         Out     0.100     1.664       -         
+m4                                              Net      -         -       1.127     -           14        
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     C         In      -         2.791       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m14             CFG3     Y         Out     0.223     3.014       -         
+m14                                             Net      -         -       0.745     -           3         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     D         In      -         3.759       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_17_i          CFG4     Y         Out     0.326     4.085       -         
+N_17_i_0                                        Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     D         In      -         4.334       -         
+Twiddle_Table_0.cos_twid_1_8_0_.m31_1           CFG4     Y         Out     0.288     4.622       -         
+m31_1                                           Net      -         -       0.248     -           1         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     D         In      -         4.870       -         
+Twiddle_Table_0.cos_twid_1_8_0_.N_32_i          CFG4     Y         Out     0.326     5.196       -         
+N_32_i                                          Net      -         -       0.598     -           2         
+un2_temp_imag_var_muladd_0[17:0]                MACC     B[9]      In      -         5.794       -         
+un2_temp_imag_var_muladd_0[17:0]                MACC     P[26]     Out     2.508     8.303       -         
+P[26]                                           Net      -         -       0.497     -           2         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     C         In      -         8.800       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18       ARI1     S         Out     0.369     9.168       -         
+un9_temp_imag_var\.un9_temp_imag_var_s_18_S     Net      -         -       0.815     -           4         
+imag_a_out_var_1_s_9                            ARI1     C         In      -         9.983       -         
+imag_a_out_var_1_s_9                            ARI1     S         Out     0.369     10.352      -         
+imag_a_out_var_1[9]                             Net      -         -       0.248     -           1         
+imag_a_out_sig[8]                               SLE      D         In      -         10.600      -         
+===========================================================================================================
+Total path delay (propagation time + setup) of 10.855 is 4.853(44.7%) logic and 6.003(55.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 140MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 140MB)
+
+---------------------------------------
+Resource Usage Report for Butterfly_HW_DSP 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG2           16 uses
+CFG3           78 uses
+CFG4           102 uses
+
+Carry cells:
+ARI1            59 uses - used for arithmetic functions
+ARI1            20 uses - used for Wide-Mux implementation
+Total ARI1      79 uses
+
+
+Sequential Cells: 
+SLE            70 uses
+
+DSP Blocks:    2 of 22 (9%)
+ MACC:         2 MultAdds
+
+I/O ports: 81
+I/O primitives: 81
+INBUF          45 uses
+OUTBUF         36 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    275
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  70 + 0 + 0 + 72 = 142;
+Total number of LUTs after P&R:  275 + 0 + 0 + 72 = 347;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 29MB peak: 140MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Feb 18 03:56:09 2020
+
+###########################################################]

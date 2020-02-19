@@ -1,0 +1,61 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\synthesis\\synwork\\Complex_Mult_test_sd_comp.srs|-top|work.Complex_Mult_test_sd|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\bin64\\c_vhdl.exe":1545375128
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\location.map":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std1164.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std_textio.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\numeric.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1545375136
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_ADDSUB_C0\\HARD_MULT_ADDSUB_C0_0\\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd":1581986819
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_ADDSUB_C0\\HARD_MULT_ADDSUB_C0.vhd":1581986819
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_C0\\HARD_MULT_C0_0\\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd":1581973983
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_C0\\HARD_MULT_C0.vhd":1581973983
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\bit_extender_8_to_35.vhd":1581993528
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\LFSR_Fib_Gen.vhd":1582015675
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\Complex_Mult_test_sd\\Complex_Mult_test_sd.vhd":1582062235
+0 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd" vhdl
+1 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd" vhdl
+2 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd" vhdl
+3 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0.vhd" vhdl
+4 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\bit_extender_8_to_35.vhd" vhdl
+5 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd" vhdl
+6 "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 -1
+3 2 
+4 -1
+5 -1
+6 4 1 3 5 
+
+# Dependency Lists (Users Of)
+0 1 
+1 6 
+2 3 
+3 6 
+4 6 
+5 6 
+6 -1
+
+# Design Unit to File Association
+arch work hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub def_arch 0
+module work hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub 0
+arch work hard_mult_addsub_c0 rtl 1
+module work hard_mult_addsub_c0 1
+arch work hard_mult_c0_hard_mult_c0_0_hard_mult def_arch 2
+module work hard_mult_c0_hard_mult_c0_0_hard_mult 2
+arch work hard_mult_c0 rtl 3
+module work hard_mult_c0 3
+arch work bit_extender_8_to_35 architecture_bit_extender_8_to_35 4
+module work bit_extender_8_to_35 4
+arch work lfsr_fib_gen architecture_lfsr_fib_gen 5
+module work lfsr_fib_gen 5
+arch work complex_mult_test_sd rtl 6
+module work complex_mult_test_sd 6

@@ -1,0 +1,12 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,Differential I/O Pairs,PLLs and CCCs,Chip Globals,RCOSC_50MHZ
+FCCC_C1_0/FCCC_C1_0/Primitives,0,0,0,0,1,2,0
+LED_inverter_dimmer_0/Primitives,8,0,0,0,0,0,0
+OSC_C1_0/OSC_C1_0/Primitives,0,0,0,0,0,0,1
+Pixelbar_Creator_0/Primitives,11,9,0,0,0,0,0
+Power_On_Reset_Delay_0/Primitives,22,15,0,0,0,1,0
+Primitives/Primitives,0,0,13,0,0,1,0
+Sigma_Delta_system_0/Averaging_Filter_0/Primitives,15,54,0,0,0,0,0
+Sigma_Delta_system_0/Primitives,0,0,0,1,0,0,0
+Sigma_Delta_system_0/Sigma_Delta_LVDS_ADC_0/Primitives,26,28,0,0,0,0,0
+Sigma_Delta_system_0/Sigma_Delta_LVDS_ADC_0/Sample_CLK_timer/Primitives,2,3,0,0,0,0,0

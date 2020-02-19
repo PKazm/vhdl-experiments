@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Oscilliscope_System</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>Averaging_Filter_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/instances/Averaging_Filter_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin Averaging_Filter_0:Data_out[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/pins/Averaging_Filter_0:Data_out</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Averaging_Filter_0:Data_out_ready</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/pins/Averaging_Filter_0:Data_out_ready</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin COREABC_C0_0:PRESETN</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/pins/COREABC_C0_0:PRESETN</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin CoreAPB3_C0_0:APBmslave0</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/pins/CoreAPB3_C0_0:APBmslave0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Sigma_Delta_LVDS_ADC_0:LVDS_PADN_feedback</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Oscilliscope_System/pins/Sigma_Delta_LVDS_ADC_0:LVDS_PADN_feedback</crossprobe>
+  </drc>
+</drcreport>

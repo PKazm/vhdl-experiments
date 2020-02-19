@@ -1,0 +1,62 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 18
+FID:  path (timestamp)
+0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
+1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
+2        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\location.map (2018-12-21 01:52:16)
+3        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\numeric.vhd (2018-12-21 01:52:16)
+4        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std.vhd (2018-12-21 01:52:16)
+5        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd (2018-12-21 01:52:16)
+6        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 01:52:16)
+7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 01:52:16)
+8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
+9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
+10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
+11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd (2020-02-18 16:43:55)
+12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd (2020-02-17 19:46:59)
+13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd (2020-02-17 19:46:59)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0.vhd (2020-02-17 16:13:03)
+15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd (2020-02-17 16:13:03)
+16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd (2020-02-18 03:47:55)
+17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\bit_extender_8_to_35.vhd (2020-02-17 21:38:48)
+
+*******************************************************************
+Unchanged modules: 14
+MID:  lib.cell.view
+0        work.bit_extender_8_to_35.architecture_bit_extender_8_to_35
+1        work.bit_extender_8_to_35.vhdl
+2        work.complex_mult_test_sd.rtl
+3        work.complex_mult_test_sd.vhdl
+4        work.hard_mult_addsub_c0.rtl
+5        work.hard_mult_addsub_c0.vhdl
+6        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch
+7        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.vhdl
+8        work.hard_mult_c0.rtl
+9        work.hard_mult_c0.vhdl
+10       work.hard_mult_c0_hard_mult_c0_0_hard_mult.def_arch
+11       work.hard_mult_c0_hard_mult_c0_0_hard_mult.vhdl
+12       work.lfsr_fib_gen.architecture_lfsr_fib_gen
+13       work.lfsr_fib_gen.vhdl

@@ -1,0 +1,2 @@
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\timer.vhd":32:12:32:13|Pruning unused register counter_2(0). Make sure that there are no unused intermediate registers.
+

@@ -1,0 +1,6 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC, RAM1K18, RAM64X18, GLOBAL, IO
+. Sigma_Delta_system, 121, 40, 51, 0, 0, 0, 0, 2, 21
+.	. Averaging_Filter, 69, 4, 18, 0, 0, 0, 0, 0, 0
+.	. Sigma_Delta_LVDS_ADC, 52, 36, 33, 0, 0, 0, 0, 0, 0
+.	.	. timer, 1, 1, 0, 0, 0, 0, 0, 0, 0

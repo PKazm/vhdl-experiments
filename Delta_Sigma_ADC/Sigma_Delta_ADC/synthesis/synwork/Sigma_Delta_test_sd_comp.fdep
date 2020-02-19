@@ -1,0 +1,104 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\synthesis\\synwork\\Sigma_Delta_test_sd_comp.srs|-top|work.Sigma_Delta_test_sd|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\bin64\\c_vhdl.exe":1545375128
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\location.map":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std1164.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std_textio.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\numeric.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1545375136
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1545375136
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\FCCC_C1\\FCCC_C1_0\\FCCC_C1_FCCC_C1_0_FCCC.vhd":1580781020
+#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1545375133
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\LED_inverter_dimmer.vhd":1580781317
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1573066799
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\Pixelbar_Creator.vhd":1580778529
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\Power_On_Reset_Delay.vhd":1580671620
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\Averaging_Filter.vhd":1580263377
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\timer.vhd":1575846465
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\FCCC_C1\\FCCC_C1.vhd":1580781021
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\OSC_C1\\OSC_C1_0\\OSC_C1_OSC_C1_0_OSC.vhd":1580604347
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\OSC_C1\\OSC_C1.vhd":1580604347
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\hdl\\Sigma_Delta_LVDS_ADC.vhd":1580786843
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\Sigma_Delta_system\\Sigma_Delta_system.vhd":1580786883
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\Sigma_Delta_ADC\\component\\work\\Sigma_Delta_test_sd\\Sigma_Delta_test_sd.vhd":1580779498
+0			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.vhd" vhdl
+1			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\FCCC_C1\FCCC_C1.vhd" vhdl
+2			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\LED_inverter_dimmer.vhd" vhdl
+3			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
+4			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\OSC_C1\OSC_C1_0\OSC_C1_OSC_C1_0_OSC.vhd" vhdl
+5			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\OSC_C1\OSC_C1.vhd" vhdl
+6			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Pixelbar_Creator.vhd" vhdl
+7			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Power_On_Reset_Delay.vhd" vhdl
+8			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Averaging_Filter.vhd" vhdl
+9			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\timer.vhd" vhdl
+10			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Sigma_Delta_LVDS_ADC.vhd" vhdl
+11			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\Sigma_Delta_system\Sigma_Delta_system.vhd" vhdl
+12			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\Sigma_Delta_test_sd\Sigma_Delta_test_sd.vhd" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 0
+2 -1
+3 -1
+4 3
+5 4
+6 -1
+7 -1
+8 -1
+9 -1
+10 9
+11 10 8
+12 11 7 6 5 2 1
+#Dependency Lists(Users Of)
+0 1
+1 12
+2 12
+3 4
+4 5
+5 12
+6 12
+7 12
+8 11
+9 10
+10 11
+11 12
+12 -1
+#Design Unit to File Association
+module work sigma_delta_test_sd 12
+arch work sigma_delta_test_sd rtl 12
+module work sigma_delta_system 11
+arch work sigma_delta_system rtl 11
+module work sigma_delta_lvds_adc 10
+arch work sigma_delta_lvds_adc architecture_sigma_delta_lvds_adc 10
+module work timer 9
+arch work timer architecture_timer 9
+module work averaging_filter 8
+arch work averaging_filter architecture_averaging_filter 8
+module work power_on_reset_delay 7
+arch work power_on_reset_delay architecture_power_on_reset_delay 7
+module work pixelbar_creator 6
+arch work pixelbar_creator architecture_pixelbar_creator 6
+module work osc_c1 5
+arch work osc_c1 rtl 5
+module work osc_c1_osc_c1_0_osc 4
+arch work osc_c1_osc_c1_0_osc def_arch 4
+module work rcosc_1mhz 3
+arch work rcosc_1mhz def_arch 3
+module work rcosc_25_50mhz 3
+arch work rcosc_25_50mhz def_arch 3
+module work xtlosc 3
+arch work xtlosc def_arch 3
+module work rcosc_1mhz_fab 3
+arch work rcosc_1mhz_fab def_arch 3
+module work rcosc_25_50mhz_fab 3
+arch work rcosc_25_50mhz_fab def_arch 3
+module work xtlosc_fab 3
+arch work xtlosc_fab def_arch 3
+module work led_inverter_dimmer 2
+arch work led_inverter_dimmer architecture_led_inverter_dimmer 2
+module work fccc_c1 1
+arch work fccc_c1 rtl 1
+module work fccc_c1_fccc_c1_0_fccc 0
+arch work fccc_c1_fccc_c1_0_fccc def_arch 0

@@ -1,0 +1,33 @@
+Resource Usage Report for Complex_Mult_test_sd 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG4           1 use
+
+
+Sequential Cells: 
+SLE            16 uses
+
+DSP Blocks:    2 of 22 (9%)
+ MACC:         2 Mults
+
+I/O ports: 20
+I/O primitives: 20
+INBUF          2 uses
+OUTBUF         18 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    1
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  16 + 0 + 0 + 72 = 88;
+Total number of LUTs after P&R:  1 + 0 + 0 + 72 = 73;
+

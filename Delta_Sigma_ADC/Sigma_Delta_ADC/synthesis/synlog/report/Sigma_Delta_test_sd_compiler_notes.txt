@@ -1,0 +1,29 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\Sigma_Delta_test_sd\Sigma_Delta_test_sd.vhd":17:7:17:25|Top entity is set to Sigma_Delta_test_sd.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\Sigma_Delta_test_sd\Sigma_Delta_test_sd.vhd":17:7:17:25|Synthesizing work.sigma_delta_test_sd.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\Sigma_Delta_system\Sigma_Delta_system.vhd":17:7:17:24|Synthesizing work.sigma_delta_system.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":492:10:492:19|Synthesizing smartfusion2.inbuf_diff.syn_black_box.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Sigma_Delta_LVDS_ADC.vhd":24:7:24:26|Synthesizing work.sigma_delta_lvds_adc.architecture_sigma_delta_lvds_adc.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\timer.vhd":6:7:6:11|Synthesizing work.timer.architecture_timer.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Averaging_Filter.vhd":24:7:24:22|Synthesizing work.averaging_filter.architecture_averaging_filter.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Averaging_Filter.vhd":43:16:43:17|Using sequential encoding for type states.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Power_On_Reset_Delay.vhd":24:7:24:26|Synthesizing work.power_on_reset_delay.architecture_power_on_reset_delay.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Pixelbar_Creator.vhd":24:7:24:22|Synthesizing work.pixelbar_creator.architecture_pixelbar_creator.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\OSC_C1\OSC_C1.vhd":17:7:17:12|Synthesizing work.osc_c1.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\OSC_C1\OSC_C1_0\OSC_C1_OSC_C1_0_OSC.vhd":8:7:8:25|Synthesizing work.osc_c1_osc_c1_0_osc.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\LED_inverter_dimmer.vhd":24:7:24:25|Synthesizing work.led_inverter_dimmer.architecture_led_inverter_dimmer.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\FCCC_C1\FCCC_C1.vhd":17:7:17:13|Synthesizing work.fccc_c1.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\FCCC_C1\FCCC_C1_0\FCCC_C1_FCCC_C1_0_FCCC.vhd":8:7:8:28|Synthesizing work.fccc_c1_fccc_c1_0_fccc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\OSC_C1\OSC_C1_0\OSC_C1_OSC_C1_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+@N: CL135 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Averaging_Filter.vhd":72:8:72:9|Found sequential shift samples_mem with address depth of 4 words and data bit width of 8.
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\Averaging_Filter.vhd":72:8:72:9|Trying to extract state machine for register filter_state.
+@N|Running in 64-bit mode
+

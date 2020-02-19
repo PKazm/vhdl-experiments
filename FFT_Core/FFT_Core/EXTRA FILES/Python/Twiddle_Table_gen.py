@@ -9,9 +9,16 @@ data_width = 8
 N_exp = 8
 
 def main():
+    get_param_input()
     do_cos_out()
     do_sin_out()
 
+#==============================================================================
+def get_param_input():
+    global data_width
+    global N_exp
+    data_width = int(input('Data Width (2 < natural < 32): '))
+    N_exp = int(input('N^exp; (2 < exp < 16): '))
 #==============================================================================
 def do_cos_out():
     file = open('twiddle_table_cosine_generated.vhd', 'w')

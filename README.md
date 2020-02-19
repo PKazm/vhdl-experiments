@@ -34,13 +34,19 @@ Project Chronology:
 1. [I2C Master (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/I2C_Core_Master)
     * Intended to be a generic I2C master I will use in future projects
     * Incorporates a simple instruction queue to perform complete I2C transactions without calling out to a bus master
+1. [Delta-Sigma ADC](https://github.com/PKazm/vhdl-experiments/tree/master/Delta_Sigma_ADC)
+    * Rewritten as I found more resources and continued to understand the parts of the design
+    * Includes a simple averaging filter
 1. [FFT Core (WIP)](https://github.com/PKazm/vhdl-experiments/tree/master/FFT_Core)
     * I need an FFT core, I want to understand FFTs, so I am writing my own FFT
     * Uses uSRAM to store complex numbers
-    * Uses DSP/Math blocks in both normal mode and DOTP mode
-    * Operates on 9bit signed numbers
-    * 9bit signed twiddle factors with a post multiplication division to prevent overflow
+    * Uses DSP/Math blocks in DOTP mode for complex multiplication
+    * Operates on 9 bit signed numbers
+    * 9 bit signed twiddle factors with a post multiplication bit shift to correct the scaled twiddle values and stay within 9 bits.
 1. **On The Menu**
-    * CVBS (Composite Video) to Nokia5110
-         * This project will include an real Sigma-Delta ADC with a real filter
-         * Resolution downscaling from NTSC 720x480 down to the Nokia5110's 84x48
+    * Auto trigger and time scaling oscilliscope.
+        * Delta Sigma for data samples
+        * FFT for time scaling
+        * Edge detector for triggering
+        * Nokia5110 LCD for display
+        * CoreABC to tie everything together

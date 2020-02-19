@@ -1,0 +1,111 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Tue Feb 18 16:36:55 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "vhdl_complex_mult_test_sd"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\vhdl_complex_mult_test_sd\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                          Ending                                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            System                                            |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:imag_a_out[0]
+p:imag_a_out[1]
+p:imag_a_out[2]
+p:imag_a_out[3]
+p:imag_a_out[4]
+p:imag_a_out[5]
+p:imag_a_out[6]
+p:imag_a_out[7]
+p:imag_a_out[8]
+p:imag_b_out[0]
+p:imag_b_out[1]
+p:imag_b_out[2]
+p:imag_b_out[3]
+p:imag_b_out[4]
+p:imag_b_out[5]
+p:imag_b_out[6]
+p:imag_b_out[7]
+p:imag_b_out[8]
+p:real_a_out[0]
+p:real_a_out[1]
+p:real_a_out[2]
+p:real_a_out[3]
+p:real_a_out[4]
+p:real_a_out[5]
+p:real_a_out[6]
+p:real_a_out[7]
+p:real_a_out[8]
+p:real_b_out[0]
+p:real_b_out[1]
+p:real_b_out[2]
+p:real_b_out[3]
+p:real_b_out[4]
+p:real_b_out[5]
+p:real_b_out[6]
+p:real_b_out[7]
+p:real_b_out[8]
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

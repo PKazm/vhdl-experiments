@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\fft.vhd":58:8:58:9|Found inferred clock FFT|PCLK which controls 257 sequential elements including time_samples_31[7]. This clock has no specified timing constraint which may adversely impact design performance. 

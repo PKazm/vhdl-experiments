@@ -1,0 +1,11 @@
+@P:  Worst Slack : 6.668
+@P:  FFT|PCLK - Estimated Frequency : 300.2 MHz
+@P:  FFT|PCLK - Requested Frequency : 100.0 MHz
+@P:  FFT|PCLK - Estimated Period : 3.332
+@P:  FFT|PCLK - Requested Period : 10.000
+@P:  FFT|PCLK - Slack : 6.668
+@P: FFT Part : m2s010tq144std
+@P: FFT Register bits  : 257 
+@P: FFT DSP Blocks  : 0
+@P: FFT I/O primitives : 20
+@P:  CPU Time : 0h:00m:01s

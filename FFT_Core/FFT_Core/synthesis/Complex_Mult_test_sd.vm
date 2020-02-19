@@ -1,0 +1,611 @@
+//
+// Written by Synplify Pro 
+// Product Version "N-2018.03M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact, Build 2461R"
+// Tue Feb 18 16:48:08 2020
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\hard_mult_addsub_c0\hard_mult_addsub_c0_0\hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.vhd "
+// file 10 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\generic\smartfusion2.vhd "
+// file 11 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\hard_mult_c0\hard_mult_c0_0\hard_mult_c0_hard_mult_c0_0_hard_mult.vhd "
+// file 12 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\bit_extender_8_to_35.vhd "
+// file 13 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\lfsr_fib_gen.vhd "
+// file 14 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\hard_mult_addsub_c0\hard_mult_addsub_c0.vhd "
+// file 15 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\hard_mult_c0\hard_mult_c0.vhd "
+// file 16 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\complex_mult_test_sd\complex_mult_test_sd.vhd "
+// file 17 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\nlconst.dat "
+// file 18 "\c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\designer\complex_mult_test_sd\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB (
+  rand_net_0,
+  P_Imag_Trunc_c
+)
+;
+input [15:0] rand_net_0 ;
+output [8:0] P_Imag_Trunc_c ;
+wire [43:0] CDOUT;
+wire [8:0] U0_P;
+wire [33:0] P;
+wire U0_OVFL_CARRYOUT ;
+wire GND ;
+wire VCC ;
+// @9:103
+  MACC U0 (
+	.CDOUT(CDOUT[43:0]),
+	.OVFL_CARRYOUT(U0_OVFL_CARRYOUT),
+	.P({P_Imag_Trunc_c[8], P[33:16], P_Imag_Trunc_c[7:0], P[7:0], U0_P[8:0]}),
+	.CDIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.A({rand_net_0[8:0], rand_net_0[13:5]}),
+	.B({rand_net_0[11:3], rand_net_0[15:7]}),
+	.C({rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8], rand_net_0[8:0], GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.P_BYPASS({VCC, VCC}),
+	.A_BYPASS({VCC, VCC}),
+	.B_BYPASS({VCC, VCC}),
+	.C_BYPASS({VCC, VCC}),
+	.P_EN({VCC, VCC}),
+	.A_EN({VCC, VCC}),
+	.B_EN({VCC, VCC}),
+	.C_EN({VCC, VCC}),
+	.P_ARST_N({VCC, VCC}),
+	.A_ARST_N({VCC, VCC}),
+	.B_ARST_N({VCC, VCC}),
+	.C_ARST_N({VCC, VCC}),
+	.P_SRST_N({VCC, VCC}),
+	.A_SRST_N({VCC, VCC}),
+	.B_SRST_N({VCC, VCC}),
+	.C_SRST_N({VCC, VCC}),
+	.CLK({GND, GND}),
+	.FDBKSEL(GND),
+	.CDSEL(GND),
+	.ARSHFT17(GND),
+	.SUB(GND),
+	.FDBKSEL_BYPASS(VCC),
+	.CDSEL_BYPASS(VCC),
+	.ARSHFT17_BYPASS(VCC),
+	.SUB_BYPASS(VCC),
+	.FDBKSEL_EN(VCC),
+	.CDSEL_EN(VCC),
+	.ARSHFT17_EN(VCC),
+	.SUB_EN(VCC),
+	.FDBKSEL_AL_N(VCC),
+	.CDSEL_AL_N(VCC),
+	.ARSHFT17_AL_N(VCC),
+	.SUB_AL_N(VCC),
+	.FDBKSEL_AD(GND),
+	.CDSEL_AD(GND),
+	.ARSHFT17_AD(GND),
+	.SUB_AD(GND),
+	.FDBKSEL_SL_N(VCC),
+	.CDSEL_SL_N(VCC),
+	.ARSHFT17_SL_N(VCC),
+	.SUB_SL_N(VCC),
+	.FDBKSEL_SD_N(VCC),
+	.CDSEL_SD_N(VCC),
+	.ARSHFT17_SD_N(VCC),
+	.SUB_SD_N(VCC),
+	.SIMD(GND),
+	.DOTP(VCC),
+	.CARRYIN(GND),
+	.OVFL_CARRYOUT_SEL(GND)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB */
+
+module HARD_MULT_ADDSUB_C0 (
+  P_Imag_Trunc_c,
+  rand_net_0
+)
+;
+output [8:0] P_Imag_Trunc_c ;
+input [15:0] rand_net_0 ;
+wire GND ;
+wire VCC ;
+// @14:83
+  HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB HARD_MULT_ADDSUB_C0_0 (
+	.rand_net_0(rand_net_0[15:0]),
+	.P_Imag_Trunc_c(P_Imag_Trunc_c[8:0])
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* HARD_MULT_ADDSUB_C0 */
+
+module HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT (
+  rand_net_0,
+  P_Real_Trunc_c
+)
+;
+input [15:0] rand_net_0 ;
+output [8:0] P_Real_Trunc_c ;
+wire [43:0] CDOUT;
+wire [8:0] U0_P_0;
+wire [17:0] P;
+wire [43:28] U0_P;
+wire U0_OVFL_CARRYOUT_0 ;
+wire GND ;
+wire VCC ;
+// @11:102
+  MACC U0 (
+	.CDOUT(CDOUT[43:0]),
+	.OVFL_CARRYOUT(U0_OVFL_CARRYOUT_0),
+	.P({U0_P[43:28], P_Real_Trunc_c[8], P[17:16], P_Real_Trunc_c[7:0], P[7:0], U0_P_0[8:0]}),
+	.CDIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.A({rand_net_0[13:5], rand_net_0[8:0]}),
+	.B({rand_net_0[11:3], rand_net_0[15:7]}),
+	.C({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
+	.P_BYPASS({VCC, VCC}),
+	.A_BYPASS({VCC, VCC}),
+	.B_BYPASS({VCC, VCC}),
+	.C_BYPASS({VCC, VCC}),
+	.P_EN({VCC, VCC}),
+	.A_EN({VCC, VCC}),
+	.B_EN({VCC, VCC}),
+	.C_EN({VCC, VCC}),
+	.P_ARST_N({VCC, VCC}),
+	.A_ARST_N({VCC, VCC}),
+	.B_ARST_N({VCC, VCC}),
+	.C_ARST_N({VCC, VCC}),
+	.P_SRST_N({VCC, VCC}),
+	.A_SRST_N({VCC, VCC}),
+	.B_SRST_N({VCC, VCC}),
+	.C_SRST_N({VCC, VCC}),
+	.CLK({GND, GND}),
+	.FDBKSEL(GND),
+	.CDSEL(GND),
+	.ARSHFT17(GND),
+	.SUB(GND),
+	.FDBKSEL_BYPASS(VCC),
+	.CDSEL_BYPASS(VCC),
+	.ARSHFT17_BYPASS(VCC),
+	.SUB_BYPASS(VCC),
+	.FDBKSEL_EN(VCC),
+	.CDSEL_EN(VCC),
+	.ARSHFT17_EN(VCC),
+	.SUB_EN(VCC),
+	.FDBKSEL_AL_N(VCC),
+	.CDSEL_AL_N(VCC),
+	.ARSHFT17_AL_N(VCC),
+	.SUB_AL_N(VCC),
+	.FDBKSEL_AD(GND),
+	.CDSEL_AD(GND),
+	.ARSHFT17_AD(GND),
+	.SUB_AD(GND),
+	.FDBKSEL_SL_N(VCC),
+	.CDSEL_SL_N(VCC),
+	.ARSHFT17_SL_N(VCC),
+	.SUB_SL_N(VCC),
+	.FDBKSEL_SD_N(VCC),
+	.CDSEL_SD_N(VCC),
+	.ARSHFT17_SD_N(VCC),
+	.SUB_SD_N(VCC),
+	.SIMD(GND),
+	.DOTP(VCC),
+	.CARRYIN(GND),
+	.OVFL_CARRYOUT_SEL(GND)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT */
+
+module HARD_MULT_C0 (
+  P_Real_Trunc_c,
+  rand_net_0
+)
+;
+output [8:0] P_Real_Trunc_c ;
+input [15:0] rand_net_0 ;
+wire GND ;
+wire VCC ;
+// @15:79
+  HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT HARD_MULT_C0_0 (
+	.rand_net_0(rand_net_0[15:0]),
+	.P_Real_Trunc_c(P_Real_Trunc_c[8:0])
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* HARD_MULT_C0 */
+
+module LFSR_Fib_Gen (
+  rand_net_0,
+  PCLK_c,
+  RSTn_c
+)
+;
+output [15:0] rand_net_0 ;
+input PCLK_c ;
+input RSTn_c ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire [0:0] fib_reg_17;
+wire VCC ;
+wire GND ;
+// @13:42
+  SLE \fib_reg[9]  (
+	.Q(rand_net_0[9]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[10]  (
+	.Q(rand_net_0[10]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[9]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[11]  (
+	.Q(rand_net_0[11]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[10]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[12]  (
+	.Q(rand_net_0[12]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[11]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[13]  (
+	.Q(rand_net_0[13]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[12]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[14]  (
+	.Q(rand_net_0[14]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[13]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[15]  (
+	.Q(rand_net_0[15]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[14]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[0]  (
+	.Q(rand_net_0[0]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(fib_reg_17[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[1]  (
+	.Q(rand_net_0[1]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[2]  (
+	.Q(rand_net_0[2]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[3]  (
+	.Q(rand_net_0[3]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[4]  (
+	.Q(rand_net_0[4]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[5]  (
+	.Q(rand_net_0[5]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[4]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[6]  (
+	.Q(rand_net_0[6]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[5]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[7]  (
+	.Q(rand_net_0[7]),
+	.ADn(GND),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:42
+  SLE \fib_reg[8]  (
+	.Q(rand_net_0[8]),
+	.ADn(VCC),
+	.ALn(RSTn_c),
+	.CLK(PCLK_c),
+	.D(rand_net_0[7]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @13:45
+  CFG4 \fib_reg_17[0]  (
+	.A(rand_net_0[15]),
+	.B(rand_net_0[14]),
+	.C(rand_net_0[13]),
+	.D(rand_net_0[11]),
+	.Y(fib_reg_17[0])
+);
+defparam \fib_reg_17[0] .INIT=16'h6996;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* LFSR_Fib_Gen */
+
+module Complex_Mult_test_sd (
+  PCLK,
+  RSTn,
+  P_Imag_Trunc,
+  P_Real_Trunc
+)
+;
+input PCLK ;
+input RSTn ;
+output [8:0] P_Imag_Trunc ;
+output [8:0] P_Real_Trunc ;
+wire PCLK ;
+wire RSTn ;
+wire [15:0] rand_net_0;
+wire [8:0] P_Imag_Trunc_c;
+wire [8:0] P_Real_Trunc_c;
+wire GND ;
+wire VCC ;
+wire PCLK_c ;
+wire RSTn_c ;
+wire PCLK_ibuf_Z ;
+wire RSTn_ibuf_Z ;
+  CLKINT RSTn_ibuf_RNICUT3 (
+	.Y(RSTn_c),
+	.A(RSTn_ibuf_Z)
+);
+  CLKINT PCLK_ibuf_RNIFTKA (
+	.Y(PCLK_c),
+	.A(PCLK_ibuf_Z)
+);
+// @16:21
+  INBUF PCLK_ibuf (
+	.Y(PCLK_ibuf_Z),
+	.PAD(PCLK)
+);
+// @16:22
+  INBUF RSTn_ibuf (
+	.Y(RSTn_ibuf_Z),
+	.PAD(RSTn)
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[0]  (
+	.PAD(P_Imag_Trunc[0]),
+	.D(P_Imag_Trunc_c[0])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[1]  (
+	.PAD(P_Imag_Trunc[1]),
+	.D(P_Imag_Trunc_c[1])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[2]  (
+	.PAD(P_Imag_Trunc[2]),
+	.D(P_Imag_Trunc_c[2])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[3]  (
+	.PAD(P_Imag_Trunc[3]),
+	.D(P_Imag_Trunc_c[3])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[4]  (
+	.PAD(P_Imag_Trunc[4]),
+	.D(P_Imag_Trunc_c[4])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[5]  (
+	.PAD(P_Imag_Trunc[5]),
+	.D(P_Imag_Trunc_c[5])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[6]  (
+	.PAD(P_Imag_Trunc[6]),
+	.D(P_Imag_Trunc_c[6])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[7]  (
+	.PAD(P_Imag_Trunc[7]),
+	.D(P_Imag_Trunc_c[7])
+);
+// @16:24
+  OUTBUF \P_Imag_Trunc_obuf[8]  (
+	.PAD(P_Imag_Trunc[8]),
+	.D(P_Imag_Trunc_c[8])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[0]  (
+	.PAD(P_Real_Trunc[0]),
+	.D(P_Real_Trunc_c[0])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[1]  (
+	.PAD(P_Real_Trunc[1]),
+	.D(P_Real_Trunc_c[1])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[2]  (
+	.PAD(P_Real_Trunc[2]),
+	.D(P_Real_Trunc_c[2])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[3]  (
+	.PAD(P_Real_Trunc[3]),
+	.D(P_Real_Trunc_c[3])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[4]  (
+	.PAD(P_Real_Trunc[4]),
+	.D(P_Real_Trunc_c[4])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[5]  (
+	.PAD(P_Real_Trunc[5]),
+	.D(P_Real_Trunc_c[5])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[6]  (
+	.PAD(P_Real_Trunc[6]),
+	.D(P_Real_Trunc_c[6])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[7]  (
+	.PAD(P_Real_Trunc[7]),
+	.D(P_Real_Trunc_c[7])
+);
+// @16:25
+  OUTBUF \P_Real_Trunc_obuf[8]  (
+	.PAD(P_Real_Trunc[8]),
+	.D(P_Real_Trunc_c[8])
+);
+// @16:139
+  HARD_MULT_ADDSUB_C0 HARD_MULT_ADDSUB_C0_0 (
+	.P_Imag_Trunc_c(P_Imag_Trunc_c[8:0]),
+	.rand_net_0(rand_net_0[15:0])
+);
+// @16:152
+  HARD_MULT_C0 HARD_MULT_C0_1 (
+	.P_Real_Trunc_c(P_Real_Trunc_c[8:0]),
+	.rand_net_0(rand_net_0[15:0])
+);
+// @16:164
+  LFSR_Fib_Gen LFSR_Fib_Gen_0 (
+	.rand_net_0(rand_net_0[15:0]),
+	.PCLK_c(PCLK_c),
+	.RSTn_c(RSTn_c)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* Complex_Mult_test_sd */
+

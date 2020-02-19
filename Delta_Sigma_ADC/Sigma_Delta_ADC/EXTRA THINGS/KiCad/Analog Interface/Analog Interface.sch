@@ -1,0 +1,116 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L My_Symbols:LVDS_Smartfusion2 U?
+U 1 1 5E3767A0
+P 5850 3350
+F 0 "U?" H 5875 4115 50  0000 C CNN
+F 1 "LVDS_Smartfusion2" H 5875 4024 50  0000 C CNN
+F 2 "" H 5850 4050 50  0001 C CNN
+F 3 "" H 5850 4050 50  0001 C CNN
+	1    5850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C0
+U 1 1 5E377E2C
+P 5000 4700
+F 0 "C0" H 5115 4746 50  0000 L CNN
+F 1 "1nF" H 5115 4655 50  0000 L CNN
+F 2 "" H 5038 4550 50  0001 C CNN
+F 3 "~" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E378613
+P 5000 5050
+F 0 "#PWR?" H 5000 4800 50  0001 C CNN
+F 1 "GND" H 5005 4877 50  0000 C CNN
+F 2 "" H 5000 5050 50  0001 C CNN
+F 3 "" H 5000 5050 50  0001 C CNN
+	1    5000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VAC #PWR?
+U 1 1 5E379F16
+P 5000 2900
+F 0 "#PWR?" H 5000 2800 50  0001 C CNN
+F 1 "VAC" H 5000 3175 50  0000 C CNN
+F 2 "" H 5000 2900 50  0001 C CNN
+F 3 "" H 5000 2900 50  0001 C CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U?
+U 1 1 5E37AFD4
+P 7250 3450
+F 0 "U?" H 7250 3931 50  0000 C CNN
+F 1 "4013" H 7250 3840 50  0000 C CNN
+F 2 "" H 7250 3450 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 7250 3450 50  0001 C CNN
+	1    7250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5050 5000 4850
+Wire Wire Line
+	5000 2900 5000 3050
+Text GLabel 8000 3350 2    50   Input ~ 0
+DigitalAccumulator
+Text GLabel 6750 3650 3    50   Output ~ 0
+OSclock
+Wire Wire Line
+	6750 3450 6950 3450
+Wire Wire Line
+	6950 3350 6600 3350
+Wire Wire Line
+	6750 3450 6750 3650
+Wire Wire Line
+	7550 3350 7750 3350
+Wire Wire Line
+	7750 4400 7750 3350
+Connection ~ 7750 3350
+Wire Wire Line
+	7750 3350 8000 3350
+Wire Wire Line
+	5000 4550 5000 4400
+Wire Wire Line
+	5000 3650 5150 3650
+Wire Wire Line
+	5700 4400 5000 4400
+Connection ~ 5000 4400
+Wire Wire Line
+	5000 4400 5000 3650
+Wire Wire Line
+	6000 4400 7750 4400
+Wire Wire Line
+	5000 3050 5150 3050
+$Comp
+L Device:R R0
+U 1 1 5E377371
+P 5850 4400
+F 0 "R0" V 6057 4400 50  0000 C CNN
+F 1 "1.5ohm" V 5966 4400 50  0000 C CNN
+F 2 "" V 5780 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

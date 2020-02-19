@@ -1,0 +1,46 @@
+Analysis
+
+---------------------------------------------
+
+Programming Errors
+
+None
+
+---------------------------------------------
+
+Instructions Used
+
+HALT
+
+---------------------------------------------
+
+Constraints
+
+   Maximum value of APB data written directly is 0 so 'Data Bus Width' >= 0.
+   No APB slots used so 'Number of APB Slots' >= 0.
+   Maximum APB address used 0 so 'APB Slot Size' >= 1 locations
+   Maximum program counter is 0 so 'Maximum Number of Instructions' >= 8.
+   Z register not used so 'Z Register size' may be set to disabled.
+   'INPUTn' not used so 'Number of I/O Flags' >= 0.
+   'IOWRT' not used so 'Number of I/O Outputs' >= 0.
+   Does not use stack ('CALL', 'RETURN', 'RETISR', 'PUSH' or 'POP'), 'RAMREAD' or 'RAMWRT' so no need for 'Internal Data/Stack Memory'.
+
+---------------------------------------------
+
+Instruction Store Details
+
+   Width of instructions is Data+Addr+Slots+6 = 8+8+1+6 = 23 bits
+
+---------------------------------------------
+
+Labels
+
+None
+
+---------------------------------------------
+
+Symbols
+
+None
+
+---------------------------------------------

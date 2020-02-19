@@ -1,0 +1,133 @@
+# Reading C:/Microsemi/Libero_SoC_v12.1/ModelSim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# INFO: Simulation library COREABC_LIB already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap COREABC_LIB COREABC_LIB 
+# Modifying modelsim.ini
+# INFO: Simulation library COREAPB3_LIB already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap COREAPB3_LIB COREAPB3_LIB 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:49 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/hdl/FFT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FFT
+# -- Compiling architecture architecture_FFT of FFT
+# End time: 19:28:50 on Feb 08,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:50 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREAPB3_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package components
+# End time: 19:28:50 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:50 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREABC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/work/COREABC_C0/COREABC_C0_0/coreparameters_tgi.vhd 
+# -- Loading package STANDARD
+# -- Compiling package COREABC_C0_COREABC_C0_0_coreparameters_tgi
+# End time: 19:28:50 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:50 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREABC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package COREABC_C0_COREABC_C0_0_components
+# End time: 19:28:50 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:50 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREABC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/core/support.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package COREABC_C0_COREABC_C0_0_support
+# -- Compiling package body COREABC_C0_COREABC_C0_0_support
+# -- Loading package COREABC_C0_COREABC_C0_0_support
+# End time: 19:28:50 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:51 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREABC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/misc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package COREABC_C0_COREABC_C0_0_misc
+# -- Compiling package body COREABC_C0_COREABC_C0_0_misc
+# -- Loading package COREABC_C0_COREABC_C0_0_misc
+# End time: 19:28:51 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:51 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work COREABC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/work/COREABC_C0/COREABC_C0_0/rtl/vhdl/test/textio.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package COREABC_C0_COREABC_C0_0_misc
+# -- Compiling package COREABC_C0_COREABC_C0_0_textio
+# -- Compiling package body COREABC_C0_COREABC_C0_0_textio
+# -- Loading package COREABC_C0_COREABC_C0_0_textio
+# -- Loading package std_logic_arith
+# -- Loading package COREABC_C0_COREABC_C0_0_textio
+# -- Compiling entity COREABC_C0_COREABC_C0_0_textio_test
+# -- Compiling architecture TB of COREABC_C0_COREABC_C0_0_textio_test
+# End time: 19:28:51 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 19:28:51 on Feb 08,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/stimulus/FFT_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package util
+# -- Compiling entity FFT_tb
+# -- Compiling architecture behavioral of FFT_tb
+# End time: 19:28:51 on Feb 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L presynth -L COREABC_LIB -L COREAPB3_LIB -t 100ps presynth.Pixelbar_Creator_tb 
+# Start time: 19:28:51 on Feb 08,2020
+# //  ModelSim Microsemi 10.7c Oct 15 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading presynth.pixelbar_creator_tb(behavioral)
+# Loading presynth.pixelbar_creator(architecture_pixelbar_creator)
+# End time: 19:29:03 on Feb 08,2020, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0

@@ -1,0 +1,670 @@
+#Build: Synplify Pro (R) N-2018.03M-SP1-1, Build 209R, Oct 23 2018
+#install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: PHOENIX136DESKY
+
+# Thu Dec 12 02:08:19 2019
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0.vhd":20:7:20:16|Top entity is set to COREABC_C0.
+VHDL syntax check successful!
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0.vhd":20:7:20:16|Synthesizing work.coreabc_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":58:7:58:37|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":223:13:223:14|Using sequential encoding for type ticycle.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":613:8:613:18|Signal accumulator in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":613:20:613:27|Signal accum_in in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":665:4:665:18|OTHERS clause is not synthesized.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":631:66:631:72|Signal product in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":727:33:727:37|Signal io_in in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":776:8:776:14|Signal use_acm in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":776:28:776:34|Signal acmdata in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:8:795:11|Signal mux1 in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:18:795:28|Signal accumulator in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":795:30:795:39|Signal instr_data in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":822:8:822:19|Signal dataout_zreg in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1001:27:1001:40|OTHERS clause is not synthesized.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1073:19:1073:28|Signal instr_scmd in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":1073:30:1073:38|Signal zregister in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":173:7:173:21|Signal dataout_zreg_zr is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":215:7:215:12|Signal debug1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":216:7:216:12|Signal debug2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":217:7:217:21|Signal debugblk_resetn is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd":31:7:31:42|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl.
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_instructions.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_INSTRUCTIONS .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":33:7:33:39|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":52:7:52:9|Signal wdx is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":53:7:53:9|Signal rdx is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":54:7:54:9|Signal wdy is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":55:7:55:9|Signal rdy is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":63:7:63:14|Signal wen_r0c1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":64:7:64:14|Signal wen_r0c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":65:7:65:14|Signal wen_r0c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":67:7:67:14|Signal wen_r1c1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":68:7:68:14|Signal wen_r1c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":69:7:69:14|Signal wen_r1c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":72:7:72:13|Signal rd_r0c1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":73:7:73:13|Signal rd_r0c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":74:7:74:13|Signal rd_r0c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":76:7:76:13|Signal rd_r1c1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":77:7:77:13|Signal rd_r1c2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ramblocks.vhd":78:7:78:13|Signal rd_r1c3 is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":23:7:23:38|Synthesizing coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":629:10:629:17|Synthesizing smartfusion2.ram64x18.syn_black_box.
+Post processing for smartfusion2.ram64x18.syn_black_box
+Running optimization stage 1 on RAM64x18 .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_ram128x8.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_RAM128X8 .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_ramblocks.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_RAMBLOCKS .......
+Post processing for coreabc_lib.coreabc_c0_coreabc_c0_0_coreabc.rtl
+Running optimization stage 1 on COREABC_C0_COREABC_C0_0_COREABC .......
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 0 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 1 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 2 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 3 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 4 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 5 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 6 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL252 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":174:7:174:13|Bit 7 of signal PRODUCT is floating -- simulation mismatch possible.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Pruning unused register GETINST_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Pruning unused register ZREGISTER_3(0). Make sure that there are no unused intermediate registers.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(4) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(5) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(6) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to STKPTR(7) are '1'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to ISR are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|All reachable assignments to DOISR are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|All reachable assignments to ISR_ACCUM_ZERO are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|All reachable assignments to ISR_ACCUM_NEG are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Pruning register bit 1 of INSTR_SLOT(1 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Post processing for work.coreabc_c0.rtl
+Running optimization stage 1 on COREABC_C0 .......
+Running optimization stage 2 on RAM64x18 .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_RAM128X8 .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_RAMBLOCKS .......
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_INSTRUCTIONS .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\instructions.vhd":43:13:43:19|Input ADDRESS is unused.
+Running optimization stage 2 on COREABC_C0_COREABC_C0_0_COREABC .......
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Trying to extract state machine for register ICYCLE.
+Extracted state machine for register ICYCLE
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":109:9:109:17|Input PSLVERR_M is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":116:9:116:14|Input INTREQ is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":120:9:120:18|Input INITDATVAL is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":121:9:121:16|Input INITDONE is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":122:9:122:16|Input INITADDR is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":123:9:123:16|Input INITDATA is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":126:9:126:14|Input PSEL_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":127:9:127:17|Input PENABLE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":128:9:128:16|Input PWRITE_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":129:9:129:15|Input PADDR_S is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\component\work\COREABC_C0\COREABC_C0_0\rtl\vhdl\core\coreabc.vhd":130:9:130:16|Input PWDATA_S is unused.
+Running optimization stage 2 on COREABC_C0 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 85MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 12 02:08:19 2019
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 12 02:08:20 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 12 02:08:20 2019
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Dec 12 02:08:21 2019
+
+###########################################################]
+Premap Report
+
+# Thu Dec 12 02:08:21 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\designer\COREABC_C0\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\COREABC_C0_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\COREABC_C0_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Removing sequential instance COREABC_C0_0.INSTR_SLOT[0] because it is equivalent to instance COREABC_C0_0.INSTR_MUXC. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Sequential instance COREABC_C0_0.INSTR_CMD[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Sequential instance COREABC_C0_0.INSTR_DATA[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ramblocks.vhd":310:12:310:13|Sequential instance COREABC_C0_0.URAM.UR.ADDR7_q is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ramblocks.vhd":325:8:325:15|Removing instance UG4\.UR8\.ram_r0c0 (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_RAMBLOCKS(rtl)) of type view:coreabc_lib.COREABC_C0_COREABC_C0_0_RAM128X8_1(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":352:2:352:3|Removing instance URAM\.UR (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:coreabc_lib.COREABC_C0_COREABC_C0_0_RAMBLOCKS(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance STD_ACCUM_ZERO (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance STD_ACCUM_NEG (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":406:1:406:4|Removing instance UROM\.UROM (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:coreabc_lib.COREABC_C0_COREABC_C0_0_INSTRUCTIONS(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance IO_OUT[0] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":103:4:103:13|Removing sequential instance U_RAM64x18 (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_RAM128X8_1(rtl)) of type view:ACG4.RAM64x18(PRIM) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ramblocks.vhd":336:8:336:15|Removing instance UG4\.UR8\.ram_r1c0 (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_RAMBLOCKS(rtl)) of type view:coreabc_lib.COREABC_C0_COREABC_C0_0_RAM128X8_0(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd":103:4:103:13|Removing sequential instance U_RAM64x18 (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_RAM128X8_0(rtl)) of type view:ACG4.RAM64x18(PRIM) because it does not drive other instances.
+syn_allowed_resources : blockrams=21  set on top level netlist COREABC_C0
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+
+
+Clock Summary
+******************
+
+          Start               Requested     Requested     Clock        Clock                   Clock
+Level     Clock               Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------
+0 -       COREABC_C0|PCLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     28   
+====================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                    Clock     Source         Clock Pin                   Non-clock Pin     Non-clock Pin
+Clock               Load      Pin            Seq Example                 Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------
+COREABC_C0|PCLK     28        PCLK(port)     COREABC_C0_0.RSTSYNC1.C     -                 -            
+========================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Found inferred clock COREABC_C0|PCLK which controls 28 sequential elements including COREABC_C0_0.INSTR_SCMD[1:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\COREABC_C0.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+Encoding state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|There are no possible illegal states for state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 12 02:08:22 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Dec 12 02:08:22 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance STKPTR[3:0] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance SMADDR[4:0] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance DOJMP (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Encoding state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|There are no possible illegal states for state machine ICYCLE[0:3] (in view: coreabc_lib.COREABC_C0_COREABC_C0_0_COREABC(rtl)); safe FSM implementation is not required.
+@W: BN132 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":869:2:869:3|Removing sequential instance COREABC_C0_0.PENABLEI because it is equivalent to instance COREABC_C0_0.PSELI. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Sequential instance COREABC_C0_0.INSTR_SCMD[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":430:2:430:3|Sequential instance COREABC_C0_0.INSTR_SCMD[1] is reduced to a combinational gate by constant propagation.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[5] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[4] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[3] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[2] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[1] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[0] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[7] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd":686:2:686:3|Removing sequential instance COREABC_C0_0.ACCUMULATOR[6] (in view: work.COREABC_C0(rtl)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     7.44ns		   6 /         5
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_2 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 5 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================= Non-Gated/Non-Generated Clocks =============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance   
+------------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   5          COREABC_C0_0.PSELI
+==========================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 134MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\COREABC_C0_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 134MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+@W: MT420 |Found inferred clock COREABC_C0|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Dec 12 02:08:23 2019
+#
+
+
+Top view:               COREABC_C0
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\designer\COREABC_C0\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 7.503
+
+                    Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock      Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------
+COREABC_C0|PCLK     100.0 MHz     400.6 MHz     10.000        2.497         7.503     inferred     Inferred_clkgroup_0
+======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------
+COREABC_C0|PCLK  COREABC_C0|PCLK  |  10.000      7.504  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: COREABC_C0|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                           Arrival          
+Instance                   Reference           Type     Pin     Net           Time        Slack
+                           Clock                                                               
+-----------------------------------------------------------------------------------------------
+COREABC_C0_0.PSELI         COREABC_C0|PCLK     SLE      Q       PSEL_M_c      0.108       7.503
+COREABC_C0_0.ICYCLE[1]     COREABC_C0|PCLK     SLE      Q       ICYCLE[1]     0.108       8.420
+COREABC_C0_0.ICYCLE[0]     COREABC_C0|PCLK     SLE      Q       ICYCLE[0]     0.108       8.542
+COREABC_C0_0.RSTSYNC1      COREABC_C0|PCLK     SLE      Q       RSTSYNC1      0.087       9.409
+===============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                              Required          
+Instance                   Reference           Type     Pin     Net              Time         Slack
+                           Clock                                                                   
+---------------------------------------------------------------------------------------------------
+COREABC_C0_0.ICYCLE[0]     COREABC_C0|PCLK     SLE      D       ICYCLE_ns[0]     9.745        7.503
+COREABC_C0_0.PSELI         COREABC_C0|PCLK     SLE      D       PSELI_5          9.745        7.540
+COREABC_C0_0.ICYCLE[1]     COREABC_C0|PCLK     SLE      D       N_96_i           9.745        8.478
+COREABC_C0_0.RSTSYNC2      COREABC_C0|PCLK     SLE      D       RSTSYNC1         9.745        9.409
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      2.241
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     7.503
+
+    Number of logic level(s):                2
+    Starting point:                          COREABC_C0_0.PSELI / Q
+    Ending point:                            COREABC_C0_0.ICYCLE[0] / D
+    The start point is clocked by            COREABC_C0|PCLK [rising] on pin CLK
+    The end   point is clocked by            COREABC_C0|PCLK [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                            Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+COREABC_C0_0.PSELI              SLE      Q        Out     0.108     0.108       -         
+PSEL_M_c                        Net      -        -       1.123     -           3         
+COREABC_C0_0.un3_pready_m       CFG2     A        In      -         1.231       -         
+COREABC_C0_0.un3_pready_m       CFG2     Y        Out     0.100     1.331       -         
+un3_pready_m_i                  Net      -        -       0.497     -           2         
+COREABC_C0_0.ICYCLE_ns_0[0]     CFG3     B        In      -         1.828       -         
+COREABC_C0_0.ICYCLE_ns_0[0]     CFG3     Y        Out     0.165     1.993       -         
+ICYCLE_ns[0]                    Net      -        -       0.248     -           1         
+COREABC_C0_0.ICYCLE[0]          SLE      D        In      -         2.241       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 2.497 is 0.628(25.2%) logic and 1.868(74.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+---------------------------------------
+Resource Usage Report for COREABC_C0 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          1 use
+CFG2           2 uses
+CFG3           2 uses
+
+
+Sequential Cells: 
+SLE            5 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 46
+I/O primitives: 36
+INBUF          3 uses
+OUTBUF         33 uses
+
+
+Global Clock Buffers: 1
+
+Total LUTs:    4
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  5 + 0 + 0 + 0 = 5;
+Total number of LUTs after P&R:  4 + 0 + 0 + 0 = 4;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 12 02:08:24 2019
+
+###########################################################]

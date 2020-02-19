@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/simulation
+Pcomponents
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+w1572988165
+R0
+8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+l0
+L30
+V6XQdn^E]^IOnRfgRRBHVY3
+!s100 M`a74h2Z=cgYBZBf=LgIj0
+OW;C;10.7c;67
+33
+!s110 1581378294
+!i10b 1
+!s108 1581378294.000000
+!s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Sigma_Delta_ADC/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!i113 1
+o-2008 -explicit -work COREAPB3_LIB -O0
+tCvgOpt 0

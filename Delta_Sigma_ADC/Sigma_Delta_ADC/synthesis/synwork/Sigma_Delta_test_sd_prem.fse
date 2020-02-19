@@ -1,0 +1,10 @@
+
+fsm_encoding {15728721} sequential
+
+fsm_state_encoding {15728721} idle {00}
+
+fsm_state_encoding {15728721} step1 {01}
+
+fsm_state_encoding {15728721} step2 {10}
+
+fsm_registers {15728721} {filter_state[1]}  {filter_state[0]} 

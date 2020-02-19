@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>Butterfly_HW_DSP</design>
+	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\Butterfly_HW_DSP.vm</target_verilog>
+</SynplifyOutput>

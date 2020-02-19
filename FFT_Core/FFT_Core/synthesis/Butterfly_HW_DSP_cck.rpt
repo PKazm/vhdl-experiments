@@ -1,0 +1,153 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Tue Feb 18 03:56:06 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "Butterfly_HW_DSP"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\Butterfly_HW_DSP\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                  Ending                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Butterfly_HW_DSP|PCLK     Butterfly_HW_DSP|PCLK     |     10.000           |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:RSTn
+p:imag_a_in[0]
+p:imag_a_in[1]
+p:imag_a_in[2]
+p:imag_a_in[3]
+p:imag_a_in[4]
+p:imag_a_in[5]
+p:imag_a_in[6]
+p:imag_a_in[7]
+p:imag_a_in[8]
+p:imag_a_out[0]
+p:imag_a_out[1]
+p:imag_a_out[2]
+p:imag_a_out[3]
+p:imag_a_out[4]
+p:imag_a_out[5]
+p:imag_a_out[6]
+p:imag_a_out[7]
+p:imag_a_out[8]
+p:imag_b_in[0]
+p:imag_b_in[1]
+p:imag_b_in[2]
+p:imag_b_in[3]
+p:imag_b_in[4]
+p:imag_b_in[5]
+p:imag_b_in[6]
+p:imag_b_in[7]
+p:imag_b_in[8]
+p:imag_b_out[0]
+p:imag_b_out[1]
+p:imag_b_out[2]
+p:imag_b_out[3]
+p:imag_b_out[4]
+p:imag_b_out[5]
+p:imag_b_out[6]
+p:imag_b_out[7]
+p:imag_b_out[8]
+p:real_a_in[0]
+p:real_a_in[1]
+p:real_a_in[2]
+p:real_a_in[3]
+p:real_a_in[4]
+p:real_a_in[5]
+p:real_a_in[6]
+p:real_a_in[7]
+p:real_a_in[8]
+p:real_a_out[0]
+p:real_a_out[1]
+p:real_a_out[2]
+p:real_a_out[3]
+p:real_a_out[4]
+p:real_a_out[5]
+p:real_a_out[6]
+p:real_a_out[7]
+p:real_a_out[8]
+p:real_b_in[0]
+p:real_b_in[1]
+p:real_b_in[2]
+p:real_b_in[3]
+p:real_b_in[4]
+p:real_b_in[5]
+p:real_b_in[6]
+p:real_b_in[7]
+p:real_b_in[8]
+p:real_b_out[0]
+p:real_b_out[1]
+p:real_b_out[2]
+p:real_b_out[3]
+p:real_b_out[4]
+p:real_b_out[5]
+p:real_b_out[6]
+p:real_b_out[7]
+p:real_b_out[8]
+p:twiddle_index[0]
+p:twiddle_index[1]
+p:twiddle_index[2]
+p:twiddle_index[3]
+p:twiddle_index[4]
+p:twiddle_index[5]
+p:twiddle_index[6]
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

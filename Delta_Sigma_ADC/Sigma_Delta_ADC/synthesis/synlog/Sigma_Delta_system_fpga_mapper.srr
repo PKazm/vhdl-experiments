@@ -1,0 +1,504 @@
+# Wed Jan 29 15:16:51 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\timer.vhd":25:46:25:48|Removing sequential instance Sample_CLK_timer.timer_indic_sig (in view: work.Sigma_Delta_LVDS_ADC(architecture_sigma_delta_lvds_adc)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\sigma_delta_lvds_adc.vhd":99:8:99:9|User-specified initial value defined for instance Sigma_Delta_LVDS_ADC_0.pwm_counter[15:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\timer.vhd":24:62:24:62|User-specified initial value defined for instance Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.timer_clock_out_sig is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Encoding state machine filter_state[0:2] (in view: work.Averaging_Filter(architecture_averaging_filter))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\sigma_delta_lvds_adc.vhd":99:8:99:9|Found counter in view:work.Sigma_Delta_LVDS_ADC(architecture_sigma_delta_lvds_adc) instance pwm_quantized_accumulator[15:0] 
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\sigma_delta_lvds_adc.vhd":99:8:99:9|Found counter in view:work.Sigma_Delta_LVDS_ADC(architecture_sigma_delta_lvds_adc) instance pwm_counter[15:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -0.51ns		  93 /       121
+   2		0h:00m:00s		    -0.51ns		  95 /       121
+
+   3		0h:00m:00s		    -0.51ns		  93 /       121
+
+
+   4		0h:00m:00s		    -0.51ns		  93 /       121
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_21 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_22 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 120 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
+0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+
+======================================= Non-Gated/Non-Generated Clocks =======================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                       
+--------------------------------------------------------------------------------------------------------------
+@K:CKID0002       PCLK                port                   120        Sigma_Delta_LVDS_ADC_0.pwm_counter[15]
+==============================================================================================================
+==================================================================================================== Gated/Generated Clocks =====================================================================================================
+Clock Tree ID     Driving Element                                                 Drive Element Type     Fanout     Sample Instance                      Explanation                                                             
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.timer_clock_out_sig     SLE                    1          Sigma_Delta_LVDS_ADC_0.analog_FF     No generated or derived clock directive on output of sequential instance
+=================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 134MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\synthesis\synwork\Sigma_Delta_system_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 134MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+@W: MT420 |Found inferred clock Sigma_Delta_system|PCLK with period 3.33ns. Please declare a user-defined clock on port PCLK.
+@W: MT420 |Found inferred clock timer|timer_clock_out_sig_inferred_clock with period 3.33ns. Please declare a user-defined clock on net Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.sample_CLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Jan 29 15:16:53 2020
+#
+
+
+Top view:               Sigma_Delta_system
+Requested Frequency:    300.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\designer\Sigma_Delta_system\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.101
+
+                                             Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                               Frequency     Frequency     Period        Period        Slack      Type         Group              
+------------------------------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_system|PCLK                      300.0 MHz     291.2 MHz     3.333         3.434         -0.101     inferred     Inferred_clkgroup_0
+timer|timer_clock_out_sig_inferred_clock     300.0 MHz     NA            3.333         NA            NA         inferred     Inferred_clkgroup_1
+================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                  Ending                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_system|PCLK                   Sigma_Delta_system|PCLK  |  3.333       -0.101  |  No paths    -      |  No paths    -      |  No paths    -    
+timer|timer_clock_out_sig_inferred_clock  Sigma_Delta_system|PCLK  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Sigma_Delta_system|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                           Starting                                                         Arrival           
+Instance                                   Reference                   Type     Pin     Net                 Time        Slack 
+                                           Clock                                                                              
+------------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[0]      0.108       -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_counter[1]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[1]      0.108       -0.022
+Sigma_Delta_LVDS_ADC_0.pwm_counter[4]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[4]      0.108       -0.022
+Sigma_Delta_LVDS_ADC_0.pwm_counter[2]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[2]      0.108       0.023 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[14]     Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[14]     0.108       0.023 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[5]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[5]      0.108       0.056 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[8]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[8]      0.108       0.100 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[15]     Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[15]     0.108       0.100 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[3]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[3]      0.108       0.101 
+Sigma_Delta_LVDS_ADC_0.pwm_counter[6]      Sigma_Delta_system|PCLK     SLE      Q       pwm_counter[6]      0.108       0.101 
+==============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                        Starting                                                                         Required           
+Instance                                                Reference                   Type     Pin     Net                                 Time         Slack 
+                                                        Clock                                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[0]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[0]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[1]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[1]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[2]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[2]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[3]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[3]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[4]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[4]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[5]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[5]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[6]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[6]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[7]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[7]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[8]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[8]     3.078        -0.101
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[9]     Sigma_Delta_system|PCLK     SLE      D       pwm_quantized_accumulator_lm[9]     3.078        -0.101
+============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.333
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.078
+
+    - Propagation time:                      3.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.101
+
+    Number of logic level(s):                3
+    Starting point:                          Sigma_Delta_LVDS_ADC_0.pwm_counter[0] / Q
+    Ending point:                            Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[0] / D
+    The start point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+    The end   point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+
+Instance / Net                                                             Pin      Pin               Arrival     No. of    
+Name                                                              Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]                             SLE      Q        Out     0.108     0.108       -         
+pwm_counter[0]                                                    Net      -        -       0.745     -           3         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     D        In      -         0.854       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     Y        Out     0.288     1.141       -         
+pwm_quantized_accumulator_0_sqmuxa_x_2                            Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     D        In      -         1.390       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     Y        Out     0.288     1.677       -         
+pwm_quantized_accumulator_0_sqmuxa_x                              Net      -        -       1.153     -           17        
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[0]          CFG2     A        In      -         2.830       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[0]          CFG2     Y        Out     0.100     2.930       -         
+pwm_quantized_accumulator_lm[0]                                   Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[0]               SLE      D        In      -         3.179       -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 3.434 is 1.039(30.3%) logic and 2.395(69.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      3.333
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.078
+
+    - Propagation time:                      3.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.101
+
+    Number of logic level(s):                3
+    Starting point:                          Sigma_Delta_LVDS_ADC_0.pwm_counter[0] / Q
+    Ending point:                            Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[1] / D
+    The start point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+    The end   point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+
+Instance / Net                                                             Pin      Pin               Arrival     No. of    
+Name                                                              Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]                             SLE      Q        Out     0.108     0.108       -         
+pwm_counter[0]                                                    Net      -        -       0.745     -           3         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     D        In      -         0.854       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     Y        Out     0.288     1.141       -         
+pwm_quantized_accumulator_0_sqmuxa_x_2                            Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     D        In      -         1.390       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     Y        Out     0.288     1.677       -         
+pwm_quantized_accumulator_0_sqmuxa_x                              Net      -        -       1.153     -           17        
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[1]          CFG2     A        In      -         2.830       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[1]          CFG2     Y        Out     0.100     2.930       -         
+pwm_quantized_accumulator_lm[1]                                   Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[1]               SLE      D        In      -         3.179       -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 3.434 is 1.039(30.3%) logic and 2.395(69.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      3.333
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.078
+
+    - Propagation time:                      3.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.101
+
+    Number of logic level(s):                3
+    Starting point:                          Sigma_Delta_LVDS_ADC_0.pwm_counter[0] / Q
+    Ending point:                            Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[2] / D
+    The start point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+    The end   point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+
+Instance / Net                                                             Pin      Pin               Arrival     No. of    
+Name                                                              Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]                             SLE      Q        Out     0.108     0.108       -         
+pwm_counter[0]                                                    Net      -        -       0.745     -           3         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     D        In      -         0.854       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     Y        Out     0.288     1.141       -         
+pwm_quantized_accumulator_0_sqmuxa_x_2                            Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     D        In      -         1.390       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     Y        Out     0.288     1.677       -         
+pwm_quantized_accumulator_0_sqmuxa_x                              Net      -        -       1.153     -           17        
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[2]          CFG2     A        In      -         2.830       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[2]          CFG2     Y        Out     0.100     2.930       -         
+pwm_quantized_accumulator_lm[2]                                   Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[2]               SLE      D        In      -         3.179       -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 3.434 is 1.039(30.3%) logic and 2.395(69.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      3.333
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.078
+
+    - Propagation time:                      3.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.101
+
+    Number of logic level(s):                3
+    Starting point:                          Sigma_Delta_LVDS_ADC_0.pwm_counter[0] / Q
+    Ending point:                            Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[3] / D
+    The start point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+    The end   point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+
+Instance / Net                                                             Pin      Pin               Arrival     No. of    
+Name                                                              Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]                             SLE      Q        Out     0.108     0.108       -         
+pwm_counter[0]                                                    Net      -        -       0.745     -           3         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     D        In      -         0.854       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     Y        Out     0.288     1.141       -         
+pwm_quantized_accumulator_0_sqmuxa_x_2                            Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     D        In      -         1.390       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     Y        Out     0.288     1.677       -         
+pwm_quantized_accumulator_0_sqmuxa_x                              Net      -        -       1.153     -           17        
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[3]          CFG2     A        In      -         2.830       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[3]          CFG2     Y        Out     0.100     2.930       -         
+pwm_quantized_accumulator_lm[3]                                   Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[3]               SLE      D        In      -         3.179       -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 3.434 is 1.039(30.3%) logic and 2.395(69.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      3.333
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.078
+
+    - Propagation time:                      3.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.101
+
+    Number of logic level(s):                3
+    Starting point:                          Sigma_Delta_LVDS_ADC_0.pwm_counter[0] / Q
+    Ending point:                            Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[4] / D
+    The start point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+    The end   point is clocked by            Sigma_Delta_system|PCLK [rising] on pin CLK
+
+Instance / Net                                                             Pin      Pin               Arrival     No. of    
+Name                                                              Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_LVDS_ADC_0.pwm_counter[0]                             SLE      Q        Out     0.108     0.108       -         
+pwm_counter[0]                                                    Net      -        -       0.745     -           3         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     D        In      -         0.854       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x_2     CFG4     Y        Out     0.288     1.141       -         
+pwm_quantized_accumulator_0_sqmuxa_x_2                            Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     D        In      -         1.390       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_0_sqmuxa_x       CFG4     Y        Out     0.288     1.677       -         
+pwm_quantized_accumulator_0_sqmuxa_x                              Net      -        -       1.153     -           17        
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[4]          CFG2     A        In      -         2.830       -         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator_lm_0[4]          CFG2     Y        Out     0.100     2.930       -         
+pwm_quantized_accumulator_lm[4]                                   Net      -        -       0.248     -           1         
+Sigma_Delta_LVDS_ADC_0.pwm_quantized_accumulator[4]               SLE      D        In      -         3.179       -         
+============================================================================================================================
+Total path delay (propagation time + setup) of 3.434 is 1.039(30.3%) logic and 2.395(69.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
+
+---------------------------------------
+Resource Usage Report for Sigma_Delta_system 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           1 use
+CFG2           20 uses
+CFG3           2 uses
+CFG4           17 uses
+
+Carry cells:
+ARI1            51 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            121 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 22
+I/O primitives: 21
+INBUF          2 uses
+INBUF_DIFF     1 use
+OUTBUF         18 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    91
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  121 + 0 + 0 + 0 = 121;
+Total number of LUTs after P&R:  91 + 0 + 0 + 0 = 91;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jan 29 15:16:53 2020
+
+###########################################################]

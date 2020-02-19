@@ -1,0 +1,9 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,Math (18x18),PLLs and CCCs,Chip Globals,RCOSC_50MHZ
+Butterfly_HW_DSP_0/Primitives,59,36,0,0,0,0,0,0,0
+Butterfly_HW_DSP_0/un2_temp_imag_var_muladd_0[17:0]/Primitives,0,0,36,36,0,1,0,0,0
+Butterfly_HW_DSP_0/un2_temp_real_var_muladd_0[17:0]/Primitives,0,0,36,36,0,1,0,0,0
+FCCC_C0_0/FCCC_C0_0/Primitives,0,0,0,0,0,0,1,2,0
+LFSR_Fib_Gen_0/Primitives,10,16,0,0,0,0,0,0,0
+OSC_C0_0/OSC_C0_0/Primitives,0,0,0,0,0,0,0,0,1
+Primitives/Primitives,1,0,0,0,36,0,0,0,0

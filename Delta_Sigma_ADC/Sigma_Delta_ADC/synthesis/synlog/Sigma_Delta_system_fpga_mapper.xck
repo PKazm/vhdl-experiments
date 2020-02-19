@@ -1,0 +1,2 @@
+CKID0001:@|S:Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.timer_clock_out_sig@|E:Sigma_Delta_LVDS_ADC_0.analog_FF@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:PCLK@|E:Sigma_Delta_LVDS_ADC_0.pwm_counter[15]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

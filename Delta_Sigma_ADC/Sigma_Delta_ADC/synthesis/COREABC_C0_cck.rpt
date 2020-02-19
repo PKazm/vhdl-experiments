@@ -1,0 +1,118 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Thu Dec 12 02:08:22 2019
+
+##### DESIGN INFO #######################################################
+
+Top View:                "COREABC_C0"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\designer\COREABC_C0\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting            Ending              |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+COREABC_C0|PCLK     COREABC_C0|PCLK     |     10.000           |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:IO_IN[0]
+p:IO_OUT[0]
+p:NSYSRESET
+p:PADDR_M[0]
+p:PADDR_M[1]
+p:PADDR_M[2]
+p:PADDR_M[3]
+p:PADDR_M[4]
+p:PADDR_M[5]
+p:PADDR_M[6]
+p:PADDR_M[7]
+p:PADDR_M[8]
+p:PADDR_M[9]
+p:PADDR_M[10]
+p:PADDR_M[11]
+p:PADDR_M[12]
+p:PADDR_M[13]
+p:PADDR_M[14]
+p:PADDR_M[15]
+p:PADDR_M[16]
+p:PADDR_M[17]
+p:PADDR_M[18]
+p:PADDR_M[19]
+p:PENABLE_M
+p:PRDATA_M[0]
+p:PRDATA_M[1]
+p:PRDATA_M[2]
+p:PRDATA_M[3]
+p:PRDATA_M[4]
+p:PRDATA_M[5]
+p:PRDATA_M[6]
+p:PRDATA_M[7]
+p:PREADY_M
+p:PRESETN
+p:PSEL_M
+p:PSLVERR_M
+p:PWDATA_M[0]
+p:PWDATA_M[1]
+p:PWDATA_M[2]
+p:PWDATA_M[3]
+p:PWDATA_M[4]
+p:PWDATA_M[5]
+p:PWDATA_M[6]
+p:PWDATA_M[7]
+p:PWRITE_M
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

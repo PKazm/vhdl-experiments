@@ -1,0 +1,16 @@
+@P:  Worst Slack : 3.655
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : 157.6 MHz
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Estimated Period : 6.345
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Requested Period : 10.000
+@P:  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock - Slack : 3.655
+@P:  System - Estimated Frequency : 895.2 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 1.117
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 8.883
+@P: vhdl_complex_mult_test_sd Part : m2s010tq144std
+@P: vhdl_complex_mult_test_sd Register bits  : 52 
+@P: vhdl_complex_mult_test_sd DSP Blocks  : 2
+@P: vhdl_complex_mult_test_sd I/O primitives : 36
+@P:  CPU Time : 0h:00m:01s

@@ -1,0 +1,436 @@
+//
+// Written by Synplify Pro 
+// Product Version "N-2018.03M-SP1-1"
+// Program "Synplify Pro", Mapper "mapact, Build 2461R"
+// Thu Dec 12 02:08:23 2019
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\support.vhd "
+// file 10 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\iram512x9_rtl.vhd "
+// file 11 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\test\misc.vhd "
+// file 12 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram128x8_smartfusion2.vhd "
+// file 13 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\generic\smartfusion2.vhd "
+// file 14 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram256x16_rtl.vhd "
+// file 15 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ram256x8_rtl.vhd "
+// file 16 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\components.vhd "
+// file 17 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\acmtable.vhd "
+// file 18 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\instructnvm_bb.vhd "
+// file 19 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\instructram.vhd "
+// file 20 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\test\textio.vhd "
+// file 21 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\debugblk.vhd "
+// file 22 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\instructions.vhd "
+// file 23 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\ramblocks.vhd "
+// file 24 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0_0\rtl\vhdl\core\coreabc.vhd "
+// file 25 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\component\work\coreabc_c0\coreabc_c0.vhd "
+// file 26 "\c:\microsemi\libero_soc_v12.1\synplifypro\lib\nlconst.dat "
+// file 27 "\c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\designer\coreabc_c0\synthesis.fdc "
+
+`timescale 100 ps/100 ps
+module COREABC_C0_COREABC_C0_0_COREABC (
+  PREADY_M_c,
+  PSEL_M_c,
+  NSYSRESET_c,
+  PCLK_c,
+  PRESETN_c
+)
+;
+input PREADY_M_c ;
+output PSEL_M_c ;
+input NSYSRESET_c ;
+input PCLK_c ;
+output PRESETN_c ;
+wire PREADY_M_c ;
+wire PSEL_M_c ;
+wire NSYSRESET_c ;
+wire PCLK_c ;
+wire PRESETN_c ;
+wire [1:0] ICYCLE;
+wire [0:0] ICYCLE_ns;
+wire GND ;
+wire VCC ;
+wire N_96_i ;
+wire RSTSYNC1_Z ;
+wire PSELI_5 ;
+wire un3_pready_m_i ;
+wire N_19 ;
+wire N_18 ;
+wire N_17 ;
+wire N_16 ;
+wire N_15 ;
+wire N_14 ;
+wire N_13 ;
+wire N_12 ;
+wire N_90 ;
+wire N_89 ;
+wire N_55 ;
+wire N_54 ;
+wire N_53 ;
+wire N_52 ;
+wire N_51 ;
+wire N_50 ;
+wire N_49 ;
+wire N_48 ;
+wire N_47 ;
+wire N_46 ;
+wire N_45 ;
+wire N_44 ;
+wire N_43 ;
+wire N_42 ;
+wire N_106 ;
+wire N_105 ;
+wire N_104 ;
+wire N_102 ;
+wire N_101 ;
+// @24:869
+  SLE \ICYCLE[0]  (
+	.Q(ICYCLE[0]),
+	.ADn(GND),
+	.ALn(PRESETN_c),
+	.CLK(PCLK_c),
+	.D(ICYCLE_ns[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @24:869
+  SLE \ICYCLE[1]  (
+	.Q(ICYCLE[1]),
+	.ADn(GND),
+	.ALn(PRESETN_c),
+	.CLK(PCLK_c),
+	.D(N_96_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @24:293
+  SLE RSTSYNC1 (
+	.Q(RSTSYNC1_Z),
+	.ADn(VCC),
+	.ALn(NSYSRESET_c),
+	.CLK(PCLK_c),
+	.D(VCC),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @24:293
+  SLE RSTSYNC2 (
+	.Q(PRESETN_c),
+	.ADn(VCC),
+	.ALn(NSYSRESET_c),
+	.CLK(PCLK_c),
+	.D(RSTSYNC1_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @24:869
+  SLE PSELI (
+	.Q(PSEL_M_c),
+	.ADn(VCC),
+	.ALn(PRESETN_c),
+	.CLK(PCLK_c),
+	.D(PSELI_5),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @24:1007
+  CFG2 un3_pready_m (
+	.A(PSEL_M_c),
+	.B(PREADY_M_c),
+	.Y(un3_pready_m_i)
+);
+defparam un3_pready_m.INIT=4'hD;
+// @24:869
+  CFG2 \ICYCLE_ns_0_x2[1]  (
+	.A(ICYCLE[0]),
+	.B(ICYCLE[1]),
+	.Y(N_96_i)
+);
+defparam \ICYCLE_ns_0_x2[1] .INIT=4'h6;
+// @24:1007
+  CFG3 ICYCLE_1_sqmuxa_0_a2 (
+	.A(ICYCLE[0]),
+	.B(un3_pready_m_i),
+	.C(ICYCLE[1]),
+	.Y(PSELI_5)
+);
+defparam ICYCLE_1_sqmuxa_0_a2.INIT=8'h10;
+// @24:869
+  CFG3 \ICYCLE_ns_0[0]  (
+	.A(ICYCLE[0]),
+	.B(un3_pready_m_i),
+	.C(ICYCLE[1]),
+	.Y(ICYCLE_ns[0])
+);
+defparam \ICYCLE_ns_0[0] .INIT=8'h4F;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* COREABC_C0_COREABC_C0_0_COREABC */
+
+module COREABC_C0 (
+  IO_IN,
+  NSYSRESET,
+  PCLK,
+  PRDATA_M,
+  PREADY_M,
+  PSLVERR_M,
+  IO_OUT,
+  PADDR_M,
+  PENABLE_M,
+  PRESETN,
+  PSEL_M,
+  PWDATA_M,
+  PWRITE_M
+)
+;
+input [0:0] IO_IN ;
+input NSYSRESET ;
+input PCLK ;
+input [7:0] PRDATA_M ;
+input PREADY_M ;
+input PSLVERR_M ;
+output [0:0] IO_OUT ;
+output [19:0] PADDR_M ;
+output PENABLE_M ;
+output PRESETN ;
+output PSEL_M ;
+output [7:0] PWDATA_M ;
+output PWRITE_M ;
+wire NSYSRESET ;
+wire PCLK ;
+wire PREADY_M ;
+wire PSLVERR_M ;
+wire PENABLE_M ;
+wire PRESETN ;
+wire PSEL_M ;
+wire PWRITE_M ;
+wire VCC ;
+wire GND ;
+wire NSYSRESET_c ;
+wire PCLK_c ;
+wire PREADY_M_c ;
+wire PRESETN_c ;
+wire PSEL_M_c ;
+wire PCLK_ibuf_Z ;
+  CLKINT PCLK_ibuf_RNIFTKA (
+	.Y(PCLK_c),
+	.A(PCLK_ibuf_Z)
+);
+// @25:25
+  INBUF NSYSRESET_ibuf (
+	.Y(NSYSRESET_c),
+	.PAD(NSYSRESET)
+);
+// @25:26
+  INBUF PCLK_ibuf (
+	.Y(PCLK_ibuf_Z),
+	.PAD(PCLK)
+);
+// @25:28
+  INBUF PREADY_M_ibuf (
+	.Y(PREADY_M_c),
+	.PAD(PREADY_M)
+);
+// @25:31
+  OUTBUF \IO_OUT_obuf[0]  (
+	.PAD(IO_OUT[0]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[0]  (
+	.PAD(PADDR_M[0]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[1]  (
+	.PAD(PADDR_M[1]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[2]  (
+	.PAD(PADDR_M[2]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[3]  (
+	.PAD(PADDR_M[3]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[4]  (
+	.PAD(PADDR_M[4]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[5]  (
+	.PAD(PADDR_M[5]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[6]  (
+	.PAD(PADDR_M[6]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[7]  (
+	.PAD(PADDR_M[7]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[8]  (
+	.PAD(PADDR_M[8]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[9]  (
+	.PAD(PADDR_M[9]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[10]  (
+	.PAD(PADDR_M[10]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[11]  (
+	.PAD(PADDR_M[11]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[12]  (
+	.PAD(PADDR_M[12]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[13]  (
+	.PAD(PADDR_M[13]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[14]  (
+	.PAD(PADDR_M[14]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[15]  (
+	.PAD(PADDR_M[15]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[16]  (
+	.PAD(PADDR_M[16]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[17]  (
+	.PAD(PADDR_M[17]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[18]  (
+	.PAD(PADDR_M[18]),
+	.D(GND)
+);
+// @25:32
+  OUTBUF \PADDR_M_obuf[19]  (
+	.PAD(PADDR_M[19]),
+	.D(GND)
+);
+// @25:33
+  OUTBUF PENABLE_M_obuf (
+	.PAD(PENABLE_M),
+	.D(PSEL_M_c)
+);
+// @25:34
+  OUTBUF PRESETN_obuf (
+	.PAD(PRESETN),
+	.D(PRESETN_c)
+);
+// @25:35
+  OUTBUF PSEL_M_obuf (
+	.PAD(PSEL_M),
+	.D(PSEL_M_c)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[0]  (
+	.PAD(PWDATA_M[0]),
+	.D(VCC)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[1]  (
+	.PAD(PWDATA_M[1]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[2]  (
+	.PAD(PWDATA_M[2]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[3]  (
+	.PAD(PWDATA_M[3]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[4]  (
+	.PAD(PWDATA_M[4]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[5]  (
+	.PAD(PWDATA_M[5]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[6]  (
+	.PAD(PWDATA_M[6]),
+	.D(GND)
+);
+// @25:36
+  OUTBUF \PWDATA_M_obuf[7]  (
+	.PAD(PWDATA_M[7]),
+	.D(GND)
+);
+// @25:37
+  OUTBUF PWRITE_M_obuf (
+	.PAD(PWRITE_M),
+	.D(GND)
+);
+// @25:179
+  COREABC_C0_COREABC_C0_0_COREABC COREABC_C0_0 (
+	.PREADY_M_c(PREADY_M_c),
+	.PSEL_M_c(PSEL_M_c),
+	.NSYSRESET_c(NSYSRESET_c),
+	.PCLK_c(PCLK_c),
+	.PRESETN_c(PRESETN_c)
+);
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* COREABC_C0 */
+

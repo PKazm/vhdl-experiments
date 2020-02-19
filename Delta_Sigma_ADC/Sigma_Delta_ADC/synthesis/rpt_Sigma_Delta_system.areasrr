@@ -1,0 +1,120 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S010TQ144STD (Microsemi)
+
+----------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   Sigma_Delta_system   ########
+==================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      121                100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Sigma_Delta_system:	121 (49.59 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      40                 100 %                
+ARI1     51                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block Sigma_Delta_system:	91 (37.30 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block Sigma_Delta_system:	2 (0.82 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       21                 100 %                
+=================================================
+Total IO PADS in the block Sigma_Delta_system:	21 (8.61 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   Averaging_Filter   ########
+Instance path:   Sigma_Delta_system.Averaging_Filter                  
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      69                 57 %                 
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Sigma_Delta_system.Averaging_Filter:	69 (28.28 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      4                  10 %                 
+ARI1     18                 35.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block Sigma_Delta_system.Averaging_Filter:	22 (9.02 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   Sigma_Delta_LVDS_ADC   ########
+Instance path:   Sigma_Delta_system.Sigma_Delta_LVDS_ADC                  
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      52                 43 %                 
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Sigma_Delta_system.Sigma_Delta_LVDS_ADC:	52 (21.31 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      36                 90 %                 
+ARI1     33                 64.7 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block Sigma_Delta_system.Sigma_Delta_LVDS_ADC:	69 (28.28 % Utilization)
+
+-----------------------------------------------------------
+########   Utilization report for  cell:   timer   ########
+Instance path:   Sigma_Delta_LVDS_ADC.timer                
+===========================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      1                  0.8260 %             
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Sigma_Delta_LVDS_ADC.timer:	1 (0.41 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      1                  2.5 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block Sigma_Delta_LVDS_ADC.timer:	1 (0.41 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

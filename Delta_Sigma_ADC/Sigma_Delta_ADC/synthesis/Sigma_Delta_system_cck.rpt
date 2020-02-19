@@ -1,0 +1,95 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Wed Jan 29 15:16:51 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "Sigma_Delta_system"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\designer\Sigma_Delta_system\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                     Ending                      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sigma_Delta_system|PCLK                      Sigma_Delta_system|PCLK     |     3.333            |     No paths         |     No paths         |     No paths                         
+timer|timer_clock_out_sig_inferred_clock     Sigma_Delta_system|PCLK     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:Data_out[0]
+p:Data_out[1]
+p:Data_out[2]
+p:Data_out[3]
+p:Data_out[4]
+p:Data_out[5]
+p:Data_out[6]
+p:Data_out[7]
+p:Data_out[8]
+p:Data_out[9]
+p:Data_out[10]
+p:Data_out[11]
+p:Data_out[12]
+p:Data_out[13]
+p:Data_out[14]
+p:Data_out[15]
+p:Data_out_ready
+p:LVDS_PADN_feedback
+p:PADN
+p:PADP
+p:RSTn
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

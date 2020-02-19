@@ -1,0 +1,33 @@
+Resource Usage Report for COREABC_C0 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          1 use
+CFG2           2 uses
+CFG3           2 uses
+
+
+Sequential Cells: 
+SLE            5 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 46
+I/O primitives: 36
+INBUF          3 uses
+OUTBUF         33 uses
+
+
+Global Clock Buffers: 1
+
+Total LUTs:    4
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  5 + 0 + 0 + 0 = 5;
+Total number of LUTs after P&R:  4 + 0 + 0 + 0 = 4;
+

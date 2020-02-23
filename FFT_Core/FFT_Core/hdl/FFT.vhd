@@ -21,6 +21,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+use work.FFT_package.all;
+
 entity FFT is
 generic (
     g_data_width : natural := 8;
@@ -74,7 +76,22 @@ architecture architecture_FFT of FFT is
     signal ram_adr : sample_adr_type;
     signal ram_dat_i : sample_dat_type;
     signal ram_dat_o : sample_dat_type;
+
+    -- ram_block_valid follows each flag and determines whether the data is valid
+    -- this is interpretted by each stage (input, FFT, output)
+    -- this flag is reset upon entering input stage, and can only be set by the input stage
+    -- this flag can be set low (invalid) during FFT and output stages, e.g. indicate error in FFT process
+    signal ram_block_valid : std_logic_vector(2 downto 0);
     -- memory access signals
+
+    -- memory state control signals
+    -- fft_a : memB = input, memA = process, memC = output
+    -- fft_b : memC = input, memB = process, memA = output
+    -- fft_c : memA = input, memC = process, memB = output
+    type mem_block_states is(fft_a, fft_b, fft_c);
+    signal mem_block_state : mem_block_states;
+    signal new_state_flag : std_logic;
+    -- memory state control signals
 
     -- input memory signals
     -- these get assigned to memory access signals depending on the mem block state of the FFT
@@ -82,7 +99,9 @@ architecture architecture_FFT of FFT is
     signal in_adr : adr_array_type;
     signal in_dat_i : ram_dat_array_type;
     signal in_dat_o : ram_dat_array_type;
+    signal in_block_valid : std_logic;
 
+    signal in_valid_ctrl : std_logic;
     signal in_r_en : std_logic;
     signal in_data_real : std_logic_vector(g_data_width - 1 downto 0);
     signal in_data_imag : std_logic_vector(g_data_width - 1 downto 0);
@@ -99,7 +118,9 @@ architecture architecture_FFT of FFT is
     signal out_adr : adr_array_type;
     signal out_dat_i : ram_dat_array_type;
     signal out_dat_o : ram_dat_array_type;
+    signal out_block_valid : std_logic;
 
+    signal out_valid_ctrl : std_logic;
     signal out_r_en : std_logic;
     signal out_data_real : std_logic_vector(g_data_width - 1 downto 0);
     signal out_data_imag : std_logic_vector(g_data_width - 1 downto 0);
@@ -111,20 +132,15 @@ architecture architecture_FFT of FFT is
     signal fft_adr : adr_array_type;
     signal fft_dat_i : ram_dat_array_type;
     signal fft_dat_o : ram_dat_array_type;
+    signal fft_block_valid : std_logic;
 
+    signal fft_valid_ctrl : std_logic;
     signal fft_r_en : std_logic;
     signal fft_trans_complete : std_logic;
     signal fft_data_real : std_logic_vector(g_data_width - 1 downto 0);
     signal fft_data_imag : std_logic_vector(g_data_width - 1 downto 0);
     -- fft memory signals
 
-    -- memory state control signals
-    -- fft_a : memB = input, memA = process, memC = output
-    -- fft_b : memC = input, memB = process, memA = output
-    -- fft_c : memA = input, memC = process, memB = output
-    type mem_block_states is(fft_a, fft_b, fft_c);
-    signal mem_block_state : mem_block_states;
-    -- memory state control signals
 
     signal sample_full : natural range 0 to SAMPLE_CNT - 1 := 0;
     signal data_in_full_sig : std_logic;
@@ -190,12 +206,14 @@ begin
     begin
         if(RSTn = '0') then
             mem_block_state <= fft_a;
+            new_state_flag <= '0';
         elsif(rising_edge(PCLK)) then
             -- conditions for state progression
             -- all data is read out from transform: out_read_complete = 1
             -- transform is complete: fft_trans_complete = 1
             -- next data set if full and ready to be transformed: in_data_full_sig = 1
             if(out_read_complete = 1 and fft_trans_complete = 1 and in_data_full_sig = 1) then
+                new_state_flag <= '1';
                 case mem_block_state is
                     when fft_a =>
                         mem_block_state <= fft_b;
@@ -205,6 +223,28 @@ begin
                         mem_block_state <= fft_a;
                     when others =>
                         mem_block_state <= fft_a;
+                end case;
+            else
+                -- condition to reset new_state_flag
+                -- load_sample process finish transition
+                -- FFT process finish transition
+                -- output process finish transition
+                new_state_flag <= '0';
+                case mem_block_state is
+                    when fft_a =>
+                        ram_block_valid(0) <= fft_valid_ctrl;
+                        ram_block_valid(1) <= in_valid_ctrl;
+                        ram_block_valid(2) <= out_valid_ctrl;
+                    when fft_b =>
+                        ram_block_valid(0) <= out_valid_ctrl;
+                        ram_block_valid(1) <= fft_valid_ctrl;
+                        ram_block_valid(2) <= in_valid_ctrl;
+                    when fft_c =>
+                        ram_block_valid(0) <= in_valid_ctrl;
+                        ram_block_valid(1) <= out_valid_ctrl;
+                        ram_block_valid(2) <= fft_valid_ctrl;
+                    when others =>
+                        null;
                 end case;
             end if;
         end if;
@@ -219,48 +259,57 @@ begin
                 ram_adr(0) <= fft_adr;
                 ram_dat_i(0) <= fft_dat_i;
                 fft_dat_o <= ram_dat_o(0);
+                fft_block_valid <= ram_block_valid(0);
 
                 ram_wren(1) <= in_wren;
                 ram_adr(1) <= in_adr;
                 ram_dat_i(1) <= in_dat_i;
                 in_dat_o <= ram_dat_o(1);
+                in_block_valid <= ram_block_valid(1);
 
                 ram_wren(2) <= out_wren;
                 ram_adr(2) <= out_adr;
                 ram_dat_i(2) <= out_dat_i;
                 out_dat_o <= ram_dat_o(2);
+                out_block_valid <= ram_block_valid(2);
             when fft_b =>
                 -- fft_b : memC = input, memB = process, memA = output
                 ram_wren(0) <= out_wren;
                 ram_adr(0) <= out_adr;
                 ram_dat_i(0) <= out_dat_i;
                 out_dat_o <= ram_dat_o(0);
+                out_block_valid <= ram_block_valid(0);
 
                 ram_wren(1) <= fft_wren;
                 ram_adr(1) <= fft_adr;
                 ram_dat_i(1) <= fft_dat_i;
                 fft_dat_o <= ram_dat_o(1);
+                fft_block_valid <= ram_block_valid(1);
 
                 ram_wren(2) <= in_wren;
                 ram_adr(2) <= in_adr;
                 ram_dat_i(2) <= in_dat_i;
                 in_dat_o <= ram_dat_o(2);
+                in_block_valid <= ram_block_valid(2);
             when fft_c =>
                 -- fft_c : memA = input, memC = process, memB = output
                 ram_wren(0) <= in_wren;
                 ram_adr(0) <= in_adr;
                 ram_dat_i(0) <= in_dat_i;
                 in_dat_o <= ram_dat_o(0);
+                in_block_valid <= ram_block_valid(0);
 
                 ram_wren(1) <= out_wren;
                 ram_adr(1) <= out_adr;
                 ram_dat_i(1) <= out_dat_i;
                 out_dat_o <= ram_dat_o(1);
+                out_block_valid <= ram_block_valid(1);
 
                 ram_wren(2) <= fft_wren;
                 ram_adr(2) <= fft_adr;
                 ram_dat_i(2) <= fft_dat_i;
                 fft_dat_o <= ram_dat_o(2);
+                fft_block_valid <= ram_block_valid(2);
             when others =>
                 null;
         end case;
@@ -274,18 +323,20 @@ begin
     -- when mem_block_state changes, the last in_mem_adr will be stored for reference by other processes
     --      and data_in_full_sig will be set to 0
 
-    p_load_sample : process(PCLK, RSTn)
+    p_in_load_sample : process(PCLK, RSTn)
     begin
         if(RSTn = '0') then
             data_in_wren_last <= '0';
             in_mem_adr <= 0;
             in_data_ready_sig <= '1';      -- default to empty RAM, we want to load data
             data_in_full_sig <= '0';
+            in_wren <= (others => '0');
+            in_valid_ctrl <= '0';
         elsif(rising_edge(PCLK)) then
             data_in_wren_last <= data_in_wren;
             if((data_in_wren_last = '0') and (data_in_wren = '1')) then
                 -- write in_data to ram
-                in_wren <= '1';
+                in_wren(0) <= '1';
             elsif((data_in_wren_last = '1') and (data_in_wren = '0')) then
                 -- increment in_mem_adr
                 if(in_mem_adr /= SAMPLE_CNT - 1) then
@@ -293,10 +344,10 @@ begin
                 else
                     data_in_full_sig <= '1';
                 end if;
-                in_wren <= '0';
+                in_wren(0) <= '0';
             else
                 -- in memory is idle
-                in_wren <= '0';
+                in_wren(0) <= '0';
             end if;
         end if;
     end process;
@@ -306,8 +357,26 @@ begin
     end generate gen_in_mem_adr_bitrev;
 
 
-    in_adr_0 <= in_mem_adr;--in_mem_adr_bitrev;
-    in_dat_i_0 <= in_data;
+    in_adr(0) <= in_mem_adr;--in_mem_adr_bitrev;
+    in_dat_i(0) <= in_data;
+    in_valid_ctrl <= in_block_valid and data_in_full_sig;
+
+    --=========================================================================
+    p_out_sample : process(PCLK, RSTn)
+    begin
+        if(RSTn = '0') then
+            out_data <= (others => '0');
+            out_data_ready <= '0';
+        elsif(rising_edge(PCLK)) then
+            out_data_adr
+            out_read_complete
+            out_data
+            out_data_ready
+        end if;
+    end process;
+
+    
+    out_valid_ctrl <= out_block_valid;      -- out doesn't change the mem block so no change
 
     --=========================================================================
 
@@ -356,6 +425,9 @@ begin
             end loop;
         end if;
     end process;
+
+    
+    fft_valid_ctrl <= fft_block_valid;
 
    -- architecture body
 end architecture_FFT;

@@ -1,18 +1,20 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03M-SP1-1
 #--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\run_options.txt
-#--  Written on Tue Feb 18 16:48:01 2020
+#--  Written on Fri Feb 21 14:49:20 2020
 
 
 #project files
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/bit_extender_8_to_35.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Butterfly_HW_DSP.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/Complex_Mult_test_sd/Complex_Mult_test_sd.vhd"
-add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/designer/Complex_Mult_test_sd/synthesis.fdc"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/vhdl_complex_mult_test_sd/vhdl_complex_mult_test_sd.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/designer/vhdl_complex_mult_test_sd/synthesis.fdc"
 
 
 
@@ -28,7 +30,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "work.Complex_Mult_test_sd"
+set_option -top_module "work.vhdl_complex_mult_test_sd"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -57,7 +59,7 @@ set_option -opcond COMTC
 set_option -retiming 0
 set_option -report_path 4000
 set_option -update_models_cp 0
-set_option -preserve_registers 0
+set_option -preserve_registers 1
 set_option -disable_ramindex 0
 set_option -microsemi_enhanced_flow 1
 
@@ -81,5 +83,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "./Complex_Mult_test_sd.vm"
+project -result_file "./vhdl_complex_mult_test_sd.vm"
 impl -active "synthesis"

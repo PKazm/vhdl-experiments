@@ -1,0 +1,613 @@
+# Reading C:/Microsemi/Libero_SoC_v12.1/ModelSim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 16:46:26 on Feb 21,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Twiddle_table
+# -- Compiling architecture architecture_Twiddle_table of Twiddle_table
+# End time: 16:46:28 on Feb 21,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 16:46:28 on Feb 21,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package FFT_package
+# End time: 16:46:28 on Feb 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 16:46:28 on Feb 21,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Twiddle_Table_tb
+# -- Compiling architecture behavioral of Twiddle_Table_tb
+# End time: 16:46:28 on Feb 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L presynth -t 1fs presynth.Twiddle_Table_tb 
+# Start time: 16:46:28 on Feb 21,2020
+# //  ModelSim Microsemi 10.7c Oct 15 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading presynth.twiddle_table_tb(behavioral)
+# Loading ieee.math_real(body)
+# Loading presynth.twiddle_table(architecture_twiddle_table)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 fs  Iteration: 0  Region: /twiddle_table_tb/Twiddle_table_0/gen_yes_BRAM
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/g_use_BRAM
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/PCLK
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/RSTn
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/twiddle_index
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/g_data_samples_exp
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/cosine_table
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/TWIDDLE_CNT
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/TWIDDLE_CNT_EXP
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem_dat_r
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem_dat_w
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem_adr_cnt
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/twiddle_ready_sig
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem_adr
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/mem_w_en
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/sine_table
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/cos_twid_1comp
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/cos_twid
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/twiddle_ready
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/sin_twid
+add wave -position end  sim:/twiddle_table_tb/Twiddle_table_0/sin_twid_1comp
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 fs  Iteration: 0  Region: /twiddle_table_tb/Twiddle_table_0/gen_yes_BRAM
+# ** Note: 0, 255
+#    Time: 5225 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 3, 255
+#    Time: 5235 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 6, 255
+#    Time: 5245 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 9, 255
+#    Time: 5255 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 13, 255
+#    Time: 5265 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 16, 255
+#    Time: 5275 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 19, 254
+#    Time: 5285 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 22, 254
+#    Time: 5295 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 25, 254
+#    Time: 5305 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 28, 253
+#    Time: 5315 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 31, 253
+#    Time: 5325 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 34, 253
+#    Time: 5335 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 37, 252
+#    Time: 5345 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 41, 252
+#    Time: 5355 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 44, 251
+#    Time: 5365 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 47, 251
+#    Time: 5375 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 50, 250
+#    Time: 5385 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 53, 249
+#    Time: 5395 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 56, 249
+#    Time: 5405 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 59, 248
+#    Time: 5415 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 62, 247
+#    Time: 5425 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 65, 247
+#    Time: 5435 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 68, 246
+#    Time: 5445 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 71, 245
+#    Time: 5455 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 74, 244
+#    Time: 5465 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 77, 243
+#    Time: 5475 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 80, 242
+#    Time: 5485 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 83, 241
+#    Time: 5495 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 86, 240
+#    Time: 5505 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 89, 239
+#    Time: 5515 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 92, 238
+#    Time: 5525 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 95, 237
+#    Time: 5535 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 98, 236
+#    Time: 5545 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 100, 234
+#    Time: 5555 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 103, 233
+#    Time: 5565 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 106, 232
+#    Time: 5575 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 109, 231
+#    Time: 5585 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 112, 229
+#    Time: 5595 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 115, 228
+#    Time: 5605 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 117, 226
+#    Time: 5615 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 120, 225
+#    Time: 5625 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 123, 223
+#    Time: 5635 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 126, 222
+#    Time: 5645 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 128, 220
+#    Time: 5655 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 131, 219
+#    Time: 5665 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 134, 217
+#    Time: 5675 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 136, 215
+#    Time: 5685 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 139, 214
+#    Time: 5695 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 142, 212
+#    Time: 5705 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 144, 210
+#    Time: 5715 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 147, 208
+#    Time: 5725 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 149, 207
+#    Time: 5735 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 152, 205
+#    Time: 5745 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 154, 203
+#    Time: 5755 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 157, 201
+#    Time: 5765 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 159, 199
+#    Time: 5775 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 162, 197
+#    Time: 5785 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 164, 195
+#    Time: 5795 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 167, 193
+#    Time: 5805 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 169, 191
+#    Time: 5815 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 171, 189
+#    Time: 5825 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 174, 187
+#    Time: 5835 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 176, 185
+#    Time: 5845 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 178, 183
+#    Time: 5855 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 180, 180
+#    Time: 5865 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 183, 178
+#    Time: 5875 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 185, 176
+#    Time: 5885 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 187, 174
+#    Time: 5895 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 189, 171
+#    Time: 5905 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 191, 169
+#    Time: 5915 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 193, 167
+#    Time: 5925 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 195, 164
+#    Time: 5935 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 197, 162
+#    Time: 5945 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 199, 159
+#    Time: 5955 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 201, 157
+#    Time: 5965 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 203, 154
+#    Time: 5975 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 205, 152
+#    Time: 5985 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 207, 149
+#    Time: 5995 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 208, 147
+#    Time: 6005 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 210, 144
+#    Time: 6015 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 212, 142
+#    Time: 6025 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 214, 139
+#    Time: 6035 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 215, 136
+#    Time: 6045 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 217, 134
+#    Time: 6055 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 219, 131
+#    Time: 6065 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 220, 128
+#    Time: 6075 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 222, 126
+#    Time: 6085 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 223, 123
+#    Time: 6095 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 225, 120
+#    Time: 6105 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 226, 117
+#    Time: 6115 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 228, 115
+#    Time: 6125 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 229, 112
+#    Time: 6135 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 231, 109
+#    Time: 6145 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 232, 106
+#    Time: 6155 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 233, 103
+#    Time: 6165 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 234, 100
+#    Time: 6175 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 236, 98
+#    Time: 6185 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 237, 95
+#    Time: 6195 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 238, 92
+#    Time: 6205 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 239, 89
+#    Time: 6215 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 240, 86
+#    Time: 6225 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 241, 83
+#    Time: 6235 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 242, 80
+#    Time: 6245 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 243, 77
+#    Time: 6255 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 244, 74
+#    Time: 6265 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 245, 71
+#    Time: 6275 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 246, 68
+#    Time: 6285 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 247, 65
+#    Time: 6295 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 247, 62
+#    Time: 6305 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 248, 59
+#    Time: 6315 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 249, 56
+#    Time: 6325 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 249, 53
+#    Time: 6335 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 250, 50
+#    Time: 6345 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 251, 47
+#    Time: 6355 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 251, 44
+#    Time: 6365 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 252, 41
+#    Time: 6375 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 252, 37
+#    Time: 6385 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, 34
+#    Time: 6395 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, 31
+#    Time: 6405 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, 28
+#    Time: 6415 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, 25
+#    Time: 6425 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, 22
+#    Time: 6435 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, 19
+#    Time: 6445 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 16
+#    Time: 6455 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 13
+#    Time: 6465 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 9
+#    Time: 6475 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 6
+#    Time: 6485 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 3
+#    Time: 6495 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, 0
+#    Time: 6505 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, -3
+#    Time: 6515 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, -6
+#    Time: 6525 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, -9
+#    Time: 6535 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, -13
+#    Time: 6545 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 255, -16
+#    Time: 6555 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, -19
+#    Time: 6565 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, -22
+#    Time: 6575 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 254, -25
+#    Time: 6585 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, -28
+#    Time: 6595 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, -31
+#    Time: 6605 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 253, -34
+#    Time: 6615 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 252, -37
+#    Time: 6625 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 252, -41
+#    Time: 6635 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 251, -44
+#    Time: 6645 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 251, -47
+#    Time: 6655 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 250, -50
+#    Time: 6665 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 249, -53
+#    Time: 6675 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 249, -56
+#    Time: 6685 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 248, -59
+#    Time: 6695 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 247, -62
+#    Time: 6705 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 247, -65
+#    Time: 6715 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 246, -68
+#    Time: 6725 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 245, -71
+#    Time: 6735 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 244, -74
+#    Time: 6745 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 243, -77
+#    Time: 6755 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 242, -80
+#    Time: 6765 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 241, -83
+#    Time: 6775 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 240, -86
+#    Time: 6785 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 239, -89
+#    Time: 6795 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 238, -92
+#    Time: 6805 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 237, -95
+#    Time: 6815 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 236, -98
+#    Time: 6825 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 234, -100
+#    Time: 6835 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 233, -103
+#    Time: 6845 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 232, -106
+#    Time: 6855 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 231, -109
+#    Time: 6865 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 229, -112
+#    Time: 6875 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 228, -115
+#    Time: 6885 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 226, -117
+#    Time: 6895 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 225, -120
+#    Time: 6905 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 223, -123
+#    Time: 6915 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 222, -126
+#    Time: 6925 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 220, -128
+#    Time: 6935 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 219, -131
+#    Time: 6945 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 217, -134
+#    Time: 6955 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 215, -136
+#    Time: 6965 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 214, -139
+#    Time: 6975 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 212, -142
+#    Time: 6985 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 210, -144
+#    Time: 6995 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 208, -147
+#    Time: 7005 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 207, -149
+#    Time: 7015 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 205, -152
+#    Time: 7025 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 203, -154
+#    Time: 7035 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 201, -157
+#    Time: 7045 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 199, -159
+#    Time: 7055 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 197, -162
+#    Time: 7065 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 195, -164
+#    Time: 7075 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 193, -167
+#    Time: 7085 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 191, -169
+#    Time: 7095 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 189, -171
+#    Time: 7105 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 187, -174
+#    Time: 7115 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 185, -176
+#    Time: 7125 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 183, -178
+#    Time: 7135 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 180, -180
+#    Time: 7145 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 178, -183
+#    Time: 7155 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 176, -185
+#    Time: 7165 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 174, -187
+#    Time: 7175 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 171, -189
+#    Time: 7185 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 169, -191
+#    Time: 7195 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 167, -193
+#    Time: 7205 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 164, -195
+#    Time: 7215 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 162, -197
+#    Time: 7225 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 159, -199
+#    Time: 7235 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 157, -201
+#    Time: 7245 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 154, -203
+#    Time: 7255 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 152, -205
+#    Time: 7265 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 149, -207
+#    Time: 7275 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 147, -208
+#    Time: 7285 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 144, -210
+#    Time: 7295 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 142, -212
+#    Time: 7305 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 139, -214
+#    Time: 7315 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 136, -215
+#    Time: 7325 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 134, -217
+#    Time: 7335 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 131, -219
+#    Time: 7345 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 128, -220
+#    Time: 7355 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 126, -222
+#    Time: 7365 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 123, -223
+#    Time: 7375 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 120, -225
+#    Time: 7385 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 117, -226
+#    Time: 7395 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 115, -228
+#    Time: 7405 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 112, -229
+#    Time: 7415 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 109, -231
+#    Time: 7425 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 106, -232
+#    Time: 7435 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 103, -233
+#    Time: 7445 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 100, -234
+#    Time: 7455 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 98, -236
+#    Time: 7465 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 95, -237
+#    Time: 7475 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 92, -238
+#    Time: 7485 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 89, -239
+#    Time: 7495 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 86, -240
+#    Time: 7505 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 83, -241
+#    Time: 7515 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 80, -242
+#    Time: 7525 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 77, -243
+#    Time: 7535 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 74, -244
+#    Time: 7545 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 71, -245
+#    Time: 7555 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 68, -246
+#    Time: 7565 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 65, -247
+#    Time: 7575 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 62, -247
+#    Time: 7585 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 59, -248
+#    Time: 7595 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 56, -249
+#    Time: 7605 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 53, -249
+#    Time: 7615 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 50, -250
+#    Time: 7625 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 47, -251
+#    Time: 7635 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 44, -251
+#    Time: 7645 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 41, -252
+#    Time: 7655 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 37, -252
+#    Time: 7665 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 34, -253
+#    Time: 7675 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 31, -253
+#    Time: 7685 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 28, -253
+#    Time: 7695 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 25, -254
+#    Time: 7705 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 22, -254
+#    Time: 7715 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 19, -254
+#    Time: 7725 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 16, -255
+#    Time: 7735 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 13, -255
+#    Time: 7745 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 9, -255
+#    Time: 7755 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 6, -255
+#    Time: 7765 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 3, -255
+#    Time: 7775 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 7775 ns  Iteration: 0  Instance: /twiddle_table_tb
+# ** Note: 0, 255
+#    Time: 7785 ns  Iteration: 0  Instance: /twiddle_table_tb
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 16:49:33 on Feb 21,2020, Elapsed time: 0:03:05
+# Errors: 2, Warnings: 3

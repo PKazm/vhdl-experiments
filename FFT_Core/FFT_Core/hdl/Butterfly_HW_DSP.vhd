@@ -181,12 +181,12 @@ begin
             --imag_b_in_sig <= signed(imag_b_in);
             --twiddle_index_sig <= twiddle_index;
 
-            --cos_twid_sig <= cos_twid;
-            --sin_twid_sig <= sin_twid;
-            --sin_twid_1comp_sig <= sin_twid_1comp;
-            cos_twid_sig <= twiddle_index(3 downto 0) & twiddle_index(8 downto 4);
-            sin_twid_sig <= twiddle_index;
-            sin_twid_1comp_sig <= not twiddle_index;
+            cos_twid_sig <= cos_twid;
+            sin_twid_sig <= sin_twid;
+            sin_twid_1comp_sig <= sin_twid_1comp;
+            --cos_twid_sig <= twiddle_index(3 downto 0) & twiddle_index(8 downto 4);
+            --sin_twid_sig <= twiddle_index;
+            --sin_twid_1comp_sig <= not twiddle_index;
             
             -- real_a_1comp_extend is necessary to ensure C input receives the correct sign information
             real_a_1comp_extend_var := (34 downto 9 => real_a_in_sig(8), 8 downto 0 => real_a_in_sig, others => '0');

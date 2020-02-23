@@ -12,10 +12,22 @@
     </spirit:views>
     <spirit:signals>
       <spirit:signal>
+        <spirit:name>PCLK</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>RSTn</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
         <spirit:name>twiddle_index</spirit:name>
         <spirit:direction>in</spirit:direction>
         <spirit:left spirit:dependency="id('g_data_samples_exp') - 2" spirit:resolve="dependent">6</spirit:left>
         <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>twiddle_ready</spirit:name>
+        <spirit:direction>out</spirit:direction>
       </spirit:signal>
       <spirit:signal>
         <spirit:name>cos_twid</spirit:name>
@@ -44,6 +56,7 @@
     </spirit:signals>
     <spirit:hwParameters>
       <spirit:hwParameter spirit:id="g_data_samples_exp" spirit:name="g_data_samples_exp" spirit:prompt="g_data_samples_exp:" spirit:dataType="int" spirit:resolve="user">8</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="g_use_BRAM" spirit:name="g_use_BRAM" spirit:prompt="g_use_BRAM:" spirit:dataType="int" spirit:resolve="user">1</spirit:hwParameter>
     </spirit:hwParameters>
     <spirit:deletedhwParameters>
     </spirit:deletedhwParameters>

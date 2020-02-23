@@ -19,7 +19,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>vhdl_complex_mult_test_sd</data>
 <data>52</data>
-<data>10</data>
+<data>2</data>
 <data>59</data>
 <data>0</data>
 <data>2</data>
@@ -66,7 +66,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>LFSR_Fib_Gen</data>
 <data>16</data>
-<data>10</data>
+<data>2</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>

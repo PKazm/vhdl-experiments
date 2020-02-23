@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\impl1\Complex_Mult_test_sd.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\Complex_Mult_test_sd_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

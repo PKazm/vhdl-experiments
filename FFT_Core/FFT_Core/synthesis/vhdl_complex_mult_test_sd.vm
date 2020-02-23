@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "N-2018.03M-SP1-1"
 // Program "Synplify Pro", Mapper "mapact, Build 2461R"
-// Tue Feb 18 16:36:57 2020
+// Fri Feb 21 14:49:25 2020
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -31,30 +31,31 @@
 
 `timescale 100 ps/100 ps
 module Butterfly_HW_DSP (
-  rand_net_0_i,
+  rand_net_0_i_0,
   rand_net_0,
   imag_a_out_c,
-  imag_b_out_c,
   real_b_out_c,
+  imag_b_out_c,
   real_a_out_c,
   FCCC_C0_0_GL0,
   FCCC_C0_0_LOCK
 )
 ;
-input [9:1] rand_net_0_i ;
+input rand_net_0_i_0 ;
 input [15:0] rand_net_0 ;
 output [8:0] imag_a_out_c ;
-output [8:0] imag_b_out_c ;
 output [8:0] real_b_out_c ;
+output [8:0] imag_b_out_c ;
 output [8:0] real_a_out_c ;
 input FCCC_C0_0_GL0 ;
 input FCCC_C0_0_LOCK ;
+wire rand_net_0_i_0 ;
 wire FCCC_C0_0_GL0 ;
 wire FCCC_C0_0_LOCK ;
-wire [8:8] real_b_out_sig_RNO_S;
 wire [8:8] imag_b_out_sig_RNO_S;
 wire [9:1] real_a_out_var_2;
 wire [9:1] imag_a_out_var_1;
+wire [8:8] real_b_out_sig_RNO_S;
 wire [8:8] imag_b_out_sig_RNO_FCO;
 wire [8:8] imag_b_out_sig_RNO_Y;
 wire [26:18] P_0;
@@ -67,15 +68,8 @@ wire [43:0] un5_temp_real_var_NC;
 wire [43:0] un5_temp_real_var_ONC;
 wire [16:0] un5_temp_real_var;
 wire VCC ;
-wire un4_real_b_out_var_cry_6_S ;
+wire un4_imag_b_out_var_cry_8_S ;
 wire GND ;
-wire un4_real_b_out_var_cry_7_S ;
-wire un4_real_b_out_var_cry_8_S ;
-wire un4_real_b_out_var_cry_1_S ;
-wire un4_real_b_out_var_cry_2_S ;
-wire un4_real_b_out_var_cry_3_S ;
-wire un4_real_b_out_var_cry_4_S ;
-wire un4_real_b_out_var_cry_5_S ;
 wire un4_imag_b_out_var_cry_1_S ;
 wire un4_imag_b_out_var_cry_2_S ;
 wire un4_imag_b_out_var_cry_3_S ;
@@ -83,7 +77,14 @@ wire un4_imag_b_out_var_cry_4_S ;
 wire un4_imag_b_out_var_cry_5_S ;
 wire un4_imag_b_out_var_cry_6_S ;
 wire un4_imag_b_out_var_cry_7_S ;
-wire un4_imag_b_out_var_cry_8_S ;
+wire un4_real_b_out_var_cry_1_S ;
+wire un4_real_b_out_var_cry_2_S ;
+wire un4_real_b_out_var_cry_3_S ;
+wire un4_real_b_out_var_cry_4_S ;
+wire un4_real_b_out_var_cry_5_S ;
+wire un4_real_b_out_var_cry_6_S ;
+wire un4_real_b_out_var_cry_7_S ;
+wire un4_real_b_out_var_cry_8_S ;
 wire un4_imag_b_out_var_cry_0_Z ;
 wire un4_imag_b_out_var_cry_0_S ;
 wire un4_imag_b_out_var_cry_0_Y ;
@@ -225,48 +226,12 @@ wire imag_a_out_var_1_cry_8_Y ;
 wire OVFL_CARRYOUT ;
 wire OVFL_CARRYOUT_0 ;
 // @18:150
-  SLE \real_b_out_sig[5]  (
-	.Q(real_b_out_c[5]),
+  SLE \imag_b_out_sig[7]  (
+	.Q(imag_b_out_c[7]),
 	.ADn(VCC),
 	.ALn(FCCC_C0_0_LOCK),
 	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_6_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[6]  (
-	.Q(real_b_out_c[6]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_7_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[7]  (
-	.Q(real_b_out_c[7]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_8_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[8]  (
-	.Q(real_b_out_c[8]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(real_b_out_sig_RNO_S[8]),
+	.D(un4_imag_b_out_var_cry_8_S),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -393,60 +358,12 @@ wire OVFL_CARRYOUT_0 ;
 	.SLn(VCC)
 );
 // @18:150
-  SLE \real_b_out_sig[0]  (
-	.Q(real_b_out_c[0]),
+  SLE \imag_a_out_sig[1]  (
+	.Q(imag_a_out_c[1]),
 	.ADn(VCC),
 	.ALn(FCCC_C0_0_LOCK),
 	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_1_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[1]  (
-	.Q(real_b_out_c[1]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_2_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[2]  (
-	.Q(real_b_out_c[2]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_3_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[3]  (
-	.Q(real_b_out_c[3]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_4_S),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \real_b_out_sig[4]  (
-	.Q(real_b_out_c[4]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(un4_real_b_out_var_cry_5_S),
+	.D(imag_a_out_var_1[2]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -621,12 +538,108 @@ wire OVFL_CARRYOUT_0 ;
 	.SLn(VCC)
 );
 // @18:150
-  SLE \imag_b_out_sig[7]  (
-	.Q(imag_b_out_c[7]),
+  SLE \real_b_out_sig[0]  (
+	.Q(real_b_out_c[0]),
 	.ADn(VCC),
 	.ALn(FCCC_C0_0_LOCK),
 	.CLK(FCCC_C0_0_GL0),
-	.D(un4_imag_b_out_var_cry_8_S),
+	.D(un4_real_b_out_var_cry_1_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[1]  (
+	.Q(real_b_out_c[1]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_2_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[2]  (
+	.Q(real_b_out_c[2]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_3_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[3]  (
+	.Q(real_b_out_c[3]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_4_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[4]  (
+	.Q(real_b_out_c[4]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_5_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[5]  (
+	.Q(real_b_out_c[5]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_6_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[6]  (
+	.Q(real_b_out_c[6]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_7_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[7]  (
+	.Q(real_b_out_c[7]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(un4_real_b_out_var_cry_8_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @18:150
+  SLE \real_b_out_sig[8]  (
+	.Q(real_b_out_c[8]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(real_b_out_sig_RNO_S[8]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -639,18 +652,6 @@ wire OVFL_CARRYOUT_0 ;
 	.ALn(FCCC_C0_0_LOCK),
 	.CLK(FCCC_C0_0_GL0),
 	.D(imag_a_out_var_1[1]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @18:150
-  SLE \imag_a_out_sig[1]  (
-	.Q(imag_a_out_c[1]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(imag_a_out_var_1[2]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1371,7 +1372,7 @@ defparam imag_a_out_var_1_cry_8.INIT=20'h5AA55;
 	.P({un5_temp_imag_var_ONC[43:27], P[26:9], un5_temp_imag_var_ONC[8:0]}),
 	.CDIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
 	.A({rand_net_0[15:7], rand_net_0[13:5]}),
-	.B({rand_net_0[4:1], rand_net_0[9:5], rand_net_0_i[9:1]}),
+	.B({GND, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, VCC, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0}),
 	.C({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
 	.P_BYPASS({VCC, VCC}),
 	.A_BYPASS({VCC, VCC}),
@@ -1430,7 +1431,7 @@ defparam imag_a_out_var_1_cry_8.INIT=20'h5AA55;
 	.P({un5_temp_real_var_ONC[43:27], P_0[26], un5_temp_real_var[16], P_0[24:18], un4_real_b_out_var, un5_temp_real_var[7:0], un5_temp_real_var_ONC[8:0]}),
 	.CDIN({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
 	.A({rand_net_0[13:5], rand_net_0[15:7]}),
-	.B({rand_net_0[4:1], rand_net_0[9:5], rand_net_0[9:1]}),
+	.B({GND, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, rand_net_0_i_0, GND, rand_net_0[9], rand_net_0[9], rand_net_0[9], rand_net_0[9], rand_net_0[9], rand_net_0[9], rand_net_0[9], rand_net_0[9]}),
 	.C({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
 	.P_BYPASS({VCC, VCC}),
 	.A_BYPASS({VCC, VCC}),
@@ -1616,15 +1617,16 @@ endmodule /* FCCC_C0 */
 
 module LFSR_Fib_Gen (
   rand_net_0,
-  rand_net_0_i,
+  rand_net_0_i_0,
   FCCC_C0_0_GL0,
   FCCC_C0_0_LOCK
 )
 ;
 output [15:0] rand_net_0 ;
-output [9:1] rand_net_0_i ;
+output rand_net_0_i_0 ;
 input FCCC_C0_0_GL0 ;
 input FCCC_C0_0_LOCK ;
+wire rand_net_0_i_0 ;
 wire FCCC_C0_0_GL0 ;
 wire FCCC_C0_0_LOCK ;
 wire [0:0] fib_reg_17;
@@ -1632,73 +1634,9 @@ wire VCC ;
 wire GND ;
   CFG1 \fib_reg_RNIS9DC[9]  (
 	.A(rand_net_0[9]),
-	.Y(rand_net_0_i[9])
+	.Y(rand_net_0_i_0)
 );
 defparam \fib_reg_RNIS9DC[9] .INIT=2'h1;
-  CFG1 \fib_reg_RNIR8DC[8]  (
-	.A(rand_net_0[8]),
-	.Y(rand_net_0_i[8])
-);
-defparam \fib_reg_RNIR8DC[8] .INIT=2'h1;
-  CFG1 \fib_reg_RNIQ7DC[7]  (
-	.A(rand_net_0[7]),
-	.Y(rand_net_0_i[7])
-);
-defparam \fib_reg_RNIQ7DC[7] .INIT=2'h1;
-  CFG1 \fib_reg_RNIP6DC[6]  (
-	.A(rand_net_0[6]),
-	.Y(rand_net_0_i[6])
-);
-defparam \fib_reg_RNIP6DC[6] .INIT=2'h1;
-  CFG1 \fib_reg_RNIO5DC[5]  (
-	.A(rand_net_0[5]),
-	.Y(rand_net_0_i[5])
-);
-defparam \fib_reg_RNIO5DC[5] .INIT=2'h1;
-  CFG1 \fib_reg_RNIN4DC[4]  (
-	.A(rand_net_0[4]),
-	.Y(rand_net_0_i[4])
-);
-defparam \fib_reg_RNIN4DC[4] .INIT=2'h1;
-  CFG1 \fib_reg_RNIM3DC[3]  (
-	.A(rand_net_0[3]),
-	.Y(rand_net_0_i[3])
-);
-defparam \fib_reg_RNIM3DC[3] .INIT=2'h1;
-  CFG1 \fib_reg_RNIL2DC[2]  (
-	.A(rand_net_0[2]),
-	.Y(rand_net_0_i[2])
-);
-defparam \fib_reg_RNIL2DC[2] .INIT=2'h1;
-  CFG1 \fib_reg_RNIK1DC[1]  (
-	.A(rand_net_0[1]),
-	.Y(rand_net_0_i[1])
-);
-defparam \fib_reg_RNIK1DC[1] .INIT=2'h1;
-// @14:42
-  SLE \fib_reg[3]  (
-	.Q(rand_net_0[3]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(rand_net_0[2]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
-// @14:42
-  SLE \fib_reg[4]  (
-	.Q(rand_net_0[4]),
-	.ADn(VCC),
-	.ALn(FCCC_C0_0_LOCK),
-	.CLK(FCCC_C0_0_GL0),
-	.D(rand_net_0[3]),
-	.EN(VCC),
-	.LAT(GND),
-	.SD(GND),
-	.SLn(VCC)
-);
 // @14:42
   SLE \fib_reg[12]  (
 	.Q(rand_net_0[12]),
@@ -1778,6 +1716,30 @@ defparam \fib_reg_RNIK1DC[1] .INIT=2'h1;
 	.ALn(FCCC_C0_0_LOCK),
 	.CLK(FCCC_C0_0_GL0),
 	.D(rand_net_0[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:42
+  SLE \fib_reg[3]  (
+	.Q(rand_net_0[3]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(rand_net_0[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @14:42
+  SLE \fib_reg[4]  (
+	.Q(rand_net_0[4]),
+	.ADn(VCC),
+	.ALn(FCCC_C0_0_LOCK),
+	.CLK(FCCC_C0_0_GL0),
+	.D(rand_net_0[3]),
 	.EN(VCC),
 	.LAT(GND),
 	.SD(GND),
@@ -1941,7 +1903,7 @@ wire [8:0] imag_a_out_c;
 wire [8:0] imag_b_out_c;
 wire [8:0] real_a_out_c;
 wire [8:0] real_b_out_c;
-wire [9:1] rand_net_0_i;
+wire [9:9] rand_net_0_i;
 wire FCCC_C0_0_GL0 ;
 wire FCCC_C0_0_LOCK ;
 wire OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC ;
@@ -2133,11 +2095,11 @@ wire N_92 ;
 );
 // @19:102
   Butterfly_HW_DSP Butterfly_HW_DSP_0 (
-	.rand_net_0_i(rand_net_0_i[9:1]),
+	.rand_net_0_i_0(rand_net_0_i[9]),
 	.rand_net_0(rand_net_0[15:0]),
 	.imag_a_out_c(imag_a_out_c[8:0]),
-	.imag_b_out_c(imag_b_out_c[8:0]),
 	.real_b_out_c(real_b_out_c[8:0]),
+	.imag_b_out_c(imag_b_out_c[8:0]),
 	.real_a_out_c(real_a_out_c[8:0]),
 	.FCCC_C0_0_GL0(FCCC_C0_0_GL0),
 	.FCCC_C0_0_LOCK(FCCC_C0_0_LOCK)
@@ -2151,7 +2113,7 @@ wire N_92 ;
 // @19:131
   LFSR_Fib_Gen LFSR_Fib_Gen_0 (
 	.rand_net_0(rand_net_0[15:0]),
-	.rand_net_0_i(rand_net_0_i[9:1]),
+	.rand_net_0_i_0(rand_net_0_i[9]),
 	.FCCC_C0_0_GL0(FCCC_C0_0_GL0),
 	.FCCC_C0_0_LOCK(FCCC_C0_0_LOCK)
 );

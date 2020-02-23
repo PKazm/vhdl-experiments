@@ -1,0 +1,234 @@
+# Reading C:/Microsemi/Libero_SoC_v12.1/ModelSim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 22:19:55 on Feb 22,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FFT_Butterfly_HW_MATHDSP
+# -- Compiling architecture architecture_FFT_Butterfly_HW_MATHDSP of FFT_Butterfly_HW_MATHDSP
+# End time: 22:19:55 on Feb 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 22:19:56 on Feb 22,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package FFT_package
+# -- Compiling package body FFT_package
+# -- Loading package FFT_package
+# End time: 22:19:56 on Feb 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 22:19:56 on Feb 22,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package FFT_package
+# -- Loading package util
+# -- Compiling entity FFT_Butterfly_HW_MATHDSP_tb
+# -- Compiling architecture behavioral of FFT_Butterfly_HW_MATHDSP_tb
+# End time: 22:19:56 on Feb 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L presynth -t 1fs presynth.FFT_Butterfly_HW_MATHDSP_tb 
+# Start time: 22:19:56 on Feb 22,2020
+# //  ModelSim Microsemi 10.7c Oct 15 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading presynth.fft_package(body)
+# Loading modelsim_lib.util(body)
+# Loading presynth.fft_butterfly_hw_mathdsp_tb(behavioral)
+# Loading presynth.fft_butterfly_hw_mathdsp(architecture_fft_butterfly_hw_mathdsp)
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 100 ns  Iteration: 1  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 100 ns  Iteration: 1  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 100 ns  Iteration: 1  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 100 ns  Iteration: 1  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -61 /= 0
+#    Time: 110 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -123 /= 0
+#    Time: 110 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -63 /= 0
+#    Time: 110 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -125 /= 0
+#    Time: 110 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 120 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 120 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 120 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 120 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -123 /= -61
+#    Time: 130 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; 9 /= -124
+#    Time: 130 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -125 /= -62
+#    Time: 130 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; 7 /= -124
+#    Time: 130 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 140 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 140 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 140 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; 71 /= -123
+#    Time: 150 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -115 /= 8
+#    Time: 150 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; 69 /= -124
+#    Time: 150 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -117 /= 8
+#    Time: 150 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 160 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 160 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; 9 /= 70
+#    Time: 170 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; 17 /= -115
+#    Time: 170 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; 7 /= 69
+#    Time: 170 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; 15 /= -115
+#    Time: 170 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 180 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 180 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 180 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 180 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -53 /= 8
+#    Time: 190 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -106 /= 16
+#    Time: 190 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -55 /= 7
+#    Time: 190 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -108 /= 16
+#    Time: 190 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -115 /= -53
+#    Time: 210 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; 26 /= -107
+#    Time: 210 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -117 /= -54
+#    Time: 210 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; 24 /= -107
+#    Time: 210 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 220 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 220 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 220 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; 79 /= -115
+#    Time: 230 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -98 /= 25
+#    Time: 230 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; 77 /= -116
+#    Time: 230 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -100 /= 25
+#    Time: 230 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 240 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 240 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; 17 /= 79
+#    Time: 250 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; 34 /= -99
+#    Time: 250 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; 15 /= 78
+#    Time: 250 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; 32 /= -99
+#    Time: 250 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 260 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 260 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 260 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 260 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -45 /= 17
+#    Time: 270 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -90 /= 33
+#    Time: 270 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -47 /= 16
+#    Time: 270 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -92 /= 33
+#    Time: 270 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 280 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 280 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 280 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 280 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; -106 /= -45
+#    Time: 290 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; 42 /= -90
+#    Time: 290 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; -108 /= -46
+#    Time: 290 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; 41 /= -90
+#    Time: 290 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 300 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 300 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 300 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_a_out; 88 /= -106
+#    Time: 310 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_a_out; -82 /= 42
+#    Time: 310 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: real_b_out; 86 /= -107
+#    Time: 310 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# ** Error: result error: imag_b_out; -83 /= 42
+#    Time: 310 ns  Iteration: 0  Instance: /fft_butterfly_hw_mathdsp_tb
+# End time: 22:23:00 on Feb 22,2020, Elapsed time: 0:03:04
+# Errors: 44, Warnings: 37

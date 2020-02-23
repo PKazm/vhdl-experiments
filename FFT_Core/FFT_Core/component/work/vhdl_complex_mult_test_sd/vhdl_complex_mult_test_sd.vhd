@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Tue Feb 18 16:34:19 2020
+-- Created by SmartDesign Fri Feb 21 14:47:09 2020
 -- Version: v12.1 12.600.0.14
 ----------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ signal FCCC_C0_0_LOCK                                     : std_logic;
 signal imag_a_out_net_0                                   : std_logic_vector(8 downto 0);
 signal imag_b_out_net_0                                   : std_logic_vector(8 downto 0);
 signal LFSR_Fib_Gen_0_rand8to0                            : std_logic_vector(8 downto 0);
-signal LFSR_Fib_Gen_0_rand9to1                            : std_logic_vector(9 downto 1);
+signal LFSR_Fib_Gen_0_rand9to9                            : std_logic_vector(9 to 9);
 signal LFSR_Fib_Gen_0_rand10to2                           : std_logic_vector(10 downto 2);
 signal LFSR_Fib_Gen_0_rand13to5                           : std_logic_vector(13 downto 5);
 signal LFSR_Fib_Gen_0_rand15to7                           : std_logic_vector(15 downto 7);
@@ -90,24 +90,24 @@ begin
 ----------------------------------------------------------------------
 -- Slices assignments
 ----------------------------------------------------------------------
- LFSR_Fib_Gen_0_rand8to0  <= rand_net_0(8 downto 0);
- LFSR_Fib_Gen_0_rand9to1  <= rand_net_0(9 downto 1);
- LFSR_Fib_Gen_0_rand10to2 <= rand_net_0(10 downto 2);
- LFSR_Fib_Gen_0_rand13to5 <= rand_net_0(13 downto 5);
- LFSR_Fib_Gen_0_rand15to7 <= rand_net_0(15 downto 7);
+ LFSR_Fib_Gen_0_rand8to0    <= rand_net_0(8 downto 0);
+ LFSR_Fib_Gen_0_rand9to9(9) <= rand_net_0(9);
+ LFSR_Fib_Gen_0_rand10to2   <= rand_net_0(10 downto 2);
+ LFSR_Fib_Gen_0_rand13to5   <= rand_net_0(13 downto 5);
+ LFSR_Fib_Gen_0_rand15to7   <= rand_net_0(15 downto 7);
 ----------------------------------------------------------------------
 -- Component instances
 ----------------------------------------------------------------------
 -- Butterfly_HW_DSP_0
 Butterfly_HW_DSP_0 : entity work.Butterfly_HW_DSP
     generic map( 
-        g_samples_exp => ( 10 )
+        g_samples_exp => ( 2 )
         )
     port map( 
         -- Inputs
         PCLK          => FCCC_C0_0_GL0,
         RSTn          => FCCC_C0_0_LOCK,
-        twiddle_index => LFSR_Fib_Gen_0_rand9to1,
+        twiddle_index => LFSR_Fib_Gen_0_rand9to9,
         real_a_in     => LFSR_Fib_Gen_0_rand15to7,
         imag_a_in     => LFSR_Fib_Gen_0_rand13to5,
         real_b_in     => LFSR_Fib_Gen_0_rand10to2,

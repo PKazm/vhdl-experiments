@@ -25,12 +25,16 @@ use IEEE.math_real.all;
 
 entity Twiddle_table is
 generic (
-    g_data_samples_exp : natural := 8    --
+    g_data_samples_exp : natural := 8;
+    g_use_BRAM : natural := 1
     --g_bit_depth : natural := 9
 );
 port (
+	PCLK : in std_logic;
+	RSTn : in std_logic;
     -- twiddle count is half of sample count
     twiddle_index : in std_logic_vector(g_data_samples_exp - 2 downto 0);
+    twiddle_ready : out std_logic;
 
     cos_twid : out std_logic_vector(8 downto 0);
     cos_twid_1comp : out std_logic_vector(8 downto 0);
@@ -187,10 +191,68 @@ architecture architecture_Twiddle_table of Twiddle_table is
     end function init_sin;
 
     constant sine_table : twiddle_table_type := init_sin;
+
+    -- BRAM stuff
+    type bram_mem is array(TWIDDLE_CNT - 1 downto 0) of std_logic_vector(17 downto 0);
+    signal mem : bram_mem;
+
+    signal mem_adr_cnt : unsigned(g_data_samples_exp - 2 downto 0);
+
+    signal twiddle_ready_sig : std_logic;
+
+    signal mem_adr : unsigned(g_data_samples_exp - 2 downto 0);
+    signal mem_w_en : std_logic;
+    signal mem_dat_w : std_logic_vector(17 downto 0);
+    signal mem_dat_r : std_logic_vector(17 downto 0);
+    -- BRAM stuff
+
 begin
-    cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-    cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-    sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
-    sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+    gen_no_BRAM : if(g_use_BRAM = 0) generate
+        cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+        cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+        sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+        sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+        twiddle_ready <= '1';
+    end generate gen_no_BRAM;
+
+    gen_yes_BRAM : if(g_use_BRAM /= 0) generate
+
+        p_load_BRAM : process(PCLK, RSTn)
+        begin
+            if(RSTn = '0') then
+                twiddle_ready_sig <= '0';
+                mem_adr_cnt <= (others => '0');
+                mem_w_en <= '0';
+                mem_dat_w <= (others => '0');
+            elsif(rising_edge(PCLK)) then
+                if(twiddle_ready_sig = '0') then
+                    -- load twiddle factors into BRAM
+                    if(mem_w_en = '1') then
+                        mem_w_en <= '0';
+                        if(mem_adr_cnt /= TWIDDLE_CNT - 1) then
+                            mem_adr_cnt <= mem_adr_cnt + 1;
+                        else
+                            twiddle_ready_sig <= '1';
+                        end if;
+                    else
+                        mem_w_en <= '1';
+                        mem(to_integer(mem_adr)) <= std_logic_vector(cosine_table(to_integer(mem_adr))) &
+                                                    std_logic_vector(sine_table(to_integer(mem_adr)));
+                    end if;
+                else
+                    -- twiddle factors have been loaded into BRAM
+                    null;
+                end if;
+            end if;
+        end process;
+
+        mem_adr <= mem_adr_cnt when twiddle_ready_sig = '0' else unsigned(twiddle_index);
+        twiddle_ready <= twiddle_ready_sig;
+        mem_dat_r <= mem(to_integer(mem_adr));
+        cos_twid <= mem_dat_r(8 downto 0);
+        cos_twid_1comp <= not mem_dat_r(8 downto 0);
+        sin_twid <= mem_dat_r(17 downto 9);
+        sin_twid_1comp <= not mem_dat_r(17 downto 9);
+    end generate gen_yes_BRAM;
    -- architecture body
 end architecture_Twiddle_table;

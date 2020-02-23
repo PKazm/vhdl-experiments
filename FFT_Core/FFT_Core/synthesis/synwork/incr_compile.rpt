@@ -14,15 +14,20 @@ Hostname: PHOENIX136DESKY
 Implementation : synthesis
 Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
-Modified Files: 0
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
+25       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd (2020-02-18 16:36:39, 2020-02-21 14:49:08)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
+14       work.butterfly_hw_dsp.architecture_butterfly_hw_dsp may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd (2020-02-18 16:36:39, 2020-02-21 14:49:08) <-- (architecture and entity definition)
+32       work.twiddle_table.architecture_twiddle_table may have changed because the following files changed:
+                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd (2020-02-18 16:36:39, 2020-02-21 14:49:08) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 18
+Unmodified files: 20
 FID:  path (timestamp)
 0        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 01:52:13)
 1        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 01:52:16)
@@ -33,30 +38,42 @@ FID:  path (timestamp)
 6        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 01:52:16)
 7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 01:52:16)
 8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
+18       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd (2018-12-21 01:52:16)
 9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
 10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
-11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.vhd (2020-02-18 16:43:55)
-12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd (2020-02-17 19:46:59)
-13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd (2020-02-17 19:46:59)
-14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0.vhd (2020-02-17 16:13:03)
-15       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_C0\HARD_MULT_C0_0\HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd (2020-02-17 16:13:03)
+19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-11-06 13:59:59)
+20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd (2020-02-18 03:21:08)
+21       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2020-02-18 03:21:08)
+22       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd (2020-02-18 03:20:57)
+23       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2020-02-18 03:20:57)
+24       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd (2020-02-21 14:47:09)
 16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd (2020-02-18 03:47:55)
-17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\bit_extender_8_to_35.vhd (2020-02-17 21:38:48)
+26       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd (2020-02-21 14:44:26)
 
 *******************************************************************
-Unchanged modules: 14
+Unchanged modules: 24
 MID:  lib.cell.view
-0        work.bit_extender_8_to_35.architecture_bit_extender_8_to_35
-1        work.bit_extender_8_to_35.vhdl
-2        work.complex_mult_test_sd.rtl
-3        work.complex_mult_test_sd.vhdl
-4        work.hard_mult_addsub_c0.rtl
-5        work.hard_mult_addsub_c0.vhdl
-6        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch
-7        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.vhdl
-8        work.hard_mult_c0.rtl
-9        work.hard_mult_c0.vhdl
-10       work.hard_mult_c0_hard_mult_c0_0_hard_mult.def_arch
-11       work.hard_mult_c0_hard_mult_c0_0_hard_mult.vhdl
+16       work.fccc_c0.rtl
+17       work.fccc_c0.vhdl
+18       work.fccc_c0_fccc_c0_0_fccc.def_arch
+19       work.fccc_c0_fccc_c0_0_fccc.vhdl
 12       work.lfsr_fib_gen.architecture_lfsr_fib_gen
 13       work.lfsr_fib_gen.vhdl
+20       work.osc_c0.rtl
+21       work.osc_c0.vhdl
+22       work.osc_c0_osc_c0_0_osc.def_arch
+23       work.osc_c0_osc_c0_0_osc.vhdl
+24       work.rcosc_1mhz.def_arch
+25       work.rcosc_1mhz.vhdl
+26       work.rcosc_1mhz_fab.def_arch
+27       work.rcosc_1mhz_fab.vhdl
+28       work.rcosc_25_50mhz.def_arch
+29       work.rcosc_25_50mhz.vhdl
+30       work.rcosc_25_50mhz_fab.def_arch
+31       work.rcosc_25_50mhz_fab.vhdl
+34       work.vhdl_complex_mult_test_sd.rtl
+35       work.vhdl_complex_mult_test_sd.vhdl
+36       work.xtlosc.def_arch
+37       work.xtlosc.vhdl
+38       work.xtlosc_fab.def_arch
+39       work.xtlosc_fab.vhdl

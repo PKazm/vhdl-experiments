@@ -26,17 +26,17 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      52                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd:	52 (29.21 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd:	52 (30.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           10                 100 %                
+CFG           2                  100 %                
 ARI1          59                 100 %                
 BLACK BOX     2                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd:	71 (39.89 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd:	63 (37.06 % Utilization)
 
 
 DSP
@@ -44,7 +44,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 MACC     2                  100 %                
 =================================================
-Total DSP in the block vhdl_complex_mult_test_sd:	2 (1.12 % Utilization)
+Total DSP in the block vhdl_complex_mult_test_sd:	2 (1.18 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -52,7 +52,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd:	2 (1.12 % Utilization)
+Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd:	2 (1.18 % Utilization)
 
 
 IO PADS
@@ -60,7 +60,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       36                 100 %                
 =================================================
-Total IO PADS in the block vhdl_complex_mult_test_sd:	36 (20.22 % Utilization)
+Total IO PADS in the block vhdl_complex_mult_test_sd:	36 (21.18 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   Butterfly_HW_DSP   ########
@@ -72,7 +72,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      36                 69.2 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	36 (20.22 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	36 (21.18 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -80,7 +80,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 ARI1     59                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	59 (33.15 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	59 (34.71 % Utilization)
 
 
 DSP
@@ -88,7 +88,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 MACC     2                  100 %                
 =================================================
-Total DSP in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	2 (1.12 % Utilization)
+Total DSP in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	2 (1.18 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
@@ -100,7 +100,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.FCCC_C0:	1 (0.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.FCCC_C0:	1 (0.59 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -108,7 +108,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd.FCCC_C0:	2 (1.12 % Utilization)
+Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd.FCCC_C0:	2 (1.18 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
@@ -120,7 +120,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.59 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -128,7 +128,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (1.12 % Utilization)
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (1.18 % Utilization)
 
 ------------------------------------------------------------------
 ########   Utilization report for  cell:   LFSR_Fib_Gen   ########
@@ -140,15 +140,15 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 SLE      16                 30.8 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	16 (8.99 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	16 (9.41 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      10                 100 %                
+CFG      2                  100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	10 (5.62 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	2 (1.18 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########
@@ -160,7 +160,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.OSC_C0:	1 (0.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.OSC_C0:	1 (0.59 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
@@ -172,7 +172,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.59 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

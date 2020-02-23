@@ -1,3 +1,2 @@
-@E: CD200 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":209:12:209:25|Misspelled variable, signal or procedure name?
-@E: Parse errors encountered - exiting
+@E: CD341 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":187:57:187:82|Slice is out of range
 

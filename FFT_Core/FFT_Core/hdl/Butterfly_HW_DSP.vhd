@@ -72,6 +72,7 @@ architecture architecture_Butterfly_HW_DSP of Butterfly_HW_DSP is
 
     -- Twiddle Table signals
     signal twiddle_index_sig : std_logic_vector(g_samples_exp - 2 downto 0);
+	signal twiddle_ready_sig : std_logic;
     signal cos_twid : std_logic_vector(8 downto 0);
     signal sin_twid : std_logic_vector(8 downto 0);
     signal sin_twid_1comp : std_logic_vector(8 downto 0);
@@ -82,11 +83,15 @@ architecture architecture_Butterfly_HW_DSP of Butterfly_HW_DSP is
 
     component Twiddle_Table
     generic (
-        g_data_samples_exp : natural
+        g_data_samples_exp : natural;
+		g_use_BRAM : natural
     );
     port (
+		PCLK : in std_logic;
+		RSTn : in std_logic;
         -- twiddle count is half of sample count
         twiddle_index : in std_logic_vector(g_data_samples_exp - 2 downto 0);
+		twiddle_ready : out std_logic;
     
         cos_twid : out std_logic_vector(8 downto 0);
         cos_twid_1comp : out std_logic_vector(8 downto 0);
@@ -99,11 +104,15 @@ begin
 
     Twiddle_Table_0 : Twiddle_Table
         generic map(
-            g_data_samples_exp => g_samples_exp
+            g_data_samples_exp => g_samples_exp,
+			g_use_BRAM => 1
         )
         port map(
+			PCLK => PCLK,
+			RSTn => RSTn,
             -- twiddle count is half of sample count
             twiddle_index => twiddle_index_sig,
+			twiddle_ready => twiddle_ready_sig,
         
             cos_twid => cos_twid,
             cos_twid_1comp => open,
@@ -149,7 +158,7 @@ begin
         variable real_b_out_var : std_logic_vector(9 downto 0) := (others => '0');
         variable imag_b_out_var : std_logic_vector(9 downto 0) := (others => '0');
     begin
-        if(RSTn = '0') then
+        if(RSTn = '0' or twiddle_ready_sig = '0') then
             real_a_1comp_extend_var := (others => '0');
             temp_real_var := (others => '0');
             temp_imag_var := (others => '0');

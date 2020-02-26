@@ -13,14 +13,14 @@
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.vhd":1582014068
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1545375133
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1573066799
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Twiddle_table.vhd":1582314266
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Twiddle_table.vhd":1582408048
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\math_real.vhd":1545375136
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\LFSR_Fib_Gen.vhd":1582015675
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\LFSR_Fib_Gen.vhd":1582615421
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\FCCC_C0\\FCCC_C0.vhd":1582014068
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.vhd":1582014057
 #CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\OSC_C0\\OSC_C0.vhd":1582014057
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Butterfly_HW_DSP.vhd":1582314548
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\vhdl_complex_mult_test_sd\\vhdl_complex_mult_test_sd.vhd":1582314429
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Butterfly_HW_DSP.vhd":1582615040
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\vhdl_complex_mult_test_sd\\vhdl_complex_mult_test_sd.vhd":1582615153
 0			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd" vhdl
 1			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd" vhdl
 2			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl

@@ -3,13 +3,16 @@
 @W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":14:10:14:23|Signal RCOSC_1MHZ_O2F is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":13:10:13:23|Signal RCOSC_1MHZ_CCC is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":12:10:12:27|Signal RCOSC_25_50MHZ_O2F is floating; a simulation mismatch is possible.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:4:150:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":161:25:161:41|Referenced variable twiddle_ready_sig is not in sensitivity list.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":56:11:56:29|Signal real_a_1comp_extend is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":63:11:63:24|Signal real_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":64:11:64:24|Signal imag_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":65:11:65:24|Signal real_b_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":66:11:66:24|Signal imag_b_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":222:12:222:13|Pruning unused register mem_dat_w_2(17 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
 

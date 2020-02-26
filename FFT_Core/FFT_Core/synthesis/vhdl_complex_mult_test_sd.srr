@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: PHOENIX136DESKY
 
-# Fri Feb 21 14:49:20 2020
+# Tue Feb 25 02:27:41 2020
 
 #Implementation: synthesis
 
@@ -42,8 +42,17 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 
 @N|Running in 64-bit mode
 @N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd":17:7:17:31|Top entity is set to vhdl_complex_mult_test_sd.
-Options changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd changed - recompiling
 VHDL syntax check successful!
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd changed - recompiling
 @N: CD233 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using sequential encoding for type mvl9plus.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd":17:7:17:31|Synthesizing work.vhdl_complex_mult_test_sd.rtl.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd":17:7:17:12|Synthesizing work.osc_c0.rtl.
@@ -82,6 +91,8 @@ Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
 Post processing for work.fccc_c0.rtl
 Running optimization stage 1 on FCCC_C0 .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":24:7:24:22|Synthesizing work.butterfly_hw_dsp.architecture_butterfly_hw_dsp.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:4:150:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":161:25:161:41|Referenced variable twiddle_ready_sig is not in sensitivity list.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":56:11:56:29|Signal real_a_1comp_extend is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":63:11:63:24|Signal real_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":64:11:64:24|Signal imag_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
@@ -90,15 +101,17 @@ Running optimization stage 1 on FCCC_C0 .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":26:7:26:19|Synthesizing work.twiddle_table.architecture_twiddle_table.
 Post processing for work.twiddle_table.architecture_twiddle_table
 Running optimization stage 1 on Twiddle_table .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":222:12:222:13|Pruning unused register mem_dat_w_2(17 downto 0). Make sure that there are no unused intermediate registers.
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":197:11:197:13|Found RAM mem, depth=16, width=18
 Post processing for work.butterfly_hw_dsp.architecture_butterfly_hw_dsp
 Running optimization stage 1 on Butterfly_HW_DSP .......
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal sin_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal sin_twid_1comp_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal cos_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal sin_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal sin_twid_1comp_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal cos_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 Post processing for work.vhdl_complex_mult_test_sd.rtl
 Running optimization stage 1 on vhdl_complex_mult_test_sd .......
 Running optimization stage 2 on Twiddle_table .......
@@ -121,12 +134,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 150MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:21 2020
+# Tue Feb 25 02:27:42 2020
 
 ###########################################################]
 
@@ -146,13 +159,14 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
 @N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:21 2020
+# Tue Feb 25 02:27:43 2020
 
 ###########################################################]
 @END
@@ -162,7 +176,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:22 2020
+# Tue Feb 25 02:27:43 2020
 
 ###########################################################]
 
@@ -182,18 +196,19 @@ Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\s
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
 @N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:23 2020
+# Tue Feb 25 02:27:44 2020
 
 ###########################################################]
 Premap Report
 
-# Fri Feb 21 14:49:23 2020
+# Tue Feb 25 02:27:44 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -238,7 +253,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MH105 |UMR3 is only supported for HAPS-80.
 syn_allowed_resources : blockrams=21,dsps=22  set on top level netlist vhdl_complex_mult_test_sd
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 
@@ -250,7 +265,7 @@ Level     Clock                                             Frequency     Period
 ----------------------------------------------------------------------------------------------------------------------------------
 0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
                                                                                                                                   
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     79   
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     102  
 ==================================================================================================================================
 
 
@@ -263,10 +278,10 @@ Clock                                             Load      Pin                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                            0         -                                         -                                  -                 -                                   
                                                                                                                                                                                                
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     79        FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LFSR_Fib_Gen_0.fib_reg[15:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     102       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LFSR_Fib_Gen_0.fib_reg[15:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
 ===============================================================================================================================================================================================
 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 79 sequential elements including Butterfly_HW_DSP_0.imag_a_out_sig[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":222:12:222:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 102 sequential elements including Butterfly_HW_DSP_0.Twiddle_Table_0.mem_adr_cnt[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
@@ -287,12 +302,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 21 14:49:24 2020
+# Tue Feb 25 02:27:45 2020
 
 ###########################################################]
 Map & Optimize Report
 
-# Fri Feb 21 14:49:24 2020
+# Tue Feb 25 02:27:45 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -338,61 +353,69 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":240:69:240:78|ROM un5_mem[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":239:69:239:80|ROM un9_mem[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":240:69:240:78|ROM un5_mem[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":240:69:240:78|Found ROM un5_mem[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 7 bits.
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":239:69:239:80|ROM un9_mem[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":239:69:239:80|Found ROM un9_mem[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 8 bits.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
 
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_0 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Boundary register NoName_0 (in view: work.vhdl_complex_mult_test_sd(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_1 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Boundary register NoName_1 (in view: work.vhdl_complex_mult_test_sd(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_2 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Boundary register NoName_2 (in view: work.vhdl_complex_mult_test_sd(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Boundary register NoName (in view: work.vhdl_complex_mult_test_sd(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Boundary register NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Boundary register NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Boundary register NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Boundary register NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: FX107 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":197:11:197:13|RAM mem[0:16] (in view: work.Twiddle_table(architecture_twiddle_table)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		     4.29ns		  62 /        52
-@N: FP130 |Promoting Net FCCC_C0_0_LOCK on CLKINT  I_23 
+   1		0h:00m:00s		     4.29ns		 108 /        58
+@N: FP130 |Promoting Net Butterfly_HW_DSP_0.un1_rstn_i_i on CLKINT  I_33 
+@N: FP130 |Promoting Net FCCC_C0_0_LOCK on CLKINT  I_34 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
 
@@ -403,40 +426,40 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 56 clock pin(s) of sequential element(s)
-0 instances converted, 56 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 63 clock pin(s) of sequential element(s)
+0 instances converted, 63 sequential instances remain driven by gated/generated clocks
 
 ==================================================================================================== Gated/Generated Clocks =====================================================================================================
 Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance               Explanation                                                                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    56         LFSR_Fib_Gen_0.fib_reg[7]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    63         LFSR_Fib_Gen_0.fib_reg[8]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
 =================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 137MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 138MB)
 
 Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 137MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 138MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 137MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 138MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 135MB peak: 137MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 138MB)
 
 @W: MT246 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\fccc_c0\fccc_c0_0\fccc_c0_fccc_c0_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net FCCC_C0_0.FCCC_C0_0.GL0_net.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Feb 21 14:49:26 2020
+# Timing Report written on Tue Feb 25 02:27:47 2020
 #
 
 
@@ -456,12 +479,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 3.590
+Worst slack in design: 3.722
 
                                                   Requested     Estimated     Requested     Estimated               Clock        Clock              
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack     Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     156.0 MHz     10.000        6.410         3.590     inferred     Inferred_clkgroup_0
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     159.3 MHz     10.000        6.278         3.722     inferred     Inferred_clkgroup_0
 System                                            100.0 MHz     895.2 MHz     10.000        1.117         8.883     system       system_clkgroup    
 ====================================================================================================================================================
 
@@ -477,8 +500,8 @@ Clocks                                                                          
 Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                         System                                         |  10.000      8.883  |  No paths    -      |  No paths    -      |  No paths    -    
-System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      7.192  |  No paths    -      |  No paths    -      |  No paths    -    
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      3.590  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                         FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      6.282  |  No paths    -      |  No paths    -      |  No paths    -    
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock  |  10.000      3.722  |  No paths    -      |  No paths    -      |  No paths    -    
 ====================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -505,37 +528,37 @@ Starting Points with Worst Slack
 Instance                       Reference                                         Type     Pin     Net                Time        Slack
                                Clock                                                                                                  
 --------------------------------------------------------------------------------------------------------------------------------------
-LFSR_Fib_Gen_0.fib_reg[9]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[9]      0.087       3.590
 LFSR_Fib_Gen_0.fib_reg[7]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[7]      0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[8]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[8]      0.087       3.722
+LFSR_Fib_Gen_0.fib_reg[9]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[9]      0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[10]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[10]     0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[11]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[11]     0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[12]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[12]     0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[13]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[13]     0.087       3.722
 LFSR_Fib_Gen_0.fib_reg[15]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[15]     0.087       3.785
+LFSR_Fib_Gen_0.fib_reg[6]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[6]      0.087       3.999
 LFSR_Fib_Gen_0.fib_reg[5]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[5]      0.087       4.040
-LFSR_Fib_Gen_0.fib_reg[6]      FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      Q       rand_net_0[6]      0.087       4.040
 ======================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                         Starting                                                                                       Required          
-Instance                                 Reference                                         Type     Pin     Net                         Time         Slack
-                                         Clock                                                                                                            
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-Butterfly_HW_DSP_0.imag_a_out_sig[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       imag_a_out_var_1[8]         9.745        3.590
-Butterfly_HW_DSP_0.imag_a_out_sig[8]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       imag_a_out_var_1[9]         9.745        3.590
-Butterfly_HW_DSP_0.imag_b_out_sig[8]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       imag_b_out_sig_RNO_S[8]     9.745        3.590
-Butterfly_HW_DSP_0.real_a_out_sig[7]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[8]         9.745        4.395
-Butterfly_HW_DSP_0.real_a_out_sig[8]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[9]         9.745        4.395
-Butterfly_HW_DSP_0.real_b_out_sig[8]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_b_out_sig_RNO_S[8]     9.745        4.395
-Butterfly_HW_DSP_0.real_a_out_sig[6]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[7]         9.745        4.664
-Butterfly_HW_DSP_0.real_a_out_sig[5]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[6]         9.745        4.678
-Butterfly_HW_DSP_0.real_a_out_sig[4]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[5]         9.745        4.693
-Butterfly_HW_DSP_0.real_a_out_sig[3]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D       real_a_out_var_2[4]         9.745        4.707
-==========================================================================================================================================================
+                                                        Starting                                                                                        Required          
+Instance                                                Reference                                         Type     Pin      Net                         Time         Slack
+                                                        Clock                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Butterfly_HW_DSP_0.imag_a_out_sig[7]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        imag_a_out_var_1[8]         9.745        3.722
+Butterfly_HW_DSP_0.imag_a_out_sig[8]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        imag_a_out_var_1[9]         9.745        3.722
+Butterfly_HW_DSP_0.imag_b_out_sig[8]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        imag_b_out_sig_RNO_S[8]     9.745        3.722
+Butterfly_HW_DSP_0.real_a_out_sig[7]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        real_a_out_var_2[8]         9.745        4.527
+Butterfly_HW_DSP_0.real_a_out_sig[8]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        real_a_out_var_2[9]         9.745        4.527
+Butterfly_HW_DSP_0.real_b_out_sig[8]                    FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     SLE      D        real_b_out_sig_RNO_S[8]     9.745        4.527
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     MACC     B[0]     sin_twid_i[0]               9.975        4.663
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     MACC     B[1]     sin_twid_i[1]               9.975        4.663
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     MACC     B[2]     sin_twid_i[2]               9.975        4.663
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     MACC     B[3]     sin_twid_i[3]               9.975        4.663
+==========================================================================================================================================================================
 
 
 
@@ -549,12 +572,12 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.745
 
-    - Propagation time:                      6.154
+    - Propagation time:                      6.023
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     3.590
+    = Slack (critical) :                     3.722
 
     Number of logic level(s):                3
-    Starting point:                          LFSR_Fib_Gen_0.fib_reg[9] / Q
+    Starting point:                          LFSR_Fib_Gen_0.fib_reg[7] / Q
     Ending point:                            Butterfly_HW_DSP_0.imag_a_out_sig[7] / D
     The start point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
     The end   point is clocked by            FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
@@ -562,20 +585,20 @@ Path information for path number 1:
 Instance / Net                                                            Pin       Pin               Arrival     No. of    
 Name                                                             Type     Name      Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------------------------------------------------
-LFSR_Fib_Gen_0.fib_reg[9]                                        SLE      Q         Out     0.087     0.087       -         
-rand_net_0[9]                                                    Net      -         -       1.305     -           17        
-Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]              MACC     A[4]      In      -         1.392       -         
-Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]              MACC     P[26]     Out     2.586     3.978       -         
+LFSR_Fib_Gen_0.fib_reg[7]                                        SLE      Q         Out     0.087     0.087       -         
+rand_net_0[7]                                                    Net      -         -       1.173     -           11        
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]              MACC     A[2]      In      -         1.260       -         
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]              MACC     P[26]     Out     2.586     3.847       -         
 P[26]                                                            Net      -         -       0.497     -           2         
-Butterfly_HW_DSP_0.un9_temp_imag_var\.un9_temp_imag_var_s_18     ARI1     B         In      -         4.475       -         
-Butterfly_HW_DSP_0.un9_temp_imag_var\.un9_temp_imag_var_s_18     ARI1     S         Out     0.308     4.783       -         
+Butterfly_HW_DSP_0.un9_temp_imag_var\.un9_temp_imag_var_s_18     ARI1     B         In      -         4.344       -         
+Butterfly_HW_DSP_0.un9_temp_imag_var\.un9_temp_imag_var_s_18     ARI1     S         Out     0.308     4.652       -         
 un9_temp_imag_var_s_18_S                                         Net      -         -       0.815     -           4         
-Butterfly_HW_DSP_0.imag_a_out_var_1_cry_8                        ARI1     B         In      -         5.598       -         
-Butterfly_HW_DSP_0.imag_a_out_var_1_cry_8                        ARI1     S         Out     0.308     5.906       -         
+Butterfly_HW_DSP_0.imag_a_out_var_1_cry_8                        ARI1     B         In      -         5.466       -         
+Butterfly_HW_DSP_0.imag_a_out_var_1_cry_8                        ARI1     S         Out     0.308     5.774       -         
 imag_a_out_var_1[8]                                              Net      -         -       0.248     -           1         
-Butterfly_HW_DSP_0.imag_a_out_sig[7]                             SLE      D         In      -         6.154       -         
+Butterfly_HW_DSP_0.imag_a_out_sig[7]                             SLE      D         In      -         6.023       -         
 ============================================================================================================================
-Total path delay (propagation time + setup) of 6.410 is 3.545(55.3%) logic and 2.864(44.7%) route.
+Total path delay (propagation time + setup) of 6.278 is 3.545(56.5%) logic and 2.733(43.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -594,7 +617,7 @@ Starting Points with Worst Slack
 Instance                               Reference     Type               Pin        Net                                                    Time        Slack
                                        Clock                                                                                                               
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       LOCK                                                   0.000       7.192
+FCCC_C0_0.FCCC_C0_0.CCC_INST           System        CCC                LOCK       LOCK                                                   0.000       6.282
 OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     0.000       8.883
 ===========================================================================================================================================================
 
@@ -602,16 +625,17 @@ OSC_C0_0.OSC_C0_0.I_RCOSC_25_50MHZ     System        RCOSC_25_50MHZ     CLKOUT  
 Ending Points with Worst Slack
 ******************************
 
-                                                        Starting                                                                                         Required          
-Instance                                                Reference     Type     Pin                Net                                                    Time         Slack
-                                                        Clock                                                                                                              
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     System        MACC     B_EN[0]            FCCC_C0_0_LOCK                                         9.869        7.192
-Butterfly_HW_DSP_0.un2_temp_real_var_muladd_0[17:0]     System        MACC     B_EN[0]            FCCC_C0_0_LOCK                                         9.869        7.192
-Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     System        MACC     B_EN[1]            FCCC_C0_0_LOCK                                         9.887        7.221
-Butterfly_HW_DSP_0.un2_temp_real_var_muladd_0[17:0]     System        MACC     B_EN[1]            FCCC_C0_0_LOCK                                         9.887        7.221
-FCCC_C0_0.FCCC_C0_0.CCC_INST                            System        CCC      RCOSC_25_50MHZ     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
-===========================================================================================================================================================================
+                                                        Starting                                                                                             Required          
+Instance                                                Reference     Type         Pin                Net                                                    Time         Slack
+                                                        Clock                                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     System        MACC         B_EN[0]            un1_rstn_0                                             9.869        6.282
+Butterfly_HW_DSP_0.un2_temp_real_var_muladd_0[17:0]     System        MACC         B_EN[0]            un1_rstn_0                                             9.869        6.282
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     System        MACC         B_EN[1]            un1_rstn_0                                             9.887        6.312
+Butterfly_HW_DSP_0.un2_temp_real_var_muladd_0[17:0]     System        MACC         B_EN[1]            un1_rstn_0                                             9.887        6.312
+Butterfly_HW_DSP_0.Twiddle_Table_0.mem_mem_0_0          System        RAM64x18     C_WEN              un1_rstn                                               9.600        6.875
+FCCC_C0_0.FCCC_C0_0.CCC_INST                            System        CCC          RCOSC_25_50MHZ     OSC_C0_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC     10.000       8.883
+===============================================================================================================================================================================
 
 
 
@@ -625,12 +649,12 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.869
 
-    - Propagation time:                      2.677
+    - Propagation time:                      3.587
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 7.192
+    = Slack (non-critical) :                 6.282
 
-    Number of logic level(s):                1
+    Number of logic level(s):                2
     Starting point:                          FCCC_C0_0.FCCC_C0_0.CCC_INST / LOCK
     Ending point:                            Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0] / B_EN[0]
     The start point is clocked by            System [rising]
@@ -643,10 +667,13 @@ FCCC_C0_0.FCCC_C0_0.CCC_INST                            CCC        LOCK        O
 LOCK                                                    Net        -           -       1.117     -           1         
 FCCC_C0_0.FCCC_C0_0.CCC_INST_RNI2PC6                    CLKINT     A           In      -         1.117       -         
 FCCC_C0_0.FCCC_C0_0.CCC_INST_RNI2PC6                    CLKINT     Y           Out     0.387     1.504       -         
-FCCC_C0_0_LOCK                                          Net        -           -       1.173     -           56        
-Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     MACC       B_EN[0]     In      -         2.677       -         
+FCCC_C0_0_LOCK                                          Net        -           -       0.745     -           25        
+Butterfly_HW_DSP_0.un1_rstn                             CFG2       B           In      -         2.249       -         
+Butterfly_HW_DSP_0.un1_rstn                             CFG2       Y           Out     0.165     2.414       -         
+un1_rstn_0                                              Net        -           -       1.173     -           4         
+Butterfly_HW_DSP_0.un2_temp_imag_var_muladd_0[17:0]     MACC       B_EN[0]     In      -         3.587       -         
 =======================================================================================================================
-Total path delay (propagation time + setup) of 2.808 is 0.518(18.4%) logic and 2.290(81.6%) route.
+Total path delay (propagation time + setup) of 3.718 is 0.682(18.4%) logic and 3.035(81.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -656,10 +683,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 137MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 138MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 137MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 138MB)
 
 ---------------------------------------
 Resource Usage Report for vhdl_complex_mult_test_sd 
@@ -667,17 +694,19 @@ Resource Usage Report for vhdl_complex_mult_test_sd
 Mapping to part: m2s010tq144std
 Cell usage:
 CCC             1 use
-CLKINT          2 uses
+CLKINT          3 uses
 RCOSC_25_50MHZ  1 use
-CFG1           1 use
-CFG4           1 use
+CFG1           9 uses
+CFG2           7 uses
+CFG3           6 uses
+CFG4           23 uses
 
 Carry cells:
 ARI1            59 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            52 uses
+SLE            58 uses
 
 DSP Blocks:    2 of 22 (9%)
  MACC:         2 MultAdds
@@ -687,24 +716,27 @@ I/O primitives: 36
 OUTBUF         36 uses
 
 
-Global Clock Buffers: 2
+Global Clock Buffers: 3
 
-Total LUTs:    61
+RAM/ROM usage summary
+Total Block RAMs (RAM64x18) : 1 of 22 (4%)
+
+Total LUTs:    104
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
-RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM64x18 Interface Logic : SLEs = 36; LUTs = 36;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 72; LUTs = 72;
 
-Total number of SLEs after P&R:  52 + 0 + 0 + 72 = 124;
-Total number of LUTs after P&R:  61 + 0 + 0 + 72 = 133;
+Total number of SLEs after P&R:  58 + 36 + 0 + 72 = 166;
+Total number of LUTs after P&R:  104 + 36 + 0 + 72 = 212;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 137MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 138MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 21 14:49:26 2020
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Tue Feb 25 02:27:47 2020
 
 ###########################################################]

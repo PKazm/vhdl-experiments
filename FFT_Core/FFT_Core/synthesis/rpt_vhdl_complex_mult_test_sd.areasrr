@@ -24,19 +24,19 @@ Part:			M2S010TQ144STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      52                 100 %                
+SLE      58                 100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd:	52 (30.59 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd:	58 (26.01 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           2                  100 %                
+CFG           45                 100 %                
 ARI1          59                 100 %                
 BLACK BOX     2                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd:	63 (37.06 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd:	106 (47.53 % Utilization)
 
 
 DSP
@@ -44,15 +44,23 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 MACC     2                  100 %                
 =================================================
-Total DSP in the block vhdl_complex_mult_test_sd:	2 (1.18 % Utilization)
+Total DSP in the block vhdl_complex_mult_test_sd:	2 (0.90 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block vhdl_complex_mult_test_sd:	1 (0.45 % Utilization)
 
 
 GLOBAL BUFFERS
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-GLOBAL     2                  100 %                
+GLOBAL     3                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd:	2 (1.18 % Utilization)
+Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd:	3 (1.35 % Utilization)
 
 
 IO PADS
@@ -60,7 +68,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 IO       36                 100 %                
 =================================================
-Total IO PADS in the block vhdl_complex_mult_test_sd:	36 (21.18 % Utilization)
+Total IO PADS in the block vhdl_complex_mult_test_sd:	36 (16.14 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   Butterfly_HW_DSP   ########
@@ -70,17 +78,18 @@ Instance path:   vhdl_complex_mult_test_sd.Butterfly_HW_DSP
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      36                 69.2 %               
+SLE      42                 72.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	36 (21.18 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	42 (18.83 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
+CFG      44                 97.8 %               
 ARI1     59                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	59 (34.71 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	103 (46.19 % Utilization)
 
 
 DSP
@@ -88,7 +97,51 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 MACC     2                  100 %                
 =================================================
-Total DSP in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	2 (1.18 % Utilization)
+Total DSP in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	2 (0.90 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	1 (0.45 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  33.3 %               
+===================================================
+Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd.Butterfly_HW_DSP:	1 (0.45 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   Twiddle_table   ########
+Instance path:   Butterfly_HW_DSP.Twiddle_table                    
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      6                  10.3 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Butterfly_HW_DSP.Twiddle_table:	6 (2.69 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      42                 93.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block Butterfly_HW_DSP.Twiddle_table:	42 (18.83 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     1                  100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block Butterfly_HW_DSP.Twiddle_table:	1 (0.45 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0   ########
@@ -100,15 +153,15 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.FCCC_C0:	1 (0.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.FCCC_C0:	1 (0.45 % Utilization)
 
 
 GLOBAL BUFFERS
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-GLOBAL     2                  100 %                
+GLOBAL     2                  66.7 %               
 ===================================================
-Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd.FCCC_C0:	2 (1.18 % Utilization)
+Total GLOBAL BUFFERS in the block vhdl_complex_mult_test_sd.FCCC_C0:	2 (0.90 % Utilization)
 
 ----------------------------------------------------------------------------
 ########   Utilization report for  cell:   FCCC_C0_FCCC_C0_0_FCCC   ########
@@ -120,15 +173,15 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	1 (0.45 % Utilization)
 
 
 GLOBAL BUFFERS
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-GLOBAL     2                  100 %                
+GLOBAL     2                  66.7 %               
 ===================================================
-Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (1.18 % Utilization)
+Total GLOBAL BUFFERS in the block FCCC_C0.FCCC_C0_FCCC_C0_0_FCCC:	2 (0.90 % Utilization)
 
 ------------------------------------------------------------------
 ########   Utilization report for  cell:   LFSR_Fib_Gen   ########
@@ -138,17 +191,17 @@ Instance path:   vhdl_complex_mult_test_sd.LFSR_Fib_Gen
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      16                 30.8 %               
+SLE      16                 27.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	16 (9.41 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	16 (7.17 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      2                  100 %                
+CFG      1                  2.22 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	2 (1.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.LFSR_Fib_Gen:	1 (0.45 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0   ########
@@ -160,7 +213,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.OSC_C0:	1 (0.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block vhdl_complex_mult_test_sd.OSC_C0:	1 (0.45 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   OSC_C0_OSC_C0_0_OSC   ########
@@ -172,7 +225,7 @@ Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 BLACK BOX     1                  50 %                 
 ======================================================
-Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block OSC_C0.OSC_C0_OSC_C0_0_OSC:	1 (0.45 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

@@ -2,10 +2,10 @@
 Starting:    C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
 Hostname:    PHOENIX136DESKY
-Date:        Fri Feb 21 14:49:20 2020
+Date:        Wed Feb 26 01:37:42 2020
 Version:     N-2018.03M-SP1-1
 
-Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log vhdl_complex_mult_test_sd_syn.tcl
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log FFT_Butterfly_test_sd_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -16,64 +16,64 @@ License Option: actel_oem
 Running in Vendor Mode
 
 auto_infer_blackbox is not supported in current product.
-log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.srr"
+log file: "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Butterfly_test_sd.srr"
 Running: synthesis in foreground
 
-Running vhdl_complex_mult_test_sd_syn|synthesis
+Running FFT_Butterfly_test_sd_syn|synthesis
 
-Running Flow: compile (Compile) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:20 2020
+Running Flow: compile (Compile) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:42 2020
 
-Running Flow: compile_flow (Compile Process) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:20 2020
+Running Flow: compile_flow (Compile Process) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:42 2020
 
-Running: compiler (Compile Input) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:20 2020
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_comp.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.srs
+Running: compiler (Compile Input) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:42 2020
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Butterfly_test_sd_comp.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Butterfly_test_sd.srs
 
 compiler completed
-# Fri Feb 21 14:49:23 2020
+# Wed Feb 26 01:37:45 2020
 
 Return Code: 0
 Run Time:00h:00m:03s
 
-Running: multi_srs_gen (Multi-srs Generator) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:23 2020
+Running: multi_srs_gen (Multi-srs Generator) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:45 2020
 
 multi_srs_gen completed
-# Fri Feb 21 14:49:23 2020
+# Wed Feb 26 01:37:45 2020
 
 Return Code: 0
 Run Time:00h:00m:00s
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_mult.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.srs
-Complete: Compile Process on vhdl_complex_mult_test_sd_syn|synthesis
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Butterfly_test_sd_mult.srs to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Butterfly_test_sd.srs
+Complete: Compile Process on FFT_Butterfly_test_sd_syn|synthesis
 
-Running: premap (Premap) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:23 2020
+Running: premap (Premap) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:45 2020
 
 premap completed with warnings
-# Fri Feb 21 14:49:24 2020
+# Wed Feb 26 01:37:46 2020
 
 Return Code: 1
 Run Time:00h:00m:01s
-Complete: Compile on vhdl_complex_mult_test_sd_syn|synthesis
+Complete: Compile on FFT_Butterfly_test_sd_syn|synthesis
 
-Running Flow: map (Map) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:24 2020
+Running Flow: map (Map) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:46 2020
 License granted for 4 parallel jobs
 
-Running: fpga_mapper (Map & Optimize) on vhdl_complex_mult_test_sd_syn|synthesis
-# Fri Feb 21 14:49:24 2020
-Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.srm
+Running: fpga_mapper (Map & Optimize) on FFT_Butterfly_test_sd_syn|synthesis
+# Wed Feb 26 01:37:46 2020
+Copied C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Butterfly_test_sd_m.srm to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Butterfly_test_sd.srm
 
 fpga_mapper completed with warnings
-# Fri Feb 21 14:49:26 2020
+# Wed Feb 26 01:37:51 2020
 
 Return Code: 1
-Run Time:00h:00m:02s
-Complete: Map on vhdl_complex_mult_test_sd_syn|synthesis
-Complete: Logic Synthesis on vhdl_complex_mult_test_sd_syn|synthesis
-TCL script complete: "vhdl_complex_mult_test_sd_syn.tcl"
+Run Time:00h:00m:05s
+Complete: Map on FFT_Butterfly_test_sd_syn|synthesis
+Complete: Logic Synthesis on FFT_Butterfly_test_sd_syn|synthesis
+TCL script complete: "FFT_Butterfly_test_sd_syn.tcl"
 exit status=0
 exit status=0
 License checkin: synplifypro_actel

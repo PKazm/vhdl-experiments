@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.vhdl_complex_mult_test_sd  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synlog\vhdl_complex_mult_test_sd_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.vhdl_complex_mult_test_sd -multisrs ..\synwork\vhdl_complex_mult_test_sd_comp.srs -osyn ..\synwork\vhdl_complex_mult_test_sd_mult.srs -log ..\synlog\vhdl_complex_mult_test_sd_multi_srs_gen.srr
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.FFT_Butterfly_test_sd  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Butterfly_test_sd_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Butterfly_test_sd_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synlog\FFT_Butterfly_test_sd_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.FFT_Butterfly_test_sd -multisrs ..\synwork\FFT_Butterfly_test_sd_comp.srs -osyn ..\synwork\FFT_Butterfly_test_sd_mult.srs -log ..\synlog\FFT_Butterfly_test_sd_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\vhdl_complex_mult_test_sd_comp.srs|io:i|time:1582314561|size:14206|exec:0|csum:216603C889286976AD4C968133D177EF
-file:..\synwork\vhdl_complex_mult_test_sd_mult.srs|io:o|time:1582314563|size:3817|exec:0|csum:
-file:..\synlog\vhdl_complex_mult_test_sd_multi_srs_gen.srr|io:o|time:1582314563|size:1062|exec:0|csum:
+file:..\synwork\FFT_Butterfly_test_sd_comp.srs|io:i|time:1582699064|size:20819|exec:0|csum:AA102E5A03BF89222E9E671C65D4BB89
+file:..\synwork\FFT_Butterfly_test_sd_mult.srs|io:o|time:1582699065|size:5399|exec:0|csum:
+file:..\synlog\FFT_Butterfly_test_sd_multi_srs_gen.srr|io:o|time:1582699065|size:1191|exec:0|csum:
 file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03M-SP1-1
 #--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\run_options.txt
-#--  Written on Fri Feb 21 14:49:20 2020
+#--  Written on Wed Feb 26 01:37:42 2020
 
 
 #project files
@@ -10,11 +10,13 @@ add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/co
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Butterfly_HW_DSP.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd"
 add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd"
-add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/vhdl_complex_mult_test_sd/vhdl_complex_mult_test_sd.vhd"
-add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/designer/vhdl_complex_mult_test_sd/synthesis.fdc"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/designer/FFT_Butterfly_test_sd/synthesis.fdc"
 
 
 
@@ -30,13 +32,13 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "work.vhdl_complex_mult_test_sd"
+set_option -top_module "work.FFT_Butterfly_test_sd"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
 
 # mapper_without_write_options
-set_option -frequency 100.000
+set_option -frequency 200
 set_option -srs_instrumentation 1
 
 # mapper_options
@@ -59,7 +61,7 @@ set_option -opcond COMTC
 set_option -retiming 0
 set_option -report_path 4000
 set_option -update_models_cp 0
-set_option -preserve_registers 1
+set_option -preserve_registers 0
 set_option -disable_ramindex 0
 set_option -microsemi_enhanced_flow 1
 
@@ -83,5 +85,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "./vhdl_complex_mult_test_sd.vm"
+project -result_file "./FFT_Butterfly_test_sd.vm"
 impl -active "synthesis"

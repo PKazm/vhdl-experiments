@@ -9,8 +9,8 @@
  			
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
- <tr> <td class="optionTitle" align="left"> Project Name</td> <td> vhdl_complex_mult_test_sd_syn</td> <td class="optionTitle" align="left"> Device Name</td> <td> synthesis: Microsemi SmartFusion2 : M2S010</td> </tr>
-<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> <td class="optionTitle" align="left"> Top Module</td> <td> work.vhdl_complex_mult_test_sd</td> </tr>
+ <tr> <td class="optionTitle" align="left"> Project Name</td> <td> FFT_Butterfly_test_sd_syn</td> <td class="optionTitle" align="left"> Device Name</td> <td> synthesis: Microsemi SmartFusion2 : M2S010</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> synthesis</td> <td class="optionTitle" align="left"> Top Module</td> <td> work.FFT_Butterfly_test_sd</td> </tr>
  		 </thead> 
 		 <tbody> <tr> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> </tr>
 <tr> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 10000</td> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 0</td> </tr>
@@ -33,13 +33,13 @@
          </tr>
   <tr>
   <td class="optionTitle"> (compiler)</td><td>out-of-date</td>
- <td>19</td>
- <td>14</td>
+ <td>24</td>
+ <td>9</td>
 <td>0</td>
 <td>-</td>
 <td>00m:02s</td>
 <td>-</td>
-<td><font size="-1">2/21/2020</font><br/><font size="-2">2:49:22 PM</font></td>
+<td><font size="-1">2/26/2020</font><br/><font size="-2">1:37:44 AM</font></td>
 </tr> 
 
  <tr>
@@ -49,19 +49,19 @@
 <td>0</td>
 <td>0m:00s</td>
 <td>0m:00s</td>
-<td>134MB</td>
-<td><font size="-1">2/21/2020</font><br/><font size="-2">2:49:24 PM</font></td>
+<td>137MB</td>
+<td><font size="-1">2/26/2020</font><br/><font size="-2">1:37:46 AM</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>out-of-date</td>
- <td>14</td>
- <td>2</td>
+ <td>10</td>
+ <td>16</td>
 <td>0</td>
-<td>0m:01s</td>
-<td>0m:01s</td>
+<td>0m:03s</td>
+<td>0m:04s</td>
 <td>137MB</td>
-<td><font size="-1">2/21/2020</font><br/><font size="-2">2:49:26 PM</font></td>
+<td><font size="-1">2/26/2020</font><br/><font size="-2">1:37:50 AM</font></td>
 </tr> 
 
  		</tbody>
@@ -72,20 +72,23 @@
 <tfoot> <tr> <td class="optionTitle" colspan="2"></td><td class="optionTitle" colspan="2"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Carry Cells used" class="optionTitle" align="left">Carry Cells</td> <td>59</td>
-<td title ="Total Sequential Cells used" class="optionTitle" align="left">Sequential Cells</td> <td>52</td>
+<td title ="Total Carry Cells used" class="optionTitle" align="left">Carry Cells</td> <td>40</td>
+<td title ="Total Sequential Cells used" class="optionTitle" align="left">Sequential Cells</td> <td>102</td>
 </tr>
 <tr> 
 <td title ="Total DSP Blocks used" class="optionTitle" align="left">DSP Blocks
 (dsp_used)</td> <td>2</td>
-<td title ="Total I/O Cells used" class="optionTitle" align="left">I/O Cells</td> <td>36</td>
+<td title ="Total I/O Cells used" class="optionTitle" align="left">I/O Cells</td> <td>47</td>
 </tr>
 <tr> 
 <td title ="Total Global Clock Buffers used" class="optionTitle" align="left">Global Clock Buffers</td> <td>2</td>
-<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
-(total_luts)</td> <td>61</td>
+<td title ="Total RAM64x18 used" class="optionTitle" align="left">RAM64x18
+(v_ram)</td> <td>1</td>
 </tr>
- 
+<tr> 
+<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
+(total_luts)</td> <td>76</td>
+<td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -94,8 +97,8 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</td><td  align="left">100.0 MHz</td><td  align="left">156.0 MHz</td><td  align="left">3.590</td></tr> 
-<tr> <td  align="left">System</td><td  align="left">100.0 MHz</td><td  align="left">895.2 MHz</td><td  align="left">8.883</td></tr> 
+<tr> <td  align="left">FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">212.7 MHz</td><td  align="left">0.299</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">200.0 MHz</td><td  align="left">895.2 MHz</td><td  align="left">3.883</td></tr> 
 </tbody> 
  </table>
 <br>

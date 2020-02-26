@@ -207,15 +207,15 @@ architecture architecture_Twiddle_table of Twiddle_table is
     -- BRAM stuff
 
 begin
-    gen_no_BRAM : if(g_use_BRAM = 0) generate
-        cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-        cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-        sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
-        sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
-        twiddle_ready <= '1';
-    end generate gen_no_BRAM;
+    --gen_no_BRAM : if(g_use_BRAM = 0) generate
+    --    cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+    --    cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+    --    sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+    --    sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+    --    twiddle_ready <= '1';
+    --end generate gen_no_BRAM;
 
-    gen_yes_BRAM : if(g_use_BRAM /= 0) generate
+    --gen_yes_BRAM : if(g_use_BRAM /= 0) generate
 
         p_load_BRAM : process(PCLK, RSTn)
         begin
@@ -223,7 +223,7 @@ begin
                 twiddle_ready_sig <= '0';
                 mem_adr_cnt <= (others => '0');
                 mem_w_en <= '0';
-                mem_dat_w <= (others => '0');
+                --mem_dat_w <= (others => '0');
             elsif(rising_edge(PCLK)) then
                 if(twiddle_ready_sig = '0') then
                     -- load twiddle factors into BRAM
@@ -236,23 +236,49 @@ begin
                         end if;
                     else
                         mem_w_en <= '1';
-                        mem(to_integer(mem_adr)) <= std_logic_vector(cosine_table(to_integer(mem_adr))) &
-                                                    std_logic_vector(sine_table(to_integer(mem_adr)));
+                        --mem(to_integer(mem_adr)) <= std_logic_vector(cosine_table(to_integer(mem_adr))) &
+                        --                            std_logic_vector(sine_table(to_integer(mem_adr)));
                     end if;
                 else
                     -- twiddle factors have been loaded into BRAM
-                    null;
+                    
                 end if;
+                --mem_dat_r <= mem(to_integer(mem_adr));
+            end if;
+        end process;
+
+        p_mem_ctrl : process(PCLK, RSTn)
+        begin
+            if(RSTn = '0') then
+                --cos_twid <= (others => '0');
+                --cos_twid_1comp <= (others => '0');
+                --sin_twid <= (others => '0');
+                --sin_twid_1comp <= (others => '0');
+                mem_dat_r <= (others => '0');
+            --elsif(rising_edge(PCLK)) then
+            elsif(PCLK'event and PCLK='1') then
+                if(mem_w_en = '0') then
+                    mem(to_integer(mem_adr)) <= mem_dat_w;
+                end if;
+                mem_dat_r <= mem(to_integer(mem_adr));
+                --cos_twid <= mem_dat_r(8 downto 0);
+                --cos_twid_1comp <= not mem_dat_r(8 downto 0);
+                --sin_twid <= mem_dat_r(17 downto 9);
+                --sin_twid_1comp <= not mem_dat_r(17 downto 9);
             end if;
         end process;
 
         mem_adr <= mem_adr_cnt when twiddle_ready_sig = '0' else unsigned(twiddle_index);
+        mem_dat_w <= std_logic_vector(cosine_table(to_integer(mem_adr_cnt))) & std_logic_vector(sine_table(to_integer(mem_adr_cnt)));
         twiddle_ready <= twiddle_ready_sig;
-        mem_dat_r <= mem(to_integer(mem_adr));
+        --mem_dat_r <= mem(to_integer(mem_adr));
+
         cos_twid <= mem_dat_r(8 downto 0);
         cos_twid_1comp <= not mem_dat_r(8 downto 0);
         sin_twid <= mem_dat_r(17 downto 9);
         sin_twid_1comp <= not mem_dat_r(17 downto 9);
-    end generate gen_yes_BRAM;
+
+        
+    --end generate gen_yes_BRAM;
    -- architecture body
 end architecture_Twiddle_table;

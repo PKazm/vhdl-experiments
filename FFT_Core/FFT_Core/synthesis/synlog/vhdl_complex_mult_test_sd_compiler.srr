@@ -33,8 +33,17 @@ Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:1
 
 @N|Running in 64-bit mode
 @N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd":17:7:17:31|Top entity is set to vhdl_complex_mult_test_sd.
-Options changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd changed - recompiling
 VHDL syntax check successful!
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd changed - recompiling
 @N: CD233 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using sequential encoding for type mvl9plus.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd":17:7:17:31|Synthesizing work.vhdl_complex_mult_test_sd.rtl.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd":17:7:17:12|Synthesizing work.osc_c0.rtl.
@@ -73,6 +82,8 @@ Running optimization stage 1 on FCCC_C0_FCCC_C0_0_FCCC .......
 Post processing for work.fccc_c0.rtl
 Running optimization stage 1 on FCCC_C0 .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":24:7:24:22|Synthesizing work.butterfly_hw_dsp.architecture_butterfly_hw_dsp.
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:4:150:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":161:25:161:41|Referenced variable twiddle_ready_sig is not in sensitivity list.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":56:11:56:29|Signal real_a_1comp_extend is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":63:11:63:24|Signal real_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
 @W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":64:11:64:24|Signal imag_a_out_sum is undriven. Either assign the signal a value or remove the signal declaration.
@@ -81,15 +92,17 @@ Running optimization stage 1 on FCCC_C0 .......
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":26:7:26:19|Synthesizing work.twiddle_table.architecture_twiddle_table.
 Post processing for work.twiddle_table.architecture_twiddle_table
 Running optimization stage 1 on Twiddle_table .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":222:12:222:13|Pruning unused register mem_dat_w_2(17 downto 0). Make sure that there are no unused intermediate registers.
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":197:11:197:13|Found RAM mem, depth=16, width=18
 Post processing for work.butterfly_hw_dsp.architecture_butterfly_hw_dsp
 Running optimization stage 1 on Butterfly_HW_DSP .......
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal sin_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal sin_twid_1comp_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":150:82:150:82|Feedback mux created for signal cos_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_trunc_1(8 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_imag_1(34 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Pruning unused register temp_real_1(17 downto 0). Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal sin_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal sin_twid_1comp_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":159:82:159:82|Feedback mux created for signal cos_twid_sig[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 Post processing for work.vhdl_complex_mult_test_sd.rtl
 Running optimization stage 1 on vhdl_complex_mult_test_sd .......
 Running optimization stage 2 on Twiddle_table .......
@@ -112,12 +125,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 150MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:21 2020
+# Tue Feb 25 02:27:42 2020
 
 ###########################################################]
 
@@ -137,13 +150,14 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
 @N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:21 2020
+# Tue Feb 25 02:27:43 2020
 
 ###########################################################]
 @END
@@ -153,6 +167,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:22 2020
+# Tue Feb 25 02:27:43 2020
 
 ###########################################################]

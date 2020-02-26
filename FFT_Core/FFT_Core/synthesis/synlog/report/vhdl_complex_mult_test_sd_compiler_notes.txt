@@ -15,6 +15,7 @@
 @N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":24:7:24:22|Synthesizing work.butterfly_hw_dsp.architecture_butterfly_hw_dsp.
 @N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":26:7:26:19|Synthesizing work.twiddle_table.architecture_twiddle_table.
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":197:11:197:13|Found RAM mem, depth=16, width=18
 @N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd":10:10:10:12|Input XTL is unused.
 @N|Running in 64-bit mode
 

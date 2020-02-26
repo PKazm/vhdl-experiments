@@ -3,11 +3,14 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 @N: MF284 |Setting synthesis effort to medium for the design
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_0 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_1 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName_2 (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":150:82:150:82|Removing sequential instance NoName (in view: work.vhdl_complex_mult_test_sd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: FP130 |Promoting Net FCCC_C0_0_LOCK on CLKINT  I_23 
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":240:69:240:78|Found ROM un5_mem[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 7 bits.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":239:69:239:80|Found ROM un9_mem[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 8 bits.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_0 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_1 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\butterfly_hw_dsp.vhd":159:82:159:82|Removing sequential instance NoName_2 (in view: work.Butterfly_HW_DSP(architecture_butterfly_hw_dsp)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FP130 |Promoting Net Butterfly_HW_DSP_0.un1_rstn_i_i on CLKINT  I_33 
+@N: FP130 |Promoting Net FCCC_C0_0_LOCK on CLKINT  I_34 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

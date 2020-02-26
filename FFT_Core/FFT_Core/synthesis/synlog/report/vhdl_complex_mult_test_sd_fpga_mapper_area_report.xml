@@ -16,7 +16,7 @@ The file contains the area information from mapper to be displayed as part of th
 <data>59</data>
 </parameter>
 <parameter tooltip="Total Sequential Cells used" name="Sequential Cells">
-<data>52</data>
+<data>58</data>
 </parameter>
 <parameter tcl_name="dsp_used" tooltip="Total DSP Blocks used" name="DSP Blocks">
 <data>2</data>
@@ -25,9 +25,12 @@ The file contains the area information from mapper to be displayed as part of th
 <data>36</data>
 </parameter>
 <parameter tooltip="Total Global Clock Buffers used" name="Global Clock Buffers">
-<data>2</data>
+<data>3</data>
+</parameter>
+<parameter tcl_name="v_ram" tooltip="Total RAM64x18 used" name="RAM64x18">
+<data>1</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>61</data>
+<data>104</data>
 </parameter>
 </report_table>

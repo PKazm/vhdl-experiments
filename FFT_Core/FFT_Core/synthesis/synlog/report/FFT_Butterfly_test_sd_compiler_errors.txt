@@ -1,0 +1,40 @@
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(26) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(25) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(24) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(23) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(22) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(21) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(20) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(19) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Multiple non-tristate drivers for net temp_imag(43) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(17) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(16) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(15) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(14) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(13) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(12) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(11) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(10) in FFT_Butterfly_HW_MATHDSP
+@E: CL219 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Multiple non-tristate drivers for net temp_real(9) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(9) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(10) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(11) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(12) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(13) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(14) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(15) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(16) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:19|Unresolved tristate drivers for net temp_real(17) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(19) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(20) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(21) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(22) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(23) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(24) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(25) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(26) in FFT_Butterfly_HW_MATHDSP
+@E: CL229 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":79:11:79:19|Unresolved tristate drivers for net temp_imag(43) in FFT_Butterfly_HW_MATHDSP
+@E: MF420 |Netlist read from file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.srs failed
+@E: Could not find specified top level FFT_Butterfly_test_sd (library: work, cell: FFT_Butterfly_test_sd)Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+@E::Error while linking, aborting.
+

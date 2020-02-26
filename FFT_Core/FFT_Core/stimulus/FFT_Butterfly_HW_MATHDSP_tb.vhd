@@ -47,6 +47,7 @@ architecture behavioral of FFT_Butterfly_HW_MATHDSP_tb is
     signal SYSCLK : std_logic := '0';
     signal NSYSRESET : std_logic := '0';
 
+    -- component signals
     signal do_calc : std_logic;
     signal twiddle_cos_real : std_logic_vector(8 downto 0);
     signal twiddle_sin_imag : std_logic_vector(8 downto 0);
@@ -62,6 +63,7 @@ architecture behavioral of FFT_Butterfly_HW_MATHDSP_tb is
     signal imag_a_out : std_logic_vector(8 downto 0);
     signal real_b_out : std_logic_vector(8 downto 0);
     signal imag_b_out : std_logic_vector(8 downto 0);
+    -- component signals
 
     component FFT_Butterfly_HW_MATHDSP
         -- ports
@@ -152,11 +154,19 @@ begin
     end process;
 
 
-    twiddle_sin_imag_1comp <= BIT_REV_FUNC(twiddle_sin_imag);
+    twiddle_sin_imag_1comp <= not twiddle_sin_imag;
 
     process
+        variable twiddle_cos_real_var : integer;
+        variable twiddle_sin_imag_var : integer;
+        variable real_a_in_var : integer;
+        variable imag_a_in_var : integer;
+        variable real_b_in_var : integer;
+        variable imag_b_in_var : integer;
         variable temp_real_var : integer;
         variable temp_imag_var : integer;
+        variable temp2_real_var : integer;
+        variable temp2_imag_var : integer;
         variable real_a_out_var : integer;
         variable imag_a_out_var : integer;
         variable real_b_out_var : integer;
@@ -165,7 +175,6 @@ begin
         variable seed1 : positive;
         variable seed2 : positive;
         variable x1 : real;
-        variable x2 : real;
     begin
         do_calc <= '0';
         twiddle_cos_real <= (others => '0');
@@ -176,34 +185,110 @@ begin
         imag_b_in <= (others => '0');
 
         wait until (NSYSRESET = '1');
+        wait for (SYSCLK_PERIOD * 1);
 
-        for i in 0 to 10 loop
-            seed1 := (i+1);
-            seed2 := (i+1) * 2;
-            uniform(seed1, seed2, x1);
-            uniform(seed2, seed1, x2);
+        seed1 := 1;
+        seed2 := 1;
+        for i in 0 to 20 loop
+            case i is
+                when 0 =>
+                    -- zeroes
+                    twiddle_cos_real <= std_logic_vector(to_signed(0, twiddle_cos_real'length));
+                    twiddle_sin_imag <= std_logic_vector(to_signed(0, twiddle_sin_imag'length));
+                    real_a_in <= std_logic_vector(to_signed(0, real_a_in'length));
+                    imag_a_in <= std_logic_vector(to_signed(0, imag_a_in'length));
+                    real_b_in <= std_logic_vector(to_signed(0, real_b_in'length));
+                    imag_b_in <= std_logic_vector(to_signed(0, imag_b_in'length));
+                    twiddle_cos_real_var := 0;
+                    twiddle_sin_imag_var := 0;
+                    real_a_in_var := 0;
+                    imag_a_in_var := 0;
+                    real_b_in_var := 0;
+                    imag_b_in_var := 0;
+                when 1 =>
+                    -- real result from Octave (Matlab) testing
+                    twiddle_cos_real <= std_logic_vector(to_signed(-98, twiddle_cos_real'length));
+                    twiddle_sin_imag <= std_logic_vector(to_signed(236, twiddle_sin_imag'length));
+                    real_a_in <= std_logic_vector(to_signed(121, real_a_in'length));
+                    imag_a_in <= std_logic_vector(to_signed(47, imag_a_in'length));
+                    real_b_in <= std_logic_vector(to_signed(2, real_b_in'length));
+                    imag_b_in <= std_logic_vector(to_signed(130, imag_b_in'length));
+                    twiddle_cos_real_var := -98;
+                    twiddle_sin_imag_var := 236;
+                    real_a_in_var := 121;
+                    imag_a_in_var := 47;
+                    real_b_in_var := 2;
+                    imag_b_in_var := 130;
+                when 2 =>
+                    -- maximum values for 9 bit signed, excluding -256
+                    twiddle_cos_real <= std_logic_vector(to_signed(255, twiddle_cos_real'length));
+                    twiddle_sin_imag <= std_logic_vector(to_signed(255, twiddle_sin_imag'length));
+                    real_a_in <= std_logic_vector(to_signed(255, real_a_in'length));
+                    imag_a_in <= std_logic_vector(to_signed(255, imag_a_in'length));
+                    real_b_in <= std_logic_vector(to_signed(255, real_b_in'length));
+                    imag_b_in <= std_logic_vector(to_signed(255, imag_b_in'length));
+                    twiddle_cos_real_var := 255;
+                    twiddle_sin_imag_var := 255;
+                    real_a_in_var := 255;
+                    imag_a_in_var := 255;
+                    real_b_in_var := 255;
+                    imag_b_in_var := 255;
+                when 3 =>
+                    -- minimum values for 9 bit signed, excluding -256
+                    twiddle_cos_real <= std_logic_vector(to_signed(255, twiddle_cos_real'length));
+                    twiddle_sin_imag <= std_logic_vector(to_signed(255, twiddle_sin_imag'length));
+                    real_a_in <= std_logic_vector(to_signed(-255, real_a_in'length));
+                    imag_a_in <= std_logic_vector(to_signed(-255, imag_a_in'length));
+                    real_b_in <= std_logic_vector(to_signed(-255, real_b_in'length));
+                    imag_b_in <= std_logic_vector(to_signed(-255, imag_b_in'length));
+                    twiddle_cos_real_var := 255;
+                    twiddle_sin_imag_var := 255;
+                    real_a_in_var := -255;
+                    imag_a_in_var := -255;
+                    real_b_in_var := -255;
+                    imag_b_in_var := -255;
+                when others =>
+                    -- random values are between 0 and 1.
+                    -- Oversizing the integer value and converting to signed will truncate the highest bits
+                    -- this allows the highest value bit to be used as the sign bit allowing for negative input values
+                    -- this also throws "truncate" warnings in Modelsim
+                    uniform(seed1, seed2, x1);
+                    twiddle_cos_real <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), twiddle_cos_real'length));
+                    twiddle_cos_real_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), twiddle_cos_real'length));
+                    uniform(seed1, seed2, x1);
+                    twiddle_sin_imag <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), twiddle_sin_imag'length));
+                    twiddle_sin_imag_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), twiddle_sin_imag'length));
+                    uniform(seed1, seed2, x1);
+                    real_a_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), real_a_in'length));
+                    real_a_in_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), real_a_in'length));
+                    uniform(seed1, seed2, x1);
+                    imag_a_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), imag_a_in'length));
+                    imag_a_in_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), imag_a_in'length));
+                    uniform(seed1, seed2, x1);
+                    real_b_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), real_b_in'length));
+                    real_b_in_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), real_b_in'length));
+                    uniform(seed1, seed2, x1);
+                    imag_b_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), imag_b_in'length));
+                    imag_b_in_var := to_integer(to_signed(integer(floor(x1 * 2.0**9)), imag_b_in'length));
+            end case;
 
-            twiddle_cos_real <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**8)), twiddle_cos_real'length));
-            twiddle_sin_imag <= std_logic_vector(to_signed(integer(floor(x2 * 2.0**8)), twiddle_sin_imag'length));
-            real_a_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**9)), real_a_in'length));
-            imag_a_in <= std_logic_vector(to_signed(integer(floor(x1 * 2.0**10)), imag_a_in'length));
-            real_b_in <= std_logic_vector(to_signed(integer(floor(x2 * 2.0**9)), real_b_in'length));
-            imag_b_in <= std_logic_vector(to_signed(integer(floor(x2 * 2.0**10)), imag_b_in'length));
+            temp_real_var := ((real_a_in_var * twiddle_cos_real_var) + (imag_a_in_var * twiddle_sin_imag_var));-- / (2**8);
+            temp_imag_var := ((imag_a_in_var * twiddle_cos_real_var) - (real_a_in_var * twiddle_sin_imag_var));-- / (2**8);
+            
+            -- integer rounding needs to mimic the hardware implementation, this means floor() but matching all the data types is a mess.
+            temp2_real_var := to_integer(shift_right(to_signed(temp_real_var, 32), 9));
+            temp2_imag_var := to_integer(shift_right(to_signed(temp_imag_var, 32), 9));
 
-            temp_real_var := to_integer(signed(real_a_in)) * to_integer(signed(twiddle_cos_real)) + to_integer(signed(imag_a_in)) * to_integer(signed(twiddle_sin_imag));
-            temp_imag_var := to_integer(signed(imag_a_in)) * to_integer(signed(twiddle_cos_real)) + to_integer(signed(real_a_in)) * (-1) * to_integer(signed(twiddle_sin_imag));
-
-            temp_real_var := temp_real_var / (2**8);
-            temp_imag_var := temp_real_var / (2**8);
-
-            real_a_out_var := (to_integer(signed(real_b_in)) - temp_real_var) / 2;
-            imag_a_out_var := (to_integer(signed(imag_b_in)) - temp_imag_var) / 2;
-            real_b_out_var := (to_integer(signed(real_b_in)) + temp_real_var) / 2;
-            imag_b_out_var := (to_integer(signed(imag_b_in)) + temp_imag_var) / 2;
+            real_a_out_var := to_integer(shift_right(to_signed(real_b_in_var - temp2_real_var, 32), 1));-- / (2**1);
+            imag_a_out_var := to_integer(shift_right(to_signed(imag_b_in_var - temp2_imag_var, 32), 1));-- / (2**1);
+            real_b_out_var := to_integer(shift_right(to_signed(real_b_in_var + temp2_real_var, 32), 1));-- / (2**1);
+            imag_b_out_var := to_integer(shift_right(to_signed(imag_b_in_var + temp2_imag_var, 32), 1));-- / (2**1);
 
             
             wait for (SYSCLK_PERIOD * 1);
-
+            report integer'image(temp2_real_var) & " = " & integer'image(real_a_in_var) & " * " & integer'image(twiddle_cos_real_var) & " + " & integer'image(imag_a_in_var) & " * " & integer'image(twiddle_sin_imag_var);
+            report integer'image(temp2_imag_var) & " = " & integer'image(imag_a_in_var) & " * " & integer'image(twiddle_cos_real_var) & " - " & integer'image(real_a_in_var) & " * " & integer'image(twiddle_sin_imag_var);
+            
             assert (real_a_out = std_logic_vector(to_signed(real_a_out_var, real_a_out'length))) report "result error: real_a_out; " & integer'image(to_integer(signed(real_a_out))) & " /= " & integer'image(real_a_out_var);
             assert (imag_a_out = std_logic_vector(to_signed(imag_a_out_var, imag_a_out'length))) report "result error: imag_a_out; " & integer'image(to_integer(signed(imag_a_out))) & " /= " & integer'image(imag_a_out_var);
             assert (real_b_out = std_logic_vector(to_signed(real_b_out_var, real_b_out'length))) report "result error: real_b_out; " & integer'image(to_integer(signed(real_b_out))) & " /= " & integer'image(real_b_out_var);

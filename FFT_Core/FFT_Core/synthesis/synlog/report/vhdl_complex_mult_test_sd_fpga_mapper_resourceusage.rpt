@@ -3,17 +3,19 @@ Resource Usage Report for vhdl_complex_mult_test_sd
 Mapping to part: m2s010tq144std
 Cell usage:
 CCC             1 use
-CLKINT          2 uses
+CLKINT          3 uses
 RCOSC_25_50MHZ  1 use
-CFG1           1 use
-CFG4           1 use
+CFG1           9 uses
+CFG2           7 uses
+CFG3           6 uses
+CFG4           23 uses
 
 Carry cells:
 ARI1            59 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            52 uses
+SLE            58 uses
 
 DSP Blocks:    2 of 22 (9%)
  MACC:         2 MultAdds
@@ -23,16 +25,16 @@ I/O primitives: 36
 OUTBUF         36 uses
 
 
-Global Clock Buffers: 2
+Global Clock Buffers: 3
 
-Total LUTs:    61
+Total LUTs:    104
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
-RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM64x18 Interface Logic : SLEs = 36; LUTs = 36;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 72; LUTs = 72;
 
-Total number of SLEs after P&R:  52 + 0 + 0 + 72 = 124;
-Total number of LUTs after P&R:  61 + 0 + 0 + 72 = 133;
+Total number of SLEs after P&R:  58 + 36 + 0 + 72 = 166;
+Total number of LUTs after P&R:  104 + 36 + 0 + 72 = 212;
 

@@ -15,12 +15,13 @@ Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\s
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
 @N|Running in 64-bit mode
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\vhdl_complex_mult_test_sd_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 21 14:49:23 2020
+# Tue Feb 25 02:27:44 2020
 
 ###########################################################]

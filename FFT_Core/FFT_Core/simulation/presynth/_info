@@ -131,37 +131,35 @@ R27
 !i113 1
 R11
 R12
-Efft_butterfly_hw_mathdsp
-Z28 w1582418087
-R14
+Efccc_c0
+Z28 w1582014068
 R2
 R3
 R0
-Z29 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd
-Z30 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd
+Z29 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd
+Z30 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd
 l0
-L24
-V_NQ@OdoY<J9gbazEJ<Qk<3
-!s100 GUzTPMSWzOhQ9I@>GD:eg0
+L17
+V9oC6?:oc9FWW`bPDD9i_91
+!s100 iOA_bao5QZW1VO1zTd3M61
 R6
 33
-Z31 !s110 1582427995
+Z31 !s110 1582698734
 !i10b 1
-Z32 !s108 1582427995.000000
-Z33 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd|
-Z34 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd|
+Z32 !s108 1582698734.000000
+Z33 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd|
+Z34 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd|
 !i113 1
 R11
 R12
-Aarchitecture_fft_butterfly_hw_mathdsp
-R14
+Artl
 R2
 R3
-DEx4 work 24 fft_butterfly_hw_mathdsp 0 22 _NQ@OdoY<J9gbazEJ<Qk<3
-l90
-L58
-V1V_?<BFoI>]nZkE<YMkFV0
-!s100 N<OLHT^_Z?;9Q>ZMW_<PK3
+DEx4 work 7 fccc_c0 0 22 9oC6?:oc9FWW`bPDD9i_91
+l59
+L30
+V;JOT=TQN?QRb7GH8kG0182
+!s100 GiUHblYGgCC]zlMb@0H5?1
 R6
 33
 R31
@@ -172,50 +170,179 @@ R34
 !i113 1
 R11
 R12
-Efft_butterfly_hw_mathdsp_tb
-Z35 w1582427968
-R22
-Z36 DPx4 work 11 fft_package 0 22 =OhXzzG[^Pg?_]6lbI_bM1
-Z37 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Efccc_c0_fccc_c0_0_fccc
+R28
+R2
+R3
+R0
+Z35 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+Z36 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd
+l0
+L8
+V=:D_:QDS6M2CZ7U2KCH^h2
+!s100 QjN8`VF]9nORceO>E3IEa3
+R6
+33
+R31
+!i10b 1
+R32
+Z37 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+Z38 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd|
+!i113 1
+R11
+R12
+Adef_arch
+DEx12 smartfusion2 6 XTLOSC 0 22 Dg1SIo80bB@j0V0VzS_@n1
+Z39 DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+DEx12 smartfusion2 10 RCOSC_1MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R2
+R3
+DEx4 work 22 fccc_c0_fccc_c0_0_fccc 0 22 =:D_:QDS6M2CZ7U2KCH^h2
+l94
+L17
+Vz@S:^JFGhI2a4fm?bndOG2
+!s100 azgSDhnXXD3IUbbRd68KX3
+R6
+33
+R31
+!i10b 1
+R32
+R37
+R38
+!i113 1
+R11
+R12
+Efft_butterfly_hw_mathdsp
+Z40 w1582698702
 R14
 R2
 R3
 R0
-Z38 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd
-Z39 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd
+Z41 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd
+Z42 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd
+l0
+L27
+Vz=OW=C?7jK_CDL>lidLKY0
+!s100 9g5D_;9RZiBME=<S2TNYI0
+R6
+33
+Z43 !s110 1582698735
+!i10b 1
+Z44 !s108 1582698735.000000
+Z45 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd|
+Z46 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_fft_butterfly_hw_mathdsp
+R14
+R2
+R3
+Z47 DEx4 work 24 fft_butterfly_hw_mathdsp 0 22 z=OW=C?7jK_CDL>lidLKY0
+l132
+L63
+V>=QGzWW7ooemfI_T^7XP=1
+!s100 Lm7D17B]zV8>:WKTfc3R33
+R6
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Efft_butterfly_hw_mathdsp_tb
+Z48 w1582511133
+R22
+Z49 DPx4 work 11 fft_package 0 22 =OhXzzG[^Pg?_]6lbI_bM1
+Z50 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R14
+R2
+R3
+R0
+Z51 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd
+Z52 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd
 l0
 L40
 VX=XoSM4V4LPQJmO=5F_fR0
 !s100 8A:PLJ[WaNQ2iLnWIYNIY0
 R6
 33
-Z40 !s110 1582427996
+Z53 !s110 1582511199
 !i10b 1
-Z41 !s108 1582427996.000000
-Z42 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd|
-Z43 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd|
+Z54 !s108 1582511199.000000
+Z55 !s90 -2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd|
+Z56 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Butterfly_HW_MATHDSP_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R22
-R36
-R37
+R49
+R50
 R14
 R2
 R3
-Z44 DEx4 work 27 fft_butterfly_hw_mathdsp_tb 0 22 X=XoSM4V4LPQJmO=5F_fR0
-l95
+DEx4 work 27 fft_butterfly_hw_mathdsp_tb 0 22 X=XoSM4V4LPQJmO=5F_fR0
+l97
 L43
-VV32jlIlc_hC:Y2X3SkCMP0
-!s100 nf2IziJ5BLl7i@[kJYGlU2
+VjCWEzQe;kQj3@lg]i=N3^3
+!s100 _6@?5S<3D?[?=@Vm0G>[70
 R6
 33
-R40
+R53
 !i10b 1
-R41
-R42
-R43
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Efft_butterfly_test_sd
+Z57 w1582698721
+R2
+R3
+R0
+Z58 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd
+Z59 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd
+l0
+L17
+VRV9jMA4R2hm0kHRSG=ae71
+!s100 7DKl:OVgzomlk9XE4S9<c2
+R6
+33
+Z60 !s110 1582698737
+!i10b 1
+Z61 !s108 1582698737.000000
+Z62 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd|
+Z63 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd|
+!i113 1
+R11
+R12
+Artl
+R50
+Z64 DEx4 work 13 twiddle_table 0 22 9DPDig89m_hV=mjUlHaC>1
+Z65 DEx4 work 12 lfsr_fib_gen 0 22 X::2RPdM<_7@JK10?LHkg0
+R14
+R47
+R39
+DEx12 smartfusion2 14 RCOSC_25_50MHZ 0 22 Dg1SIo80bB@j0V0VzS_@n1
+R2
+R3
+DEx4 work 21 fft_butterfly_test_sd 0 22 RV9jMA4R2hm0kHRSG=ae71
+l107
+L33
+V0[Qh=SgkTnb0l4OEI:T3]3
+!s100 `JGoCaCTXc7O[XVRHa6DP1
+R6
+33
+R60
+!i10b 1
+R61
+R62
+R63
 !i113 1
 R11
 R12
@@ -223,10 +350,10 @@ Pfft_package
 R14
 R2
 R3
-Z45 w1582426634
+Z66 w1582426634
 R0
-Z46 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd
-Z47 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd
+Z67 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd
+Z68 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd
 l0
 L24
 V=OhXzzG[^Pg?_]6lbI_bM1
@@ -234,58 +361,58 @@ V=OhXzzG[^Pg?_]6lbI_bM1
 R6
 33
 b1
-R40
+R60
 !i10b 1
-R41
-Z48 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd|
-Z49 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd|
+R61
+Z69 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd|
+Z70 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd|
 !i113 1
 R11
 R12
 Bbody
-R36
+R49
 R14
 R2
 R3
 l0
 L50
-Voai6>W9CAaBnLBgdm?fh^3
-!s100 Cj=k=>8Q<68dEj1nCjTh?2
+Z71 Voai6>W9CAaBnLBgdm?fh^3
+Z72 !s100 Cj=k=>8Q<68dEj1nCjTh?2
 R6
 33
-R40
+R60
 !i10b 1
-R41
-R48
-R49
+R61
+R69
+R70
 !i113 1
 R11
 R12
 Efft_sample_loader
-Z50 w1582330035
-Z51 DPx4 work 11 fft_package 0 22 zDFlFoloW_XHXXeGCiI8;3
+Z73 w1582330035
+Z74 DPx4 work 11 fft_package 0 22 zDFlFoloW_XHXXeGCiI8;3
 R14
 R2
 R3
 R0
-Z52 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd
-Z53 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd
+Z75 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd
+Z76 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd
 l0
 L38
 V:55j@zWIH7`e]RR4fbFPc0
 !s100 E^n>;^_Pk^T<YQ0cWCj;U0
 R6
 33
-Z54 !s110 1582331773
+Z77 !s110 1582331773
 !i10b 1
-Z55 !s108 1582331773.000000
-Z56 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd|
-Z57 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd|
+Z78 !s108 1582331773.000000
+Z79 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd|
+Z80 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Loader.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_fft_sample_loader
-R51
+R74
 R14
 R2
 R3
@@ -296,41 +423,41 @@ VC?aWj?i6=lfgAnIeIX8?T0
 !s100 iEi[nR3]<GKjkO;55TZ?P2
 R6
 33
-R54
+R77
 !i10b 1
-R55
-R56
-R57
+R78
+R79
+R80
 !i113 1
 R11
 R12
 Efft_sample_loader_tb
-Z58 w1582331754
+Z81 w1582331754
 R22
-R51
+R74
 R14
 R2
 R3
 R0
-Z59 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd
-Z60 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd
+Z82 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd
+Z83 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd
 l0
 L38
 VLO7mlhDJz?gd4Q:QV<^@[2
 !s100 lGUk@CIXB5`Ui^JzbA^Q31
 R6
 33
-R54
+R77
 !i10b 1
-R55
-Z61 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd|
-Z62 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd|
+R78
+Z84 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd|
+Z85 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Loader_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R22
-R51
+R74
 R14
 R2
 R3
@@ -341,39 +468,39 @@ V2=^L3Vio@l91HT8oReb9a2
 !s100 ?^4b9o538]^Ig[DK?7JP;3
 R6
 33
-R54
+R77
 !i10b 1
-R55
-R61
-R62
+R78
+R84
+R85
 !i113 1
 R11
 R12
 Efft_sample_outputer
-Z63 w1582346158
-R51
+Z86 w1582346158
+R74
 R14
 R2
 R3
 R0
-Z64 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd
-Z65 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd
+Z87 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd
+Z88 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd
 l0
 L26
 VI=m]DQLKb:ILAJjJH<fJ@2
 !s100 U6FLC3WH8]YPY8Cj8DVla3
 R6
 33
-Z66 !s110 1582346672
+Z89 !s110 1582346672
 !i10b 1
-Z67 !s108 1582346672.000000
-Z68 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd|
-Z69 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd|
+Z90 !s108 1582346672.000000
+Z91 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd|
+Z92 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Sample_Outputer.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_fft_sample_outputer
-R51
+R74
 R14
 R2
 R3
@@ -384,41 +511,41 @@ VN?Z?^aN4kaGFLe]J=6jcc0
 !s100 :m4D1BlZk0_W=MFLCVF4b1
 R6
 33
-R66
+R89
 !i10b 1
-R67
-R68
-R69
+R90
+R91
+R92
 !i113 1
 R11
 R12
 Efft_sample_outputer_tb
-Z70 w1582346662
+Z93 w1582346662
 R22
-R51
+R74
 R14
 R2
 R3
 R0
-Z71 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd
-Z72 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd
+Z94 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd
+Z95 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd
 l0
 L38
 VFPSE6@J5D6fFk93A?j^>z3
 !s100 k6=Qba6V?fG@RS9LaH0G`1
 R6
 33
-R66
+R89
 !i10b 1
-R67
-Z73 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd|
-Z74 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd|
+R90
+Z96 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd|
+Z97 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/FFT_Sample_Outputer_tb.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R22
-R51
+R74
 R14
 R2
 R3
@@ -429,32 +556,32 @@ VBZ;TCe[jYPATfz[hYE01E1
 !s100 gII5>DQbonRkiV=l[;G;U2
 R6
 33
-R66
+R89
 !i10b 1
-R67
-R73
-R74
+R90
+R96
+R97
 !i113 1
 R11
 R12
 Ehard_mult_addsub_c0
-Z75 w1581986819
+Z98 w1581986819
 R2
 R3
 R0
-Z76 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd
-Z77 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd
+Z99 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd
+Z100 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd
 l0
 L17
 VohHoZVjoM;<8FAP_h23VA3
 !s100 =;G6i=zkN<PK2YTRPcFF^1
 R6
 33
-Z78 !s110 1582013530
+R43
 !i10b 1
-Z79 !s108 1582013529.000000
-Z80 !s90 -2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd|
-Z81 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd|
+R44
+Z101 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd|
+Z102 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd|
 !i113 1
 R11
 R12
@@ -468,32 +595,32 @@ V?T@laRb`Y90hRI^AYbObk1
 !s100 iY7c?]NCQT[c50g6>@ioc3
 R6
 33
-R78
+R43
 !i10b 1
-R79
-R80
-R81
+R44
+R101
+R102
 !i113 1
 R11
 R12
 Ehard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub
-R75
+R98
 R2
 R3
 R0
-Z82 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd
-Z83 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd
+Z103 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd
+Z104 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd
 l0
 L8
 V>MAEiIFb27^C:U72C>YM91
 !s100 l@3=fYKjd8SJFfzJbIkEF2
 R6
 33
-Z84 !s110 1582013529
+R43
 !i10b 1
-R79
-Z85 !s90 -2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd|
-Z86 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd|
+R44
+Z105 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd|
+Z106 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd|
 !i113 1
 R11
 R12
@@ -507,21 +634,21 @@ V]B6Pf;_U?Ci8h>3D1eHU[2
 !s100 Zhjcb1ene<YACjFZ8Qe_>3
 R6
 33
-R84
+R43
 !i10b 1
-R79
-R85
-R86
+R44
+R105
+R106
 !i113 1
 R11
 R12
 Ehard_mult_c0
-Z87 w1581973983
+Z107 w1581973983
 R2
 R3
 R0
-Z88 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd
-Z89 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd
+Z108 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd
+Z109 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd
 l0
 L17
 VT0dYdN4bml0<X`K4j:3jU3
@@ -531,8 +658,8 @@ R6
 R7
 !i10b 1
 R8
-Z90 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd|
-Z91 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd|
+Z110 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd|
+Z111 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0.vhd|
 !i113 1
 R11
 R12
@@ -549,18 +676,18 @@ R6
 R7
 !i10b 1
 R8
-R90
-R91
+R110
+R111
 !i113 1
 R11
 R12
 Ehard_mult_c0_hard_mult_c0_0_hard_mult
-R87
+R107
 R2
 R3
 R0
-Z92 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd
-Z93 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd
+Z112 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd
+Z113 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd
 l0
 L8
 V8mAbm0AMoUg^hoEB<^Wb:3
@@ -570,8 +697,8 @@ R6
 R7
 !i10b 1
 R8
-Z94 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd|
-Z95 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd|
+Z114 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd|
+Z115 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_C0/HARD_MULT_C0_0/HARD_MULT_C0_HARD_MULT_C0_0_HARD_MULT.vhd|
 !i113 1
 R11
 R12
@@ -588,34 +715,151 @@ R6
 R7
 !i10b 1
 R8
-R94
-R95
+R114
+R115
+!i113 1
+R11
+R12
+Elfsr_fib_gen
+Z116 w1582615421
+R2
+R3
+R0
+Z117 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd
+Z118 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd
+l0
+L23
+VX::2RPdM<_7@JK10?LHkg0
+!s100 9XQo47lGnhMQSf]OM?C^[3
+R6
+33
+R43
+!i10b 1
+R44
+Z119 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd|
+Z120 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd|
+!i113 1
+R11
+R12
+Aarchitecture_lfsr_fib_gen
+R2
+R3
+R65
+l40
+L35
+Vg23XaXH_X9Z3:R8C^j7`52
+!s100 eYDSbX7Y_MUO?zF0LT7ok3
+R6
+33
+R43
+!i10b 1
+R44
+R119
+R120
+!i113 1
+R11
+R12
+Eosc_c0
+Z121 w1582014057
+R2
+R3
+R0
+Z122 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd
+Z123 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd
+l0
+L17
+V;9f:oAhA_Yn;NSNQG<[f:1
+!s100 Yf_ZSillhlhcFGRD9njA;0
+R6
+33
+R43
+!i10b 1
+R44
+Z124 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd|
+Z125 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 6 osc_c0 0 22 ;9f:oAhA_Yn;NSNQG<[f:1
+l56
+L27
+VOFnD7z[I]8W[K[i4ZoEST1
+!s100 Yebk`f[LaoaULcj[lFUSL0
+R6
+33
+R43
+!i10b 1
+R44
+R124
+R125
+!i113 1
+R11
+R12
+Eosc_c0_osc_c0_0_osc
+R121
+R2
+R3
+R0
+Z126 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+Z127 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd
+l0
+L8
+V=RTjS>oH[4=XjoXn^`jZ13
+!s100 ImDYGYTfEB_O;]h:c4C>f1
+R6
+33
+R43
+!i10b 1
+R44
+Z128 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+Z129 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd|
+!i113 1
+R11
+R12
+Adef_arch
+R2
+R3
+DEx4 work 19 osc_c0_osc_c0_0_osc 0 22 =RTjS>oH[4=XjoXn^`jZ13
+l31
+L21
+V1oa1O8Mi7^mOUoQz_9K461
+!s100 li@AIJ9Yl0<2d:3ki;e^Y2
+R6
+33
+R43
+!i10b 1
+R44
+R128
+R129
 !i113 1
 R11
 R12
 Etest_sd
-Z96 w1581994313
+Z130 w1581994313
 R2
 R3
 R0
-Z97 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd
-Z98 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd
+Z131 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd
+Z132 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd
 l0
 L17
 VUQ[ggD_jP`M`[kFkeSNhY1
 !s100 SdjTcPg<GnWLDmU>XcJa[2
 R6
 33
-Z99 !s110 1581994328
+Z133 !s110 1581994328
 !i10b 1
 R8
-Z100 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd|
-Z101 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd|
+Z134 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd|
+Z135 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/test_sd/test_sd.vhd|
 !i113 1
 R11
 R12
 Artl
-R37
+R50
 R14
 DEx4 work 13 twiddle_table 0 22 @PPE6`0cbL54`@0f1mP;F2
 R2
@@ -627,76 +871,76 @@ V^;>o33cCP9Fj;l6J62JgZ1
 !s100 mA?S9n0I_j>Z8I?:e[z6N3
 R6
 33
-R99
+R133
 !i10b 1
 R8
-R100
-R101
+R134
+R135
 !i113 1
 R11
 R12
 Etwiddle_table
-Z102 w1582321287
-R37
+Z136 w1582672646
+R50
 R14
 R2
 R3
 R0
-Z103 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd
-Z104 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd
+Z137 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd
+Z138 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd
 l0
 L26
 V9DPDig89m_hV=mjUlHaC>1
 !s100 ;jS2S2AX[3A;ob:g?^zSM2
 R6
 33
-!s110 1582321586
+R43
 !i10b 1
-Z105 !s108 1582321586.000000
-Z106 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd|
-Z107 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd|
+R44
+Z139 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd|
+Z140 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd|
 !i113 1
 R11
 R12
 Aarchitecture_twiddle_table
-R37
+R50
 R14
 R2
 R3
-DEx4 work 13 twiddle_table 0 22 9DPDig89m_hV=mjUlHaC>1
+R64
 l209
 L45
-V<Q<_Pk5@`9SbP<69BZM1a0
-!s100 X^=zn]d^R92CnnEaE?7k[2
+VE:o^^e8CoL7BahLznLkJZ3
+!s100 dJ[L;<oNC6jE9U3`Sm2F^1
 R6
 33
-!s110 1582321587
+R60
 !i10b 1
-R105
-R106
-R107
+R44
+R139
+R140
 !i113 1
 R11
 R12
 Etwiddle_table_tb
-Z108 w1582321168
+Z141 w1582321168
 R14
 R2
 R3
 R0
-Z109 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd
-Z110 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd
+Z142 8C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd
+Z143 FC:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd
 l0
 L33
 VY9@j7?2L:RB[J3`gW<E=N0
 !s100 gS6<Z=PU`;XDK?V=Khm4c3
 R6
 33
-Z111 !s110 1582321588
+Z144 !s110 1582321588
 !i10b 1
-Z112 !s108 1582321588.000000
-Z113 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd|
-Z114 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd|
+Z145 !s108 1582321588.000000
+Z146 !s90 -reportprogress|300|-2008|-explicit|-work|presynth|C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd|
+Z147 !s107 C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/stimulus/Twiddle_Table_tb.vhd|
 !i113 1
 R11
 R12
@@ -711,11 +955,11 @@ V7R1>8>2G?h9=_VZA2QiZa2
 !s100 :GhOb@C`l@N<f@K4ga?oh1
 R6
 33
-R111
+R144
 !i10b 1
-R112
-R113
-R114
+R145
+R146
+R147
 !i113 1
 R11
 R12

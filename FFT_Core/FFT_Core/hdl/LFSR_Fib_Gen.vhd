@@ -22,6 +22,7 @@ use IEEE.std_logic_1164.all;
 
 entity LFSR_Fib_Gen is
 generic (
+	-- 1 to 16
     g_out_width : natural := 9
 );
 port (

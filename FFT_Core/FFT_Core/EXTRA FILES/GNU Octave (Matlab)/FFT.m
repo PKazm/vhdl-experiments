@@ -1,6 +1,6 @@
 close all;
 
-sample_exp = 8;
+sample_exp = 5;
 N = 2^sample_exp;
 data_width = 8;
 t = 0:1:N-1;
@@ -105,7 +105,7 @@ for stage = 1:sample_exp
         output = ['DFT: ', num2str(DFT)];
         disp(output);
         for butterfly = 1:(2^(stage - 1))
-            # reference index for stage 1: 1, 3, 5, 7; stage 2: 1, 2, 5, 6, stage 3: 1, 2, 3, 4
+            # reference index for stage 1: 1, 3, 5, 7; stage 2: 1, 2, 5, 6, stage 3: 1, 2, 3, 4; matlab index start at 1
             index_ref = butterfly + (DFT - 1) * 2^(stage);
             index_other = index_ref + 2^(stage - 1);
             twiddle_index = (butterfly - 1) * twiddle_index_step + 1;
@@ -172,8 +172,8 @@ for stage = 1:sample_exp
             #output = ['ref: ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),', other: ',num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),', twiddle: ',num2str(complex(twiddle_cos_quant(twiddle_index), twiddle_sin_quant(twiddle_index)))];
             #disp(output);
             # calc intermediate product of sample 2 and twiddle factor
-            real_temp = floor(((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) + (imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^data_width));
-            imag_temp = floor(((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) - (real_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^data_width));
+            real_temp = floor(((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) + (imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^(data_width)));
+            imag_temp = floor(((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) - (real_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^(data_width)));
 
             output = [num2str(real_temp),' = ',num2str(real_output_quant(index_other)),' * ',num2str(twiddle_cos_quant(twiddle_index)),' + ',num2str(imag_output_quant(index_other)),' * ',num2str(twiddle_sin_quant(twiddle_index))];
             disp(output);
@@ -181,15 +181,15 @@ for stage = 1:sample_exp
             disp(output);
 
             # calc final sum of sample 2
-            real_output_quant(index_other) = floor((real_output_quant(index_ref) - real_temp)/2);
-            imag_output_quant(index_other) = floor((imag_output_quant(index_ref) - imag_temp)/2);
+            real_output_quant(index_other) = floor((real_output_quant(index_ref) - real_temp)/4);
+            imag_output_quant(index_other) = floor((imag_output_quant(index_ref) - imag_temp)/4);
 
             output = [num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' - ',num2str(complex(real_temp, imag_temp))];
             disp(output);
             
             # calc final sum of sample 1
-            real_temp2 = floor((real_output_quant(index_ref) + real_temp)/2);
-            imag_temp2 = floor((imag_output_quant(index_ref) + imag_temp)/2);
+            real_temp2 = floor((real_output_quant(index_ref) + real_temp)/4);
+            imag_temp2 = floor((imag_output_quant(index_ref) + imag_temp)/4);
 
             output = [num2str(complex(real_temp2, imag_temp2)),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' + ',num2str(complex(real_temp, imag_temp))];
             disp(output);

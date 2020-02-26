@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
-Date: Fri Feb 21 14:49:31 2020
+Date: Tue Feb 25 02:27:52 2020
 
 Device Selection
 +--------------------------------+----------------+
@@ -37,16 +37,16 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 134  | 12084 | 1.11       |
-| DFF                       | 124  | 12084 | 1.03       |
+| 4LUT                      | 213  | 12084 | 1.76       |
+| DFF                       | 166  | 12084 | 1.37       |
 | I/O Register              | 0    | 252   | 0.00       |
 | User I/O                  | 36   | 84    | 42.86      |
 | -- Single-ended I/O       | 36   | 84    | 42.86      |
 | -- Differential I/O Pairs | 0    | 37    | 0.00       |
-| RAM64x18                  | 0    | 22    | 0.00       |
+| RAM64x18                  | 1    | 22    | 4.55       |
 | RAM1K18                   | 0    | 21    | 0.00       |
 | MACC                      | 2    | 22    | 9.09       |
-| Chip Globals              | 2    | 8     | 25.00      |
+| Chip Globals              | 3    | 8     | 37.50      |
 | CCC                       | 1    | 2     | 50.00      |
 | RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
 | RCOSC_1MHZ                | 0    | 1     | 0.00       |
@@ -58,11 +58,11 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 62   | 52  |
-| RAM64x18 Interface Logic | 0    | 0   |
+| Fabric Logic             | 105  | 58  |
+| RAM64x18 Interface Logic | 36   | 36  |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 72   | 72  |
-| Total Used               | 134  | 124 |
+| Total Used               | 213  | 166 |
 +--------------------------+------+-----+
 
 Detailed Carry Chains Resource Usage
@@ -108,16 +108,19 @@ I/O Placement
 +----------+-------+------------+
 
 Nets assigned to chip global resources
-+--------+---------+------------------------------------------------------+
-| Fanout | Type    | Name                                                 |
-+--------+---------+------------------------------------------------------+
-| 56     | INT_NET | Net   : FCCC_C0_0_GL0                                |
-|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1         |
-|        |         | Source: NETLIST                                      |
-| 52     | INT_NET | Net   : FCCC_C0_0_LOCK                               |
-|        |         | Driver: FCCC_C0_0/FCCC_C0_0/CCC_INST_RNI2PC6/U0_RGB1 |
-|        |         | Source: NETLIST                                      |
-+--------+---------+------------------------------------------------------+
++--------+---------+---------------------------------------------------------+
+| Fanout | Type    | Name                                                    |
++--------+---------+---------------------------------------------------------+
+| 63     | INT_NET | Net   : FCCC_C0_0_GL0                                   |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/GL0_INST/U0_RGB1            |
+|        |         | Source: NETLIST                                         |
+| 36     | INT_NET | Net   : Butterfly_HW_DSP_0/un1_rstn_i_i                 |
+|        |         | Driver: Butterfly_HW_DSP_0/un1_rstn_i_0_RNIJB21/U0_RGB1 |
+|        |         | Source: NETLIST                                         |
+| 22     | INT_NET | Net   : FCCC_C0_0_LOCK                                  |
+|        |         | Driver: FCCC_C0_0/FCCC_C0_0/CCC_INST_RNI2PC6/U0_RGB1    |
+|        |         | Source: NETLIST                                         |
++--------+---------+---------------------------------------------------------+
 
 Nets assigned to row global resources
 +--------+------+------+
@@ -126,54 +129,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+-------------------------------------------+
-| Fanout | Type    | Name                                      |
-+--------+---------+-------------------------------------------+
-| 26     | INT_NET | Net   : CFG0_GND_INST_NET                 |
-|        |         | Driver: CFG0_GND_INST                     |
-| 24     | INT_NET | Net   : rand_net_0_i[9]                   |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg_RNIS9DC[9] |
-| 17     | INT_NET | Net   : rand_net_0[9]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[9]         |
-| 14     | INT_NET | Net   : rand_net_0[15]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[15]        |
-| 12     | INT_NET | Net   : rand_net_0[8]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[8]         |
-| 10     | INT_NET | Net   : rand_net_0[10]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[10]        |
-| 10     | INT_NET | Net   : rand_net_0[7]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[7]         |
-| 7      | INT_NET | Net   : rand_net_0[13]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[13]        |
-| 7      | INT_NET | Net   : rand_net_0[11]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[11]        |
-| 7      | INT_NET | Net   : rand_net_0[6]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[6]         |
-+--------+---------+-------------------------------------------+
++--------+---------+--------------------------------------------------------------+
+| Fanout | Type    | Name                                                         |
++--------+---------+--------------------------------------------------------------+
+| 26     | INT_NET | Net   : CFG0_GND_INST_NET                                    |
+|        |         | Driver: CFG0_GND_INST                                        |
+| 21     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[2]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[2]        |
+| 21     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[1]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[1]        |
+| 20     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[3]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[3]        |
+| 20     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[0]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[0]        |
+| 14     | INT_NET | Net   : rand_net_0[15]                                       |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[15]                           |
+| 13     | INT_NET | Net   : rand_net_0[8]                                        |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[8]                            |
+| 11     | INT_NET | Net   : rand_net_0[7]                                        |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[7]                            |
+| 10     | INT_NET | Net   : rand_net_0[10]                                       |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[10]                           |
+| 10     | INT_NET | Net   : Butterfly_HW_DSP_0/twiddle_ready_sig                 |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/twiddle_ready_sig |
++--------+---------+--------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+-------------------------------------------+
-| Fanout | Type    | Name                                      |
-+--------+---------+-------------------------------------------+
-| 26     | INT_NET | Net   : CFG0_GND_INST_NET                 |
-|        |         | Driver: CFG0_GND_INST                     |
-| 24     | INT_NET | Net   : rand_net_0_i[9]                   |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg_RNIS9DC[9] |
-| 17     | INT_NET | Net   : rand_net_0[9]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[9]         |
-| 14     | INT_NET | Net   : rand_net_0[15]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[15]        |
-| 12     | INT_NET | Net   : rand_net_0[8]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[8]         |
-| 10     | INT_NET | Net   : rand_net_0[10]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[10]        |
-| 10     | INT_NET | Net   : rand_net_0[7]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[7]         |
-| 7      | INT_NET | Net   : rand_net_0[13]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[13]        |
-| 7      | INT_NET | Net   : rand_net_0[11]                    |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[11]        |
-| 7      | INT_NET | Net   : rand_net_0[6]                     |
-|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[6]         |
-+--------+---------+-------------------------------------------+
++--------+---------+--------------------------------------------------------------+
+| Fanout | Type    | Name                                                         |
++--------+---------+--------------------------------------------------------------+
+| 26     | INT_NET | Net   : CFG0_GND_INST_NET                                    |
+|        |         | Driver: CFG0_GND_INST                                        |
+| 21     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[2]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[2]        |
+| 21     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[1]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[1]        |
+| 20     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[3]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[3]        |
+| 20     | INT_NET | Net   : Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[0]        |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/mem_adr[0]        |
+| 14     | INT_NET | Net   : rand_net_0[15]                                       |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[15]                           |
+| 13     | INT_NET | Net   : rand_net_0[8]                                        |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[8]                            |
+| 11     | INT_NET | Net   : rand_net_0[7]                                        |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[7]                            |
+| 10     | INT_NET | Net   : rand_net_0[10]                                       |
+|        |         | Driver: LFSR_Fib_Gen_0/fib_reg[10]                           |
+| 10     | INT_NET | Net   : Butterfly_HW_DSP_0/twiddle_ready_sig                 |
+|        |         | Driver: Butterfly_HW_DSP_0/Twiddle_Table_0/twiddle_ready_sig |
++--------+---------+--------------------------------------------------------------+
 

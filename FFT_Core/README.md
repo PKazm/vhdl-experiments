@@ -43,6 +43,8 @@ At the moment, the worst case path within the butterfly is between the input fli
 
 ![Butterfly Pipeline Sim](FFT_Core/EXTRA%20FILES/Diagrams/Butterfly_Timing_Sim.png)
 
+![RAM and Butterfly pipeline](FFT_Core/EXTRA%20FILES/Wavedrom/butterfly_DPLSRAM_timing.png)
+
 
 ## Resources Used
 

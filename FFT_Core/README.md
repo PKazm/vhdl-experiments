@@ -43,6 +43,8 @@ At the moment, the worst case path within the butterfly is between the input fli
 
 ![Butterfly Pipeline Sim](FFT_Core/EXTRA%20FILES/Diagrams/Butterfly_Timing_Sim.png)
 
+![RAM and Butterfly pipeline](FFT_Core/EXTRA%20FILES/Wavedrom/butterfly_2_DPLSRAM_timing.png)
+
 ## The Transformer, frequency in disguise
 
 Currently working with as an 8 stage pipeline from SRAM read location to SRAM write location. Uses 2 LSRAM blocks that it ping pongs between to maximize memory accesses per time.

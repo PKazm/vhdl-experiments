@@ -1,0 +1,41 @@
+Resource Usage Report for FFT_Transform_test_sd 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           11 uses
+CFG2           101 uses
+CFG3           112 uses
+CFG4           121 uses
+
+Carry cells:
+ARI1            92 uses - used for arithmetic functions
+ARI1            26 uses - used for Wide-Mux implementation
+Total ARI1      118 uses
+
+
+Sequential Cells: 
+SLE            252 uses
+
+DSP Blocks:    2 of 22 (9%)
+ MACC:         2 Mults
+
+I/O ports: 41
+I/O primitives: 40
+INBUF          3 uses
+OUTBUF         37 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    463
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 72; LUTs = 72;
+RAM1K18  Interface Logic : SLEs = 36; LUTs = 36;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  252 + 72 + 36 + 72 = 432;
+Total number of LUTs after P&R:  463 + 72 + 36 + 72 = 643;
+

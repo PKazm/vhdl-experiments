@@ -207,15 +207,15 @@ architecture architecture_Twiddle_table of Twiddle_table is
     -- BRAM stuff
 
 begin
-    --gen_no_BRAM : if(g_use_BRAM = 0) generate
-    --    cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-    --    cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
-    --    sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
-    --    sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
-    --    twiddle_ready <= '1';
-    --end generate gen_no_BRAM;
+    gen_BRAM_no : if(g_use_BRAM = 0) generate
+        cos_twid <= std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+        cos_twid_1comp <= not std_logic_vector(cosine_table(to_integer(unsigned(twiddle_index))));
+        sin_twid <= std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+        sin_twid_1comp <= not std_logic_vector(sine_table(to_integer(unsigned(twiddle_index))));
+        twiddle_ready <= '1';
+    end generate gen_BRAM_no;
 
-    --gen_yes_BRAM : if(g_use_BRAM /= 0) generate
+    gen_BRAM_yes : if(g_use_BRAM /= 0) generate
 
         p_load_BRAM : process(PCLK, RSTn)
         begin
@@ -279,6 +279,6 @@ begin
         sin_twid_1comp <= not mem_dat_r(17 downto 9);
 
         
-    --end generate gen_yes_BRAM;
+    end generate gen_BRAM_yes;
    -- architecture body
 end architecture_Twiddle_table;

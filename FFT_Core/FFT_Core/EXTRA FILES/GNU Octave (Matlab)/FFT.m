@@ -6,13 +6,16 @@ data_width = 8;
 t = 0:1:N-1;
 t2 = 0:1:N/2 - 1;
 
-carrier_amp = 3;
-sample1 = carrier_amp*sin(2*pi*3*t/N);
-sample2 = (1/2)*sin(2*pi*50*(t/N));
-noise_multi = .1;
+sample2_amp = .5;
+sample2 = sample2_amp*sin(2*pi*50*(t/N));
+sample3_amp = .5;
+sample3 = sample3_amp*sin(2*pi*100*(t/N));
+noise_multi = .3;
 noise = noise_multi*randn(size(t));
+carrier_amp = 3;
+sample1 = (carrier_amp - sample2_amp - sample3_amp - noise_multi)*sin(2*pi*3*t/N);
 
-signal = sample1+sample2+noise;
+signal = sample1+sample2+sample3+noise;
 
 freq_multi = ones(1, N/2+1)*2;
 freq_multi(1) = 1;
@@ -24,6 +27,7 @@ hold on;
 plot(t,signal);
 plot(t,sample1);
 plot(t,sample2);
+plot(t,sample3);
 plot(t,noise);
 
 #legend('signal','sample1','sample2','noise');
@@ -146,10 +150,25 @@ axis([-a_limit a_limit -a_limit a_limit]);
 grid on;
 hold off;
 
-real_output_quant = int32(round((real_samples/carrier_amp)*(2^data_width-1)));
-imag_output_quant = int32(round(imaginary_samples*(2^data_width-1)));
+real_output_quant = int32(round((real_samples/carrier_amp)*((2^data_width)-1)));
+#real_output_quant = int32(ones(1, N)*255);
+imag_output_quant = int32(round(imaginary_samples*((2^data_width)-1)));
+
+temp_div = 2^(data_width);
+output_div = 2;
 
 diary on;
+output = ['signal start'];
+disp(output);
+for n = int32(round((signal/carrier_amp)*((2^data_width)-1)));
+#for n = signal
+#for n = real_output_quant
+    output = [num2str(n)];
+    disp(output);
+end
+output = ['signal end'];
+disp(output);
+    
 for stage = 1:sample_exp
     DFT_cnt = N/(2^stage);
     # iterate through each sub-DFT
@@ -172,8 +191,8 @@ for stage = 1:sample_exp
             #output = ['ref: ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),', other: ',num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),', twiddle: ',num2str(complex(twiddle_cos_quant(twiddle_index), twiddle_sin_quant(twiddle_index)))];
             #disp(output);
             # calc intermediate product of sample 2 and twiddle factor
-            real_temp = floor(((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) + (imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^(data_width)));
-            imag_temp = floor(((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) - (real_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/(2^(data_width)));
+            real_temp = floor(((real_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) + (imag_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/temp_div);
+            imag_temp = floor(((imag_output_quant(index_other) * twiddle_cos_quant(twiddle_index)) - (real_output_quant(index_other) * twiddle_sin_quant(twiddle_index)))/temp_div);
 
             output = [num2str(real_temp),' = ',num2str(real_output_quant(index_other)),' * ',num2str(twiddle_cos_quant(twiddle_index)),' + ',num2str(imag_output_quant(index_other)),' * ',num2str(twiddle_sin_quant(twiddle_index))];
             disp(output);
@@ -181,21 +200,42 @@ for stage = 1:sample_exp
             disp(output);
 
             # calc final sum of sample 2
-            real_output_quant(index_other) = floor((real_output_quant(index_ref) - real_temp)/4);
-            imag_output_quant(index_other) = floor((imag_output_quant(index_ref) - imag_temp)/4);
+            real_output_quant(index_other) = floor((real_output_quant(index_ref) - real_temp)/output_div);
+            imag_output_quant(index_other) = floor((imag_output_quant(index_ref) - imag_temp)/output_div);
 
-            output = [num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' - ',num2str(complex(real_temp, imag_temp))];
-            disp(output);
             
             # calc final sum of sample 1
-            real_temp2 = floor((real_output_quant(index_ref) + real_temp)/4);
-            imag_temp2 = floor((imag_output_quant(index_ref) + imag_temp)/4);
+            real_temp2 = floor((real_output_quant(index_ref) + real_temp)/output_div);
+            imag_temp2 = floor((imag_output_quant(index_ref) + imag_temp)/output_div);
 
             output = [num2str(complex(real_temp2, imag_temp2)),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' + ',num2str(complex(real_temp, imag_temp))];
+            disp(output);
+            
+            output = [num2str(complex(real_output_quant(index_other), imag_output_quant(index_other))),' = ',num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))),' - ',num2str(complex(real_temp, imag_temp))];
             disp(output);
 
             real_output_quant(index_ref) = real_temp2;
             imag_output_quant(index_ref) = imag_temp2;
+            
+            # check for numbers too large
+            if(abs(real_temp) > 255)
+                output = ['OVERFLOW real temp: ',num2str(real_temp),' ===========================']
+            endif
+            if(abs(imag_temp) > 255)
+                output = ['OVERFLOW real imag: ',num2str(imag_temp),' ===========================']
+            endif
+            if(abs(real_output_quant(index_other)) > 255)
+                output = ['OVERFLOW real B: ',num2str(real_output_quant(index_other)),' ===========================']
+            endif
+            if(abs(imag_output_quant(index_other)) > 255)
+                output = ['OVERFLOW imag B: ',num2str(imag_output_quant(index_other)),' ===========================']
+            endif
+            if(abs(real_temp2) > 255)
+                output = ['OVERFLOW real A: ',num2str(real_temp2),' ===========================']
+            endif
+            if(abs(imag_temp2) > 255)
+                output = ['OVERFLOW imag B: ',num2str(imag_temp2),' ===========================']
+            endif
             
             #output = ['quant: i_ref ', num2str(index_ref), ', o_ref ', num2str(index_other), ', t_index ', num2str(twiddle_index),' = ', num2str(complex(real_output_quant(index_ref), imag_output_quant(index_ref))), '; ', num2str(complex(real_output_quant(index_other), imag_output_quant(index_other)))];
             #disp(output);
@@ -223,6 +263,7 @@ title('quantized FFT');
 hold on;
 
 stem(f, myP1_quant);
+#axis([0 .5 0 (2^data_width)]);
 hold off;
 #==============================================================================
 subplot(2,4,6);

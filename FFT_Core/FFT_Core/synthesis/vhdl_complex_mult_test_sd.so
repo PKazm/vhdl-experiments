@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <SynplifyOutput>
 	<result>Success</result>
-	<design>vhdl_complex_mult_test_sd</design>
+	<design>FFT_Butterfly_HW_MATHDSP</design>
 	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.vm</target_verilog>
 </SynplifyOutput>

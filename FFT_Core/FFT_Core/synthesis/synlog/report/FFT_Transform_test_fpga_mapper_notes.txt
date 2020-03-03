@@ -1,0 +1,18 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":213:37:213:46|Found ROM sin_twid_1[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 7 bits.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":211:37:211:48|Found ROM cos_twid_1[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 8 bits.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":415:8:415:9|Replicating instance FFT_Transformer_0.sampleA_adr[2] (in view: work.FFT_Transform_test(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":415:8:415:9|Replicating instance FFT_Transformer_0.sampleA_adr[0] (in view: work.FFT_Transform_test(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":415:8:415:9|Replicating instance FFT_Transformer_0.sampleA_adr[1] (in view: work.FFT_Transform_test(rtl)) with 7 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":346:8:346:9|Replicating instance FFT_Transformer_0.dft_cnt[0] (in view: work.FFT_Transform_test(rtl)) with 10 loads 1 time to improve timing.
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_266 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_267 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

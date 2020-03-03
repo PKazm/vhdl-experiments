@@ -1,0 +1,10 @@
+
+fsm_encoding {1828382831} sequential
+
+fsm_state_encoding {1828382831} rundft {00}
+
+fsm_state_encoding {1828382831} dftrunning {01}
+
+fsm_state_encoding {1828382831} fftdone {10}
+
+fsm_registers {1828382831} {stage_state[1]}  {stage_state[0]} 

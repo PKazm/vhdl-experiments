@@ -1,0 +1,914 @@
+<html><body><samp><pre>
+<!@TC:1583225518>
+#Build: Synplify Pro (R) N-2018.03M-SP1-1, Build 209R, Oct 23 2018
+#install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: PHOENIX136DESKY
+
+# Tue Mar  3 03:51:58 2020
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+<a name=compilerReport23></a>Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38</a>
+
+@N: : <!@TM:1583225519> | Running in 64-bit mode 
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+<a name=compilerReport24></a>Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38</a>
+
+@N: : <!@TM:1583225519> | Running in 64-bit mode 
+@N: : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd:60:7:60:25:@N::@XP_MSG">FFT_Transform_test.vhd(60)</a><!@TM:1583225519> | Top entity is set to FFT_Transform_test.
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Package.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd changed - recompiling
+File C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd changed - recompiling
+VHDL syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+@N:<a href="@N:CD231:@XP_HELP">CD231</a> : <a href="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd:890:16:890:18:@N:CD231:@XP_MSG">std1164.vhd(890)</a><!@TM:1583225519> | Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd:60:7:60:25:@N:CD630:@XP_MSG">FFT_Transform_test.vhd(60)</a><!@TM:1583225519> | Synthesizing work.fft_transform_test.rtl.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:26:7:26:22:@N:CD630:@XP_MSG">FFT_Transformer.vhd(26)</a><!@TM:1583225519> | Synthesizing work.fft_transformer.architecture_fft_transformer.
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:60:22:60:24:@N:CD233:@XP_MSG">FFT_Transformer.vhd(60)</a><!@TM:1583225519> | Using sequential encoding for type stage_states.
+<font color=#A52A2A>@W:<a href="@W:CG296:@XP_HELP">CG296</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:279:22:279:29:@W:CG296:@XP_MSG">FFT_Transformer.vhd(279)</a><!@TM:1583225519> | Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</font>
+<font color=#A52A2A>@W:<a href="@W:CG290:@XP_HELP">CG290</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:286:28:286:40:@W:CG290:@XP_MSG">FFT_Transformer.vhd(286)</a><!@TM:1583225519> | Referenced variable ram_assigned is not in sensitivity list.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:74:11:74:24:@W:CD638:@XP_MSG">FFT_Transformer.vhd(74)</a><!@TM:1583225519> | Signal dft_done_last is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:99:11:99:21:@W:CD638:@XP_MSG">FFT_Transformer.vhd(99)</a><!@TM:1583225519> | Signal ram_r_en_0 is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:105:11:105:21:@W:CD638:@XP_MSG">FFT_Transformer.vhd(105)</a><!@TM:1583225519> | Signal ram_r_en_1 is undriven. Either assign the signal a value or remove the signal declaration.</font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:29:7:29:31:@N:CD630:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(29)</a><!@TM:1583225519> | Synthesizing work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd:17:7:17:26:@N:CD630:@XP_MSG">HARD_MULT_ADDSUB_C0.vhd(17)</a><!@TM:1583225519> | Synthesizing work.hard_mult_addsub_c0.rtl.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd:8:7:8:65:@N:CD630:@XP_MSG">HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd(8)</a><!@TM:1583225519> | Synthesizing work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd:582:10:582:13:@N:CD630:@XP_MSG">smartfusion2.vhd(582)</a><!@TM:1583225519> | Synthesizing smartfusion2.vcc.syn_black_box.
+Post processing for smartfusion2.vcc.syn_black_box
+Running optimization stage 1 on VCC .......
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd:576:10:576:13:@N:CD630:@XP_MSG">smartfusion2.vhd(576)</a><!@TM:1583225519> | Synthesizing smartfusion2.gnd.syn_black_box.
+Post processing for smartfusion2.gnd.syn_black_box
+Running optimization stage 1 on GND .......
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd:706:10:706:14:@N:CD630:@XP_MSG">smartfusion2.vhd(706)</a><!@TM:1583225519> | Synthesizing smartfusion2.macc.syn_black_box.
+Post processing for smartfusion2.macc.syn_black_box
+Running optimization stage 1 on MACC .......
+Post processing for work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch
+Running optimization stage 1 on HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB .......
+Post processing for work.hard_mult_addsub_c0.rtl
+Running optimization stage 1 on HARD_MULT_ADDSUB_C0 .......
+Post processing for work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp
+Running optimization stage 1 on FFT_Butterfly_HW_MATHDSP .......
+<font color=#A52A2A>@W:<a href="@W:CL265:@XP_HELP">CL265</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL265:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Removing unused bit 10 of imag_a_out_sum_slice_2(10 downto 0). Either assign all bits or reduce the width of the signal.</font>
+<font color=#A52A2A>@W:<a href="@W:CL265:@XP_HELP">CL265</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL265:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Removing unused bit 10 of imag_b_out_sum_slice_2(10 downto 0). Either assign all bits or reduce the width of the signal.</font>
+<font color=#A52A2A>@W:<a href="@W:CL265:@XP_HELP">CL265</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL265:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Removing unused bit 10 of real_a_out_sum_slice_3(10 downto 0). Either assign all bits or reduce the width of the signal.</font>
+<font color=#A52A2A>@W:<a href="@W:CL265:@XP_HELP">CL265</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL265:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Removing unused bit 10 of real_b_out_sum_slice_2(10 downto 0). Either assign all bits or reduce the width of the signal.</font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:26:7:26:20:@N:CD630:@XP_MSG">Twiddle_table.vhd(26)</a><!@TM:1583225519> | Synthesizing work.twiddle_table.architecture_twiddle_table.
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:197:11:197:14:@W:CD638:@XP_MSG">Twiddle_table.vhd(197)</a><!@TM:1583225519> | Signal mem is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:199:11:199:22:@W:CD638:@XP_MSG">Twiddle_table.vhd(199)</a><!@TM:1583225519> | Signal mem_adr_cnt is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:201:11:201:28:@W:CD638:@XP_MSG">Twiddle_table.vhd(201)</a><!@TM:1583225519> | Signal twiddle_ready_sig is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:203:11:203:18:@W:CD638:@XP_MSG">Twiddle_table.vhd(203)</a><!@TM:1583225519> | Signal mem_adr is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:204:11:204:19:@W:CD638:@XP_MSG">Twiddle_table.vhd(204)</a><!@TM:1583225519> | Signal mem_w_en is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:205:11:205:20:@W:CD638:@XP_MSG">Twiddle_table.vhd(205)</a><!@TM:1583225519> | Signal mem_dat_w is undriven. Either assign the signal a value or remove the signal declaration.</font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:206:11:206:20:@W:CD638:@XP_MSG">Twiddle_table.vhd(206)</a><!@TM:1583225519> | Signal mem_dat_r is undriven. Either assign the signal a value or remove the signal declaration.</font>
+Post processing for work.twiddle_table.architecture_twiddle_table
+Running optimization stage 1 on Twiddle_table .......
+Post processing for work.fft_transformer.architecture_fft_transformer
+Running optimization stage 1 on FFT_Transformer .......
+<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:346:8:346:10:@W:CL169:@XP_MSG">FFT_Transformer.vhd(346)</a><!@TM:1583225519> | Pruning unused register do_calc_ctrl_2. Make sure that there are no unused intermediate registers.</font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0.vhd:17:7:17:16:@N:CD630:@XP_MSG">DPSRAM_C0.vhd(17)</a><!@TM:1583225519> | Synthesizing work.dpsram_c0.rtl.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd:8:7:8:35:@N:CD630:@XP_MSG">DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd(8)</a><!@TM:1583225519> | Synthesizing work.dpsram_c0_dpsram_c0_0_dpsram.def_arch.
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd:588:10:588:17:@N:CD630:@XP_MSG">smartfusion2.vhd(588)</a><!@TM:1583225519> | Synthesizing smartfusion2.ram1k18.syn_black_box.
+Post processing for smartfusion2.ram1k18.syn_black_box
+Running optimization stage 1 on RAM1K18 .......
+Post processing for work.dpsram_c0_dpsram_c0_0_dpsram.def_arch
+Running optimization stage 1 on DPSRAM_C0_DPSRAM_C0_0_DPSRAM .......
+Post processing for work.dpsram_c0.rtl
+Running optimization stage 1 on DPSRAM_C0 .......
+Post processing for work.fft_transform_test.rtl
+Running optimization stage 1 on FFT_Transform_test .......
+Running optimization stage 2 on RAM1K18 .......
+Running optimization stage 2 on DPSRAM_C0_DPSRAM_C0_0_DPSRAM .......
+Running optimization stage 2 on DPSRAM_C0 .......
+Running optimization stage 2 on Twiddle_table .......
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:33:1:33:5:@N:CL159:@XP_MSG">Twiddle_table.vhd(33)</a><!@TM:1583225519> | Input PCLK is unused.
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd:34:1:34:5:@N:CL159:@XP_MSG">Twiddle_table.vhd(34)</a><!@TM:1583225519> | Input RSTn is unused.
+Running optimization stage 2 on MACC .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB .......
+Running optimization stage 2 on HARD_MULT_ADDSUB_C0 .......
+Running optimization stage 2 on FFT_Butterfly_HW_MATHDSP .......
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:378:16:378:31:@N:CL135:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(378)</a><!@TM:1583225519> | Found sequential shift adr_b_pipe with address depth of 4 words and data bit width of 5.
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:378:16:378:31:@N:CL135:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(378)</a><!@TM:1583225519> | Found sequential shift adr_a_pipe with address depth of 4 words and data bit width of 5.
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:378:16:378:31:@N:CL135:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(378)</a><!@TM:1583225519> | Found sequential shift do_calc_pipe with address depth of 4 words and data bit width of 1.
+<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL260:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Pruning register bit 0 of imag_b_out_sum_slice(9 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
+<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd:335:16:335:31:@W:CL260:@XP_MSG">FFT_Butterfly_HW_MATHDSP.vhd(335)</a><!@TM:1583225519> | Pruning register bit 0 of real_b_out_sum_slice(9 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
+Running optimization stage 2 on FFT_Transformer .......
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:346:8:346:10:@N:CL135:@XP_MSG">FFT_Transformer.vhd(346)</a><!@TM:1583225519> | Found sequential shift bf0_do_calc with address depth of 3 words and data bit width of 1.
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:283:8:283:10:@N:CL201:@XP_MSG">FFT_Transformer.vhd(283)</a><!@TM:1583225519> | Trying to extract state machine for register stage_state.
+Extracted state machine for register stage_state
+State machine has 3 reachable states with original encodings of:
+   01
+   10
+   11
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd:38:4:38:13:@N:CL159:@XP_MSG">FFT_Transformer.vhd(38)</a><!@TM:1583225519> | Input ram_ready is unused.
+Running optimization stage 2 on FFT_Transform_test .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+Linked File:  <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.rt.csv:@XP_FILE">layer0.rt.csv</a>
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 147MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar  3 03:51:59 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+<a name=compilerReport25></a>Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38</a>
+
+@N: : <!@TM:1583225519> | Running in 64-bit mode 
+
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar  3 03:51:59 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar  3 03:51:59 2020
+
+###########################################################]
+
+</pre></samp></body></html>
+<html><body><samp><pre>
+<!@TC:1583225518>
+
+@A: : <!@TM:1583225519> | multi_srs_gen output is up to date. No run necessary. 
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
+Multi-srs Generator Report
+<a name=compilerReport26_head></a>Linked File:  <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synlog\FFT_Transform_test_multi_srs_gen.srr:@XP_FILE">FFT_Transform_test_multi_srs_gen.srr</a>
+
+</pre></samp></body></html>
+<html><body><samp><pre>
+<!@TC:1583225518>
+Premap Report
+
+
+</pre></samp></body></html>
+<html><body><samp><pre>
+<!@TC:1583225518>
+# Tue Mar  3 03:52:00 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+<a name=mapperReport27></a>Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\FFT_Transform_test\synthesis.fdc
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1583225521> | Setting synthesis effort to medium for the design 
+Linked File:  <a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test_scck.rpt:@XP_FILE">FFT_Transform_test_scck.rpt</a>
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test_scck.rpt" file 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1583225521> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1583225521> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1583225521> | Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1583225521> | Setting synthesis effort to medium for the design 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1583225521> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1583225521> | UMR3 is only supported for HAPS-80. 
+syn_allowed_resources : blockrams=21  set on top level netlist FFT_Transform_test
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+
+<a name=mapperReport28></a>Clock Summary</a>
+******************
+
+          Start                       Requested     Requested     Clock        Clock                     Clock
+Level     Clock                       Frequency     Period        Type         Group                     Load 
+--------------------------------------------------------------------------------------------------------------
+0 -       FFT_Transform_test|PCLK     193.9 MHz     5.158         inferred     Autoconstr_clkgroup_0     345  
+==============================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                            Clock     Source         Clock Pin                                         Non-clock Pin     Non-clock Pin
+Clock                       Load      Pin            Seq Example                                       Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transform_test|PCLK     345       PCLK(port)     FFT_Transformer_0.bf0_twiddle_cos_real[8:0].C     -                 -            
+======================================================================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT530:@XP_HELP">MT530</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\dpsram_c0\dpsram_c0_0\dpsram_c0_dpsram_c0_0_dpsram.vhd:81:4:81:37:@W:MT530:@XP_MSG">dpsram_c0_dpsram_c0_0_dpsram.vhd(81)</a><!@TM:1583225521> | Found inferred clock FFT_Transform_test|PCLK which controls 345 sequential elements including DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0. This clock has no specified timing constraint which may adversely impact design performance. </font>
+
+@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1583225521> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1583225521> | Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.sap. 
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+Encoding state machine stage_state[0:2] (in view: work.FFT_Transformer(architecture_fft_transformer))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 139MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar  3 03:52:00 2020
+
+###########################################################]
+
+</pre></samp></body></html>
+<html><body><samp><pre>
+<!@TC:1583225518>
+Map & Optimize Report
+
+
+</pre></samp></body></html>
+<html><body><samp><pre>
+<!@TC:1583225518>
+# Tue Mar  3 03:52:01 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+<a name=mapperReport29></a>Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1583225527> | Setting synthesis effort to medium for the design 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1583225527> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1583225527> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1583225527> | Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1583225527> | Setting synthesis effort to medium for the design 
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1583225527> | Auto Constrain mode is enabled 
+<font color=#A52A2A>@W:<a href="@W:FA239:@XP_HELP">FA239</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:213:37:213:47:@W:FA239:@XP_MSG">twiddle_table.vhd(213)</a><!@TM:1583225527> | ROM sin_twid_1[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</font>
+<font color=#A52A2A>@W:<a href="@W:FA239:@XP_HELP">FA239</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:211:37:211:49:@W:FA239:@XP_MSG">twiddle_table.vhd(211)</a><!@TM:1583225527> | ROM cos_twid_1[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</font>
+<font color=#A52A2A>@W:<a href="@W:FA239:@XP_HELP">FA239</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:213:37:213:47:@W:FA239:@XP_MSG">twiddle_table.vhd(213)</a><!@TM:1583225527> | ROM sin_twid_1[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</font>
+@N:<a href="@N:MO106:@XP_HELP">MO106</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:213:37:213:47:@N:MO106:@XP_MSG">twiddle_table.vhd(213)</a><!@TM:1583225527> | Found ROM sin_twid_1[7:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 7 bits.
+<font color=#A52A2A>@W:<a href="@W:FA239:@XP_HELP">FA239</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:211:37:211:49:@W:FA239:@XP_MSG">twiddle_table.vhd(211)</a><!@TM:1583225527> | ROM cos_twid_1[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</font>
+@N:<a href="@N:MO106:@XP_HELP">MO106</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd:211:37:211:49:@N:MO106:@XP_MSG">twiddle_table.vhd(211)</a><!@TM:1583225527> | Found ROM cos_twid_1[8:1] (in view: work.Twiddle_table(architecture_twiddle_table)) with 16 words by 8 bits.
+<font color=#A52A2A>@W:<a href="@W:FX1172:@XP_HELP">FX1172</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:346:8:346:10:@W:FX1172:@XP_MSG">fft_transformer.vhd(346)</a><!@TM:1583225527> | User-specified initial value defined for instance FFT_Transformer_0.dft_cnt[3:0] is being ignored due to limitations in architecture. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1172:@XP_HELP">FX1172</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:346:8:346:10:@W:FX1172:@XP_MSG">fft_transformer.vhd(346)</a><!@TM:1583225527> | User-specified initial value defined for instance FFT_Transformer_0.bfly_cnt[3:0] is being ignored due to limitations in architecture. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1172:@XP_HELP">FX1172</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:283:8:283:10:@W:FX1172:@XP_MSG">fft_transformer.vhd(283)</a><!@TM:1583225527> | User-specified initial value defined for instance FFT_Transformer_0.stage_cnt[2:0] is being ignored due to limitations in architecture. </font>
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+Encoding state machine stage_state[0:2] (in view: work.FFT_Transformer(architecture_fft_transformer))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:456:8:456:10:@W:MO160:@XP_MSG">fft_transformer.vhd(456)</a><!@TM:1583225527> | Register bit bf0_twiddle_sin_imag[8] (in view view:work.FFT_Transformer(architecture_fft_transformer)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:283:8:283:10:@W:BN132:@XP_MSG">fft_transformer.vhd(283)</a><!@TM:1583225527> | Removing instance FFT_Transformer_0.stage_0_cur because it is equivalent to instance FFT_Transformer_0.dft_max[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 137MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 142MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -1.90ns		 333 /       338
+   2		0h:00m:02s		    -1.90ns		 334 /       338
+   3		0h:00m:02s		    -1.72ns		 329 /       338
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:415:8:415:10:@N:FX271:@XP_MSG">fft_transformer.vhd(415)</a><!@TM:1583225527> | Replicating instance FFT_Transformer_0.sampleA_adr[2] (in view: work.FFT_Transform_test(rtl)) with 8 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:415:8:415:10:@N:FX271:@XP_MSG">fft_transformer.vhd(415)</a><!@TM:1583225527> | Replicating instance FFT_Transformer_0.sampleA_adr[0] (in view: work.FFT_Transform_test(rtl)) with 8 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:415:8:415:10:@N:FX271:@XP_MSG">fft_transformer.vhd(415)</a><!@TM:1583225527> | Replicating instance FFT_Transformer_0.sampleA_adr[1] (in view: work.FFT_Transform_test(rtl)) with 7 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd:346:8:346:10:@N:FX271:@XP_MSG">fft_transformer.vhd(346)</a><!@TM:1583225527> | Replicating instance FFT_Transformer_0.dft_cnt[0] (in view: work.FFT_Transform_test(rtl)) with 10 loads 1 time to improve timing.
+Timing driven replication report
+Added 4 Registers via timing driven replication
+Added 4 LUTs via timing driven replication
+
+   4		0h:00m:03s		    -1.54ns		 341 /       342
+   5		0h:00m:03s		    -1.60ns		 342 /       342
+   6		0h:00m:03s		    -1.62ns		 343 /       342
+
+
+   7		0h:00m:03s		    -1.61ns		 343 /       342
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1583225527> | Promoting Net PCLK_c on CLKINT  I_266  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1583225527> | Promoting Net RSTn_c on CLKINT  I_267  
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 141MB peak: 142MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 141MB peak: 142MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+<a name=clockReport30></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 347 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
+0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+<a href="@|S:PCLK@|E:FFT_Transformer_0.dft_cnt_fast[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002  @XP_NAMES_BY_PROP">ClockId0002 </a>       PCLK                port                   347        FFT_Transformer_0.dft_cnt_fast[0]
+=========================================================================================================
+================================================================= Gated/Generated Clocks =================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                             Explanation              
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+<a href="@|S:FFT_Transformer_0.un1_rstn_1@|E:FFT_Transformer_0.un1_ram_assigned_1_rs@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       FFT_Transformer_0.un1_rstn_1     CFG2                   1          FFT_Transformer_0.un1_ram_assigned_1_rs     No clocks found on inputs
+==========================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 114MB peak: 143MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Transform_test_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 140MB peak: 143MB)
+
+Writing Verilog Simulation files
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1583225527> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1583225527> | Synopsys Constraint File capacitance units using default value of 1pF  
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 139MB peak: 143MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 143MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1583225527> | Found inferred clock FFT_Transform_test|PCLK with period 4.02ns. Please declare a user-defined clock on port PCLK.</font> 
+
+
+<a name=timingReport31></a>##### START OF TIMING REPORT #####[</a>
+<a name=32></a># Timing Report written on Tue Mar  3 03:52:06 2020</a>
+#
+
+
+Top view:               FFT_Transform_test
+Requested Frequency:    248.5 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\FFT_Transform_test\synthesis.fdc
+                       
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1583225527> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1583225527> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary33></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: -0.710
+
+                            Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock              Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------------
+FFT_Transform_test|PCLK     248.5 MHz     211.2 MHz     4.025         4.735         -0.710     inferred     Autoconstr_clkgroup_0
+System                      1.0 MHz       1.0 MHz       1000.000      999.954       0.046      system       system_clkgroup      
+=================================================================================================================================
+
+
+
+
+
+<a name=clockRelationships34></a>Clock Relationships</a>
+*******************
+
+Clocks                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------
+Starting                 Ending                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------
+System                   FFT_Transform_test|PCLK  |  4.025       0.046   |  No paths    -      |  No paths    -      |  No paths    -    
+FFT_Transform_test|PCLK  FFT_Transform_test|PCLK  |  4.025       -0.710  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo35></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport36></a>Detailed Report for Clock: FFT_Transform_test|PCLK</a>
+====================================
+
+
+
+<a name=startingSlack37></a>Starting Points with Worst Slack</a>
+********************************
+
+                                          Starting                                                             Arrival           
+Instance                                  Reference                   Type     Pin     Net                     Time        Slack 
+                                          Clock                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bfly_cnt[1]             FFT_Transform_test|PCLK     SLE      Q       bfly_cnt[1]             0.108       -0.710
+FFT_Transformer_0.bf0_real_b_in[8]        FFT_Transform_test|PCLK     SLE      Q       bf0_real_b_in[8]        0.087       -0.676
+FFT_Transformer_0.bfly_cnt[0]             FFT_Transform_test|PCLK     SLE      Q       bfly_cnt[0]             0.108       -0.642
+FFT_Transformer_0.stage_cnt[1]            FFT_Transform_test|PCLK     SLE      Q       stage_cnt[1]            0.087       -0.570
+FFT_Transformer_0.stage_cnt[0]            FFT_Transform_test|PCLK     SLE      Q       stage_cnt[0]            0.087       -0.547
+FFT_Transformer_0.bfly_cnt[2]             FFT_Transform_test|PCLK     SLE      Q       bfly_cnt[2]             0.108       -0.541
+FFT_Transformer_0.bfly_cnt[3]             FFT_Transform_test|PCLK     SLE      Q       bfly_cnt[3]             0.108       -0.488
+FFT_Transformer_0.stage_cnt[2]            FFT_Transform_test|PCLK     SLE      Q       stage_cnt[2]            0.108       -0.481
+FFT_Transformer_0.dft_cnt_fast[0]         FFT_Transform_test|PCLK     SLE      Q       dft_cnt_fast[0]         0.108       -0.335
+FFT_Transformer_0.sampleA_adr_fast[2]     FFT_Transform_test|PCLK     SLE      Q       sampleA_adr_fast[2]     0.108       -0.217
+=================================================================================================================================
+
+
+<a name=endingSlack38></a>Ending Points with Worst Slack</a>
+******************************
+
+                                                                     Starting                                                                 Required           
+Instance                                                             Reference                   Type     Pin     Net                         Time         Slack 
+                                                                     Clock                                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bfly_cnt[2]                                        FFT_Transform_test|PCLK     SLE      D       bfly_cnt_4[2]               3.769        -0.710
+FFT_Transformer_0.twiddle_index_next[0]                              FFT_Transform_test|PCLK     SLE      D       twiddle_index_next_4[0]     3.769        -0.710
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[8]      FFT_Transform_test|PCLK     SLE      D       temp_imag[8]                3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[9]      FFT_Transform_test|PCLK     SLE      D       temp_imag[9]                3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[10]     FFT_Transform_test|PCLK     SLE      D       temp_imag[10]               3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[11]     FFT_Transform_test|PCLK     SLE      D       temp_imag[11]               3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[12]     FFT_Transform_test|PCLK     SLE      D       temp_imag[12]               3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[13]     FFT_Transform_test|PCLK     SLE      D       temp_imag[13]               3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[14]     FFT_Transform_test|PCLK     SLE      D       temp_imag[14]               3.769        -0.676
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[15]     FFT_Transform_test|PCLK     SLE      D       temp_imag[15]               3.769        -0.676
+=================================================================================================================================================================
+
+
+
+<a name=worstPaths39></a>Worst Path Information</a>
+<a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.srr:srsfC:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.srs:fp:40385:42185:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.025
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.769
+
+    - Propagation time:                      4.480
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.710
+
+    Number of logic level(s):                4
+    Starting point:                          FFT_Transformer_0.bfly_cnt[1] / Q
+    Ending point:                            FFT_Transformer_0.bfly_cnt[2] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                                       Pin      Pin               Arrival     No. of    
+Name                                                        Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bfly_cnt[1]                               SLE      Q        Out     0.108     0.108       -         
+bfly_cnt[1]                                                 Net      -        -       0.936     -           7         
+FFT_Transformer_0.bfly_max_RNIAPNN[3]                       CFG4     D        In      -         1.044       -         
+FFT_Transformer_0.bfly_max_RNIAPNN[3]                       CFG4     Y        Out     0.326     1.371       -         
+g0_2_0                                                      Net      -        -       0.815     -           4         
+FFT_Transformer_0.dft_run_RNIG3GT1                          CFG4     D        In      -         2.185       -         
+FFT_Transformer_0.dft_run_RNIG3GT1                          CFG4     Y        Out     0.271     2.457       -         
+N_64_0_i_sx                                                 Net      -        -       0.248     -           1         
+FFT_Transformer_0.dft_run_RNI8B533                          CFG4     D        In      -         2.705       -         
+FFT_Transformer_0.dft_run_RNI8B533                          CFG4     Y        Out     0.326     3.031       -         
+dft_run_RNI8B533                                            Net      -        -       0.977     -           8         
+FFT_Transformer_0.p_sub_DFT_BFly_manager\.bfly_cnt_4[2]     CFG4     C        In      -         4.008       -         
+FFT_Transformer_0.p_sub_DFT_BFly_manager\.bfly_cnt_4[2]     CFG4     Y        Out     0.223     4.231       -         
+bfly_cnt_4[2]                                               Net      -        -       0.248     -           1         
+FFT_Transformer_0.bfly_cnt[2]                               SLE      D        In      -         4.480       -         
+======================================================================================================================
+Total path delay (propagation time + setup) of 4.735 is 1.511(31.9%) logic and 3.224(68.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      4.025
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.769
+
+    - Propagation time:                      4.480
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.710
+
+    Number of logic level(s):                4
+    Starting point:                          FFT_Transformer_0.bfly_cnt[1] / Q
+    Ending point:                            FFT_Transformer_0.twiddle_index_next[0] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                            Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bfly_cnt[1]                   SLE      Q        Out     0.108     0.108       -         
+bfly_cnt[1]                                     Net      -        -       0.936     -           7         
+FFT_Transformer_0.bfly_max_RNIAPNN[3]           CFG4     D        In      -         1.044       -         
+FFT_Transformer_0.bfly_max_RNIAPNN[3]           CFG4     Y        Out     0.326     1.371       -         
+g0_2_0                                          Net      -        -       0.815     -           4         
+FFT_Transformer_0.dft_run_RNIG3GT1              CFG4     D        In      -         2.185       -         
+FFT_Transformer_0.dft_run_RNIG3GT1              CFG4     Y        Out     0.271     2.457       -         
+N_64_0_i_sx                                     Net      -        -       0.248     -           1         
+FFT_Transformer_0.dft_run_RNI8B533              CFG4     D        In      -         2.705       -         
+FFT_Transformer_0.dft_run_RNI8B533              CFG4     Y        Out     0.326     3.031       -         
+dft_run_RNI8B533                                Net      -        -       0.977     -           8         
+FFT_Transformer_0.twiddle_index_next_RNO[0]     CFG3     C        In      -         4.008       -         
+FFT_Transformer_0.twiddle_index_next_RNO[0]     CFG3     Y        Out     0.223     4.231       -         
+twiddle_index_next_4[0]                         Net      -        -       0.248     -           1         
+FFT_Transformer_0.twiddle_index_next[0]         SLE      D        In      -         4.480       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 4.735 is 1.511(31.9%) logic and 3.224(68.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      4.025
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.769
+
+    - Propagation time:                      4.446
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.676
+
+    Number of logic level(s):                1
+    Starting point:                          FFT_Transformer_0.bf0_real_b_in[8] / Q
+    Ending point:                            FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_slice[17] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                                                                           Pin       Pin               Arrival     No. of    
+Name                                                                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bf0_real_b_in[8]                                                              SLE      Q         Out     0.087     0.087       -         
+bf0_real_b_in[8]                                                                                Net      -         -       1.524     -           29        
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     A[8]      In      -         1.611       -         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     P[43]     Out     2.586     4.197       -         
+temp_real[34]                                                                                   Net      -         -       0.248     -           1         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_slice[17]                                SLE      D         In      -         4.446       -         
+===========================================================================================================================================================
+Total path delay (propagation time + setup) of 4.701 is 2.929(62.3%) logic and 1.772(37.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      4.025
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.769
+
+    - Propagation time:                      4.446
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.676
+
+    Number of logic level(s):                1
+    Starting point:                          FFT_Transformer_0.bf0_real_b_in[8] / Q
+    Ending point:                            FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[17] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                                                                           Pin       Pin               Arrival     No. of    
+Name                                                                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bf0_real_b_in[8]                                                              SLE      Q         Out     0.087     0.087       -         
+bf0_real_b_in[8]                                                                                Net      -         -       1.524     -           29        
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_1.HARD_MULT_ADDSUB_C0_0.U0     MACC     A[17]     In      -         1.611       -         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_1.HARD_MULT_ADDSUB_C0_0.U0     MACC     P[43]     Out     2.586     4.197       -         
+temp_imag[34]                                                                                   Net      -         -       0.248     -           1         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_slice[17]                                SLE      D         In      -         4.446       -         
+===========================================================================================================================================================
+Total path delay (propagation time + setup) of 4.701 is 2.929(62.3%) logic and 1.772(37.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      4.025
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.769
+
+    - Propagation time:                      4.446
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.676
+
+    Number of logic level(s):                1
+    Starting point:                          FFT_Transformer_0.bf0_real_b_in[8] / Q
+    Ending point:                            FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_slice[8] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                                                                           Pin       Pin               Arrival     No. of    
+Name                                                                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.bf0_real_b_in[8]                                                              SLE      Q         Out     0.087     0.087       -         
+bf0_real_b_in[8]                                                                                Net      -         -       1.524     -           29        
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     A[8]      In      -         1.611       -         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     P[17]     Out     2.586     4.197       -         
+temp_real[8]                                                                                    Net      -         -       0.248     -           1         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_slice[8]                                 SLE      D         In      -         4.446       -         
+===========================================================================================================================================================
+Total path delay (propagation time + setup) of 4.701 is 2.929(62.3%) logic and 1.772(37.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+<a name=clockReport40></a>Detailed Report for Clock: System</a>
+====================================
+
+
+
+<a name=startingSlack41></a>Starting Points with Worst Slack</a>
+********************************
+
+                                            Starting                                                 Arrival          
+Instance                                    Reference     Type     Pin     Net                       Time        Slack
+                                            Clock                                                                     
+----------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.un1_ram_assigned_1_rs     System        SLE      Q       un1_ram_assigned_1_rs     0.108       0.046
+======================================================================================================================
+
+
+<a name=endingSlack42></a>Ending Points with Worst Slack</a>
+******************************
+
+                                                              Starting                                                       Required          
+Instance                                                      Reference     Type        Pin           Net                    Time         Slack
+                                                              Clock                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_WEN[0]      ram_w_en_1_sig[0]      3.491        0.046
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_WEN[1]      ram_w_en_1_sig[0]      3.491        0.046
+DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_WEN[0]      ram_w_en_0_sig[0]      3.491        0.053
+DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_WEN[1]      ram_w_en_0_sig[0]      3.491        0.053
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_ADDR[7]     ram_adr_1_sig_1[3]     3.394        0.101
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     A_WEN[0]      ram_w_en_1_sig[0]      3.553        0.109
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     A_WEN[1]      ram_w_en_1_sig[0]      3.553        0.109
+DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     A_WEN[0]      ram_w_en_0_sig[0]      3.553        0.116
+DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     A_WEN[1]      ram_w_en_0_sig[0]      3.553        0.116
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0     System        RAM1K18     B_ADDR[5]     ram_adr_1_sig_1[1]     3.394        0.169
+===============================================================================================================================================
+
+
+
+<a name=worstPaths43></a>Worst Path Information</a>
+<a href="C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.srr:srsfC:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.srs:fp:58119:59397:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.025
+    - Setup time:                            0.534
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.491
+
+    - Propagation time:                      3.445
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 0.046
+
+    Number of logic level(s):                2
+    Starting point:                          FFT_Transformer_0.un1_ram_assigned_1_rs / Q
+    Ending point:                            DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0 / B_WEN[0]
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin B_CLK
+
+Instance / Net                                                                         Pin          Pin               Arrival     No. of    
+Name                                                                       Type        Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.un1_ram_assigned_1_rs                                    SLE         Q            Out     0.108     0.108       -         
+un1_ram_assigned_1_rs                                                      Net         -            -       0.248     -           1         
+FFT_Transformer_0.un1_ram_assigned_1_rs_RNILSEN                            CFG3        B            In      -         0.357       -         
+FFT_Transformer_0.un1_ram_assigned_1_rs_RNILSEN                            CFG3        Y            Out     0.164     0.521       -         
+ram_returned_c                                                             Net         -            -       1.664     -           67        
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.do_calc_pipe_0_RNIREKQ[3]     CFG2        A            In      -         2.185       -         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.do_calc_pipe_0_RNIREKQ[3]     CFG2        Y            Out     0.087     2.272       -         
+ram_w_en_1_sig[0]                                                          Net         -            -       1.173     -           4         
+DPSRAM_C0_1.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0                  RAM1K18     B_WEN[0]     In      -         3.445       -         
+============================================================================================================================================
+Total path delay (propagation time + setup) of 3.979 is 0.893(22.5%) logic and 3.085(77.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 143MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 143MB)
+
+---------------------------------------
+<a name=resourceUsage44></a>Resource Usage Report for FFT_Transform_test </a>
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           1 use
+CFG2           27 uses
+CFG3           48 uses
+CFG4           125 uses
+
+Carry cells:
+ARI1            116 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            344 uses
+
+DSP Blocks:    2 of 22 (9%)
+ MACC:         2 Mults
+
+I/O ports: 79
+I/O primitives: 78
+INBUF          4 uses
+OUTBUF         74 uses
+
+
+Global Clock Buffers: 2
+
+RAM/ROM usage summary
+Total Block RAMs (RAM1K18) : 2 of 21 (9%)
+
+Total LUTs:    317
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 72; LUTs = 72;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  344 + 0 + 72 + 72 = 488;
+Total number of LUTs after P&R:  317 + 0 + 72 + 72 = 461;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 31MB peak: 143MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Tue Mar  3 03:52:07 2020
+
+###########################################################]
+
+</pre></samp></body></html>

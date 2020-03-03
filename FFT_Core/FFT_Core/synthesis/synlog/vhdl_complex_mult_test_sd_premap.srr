@@ -1,4 +1,4 @@
-# Tue Feb 25 02:27:44 2020
+# Tue Mar  3 00:25:22 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -19,7 +19,7 @@ Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\vhdl_complex_mult_test_sd\synthesis.fdc
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\FFT_Butterfly_HW_MATHDSP\synthesis.fdc
 @N: MF284 |Setting synthesis effort to medium for the design
 @L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd_scck.rpt 
 Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd_scck.rpt" file 
@@ -27,71 +27,67 @@ Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FF
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
 
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-syn_allowed_resources : blockrams=21,dsps=22  set on top level netlist vhdl_complex_mult_test_sd
+syn_allowed_resources : blockrams=21  set on top level netlist FFT_Butterfly_HW_MATHDSP
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
 
 
 
 Clock Summary
 ******************
 
-          Start                                             Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                             Frequency     Period        Type         Group                   Load 
-----------------------------------------------------------------------------------------------------------------------------------
-0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
-                                                                                                                                  
-0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     102  
-==================================================================================================================================
+          Start                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                             Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------
+0 -       FFT_Butterfly_HW_MATHDSP|PCLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     238  
+==================================================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                                  Clock     Source                                    Clock Pin                          Non-clock Pin     Non-clock Pin                       
-Clock                                             Load      Pin                                       Seq Example                        Seq Example       Comb Example                        
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                            0         -                                         -                                  -                 -                                   
-                                                                                                                                                                                               
-FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     102       FCCC_C0_0.FCCC_C0_0.CCC_INST.GL0(CCC)     LFSR_Fib_Gen_0.fib_reg[15:0].C     -                 FCCC_C0_0.FCCC_C0_0.GL0_INST.I(BUFG)
-===============================================================================================================================================================================================
+                                  Clock     Source         Clock Pin             Non-clock Pin     Non-clock Pin
+Clock                             Load      Pin            Seq Example           Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------
+FFT_Butterfly_HW_MATHDSP|PCLK     238       PCLK(port)     do_calc_pipe[0].C     -                 -            
+================================================================================================================
 
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":222:12:222:13|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 102 sequential elements including Butterfly_HW_DSP_0.Twiddle_Table_0.mem_adr_cnt[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_butterfly_hw_mathdsp.vhd":378:16:378:30|Found inferred clock FFT_Butterfly_HW_MATHDSP|PCLK which controls 238 sequential elements including adr_a_pipe_3[7]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\vhdl_complex_mult_test_sd.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 138MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 25 02:27:45 2020
+# Tue Mar  3 00:25:23 2020
 
 ###########################################################]

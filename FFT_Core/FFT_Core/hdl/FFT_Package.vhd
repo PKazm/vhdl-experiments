@@ -33,7 +33,7 @@ package FFT_package is
     constant IMAG_INIT : std_logic_vector(SAMPLE_WIDTH_INT - 1 downto 0) := (others => '0');
 
     -- RAM data arrays (should infer SRAM blocks based on control signal usages)
-    type time_sample_mem is array (SAMPLE_CNT_EXP - 1 downto 0) of std_logic_vector(SAMPLE_WIDTH_INT * 2 - 1 downto 0);
+    type time_sample_mem is array (SAMPLE_CNT - 1 downto 0) of std_logic_vector(SAMPLE_WIDTH_INT * 2 - 1 downto 0);
     type ram_block_mem is array (SAMPLE_BLOCKS - 1 downto 0) of time_sample_mem;
 
     -- RAM control signal groupings
@@ -45,9 +45,13 @@ package FFT_package is
     function BIT_REV_FUNC (input_vector : in std_logic_vector)
         return std_logic_vector;
 
+    function RND_HALF_TO_EVEN_BIAS_GEN (input_vector : in std_logic_vector; rnd_width : in natural)
+        return std_logic_vector;
+
 end package FFT_package;
 
 package body FFT_package is
+
     function BIT_REV_FUNC (input_vector : in std_logic_vector) return std_logic_vector is
         variable bit_rev_result : std_logic_vector(input_vector'high downto 0);
     begin
@@ -59,4 +63,19 @@ package body FFT_package is
         end loop;
         return bit_rev_result;
     end;
+
+    function RND_HALF_TO_EVEN_BIAS_GEN (input_vector : in std_logic_vector; rnd_width : in natural) return std_logic_vector is
+        variable leading_zeros : std_logic_vector(rnd_width - 1 downto 0);
+        variable cutoff_bit : std_logic;
+        variable lower_bits : std_logic_vector(input_vector'length - rnd_width - 2 downto 0);
+
+        variable bias_vector : std_logic_vector(input_vector'high downto 0);
+    begin
+        leading_zeros := (others => '0');
+        cutoff_bit := input_vector(input_vector'length - rnd_width);
+        lower_bits := (others => not input_vector(input_vector'length - rnd_width));
+        bias_vector := leading_zeros & cutoff_bit & lower_bits;
+        return bias_vector;
+    end;
+
 end package body FFT_package;

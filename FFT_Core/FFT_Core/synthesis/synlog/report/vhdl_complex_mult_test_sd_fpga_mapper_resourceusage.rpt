@@ -1,40 +1,35 @@
-Resource Usage Report for vhdl_complex_mult_test_sd 
+Resource Usage Report for FFT_Butterfly_HW_MATHDSP 
 
 Mapping to part: m2s010tq144std
 Cell usage:
-CCC             1 use
-CLKINT          3 uses
-RCOSC_25_50MHZ  1 use
-CFG1           9 uses
-CFG2           7 uses
-CFG3           6 uses
-CFG4           23 uses
+CLKINT          2 uses
 
 Carry cells:
-ARI1            59 uses - used for arithmetic functions
+ARI1            124 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            58 uses
+SLE            238 uses
 
 DSP Blocks:    2 of 22 (9%)
- MACC:         2 MultAdds
+ MACC:         2 Mults
 
-I/O ports: 36
-I/O primitives: 36
-OUTBUF         36 uses
+I/O ports: 135
+I/O primitives: 135
+INBUF          82 uses
+OUTBUF         53 uses
 
 
-Global Clock Buffers: 3
+Global Clock Buffers: 2
 
-Total LUTs:    104
+Total LUTs:    124
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
-RAM64x18 Interface Logic : SLEs = 36; LUTs = 36;
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 72; LUTs = 72;
 
-Total number of SLEs after P&R:  58 + 36 + 0 + 72 = 166;
-Total number of LUTs after P&R:  104 + 36 + 0 + 72 = 212;
+Total number of SLEs after P&R:  238 + 0 + 0 + 72 = 310;
+Total number of LUTs after P&R:  124 + 0 + 0 + 72 = 196;
 

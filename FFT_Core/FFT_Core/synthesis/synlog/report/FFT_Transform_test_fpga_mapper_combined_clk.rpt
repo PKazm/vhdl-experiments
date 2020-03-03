@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 347 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
+0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0002       PCLK                port                   347        FFT_Transformer_0.dft_cnt_fast[0]
+=========================================================================================================
+================================================================= Gated/Generated Clocks =================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance                             Explanation              
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       FFT_Transformer_0.un1_rstn_1     CFG2                   1          FFT_Transformer_0.un1_ram_assigned_1_rs     No clocks found on inputs
+==========================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

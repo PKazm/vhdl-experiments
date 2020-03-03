@@ -36,12 +36,18 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VHDL"
 KEY Vendor "Actel"
-KEY ActiveRoot "FFT_Butterfly_test_sd::work"
+KEY ActiveRoot "FFT_Butterfly_HW_MATHDSP::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\component\Actel\SgCore\DPSRAM\1.0.101\DPSRAM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582868796"
+SIZE="243"
+PARENT="<project>\component\work\DPSRAM_C0\DPSRAM_C0.cxf"
+ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
 TIME="1582014068"
@@ -100,6 +106,31 @@ STATE="utd"
 TIME="1582682683"
 SIZE="7069"
 PARENT="<project>\component\work\Complex_Mult_test_sd\Complex_Mult_test_sd.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\DPSRAM_C0\DPSRAM_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582868797"
+SIZE="5867"
+ENDFILE
+VALUE "<project>\component\work\DPSRAM_C0\DPSRAM_C0.vhd,hdl"
+STATE="utd"
+TIME="1582868796"
+SIZE="3889"
+PARENT="<project>\component\work\DPSRAM_C0\DPSRAM_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1582868796"
+SIZE="753"
+PARENT="<project>\component\work\DPSRAM_C0\DPSRAM_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd,hdl"
+STATE="utd"
+TIME="1582868796"
+SIZE="7136"
+PARENT="<project>\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
@@ -236,6 +267,16 @@ STATE="utd"
 TIME="1582009467"
 SIZE="219"
 ENDFILE
+VALUE "<project>\designer\impl1\Complex_Mult_test_sd.ide_des,ide_des"
+STATE="utd"
+TIME="1582241091"
+SIZE="330"
+ENDFILE
+VALUE "<project>\designer\impl1\DPSRAM_C0.ide_des,ide_des"
+STATE="utd"
+TIME="1583102902"
+SIZE="212"
+ENDFILE
 VALUE "<project>\designer\impl1\FFT.ide_des,ide_des"
 STATE="utd"
 TIME="1581661044"
@@ -260,6 +301,11 @@ VALUE "<project>\designer\impl1\FFT_Sample_Outputer.ide_des,ide_des"
 STATE="utd"
 TIME="1582405855"
 SIZE="222"
+ENDFILE
+VALUE "<project>\designer\impl1\FFT_Transformer.ide_des,ide_des"
+STATE="utd"
+TIME="1582870441"
+SIZE="218"
 ENDFILE
 VALUE "<project>\designer\impl1\Twiddle_table.ide_des,ide_des"
 STATE="utd"
@@ -288,13 +334,13 @@ SIZE="16955"
 ENDFILE
 VALUE "<project>\hdl\FFT_Butterfly_HW_MATHDSP.vhd,hdl"
 STATE="utd"
-TIME="1582698702"
-SIZE="10493"
+TIME="1583207640"
+SIZE="22238"
 ENDFILE
 VALUE "<project>\hdl\FFT_Package.vhd,hdl"
 STATE="utd"
-TIME="1582426634"
-SIZE="2398"
+TIME="1583206646"
+SIZE="3272"
 ENDFILE
 VALUE "<project>\hdl\FFT_Sample_Loader.vhd,hdl"
 STATE="utd"
@@ -308,8 +354,13 @@ SIZE="6039"
 ENDFILE
 VALUE "<project>\hdl\FFT_Transformer.vhd,hdl"
 STATE="utd"
-TIME="1582602886"
-SIZE="10961"
+TIME="1583131348"
+SIZE="18805"
+ENDFILE
+VALUE "<project>\hdl\FFT_Transform_test.vhd,hdl"
+STATE="utd"
+TIME="1583103652"
+SIZE="12206"
 ENDFILE
 VALUE "<project>\hdl\LFSR_Fib_Gen.vhd,hdl"
 STATE="utd"
@@ -318,38 +369,43 @@ SIZE="1486"
 ENDFILE
 VALUE "<project>\hdl\Twiddle_table.vhd,hdl"
 STATE="utd"
-TIME="1582672646"
-SIZE="2495426"
+TIME="1582807893"
+SIZE="2495408"
 ENDFILE
 VALUE "<project>\simulation\Butterfly_HW_DSP_tb_presynth_simulation.log,log"
 STATE="utd"
 TIME="1582320535"
 SIZE="3838"
 ENDFILE
-VALUE "<project>\simulation\FFT_Butterfly_HW_MATHDSP_tb_presynth_simulation.log,log"
-STATE="utd"
-TIME="1582511200"
-SIZE="19614"
-ENDFILE
 VALUE "<project>\simulation\FFT_Sample_Outputer_tb_presynth_simulation.log,log"
 STATE="utd"
 TIME="1582346842"
 SIZE="5732"
 ENDFILE
+VALUE "<project>\simulation\FFT_Transform_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1582874630"
+SIZE="7171"
+ENDFILE
+VALUE "<project>\simulation\FFT_Transform_test_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1583140714"
+SIZE="17067"
+ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1582511198"
-SIZE="890"
+TIME="1583142523"
+SIZE="1096"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1582511198"
+TIME="1583142523"
 SIZE="233"
 ENDFILE
 VALUE "<project>\simulation\tesbench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1582698729"
-SIZE="68"
+TIME="1582769926"
+SIZE="10558"
 ENDFILE
 VALUE "<project>\simulation\Twiddle_Table_tb_presynth_simulation.log,log"
 STATE="utd"
@@ -363,8 +419,8 @@ SIZE="7499"
 ENDFILE
 VALUE "<project>\stimulus\FFT_Butterfly_HW_MATHDSP_tb.vhd,tb_hdl"
 STATE="utd"
-TIME="1582511592"
-SIZE="14857"
+TIME="1583207589"
+SIZE="16769"
 ENDFILE
 VALUE "<project>\stimulus\FFT_Sample_Loader_tb.vhd,tb_hdl"
 STATE="utd"
@@ -380,6 +436,16 @@ VALUE "<project>\stimulus\FFT_tb.vhd,tb_hdl"
 STATE="utd"
 TIME="1581545606"
 SIZE="4977"
+ENDFILE
+VALUE "<project>\stimulus\FFT_Transform_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1583041022"
+SIZE="23097"
+ENDFILE
+VALUE "<project>\stimulus\FFT_Transform_test_tb.vhd,tb_hdl"
+STATE="utd"
+TIME="1583136051"
+SIZE="32803"
 ENDFILE
 VALUE "<project>\stimulus\Twiddle_Table_tb.vhd,tb_hdl"
 STATE="utd"
@@ -426,25 +492,70 @@ STATE="utd"
 TIME="1582062488"
 SIZE="905"
 ENDFILE
+VALUE "<project>\synthesis\DPSRAM_C0.so,so"
+STATE="utd"
+TIME="1583056941"
+SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\DPSRAM_C0.vm,syn_vm"
+STATE="ood"
+TIME="1583056940"
+SIZE="11592"
+ENDFILE
 VALUE "<project>\synthesis\FFT_Butterfly_test_sd.so,so"
 STATE="utd"
-TIME="1582695448"
+TIME="1582699070"
 SIZE="268"
 ENDFILE
 VALUE "<project>\synthesis\FFT_Butterfly_test_sd.vm,syn_vm"
-STATE="utd"
-TIME="1582695447"
-SIZE="65071"
+STATE="ood"
+TIME="1582699070"
+SIZE="68694"
 ENDFILE
 VALUE "<project>\synthesis\FFT_Butterfly_test_sd_syn.prj,prj"
 STATE="utd"
-TIME="1582695434"
-SIZE="3061"
+TIME="1582699174"
+SIZE="3059"
 ENDFILE
 VALUE "<project>\synthesis\FFT_Butterfly_test_sd_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1582695447"
+TIME="1582699070"
 SIZE="951"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test.so,so"
+STATE="utd"
+TIME="1583103530"
+SIZE="262"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test.vm,syn_vm"
+STATE="ood"
+TIME="1583103529"
+SIZE="102277"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test_sd.so,so"
+STATE="utd"
+TIME="1582964536"
+SIZE="268"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test_sd_syn.prj,prj"
+STATE="utd"
+TIME="1583057055"
+SIZE="2839"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test_sd_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1582964535"
+SIZE="906"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test_syn.prj,prj"
+STATE="utd"
+TIME="1583104195"
+SIZE="2780"
+ENDFILE
+VALUE "<project>\synthesis\FFT_Transform_test_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1583103530"
+SIZE="903"
 ENDFILE
 VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0.so,so"
 STATE="utd"
@@ -465,11 +576,6 @@ VALUE "<project>\synthesis\HARD_MULT_ADDSUB_C0_vm.sdc,syn_sdc"
 STATE="utd"
 TIME="1582013597"
 SIZE="798"
-ENDFILE
-VALUE "<project>\synthesis\synwork\layer0.so,so"
-STATE="utd"
-TIME="1582675318"
-SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.so,so"
 STATE="utd"
@@ -495,6 +601,40 @@ ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "DPSRAM_C0::work"
+FILE "<project>\component\work\DPSRAM_C0\DPSRAM_C0.vhd,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\FFT_Transform_test.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Butterfly_HW_DSP.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\FFT_Butterfly_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\HARD_MULT_ADDSUB_C0.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\DPSRAM_C0.edn,syn_edn"
+VALUE "<project>\synthesis\DPSRAM_C0.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\DPSRAM_C0.adb,adb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.fdb,fdb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.pdb,pdb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.stp,stp"
+VALUE "<project>\designer\impl1\DPSRAM_C0_fp\DPSRAM_C0.pro,pro"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 LIST "Butterfly_HW_DSP::work"
 FILE "<project>\hdl\Butterfly_HW_DSP.vhd,hdl"
 LIST AssociatedStimulus
@@ -559,21 +699,6 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
-LIST "FFT_Butterfly_test_sd::work"
-FILE "<project>\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd,hdl"
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\FFT_Butterfly_test_sd.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-ENDLIST
 LIST "FFT_Sample_Loader::work"
 FILE "<project>\hdl\FFT_Sample_Loader.vhd,hdl"
 LIST AssociatedStimulus
@@ -620,6 +745,38 @@ UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "FFT_Transform_test::work"
+FILE "<project>\hdl\FFT_Transform_test.vhd,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\FFT_Transform_test_tb.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\FFT_Transform_test.edn,syn_edn"
+VALUE "<project>\synthesis\FFT_Transform_test.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\FFT_Transform_test.adb,adb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.fdb,fdb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.pdb,pdb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.stp,stp"
+VALUE "<project>\designer\impl1\FFT_Transform_test_fp\FFT_Transform_test.pro,pro"
+VALUE "<project>\synthesis\FFT_Transform_test.vm,syn_vm"
+VALUE "<project>\synthesis\FFT_Transform_test_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -675,14 +832,17 @@ LIST AssociatedStimulus
 LIST Butterfly_HW_DSP
 VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
 ENDLIST
+LIST FFT_Transform_test
+VALUE "<project>\stimulus\FFT_Transform_test_tb.vhd,tb_hdl"
+ENDLIST
+LIST FFT_Butterfly_HW_MATHDSP
+VALUE "<project>\stimulus\FFT_Butterfly_HW_MATHDSP_tb.vhd,tb_hdl"
+ENDLIST
 LIST FFT_Sample_Outputer
 VALUE "<project>\stimulus\FFT_Sample_Outputer_tb.vhd,tb_hdl"
 ENDLIST
 LIST FFT_Sample_Loader
 VALUE "<project>\stimulus\FFT_Sample_Loader_tb.vhd,tb_hdl"
-ENDLIST
-LIST FFT_Butterfly_HW_MATHDSP
-VALUE "<project>\stimulus\FFT_Butterfly_HW_MATHDSP_tb.vhd,tb_hdl"
 ENDLIST
 LIST HARD_MULT_ADDSUB_C0
 VALUE "<project>\stimulus\Butterfly_HW_DSP_tb.vhd,tb_hdl"
@@ -694,10 +854,10 @@ LIST SimulationOptions
 UseAutomaticDoFile=true
 IncludeWaveDo=false
 Type=max
-RunTime=1000ns
+RunTime=20000ns
 Resolution=1fs
 VsimOpt=
-EntityName=tesbench
+EntityName=FFT_Butterfly_HW_MATHDSP_tb
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -757,8 +917,8 @@ NAME="SynplifyProME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -766,7 +926,7 @@ NAME="ModelSimME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v12.1\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l tesbench_presynth_simulation.log "
+PARAM=" -l I2C_LITEON_Op_Sens_test_tb_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -791,6 +951,37 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "DPSRAM_C0::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\FFT_Transform_test.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Butterfly_HW_DSP.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Complex_Mult_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\FFT_Butterfly_test_sd.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\HARD_MULT_ADDSUB_C0.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\DPSRAM_C0.edn,syn_edn"
+VALUE "<project>\synthesis\DPSRAM_C0.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\DPSRAM_C0_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\DPSRAM_C0.adb,adb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.fdb,fdb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.pdb,pdb"
+VALUE "<project>\designer\impl1\DPSRAM_C0.stp,stp"
+VALUE "<project>\designer\impl1\DPSRAM_C0_fp\DPSRAM_C0.pro,pro"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd.vm,syn_vm"
+VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_sdc.sdc,syn_sdc"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "Butterfly_HW_DSP::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -843,18 +1034,6 @@ VALUE "<project>\synthesis\vhdl_complex_mult_test_sd_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "FFT_Butterfly_test_sd::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\FFT_Butterfly_test_sd.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 LIST "FFT_Sample_Loader::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -890,6 +1069,32 @@ UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "FFT_Transform_test::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\FFT_Transform_test.edn,syn_edn"
+VALUE "<project>\synthesis\FFT_Transform_test.vhd,syn_hdl"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\FFT_Transform_test_palace.vhd,palace_hdl"
+VALUE "<project>\designer\impl1\FFT_Transform_test.adb,adb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.fdb,fdb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.pdb,pdb"
+VALUE "<project>\designer\impl1\FFT_Transform_test.stp,stp"
+VALUE "<project>\designer\impl1\FFT_Transform_test_fp\FFT_Transform_test.pro,pro"
+VALUE "<project>\synthesis\FFT_Transform_test.vm,syn_vm"
+VALUE "<project>\synthesis\FFT_Transform_test_sdc.sdc,syn_sdc"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -943,11 +1148,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-SmartDesign;FFT_Butterfly_test_sd;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "bit_extender_8_to_35::work","hdl\bit_extender_8_to_35.vhd","FALSE","FALSE"
@@ -958,15 +1160,19 @@ SUBBLOCK "HARD_MULT_C0::work","component\work\HARD_MULT_C0\HARD_MULT_C0.vhd","TR
 SUBBLOCK "bit_extender_8_to_35::work","hdl\bit_extender_8_to_35.vhd","FALSE","FALSE"
 SUBBLOCK "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
 ENDLIST
+LIST "DPSRAM_C0::work","component\work\DPSRAM_C0\DPSRAM_C0.vhd","TRUE","FALSE"
+SUBBLOCK "DPSRAM_C0_DPSRAM_C0_0_DPSRAM::work","component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd","FALSE","FALSE"
+ENDLIST
+LIST "DPSRAM_C0_DPSRAM_C0_0_DPSRAM::work","component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd","FALSE","FALSE"
+ENDLIST
 LIST "Butterfly_HW_DSP::work","hdl\Butterfly_HW_DSP.vhd","FALSE","FALSE"
 SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
-ENDLIST
-LIST "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
-SUBBLOCK "HARD_MULT_ADDSUB_C0::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd","TRUE","FALSE"
 ENDLIST
 LIST "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
 ENDLIST
 LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd","FALSE","FALSE"
+ENDLIST
+LIST "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST
 LIST "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST
@@ -977,10 +1183,12 @@ SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C
 ENDLIST
 LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd","FALSE","FALSE"
 ENDLIST
+LIST "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
+ENDLIST
 LIST "FFT_Butterfly_test_sd::work","component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd","TRUE","FALSE"
 SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.vhd","TRUE","FALSE"
-SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.vhd","TRUE","FALSE"
 SUBBLOCK "LFSR_Fib_Gen::work","hdl\LFSR_Fib_Gen.vhd","FALSE","FALSE"
 SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST
@@ -989,6 +1197,15 @@ ENDLIST
 LIST "FFT_Sample_Loader::work","hdl\FFT_Sample_Loader.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FFT_Sample_Outputer::work","hdl\FFT_Sample_Outputer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FFT_Transform_test::work","hdl\FFT_Transform_test.vhd","FALSE","FALSE"
+SUBBLOCK "DPSRAM_C0::work","component\work\DPSRAM_C0\DPSRAM_C0.vhd","TRUE","FALSE"
+SUBBLOCK "FFT_Transformer::work","hdl\FFT_Transformer.vhd","FALSE","FALSE"
+ENDLIST
+LIST "FFT_Transformer::work","hdl\FFT_Transformer.vhd","FALSE","FALSE"
+SUBBLOCK "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
+SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
+SUBBLOCK "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST
 LIST "HARD_MULT_ADDSUB_C0::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd","TRUE","FALSE"
 SUBBLOCK "HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd","FALSE","FALSE"
@@ -1034,9 +1251,6 @@ LIST "FFT_Sample_Outputer::work","hdl\FFT_Sample_Outputer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FFT::work","","FALSE","FALSE"
 ENDLIST
-LIST "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
-SUBBLOCK "HARD_MULT_ADDSUB_C0::work","component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd","TRUE","FALSE"
-ENDLIST
 LIST "FFT_Butterfly_HW_MATHDSP_tb::work","stimulus\FFT_Butterfly_HW_MATHDSP_tb.vhd","FALSE","TRUE"
 SUBBLOCK "FFT_Butterfly_HW_MATHDSP::work","hdl\FFT_Butterfly_HW_MATHDSP.vhd","FALSE","FALSE"
 ENDLIST
@@ -1048,6 +1262,9 @@ SUBBLOCK "FFT_Sample_Outputer::work","hdl\FFT_Sample_Outputer.vhd","FALSE","FALS
 ENDLIST
 LIST "FFT_tb::work","stimulus\FFT_tb.vhd","FALSE","TRUE"
 SUBBLOCK "FFT::work","","FALSE","FALSE"
+ENDLIST
+LIST "FFT_Transform_test_tb::work","stimulus\FFT_Transform_test_tb.vhd","FALSE","TRUE"
+SUBBLOCK "FFT_Transform_test::work","hdl\FFT_Transform_test.vhd","FALSE","FALSE"
 ENDLIST
 LIST "Twiddle_table::work","hdl\Twiddle_table.vhd","FALSE","FALSE"
 ENDLIST

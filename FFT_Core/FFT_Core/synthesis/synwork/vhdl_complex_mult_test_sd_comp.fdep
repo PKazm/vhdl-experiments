@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\synthesis\\synwork\\vhdl_complex_mult_test_sd_comp.srs|-top|work.vhdl_complex_mult_test_sd|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-preserve_registers|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\synthesis\\synwork\\vhdl_complex_mult_test_sd_comp.srs|-top|work.FFT_Butterfly_HW_MATHDSP|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\bin64\\c_vhdl.exe":1545375128
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\location.map":1545375136
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\std.vhd":1545375136
@@ -10,72 +10,29 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1545375136
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1545375136
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1545375136
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\FCCC_C0\\FCCC_C0_0\\FCCC_C0_FCCC_C0_0_FCCC.vhd":1582014068
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_ADDSUB_C0\\HARD_MULT_ADDSUB_C0_0\\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd":1581986819
 #CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1545375133
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1573066799
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Twiddle_table.vhd":1582408048
-#CUR:"C:\\Microsemi\\Libero_SoC_v12.1\\SynplifyPro\\lib\\vhd\\math_real.vhd":1545375136
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\LFSR_Fib_Gen.vhd":1582615421
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\FCCC_C0\\FCCC_C0.vhd":1582014068
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\OSC_C0\\OSC_C0_0\\OSC_C0_OSC_C0_0_OSC.vhd":1582014057
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\OSC_C0\\OSC_C0.vhd":1582014057
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\Butterfly_HW_DSP.vhd":1582615040
-#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\vhdl_complex_mult_test_sd\\vhdl_complex_mult_test_sd.vhd":1582615153
-0			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd" vhdl
-1			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd" vhdl
-2			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
-3			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd" vhdl
-4			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd" vhdl
-5			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd" vhdl
-6			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd" vhdl
-7			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd" vhdl
-8			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\vhdl_complex_mult_test_sd\vhdl_complex_mult_test_sd.vhd" vhdl
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\FFT_Package.vhd":1583206646
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\component\\work\\HARD_MULT_ADDSUB_C0\\HARD_MULT_ADDSUB_C0.vhd":1581986819
+#CUR:"C:\\Users\\Phoenix136\\Dropbox\\FPGA\\Microsemi\\FFT_Core\\hdl\\FFT_Butterfly_HW_MATHDSP.vhd":1583213061
+0			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd" vhdl
+1			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd" vhdl
+2			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Package.vhd" vhdl
+3			"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd" vhdl
 #Dependency Lists(Uses List)
 0 -1
 1 0
 2 -1
-3 2
-4 3
-5 -1
-6 5
-7 -1
-8 4 7 1 6
+3 2 1
 #Dependency Lists(Users Of)
 0 1
-1 8
+1 3
 2 3
-3 4
-4 8
-5 6
-6 8
-7 8
-8 -1
+3 -1
 #Design Unit to File Association
-module work vhdl_complex_mult_test_sd 8
-arch work vhdl_complex_mult_test_sd rtl 8
-module work lfsr_fib_gen 7
-arch work lfsr_fib_gen architecture_lfsr_fib_gen 7
-module work butterfly_hw_dsp 6
-arch work butterfly_hw_dsp architecture_butterfly_hw_dsp 6
-module work twiddle_table 5
-arch work twiddle_table architecture_twiddle_table 5
-module work osc_c0 4
-arch work osc_c0 rtl 4
-module work osc_c0_osc_c0_0_osc 3
-arch work osc_c0_osc_c0_0_osc def_arch 3
-module work rcosc_1mhz 2
-arch work rcosc_1mhz def_arch 2
-module work rcosc_25_50mhz 2
-arch work rcosc_25_50mhz def_arch 2
-module work xtlosc 2
-arch work xtlosc def_arch 2
-module work rcosc_1mhz_fab 2
-arch work rcosc_1mhz_fab def_arch 2
-module work rcosc_25_50mhz_fab 2
-arch work rcosc_25_50mhz_fab def_arch 2
-module work xtlosc_fab 2
-arch work xtlosc_fab def_arch 2
-module work fccc_c0 1
-arch work fccc_c0 rtl 1
-module work fccc_c0_fccc_c0_0_fccc 0
-arch work fccc_c0_fccc_c0_0_fccc def_arch 0
+module work fft_butterfly_hw_mathdsp 3
+arch work fft_butterfly_hw_mathdsp architecture_fft_butterfly_hw_mathdsp 3
+module work hard_mult_addsub_c0 1
+arch work hard_mult_addsub_c0 rtl 1
+module work hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub 0
+arch work hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub def_arch 0

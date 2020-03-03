@@ -1,0 +1,85 @@
+
+****************
+Macro Parameters
+****************
+
+Name                            : DPSRAM_C0_DPSRAM_C0_0_DPSRAM
+Family                          : SmartFusion2
+Output Format                   : VHDL
+Type                            : RAM
+Write Block Enable              : None
+Read Block Enable               : None
+A_DOUT_EN                       : None
+B_DOUT_EN                       : None
+A_DOUT_SRST_N                   : None
+B_DOUT_SRST_N                   : None
+A_DOUT_ARST_N                   : None
+B_DOUT_ARST_N                   : None
+A_DOUT_CLK                      : None
+B_DOUT_CLK                      : None
+Reset Polarity                  : None
+Read Clock                      : Rising
+Write Clock                     : Rising
+A_REN                           : None
+B_REN                           : None
+Write Depth                     : 1024
+Write Width                     : 18
+Read Depth                      : 1024
+Read Width                      : 18
+Portname DataIn                 : 
+Portname DataOut                : 
+Portname WClock                 : 
+Portname RClock                 : 
+Portname WAddress               : 
+Portname RAddress               : 
+Portname Clock                  : CLK
+Portname Reset                  : ARST_N
+Portname DataAIn                : A_DIN
+Portname DataBIn                : B_DIN
+Portname DataAOut               : A_DOUT
+Portname DataBOut               : B_DOUT
+Portname AddressA               : A_ADDR
+Portname AddressB               : B_ADDR
+Portname CLKA                   : A_CLK
+Portname CLKB                   : B_CLK
+Portname RWA                    : A_WEN
+Portname RWB                    : B_WEN
+Portname BLKA                   : A_BLK
+Portname BLKB                   : B_BLK
+Portname A_DOUT_EN              : A_DOUT_EN
+Portname B_DOUT_EN              : B_DOUT_EN
+Portname A_DOUT_SRST_N          : A_DOUT_SRST_N
+Portname B_DOUT_SRST_N          : B_DOUT_SRST_N
+Portname A_DOUT_ARST_N          : A_DOUT_ARST_N
+Portname B_DOUT_ARST_N          : B_DOUT_ARST_N
+Portname A_DOUT_CLK             : 
+Portname B_DOUT_CLK             : 
+Portname Write Enable           : 
+Portname Read Enable            : 
+Portname A_WBYTE_EN             : 
+Portname B_WBYTE_EN             : 
+Portname A_REN                  : 
+Portname B_REN                  : 
+LPM_HINT                        : 
+Device                          : 1000
+RAM Type                        : Dual Port
+Optimized for                   : Speed
+Initialize RAM                  : True
+Clocks                          : Single Read/Write Clock
+Byte Enables                    : No
+Read Pipeline A                 : No
+Read Pipeline B                 : No
+Write Mode A                    : Hold Data
+Write Mode B                    : Hold Data
+ECC Type                        : Disabled
+SET Mitigation                  : Off
+SII Lock                        : Off
+Busy Flag                       : Disabled
+
+Cascade Configuration: 
+     Port A configuration       : 1024x18
+     Port B configuration       : 1024x18
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 1
+
+Wrote VHDL netlist to C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0_0\\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd.

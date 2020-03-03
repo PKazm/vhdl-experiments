@@ -14,49 +14,12 @@ Hostname: PHOENIX136DESKY
 Implementation : synthesis
 Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
 
-Modified Files: 2
+Modified Files: 0
 FID:  path (prevtimestamp, timestamp)
-27       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01)
-28       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd (2020-02-26 00:36:18, 2020-02-26 01:31:42)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 16
+Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
-16       work.fccc_c0.rtl may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-18       work.fccc_c0_fccc_c0_0_fccc.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-40       work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd (2020-02-26 00:36:18, 2020-02-26 01:31:42) <-- (architecture and entity definition)
-42       work.fft_butterfly_test_sd.rtl may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (architecture and entity definition)
-4        work.hard_mult_addsub_c0.rtl may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd (2020-02-26 00:36:18, 2020-02-26 01:31:42) <-- (may instantiate this module)
-6        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd (2020-02-26 00:36:18, 2020-02-26 01:31:42) <-- (may instantiate this module)
-12       work.lfsr_fib_gen.architecture_lfsr_fib_gen may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-20       work.osc_c0.rtl may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-22       work.osc_c0_osc_c0_0_osc.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-24       work.rcosc_1mhz.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-26       work.rcosc_1mhz_fab.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-28       work.rcosc_25_50mhz.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-30       work.rcosc_25_50mhz_fab.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-32       work.twiddle_table.architecture_twiddle_table may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-36       work.xtlosc.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
-38       work.xtlosc_fab.def_arch may have changed because the following files changed:
-                        C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Butterfly_test_sd\FFT_Butterfly_test_sd.vhd (2020-02-25 18:18:40, 2020-02-26 01:32:01) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 21
@@ -70,19 +33,35 @@ FID:  path (timestamp)
 6        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 01:52:16)
 7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 01:52:16)
 8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 01:52:16)
-18       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd (2018-12-21 01:52:16)
+15       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\math_real.vhd (2018-12-21 01:52:16)
 9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 01:52:16)
 10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 01:52:16)
-19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-11-06 13:59:59)
-20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0.vhd (2020-02-18 03:21:08)
-21       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2020-02-18 03:21:08)
-12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd (2020-02-17 19:46:59)
-13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd (2020-02-17 19:46:59)
-22       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0.vhd (2020-02-18 03:20:57)
-23       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2020-02-18 03:20:57)
-16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\LFSR_Fib_Gen.vhd (2020-02-25 02:23:41)
-26       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd (2020-02-25 18:17:26)
+16       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0.vhd (2020-02-28 00:46:36)
+17       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd (2020-02-28 00:46:36)
+11       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd (2020-02-17 19:46:59)
+12       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd (2020-02-17 19:46:59)
+13       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd (2020-03-03 03:05:43)
+14       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Package.vhd (2020-03-03 02:36:13)
+18       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd (2020-03-03 03:49:10)
+19       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd (2020-03-03 03:45:53)
+20       C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd (2020-02-27 07:51:33)
 
 *******************************************************************
-Unchanged modules: 0
+Unchanged modules: 16
 MID:  lib.cell.view
+6        work.dpsram_c0.rtl
+7        work.dpsram_c0.vhdl
+8        work.dpsram_c0_dpsram_c0_0_dpsram.def_arch
+9        work.dpsram_c0_dpsram_c0_0_dpsram.vhdl
+0        work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp
+1        work.fft_butterfly_hw_mathdsp.vhdl
+10       work.fft_transform_test.rtl
+11       work.fft_transform_test.vhdl
+12       work.fft_transformer.architecture_fft_transformer
+13       work.fft_transformer.vhdl
+2        work.hard_mult_addsub_c0.rtl
+3        work.hard_mult_addsub_c0.vhdl
+4        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch
+5        work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.vhdl
+14       work.twiddle_table.architecture_twiddle_table
+15       work.twiddle_table.vhdl

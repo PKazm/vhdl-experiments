@@ -1,0 +1,23 @@
+package FFT_package
+array_of_array time_sample_mem
+end
+array_of_array ram_block_mem [ 2 : 0 ]
+end
+array w_en_array_type
+end
+array r_en_array_type
+end
+array_of_array adr_array_type [ 1 : 0 ]
+end
+array_of_array ram_dat_array_type [ 1 : 0 ]
+end
+end
+entity FFT_Transformer
+ram_w_en w_en_array_type
+ram_adr[0] adr_array_type
+ram_adr[1] adr_array_type
+ram_dat_w[0] ram_dat_array_type
+ram_dat_w[1] ram_dat_array_type
+ram_dat_r[0] ram_dat_array_type
+ram_dat_r[1] ram_dat_array_type
+end

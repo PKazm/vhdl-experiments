@@ -1,0 +1,16 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":300:8:300:9|Found counter in view:work.FFT_Transformer(architecture_fft_transformer) instance dft_cnt[6:0] 
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":300:8:300:9|Found counter in view:work.FFT_Transformer(architecture_fft_transformer) instance bfly_cnt[6:0] 
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":222:12:222:13|Found counter in view:work.Twiddle_table(architecture_twiddle_table) instance mem_adr_cnt[6:0] 
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":272:38:272:49|Found ROM FFT_Transformer_0.Twiddle_table_0.mem_dat_w[17:9] (in view: work.FFT_Transform_test_sd(rtl)) with 128 words by 9 bits.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":272:96:272:105|Found ROM FFT_Transformer_0.Twiddle_table_0.mem_dat_w[8:1] (in view: work.FFT_Transform_test_sd(rtl)) with 128 words by 8 bits.
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_145 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_146 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

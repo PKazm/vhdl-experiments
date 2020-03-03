@@ -1,0 +1,638 @@
+#Build: Synplify Pro (R) N-2018.03M-SP1-1, Build 209R, Oct 23 2018
+#install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: PHOENIX136DESKY
+
+# Sun Mar  1 05:04:35 2020
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd":19:7:19:24|Top entity is set to FFT_Transform_test.
+Options changed - recompiling
+VHDL syntax check successful!
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transform_test.vhd":19:7:19:24|Synthesizing work.fft_transform_test.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":26:7:26:21|Synthesizing work.fft_transformer.architecture_fft_transformer.
+@N: CD233 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":62:22:62:23|Using sequential encoding for type stage_states.
+@W: CD434 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":265:30:265:33|Signal rstn in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":75:11:75:23|Signal dft_done_last is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":100:11:100:20|Signal ram_r_en_0 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":106:11:106:20|Signal ram_r_en_1 is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":27:7:27:30|Synthesizing work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":75:11:75:22|Signal real_b_pipe1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":76:11:76:22|Signal imag_b_pipe1 is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0.vhd":17:7:17:25|Synthesizing work.hard_mult_addsub_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\HARD_MULT_ADDSUB_C0\HARD_MULT_ADDSUB_C0_0\HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd":8:7:8:64|Synthesizing work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+Post processing for smartfusion2.vcc.syn_black_box
+Running optimization stage 1 on VCC .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+Post processing for smartfusion2.gnd.syn_black_box
+Running optimization stage 1 on GND .......
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":706:10:706:13|Synthesizing smartfusion2.macc.syn_black_box.
+Post processing for smartfusion2.macc.syn_black_box
+Running optimization stage 1 on MACC .......
+Post processing for work.hard_mult_addsub_c0_hard_mult_addsub_c0_0_hard_mult_addsub.def_arch
+Running optimization stage 1 on HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB .......
+Post processing for work.hard_mult_addsub_c0.rtl
+Running optimization stage 1 on HARD_MULT_ADDSUB_C0 .......
+Post processing for work.fft_butterfly_hw_mathdsp.architecture_fft_butterfly_hw_mathdsp
+Running optimization stage 1 on FFT_Butterfly_HW_MATHDSP .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":26:7:26:19|Synthesizing work.twiddle_table.architecture_twiddle_table.
+Post processing for work.twiddle_table.architecture_twiddle_table
+Running optimization stage 1 on Twiddle_table .......
+@N: CL134 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":197:11:197:13|Found RAM mem, depth=4, width=18
+Post processing for work.fft_transformer.architecture_fft_transformer
+Running optimization stage 1 on FFT_Transformer .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":41:4:41:15|Signal ram_returned is floating; a simulation mismatch is possible.
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":338:8:338:9|Pruning unused register do_calc_ctrl_2. Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0.vhd":17:7:17:15|Synthesizing work.dpsram_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\DPSRAM_C0\DPSRAM_C0_0\DPSRAM_C0_DPSRAM_C0_0_DPSRAM.vhd":8:7:8:34|Synthesizing work.dpsram_c0_dpsram_c0_0_dpsram.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":588:10:588:16|Synthesizing smartfusion2.ram1k18.syn_black_box.
+Post processing for smartfusion2.ram1k18.syn_black_box
+Running optimization stage 1 on RAM1K18 .......
+Post processing for work.dpsram_c0_dpsram_c0_0_dpsram.def_arch
+Running optimization stage 1 on DPSRAM_C0_DPSRAM_C0_0_DPSRAM .......
+Post processing for work.dpsram_c0.rtl
+Running optimization stage 1 on DPSRAM_C0 .......
+Post processing for work.fft_transform_test.rtl
+Running optimization stage 1 on FFT_Transform_test .......
+Running optimization stage 2 on RAM1K18 .......
+Running optimization stage 2 on DPSRAM_C0_DPSRAM_C0_0_DPSRAM .......
+Running optimization stage 2 on DPSRAM_C0 .......
+Running optimization stage 2 on Twiddle_table .......
+@W: CL190 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":252:12:252:13|Optimizing register bit mem_dat_r(8) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Twiddle_table.vhd":252:12:252:13|Pruning register bit 8 of mem_dat_r(17 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Running optimization stage 2 on MACC .......
+Running optimization stage 2 on GND .......
+Running optimization stage 2 on VCC .......
+Running optimization stage 2 on HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB .......
+Running optimization stage 2 on HARD_MULT_ADDSUB_C0 .......
+Running optimization stage 2 on FFT_Butterfly_HW_MATHDSP .......
+Running optimization stage 2 on FFT_Transformer .......
+@N: CL201 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":279:8:279:9|Trying to extract state machine for register stage_state.
+Extracted state machine for register stage_state
+State machine has 3 reachable states with original encodings of:
+   01
+   10
+   11
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":38:4:38:12|Input ram_ready is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Transformer.vhd":40:4:40:15|Input ram_assigned is unused.
+Running optimization stage 2 on FFT_Transform_test .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 149MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar  1 05:04:36 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar  1 05:04:36 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar  1 05:04:36 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Database state : C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar  1 05:04:37 2020
+
+###########################################################]
+Premap Report
+
+# Sun Mar  1 05:04:38 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\FFT_Transform_test\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+syn_allowed_resources : blockrams=21  set on top level netlist FFT_Transform_test
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+
+
+Clock Summary
+******************
+
+          Start                       Requested     Requested     Clock        Clock                   Clock
+Level     Clock                       Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------
+0 -       FFT_Transform_test|PCLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     236  
+============================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                            Clock     Source         Clock Pin                                                  Non-clock Pin     Non-clock Pin
+Clock                       Load      Pin            Seq Example                                                Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transform_test|PCLK     236       PCLK(port)     FFT_Transformer_0.p_ram_buf\.ram_dat_r_0_sig_0[17:0].C     -                 -            
+===============================================================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\component\work\dpsram_c0\dpsram_c0_0\dpsram_c0_dpsram_c0_0_dpsram.vhd":81:4:81:36|Found inferred clock FFT_Transform_test|PCLK which controls 236 sequential elements including DPSRAM_C0_0.DPSRAM_C0_0.DPSRAM_C0_DPSRAM_C0_0_DPSRAM_R0C0. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+Encoding state machine stage_state[0:2] (in view: work.FFT_Transformer(architecture_fft_transformer))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 53MB peak: 138MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Mar  1 05:04:38 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Sun Mar  1 05:04:39 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":338:8:338:9|User-specified initial value defined for instance FFT_Transformer_0.dft_cnt[1:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":338:8:338:9|User-specified initial value defined for instance FFT_Transformer_0.bfly_cnt[1:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_transformer.vhd":279:8:279:9|User-specified initial value defined for instance FFT_Transformer_0.stage_cnt[30:31] is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+Encoding state machine stage_state[0:2] (in view: work.FFT_Transformer(architecture_fft_transformer))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+@W: FX107 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\twiddle_table.vhd":197:11:197:13|RAM Twiddle_table_0.mem[0:16] (in view: work.FFT_Transformer(architecture_fft_transformer)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 137MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 139MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 139MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 139MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		     3.47ns		 175 /       214
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_149 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_150 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 139MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 138MB peak: 139MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 203 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              
+-----------------------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   203        FFT_Transformer_0.bf0_do_calc
+=====================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 111MB peak: 139MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Transform_test_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 139MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 136MB peak: 139MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 139MB)
+
+@W: MT420 |Found inferred clock FFT_Transform_test|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Mar  1 05:04:42 2020
+#
+
+
+Top view:               FFT_Transform_test
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\FFT_Transform_test\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 3.627
+
+                            Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock              Frequency     Frequency     Period        Period        Slack     Type         Group              
+------------------------------------------------------------------------------------------------------------------------------
+FFT_Transform_test|PCLK     100.0 MHz     156.9 MHz     10.000        6.373         3.627     inferred     Inferred_clkgroup_0
+==============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------
+Starting                 Ending                   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transform_test|PCLK  FFT_Transform_test|PCLK  |  10.000      3.627  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FFT_Transform_test|PCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                      Starting                                                              Arrival          
+Instance                                              Reference                   Type     Pin     Net                      Time        Slack
+                                                      Clock                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.ram_dest                            FFT_Transform_test|PCLK     SLE      Q       ram_dest                 0.108       3.627
+FFT_Transformer_0.stage_cnt[30]                       FFT_Transform_test|PCLK     SLE      Q       stage_cnt[30]            0.108       4.500
+FFT_Transformer_0.stage_cnt[31]                       FFT_Transform_test|PCLK     SLE      Q       stage_cnt[31]            0.108       4.508
+FFT_Transformer_0.dft_cnt[1]                          FFT_Transform_test|PCLK     SLE      Q       dft_cnt[1]               0.108       4.748
+FFT_Transformer_0.dft_cnt[0]                          FFT_Transform_test|PCLK     SLE      Q       dft_cnt[0]               0.108       4.830
+FFT_Transformer_0.p_ram_buf\.ram_dat_r_1_sig_1[8]     FFT_Transform_test|PCLK     SLE      Q       ram_dat_r_1_sig_1[8]     0.087       4.847
+FFT_Transformer_0.p_ram_buf\.ram_dat_r_0_sig_1[8]     FFT_Transform_test|PCLK     SLE      Q       ram_dat_r_0_sig_1[8]     0.108       4.972
+FFT_Transformer_0.bfly_cnt[0]                         FFT_Transform_test|PCLK     SLE      Q       bfly_cnt[0]              0.108       5.446
+FFT_Transformer_0.p_ram_buf\.ram_dat_r_1_sig_1[0]     FFT_Transform_test|PCLK     SLE      Q       ram_dat_r_1_sig_1[0]     0.087       5.485
+FFT_Transformer_0.p_ram_buf\.ram_dat_r_1_sig_1[1]     FFT_Transform_test|PCLK     SLE      Q       ram_dat_r_1_sig_1[1]     0.087       5.485
+=============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                    Starting                                                       Required          
+Instance                                                            Reference                   Type     Pin     Net               Time         Slack
+                                                                    Clock                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[0]     FFT_Transform_test|PCLK     SLE      D       temp_imag[9]      9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[1]     FFT_Transform_test|PCLK     SLE      D       temp_imag[10]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[2]     FFT_Transform_test|PCLK     SLE      D       temp_imag[11]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[3]     FFT_Transform_test|PCLK     SLE      D       temp_imag[12]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[4]     FFT_Transform_test|PCLK     SLE      D       temp_imag[13]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[5]     FFT_Transform_test|PCLK     SLE      D       temp_imag[14]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[6]     FFT_Transform_test|PCLK     SLE      D       temp_imag[15]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[7]     FFT_Transform_test|PCLK     SLE      D       temp_imag[16]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_imag_trunc[8]     FFT_Transform_test|PCLK     SLE      D       temp_imag[34]     9.745        3.627
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_trunc[0]     FFT_Transform_test|PCLK     SLE      D       temp_real[9]      9.745        3.627
+=====================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      6.118
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     3.627
+
+    Number of logic level(s):                2
+    Starting point:                          FFT_Transformer_0.ram_dest / Q
+    Ending point:                            FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_trunc[8] / D
+    The start point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+    The end   point is clocked by            FFT_Transform_test|PCLK [rising] on pin CLK
+
+Instance / Net                                                                                           Pin       Pin               Arrival     No. of    
+Name                                                                                            Type     Name      Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+FFT_Transformer_0.ram_dest                                                                      SLE      Q         Out     0.108     0.108       -         
+ram_dest                                                                                        Net      -         -       1.487     -           51        
+FFT_Transformer_0.bf0_real_b_in[8]                                                              CFG3     B         In      -         1.595       -         
+FFT_Transformer_0.bf0_real_b_in[8]                                                              CFG3     Y         Out     0.165     1.760       -         
+bf0_real_b_in[8]                                                                                Net      -         -       1.524     -           29        
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     A[8]      In      -         3.283       -         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.HARD_MULT_ADDSUB_C0_0.HARD_MULT_ADDSUB_C0_0.U0     MACC     P[43]     Out     2.586     5.869       -         
+temp_real[34]                                                                                   Net      -         -       0.248     -           1         
+FFT_Transformer_0.FFT_Butterfly_HW_MATHDSP_0.temp_real_trunc[8]                                 SLE      D         In      -         6.118       -         
+===========================================================================================================================================================
+Total path delay (propagation time + setup) of 6.373 is 3.114(48.9%) logic and 3.259(51.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 139MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 139MB)
+
+---------------------------------------
+Resource Usage Report for FFT_Transform_test 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           10 uses
+CFG2           31 uses
+CFG3           68 uses
+CFG4           15 uses
+
+Carry cells:
+ARI1            40 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            197 uses
+
+DSP Blocks:    2 of 22 (9%)
+ MACC:         2 Mults
+
+I/O ports: 43
+I/O primitives: 41
+INBUF          3 uses
+OUTBUF         38 uses
+
+
+Global Clock Buffers: 2
+
+RAM/ROM usage summary
+Total Block RAMs (RAM1K18) : 2 of 21 (9%)
+Total Block RAMs (RAM64x18) : 1 of 22 (4%)
+
+Total LUTs:    164
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 36; LUTs = 36;
+RAM1K18  Interface Logic : SLEs = 72; LUTs = 72;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  197 + 36 + 72 + 72 = 377;
+Total number of LUTs after P&R:  164 + 36 + 72 + 72 = 344;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 31MB peak: 139MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Sun Mar  1 05:04:43 2020
+
+###########################################################]

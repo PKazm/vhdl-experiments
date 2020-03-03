@@ -1,0 +1,180 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
+Date: Tue Mar  3 03:52:15 2020
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-------------------------------------------------------------------------------------+
+| Topcell | FFT_Transform_test                                                                  |
+| Format  | Verilog                                                                             |
+| Source  | C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\FFT_Transform_test.vm |
++---------+-------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 465  | 12084 | 3.85       |
+| DFF                       | 488  | 12084 | 4.04       |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 78   | 84    | 92.86      |
+| -- Single-ended I/O       | 78   | 84    | 92.86      |
+| -- Differential I/O Pairs | 0    | 37    | 0.00       |
+| RAM64x18                  | 0    | 22    | 0.00       |
+| RAM1K18                   | 2    | 21    | 9.52       |
+| MACC                      | 2    | 22    | 9.09       |
+| Chip Globals              | 2    | 8     | 25.00      |
+| CCC                       | 0    | 2     | 0.00       |
+| RCOSC_25_50MHZ            | 0    | 1     | 0.00       |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 0    | 1     | 0.00       |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 321  | 344 |
+| RAM64x18 Interface Logic | 0    | 0   |
+| RAM1K18 Interface Logic  | 72   | 72  |
+| MACC Interface Logic     | 72   | 72  |
+| Total Used               | 465  | 488 |
++--------------------------+------+-----+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 10     | 4    |
+| 11     | 4    |
+| 18     | 2    |
+| Total  | 10   |
++--------+------+
+
+Detailed MACC Resource Usage
++--------+------+
+| Length | Used |
+| 1      | 2    |
+| Total  | 2    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 4            | 0           | 0               |
+| Output I/O                    | 74           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS25     |  2.50v |  N/A |  4    |  74    |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  0    | 0.00%      |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  78   | 100.00%    |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------+
+| Fanout | Type    | Name                              |
++--------+---------+-----------------------------------+
+| 347    | INT_NET | Net   : PCLK_c                    |
+|        |         | Driver: PCLK_ibuf_RNIFTKA/U0_RGB1 |
+|        |         | Source: NETLIST                   |
+| 341    | INT_NET | Net   : RSTn_c                    |
+|        |         | Driver: RSTn_ibuf_RNICUT3/U0_RGB1 |
+|        |         | Source: NETLIST                   |
++--------+---------+-----------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+---------------------------------------------------------+
+| Fanout | Type    | Name                                                    |
++--------+---------+---------------------------------------------------------+
+| 67     | INT_NET | Net   : ram_returned_c                                  |
+|        |         | Driver: FFT_Transformer_0/un1_ram_assigned_1_rs_RNILSEN |
+| 67     | INT_NET | Net   : ram_stable_c                                    |
+|        |         | Driver: ram_stable_ibuf                                 |
+| 41     | INT_NET | Net   : FFT_Transformer_0/N_71_i                        |
+|        |         | Driver: FFT_Transformer_0/dft_run_RNI0L0E               |
+| 29     | INT_NET | Net   : FFT_Transformer_0/bf0_real_b_in[8]              |
+|        |         | Driver: FFT_Transformer_0/bf0_real_b_in[8]              |
+| 26     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[1]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[1]              |
+| 25     | INT_NET | Net   : FFT_Transformer_0/stage_cnt[0]                  |
+|        |         | Driver: FFT_Transformer_0/stage_cnt[0]                  |
+| 24     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[0]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[0]              |
+| 24     | INT_NET | Net   : FFT_Transformer_0/stage_cnt[1]                  |
+|        |         | Driver: FFT_Transformer_0/stage_cnt[1]                  |
+| 22     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[3]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[3]              |
+| 22     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[2]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[2]              |
++--------+---------+---------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+---------------------------------------------------------+
+| Fanout | Type    | Name                                                    |
++--------+---------+---------------------------------------------------------+
+| 67     | INT_NET | Net   : ram_returned_c                                  |
+|        |         | Driver: FFT_Transformer_0/un1_ram_assigned_1_rs_RNILSEN |
+| 67     | INT_NET | Net   : ram_stable_c                                    |
+|        |         | Driver: ram_stable_ibuf                                 |
+| 41     | INT_NET | Net   : FFT_Transformer_0/N_71_i                        |
+|        |         | Driver: FFT_Transformer_0/dft_run_RNI0L0E               |
+| 29     | INT_NET | Net   : FFT_Transformer_0/bf0_real_b_in[8]              |
+|        |         | Driver: FFT_Transformer_0/bf0_real_b_in[8]              |
+| 26     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[1]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[1]              |
+| 25     | INT_NET | Net   : FFT_Transformer_0/stage_cnt[0]                  |
+|        |         | Driver: FFT_Transformer_0/stage_cnt[0]                  |
+| 24     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[0]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[0]              |
+| 24     | INT_NET | Net   : FFT_Transformer_0/stage_cnt[1]                  |
+|        |         | Driver: FFT_Transformer_0/stage_cnt[1]                  |
+| 22     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[3]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[3]              |
+| 22     | INT_NET | Net   : FFT_Transformer_0/twiddle_index[2]              |
+|        |         | Driver: FFT_Transformer_0/twiddle_index[2]              |
++--------+---------+---------------------------------------------------------+
+

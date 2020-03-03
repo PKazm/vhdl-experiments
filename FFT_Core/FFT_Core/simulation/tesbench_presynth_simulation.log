@@ -8,7 +8,7 @@
 # vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:14 on Feb 26,2020
+# Start time: 21:18:20 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0_0/FCCC_C0_FCCC_C0_0_FCCC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,60 +18,60 @@
 # -- Loading package vl_types
 # -- Loading entity RCOSC_1MHZ
 # -- Loading entity XTLOSC
-# End time: 01:32:14 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:20 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:14 on Feb 26,2020
+# Start time: 21:18:20 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FCCC_C0/FCCC_C0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FCCC_C0
 # -- Compiling architecture RTL of FCCC_C0
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:01
+# End time: 21:18:20 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:20 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0_0/OSC_C0_OSC_C0_0_OSC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity OSC_C0_OSC_C0_0_OSC
 # -- Compiling architecture DEF_ARCH of OSC_C0_OSC_C0_0_OSC
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/OSC_C0/OSC_C0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity OSC_C0
 # -- Compiling architecture RTL of OSC_C0
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0_0/HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB
 # -- Compiling architecture DEF_ARCH of HARD_MULT_ADDSUB_C0_HARD_MULT_ADDSUB_C0_0_HARD_MULT_ADDSUB
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/HARD_MULT_ADDSUB_C0/HARD_MULT_ADDSUB_C0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity HARD_MULT_ADDSUB_C0
 # -- Compiling architecture RTL of HARD_MULT_ADDSUB_C0
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Butterfly_HW_MATHDSP.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -79,20 +79,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity FFT_Butterfly_HW_MATHDSP
 # -- Compiling architecture architecture_FFT_Butterfly_HW_MATHDSP of FFT_Butterfly_HW_MATHDSP
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/LFSR_Fib_Gen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity LFSR_Fib_Gen
 # -- Compiling architecture architecture_LFSR_Fib_Gen of LFSR_Fib_Gen
-# End time: 01:32:15 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:21 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:15 on Feb 26,2020
+# Start time: 21:18:21 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/Twiddle_table.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,10 +101,10 @@
 # -- Loading package MATH_REAL
 # -- Compiling entity Twiddle_table
 # -- Compiling architecture architecture_Twiddle_table of Twiddle_table
-# End time: 01:32:17 on Feb 26,2020, Elapsed time: 0:00:02
+# End time: 21:18:23 on Feb 26,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:17 on Feb 26,2020
+# Start time: 21:18:23 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/component/work/FFT_Butterfly_test_sd/FFT_Butterfly_test_sd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -118,10 +118,10 @@
 # -- Loading entity LFSR_Fib_Gen
 # -- Loading package MATH_REAL
 # -- Loading entity Twiddle_table
-# End time: 01:32:17 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:23 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
-# Start time: 01:32:17 on Feb 26,2020
+# Start time: 21:18:23 on Feb 26,2020
 # vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -130,10 +130,10 @@
 # -- Compiling package FFT_package
 # -- Compiling package body FFT_package
 # -- Loading package FFT_package
-# End time: 01:32:17 on Feb 26,2020, Elapsed time: 0:00:00
+# End time: 21:18:23 on Feb 26,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -L SmartFusion2 -L presynth -t 1fs presynth.FFT_Butterfly_test_sd 
-# Start time: 01:32:17 on Feb 26,2020
+# Start time: 21:18:23 on Feb 26,2020
 # //  ModelSim Microsemi 10.7c Oct 15 2018
 # //
 # //  Copyright 1991-2018 Mentor Graphics Corporation
@@ -215,46 +215,5 @@
 # Loading SmartFusion2.UDP_MUX2
 # Loading SmartFusion2.UDP_DFF
 # Loading SmartFusion2.UDP_DL
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/PCLK
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/RSTn
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_a_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_b_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/do_calc
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_a_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_b_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_a_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_b_in
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_a_out
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_b_out
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/calc_done
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_a_out
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_b_out
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_a_out
-add wave -position end  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_b_out
-add wave -position 9  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_a_out_sig
-add wave -position 9  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_a_pipe1
-add wave -position 10  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/adr_b_pipe1
-add wave -position 11  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/do_calc_pipe1
-add wave -position 12  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_a_pipe1
-add wave -position 13  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/imag_b_pipe1
-add wave -position 14  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_a_pipe1
-add wave -position 15  sim:/fft_butterfly_test_sd/FFT_Butterfly_HW_MATHDSP_0/real_b_pipe1
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 fs  Iteration: 0  Instance: /fft_butterfly_test_sd/Twiddle_table_0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 fs  Iteration: 0  Instance: /fft_butterfly_test_sd/Twiddle_table_0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Break key hit
-# Simulation stop requested.
-# End time: 01:47:31 on Feb 26,2020, Elapsed time: 0:15:14
-# Errors: 0, Warnings: 2
+# End time: 21:18:44 on Feb 26,2020, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0

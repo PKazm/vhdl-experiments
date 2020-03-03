@@ -6,15 +6,15 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 63 clock pin(s) of sequential element(s)
-0 instances converted, 63 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 238 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-==================================================================================================== Gated/Generated Clocks =====================================================================================================
-Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance               Explanation                                                                                                   
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       FCCC_C0_0.FCCC_C0_0.CCC_INST     CCC                    63         LFSR_Fib_Gen_0.fib_reg[8]     Illegal instance on clock path. See the Gated Clocks description in the user guide for conversion requirements
-=================================================================================================================================================================================================================================
+============================= Non-Gated/Non-Generated Clocks =============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance   
+------------------------------------------------------------------------------------------
+@K:CKID0001       PCLK                port                   238        temp_real_slice[0]
+==========================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

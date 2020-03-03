@@ -1,0 +1,166 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+
+# Written on Sun Mar  1 05:02:19 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "DPSRAM_C0"
+Constraint File(s):      "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\designer\DPSRAM_C0\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+===================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:A_ADDR[0]
+p:A_ADDR[1]
+p:A_ADDR[2]
+p:A_ADDR[3]
+p:A_ADDR[4]
+p:A_ADDR[5]
+p:A_ADDR[6]
+p:A_ADDR[7]
+p:A_ADDR[8]
+p:A_ADDR[9]
+p:A_DIN[0]
+p:A_DIN[1]
+p:A_DIN[2]
+p:A_DIN[3]
+p:A_DIN[4]
+p:A_DIN[5]
+p:A_DIN[6]
+p:A_DIN[7]
+p:A_DIN[8]
+p:A_DIN[9]
+p:A_DIN[10]
+p:A_DIN[11]
+p:A_DIN[12]
+p:A_DIN[13]
+p:A_DIN[14]
+p:A_DIN[15]
+p:A_DIN[16]
+p:A_DIN[17]
+p:A_DOUT[0]
+p:A_DOUT[1]
+p:A_DOUT[2]
+p:A_DOUT[3]
+p:A_DOUT[4]
+p:A_DOUT[5]
+p:A_DOUT[6]
+p:A_DOUT[7]
+p:A_DOUT[8]
+p:A_DOUT[9]
+p:A_DOUT[10]
+p:A_DOUT[11]
+p:A_DOUT[12]
+p:A_DOUT[13]
+p:A_DOUT[14]
+p:A_DOUT[15]
+p:A_DOUT[16]
+p:A_DOUT[17]
+p:A_WEN
+p:B_ADDR[0]
+p:B_ADDR[1]
+p:B_ADDR[2]
+p:B_ADDR[3]
+p:B_ADDR[4]
+p:B_ADDR[5]
+p:B_ADDR[6]
+p:B_ADDR[7]
+p:B_ADDR[8]
+p:B_ADDR[9]
+p:B_DIN[0]
+p:B_DIN[1]
+p:B_DIN[2]
+p:B_DIN[3]
+p:B_DIN[4]
+p:B_DIN[5]
+p:B_DIN[6]
+p:B_DIN[7]
+p:B_DIN[8]
+p:B_DIN[9]
+p:B_DIN[10]
+p:B_DIN[11]
+p:B_DIN[12]
+p:B_DIN[13]
+p:B_DIN[14]
+p:B_DIN[15]
+p:B_DIN[16]
+p:B_DIN[17]
+p:B_DOUT[0]
+p:B_DOUT[1]
+p:B_DOUT[2]
+p:B_DOUT[3]
+p:B_DOUT[4]
+p:B_DOUT[5]
+p:B_DOUT[6]
+p:B_DOUT[7]
+p:B_DOUT[8]
+p:B_DOUT[9]
+p:B_DOUT[10]
+p:B_DOUT[11]
+p:B_DOUT[12]
+p:B_DOUT[13]
+p:B_DOUT[14]
+p:B_DOUT[15]
+p:B_DOUT[16]
+p:B_DOUT[17]
+p:B_WEN
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

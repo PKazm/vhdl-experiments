@@ -15,15 +15,9 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock</data>
+<data>FFT_Butterfly_HW_MATHDSP|PCLK</data>
 <data>100.0 MHz</data>
-<data>159.3 MHz</data>
-<data>3.722</data>
-</row>
-<row>
-<data>System</data>
-<data>100.0 MHz</data>
-<data>895.2 MHz</data>
-<data>8.883</data>
+<data>453.6 MHz</data>
+<data>7.795</data>
 </row>
 </report_table>

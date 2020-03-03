@@ -43,6 +43,23 @@ At the moment, the worst case path within the butterfly is between the input fli
 
 ![Butterfly Pipeline Sim](FFT_Core/EXTRA%20FILES/Diagrams/Butterfly_Timing_Sim.png)
 
+## The Transformer, frequency in disguise
+
+Currently working with as an 8 stage pipeline from SRAM read location to SRAM write location. Uses 2 LSRAM blocks that it ping pongs between to maximize memory accesses per time.
+
+Output compared to custom GNU Octave integer FFT version which is itself compared to the built in Octave FFT function. Some discrepencies do occur which I believe are the result of the Octave integer rounding using a "Round half away from zero" method while my Butterfly calculations use a "Round half to even" implementation.
+
+The transform does seem able to hit 200Mhz. Initial synthesis runs give 211Mhz estimate with about 70% delay due to routing. As the full core isn't done I'll wait to make more changes if necessary.
+
+The transform while connected to 2 LSRAM blocks for testing uses the following resources:
+
+* 344 DFF
+* 317 LUT
+* 2 DSP blocks
+* 2 LSRAM
+* 1 SRAM (twiddle table size depends on FFT size)
+
+
 
 ## Resources Used
 

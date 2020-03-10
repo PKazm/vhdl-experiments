@@ -53,6 +53,11 @@ Conclusion: Price, ability to accumulate device applicable knowledge to my area 
     * Uses DSP/Math blocks in DOTP mode for complex multiplication
     * Operates on 9 bit signed numbers
     * 9 bit signed twiddle factors with a post multiplication bit shift to correct the scaled twiddle values and stay within 9 bits.
+1. [Complex Magnitude](https://github.com/PKazm/vhdl-experiments/tree/master/Complex_Magnitude)
+    * Investigates several approaches to calculate the Magnitude of Complex numbers
+    * Brute Force using square root cores
+    * Alpha Max plus Beta Min approximation
+    * CORDIC approximation
 1. **On The Menu**
     * Auto trigger and time scaling oscilliscope.
         * Delta Sigma for data samples

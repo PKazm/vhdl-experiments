@@ -1,0 +1,38 @@
+Resource Usage Report for Alpha_Max_plus_Beta_Min 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG2           6 uses
+CFG3           39 uses
+CFG4           8 uses
+
+Carry cells:
+ARI1            35 uses - used for arithmetic functions
+
+
+Sequential Cells: 
+SLE            72 uses
+
+DSP Blocks:    1 of 22 (4%)
+ MACC:         1 Mult
+
+I/O ports: 29
+I/O primitives: 29
+INBUF          19 uses
+OUTBUF         10 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    88
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 36; LUTs = 36;
+
+Total number of SLEs after P&R:  72 + 0 + 0 + 36 = 108;
+Total number of LUTs after P&R:  88 + 0 + 0 + 36 = 124;
+

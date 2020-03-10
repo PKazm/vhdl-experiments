@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component> 
+<vendor></vendor>
+<library></library>
+<name>HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB</name>
+<version></version>
+<hwModel>
+<views>
+<view>
+<name>HDL</name>
+<fileSetRef>HDL_FILESET</fileSetRef>
+</view>
+</views>
+</hwModel>
+<fileSets>
+<fileSet fileSetId="HDL_FILESET">
+<file>
+<name>HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB.vhd</name>
+<userFileType>vhdlSource</userFileType>
+</file>
+</fileSet>
+</fileSets>
+</component>

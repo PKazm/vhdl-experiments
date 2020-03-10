@@ -1,0 +1,13 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,Chip Globals
+CORECORDIC_C0_0/CORECORDIC_C0_0/kickstart_0/Primitives,0,1,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/kickstart_0/counter_0/Primitives,0,4,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/roundx_0/converg_rnd.kitRndEven_0/inp_pipe_0/Primitives,0,9,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/roundx_0/converg_rnd.kitRndEven_0/result_pipe_0/Primitives,10,9,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/roundx_0/converg_rnd.kitRndEven_0/roundBit_pipe_0/Primitives,0,1,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/roundx_0/create_valid_bit.valid_pipe_0/Primitives,0,2,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/sm_0/Primitives,0,1,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/sm_0/dly_micro_done_0/Primitives,0,1,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/sm_0/iterCounter_0/Primitives,125,6,0,0
+CORECORDIC_C0_0/CORECORDIC_C0_0/word_serial.cordic_word_0/uRotator_0/calculator_0/Primitives,114,22,0,0
+Primitives/Primitives,1,0,32,2

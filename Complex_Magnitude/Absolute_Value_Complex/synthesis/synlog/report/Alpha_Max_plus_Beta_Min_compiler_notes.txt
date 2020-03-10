@@ -1,0 +1,12 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\hdl\Alpha_Max_plus_Beta_Min.vhd":26:7:26:29|Top entity is set to Alpha_Max_plus_Beta_Min.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\hdl\Alpha_Max_plus_Beta_Min.vhd":26:7:26:29|Synthesizing work.alpha_max_plus_beta_min.architecture_alpha_max_plus_beta_min.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\HARD_MULT_ADDSUB_C1\HARD_MULT_ADDSUB_C1.vhd":17:7:17:25|Synthesizing work.hard_mult_addsub_c1.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\HARD_MULT_ADDSUB_C1\HARD_MULT_ADDSUB_C1_0\HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB.vhd":8:7:8:64|Synthesizing work.hard_mult_addsub_c1_hard_mult_addsub_c1_0_hard_mult_addsub.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":582:10:582:12|Synthesizing smartfusion2.vcc.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd":706:10:706:13|Synthesizing smartfusion2.macc.syn_black_box.
+@N|Running in 64-bit mode
+

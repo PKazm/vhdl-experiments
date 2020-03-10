@@ -1,0 +1,217 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys VHDL Compiler, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\Abs_Val_Cmplx_CORDIC_sd\Abs_Val_Cmplx_CORDIC_sd.vhd":17:7:17:29|Top entity is set to Abs_Val_Cmplx_CORDIC_sd.
+VHDL syntax check successful!
+@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\Abs_Val_Cmplx_CORDIC_sd\Abs_Val_Cmplx_CORDIC_sd.vhd":17:7:17:29|Synthesizing work.abs_val_cmplx_cordic_sd.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0.vhd":19:7:19:19|Synthesizing work.corecordic_c0.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\CORECORDIC.vhd":42:7:42:46|Synthesizing corecordic_lib.corecordic_c0_corecordic_c0_0_corecordic.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\cordic_word.vhd":29:7:29:47|Synthesizing corecordic_lib.corecordic_c0_corecordic_c0_0_cordic_word.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\cordic_word.vhd":150:9:150:16|Signal romangle is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1011:7:1011:32|Synthesizing corecordic_lib.cordic_coarse_post_rotator.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1033:9:1033:11|Signal x_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1034:9:1034:11|Signal y_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1035:9:1035:11|Signal a_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1036:9:1036:21|Signal coarse_flag_w is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for corecordic_lib.cordic_coarse_post_rotator.rtl
+Running optimization stage 1 on cordic_coarse_post_rotator .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":381:7:381:24|Synthesizing corecordic_lib.cordic_kitroundtop.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":398:9:398:14|Signal outp_w is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":294:7:294:23|Synthesizing corecordic_lib.cordic_kitrndeven.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":90:7:90:25|Synthesizing corecordic_lib.cordic_kitdelay_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_reg .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":36:7:36:29|Synthesizing corecordic_lib.cordic_kitdelay_bit_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_bit_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_bit_reg .......
+Post processing for corecordic_lib.cordic_kitrndeven.rtl
+Running optimization stage 1 on cordic_kitRndEven .......
+Post processing for corecordic_lib.cordic_kitroundtop.rtl
+Running optimization stage 1 on cordic_kitRoundTop .......
+@W: CL240 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":394:4:394:9|Signal valido is floating; a simulation mismatch is possible.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":381:7:381:24|Synthesizing corecordic_lib.cordic_kitroundtop.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":398:9:398:14|Signal outp_w is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":36:7:36:29|Synthesizing corecordic_lib.cordic_kitdelay_bit_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_bit_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_bit_reg .......
+Post processing for corecordic_lib.cordic_kitroundtop.rtl
+Running optimization stage 1 on cordic_kitRoundTop .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\cordic_word.vhd":366:7:366:56|Synthesizing corecordic_lib.corecordic_c0_corecordic_c0_0_cordic_word_urotator.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\cordic_word.vhd":420:9:420:19|Signal rcprgain_fx is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\CORECORDIC_C0_CORECORDIC_C0_0_CordicLUT_word.vhd":34:7:34:45|Synthesizing corecordic_lib.corecordic_c0_corecordic_c0_0_word_crom.gen_rtl.
+@N: CD604 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\CORECORDIC_C0_CORECORDIC_C0_0_CordicLUT_word.vhd":81:6:81:19|OTHERS clause is not synthesized.
+Post processing for corecordic_lib.corecordic_c0_corecordic_c0_0_word_crom.gen_rtl
+Running optimization stage 1 on CORECORDIC_C0_CORECORDIC_C0_0_word_cROM .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1104:7:1104:22|Synthesizing corecordic_lib.cordic_word_calc.rtl.
+Post processing for corecordic_lib.cordic_word_calc.rtl
+Running optimization stage 1 on cordic_word_calc .......
+Post processing for corecordic_lib.corecordic_c0_corecordic_c0_0_cordic_word_urotator.rtl
+Running optimization stage 1 on CORECORDIC_C0_CORECORDIC_C0_0_cordic_word_uRotator .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":768:7:768:26|Synthesizing corecordic_lib.cordic_dp_bits_trans.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":500:7:500:20|Synthesizing corecordic_lib.cordic_signext.rtl.
+Post processing for corecordic_lib.cordic_signext.rtl
+Running optimization stage 1 on cordic_signExt .......
+Post processing for corecordic_lib.cordic_dp_bits_trans.rtl
+Running optimization stage 1 on cordic_dp_bits_trans .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":552:7:552:14|Synthesizing corecordic_lib.cordicsm.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":36:7:36:29|Synthesizing corecordic_lib.cordic_kitdelay_bit_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_bit_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_bit_reg .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|Pruning unused register delayLine_3(0). Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":90:7:90:25|Synthesizing corecordic_lib.cordic_kitdelay_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_reg .......
+@W: CL169 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Pruning unused register delayLine_0_3(4 downto 0). Make sure that there are no unused intermediate registers.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":148:7:148:22|Synthesizing corecordic_lib.cordic_kitcounts.rtl.
+Post processing for corecordic_lib.cordic_kitcounts.rtl
+Running optimization stage 1 on cordic_kitCountS .......
+Post processing for corecordic_lib.cordicsm.rtl
+Running optimization stage 1 on cordicSm .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":90:7:90:25|Synthesizing corecordic_lib.cordic_kitdelay_reg.rtl.
+Post processing for corecordic_lib.cordic_kitdelay_reg.rtl
+Running optimization stage 1 on cordic_kitDelay_reg .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":871:7:871:31|Synthesizing corecordic_lib.cordic_coarse_pre_rotator.rtl.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":894:9:894:13|Signal x2u_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":895:9:895:13|Signal y2u_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":896:9:896:13|Signal a2u_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":897:9:897:21|Signal coarse_flag_w is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":898:9:898:17|Signal lock_flag is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for corecordic_lib.cordic_coarse_pre_rotator.rtl
+Running optimization stage 1 on cordic_coarse_pre_rotator .......
+Post processing for corecordic_lib.corecordic_c0_corecordic_c0_0_cordic_word.rtl
+Running optimization stage 1 on CORECORDIC_C0_CORECORDIC_C0_0_cordic_word .......
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":662:7:662:27|Synthesizing corecordic_lib.cordic_init_kickstart.rtl.
+@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":148:7:148:22|Synthesizing corecordic_lib.cordic_kitcounts.rtl.
+Post processing for corecordic_lib.cordic_kitcounts.rtl
+Running optimization stage 1 on cordic_kitCountS .......
+Post processing for corecordic_lib.cordic_init_kickstart.rtl
+Running optimization stage 1 on cordic_init_kickstart .......
+Post processing for corecordic_lib.corecordic_c0_corecordic_c0_0_corecordic.rtl
+Running optimization stage 1 on CORECORDIC_C0_CORECORDIC_C0_0_CORECORDIC .......
+Post processing for work.corecordic_c0.rtl
+Running optimization stage 1 on CORECORDIC_C0 .......
+Post processing for work.abs_val_cmplx_cordic_sd.rtl
+Running optimization stage 1 on Abs_Val_Cmplx_CORDIC_sd .......
+Running optimization stage 2 on cordic_kitCountS_4_15_1 .......
+Running optimization stage 2 on cordic_init_kickstart .......
+Running optimization stage 2 on cordic_coarse_pre_rotator .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":876:4:876:6|Input rst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":876:9:876:13|Input nGrst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":877:4:877:6|Input clk is unused.
+Running optimization stage 2 on cordic_kitDelay_reg_2_1 .......
+Running optimization stage 2 on cordic_kitCountS_6_31_1 .......
+Running optimization stage 2 on cordic_kitDelay_reg_5_0 .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":94:8:94:12|Input nGrst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":94:15:94:17|Input rst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":94:20:94:22|Input clk is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":94:25:94:29|Input clkEn is unused.
+Running optimization stage 2 on cordic_kitDelay_bit_reg_0 .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":40:4:40:8|Input nGrst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":41:4:41:6|Input rst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":42:4:42:6|Input clk is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":43:4:43:8|Input clkEn is unused.
+Running optimization stage 2 on cordicSm .......
+Running optimization stage 2 on cordic_signExt .......
+Running optimization stage 2 on cordic_dp_bits_trans .......
+Running optimization stage 2 on cordic_word_calc .......
+Running optimization stage 2 on CORECORDIC_C0_CORECORDIC_C0_0_word_cROM .......
+Running optimization stage 2 on CORECORDIC_C0_CORECORDIC_C0_0_cordic_word_uRotator .......
+Running optimization stage 2 on cordic_kitDelay_bit_reg_2 .......
+Running optimization stage 2 on cordic_kitRoundTop_11_9_1_1 .......
+Running optimization stage 2 on cordic_kitDelay_bit_reg_1 .......
+Running optimization stage 2 on cordic_kitDelay_reg_9_1 .......
+Running optimization stage 2 on cordic_kitRndEven .......
+Running optimization stage 2 on cordic_kitRoundTop_11_9_1_0 .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":393:4:393:9|Input validi is unused.
+Running optimization stage 2 on cordic_coarse_post_rotator .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1015:9:1015:11|Input rst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1015:14:1015:18|Input nGrst is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1016:9:1016:11|Input clk is unused.
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\Actel\DirectCore\CORECORDIC\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1018:9:1018:19|Input coarse_flag is unused.
+Running optimization stage 2 on CORECORDIC_C0_CORECORDIC_C0_0_cordic_word .......
+Running optimization stage 2 on CORECORDIC_C0_CORECORDIC_C0_0_CORECORDIC .......
+@N: CL159 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\component\work\CORECORDIC_C0\CORECORDIC_C0_0\rtl\vhdl\core\CORECORDIC.vhd":59:4:59:8|Input DIN_A is unused.
+Running optimization stage 2 on CORECORDIC_C0 .......
+Running optimization stage 2 on Abs_Val_Cmplx_CORDIC_sd .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar  6 18:17:44 2020
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar  6 18:17:44 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar  6 18:17:44 2020
+
+###########################################################]

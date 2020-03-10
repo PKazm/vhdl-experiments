@@ -1,0 +1,3 @@
+@W: CG296 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\hdl\Alpha_Max_plus_Beta_Min.vhd":119:4:119:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\hdl\Alpha_Max_plus_Beta_Min.vhd":121:11:121:14|Referenced variable rstn is not in sensitivity list.
+

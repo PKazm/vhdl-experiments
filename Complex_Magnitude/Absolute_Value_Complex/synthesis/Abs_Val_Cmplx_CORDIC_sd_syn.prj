@@ -1,0 +1,86 @@
+#--  Synopsys, Inc.
+#--  Version N-2018.03M-SP1-1
+#--  Project file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Abs_Val_Cmplx_CORDIC_sd_syn.prj
+#--  Written on Fri Mar  6 18:17:51 2020
+
+
+#project files
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/Actel/DirectCore/CORECORDIC/4.0.102/rtl/vhdl/core/cordic_rtl_pack.vhd"
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/Actel/DirectCore/CORECORDIC/4.0.102/rtl/vhdl/core/cordic_kit.vhd"
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0_0/rtl/vhdl/core/cordic_par.vhd"
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0_0/CORECORDIC_C0_CORECORDIC_C0_0_CordicLUT_word.vhd"
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0_0/rtl/vhdl/core/cordic_word.vhd"
+add_file -vhdl -lib CORECORDIC_LIB "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0_0/rtl/vhdl/core/CORECORDIC.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0.vhd"
+add_file -vhdl -lib work "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/Abs_Val_Cmplx_CORDIC_sd/Abs_Val_Cmplx_CORDIC_sd.vhd"
+add_file -fpga_constraint "C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/designer/Abs_Val_Cmplx_CORDIC_sd/synthesis.fdc"
+
+
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+#device options
+set_option -technology SmartFusion2
+set_option -part M2S010
+set_option -package TQ144
+set_option -speed_grade STD
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "work.Abs_Val_Cmplx_CORDIC_sd"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency 100.000
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# actel_options
+set_option -rw_check_on_ram 0
+
+# Microsemi G4
+set_option -run_prop_extract 1
+set_option -maxfan 10000
+set_option -clock_globalthreshold 2
+set_option -async_globalthreshold 12
+set_option -globalthreshold 5000
+set_option -low_power_ram_decomp 0
+set_option -seqshift_to_uram 0
+set_option -disable_io_insertion 0
+set_option -opcond COMTC
+set_option -retiming 0
+set_option -report_path 4000
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+set_option -disable_ramindex 0
+set_option -microsemi_enhanced_flow 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+# Compiler Options
+set_option -vhdl2008 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./Abs_Val_Cmplx_CORDIC_sd.vm"
+impl -active "synthesis"

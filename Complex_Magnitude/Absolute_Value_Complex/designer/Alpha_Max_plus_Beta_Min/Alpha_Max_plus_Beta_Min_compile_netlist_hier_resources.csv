@@ -1,0 +1,4 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,Math (18x18),Chip Globals
+HARD_MULT_ADDSUB_C1_0/HARD_MULT_ADDSUB_C1_0/U0/Primitives,0,0,36,36,0,1,0
+Primitives/Primitives,91,72,0,0,29,0,2

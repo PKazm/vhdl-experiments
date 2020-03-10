@@ -1,0 +1,193 @@
+# Reading C:/Microsemi/Libero_SoC_v12.1/ModelSim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v12.1/Designer/lib/modelsimpro/precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# INFO: Simulation library CORECORDIC_LIB already exists
+# Model Technology ModelSim Microsemi vmap 10.7c Lib Mapping Utility 2018.10 Oct 15 2018
+# vmap CORECORDIC_LIB CORECORDIC_LIB 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:02 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/HARD_MULT_ADDSUB_C1/HARD_MULT_ADDSUB_C1_0/HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB
+# -- Compiling architecture DEF_ARCH of HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB
+# End time: 17:22:02 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:02 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/HARD_MULT_ADDSUB_C1/HARD_MULT_ADDSUB_C1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HARD_MULT_ADDSUB_C1
+# -- Compiling architecture RTL of HARD_MULT_ADDSUB_C1
+# End time: 17:22:02 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:02 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/FFT_Core/hdl/FFT_Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package FFT_package
+# -- Compiling package body FFT_package
+# -- Loading package FFT_package
+# End time: 17:22:02 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:02 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/hdl/Alpha_Max_plus_Beta_Min.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package FFT_package
+# -- Compiling entity Alpha_Max_plus_Beta_Min
+# -- Compiling architecture architecture_Alpha_Max_plus_Beta_Min of Alpha_Max_plus_Beta_Min
+# ** Warning: C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/hdl/Alpha_Max_plus_Beta_Min.vhd(194): (vcom-1048) Non-locally static choice (association #1, choice #1) is allowed only if it is the only choice of the only association.
+# ** Warning: C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/hdl/Alpha_Max_plus_Beta_Min.vhd(196): (vcom-1048) Non-locally static choice (association #1, choice #1) is allowed only if it is the only choice of the only association.
+# End time: 17:22:02 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:02 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work CORECORDIC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/Actel/DirectCore/CORECORDIC/4.0.102/rtl/vhdl/core/cordic_rtl_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cordic_rtl_pack
+# -- Compiling package body cordic_rtl_pack
+# -- Loading package cordic_rtl_pack
+# End time: 17:22:03 on Mar 07,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:03 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work CORECORDIC_LIB C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/component/work/CORECORDIC_C0/CORECORDIC_C0_0/coreparameters.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package coreparameters
+# End time: 17:22:03 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vcom 10.7c Compiler 2018.10 Oct 15 2018
+# Start time: 17:22:03 on Mar 07,2020
+# vcom -reportprogress 300 -2008 -explicit -work presynth C:/Users/Phoenix136/Dropbox/FPGA/Microsemi/Absolute_Value_Complex/stimulus/Alpha_Max_plus_Beta_Min_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture behavioral of testbench
+# End time: 17:22:03 on Mar 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L presynth -L CORECORDIC_LIB -t 1ps presynth.testbench 
+# Start time: 17:22:03 on Mar 07,2020
+# //  ModelSim Microsemi 10.7c Oct 15 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading presynth.testbench(behavioral)
+# Loading presynth.fft_package(body)
+# Loading presynth.alpha_max_plus_beta_min(architecture_alpha_max_plus_beta_min)
+# Loading presynth.hard_mult_addsub_c1(rtl)
+# Loading presynth.hard_mult_addsub_c1_hard_mult_addsub_c1_0_hard_mult_addsub(def_arch)
+# Loading SmartFusion2.MACC
+# Loading SmartFusion2.MACC_IP
+# Loading SmartFusion2.MACC_IP_P
+# Loading SmartFusion2.cntlreg
+# Loading SmartFusion2.SLE_Prim
+# Loading SmartFusion2.datareg
+# Loading SmartFusion2.MACC_COMB
+# Loading SmartFusion2.GND
+# Loading SmartFusion2.VCC
+# Loading SmartFusion2.UDP_MUX2
+# Loading SmartFusion2.UDP_DFF
+# Loading SmartFusion2.UDP_DL
+# ** Error: 239 = abs(0 + 250i) Overflow: 0
+#    Time: 155 ns  Iteration: 3  Instance: /testbench
+# ** Error: 82 = abs(250 + 250i) Overflow: 1
+#    Time: 215 ns  Iteration: 3  Instance: /testbench
+# ** Error: 1 = abs(1 + 1i) Overflow: 0
+#    Time: 275 ns  Iteration: 3  Instance: /testbench
+# ** Error: 89 = abs(-255 + -255i) Overflow: 1
+#    Time: 335 ns  Iteration: 3  Instance: /testbench
+# ** Error: 5 = abs(4 + 4i) Overflow: 0
+#    Time: 395 ns  Iteration: 3  Instance: /testbench
+# ** Error: 7 = abs(5 + 5i) Overflow: 0
+#    Time: 455 ns  Iteration: 3  Instance: /testbench
+# ** Error: 8 = abs(6 + 6i) Overflow: 0
+#    Time: 515 ns  Iteration: 3  Instance: /testbench
+# ** Error: 9 = abs(7 + 7i) Overflow: 0
+#    Time: 575 ns  Iteration: 3  Instance: /testbench
+# ** Error: 11 = abs(8 + 8i) Overflow: 0
+#    Time: 635 ns  Iteration: 3  Instance: /testbench
+# ** Error: 12 = abs(9 + 9i) Overflow: 0
+#    Time: 695 ns  Iteration: 3  Instance: /testbench
+# ** Error: 14 = abs(10 + 10i) Overflow: 0
+#    Time: 755 ns  Iteration: 3  Instance: /testbench
+# ** Error: 15 = abs(11 + 11i) Overflow: 0
+#    Time: 815 ns  Iteration: 3  Instance: /testbench
+# ** Error: 16 = abs(12 + 12i) Overflow: 0
+#    Time: 875 ns  Iteration: 3  Instance: /testbench
+# ** Error: 18 = abs(13 + 13i) Overflow: 0
+#    Time: 935 ns  Iteration: 3  Instance: /testbench
+# ** Error: 19 = abs(14 + 14i) Overflow: 0
+#    Time: 995 ns  Iteration: 3  Instance: /testbench
+# ** Error: 20 = abs(15 + 15i) Overflow: 0
+#    Time: 1055 ns  Iteration: 3  Instance: /testbench
+# ** Error: 22 = abs(16 + 16i) Overflow: 0
+#    Time: 1115 ns  Iteration: 3  Instance: /testbench
+# ** Error: 23 = abs(17 + 17i) Overflow: 0
+#    Time: 1175 ns  Iteration: 3  Instance: /testbench
+# ** Error: 24 = abs(18 + 18i) Overflow: 0
+#    Time: 1235 ns  Iteration: 3  Instance: /testbench
+# ** Error: 26 = abs(19 + 19i) Overflow: 0
+#    Time: 1295 ns  Iteration: 3  Instance: /testbench
+# ** Error: 27 = abs(20 + 20i) Overflow: 0
+#    Time: 1355 ns  Iteration: 3  Instance: /testbench
+# ** Error: 28 = abs(21 + 21i) Overflow: 0
+#    Time: 1415 ns  Iteration: 3  Instance: /testbench
+# ** Error: 30 = abs(22 + 22i) Overflow: 0
+#    Time: 1475 ns  Iteration: 3  Instance: /testbench
+# ** Error: 31 = abs(23 + 23i) Overflow: 0
+#    Time: 1535 ns  Iteration: 3  Instance: /testbench
+# ** Error: 32 = abs(24 + 24i) Overflow: 0
+#    Time: 1595 ns  Iteration: 3  Instance: /testbench
+# ** Error: 34 = abs(25 + 25i) Overflow: 0
+#    Time: 1655 ns  Iteration: 3  Instance: /testbench
+# ** Error: 35 = abs(26 + 26i) Overflow: 0
+#    Time: 1715 ns  Iteration: 3  Instance: /testbench
+# ** Error: 36 = abs(27 + 27i) Overflow: 0
+#    Time: 1775 ns  Iteration: 3  Instance: /testbench
+# ** Error: 38 = abs(28 + 28i) Overflow: 0
+#    Time: 1835 ns  Iteration: 3  Instance: /testbench
+# ** Error: 39 = abs(29 + 29i) Overflow: 0
+#    Time: 1895 ns  Iteration: 3  Instance: /testbench
+# ** Error: 41 = abs(30 + 30i) Overflow: 0
+#    Time: 1955 ns  Iteration: 3  Instance: /testbench
+# ** Error: 42 = abs(31 + 31i) Overflow: 0
+#    Time: 2015 ns  Iteration: 3  Instance: /testbench
+# End time: 18:00:05 on Mar 07,2020, Elapsed time: 0:38:02
+# Errors: 32, Warnings: 0

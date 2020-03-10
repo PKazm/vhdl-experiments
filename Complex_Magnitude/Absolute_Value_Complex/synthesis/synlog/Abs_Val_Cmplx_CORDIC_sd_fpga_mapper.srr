@@ -1,0 +1,394 @@
+# Fri Mar  6 18:17:47 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\corecordic_c0_corecordic_c0_0_cordiclut_word.vhd":48:4:48:7|ROM arctan_1[3:0] (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_word_cROM(gen_rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\corecordic_c0_corecordic_c0_0_cordiclut_word.vhd":48:4:48:7|ROM arctan_1[3:0] (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_word_cROM(gen_rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\corecordic_c0_corecordic_c0_0_cordiclut_word.vhd":48:4:48:7|Found ROM arctan_1[3:0] (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_word_cROM(gen_rtl)) with 32 words by 4 bits.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":1143:4:1143:5|Removing sequential instance ani[10:0] (in view: corecordic_lib.cordic_word_calc(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial.cordic_word_0.sm_0.dly_micro_done_0.delayLine[0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial.cordic_word_0.roundx_0.converg_rnd.kitRndEven_0.result_pipe_0.delayLine_0[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial.cordic_word_0.roundx_0.converg_rnd.kitRndEven_0.inp_pipe_0.delayLine_0[8:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial.cordic_word_0.roundx_0.converg_rnd.kitRndEven_0.roundBit_pipe_0.delayLine[0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial.cordic_word_0.roundx_0.create_valid_bit.valid_pipe_0.delayLine[0:1] is being ignored due to limitations in architecture. 
+@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":692:4:692:5|User-specified initial value defined for instance CORECORDIC_C0_0.CORECORDIC_C0_0.kickstart_0.rstoi is being ignored due to limitations in architecture. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+@N: MO231 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":165:4:165:5|Found counter in view:corecordic_lib.cordicSm(rtl) instance iterCounter_0.count[5:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 139MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 139MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 160MB peak: 162MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -0.71ns		 285 /        56
+   2		0h:00m:01s		    -0.55ns		 252 /        56
+   3		0h:00m:01s		    -0.55ns		 252 /        56
+@N: FP130 |Promoting Net CLK_c on CLKINT  I_162 
+@N: FP130 |Promoting Net NGRST_c on CLKINT  I_163 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 163MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 163MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 56 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================================ Non-Gated/Non-Generated Clocks =============================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                  
+-------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK                 port                   56         CORECORDIC_C0_0.CORECORDIC_C0_0.kickstart_0.rstoi
+=========================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 134MB peak: 163MB)
+
+Writing Analyst data base C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\synwork\Abs_Val_Cmplx_CORDIC_sd_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 161MB peak: 163MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 160MB peak: 163MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 161MB peak: 163MB)
+
+@W: MT420 |Found inferred clock Abs_Val_Cmplx_CORDIC_sd|CLK with period 10.00ns. Please declare a user-defined clock on port CLK.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Mar  6 18:17:50 2020
+#
+
+
+Top view:               Abs_Val_Cmplx_CORDIC_sd
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\designer\Abs_Val_Cmplx_CORDIC_sd\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.107
+
+                                Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                  Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------
+Abs_Val_Cmplx_CORDIC_sd|CLK     100.0 MHz     126.7 MHz     10.000        7.893         2.107     inferred     Inferred_clkgroup_0
+==================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                     Ending                       |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------
+Abs_Val_Cmplx_CORDIC_sd|CLK  Abs_Val_Cmplx_CORDIC_sd|CLK  |  10.000      2.107  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Abs_Val_Cmplx_CORDIC_sd|CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                               Starting                                                           Arrival          
+Instance                                                                                       Reference                       Type     Pin     Net               Time        Slack
+                                                                                               Clock                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[4]         Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       iter_count[4]     0.108       2.107
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[0]         Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       iter_count[0]     0.108       2.179
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[3]         Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       iter_count[3]     0.108       2.393
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[2]         Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       iter_count[2]     0.108       2.524
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[1]         Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       iter_count[1]     0.108       2.579
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.yni[10]     Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       yni[10]           0.108       3.817
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.yni[9]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       yni[9]            0.108       4.414
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.yni[1]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       yni[1]            0.108       4.415
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[10]     Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       xn_u[10]          0.108       4.438
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[9]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      Q       xn_u[9]           0.108       4.491
+===================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                               Starting                                                       Required          
+Instance                                                                                       Reference                       Type     Pin     Net           Time         Slack
+                                                                                               Clock                                                                            
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[10]     Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[10]     9.745        2.107
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[9]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[9]      9.745        2.123
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[8]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[8]      9.745        2.139
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[7]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[7]      9.745        2.156
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[6]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[6]      9.745        2.172
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[1]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[1]      9.745        2.188
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[5]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[5]      9.745        2.188
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[4]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[4]      9.745        2.205
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[3]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[3]      9.745        2.221
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[2]      Abs_Val_Cmplx_CORDIC_sd|CLK     SLE      D       xni_6[2]      9.745        2.237
+================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      7.638
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.107
+
+    Number of logic level(s):                18
+    Starting point:                          CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[4] / Q
+    Ending point:                            CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[10] / D
+    The start point is clocked by            Abs_Val_Cmplx_CORDIC_sd|CLK [rising] on pin CLK
+    The end   point is clocked by            Abs_Val_Cmplx_CORDIC_sd|CLK [rising] on pin CLK
+
+Instance / Net                                                                                                  Pin      Pin               Arrival     No. of    
+Name                                                                                                   Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count[4]                 SLE      Q        Out     0.108     0.108       -         
+iter_count[4]                                                                                          Net      -        -       1.170     -           19        
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNISAQ[0]          CFG2     A        In      -         1.278       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNISAQ[0]          CFG2     Y        Out     0.100     1.378       -         
+m12_0_0                                                                                                Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNI6R12[1]         CFG4     D        In      -         1.627       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNI6R12[1]         CFG4     Y        Out     0.271     1.898       -         
+DIST_i_1[0]                                                                                            Net      -        -       1.421     -           45        
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.g0_5                     CFG4     C        In      -         3.320       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.g0_5                     CFG4     Y        Out     0.226     3.545       -         
+m9_0_03                                                                                                Net      -        -       0.497     -           2         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.m1_m1_e_0_1_1       CFG4     B        In      -         4.042       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.m1_m1_e_0_1_1       CFG4     Y        Out     0.143     4.186       -         
+m1_m1_e_0_1_1                                                                                          Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.yni_RNIV9A02[4]     CFG4     D        In      -         4.434       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.yni_RNIV9A02[4]     CFG4     Y        Out     0.288     4.722       -         
+m1_m1_e_0_1                                                                                            Net      -        -       0.497     -           2         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNIUHFN3[4]        CFG4     D        In      -         5.219       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNIUHFN3[4]        CFG4     Y        Out     0.326     5.545       -         
+m86_d_1_0                                                                                              Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNI8QF74[0]        CFG4     C        In      -         5.793       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.count_RNI8QF74[0]        CFG4     Y        Out     0.226     6.019       -         
+count_RNI8QF74[0]                                                                                      Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_1       ARI1     D        In      -         6.268       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_1       ARI1     FCO      Out     0.505     6.773       -         
+un1_xni_cry_1                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_2       ARI1     FCI      In      -         6.773       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_2       ARI1     FCO      Out     0.016     6.789       -         
+un1_xni_cry_2                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_3       ARI1     FCI      In      -         6.789       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_3       ARI1     FCO      Out     0.016     6.806       -         
+un1_xni_cry_3                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_4       ARI1     FCI      In      -         6.806       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_4       ARI1     FCO      Out     0.016     6.822       -         
+un1_xni_cry_4                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_5       ARI1     FCI      In      -         6.822       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_5       ARI1     FCO      Out     0.016     6.838       -         
+un1_xni_cry_5                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_6       ARI1     FCI      In      -         6.838       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_6       ARI1     FCO      Out     0.016     6.854       -         
+un1_xni_cry_6                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_7       ARI1     FCI      In      -         6.854       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_7       ARI1     FCO      Out     0.016     6.871       -         
+un1_xni_cry_7                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_8       ARI1     FCI      In      -         6.871       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_8       ARI1     FCO      Out     0.016     6.887       -         
+un1_xni_cry_8                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_9       ARI1     FCI      In      -         6.887       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_cry_9       ARI1     FCO      Out     0.016     6.903       -         
+un1_xni_cry_9                                                                                          Net      -        -       0.000     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_s_10        ARI1     FCI      In      -         6.903       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.un1_xni_s_10        ARI1     S        Out     0.073     6.976       -         
+un1_xni_s_10_S                                                                                         Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.m20                      CFG4     B        In      -         7.225       -         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.sm_0.iterCounter_0.m20                      CFG4     Y        Out     0.165     7.389       -         
+xni_6[10]                                                                                              Net      -        -       0.248     -           1         
+CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.uRotator_0.calculator_0.xni[10]             SLE      D        In      -         7.638       -         
+=================================================================================================================================================================
+Total path delay (propagation time + setup) of 7.893 is 2.817(35.7%) logic and 5.076(64.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 161MB peak: 163MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 161MB peak: 163MB)
+
+---------------------------------------
+Resource Usage Report for Abs_Val_Cmplx_CORDIC_sd 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CLKINT          2 uses
+CFG1           1 use
+CFG2           22 uses
+CFG3           53 uses
+CFG4           123 uses
+
+Carry cells:
+ARI1            41 uses - used for arithmetic functions
+ARI1            10 uses - used for Wide-Mux implementation
+Total ARI1      51 uses
+
+
+Sequential Cells: 
+SLE            56 uses
+
+DSP Blocks:    0 of 22 (0%)
+
+I/O ports: 32
+I/O primitives: 32
+INBUF          21 uses
+OUTBUF         11 uses
+
+
+Global Clock Buffers: 2
+
+Total LUTs:    250
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  56 + 0 + 0 + 0 = 56;
+Total number of LUTs after P&R:  250 + 0 + 0 + 0 = 250;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 29MB peak: 163MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Fri Mar  6 18:17:51 2020
+
+###########################################################]

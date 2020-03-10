@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.458
+@P:  Alpha_Max_plus_Beta_Min|PCLK - Estimated Frequency : 327.8 MHz
+@P:  Alpha_Max_plus_Beta_Min|PCLK - Requested Frequency : 385.7 MHz
+@P:  Alpha_Max_plus_Beta_Min|PCLK - Estimated Period : 3.050
+@P:  Alpha_Max_plus_Beta_Min|PCLK - Requested Period : 2.593
+@P:  Alpha_Max_plus_Beta_Min|PCLK - Slack : -0.458
+@P: Alpha_Max_plus_Beta_Min Part : m2s010tq144std
+@P: Alpha_Max_plus_Beta_Min Register bits  : 72 
+@P: Alpha_Max_plus_Beta_Min DSP Blocks  : 1
+@P: Alpha_Max_plus_Beta_Min I/O primitives : 29
+@P:  CPU Time : 0h:00m:01s

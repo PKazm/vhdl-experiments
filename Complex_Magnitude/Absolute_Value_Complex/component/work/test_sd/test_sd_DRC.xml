@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>test_sd</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>No Top Level Ports</message>
+    <detail>You must create at least one port for a valid design</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/instances/test_sd</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>HARD_MULT_ADDSUB_C1_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/instances/HARD_MULT_ADDSUB_C1_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:P_ACLR_N</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:P_ACLR_N</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:P_SCLR_N</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:P_SCLR_N</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:P_EN</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:P_EN</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:CLK</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:CLK</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin HARD_MULT_ADDSUB_C1_0:CDOUT[43:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:CDOUT</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:A0[8:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:A0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:B0[8:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:B0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:A1[8:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:A1</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:B1[8:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:B1</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin HARD_MULT_ADDSUB_C1_0:C[34:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:C</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v12.1\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin HARD_MULT_ADDSUB_C1_0:P[34:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_sd/pins/HARD_MULT_ADDSUB_C1_0:P</crossprobe>
+  </drc>
+</drcreport>

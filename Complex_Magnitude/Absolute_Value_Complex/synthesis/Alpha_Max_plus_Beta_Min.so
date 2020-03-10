@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>Alpha_Max_plus_Beta_Min</design>
+	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Alpha_Max_plus_Beta_Min.vm</target_verilog>
+</SynplifyOutput>

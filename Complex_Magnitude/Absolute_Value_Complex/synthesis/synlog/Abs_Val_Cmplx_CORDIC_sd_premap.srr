@@ -1,0 +1,112 @@
+# Fri Mar  6 18:17:46 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: PHOENIX136DESKY
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\designer\Abs_Val_Cmplx_CORDIC_sd\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Abs_Val_Cmplx_CORDIC_sd_scck.rpt 
+Printing clock  summary report in "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Abs_Val_Cmplx_CORDIC_sd_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":799:2:799:13|Removing instance sign_ext_a_0 (in view: corecordic_lib.cordic_dp_bits_trans(rtl)) of type view:corecordic_lib.cordic_signExt_0(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\rtl\vhdl\core\cordic_word.vhd":193:2:193:19|Removing instance hold_coarse_flag_0 (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_cordic_word(rtl)) of type view:corecordic_lib.cordic_kitDelay_reg_2_1(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Removing sequential instance delayLine_0[1:0] (in view: corecordic_lib.cordic_kitDelay_reg_2_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\rtl\vhdl\core\cordic_word.vhd":279:2:279:9|Removing instance roundy_0 (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_cordic_word(rtl)) of type view:corecordic_lib.cordic_kitRoundTop_11_9_1_3(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":462:4:462:15|Removing instance converg_rnd\.kitRndEven_0 (in view: corecordic_lib.cordic_kitRoundTop_11_9_1_3(rtl)) of type view:corecordic_lib.cordic_kitRndEven_1_0(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\work\corecordic_c0\corecordic_c0_0\rtl\vhdl\core\cordic_word.vhd":292:2:292:9|Removing instance rounda_0 (in view: corecordic_lib.CORECORDIC_C0_CORECORDIC_C0_0_cordic_word(rtl)) of type view:corecordic_lib.cordic_kitRoundTop_11_9_1_2(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":354:2:354:14|Removing instance result_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_0(rtl)) of type view:corecordic_lib.cordic_kitDelay_reg_9_1_0_0(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":462:4:462:15|Removing instance converg_rnd\.kitRndEven_0 (in view: corecordic_lib.cordic_kitRoundTop_11_9_1_2(rtl)) of type view:corecordic_lib.cordic_kitRndEven_1_1(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Removing sequential instance delayLine_0[8:0] (in view: corecordic_lib.cordic_kitDelay_reg_9_1_0_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":354:2:354:14|Removing instance result_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_1(rtl)) of type view:corecordic_lib.cordic_kitDelay_reg_9_1_0_1(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":332:2:332:16|Removing instance roundBit_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_0(rtl)) of type view:corecordic_lib.cordic_kitDelay_bit_reg_1_1_1_0(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":342:2:342:11|Removing instance inp_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_0(rtl)) of type view:corecordic_lib.cordic_kitDelay_reg_9_1_1_3(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Removing sequential instance delayLine_0[8:0] (in view: corecordic_lib.cordic_kitDelay_reg_9_1_0_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|Removing sequential instance delayLine[0] (in view: corecordic_lib.cordic_kitDelay_bit_reg_1_1_1_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Removing sequential instance delayLine_0[8:0] (in view: corecordic_lib.cordic_kitDelay_reg_9_1_1_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":332:2:332:16|Removing instance roundBit_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_1(rtl)) of type view:corecordic_lib.cordic_kitDelay_bit_reg_1_1_1_1(rtl) because it does not drive other instances.
+@N: BN115 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":342:2:342:11|Removing instance inp_pipe_0 (in view: corecordic_lib.cordic_kitRndEven_1_1(rtl)) of type view:corecordic_lib.cordic_kitDelay_reg_9_1_1_4(rtl) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":64:4:64:5|Removing sequential instance delayLine[0] (in view: corecordic_lib.cordic_kitDelay_bit_reg_1_1_1_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":115:4:115:5|Removing sequential instance delayLine_0[8:0] (in view: corecordic_lib.cordic_kitDelay_reg_9_1_1_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=21  set on top level netlist Abs_Val_Cmplx_CORDIC_sd
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+
+Clock Summary
+******************
+
+          Start                           Requested     Requested     Clock        Clock                   Clock
+Level     Clock                           Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------
+0 -       Abs_Val_Cmplx_CORDIC_sd|CLK     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     67   
+================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                Clock     Source        Clock Pin                                                                                                               Non-clock Pin     Non-clock Pin
+Clock                           Load      Pin           Seq Example                                                                                                             Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Abs_Val_Cmplx_CORDIC_sd|CLK     67        CLK(port)     CORECORDIC_C0_0.CORECORDIC_C0_0.word_serial\.cordic_word_0.roundx_0.create_valid_bit\.valid_pipe_0.delayLine[0:1].C     -                 -            
+===============================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\component\actel\directcore\corecordic\4.0.102\rtl\vhdl\core\cordic_kit.vhd":165:4:165:5|Found inferred clock Abs_Val_Cmplx_CORDIC_sd|CLK which controls 67 sequential elements including CORECORDIC_C0_0.CORECORDIC_C0_0.kickstart_0.counter_0.count[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Abs_Val_Cmplx_CORDIC_sd.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Mar  6 18:17:47 2020
+
+###########################################################]

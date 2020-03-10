@@ -1,0 +1,22 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_B_pos[0] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_A_pos[0] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_B_pos[1] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_A_pos[1] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_B_pos[2] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_A_pos[2] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_B_pos[3] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_A_pos[3] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_B_pos[4] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\phoenix136\dropbox\fpga\microsemi\absolute_value_complex\hdl\alpha_max_plus_beta_min.vhd":121:8:121:9|Replicating instance val_A_pos[4] (in view: work.Alpha_Max_plus_Beta_Min(architecture_alpha_max_plus_beta_min)) with 4 loads 1 time to improve timing.
+@N: FP130 |Promoting Net PCLK_c on CLKINT  I_21 
+@N: FP130 |Promoting Net RSTn_c on CLKINT  I_22 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

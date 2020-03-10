@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\designer\impl1\Alpha_Max_plus_Beta_Min.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Alpha_Max_plus_Beta_Min_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

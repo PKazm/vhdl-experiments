@@ -1,0 +1,5 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC, RAM1K18, RAM64X18, GLOBAL, IO
+. Alpha_Max_plus_Beta_Min, 72, 53, 35, 0, 1, 0, 0, 2, 29
+.	. HARD_MULT_ADDSUB_C1, 0, 0, 0, 0, 1, 0, 0, 0, 0
+.	.	. HARD_MULT_ADDSUB_C1_HARD_MULT_ADDSUB_C1_0_HARD_MULT_ADDSUB, 0, 0, 0, 0, 1, 0, 0, 0, 0

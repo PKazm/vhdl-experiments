@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock Alpha_Max_plus_Beta_Min|PCLK with period 2.59ns. Please declare a user-defined clock on port PCLK.

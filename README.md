@@ -58,10 +58,3 @@ Conclusion: Price, ability to accumulate device applicable knowledge to my area 
     * Brute Force using square root cores
     * Alpha Max plus Beta Min approximation
     * CORDIC approximation
-1. **On The Menu**
-    * Auto trigger and time scaling oscilliscope.
-        * Delta Sigma for data samples
-        * FFT for time scaling
-        * Edge detector for triggering
-        * Nokia5110 LCD for display
-        * CoreABC to tie everything together

@@ -1,8 +1,0 @@
-@N|Running in 64-bit mode
-@N|Running in 64-bit mode
-@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\FFT.vhd":24:7:24:9|Top entity is set to FFT.
-@N: CD231 :"C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\FFT.vhd":24:7:24:9|Synthesizing work.fft.architecture_fft.
-@N: CL135 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\FFT.vhd":58:8:58:9|Found sequential shift time_samples with address depth of 32 words and data bit width of 8.
-@N|Running in 64-bit mode
-

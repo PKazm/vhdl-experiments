@@ -1,4 +1,0 @@
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\sigma_delta_lvds_adc.vhd":99:8:99:9|User-specified initial value defined for instance Sigma_Delta_LVDS_ADC_0.pwm_counter[15:0] is being ignored due to limitations in architecture. 
-@W: FX1172 :"c:\users\phoenix136\dropbox\fpga\microsemi\sigma_delta_adc\hdl\timer.vhd":24:62:24:62|User-specified initial value defined for instance Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.timer_clock_out_sig is being ignored due to limitations in architecture. 
-@W: MT420 |Found inferred clock Sigma_Delta_system|PCLK with period 3.33ns. Please declare a user-defined clock on port PCLK.
-@W: MT420 |Found inferred clock timer|timer_clock_out_sig_inferred_clock with period 3.33ns. Please declare a user-defined clock on net Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.sample_CLK.

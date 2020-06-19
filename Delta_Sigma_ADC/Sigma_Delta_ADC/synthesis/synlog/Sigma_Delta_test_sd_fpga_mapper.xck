@@ -1,2 +1,0 @@
-CKID0001:@|S:FCCC_C1_0.FCCC_C1_0.CCC_INST@|E:Power_On_Reset_Delay_0.delay_counter[13]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:Sigma_Delta_system_0.Sigma_Delta_LVDS_ADC_0.Sample_CLK_timer.timer_clock_out_sig@|E:Sigma_Delta_system_0.Sigma_Delta_LVDS_ADC_0.analog_FF@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

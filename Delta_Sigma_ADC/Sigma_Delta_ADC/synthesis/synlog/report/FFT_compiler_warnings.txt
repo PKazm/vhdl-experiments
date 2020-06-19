@@ -1,3 +1,0 @@
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\FFT.vhd":47:11:47:21|Signal rex_samples is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Sigma_Delta_ADC\hdl\FFT.vhd":48:11:48:21|Signal imx_samples is undriven. Either assign the signal a value or remove the signal declaration.
-

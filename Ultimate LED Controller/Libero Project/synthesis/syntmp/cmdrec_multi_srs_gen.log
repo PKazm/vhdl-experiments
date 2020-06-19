@@ -1,7 +1,0 @@
-C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.Blinking_System  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One\synthesis\synwork\Blinking_System_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One\synthesis\synwork\Blinking_System_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Blink_The_Good_One\synthesis\synlog\Blinking_System_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.Blinking_System -multisrs ..\synwork\Blinking_System_comp.srs -osyn ..\synwork\Blinking_System_mult.srs -log ..\synlog\Blinking_System_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\Blinking_System_comp.srs|io:i|time:1572126700|size:75301|exec:0|csum:BFA472B66438CE8BF1711DB83638270B
-file:..\synwork\Blinking_System_mult.srs|io:o|time:1572126701|size:7959|exec:0|csum:
-file:..\synlog\Blinking_System_multi_srs_gen.srr|io:o|time:1572126701|size:1205|exec:0|csum:
-file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>Abs_Val_Cmplx_CORDIC_sd</design>
-	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Absolute_Value_Complex\synthesis\Abs_Val_Cmplx_CORDIC_sd.vm</target_verilog>
-</SynplifyOutput>

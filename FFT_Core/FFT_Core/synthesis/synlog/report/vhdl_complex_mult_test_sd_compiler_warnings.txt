@@ -1,4 +1,0 @@
-@W: CL179 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":291:12:291:13|Found combinational loop at do_calc_pipe[0]
-@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":335:16:335:30|Pruning register bit 0 of imag_b_out_sum_slice(10 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\FFT_Butterfly_HW_MATHDSP.vhd":335:16:335:30|Pruning register bit 0 of real_b_out_sum_slice(10 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-

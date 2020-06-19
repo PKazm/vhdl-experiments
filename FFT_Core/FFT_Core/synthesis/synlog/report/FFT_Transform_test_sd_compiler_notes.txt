@@ -1,4 +1,0 @@
-@N|Running in 64-bit mode
-@N|Running in 64-bit mode
-@N:"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Transform_test_sd\FFT_Transform_test_sd.vhd":19:7:19:27|Top entity is set to FFT_Transform_test_sd.
-

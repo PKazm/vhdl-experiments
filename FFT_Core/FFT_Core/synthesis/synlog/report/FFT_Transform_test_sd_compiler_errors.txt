@@ -1,3 +1,0 @@
-@E: CD178 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\component\work\FFT_Transform_test_sd\FFT_Transform_test_sd.vhd":208:28:208:41|Can't find formal 	ram_dat_r_a[1]
-@E: Parse errors encountered - exiting
-

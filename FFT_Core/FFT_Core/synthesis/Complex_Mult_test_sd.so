@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>Complex_Mult_test_sd</design>
-	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\Complex_Mult_test_sd.vm</target_verilog>
-</SynplifyOutput>

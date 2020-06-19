@@ -1,1 +1,0 @@
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\fft_core\hdl\fft_butterfly_hw_mathdsp.vhd":378:16:378:30|Found inferred clock FFT_Butterfly_HW_MATHDSP|PCLK which controls 238 sequential elements including adr_a_pipe_3[7]. This clock has no specified timing constraint which may adversely impact design performance. 

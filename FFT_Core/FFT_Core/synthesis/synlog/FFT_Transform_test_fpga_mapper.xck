@@ -1,2 +1,0 @@
-CKID0001:@|S:FFT_Transformer_0.un1_rstn_1@|E:FFT_Transformer_0.un1_ram_assigned_1_rs@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:PCLK@|E:FFT_Transformer_0.dft_cnt_fast[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

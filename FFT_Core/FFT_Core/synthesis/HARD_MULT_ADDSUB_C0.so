@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>HARD_MULT_ADDSUB_C0</design>
-	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\HARD_MULT_ADDSUB_C0.vm</target_verilog>
-</SynplifyOutput>

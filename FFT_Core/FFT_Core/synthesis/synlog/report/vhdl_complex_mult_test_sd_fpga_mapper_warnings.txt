@@ -1,1 +1,0 @@
-@W: MT420 |Found inferred clock FFT_Butterfly_HW_MATHDSP|PCLK with period 10.00ns. Please declare a user-defined clock on port PCLK.

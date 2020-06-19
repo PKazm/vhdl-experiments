@@ -1,6 +1,0 @@
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":56:11:56:29|Signal real_a_1comp_extend is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":58:11:58:19|Signal temp_real is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":59:11:59:25|Signal temp_real_trunc is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":60:11:60:19|Signal temp_imag is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":61:11:61:25|Signal temp_imag_trunc is undriven. Either assign the signal a value or remove the signal declaration.
-

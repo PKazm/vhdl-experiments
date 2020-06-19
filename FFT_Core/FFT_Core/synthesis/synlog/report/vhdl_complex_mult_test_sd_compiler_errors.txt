@@ -1,2 +1,0 @@
-@E: CD326 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\hdl\Butterfly_HW_DSP.vhd":100:4:100:18|Port rstn of entity work.twiddle_table is unconnected. If a port needs to remain unconnected, use the keyword open.
-

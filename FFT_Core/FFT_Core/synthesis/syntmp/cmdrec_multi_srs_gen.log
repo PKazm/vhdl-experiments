@@ -1,7 +1,0 @@
-C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.FFT_Transform_test  -multisrs  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Transform_test_comp.srs  -osyn  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synwork\FFT_Transform_test_mult.srs  -log  C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\FFT_Core\synthesis\synlog\FFT_Transform_test_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.FFT_Transform_test -multisrs ..\synwork\FFT_Transform_test_comp.srs -osyn ..\synwork\FFT_Transform_test_mult.srs -log ..\synlog\FFT_Transform_test_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\FFT_Transform_test_comp.srs|io:i|time:1583225361|size:24972|exec:0|csum:5521AE0CB2CA2F1C012D2349F5EF2599
-file:..\synwork\FFT_Transform_test_mult.srs|io:o|time:1583225362|size:3762|exec:0|csum:
-file:..\synlog\FFT_Transform_test_multi_srs_gen.srr|io:o|time:1583225362|size:1188|exec:0|csum:
-file:..\..\..\..\..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

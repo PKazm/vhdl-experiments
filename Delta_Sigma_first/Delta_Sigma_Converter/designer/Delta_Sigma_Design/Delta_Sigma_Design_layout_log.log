@@ -1,77 +1,0 @@
-Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-***** Place and Route Configurations *****
-Timing-driven            : OFF
-Power-driven             : OFF
-I/O Register Combining   : OFF
-High-effort              : OFF
-Repair min-delay         : OFF
-Incremental              : OFF
-
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 19 fixed I/O macros, 0 unfixed I/O macros
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
-
-Placer V5.0 - 12.600.0 
-Design: Delta_Sigma_Design              Started: Mon Nov 25 01:19:40 2019
-
-Initializing Normal-Effort Standard Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 0 seconds
-Placement                : 0 seconds
-Improvement              : 0 seconds
-
-Placer completed successfully.
-
-Design: Delta_Sigma_Design              
-Finished: Mon Nov 25 01:19:45 2019
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 118.0 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_DesignStarted: Mon Nov 25 01:19:48 2019
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design
-Finished: Mon Nov 25 01:19:53 2019
-Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.6 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_DesignStarted: Mon Nov 25 01:19:54 2019
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\designer\Delta_Sigma_Design\Delta_Sigma_Design
-Finished: Mon Nov 25 01:20:00 2019
-Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:06
-Total Memory Usage: 429.8 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------+------+-------+------------+
-| Type          | Used | Total | Percentage |
-+---------------+------+-------+------------+
-| 4LUT          | 1478 | 12084 | 12.23      |
-| DFF           | 1169 | 12084 | 9.67       |
-| I/O Register  | 0    | 246   | 0.00       |
-| Logic Element | 1698 | 12084 | 14.05      |
-+---------------+------+-------+------------+
-

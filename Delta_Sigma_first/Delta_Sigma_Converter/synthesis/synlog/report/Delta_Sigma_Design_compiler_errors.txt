@@ -1,4 +1,0 @@
-@E: CD547 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\Nokia5110_Driver.vhd":97:34:97:67|Expecting architecture name architecture_nokia5110_driver
-@E: CD424 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\hdl\Nokia5110_Driver.vhd":97:84:97:85|Expecting architecture identifier
-@E: Parse errors encountered - exiting
-

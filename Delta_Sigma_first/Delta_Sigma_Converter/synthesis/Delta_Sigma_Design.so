@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>Delta_Sigma_Design</design>
-	<target_verilog>C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Delta_Sigma_Converter\synthesis\Delta_Sigma_Design.vm</target_verilog>
-</SynplifyOutput>

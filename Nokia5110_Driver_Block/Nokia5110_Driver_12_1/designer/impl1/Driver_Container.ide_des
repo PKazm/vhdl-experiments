@@ -1,9 +1,0 @@
-KEY IDE_DES_TOOL "Ide"
-KEY IDE_DES_ADB_PATH "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\designer\impl1\Driver_Container.adb"
-LIST SOURCE_FILES
-VALUE "C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\Nokia5110_Driver_12_1\constraint\io\Digikey_Smartfusion2_Maker_Kit.pdc;pdc"
-ENDLIST
-LIST OPTIONAL_FILES
-ENDLIST
-LIST VCD_FILES
-ENDLIST

@@ -1,3 +1,0 @@
-CKID0001:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Nokia_Driver_Container_0.Nokia_Driver_Comp.screen_send@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:FCCC_C0_0.FCCC_C0_0.CCC_INST@|E:Nokia_Driver_Container_0.Nokia_Driver_Comp.LCD_timer.timer_indic_sig@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
-CKID0003:@|S:Board_Buttons[1:0]@|E:Nokia_Driver_Container_0.LCD_Backlight_sig@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 

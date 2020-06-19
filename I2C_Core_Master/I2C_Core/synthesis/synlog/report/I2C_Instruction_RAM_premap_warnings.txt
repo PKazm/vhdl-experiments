@@ -1,1 +1,0 @@
-@W: MT530 :"c:\users\phoenix136\dropbox\fpga\microsemi\i2c_core\hdl\i2c_core.vhd":242:8:242:9|Found inferred clock I2C_Instruction_RAM|PCLK which controls 129 sequential elements including I2C_Core_0.i2c_clk_cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 

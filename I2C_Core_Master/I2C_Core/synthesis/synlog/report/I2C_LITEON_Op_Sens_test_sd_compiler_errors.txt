@@ -1,2 +1,0 @@
-@E: CD297 :"C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\hdl\I2C_Instruction_RAM.vhd":285:28:285:79|Width mismatch, location has width 10, value 8
-

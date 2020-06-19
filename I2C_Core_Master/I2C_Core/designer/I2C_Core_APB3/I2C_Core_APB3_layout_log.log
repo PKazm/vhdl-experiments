@@ -1,76 +1,0 @@
-Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-***** Place and Route Configurations *****
-Timing-driven            : OFF
-Power-driven             : OFF
-I/O Register Combining   : OFF
-High-effort              : OFF
-Repair min-delay         : OFF
-Incremental              : OFF
-
-INFO: No User PDC file(s) was specified.
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 0 fixed I/O macros, 39 unfixed I/O macros
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
-
-Placer V5.0 - 12.600.0 
-Design: I2C_Core_APB3                   Started: Thu Jan 30 16:51:20 2020
-
-Initializing Normal-Effort Standard Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 0 seconds
-Placement                : 0 seconds
-Improvement              : 0 seconds
-
-Placer completed successfully.
-
-Design: I2C_Core_APB3                   
-Finished: Thu Jan 30 16:51:24 2020
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 114.6 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Core_APB3\I2C_Core_APB3Started: Thu Jan 30 16:51:27 2020
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Core_APB3\I2C_Core_APB3
-Finished: Thu Jan 30 16:51:32 2020
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.3 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Core_APB3\I2C_Core_APB3Started: Thu Jan 30 16:51:33 2020
-
-
-Router completed successfully.
-
-Design: C:\Users\Phoenix136\Dropbox\FPGA\Microsemi\I2C_Core\designer\I2C_Core_APB3\I2C_Core_APB3
-Finished: Thu Jan 30 16:51:38 2020
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 429.2 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------+------+-------+------------+
-| Type          | Used | Total | Percentage |
-+---------------+------+-------+------------+
-| 4LUT          | 316  | 12084 | 2.62       |
-| DFF           | 160  | 12084 | 1.32       |
-| I/O Register  | 0    | 246   | 0.00       |
-| Logic Element | 326  | 12084 | 2.70       |
-+---------------+------+-------+------------+
-
